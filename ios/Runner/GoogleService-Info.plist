@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC6gRzXQ58fWltviam52MC_K-pAE1Buyas</string>
+	<key>GCM_SENDER_ID</key>
+	<string>149090537058</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mycompany.riskPeru</string>
+	<key>PROJECT_ID</key>
+	<string>riskperu-6d15a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>riskperu-6d15a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:149090537058:ios:2cb7db538b30b2876dcb3b</string>
+	<key>DATABASE_URL</key>
+	<string>https://riskperu-6d15a-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,672 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "Session",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Module",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Session",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "preguntas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "examen_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "course_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid_CategoryCourses",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "course_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "display_name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "examenes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Group",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fecha_creacion",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ExamGroups",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "course_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "userType",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "CategoryCourses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Name",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "course_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "userType",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "display_name",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ModuleClass",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Module",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Module",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Session",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "comentarios",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Courses",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "pared_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users_Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_user",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Notas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_User",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Announcement_Comments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Announcements_course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ModuleClass",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Module",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "resultados",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "examen_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users_Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_courses",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "respuestas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_pregunta",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "preguntas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "examen_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Announcements_Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "resultados",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "estudiante_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "examen_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "resultados",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "estudiante_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "examen_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Certificates",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_User",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ID",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "ReferralDate",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "State",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid_CategoryCourses",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "course_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "State",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Session",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "examenes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "state",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid_Course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fecha_creacion",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "resultados",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "examen_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "estudiante_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "course_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "State",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid_CategoryCourses",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ExamGroups",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "is_demo",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "examenes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Group",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "state",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fecha_creacion",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ExamGroups",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "is_demo",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "state",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "examenes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Group",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fecha_creacion",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "pasarelaPagos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_user",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}

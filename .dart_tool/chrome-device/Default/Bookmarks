@@ -1,0 +1,329 @@
+{
+   "checksum": "cd8b6c72ee5a687a58401ee624c19dd6",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "0",
+            "date_last_used": "13337040415888291",
+            "guid": "c05657c1-677c-4762-9277-3c0ad33e3a5d",
+            "id": "8",
+            "name": "Inicio - Roblox",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.roblox.com/home",
+            "visit_count": 0
+         }, {
+            "date_added": "0",
+            "date_last_used": "13388038604409220",
+            "guid": "30af5b5c-30d8-4052-a30f-ade2bc61ba70",
+            "id": "9",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/",
+            "visit_count": 837
+         }, {
+            "date_added": "13386545362415006",
+            "date_last_used": "13386565844731230",
+            "guid": "11c1c94d-cb30-4033-86a7-67c005ad9c18",
+            "id": "10",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Crunchyroll: Mira animes populares, juega a juegos y compra online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.crunchyroll.com/es/",
+            "visit_count": 2
+         }, {
+            "date_added": "13298562659285090",
+            "date_last_used": "0",
+            "guid": "19b454a0-204a-4f00-9455-2900fae7ac42",
+            "id": "11",
+            "name": "Portal SISE",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://miportal.sise.edu.pe/#/auth/login",
+            "visit_count": 0
+         }, {
+            "date_added": "13297194714393103",
+            "date_last_used": "13384195716678432",
+            "guid": "d3a850b7-b0c9-4c02-8f14-05f652993c20",
+            "id": "12",
+            "name": "Página de inicio — Netflix",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.netflix.com/browse",
+            "visit_count": 29
+         }, {
+            "date_added": "13297136723717653",
+            "date_last_used": "0",
+            "guid": "8957a57c-74e7-49b0-94bd-a8a873574ec1",
+            "id": "13",
+            "name": "Steam, la plataforma de juegos online definitiva",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://store.steampowered.com/about/",
+            "visit_count": 0
+         }, {
+            "date_added": "13297136758965241",
+            "date_last_used": "13382326332460573",
+            "guid": "7431bd70-a261-4335-9a97-c21f40e1b911",
+            "id": "14",
+            "name": "Discord",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://discord.com/login",
+            "visit_count": 68
+         }, {
+            "date_added": "13297136719861005",
+            "date_last_used": "13354214611853233",
+            "guid": "9e6ba876-ea26-4f17-a25c-47fc507083f2",
+            "id": "15",
+            "name": "Global NetAcad Instance | Estoy aprendiendo | Networking Academy",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.netacad.com/portal/learning",
+            "visit_count": 0
+         }, {
+            "date_added": "13309064636931100",
+            "date_last_used": "0",
+            "guid": "01edce83-4d66-459f-a54c-1043f23a4296",
+            "id": "16",
+            "name": "CERTUS",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://campusdigital.certus.edu.pe/my/",
+            "visit_count": 0
+         }, {
+            "date_added": "13307131156476610",
+            "date_last_used": "0",
+            "guid": "ab22ab2e-05da-4eaa-8e2a-97f2f722d49a",
+            "id": "17",
+            "name": "Wix Logo Maker",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://manage.wix.com/logo/maker/esh/zoe-editor?industry=%7B%22industry%22%3A%225f06e91383762c0017b978d7_a4def3d162781f1e96ee1956_club%20de%20cine%22%2C%22isCustom%22%3Afalse%7D&tags=creative%2Ctechy%2Cformal&logoId=3d30fead-d5d5-4cb9-b300-0eef44f6e605",
+            "visit_count": 0
+         }, {
+            "date_added": "13300690568447541",
+            "date_last_used": "13370198869683772",
+            "guid": "83ae92ff-65b0-4e0d-b64c-5bcce05e47ae",
+            "id": "18",
+            "name": "VFUN - Membership > Sign Up",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://vfun.valofe.com/membership/LauncherSignupFacebookOpenID#_=_",
+            "visit_count": 1
+         }, {
+            "date_added": "13308767350101480",
+            "date_last_used": "13373503862346264",
+            "guid": "827b0118-f523-47e7-99c4-935ff1162e5e",
+            "id": "19",
+            "name": "Iconos y símbolos de página",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.flaticon.com/free-icons/page",
+            "visit_count": 1
+         }, {
+            "date_added": "13326254617283007",
+            "date_last_used": "13334200659906338",
+            "guid": "55593d34-5163-4254-8204-6feea4eb1832",
+            "id": "20",
+            "name": "iLovePDF | Herramientas PDF online gratis",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.ilovepdf.com/es",
+            "visit_count": 0
+         }, {
+            "date_added": "13326864101662995",
+            "date_last_used": "0",
+            "guid": "c352fcc5-b760-4419-81cb-134de5a01188",
+            "id": "21",
+            "name": "INGLES CERTUS LIBRO VIRTUAL",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://getsmoothlms.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13381870921764903",
+            "date_last_used": "0",
+            "guid": "2410f1b7-76a3-4dd3-ae58-548dedcf66b6",
+            "id": "22",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "reCAPTCHA",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.google.com/u/1/recaptcha/admin/create",
+            "visit_count": 1
+         }, {
+            "date_added": "13382636511212521",
+            "date_last_used": "0",
+            "guid": "dcee4e12-7e64-46f9-8459-35199c9b5a1c",
+            "id": "23",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "DeepSeek - Into the Unknown",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chat.deepseek.com/",
+            "visit_count": 1
+         }, {
+            "date_added": "13383762545289955",
+            "date_last_used": "0",
+            "guid": "46353c1d-f903-4653-96b3-1376af32f3d1",
+            "id": "24",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "v0 by Vercel",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://v0.dev/",
+            "visit_count": 1
+         }, {
+            "date_added": "13384197355065575",
+            "date_last_used": "0",
+            "guid": "5197163c-c83e-4715-9597-ad2cadca766f",
+            "id": "25",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "PlayThisGame - Find Account Infomation",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.playthisgame.com/es/Account/FindInfo",
+            "visit_count": 1
+         }, {
+            "date_added": "13387947473338597",
+            "date_last_used": "0",
+            "guid": "f16baebd-4e76-44d1-84e6-ff92c07b1451",
+            "id": "26",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Workflows - n8n",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://eliottgss.app.n8n.cloud/home/workflows",
+            "visit_count": 1
+         }, {
+            "date_added": "13387913261691206",
+            "date_last_used": "0",
+            "guid": "a0e6b74a-aa74-4634-8528-8cfe0a69c065",
+            "id": "27",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Amplificador Hy929 Geofono Detector De Fugas En Tuberia | Cuotas sin interés",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://articulo.mercadolibre.com.pe/MPE-692453750-amplificador-hy929-geofono-detector-de-fugas-en-tuberia-_JM#polycard_client=recommendations_vip-v2p&reco_backend=ranker_retrieval_system_org&reco_model=rk_ent_v3_retsys_org&reco_client=vip-v2p&reco_item_pos=0&reco_backend_type=low_level&reco_id=964b495f-bb0c-4d99-97b8-33882c73fe6c&wid=MPE692453750&sid=recos",
+            "visit_count": 1
+         }, {
+            "date_added": "13387946485922631",
+            "date_last_used": "0",
+            "guid": "2372ade4-1586-477c-b800-7524f9154990",
+            "id": "28",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "La Plateforme - Mistral AI",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://console.mistral.ai/api-keys",
+            "visit_count": 1
+         }, {
+            "date_added": "13387946489346462",
+            "date_last_used": "0",
+            "guid": "b2ef29ce-04ef-4829-823a-d59a63e2d960",
+            "id": "29",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Website Content Crawler",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://console.apify.com/actors/aYG0l9s7dbB7j3gbS/input",
+            "visit_count": 1
+         } ],
+         "date_added": "13388255767051823",
+         "date_last_used": "0",
+         "date_modified": "13387947473338597",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [  ],
+            "date_added": "13371660585461190",
+            "date_last_used": "0",
+            "date_modified": "13371660585461190",
+            "guid": "dcb5c775-d71a-42b8-9c51-bfa38a71ab41",
+            "id": "6",
+            "name": "Other Bookmarks",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [  ],
+            "date_added": "13371660585461247",
+            "date_last_used": "0",
+            "date_modified": "13371660585461247",
+            "guid": "3bacff9f-272b-461f-95ae-48131c234e76",
+            "id": "7",
+            "name": "Synced Bookmarks",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13388255767051825",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Otros favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13388255767051827",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos móviles",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCOywkvSVAQAAEgAqGEFFUXBISjZkTkg5dE5wSWFaVDVYM3c9PUgDoAYHErUBCB0SsAEKHG43K28vbHRiYWhaR1BPOTRXQUkwS2tGYVR3ND0SJGIyZWYyOWNlLTA0ZWYtNDgyOS04MjNhLWQ1OWE2M2UyZDk2MBgAIAAoADCetdT43jI4+bbU+N4yQPm21PjeMkocSVZacGJjNFU2WmhTWVBkd3BnenIxTy9ZekZ3PVonIiX/////AAAAEt10OWk2N2FveXhUQUNLUWR6YS8yRnVPRm5UTEE9ZQ3SsE3CPgJgBRK0AQgbEq8BChxseStkZ1lXalVYcWZtbmx0ZkpsdFowR1dNdTQ9EiRhMGU2Yjc0YS1hYTc0LTQ2MzQtODUyOC04Y2ZlMGE2OWMwNjUYACAAKAAw/L/o6N4yOIvG6OjeMkCLxujo3jJKHGNRU0F5cnl5SzNYcjREYzhnWHc2a2hYc2Nzcz1aJiIk/////wAAABJ0bWZjeG9JSEVsdENoUExGN3EwSHhSOEZkclk9Zd6nRRXCPgJgBRK1AQgaErABChxscHpXVTdsK001ZVpNbVVTOHZwcm50MGl0WEU9EiRmMTZiYWViZC00ZTc2LTQ0ZDEtODRlNi1mZjkyYzA3YjE0NTEYACAAKAAwoteQ+d4yOKvAkPneMkCrwJD53jJKHERGdVFPN29sN2RNOGkxNlpXSEZtd2ZHdnpCYz1aJyIl/////wAAABH5dnhxTUY5aklEMmlZTkNIWTRrbkliWkFpRUhrPWWsM7xrwj4CYAUSrQEICxKoAQocOGhvV3dIdHhZVEZ5UkhmT2VQSWNtbDdIWVVjPRIkMTliNDU0YTAtMjA0YS00ZjAwLTk0NTUtMjkwMGZhZTdhYzQyGAAgACgAMKmUg6OiMjjYqpD7kTBA2KqQ+5EwShxWekRVQ3dMTjQ5TGQyRVRSZ1RleHZmZ011bDg9Wh8iHeVJamNseFJIZ0JZUHBrVXYycEJIOVpUNkgwamM9ZUZAuO7CPgJgBRKtAQgJEqgBChw1ZFhKemFQN01XM0ZsMXo4TXFyODFETDNia1U9EiQzMGFmNWI1Yy0zMGQ4LTQwNTItYTMwZi1hZGUyYmM2MWJhNzAYACAAKAAw6+HKpN8yOJuE/NKMMECbhPzSjDBKHExRMno1QmJYMk54by9kdFZaeHNxUVhMalZUWT1aHyId028xblNKR1AxUGpiVHRVa243MUUvYlBqOVBERT1l/ZyMSsI+AmAFErUBCBgSsAEKHCtpMExNMUw5Yk9NZHNXU0VoMnpkV0doL01tOD0SJDQ2MzUzYzFkLWY5MDMtNDY1My05NmIzLTEzNzZhZjMyZjNkMRgAIAAoADD30sytzzI45dbMrc8yQOXWzK3PMkoccXhZV0c5U0d5VmlvbmtyR2VRZEwvZXl0ZXI0PVonIiX/////AAAAEe51a1pvMGZiNlNtK0lNSThGNzZiM1BiOTJydXc9ZTwJ1WnCPgJgBRK1AQgXErABChx5bnoyTUhXcng5R09md09ib0ZEOGF1MWVQOU09EiRkY2VlNGUxMi03ZTY0LTQ2ZjktODQ1OS0zNTE5OWM5YjVhMWMYACAAKAAw9Y3VlMsyOJSW1ZTLMkCUltWUyzJKHHRmUFJUMFNUakZxeUJqenFCQ2JxaGllS0V1Zz1aJyIl/////wAAABHdcGh1V1NVNEJYVjNQUzgwdkppOHI3cEdwRHo0PWXfqqUwwj4CYAUSrQEIChKoAQocN1IzYWZNRmZsejRVZGVtUC83MmI3SzZ0UG44PRIkMTFjMWM5NGQtY2IzMC00MDMzLTg2YTctNjdjMDA1YWQ5YzE4GAAgACgAMLzgqObZMjiHtcbc2TJAh7XG3NkyShxMaUtaWktOMWZPeUowbEU3a2lnNFNaQVlrMkE9Wh8iHdlVeUprcnhqSUNnTVBNMCt5VSszYWdMYndaVzQ9ZUYY+HHCPgJgBRK1AQgWErABChwvY0YvNWlZWHA4RCt6VGRiNWV4ZittT3hxUE09EiQyNDEwZjFiNy03NmEzLTRkZDMtYWU1OC01NDhkZWRjZjY2YjYYACAAKAAwhJDNp8gyONaUzafIMkDWlM2nyDJKHDZLUVFYNWE0VmlhelB0WnhDNzAvRW1yT2lQcz1aJyIl/////wAAABG6S1Q1MG5TcEFXdWJYTCs0UlpUejBkaXFneFhjPWX7UJkkwj4CYAUStQEIGRKwAQocc1JZRFUwa1F1RTRjSXVTN1lOU2FtRzc0ZWEwPRIkNTE5NzE2M2MtYzgzZS00NzE1LTk1OTctYWQyY2FkY2E3NjZmGAAgACgAMN6s9/zQMjjmsff80DJA5rH3/NAyShxUZVh4V1VTbjFEclpLZ1dDZUJPcElMa0FUUnc9WiciJf////8AAAAR92l3Y3pNV1RMaDM5QkpQSy9Ob2MyMmZmNFQ1RT1l9pP4QcI+AmAFEq0BCAcSqAEKHHI5K0FRb0RBR1J3Tnd0Yy9oWDA2ZzBNZldmND0SJDNiYWNmZjlmLTI3MmItNDYxZi05NWFlLTQ4MTMxYzIzNGU3NhgAIAAoADD0+4KjojI4no6Do6IyQJ6Og6OiMkocbUIya2kvcWdxUkVLOUVXNWlZcC9tUlpWaStFPVofIh24R2MvVUZUL0dlRkN5N2RRcWFML2NQTGZXWmY0PWUAAAAAwj4CYAASrwEIEBKqAQocUlU0RzFmL3BDNUNTRXFvQU85L2kvcHZJZDlnPRIkMDFlZGNlODMtNGQ2Ni00NTlmLWE1NGMtMTA0M2YyM2E0Mjk2GAAgACgAMK2lg6OiMjiShu6KuTBAkobuirkwShxBNlRCT2tCcXlCK0d3Mm1RNXVGZnpiK29tbUE9WiEiH///3WZvdU5OVk9NMzFweXRzcTZQMXFHeFV4elhJWT1lxN9sf8I+AmAFErUBCBQSsAEKHEU1bXlTcnA3endIYUcwSUx3R3A5T1JHOXIrbz0SJDU1NTkzZDM0LTUxNjMtNDI1NC04MjA0LTZmZWVhNGViMTgzMhgAIAAoADCalIOjojI4hKvXj/kwQISr14/5MEocdzNocTZVRjhzNEtQbHc3aURoOWZrZ045dHlFPVonIiX/////AAAACPZEa1FxeTJSL21yOHY5VlpYQ3BqS3c3RDJzeGM9ZWUS3KDCPgJgBRKvAQgPEqoBChxONHIydjdEK2l3RlR4dWFReUwyaHI3a2s3dUk9EiQ5ZTZiYTg3Ni1lYTI2LTRmMTctYTI1Yy00N2ZjNTA3MDgzZjIYACAAKAAwlpSDo6IyOPDwl9OMMEDw8JfTjDBKHHNoL1huREhvZmE2alMrcDdKUGNzQ3NkcnlzTT1aISIf//+8c3NJRTZUdDJ4cEluNjR4SWhHZ3M0YTVxUHNNPWWt0+Mhwj4CYAUStQEIHBKwAQocNWsvOXJpK0U0VGRaOEozR3UzaUxNVFRWNnJjPRIkMjM3MmFkZTQtMTU4Ni00NzdjLWI4MDAtNzUyNGY5MTU0OTkwGAAgACgAMJid1PjeMjjJodT43jJAyaHU+N4yShxGTXpQSGJvYzNDS1RxOEFoZ0k0a1I5enJiazg9WiciJf////8AAAASujBOVTQ4SW9kcGt0eUpVRHZLeUYxR2VJSjA4az1lDIEcMcI+AmAFErABCBESqwEKHEQ3NGR3Rm5OdFV3emNRWE5TMkVmY3d1M1pvVT0SJGFiMjJhYjJlLTA1ZGEtNGVhYS04ZTJhLTk3ZjJmNzIyZDQ5YRgAIAAoADC48OXG1TI41uHz8LEwQNbh8/CxMEocWUpjZlJDbzd4MjFqNUxZNXVIdXZhL2JjRWswPVoiIiD////0ZmgwQkJ0MlFNN09MZVRDTXdmK1Bmek5BQ24wPWXoIFskwj4CYAUSrQEIDRKoAQocR3k4U2VLNjB0ZHZ3OXhLMmlDbWlZSmJ4Z21ZPRIkODk1N2E1N2MtNzRlNy00OWIwLTk0YmQtYThhODczNTc0ZWMxGAAgACgAMJ6Ug6OiMjj+lZjTjDBA/pWY04wwShw2WGdtWHJTUXJoNzl6cG5mU2NYdFVtWllYUHM9Wh8iHe5INWUzVzM2SlpCUzVVc3NkY0dpUnIySnAvR289ZRkFrznCPgJgBRK0AQgTEq8BChw0TXVDZjh4cDVsQ0lic08rRGVjOWR4Z2M5VUk9EiQ4MjdiMDExOC1mNTIzLTQ3ZTctOTljNC05MzVmZjExNjJlNWUYACAAKAAwsczwkakyOKiZjf23MEComY39tzBKHHpqaXBLclo5bnYxNjB4dG4rWHM0ZVQ3L29BYz1aJiIk/////wAAAAQ3VUtyRmNhcmVmRk9HcktOSU5hb0lhekVHdVU9ZdkYTzfCPgJgBRKtAQgMEqgBChx4NDFwejNoSENGL1ltQWwyTkVMNFFXYkR6UmM9EiRkM2E4NTBiNy1iMGM5LTRjMDItOGYxNC0wNWY2NTI5OTNjMjAYACAAKAAwkNKT/NAyOJ3i6+6MMECd4uvujDBKHENCc3p6dUFmcDkrNzFuUGd0V01yOHhMOTVLMD1aHyId6U9KL2hLaFo5bmlRQ2F6K2xCNHZISmpGUXVVcz1lQmPjw8I+AmAFErQBCBUSrwEKHHpBN1IwNEtQc3JvTXJERnZ6Y3g1Zjd5Q1UzQT0SJGMzNTJmY2M1LWI3NjAtNDQxOS04MWNiLTEzNGRlNWEwMTE4OBgAIAAoADCLlIOjojI4raOnsvswQK2jp7L7MEocNEVUOG5NZDdvVkk2a3pGNVBWelU3Z0xwWGY0PVomIiT/////AAAACVl3amJ4dHJmT0ZibXJhRlhQZndsSHhUbHViTT1lZS1QMsI+AmAFEq0BCAgSqAEKHHJXUUVoM09HZW5tc3U5ZEwyYy9KTGZEYS9oVT0SJGMwNTY1N2MxLTY3N2MtNDc2Mi05Mjc3LTNjMGFkMzNlM2E1ZBgAIAAoADCclIOjojI4vofO8o4wQL6HzvKOMEocWFRYbS9oSlRyS2djUW5qRFVxK2MzR3RXYmI4PVofIh3KdVYrUSt4S1RpVlVqUUpucmF3OTBLNDhyLytjPWXzVZdZwj4CYAUSjgEIARKJAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkMDY1NWI1MDEtY2ZlYy01M2VmLWE5OGQtY2ZiYjBmY2JkZGZhGAAgACgAMI+r59uvMDjrwfPSjDBA68Hz0owwShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9WgBlAAAAAMI+AmAAEq0BCA4SqAEKHGFaUmZnQXgySHR3M2JsMmhsMjcreVFQK09vaz0SJDc0MzFiZDcwLWEyNjEtNDMzNS05YTk3LWMyMWY0MGUxYjkxMRgAIAAoADD7wu6AyjI4uqqa04wwQLqqmtOMMEocUzlQck1nMEl3VEFsWVUxbzl1WExRL2hXTjhzPVofIh33ZDN3RCtBaGY2Ym01RDNiSlRYMy9LeDF0YnlJPWXsIcrEwj4CYAUSrAEIBhKnAQocNG9tYU1TakphQTRmeHlqcDJ6ZEJFT2ZnanVjPRIkZGNiNWM3NzUtZDcxYS00MmI4LTljNTEtYmZhMzhhNzFhYjQxGAAgACgAMIyUg6OiMjiqmoOjojJAqpqDo6IyShxEUWVJbFBjb0N4L3AzSjVTbVdYanJjMnpBOW89Wh4iHHFieEFmRDFxZjdDZ3c0dEVhL24zbEppOGU3RT1lAAAAAMI+AmAAErABCBISqwEKHHpWMDNhUTh1bldNWmk3MVo0TzQ3emc2cTZ4UT0SJDgzYWU5MmZmLTY1YjAtNGUwZC1iNjRjLTViY2NlMDVlNDdhZRgAIAAoADChpYOjojI4tbzl8ZkwQLW85fGZMEocSXBadHVNQm91Zi9xc0lBckt6Tm9iN0l3SjdjPVoiIiD////5bFdWbWJXOFZJQVcrdHl5dTZab0ozc1hQK29zPWUyc+/1wj4CYAUSjgEIAxKJAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkYTliZWNjNTMtZTdkMy01MjU1LWE3YWMtNWYxMGQ1MzE5Y2Q0GAAgACgAMI+r59uvMDjowvPSjDBA6MLz0owwShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAAMI+AmAAEo4BCAISiQEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDcwNzZmM2FhLWYwMmUtNTM2MC1iOTFkLTc3MjIyYjllN2JjNRgAIAAoADCPq+fbrzA4+8Hz0owwQPvB89KMMEocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAADCPgJgADAAOAA=",
+   "version": 1
+}

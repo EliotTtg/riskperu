@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "149090537058",
+    "firebase_url": "https://riskperu-6d15a-default-rtdb.firebaseio.com",
+    "project_id": "riskperu-6d15a",
+    "storage_bucket": "riskperu-6d15a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149090537058:android:c8c8dc529f2bc5d16dcb3b",
+        "android_client_info": {
+          "package_name": "com.mycompany.kpacita"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDynEwQAQLj7WbHkiE5BD5bEfdd3cvMooA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149090537058:android:dfc7de6371535b4e6dcb3b",
+        "android_client_info": {
+          "package_name": "com.mycompany.riskPeru"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDynEwQAQLj7WbHkiE5BD5bEfdd3cvMooA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_data_table.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/certificate_view/certificate_view_widget.dart';
+import '/pages/empty_certificates/empty_certificates_widget.dart';
+import '/pages/footer/footer_widget.dart';
+import '/pages/header/header_widget.dart';
+import '/pages/navbar/navbar_widget.dart';
+import 'dart:ui';
+import 'certificates_widget.dart' show CertificatesWidget;
+import 'package:barcode_widget/barcode_widget.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:collection/collection.dart';
+import 'package:easy_debounce/easy_debounce.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'package:text_search/text_search.dart';
+
+class CertificatesModel extends FlutterFlowModel<CertificatesWidget> {
+  ///  Local state fields for this page.
+
+  List<String> codesCerticates = [];
+  void addToCodesCerticates(String item) => codesCerticates.add(item);
+  void removeFromCodesCerticates(String item) => codesCerticates.remove(item);
+  void removeAtIndexFromCodesCerticates(int index) =>
+      codesCerticates.removeAt(index);
+  void insertAtIndexInCodesCerticates(int index, String item) =>
+      codesCerticates.insert(index, item);
+  void updateCodesCerticatesAtIndex(int index, Function(String) updateFn) =>
+      codesCerticates[index] = updateFn(codesCerticates[index]);
+
+  ///  State fields for stateful widgets in this page.
+
+  // Model for Header component.
+  late HeaderModel headerModel;
+  // Model for Navbar component.
+  late NavbarModel navbarModel;
+  // State field(s) for TextField widget.
+  FocusNode? textFieldFocusNode;
+  TextEditingController? textController;
+  String? Function(BuildContext, String?)? textControllerValidator;
+  List<CertificatesRecord> simpleSearchResults = [];
+  // State field(s) for PaginatedDataTable widget.
+  final paginatedDataTableController =
+      FlutterFlowDataTableController<CertificatesRecord>();
+  // Stores action output result for [Firestore Query - Query a collection] action in IconButton widget.
+  CoursesRecord? refCourse;
+  // Stores action output result for [Firestore Query - Query a collection] action in IconButton widget.
+  UsersRecord? refUser;
+  // Model for Footer component.
+  late FooterModel footerModel;
+
+  @override
+  void initState(BuildContext context) {
+    headerModel = createModel(context, () => HeaderModel());
+    navbarModel = createModel(context, () => NavbarModel());
+    footerModel = createModel(context, () => FooterModel());
+  }
+
+  @override
+  void dispose() {
+    headerModel.dispose();
+    navbarModel.dispose();
+    textFieldFocusNode?.dispose();
+    textController?.dispose();
+
+    paginatedDataTableController.dispose();
+    footerModel.dispose();
+  }
+}
