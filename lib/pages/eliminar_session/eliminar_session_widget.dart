@@ -4,11 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/lista_sessions/lista_sessions_widget.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'eliminar_session_model.dart';
 export 'eliminar_session_model.dart';
 
@@ -41,7 +37,7 @@ class _EliminarSessionWidgetState extends State<EliminarSessionWidget> {
     _model = createModel(context, () => EliminarSessionModel());
 
     _model.textController ??=
-        TextEditingController(text: widget!.refSession?.name);
+        TextEditingController(text: widget.refSession?.name);
     _model.textFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -212,7 +208,7 @@ class _EliminarSessionWidgetState extends State<EliminarSessionWidget> {
                                         ...createActionsRecordData(
                                           uidUser: currentUserReference?.id,
                                           descripction:
-                                              'Elimino una Sesión llamada: ${widget!.refSession?.name}',
+                                              'Elimino una Sesión llamada: ${widget.refSession?.name}',
                                         ),
                                         ...mapToFirestore(
                                           {
@@ -226,7 +222,7 @@ class _EliminarSessionWidgetState extends State<EliminarSessionWidget> {
                                         ...createActionsRecordData(
                                           uidUser: currentUserReference?.id,
                                           descripction:
-                                              'Elimino una Sesión llamada: ${widget!.refSession?.name}',
+                                              'Elimino una Sesión llamada: ${widget.refSession?.name}',
                                         ),
                                         ...mapToFirestore(
                                           {
@@ -242,7 +238,7 @@ class _EliminarSessionWidgetState extends State<EliminarSessionWidget> {
                                                 .refActionCreate?.reference.id,
                                           ));
                                       firestoreBatch.delete(
-                                          widget!.refSession!.reference);
+                                          widget.refSession!.reference);
                                       Navigator.pop(context);
                                       await showDialog(
                                         context: context,
@@ -256,7 +252,7 @@ class _EliminarSessionWidgetState extends State<EliminarSessionWidget> {
                                                 .resolve(
                                                     Directionality.of(context)),
                                             child: ListaSessionsWidget(
-                                              refCourses: widget!.refCourse!,
+                                              refCourses: widget.refCourse!,
                                             ),
                                           );
                                         },
@@ -309,7 +305,7 @@ class _EliminarSessionWidgetState extends State<EliminarSessionWidget> {
                                               .resolve(
                                                   Directionality.of(context)),
                                           child: ListaSessionsWidget(
-                                            refCourses: widget!.refCourse!,
+                                            refCourses: widget.refCourse!,
                                           ),
                                         );
                                       },

@@ -4,11 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/lista_modules/lista_modules_widget.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'eliminar_modulo_model.dart';
 export 'eliminar_modulo_model.dart';
 
@@ -43,7 +39,7 @@ class _EliminarModuloWidgetState extends State<EliminarModuloWidget> {
     _model = createModel(context, () => EliminarModuloModel());
 
     _model.textController ??=
-        TextEditingController(text: widget!.refModule?.name);
+        TextEditingController(text: widget.refModule?.name);
     _model.textFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -214,7 +210,7 @@ class _EliminarModuloWidgetState extends State<EliminarModuloWidget> {
                                         ...createActionsRecordData(
                                           uidUser: currentUserReference?.id,
                                           descripction:
-                                              'Elimino un modulo llamado: ${widget!.refModule?.name}',
+                                              'Elimino un modulo llamado: ${widget.refModule?.name}',
                                         ),
                                         ...mapToFirestore(
                                           {
@@ -228,7 +224,7 @@ class _EliminarModuloWidgetState extends State<EliminarModuloWidget> {
                                         ...createActionsRecordData(
                                           uidUser: currentUserReference?.id,
                                           descripction:
-                                              'Elimino un modulo llamado: ${widget!.refModule?.name}',
+                                              'Elimino un modulo llamado: ${widget.refModule?.name}',
                                         ),
                                         ...mapToFirestore(
                                           {
@@ -244,7 +240,7 @@ class _EliminarModuloWidgetState extends State<EliminarModuloWidget> {
                                                 .refActionCreate?.reference.id,
                                           ));
                                       firestoreBatch
-                                          .delete(widget!.refModule!.reference);
+                                          .delete(widget.refModule!.reference);
                                       Navigator.pop(context);
                                       await showDialog(
                                         context: context,
@@ -258,8 +254,8 @@ class _EliminarModuloWidgetState extends State<EliminarModuloWidget> {
                                                 .resolve(
                                                     Directionality.of(context)),
                                             child: ListaModulesWidget(
-                                              refSession: widget!.refSession!,
-                                              refCourse: widget!.refCourse!,
+                                              refSession: widget.refSession!,
+                                              refCourse: widget.refCourse!,
                                             ),
                                           );
                                         },
@@ -312,8 +308,8 @@ class _EliminarModuloWidgetState extends State<EliminarModuloWidget> {
                                               .resolve(
                                                   Directionality.of(context)),
                                           child: ListaModulesWidget(
-                                            refSession: widget!.refSession!,
-                                            refCourse: widget!.refCourse!,
+                                            refSession: widget.refSession!,
+                                            refCourse: widget.refCourse!,
                                           ),
                                         );
                                       },

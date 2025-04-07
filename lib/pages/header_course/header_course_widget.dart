@@ -3,14 +3,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/share_course/share_course_widget.dart';
-import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'header_course_model.dart';
 export 'header_course_model.dart';
 
@@ -131,7 +128,7 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                           Flexible(
                             child: Text(
                               valueOrDefault<String>(
-                                widget!.nombreCurso,
+                                widget.nombreCurso,
                                 '-',
                               ),
                               maxLines: 1,
@@ -169,7 +166,7 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                                         percent:
                                             functions.calcularProgresoCurso(
                                                 valueOrDefault<double>(
-                                          widget!.proceso,
+                                          widget.proceso,
                                           0.0,
                                         )),
                                         radius: 17.5,
@@ -186,7 +183,7 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                                       FaIcon(
                                         FontAwesomeIcons.trophy,
                                         color: valueOrDefault<Color>(
-                                          widget!.proceso == 100.0
+                                          widget.proceso == 100.0
                                               ? FlutterFlowTheme.of(context)
                                                   .primary
                                               : FlutterFlowTheme.of(context)
@@ -225,7 +222,7 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                                     alignment: AlignmentDirectional(0.0, 0.0)
                                         .resolve(Directionality.of(context)),
                                     child: ShareCourseWidget(
-                                      urlPagina: widget!.urlPagina!,
+                                      urlPagina: widget.urlPagina!,
                                     ),
                                   );
                                 },

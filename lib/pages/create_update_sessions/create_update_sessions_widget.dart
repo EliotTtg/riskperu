@@ -4,12 +4,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/lista_sessions/lista_sessions_widget.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_update_sessions_model.dart';
 export 'create_update_sessions_model.dart';
 
@@ -44,7 +40,7 @@ class _CreateUpdateSessionsWidgetState
     _model = createModel(context, () => CreateUpdateSessionsModel());
 
     _model.textController ??=
-        TextEditingController(text: widget!.refSession?.name);
+        TextEditingController(text: widget.refSession?.name);
     _model.textFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -95,7 +91,7 @@ class _CreateUpdateSessionsWidgetState
                         children: [
                           Text(
                             valueOrDefault<String>(
-                              widget!.refSession != null
+                              widget.refSession != null
                                   ? 'Actualizar Sesión'
                                   : 'Agregar Sesión',
                               'Agregar Sesión',
@@ -218,7 +214,7 @@ class _CreateUpdateSessionsWidgetState
                                 child: Builder(
                                   builder: (context) => FFButtonWidget(
                                     onPressed: (_model.textController.text ==
-                                            widget!.refSession?.name)
+                                            widget.refSession?.name)
                                         ? null
                                         : () async {
                                             if (_model.formKey.currentState ==
@@ -227,8 +223,8 @@ class _CreateUpdateSessionsWidgetState
                                                     .validate()) {
                                               return;
                                             }
-                                            if (widget!.refSession != null) {
-                                              await widget!
+                                            if (widget.refSession != null) {
+                                              await widget
                                                   .refSession!.reference
                                                   .update(
                                                       createSessionRecordData(
@@ -245,7 +241,7 @@ class _CreateUpdateSessionsWidgetState
                                                       .textController.text,
                                                   createdBy:
                                                       currentUserReference?.id,
-                                                  uidCourse: widget!
+                                                  uidCourse: widget
                                                       .refCourse?.reference.id,
                                                 ),
                                                 ...mapToFirestore(
@@ -262,7 +258,7 @@ class _CreateUpdateSessionsWidgetState
                                                       .textController.text,
                                                   createdBy:
                                                       currentUserReference?.id,
-                                                  uidCourse: widget!
+                                                  uidCourse: widget
                                                       .refCourse?.reference.id,
                                                 ),
                                                 ...mapToFirestore(
@@ -298,7 +294,7 @@ class _CreateUpdateSessionsWidgetState
                                                                   context)),
                                                   child: ListaSessionsWidget(
                                                     refCourses:
-                                                        widget!.refCourse!,
+                                                        widget.refCourse!,
                                                   ),
                                                 );
                                               },
@@ -310,7 +306,7 @@ class _CreateUpdateSessionsWidgetState
                                             safeSetState(() {});
                                           },
                                     text: valueOrDefault<String>(
-                                      widget!.refSession != null
+                                      widget.refSession != null
                                           ? 'ACTUALIZAR'
                                           : 'AGREGAR',
                                       'AGREGAR',
@@ -361,7 +357,7 @@ class _CreateUpdateSessionsWidgetState
                                                 .resolve(
                                                     Directionality.of(context)),
                                             child: ListaSessionsWidget(
-                                              refCourses: widget!.refCourse!,
+                                              refCourses: widget.refCourse!,
                                             ),
                                           );
                                         },

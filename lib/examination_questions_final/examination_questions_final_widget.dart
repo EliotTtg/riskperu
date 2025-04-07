@@ -8,17 +8,13 @@ import '/pages/alerta_terminar_examen/alerta_terminar_examen_widget.dart';
 import '/pages/from_result_examination/from_result_examination_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
 import 'examination_questions_final_model.dart';
@@ -67,16 +63,16 @@ class _ExaminationQuestionsFinalWidgetState
       await Future.wait([
         Future(() async {
           _model.porcentajeCourse = await actions.porcentajeCourseLinea(
-            widget!.refCourse!,
-            widget!.refUser!,
-            widget!.isdemo!,
+            widget.refCourse!,
+            widget.refUser!,
+            widget.isdemo!,
           );
         }),
         Future(() async {
           _model.porcentajeExamenes = await actions.porcentajeCourseLinea(
-            widget!.refCourse!,
-            widget!.refUser!,
-            widget!.isdemo!,
+            widget.refCourse!,
+            widget.refUser!,
+            widget.isdemo!,
           );
         }),
       ]);
@@ -169,7 +165,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                           examGroupsRecord
                                                               .where(
                                                                 'uid_Course',
-                                                                isEqualTo: widget!
+                                                                isEqualTo: widget
                                                                     .refCourse
                                                                     ?.reference
                                                                     .id,
@@ -177,7 +173,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                               .where(
                                                                 'is_demo',
                                                                 isEqualTo:
-                                                                    widget!
+                                                                    widget
                                                                         .isdemo,
                                                               )
                                                               .orderBy(
@@ -296,7 +292,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                           Text(
                                                             valueOrDefault<
                                                                 String>(
-                                                              widget!.refCourse
+                                                              widget.refCourse
                                                                   ?.name,
                                                               '-',
                                                             ),
@@ -668,15 +664,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                 ParamType.Document,
                                                                                               ),
                                                                                               'refCourse': serializeParam(
-                                                                                                widget!.refCourse,
+                                                                                                widget.refCourse,
                                                                                                 ParamType.Document,
                                                                                               ),
                                                                                               'refUser': serializeParam(
-                                                                                                widget!.refUser,
+                                                                                                widget.refUser,
                                                                                                 ParamType.DocumentReference,
                                                                                               ),
                                                                                               'type': serializeParam(
-                                                                                                widget!.type,
+                                                                                                widget.type,
                                                                                                 ParamType.int,
                                                                                               ),
                                                                                               'isdemo': serializeParam(
@@ -686,7 +682,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             }.withoutNulls,
                                                                                             extra: <String, dynamic>{
                                                                                               'refExamination': listaexamenesItem,
-                                                                                              'refCourse': widget!.refCourse,
+                                                                                              'refCourse': widget.refCourse,
                                                                                               kTransitionInfoKey: TransitionInfo(
                                                                                                 hasTransition: true,
                                                                                                 transitionType: PageTransitionType.fade,
@@ -771,12 +767,12 @@ class _ExaminationQuestionsFinalWidgetState
                                                             preguntasRecord
                                                                 .where(
                                                                   'examen_ref',
-                                                                  isEqualTo: widget!
+                                                                  isEqualTo: widget
                                                                               .refExamination
                                                                               ?.reference
                                                                               .id !=
                                                                           ''
-                                                                      ? widget!
+                                                                      ? widget
                                                                           .refExamination
                                                                           ?.reference
                                                                           .id
@@ -884,9 +880,9 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                     builder: (context) => FlutterFlowTimer(
                                                                                       initialTime: valueOrDefault<int>(
                                                                                         functions.tiempoRestanteExamen(
-                                                                                            widget!.refResult!.fechaInicioExamen!,
+                                                                                            widget.refResult!.fechaInicioExamen!,
                                                                                             valueOrDefault<int>(
-                                                                                              widget!.refExamination?.tiempoLimite,
+                                                                                              widget.refExamination?.tiempoLimite,
                                                                                               0,
                                                                                             )),
                                                                                         0,
@@ -902,14 +898,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                       onEnded: () async {
                                                                                         _model.timerController.onStopTimer();
                                                                                         await actions.actualizarResultadoExamen(
-                                                                                          widget!.refResult!.reference.id,
+                                                                                          widget.refResult!.reference.id,
                                                                                         );
                                                                                         await actions.deleteRegister(
-                                                                                          widget!.refExamination!.reference.id,
-                                                                                          widget!.refUser!.id,
-                                                                                          widget!.refCourse!.reference.id,
+                                                                                          widget.refExamination!.reference.id,
+                                                                                          widget.refUser!.id,
+                                                                                          widget.refCourse!.reference.id,
                                                                                         );
-                                                                                        _model.resultadoFinalBienTime = await ResultadosRecord.getDocumentOnce(widget!.refResult!.reference);
+                                                                                        _model.resultadoFinalBienTime = await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
                                                                                         await showDialog(
                                                                                           context: context,
                                                                                           builder: (dialogContext) {
@@ -925,11 +921,11 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                 },
                                                                                                 child: FromResultExaminationWidget(
                                                                                                   refResult: _model.resultadoFinalBienTime!,
-                                                                                                  refUser: widget!.refUser!,
-                                                                                                  refExamen: widget!.refExamination!,
-                                                                                                  refCourse: widget!.refCourse!,
-                                                                                                  type: widget!.type!,
-                                                                                                  isdemo: widget!.isdemo!,
+                                                                                                  refUser: widget.refUser!,
+                                                                                                  refExamen: widget.refExamination!,
+                                                                                                  refCourse: widget.refCourse!,
+                                                                                                  type: widget.type!,
+                                                                                                  isdemo: widget.isdemo!,
                                                                                                 ),
                                                                                               ),
                                                                                             );
@@ -952,7 +948,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               ),
                                                                               LinearPercentIndicator(
                                                                                 percent: valueOrDefault<double>(
-                                                                                  (1 - (DateTime.now().difference(DateTime.parse(widget!.refResult!.fechaInicioExamen!.toString())).inMinutes.toDouble() / widget!.refExamination!.tiempoLimite)).clamp(0.0, 1.0),
+                                                                                  (1 - (DateTime.now().difference(DateTime.parse(widget.refResult!.fechaInicioExamen!.toString())).inMinutes.toDouble() / widget.refExamination!.tiempoLimite)).clamp(0.0, 1.0),
                                                                                   0.0,
                                                                                 ),
                                                                                 lineHeight: 5.0,
@@ -1011,11 +1007,11 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                       queryBuilder: (respuestaStateRecord) => respuestaStateRecord
                                                                                           .where(
                                                                                             'uis_user',
-                                                                                            isEqualTo: widget!.refUser?.id,
+                                                                                            isEqualTo: widget.refUser?.id,
                                                                                           )
                                                                                           .where(
                                                                                             'uid_examen',
-                                                                                            isEqualTo: widget!.refExamination?.reference.id,
+                                                                                            isEqualTo: widget.refExamination?.reference.id,
                                                                                           )
                                                                                           .where(
                                                                                             'uid_question',
@@ -1048,7 +1044,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             queryBuilder: (usersAnswersRecord) => usersAnswersRecord
                                                                                                 .where(
                                                                                                   'uid_user',
-                                                                                                  isEqualTo: widget!.refResult?.estudianteRef,
+                                                                                                  isEqualTo: widget.refResult?.estudianteRef,
                                                                                                 )
                                                                                                 .where(
                                                                                                   'uid_pregunta',
@@ -1375,11 +1371,11 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                     queryBuilder: (respuestaStateRecord) => respuestaStateRecord
                                                                                         .where(
                                                                                           'uis_user',
-                                                                                          isEqualTo: widget!.refUser?.id,
+                                                                                          isEqualTo: widget.refUser?.id,
                                                                                         )
                                                                                         .where(
                                                                                           'uid_examen',
-                                                                                          isEqualTo: widget!.refExamination?.reference.id,
+                                                                                          isEqualTo: widget.refExamination?.reference.id,
                                                                                         )
                                                                                         .where(
                                                                                           'uid_question',
@@ -1500,7 +1496,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                             queryBuilder: (usersAnswersRecord) => usersAnswersRecord
                                                                                                                                 .where(
                                                                                                                                   'uid_user',
-                                                                                                                                  isEqualTo: widget!.refResult?.estudianteRef,
+                                                                                                                                  isEqualTo: widget.refResult?.estudianteRef,
                                                                                                                                 )
                                                                                                                                 .where(
                                                                                                                                   'uid_pregunta',
@@ -1512,7 +1508,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                 )
                                                                                                                                 .where(
                                                                                                                                   'uid_examen',
-                                                                                                                                  isEqualTo: widget!.refExamination?.reference.id,
+                                                                                                                                  isEqualTo: widget.refExamination?.reference.id,
                                                                                                                                 ),
                                                                                                                             singleRecord: true,
                                                                                                                           ),
@@ -1541,21 +1537,21 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                               highlightColor: Colors.transparent,
                                                                                                                               onTap: () async {
                                                                                                                                 if (containerUsersAnswersRecord != null) {
-                                                                                                                                  await containerUsersAnswersRecord!.reference.delete();
+                                                                                                                                  await containerUsersAnswersRecord.reference.delete();
                                                                                                                                 } else {
                                                                                                                                   var usersAnswersRecordReference = UsersAnswersRecord.collection.doc();
                                                                                                                                   await usersAnswersRecordReference.set(createUsersAnswersRecordData(
-                                                                                                                                    uidUser: widget!.refResult?.estudianteRef,
+                                                                                                                                    uidUser: widget.refResult?.estudianteRef,
                                                                                                                                     uidPregunta: containerPreguntasRecord?.reference.id,
                                                                                                                                     respuestaUid: listaRespuesta2Item.reference.id,
-                                                                                                                                    uidExamen: widget!.refExamination?.reference.id,
+                                                                                                                                    uidExamen: widget.refExamination?.reference.id,
                                                                                                                                   ));
                                                                                                                                   _model.refRespuestaCrear = UsersAnswersRecord.getDocumentFromData(
                                                                                                                                       createUsersAnswersRecordData(
-                                                                                                                                        uidUser: widget!.refResult?.estudianteRef,
+                                                                                                                                        uidUser: widget.refResult?.estudianteRef,
                                                                                                                                         uidPregunta: containerPreguntasRecord?.reference.id,
                                                                                                                                         respuestaUid: listaRespuesta2Item.reference.id,
-                                                                                                                                        uidExamen: widget!.refExamination?.reference.id,
+                                                                                                                                        uidExamen: widget.refExamination?.reference.id,
                                                                                                                                       ),
                                                                                                                                       usersAnswersRecordReference);
 
@@ -1671,7 +1667,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                 queryBuilder: (usersAnswersRecord) => usersAnswersRecord
                                                                                                                                     .where(
                                                                                                                                       'uid_user',
-                                                                                                                                      isEqualTo: widget!.refResult?.estudianteRef,
+                                                                                                                                      isEqualTo: widget.refResult?.estudianteRef,
                                                                                                                                     )
                                                                                                                                     .where(
                                                                                                                                       'uid_pregunta',
@@ -1828,7 +1824,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                   queryBuilder: (usersAnswersRecord) => usersAnswersRecord
                                                                                                                                       .where(
                                                                                                                                         'uid_user',
-                                                                                                                                        isEqualTo: widget!.refResult?.estudianteRef,
+                                                                                                                                        isEqualTo: widget.refResult?.estudianteRef,
                                                                                                                                       )
                                                                                                                                       .where(
                                                                                                                                         'uid_pregunta',
@@ -1998,23 +1994,21 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           child:
                                                                               StreamBuilder<List<RespuestaStateRecord>>(
                                                                             stream:
-                                                                                FFAppState().respuestaState(
-                                                                              requestFn: () => queryRespuestaStateRecord(
-                                                                                queryBuilder: (respuestaStateRecord) => respuestaStateRecord
-                                                                                    .where(
-                                                                                      'uis_user',
-                                                                                      isEqualTo: widget!.refUser?.id,
-                                                                                    )
-                                                                                    .where(
-                                                                                      'uid_examen',
-                                                                                      isEqualTo: widget!.refExamination?.reference.id,
-                                                                                    )
-                                                                                    .where(
-                                                                                      'uid_question',
-                                                                                      isEqualTo: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                    ),
-                                                                                singleRecord: true,
-                                                                              ),
+                                                                                queryRespuestaStateRecord(
+                                                                              queryBuilder: (respuestaStateRecord) => respuestaStateRecord
+                                                                                  .where(
+                                                                                    'uis_user',
+                                                                                    isEqualTo: widget.refUser?.id,
+                                                                                  )
+                                                                                  .where(
+                                                                                    'uid_examen',
+                                                                                    isEqualTo: widget.refExamination?.reference.id,
+                                                                                  )
+                                                                                  .where(
+                                                                                    'uid_question',
+                                                                                    isEqualTo: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                                  ),
+                                                                              singleRecord: true,
                                                                             ),
                                                                             builder:
                                                                                 (context, snapshot) {
@@ -2048,14 +2042,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                               var respuestaStateRecordReference = RespuestaStateRecord.collection.doc();
                                                                                               await respuestaStateRecordReference.set(createRespuestaStateRecordData(
                                                                                                 uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                                uisUser: widget!.refUser?.id,
-                                                                                                uidExamen: widget!.refExamination?.reference.id,
+                                                                                                uisUser: widget.refUser?.id,
+                                                                                                uidExamen: widget.refExamination?.reference.id,
                                                                                               ));
                                                                                               _model.refStateQuestion = RespuestaStateRecord.getDocumentFromData(
                                                                                                   createRespuestaStateRecordData(
                                                                                                     uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                                    uisUser: widget!.refUser?.id,
-                                                                                                    uidExamen: widget!.refExamination?.reference.id,
+                                                                                                    uisUser: widget.refUser?.id,
+                                                                                                    uidExamen: widget.refExamination?.reference.id,
                                                                                                   ),
                                                                                                   respuestaStateRecordReference);
 
@@ -2162,20 +2156,20 @@ class _ExaminationQuestionsFinalWidgetState
                                                                             onPressed:
                                                                                 () async {
                                                                               _model.estadoExamen = await actions.verificarPreguntasRespondidas(
-                                                                                widget!.refResult!.estudianteRef,
-                                                                                widget!.refExamination!.reference.id,
+                                                                                widget.refResult!.estudianteRef,
+                                                                                widget.refExamination!.reference.id,
                                                                               );
                                                                               if (_model.estadoExamen!) {
                                                                                 _model.timerController.onStopTimer();
                                                                                 await actions.actualizarResultadoExamen(
-                                                                                  widget!.refResult!.reference.id,
+                                                                                  widget.refResult!.reference.id,
                                                                                 );
                                                                                 await actions.deleteRegister(
-                                                                                  widget!.refExamination!.reference.id,
-                                                                                  widget!.refUser!.id,
-                                                                                  widget!.refCourse!.reference.id,
+                                                                                  widget.refExamination!.reference.id,
+                                                                                  widget.refUser!.id,
+                                                                                  widget.refCourse!.reference.id,
                                                                                 );
-                                                                                _model.resultadoFinalBien = await ResultadosRecord.getDocumentOnce(widget!.refResult!.reference);
+                                                                                _model.resultadoFinalBien = await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
                                                                                 await showDialog(
                                                                                   context: context,
                                                                                   builder: (dialogContext) {
@@ -2191,11 +2185,11 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                         },
                                                                                         child: FromResultExaminationWidget(
                                                                                           refResult: _model.resultadoFinalBien!,
-                                                                                          refUser: widget!.refUser!,
-                                                                                          refExamen: widget!.refExamination!,
-                                                                                          refCourse: widget!.refCourse!,
-                                                                                          type: widget!.type!,
-                                                                                          isdemo: widget!.isdemo!,
+                                                                                          refUser: widget.refUser!,
+                                                                                          refExamen: widget.refExamination!,
+                                                                                          refCourse: widget.refCourse!,
+                                                                                          type: widget.type!,
+                                                                                          isdemo: widget.isdemo!,
                                                                                         ),
                                                                                       ),
                                                                                     );
@@ -2226,14 +2220,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                   FFAppState().stateConfirmation = false;
                                                                                   safeSetState(() {});
                                                                                   await actions.actualizarResultadoExamen(
-                                                                                    widget!.refResult!.reference.id,
+                                                                                    widget.refResult!.reference.id,
                                                                                   );
                                                                                   await actions.deleteRegister(
-                                                                                    widget!.refExamination!.reference.id,
-                                                                                    widget!.refUser!.id,
-                                                                                    widget!.refCourse!.reference.id,
+                                                                                    widget.refExamination!.reference.id,
+                                                                                    widget.refUser!.id,
+                                                                                    widget.refCourse!.reference.id,
                                                                                   );
-                                                                                  _model.resultadoFinalBien2 = await ResultadosRecord.getDocumentOnce(widget!.refResult!.reference);
+                                                                                  _model.resultadoFinalBien2 = await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
                                                                                   await showDialog(
                                                                                     context: context,
                                                                                     builder: (dialogContext) {
@@ -2249,11 +2243,11 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                           },
                                                                                           child: FromResultExaminationWidget(
                                                                                             refResult: _model.resultadoFinalBien2!,
-                                                                                            refUser: widget!.refUser!,
-                                                                                            refExamen: widget!.refExamination!,
-                                                                                            refCourse: widget!.refCourse!,
-                                                                                            type: widget!.type!,
-                                                                                            isdemo: widget!.isdemo!,
+                                                                                            refUser: widget.refUser!,
+                                                                                            refExamen: widget.refExamination!,
+                                                                                            refCourse: widget.refCourse!,
+                                                                                            type: widget.type!,
+                                                                                            isdemo: widget.isdemo!,
                                                                                           ),
                                                                                         ),
                                                                                       );

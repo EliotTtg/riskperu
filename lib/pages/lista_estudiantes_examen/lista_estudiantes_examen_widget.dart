@@ -9,13 +9,9 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/pages/cbo_estado/cbo_estado_widget.dart';
 import '/pages/empty_students/empty_students_widget.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lista_estudiantes_examen_model.dart';
 export 'lista_estudiantes_examen_model.dart';
 
@@ -48,11 +44,11 @@ class _ListaEstudiantesExamenWidgetState
     _model = createModel(context, () => ListaEstudiantesExamenModel());
 
     _model.txttituloTextController ??=
-        TextEditingController(text: widget!.refExamen?.nombre);
+        TextEditingController(text: widget.refExamen?.nombre);
     _model.txttituloFocusNode ??= FocusNode();
 
     _model.txttiempolimiteTextController ??= TextEditingController(
-        text: widget!.refExamen?.tiempoLimite?.toString());
+        text: widget.refExamen?.tiempoLimite.toString());
     _model.txttiempolimiteFocusNode ??= FocusNode();
 
     _model.txtencargadoTextController ??= TextEditingController();
@@ -487,10 +483,10 @@ class _ListaEstudiantesExamenWidgetState
                                         resultadosRecord
                                             .where(
                                               'examen_ref',
-                                              isEqualTo: widget!.refExamen
+                                              isEqualTo: widget.refExamen
                                                           ?.reference.id !=
                                                       ''
-                                                  ? widget!
+                                                  ? widget
                                                       .refExamen?.reference.id
                                                   : null,
                                             )
@@ -742,7 +738,7 @@ class _ListaEstudiantesExamenWidgetState
                                                                     .refUser
                                                                     ?.reference
                                                                     .id,
-                                                            examenRef: widget!
+                                                            examenRef: widget
                                                                 .refExamen
                                                                 ?.reference
                                                                 .id,
@@ -758,7 +754,7 @@ class _ListaEstudiantesExamenWidgetState
                                                                         .refUser
                                                                         ?.reference
                                                                         .id,
-                                                                    examenRef: widget!
+                                                                    examenRef: widget
                                                                         .refExamen
                                                                         ?.reference
                                                                         .id,
@@ -1015,7 +1011,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               selected,
                                                               onSelectChanged) =>
                                                           DataRow(
-                                                    color: MaterialStateProperty
+                                                    color: WidgetStateProperty
                                                         .all(
                                                       listaResultadosIndex %
                                                                   2 ==

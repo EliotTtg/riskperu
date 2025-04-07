@@ -11,17 +11,12 @@ import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/upload_data.dart';
 import '/pages/empty_methodologys/empty_methodologys_widget.dart';
 import '/pages/empty_pre_requisites/empty_pre_requisites_widget.dart';
-import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_update_courses_model.dart';
 export 'create_update_courses_model.dart';
 
@@ -58,46 +53,46 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
 
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      if (widget!.refCourses != null) {
-        _model.managers = widget!.refCourses?.uidTechear;
-        _model.categoryCourse = widget!.refCourses?.uidCategoryCourses;
-        _model.imageCertificate = widget!.refCourses?.certificate;
-        _model.language = widget!.refCourses?.language;
-        _model.benefits = widget!.refCourses!.benefits.toList().cast<String>();
+      if (widget.refCourses != null) {
+        _model.managers = widget.refCourses?.uidTechear;
+        _model.categoryCourse = widget.refCourses?.uidCategoryCourses;
+        _model.imageCertificate = widget.refCourses?.certificate;
+        _model.language = widget.refCourses?.language;
+        _model.benefits = widget.refCourses!.benefits.toList().cast<String>();
         _model.prerequsites =
-            widget!.refCourses!.preRequisites.toList().cast<String>();
-        _model.photo = widget!.refCourses?.imageCourse;
-        _model.state = widget!.refCourses?.state;
+            widget.refCourses!.preRequisites.toList().cast<String>();
+        _model.photo = widget.refCourses?.imageCourse;
+        _model.state = widget.refCourses?.state;
         _model.updatePage(() {});
         safeSetState(() {
-          _model.cbostateValueController?.value = widget!.refCourses!.state;
+          _model.cbostateValueController?.value = widget.refCourses!.state;
         });
       }
       await Future.delayed(const Duration(milliseconds: 1000));
     });
 
     _model.txtnombrecursoTextController ??=
-        TextEditingController(text: widget!.refCourses?.name);
+        TextEditingController(text: widget.refCourses?.name);
     _model.txtnombrecursoFocusNode ??= FocusNode();
 
     _model.txtintroduccionTextController ??=
-        TextEditingController(text: widget!.refCourses?.introduction);
+        TextEditingController(text: widget.refCourses?.introduction);
     _model.txtintroduccionFocusNode ??= FocusNode();
 
     _model.txtPriceTextController ??=
-        TextEditingController(text: widget!.refCourses?.price);
+        TextEditingController(text: widget.refCourses?.price);
     _model.txtPriceFocusNode ??= FocusNode();
 
     _model.txthorasTextController ??=
-        TextEditingController(text: widget!.refCourses?.hours);
+        TextEditingController(text: widget.refCourses?.hours);
     _model.txthorasFocusNode ??= FocusNode();
 
     _model.txtdescripcionTextController ??=
-        TextEditingController(text: widget!.refCourses?.description);
+        TextEditingController(text: widget.refCourses?.description);
     _model.txtdescripcionFocusNode ??= FocusNode();
 
     _model.txtobjetivoTextController ??=
-        TextEditingController(text: widget!.refCourses?.goals);
+        TextEditingController(text: widget.refCourses?.goals);
     _model.txtobjetivoFocusNode ??= FocusNode();
 
     _model.txtmethodologysTextController ??= TextEditingController();
@@ -107,7 +102,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
     _model.txtrequisitesFocusNode ??= FocusNode();
 
     _model.txturlvideoTextController ??=
-        TextEditingController(text: widget!.refCourses?.videoPreview);
+        TextEditingController(text: widget.refCourses?.videoPreview);
     _model.txturlvideoFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -169,11 +164,11 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                 children: [
                                   Text(
                                     valueOrDefault<String>(
-                                      widget!.refCourses != null
-                                          ? (widget!.type == 1
+                                      widget.refCourses != null
+                                          ? (widget.type == 1
                                               ? 'Actualizar Curso'
                                               : 'Actualizar Simulador')
-                                          : (widget!.type == 1
+                                          : (widget.type == 1
                                               ? 'Crear Curso'
                                               : 'Crear Simulador'),
                                       'Crear Curso',
@@ -227,7 +222,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                             ),
                                             TextSpan(
                                               text: valueOrDefault<String>(
-                                                widget!.type == 1
+                                                widget.type == 1
                                                     ? 'curso'
                                                     : 'simulador',
                                                 'curso',
@@ -254,18 +249,14 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                         onTap: () async {
                                           if (((_model.photo != null &&
                                                       _model.photo != '') &&
-                                                  (_model.uploadedLocalFile1 !=
-                                                          null &&
-                                                      (_model
+                                                  ((_model
                                                               .uploadedLocalFile1
                                                               .bytes
                                                               ?.isNotEmpty ??
                                                           false))) ||
                                               ((_model.photo == null ||
                                                       _model.photo == '') &&
-                                                  (_model.uploadedLocalFile1 !=
-                                                          null &&
-                                                      (_model
+                                                  ((_model
                                                               .uploadedLocalFile1
                                                               .bytes
                                                               ?.isNotEmpty ??
@@ -335,18 +326,14 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                           builder: (context) {
                                             if (((_model.photo != null &&
                                                         _model.photo != '') &&
-                                                    (_model.uploadedLocalFile1 !=
-                                                            null &&
-                                                        (_model
+                                                    ((_model
                                                                 .uploadedLocalFile1
                                                                 .bytes
                                                                 ?.isNotEmpty ??
                                                             false))) ||
                                                 ((_model.photo == null ||
                                                         _model.photo == '') &&
-                                                    (_model.uploadedLocalFile1 !=
-                                                            null &&
-                                                        (_model
+                                                    ((_model
                                                                 .uploadedLocalFile1
                                                                 .bytes
                                                                 ?.isNotEmpty ??
@@ -463,7 +450,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                   TextSpan(
                                                     text:
                                                         valueOrDefault<String>(
-                                                      widget!.type == 1
+                                                      widget.type == 1
                                                           ? 'curso'
                                                           : 'simulador',
                                                       'curso',
@@ -616,7 +603,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                             ),
                                             TextSpan(
                                               text: valueOrDefault<String>(
-                                                widget!.type == 1
+                                                widget.type == 1
                                                     ? 'curso'
                                                     : 'simulador',
                                                 'curso',
@@ -795,7 +782,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       FormFieldController<
                                                           String>(
                                                     _model.cbocategoriaValue ??=
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.uidCategoryCourses,
                                                   ),
                                                   options: List<String>.from(
@@ -1958,9 +1945,6 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       onPressed: () async {
                                                         if (_model.txtmethodologysTextController
                                                                     .text !=
-                                                                null &&
-                                                            _model.txtmethodologysTextController
-                                                                    .text !=
                                                                 '') {
                                                           _model.addToBenefits(
                                                               _model
@@ -2303,9 +2287,6 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       onPressed: () async {
                                                         if (_model.txtrequisitesTextController
                                                                     .text !=
-                                                                null &&
-                                                            _model.txtrequisitesTextController
-                                                                    .text !=
                                                                 '') {
                                                           _model.addToPrerequsites(
                                                               _model
@@ -2510,7 +2491,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                             ),
                                             TextSpan(
                                               text: valueOrDefault<String>(
-                                                widget!.type == 1
+                                                widget.type == 1
                                                     ? 'curso'
                                                     : 'simulador',
                                                 'curso',
@@ -2739,41 +2720,40 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                       ),
                                       FFButtonWidget(
                                         onPressed: ((_model.categoryCourse ==
-                                                    widget!.refCourses
+                                                    widget.refCourses
                                                         ?.uidCategoryCourses) &&
                                                 (_model.language ==
-                                                    widget!.refCourses
+                                                    widget.refCourses
                                                         ?.language) &&
                                                 (_model.txtnombrecursoTextController.text ==
-                                                    widget!.refCourses?.name) &&
+                                                    widget.refCourses?.name) &&
                                                 (_model.txtintroduccionTextController.text ==
-                                                    widget!.refCourses
+                                                    widget.refCourses
                                                         ?.introduction) &&
                                                 (_model.txthorasTextController.text ==
-                                                    widget!
+                                                    widget
                                                         .refCourses?.hours) &&
                                                 (_model.txtdescripcionTextController.text ==
-                                                    widget!.refCourses
+                                                    widget.refCourses
                                                         ?.description) &&
                                                 (_model.txtPriceTextController.text ==
-                                                    widget!
+                                                    widget
                                                         .refCourses?.price) &&
                                                 (_model.txtobjetivoTextController.text ==
-                                                    widget!
+                                                    widget
                                                         .refCourses?.goals) &&
                                                 (_model.txturlvideoTextController.text ==
-                                                    widget!.refCourses
+                                                    widget.refCourses
                                                         ?.videoPreview) &&
                                                 (_model.managers ==
-                                                    widget!.refCourses
+                                                    widget.refCourses
                                                         ?.uidTechear) &&
                                                 !(((_model.photo == null || _model.photo == '') &&
-                                                        (_model.uploadedLocalFile1 != null &&
-                                                            (_model.uploadedLocalFile1.bytes?.isNotEmpty ??
+                                                        ((_model.uploadedLocalFile1.bytes?.isNotEmpty ??
                                                                 false))) ||
                                                     ((_model.photo != null && _model.photo != '') &&
-                                                        (_model.uploadedLocalFile1 != null && (_model.uploadedLocalFile1.bytes?.isNotEmpty ?? false)))) &&
-                                                (_model.state == widget!.refCourses?.state))
+                                                        ((_model.uploadedLocalFile1.bytes?.isNotEmpty ?? false)))) &&
+                                                (_model.state == widget.refCourses?.state))
                                             ? null
                                             : () async {
                                                 if (_model.formKey
@@ -2785,47 +2765,45 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                   return;
                                                 }
                                                 if (!((_model.categoryCourse ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.uidCategoryCourses) &&
                                                     (_model.language ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.language) &&
                                                     (_model.txtnombrecursoTextController.text ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.name) &&
                                                     (_model.txtintroduccionTextController.text ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.introduction) &&
                                                     (_model.txthorasTextController.text ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.hours) &&
                                                     (_model.txtdescripcionTextController.text ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.description) &&
                                                     (_model.txtPriceTextController.text ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.price) &&
                                                     (_model.txtobjetivoTextController
                                                             .text ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.goals) &&
                                                     (_model.txturlvideoTextController
                                                             .text ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.videoPreview) &&
                                                     !(_model
                                                         .benefits.isNotEmpty) &&
                                                     !(_model.prerequsites
                                                         .isNotEmpty) &&
                                                     (_model.managers ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.uidTechear) &&
                                                     (_model.state ==
-                                                        widget!.refCourses
+                                                        widget.refCourses
                                                             ?.state))) {
-                                                  if (_model.uploadedLocalFile1 !=
-                                                          null &&
-                                                      (_model
+                                                  if ((_model
                                                               .uploadedLocalFile1
                                                               .bytes
                                                               ?.isNotEmpty ??
@@ -2904,9 +2882,9 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                         _model.uploadedFileUrl2;
                                                     safeSetState(() {});
                                                   }
-                                                  if (widget!.refCourses !=
+                                                  if (widget.refCourses !=
                                                       null) {
-                                                    await widget!
+                                                    await widget
                                                         .refCourses!.reference
                                                         .update({
                                                       ...createCoursesRecordData(
@@ -3035,9 +3013,9 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                             getCurrentTimestamp,
                                                         certificate: _model
                                                             .imageCertificate,
-                                                        set: widget!.set,
+                                                        set: widget.set,
                                                         courseType:
-                                                            widget!.type,
+                                                            widget.type,
                                                         language:
                                                             _model.language,
                                                         uidTechear:
@@ -3093,9 +3071,9 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                             getCurrentTimestamp,
                                                         certificate: _model
                                                             .imageCertificate,
-                                                        set: widget!.set,
+                                                        set: widget.set,
                                                         courseType:
-                                                            widget!.type,
+                                                            widget.type,
                                                         language:
                                                             _model.language,
                                                         uidTechear:
@@ -3187,11 +3165,11 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 safeSetState(() {});
                                               },
                                         text: valueOrDefault<String>(
-                                          widget!.refCourses != null
-                                              ? (widget!.type == 1
+                                          widget.refCourses != null
+                                              ? (widget.type == 1
                                                   ? 'Actualizar Curso'
                                                   : 'Actualizar Simulador')
-                                              : (widget!.type == 1
+                                              : (widget.type == 1
                                                   ? 'Crear Curso'
                                                   : 'Crear Simulador'),
                                           'Crear Curso',
@@ -3226,11 +3204,11 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                   .secondaryBackground,
                                         ),
                                       ),
-                                      if (widget!.refCourses != null)
+                                      if (widget.refCourses != null)
                                         FFButtonWidget(
                                           onPressed: () async {
                                             Navigator.pop(context);
-                                            await widget!.refCourses!.reference
+                                            await widget.refCourses!.reference
                                                 .delete();
                                             await Future.delayed(const Duration(
                                                 milliseconds: 1000));

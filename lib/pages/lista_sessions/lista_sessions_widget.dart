@@ -8,10 +8,7 @@ import '/pages/create_update_sessions/create_update_sessions_widget.dart';
 import '/pages/eliminar_session/eliminar_session_widget.dart';
 import '/pages/empty_modules/empty_modules_widget.dart';
 import '/pages/lista_modules/lista_modules_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lista_sessions_model.dart';
 export 'lista_sessions_model.dart';
 
@@ -155,7 +152,7 @@ class _ListaSessionsWidgetState extends State<ListaSessionsWidget> {
                                                       child:
                                                           CreateUpdateSessionsWidget(
                                                         refCourse:
-                                                            widget!.refCourses!,
+                                                            widget.refCourses!,
                                                       ),
                                                     );
                                                   },
@@ -209,10 +206,10 @@ class _ListaSessionsWidgetState extends State<ListaSessionsWidget> {
                                             sessionRecord
                                                 .where(
                                                   'uid_Course',
-                                                  isEqualTo: widget!.refCourses
+                                                  isEqualTo: widget.refCourses
                                                               ?.reference.id !=
                                                           ''
-                                                      ? widget!.refCourses
+                                                      ? widget.refCourses
                                                           ?.reference.id
                                                       : null,
                                                 )
@@ -324,7 +321,7 @@ class _ListaSessionsWidgetState extends State<ListaSessionsWidget> {
                                                             onSelectChanged) =>
                                                         DataRow(
                                                   color:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     listaSessionesIndex % 2 == 0
                                                         ? Color(0xFFF6F6F6)
                                                         : Colors.white,
@@ -393,7 +390,7 @@ class _ListaSessionsWidgetState extends State<ListaSessionsWidget> {
                                                                     child:
                                                                         CreateUpdateSessionsWidget(
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourses!,
                                                                       refSession:
                                                                           listaSessionesItem,
@@ -450,7 +447,7 @@ class _ListaSessionsWidgetState extends State<ListaSessionsWidget> {
                                                                       refSession:
                                                                           listaSessionesItem,
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourses!,
                                                                     ),
                                                                   );
@@ -507,7 +504,7 @@ class _ListaSessionsWidgetState extends State<ListaSessionsWidget> {
                                                                       refSession:
                                                                           listaSessionesItem,
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourses!,
                                                                     ),
                                                                   );

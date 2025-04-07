@@ -5,12 +5,8 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/crear_update_anuncio/crear_update_anuncio_widget.dart';
 import '/pages/lista_anuncios/lista_anuncios_widget.dart';
 import '/pages/lista_sessions/lista_sessions_widget.dart';
-import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'mostar_eleccion_curso_model.dart';
 export 'mostar_eleccion_curso_model.dart';
 
@@ -151,10 +147,10 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                                   announcementsCoursesRecord
                                                       .where(
                                             'uid_Course',
-                                            isEqualTo: widget!.refCurse
+                                            isEqualTo: widget.refCurse
                                                         ?.reference.id !=
                                                     ''
-                                                ? widget!.refCurse?.reference.id
+                                                ? widget.refCurse?.reference.id
                                                 : null,
                                           ),
                                         ),
@@ -208,7 +204,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                                       child:
                                                           ListaAnunciosWidget(
                                                         refCourse:
-                                                            widget!.refCurse!,
+                                                            widget.refCurse!,
                                                       ),
                                                     );
                                                   },
@@ -232,7 +228,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                                       child:
                                                           CrearUpdateAnuncioWidget(
                                                         refCourse:
-                                                            widget!.refCurse!,
+                                                            widget.refCurse!,
                                                       ),
                                                     );
                                                   },
@@ -248,7 +244,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                               height: 300.0,
                                               decoration: BoxDecoration(
                                                 color: valueOrDefault<Color>(
-                                                  _model.mouseRegionHovered1!
+                                                  _model.mouseRegionHovered1
                                                       ? FlutterFlowTheme.of(
                                                               context)
                                                           .success
@@ -269,7 +265,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                                     BorderRadius.circular(8.0),
                                                 border: Border.all(
                                                   color: valueOrDefault<Color>(
-                                                    _model.mouseRegionHovered1!
+                                                    _model.mouseRegionHovered1
                                                         ? FlutterFlowTheme.of(
                                                                 context)
                                                             .secondaryText
@@ -336,7 +332,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                                     .resolve(Directionality.of(
                                                         context)),
                                                 child: ListaSessionsWidget(
-                                                  refCourses: widget!.refCurse!,
+                                                  refCourses: widget.refCurse!,
                                                 ),
                                               );
                                             },
@@ -350,7 +346,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                           height: 300.0,
                                           decoration: BoxDecoration(
                                             color: valueOrDefault<Color>(
-                                              _model.mouseRegionHovered2!
+                                              _model.mouseRegionHovered2
                                                   ? FlutterFlowTheme.of(context)
                                                       .success
                                                   : FlutterFlowTheme.of(context)
@@ -368,7 +364,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                                 BorderRadius.circular(8.0),
                                             border: Border.all(
                                               color: valueOrDefault<Color>(
-                                                _model.mouseRegionHovered2!
+                                                _model.mouseRegionHovered2
                                                     ? FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryText

@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'flutter_flow/request_manager.dart';
 import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
-import '/backend/api_requests/api_manager.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
   static FFAppState _instance = FFAppState._internal();
@@ -125,20 +121,4 @@ class FFAppState extends ChangeNotifier {
   void clearUsersAnswersCache() => _usersAnswersManager.clear();
   void clearUsersAnswersCacheKey(String? uniqueKey) =>
       _usersAnswersManager.clearRequest(uniqueKey);
-
-  final _respuestaStateManager =
-      StreamRequestManager<List<RespuestaStateRecord>>();
-  Stream<List<RespuestaStateRecord>> respuestaState({
-    String? uniqueQueryKey,
-    bool? overrideCache,
-    required Stream<List<RespuestaStateRecord>> Function() requestFn,
-  }) =>
-      _respuestaStateManager.performRequest(
-        uniqueQueryKey: uniqueQueryKey,
-        overrideCache: overrideCache,
-        requestFn: requestFn,
-      );
-  void clearRespuestaStateCache() => _respuestaStateManager.clear();
-  void clearRespuestaStateCacheKey(String? uniqueKey) =>
-      _respuestaStateManager.clearRequest(uniqueKey);
 }

@@ -1,12 +1,8 @@
-import '/auth/base_auth_user_provider.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'navbar_model.dart';
 export 'navbar_model.dart';
 
@@ -119,7 +115,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                       },
                       child: Builder(
                         builder: (context) {
-                          if (widget!.state == 2) {
+                          if (widget.state == 2) {
                             return Container(
                               width: double.infinity,
                               height: 45.0,
@@ -202,7 +198,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                           },
                           child: Builder(
                             builder: (context) {
-                              if (widget!.state == 1) {
+                              if (widget.state == 1) {
                                 return Container(
                                   width: double.infinity,
                                   height: 45.0,
@@ -283,7 +279,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                           },
                           child: Builder(
                             builder: (context) {
-                              if (widget!.state == 1) {
+                              if (widget.state == 1) {
                                 return Container(
                                   width: double.infinity,
                                   height: 45.0,
@@ -360,7 +356,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                         },
                         child: Builder(
                           builder: (context) {
-                            if (widget!.state == 3) {
+                            if (widget.state == 3) {
                               return Container(
                                 width: double.infinity,
                                 height: 45.0,
@@ -434,7 +430,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                       },
                       child: Builder(
                         builder: (context) {
-                          if (widget!.state == 4) {
+                          if (widget.state == 4) {
                             return Container(
                               width: double.infinity,
                               height: 45.0,
@@ -496,7 +492,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                       },
                       child: Builder(
                         builder: (context) {
-                          if (widget!.state == 5) {
+                          if (widget.state == 5) {
                             return Container(
                               width: double.infinity,
                               height: 45.0,
@@ -578,7 +574,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                       },
                       child: Builder(
                         builder: (context) {
-                          if (widget!.state == 6) {
+                          if (widget.state == 6) {
                             return Container(
                               width: double.infinity,
                               height: 45.0,

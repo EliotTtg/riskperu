@@ -3,13 +3,9 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'popup_add_coments_model.dart';
 export 'popup_add_coments_model.dart';
 
@@ -166,7 +162,7 @@ class _PopupAddComentsWidgetState extends State<PopupAddComentsWidget> {
                         child: FFButtonWidget(
                           onPressed: () async {
                             FFAppState()
-                                .removeFromListComent(widget!.parameter1!);
+                                .removeFromListComent(widget.parameter1!);
                             FFAppState().update(() {});
                           },
                           text: 'Cancelar',
@@ -206,11 +202,11 @@ class _PopupAddComentsWidgetState extends State<PopupAddComentsWidget> {
                                 ComentariosRecord.collection.doc();
                             await comentariosRecordReference.set({
                               ...createComentariosRecordData(
-                                uidCourses: widget!.parameter2,
+                                uidCourses: widget.parameter2,
                                 uidUser: currentUserReference?.id,
                                 contenido:
                                     _model.txtcontenidosTextController.text,
-                                paredId: widget!.parameter1,
+                                paredId: widget.parameter1,
                               ),
                               ...mapToFirestore(
                                 {
@@ -221,11 +217,11 @@ class _PopupAddComentsWidgetState extends State<PopupAddComentsWidget> {
                             _model.refComentario =
                                 ComentariosRecord.getDocumentFromData({
                               ...createComentariosRecordData(
-                                uidCourses: widget!.parameter2,
+                                uidCourses: widget.parameter2,
                                 uidUser: currentUserReference?.id,
                                 contenido:
                                     _model.txtcontenidosTextController.text,
-                                paredId: widget!.parameter1,
+                                paredId: widget.parameter1,
                               ),
                               ...mapToFirestore(
                                 {
@@ -239,7 +235,7 @@ class _PopupAddComentsWidgetState extends State<PopupAddComentsWidget> {
                               uid: _model.refComentario?.reference.id,
                             ));
                             FFAppState()
-                                .removeFromListComent(widget!.parameter1!);
+                                .removeFromListComent(widget.parameter1!);
                             FFAppState().update(() {});
 
                             safeSetState(() {});

@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_data_table.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -6,15 +5,10 @@ import '/flutter_flow/flutter_flow_timer.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/timer/timer_widget.dart';
-import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:stop_watch_timer/stop_watch_timer.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'from_result_simulator_model.dart';
 export 'from_result_simulator_model.dart';
 
@@ -123,8 +117,8 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                           queryBuilder: (usersRecord) =>
                                               usersRecord.where(
                                             'uid',
-                                            isEqualTo: widget!.refUser?.id != ''
-                                                ? widget!.refUser?.id
+                                            isEqualTo: widget.refUser?.id != ''
+                                                ? widget.refUser?.id
                                                 : null,
                                           ),
                                           singleRecord: true,
@@ -245,21 +239,21 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                     resultadosRecord
                                         .where(
                                           'estudiante_ref',
-                                          isEqualTo: widget!.refUser?.id != ''
-                                              ? widget!.refUser?.id
+                                          isEqualTo: widget.refUser?.id != ''
+                                              ? widget.refUser?.id
                                               : null,
                                         )
                                         .where(
                                           'examen_ref',
-                                          isEqualTo: widget!.refExamen
+                                          isEqualTo: widget.refExamen
                                                       ?.reference.id !=
                                                   ''
-                                              ? widget!.refExamen?.reference.id
+                                              ? widget.refExamen?.reference.id
                                               : null,
                                         )
                                         .where(
                                           'type',
-                                          isEqualTo: widget!.type,
+                                          isEqualTo: widget.type,
                                         )
                                         .where(
                                           'estado',
@@ -316,12 +310,12 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                 preguntasRecord
                                                     .where(
                                                       'examen_ref',
-                                                      isEqualTo: widget!
+                                                      isEqualTo: widget
                                                                   .refExamen
                                                                   ?.reference
                                                                   .id !=
                                                               ''
-                                                          ? widget!.refExamen
+                                                          ? widget.refExamen
                                                               ?.reference.id
                                                           : null,
                                                     )
@@ -541,7 +535,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                         containerResultadosRecordList
                                                                             .firstOrNull
                                                                             ?.cantidadCorrectas
-                                                                            ?.toString(),
+                                                                            .toString(),
                                                                         '0',
                                                                       ),
                                                                       style: FlutterFlowTheme.of(
@@ -706,9 +700,9 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                 preguntasRecord
                                                                     .where(
                                                                       'examen_ref',
-                                                                      isEqualTo: widget!.refExamen?.reference.id !=
+                                                                      isEqualTo: widget.refExamen?.reference.id !=
                                                                               ''
-                                                                          ? widget!
+                                                                          ? widget
                                                                               .refExamen
                                                                               ?.reference
                                                                               .id
@@ -758,7 +752,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                       containerResultadosRecordList
                                                                           .firstOrNull
                                                                           ?.cantidadCorrectas
-                                                                          ?.toString(),
+                                                                          .toString(),
                                                                       '0',
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -1127,7 +1121,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                           onSelectChanged) =>
                                                                       DataRow(
                                                                 color:
-                                                                    MaterialStateProperty
+                                                                    WidgetStateProperty
                                                                         .all(
                                                                   listResultadosIndex %
                                                                               2 ==
@@ -1239,7 +1233,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                         queryBuilder: (preguntasRecord) => preguntasRecord
                                                                             .where(
                                                                               'examen_ref',
-                                                                              isEqualTo: widget!.refExamen?.reference.id != '' ? widget!.refExamen?.reference.id : null,
+                                                                              isEqualTo: widget.refExamen?.reference.id != '' ? widget.refExamen?.reference.id : null,
                                                                             )
                                                                             .orderBy('created_time', descending: true),
                                                                       ),
@@ -1420,9 +1414,9 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                       if (((containerResultadosRecordList
                                                                       .length <=
                                                                   2) &&
-                                                              (widget!.type ==
+                                                              (widget.type ==
                                                                   1)) ||
-                                                          (widget!.type == 2))
+                                                          (widget.type == 2))
                                                         Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -1453,15 +1447,15 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                   .set({
                                                                 ...createResultadosRecordData(
                                                                   estudianteRef:
-                                                                      widget!
+                                                                      widget
                                                                           .refUser
                                                                           ?.id,
                                                                   estado: true,
-                                                                  examenRef: widget!
+                                                                  examenRef: widget
                                                                       .refExamen
                                                                       ?.reference
                                                                       .id,
-                                                                  type: widget!
+                                                                  type: widget
                                                                       .type,
                                                                 ),
                                                                 ...mapToFirestore(
@@ -1477,15 +1471,15 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                       .getDocumentFromData({
                                                                 ...createResultadosRecordData(
                                                                   estudianteRef:
-                                                                      widget!
+                                                                      widget
                                                                           .refUser
                                                                           ?.id,
                                                                   estado: true,
-                                                                  examenRef: widget!
+                                                                  examenRef: widget
                                                                       .refExamen
                                                                       ?.reference
                                                                       .id,
-                                                                  type: widget!
+                                                                  type: widget
                                                                       .type,
                                                                 ),
                                                                 ...mapToFirestore(
@@ -1507,7 +1501,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                     ?.reference
                                                                     .id,
                                                               ));
-                                                              if (widget!
+                                                              if (widget
                                                                       .type ==
                                                                   2) {
                                                                 var registerSimulatorRecordReference =
@@ -1517,10 +1511,10 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                 await registerSimulatorRecordReference
                                                                     .set({
                                                                   ...createRegisterSimulatorRecordData(
-                                                                    uidUser: widget!
+                                                                    uidUser: widget
                                                                         .refUser
                                                                         ?.id,
-                                                                    uidCourse: widget!
+                                                                    uidCourse: widget
                                                                         .refCourse
                                                                         ?.reference
                                                                         .id,
@@ -1537,10 +1531,10 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                     RegisterSimulatorRecord
                                                                         .getDocumentFromData({
                                                                   ...createRegisterSimulatorRecordData(
-                                                                    uidUser: widget!
+                                                                    uidUser: widget
                                                                         .refUser
                                                                         ?.id,
-                                                                    uidCourse: widget!
+                                                                    uidCourse: widget
                                                                         .refCourse
                                                                         ?.reference
                                                                         .id,

@@ -7,14 +7,10 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
 import '/pages/lista_actividades/lista_actividades_widget.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_update_actividad_model.dart';
 export 'create_update_actividad_model.dart';
 
@@ -54,24 +50,24 @@ class _CreateUpdateActividadWidgetState
 
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      if (widget!.refActividad != null) {
+      if (widget.refActividad != null) {
         _model.listRecursos =
-            widget!.refActividad!.archives.toList().cast<String>();
+            widget.refActividad!.archives.toList().cast<String>();
         safeSetState(() {});
       }
     });
 
     _model.txtnombreTextController ??=
-        TextEditingController(text: widget!.refActividad?.name);
+        TextEditingController(text: widget.refActividad?.name);
     _model.txtnombreFocusNode ??= FocusNode();
 
     _model.txtenlaceTextController ??=
-        TextEditingController(text: widget!.refActividad?.linkVideo);
+        TextEditingController(text: widget.refActividad?.linkVideo);
     _model.txtenlaceFocusNode ??= FocusNode();
 
     _model.txtduracionTextController ??= TextEditingController(
         text: formatNumber(
-      widget!.refActividad?.minutes,
+      widget.refActividad?.minutes,
       formatType: FormatType.custom,
       format: '0',
       locale: '',
@@ -126,7 +122,7 @@ class _CreateUpdateActividadWidgetState
                         children: [
                           Text(
                             valueOrDefault<String>(
-                              widget!.refActividad != null
+                              widget.refActividad != null
                                   ? 'Actualizar Actividad'
                                   : 'Agregar Actividad',
                               'Agregar Actividad',
@@ -602,7 +598,7 @@ class _CreateUpdateActividadWidgetState
                                                       )) {
                                                 await downloadFile(
                                                   filename:
-                                                      'Recurso ${(_model.indice + 1).toString()}: ${widget!.refActividad?.name}',
+                                                      'Recurso ${(_model.indice + 1).toString()}: ${widget.refActividad?.name}',
                                                   url: valueOrDefault<String>(
                                                     _model.listRecursos
                                                         .elementAtOrNull(
@@ -689,8 +685,8 @@ class _CreateUpdateActividadWidgetState
                                             .cast<String>();
                                         safeSetState(() {});
                                       }
-                                      if (widget!.refActividad != null) {
-                                        await widget!.refActividad!.reference
+                                      if (widget.refActividad != null) {
+                                        await widget.refActividad!.reference
                                             .update({
                                           ...createModuleClassRecordData(
                                             name: _model
@@ -714,7 +710,7 @@ class _CreateUpdateActividadWidgetState
                                           ...createActionsRecordData(
                                             uidUser: currentUserReference?.id,
                                             descripction:
-                                                'Modifico una actividad al modulo:${widget!.refModule?.name} llamada: ${_model.txtnombreTextController.text}',
+                                                'Modifico una actividad al modulo:${widget.refModule?.name} llamada: ${_model.txtnombreTextController.text}',
                                           ),
                                           ...mapToFirestore(
                                             {
@@ -728,7 +724,7 @@ class _CreateUpdateActividadWidgetState
                                           ...createActionsRecordData(
                                             uidUser: currentUserReference?.id,
                                             descripction:
-                                                'Modifico una actividad al modulo:${widget!.refModule?.name} llamada: ${_model.txtnombreTextController.text}',
+                                                'Modifico una actividad al modulo:${widget.refModule?.name} llamada: ${_model.txtnombreTextController.text}',
                                           ),
                                           ...mapToFirestore(
                                             {
@@ -753,7 +749,7 @@ class _CreateUpdateActividadWidgetState
                                             linkVideo: _model
                                                 .txtenlaceTextController.text,
                                             uidModule:
-                                                widget!.refModule?.reference.id,
+                                                widget.refModule?.reference.id,
                                             minutes: int.tryParse(_model
                                                 .txtduracionTextController
                                                 .text),
@@ -774,7 +770,7 @@ class _CreateUpdateActividadWidgetState
                                             linkVideo: _model
                                                 .txtenlaceTextController.text,
                                             uidModule:
-                                                widget!.refModule?.reference.id,
+                                                widget.refModule?.reference.id,
                                             minutes: int.tryParse(_model
                                                 .txtduracionTextController
                                                 .text),
@@ -798,7 +794,7 @@ class _CreateUpdateActividadWidgetState
                                           ...createActionsRecordData(
                                             uidUser: currentUserReference?.id,
                                             descripction:
-                                                'Agrego una actividad al modulo:${widget!.refModule?.name} llamada: ${_model.txtnombreTextController.text}',
+                                                'Agrego una actividad al modulo:${widget.refModule?.name} llamada: ${_model.txtnombreTextController.text}',
                                           ),
                                           ...mapToFirestore(
                                             {
@@ -812,7 +808,7 @@ class _CreateUpdateActividadWidgetState
                                           ...createActionsRecordData(
                                             uidUser: currentUserReference?.id,
                                             descripction:
-                                                'Agrego una actividad al modulo:${widget!.refModule?.name} llamada: ${_model.txtnombreTextController.text}',
+                                                'Agrego una actividad al modulo:${widget.refModule?.name} llamada: ${_model.txtnombreTextController.text}',
                                           ),
                                           ...mapToFirestore(
                                             {
@@ -841,9 +837,9 @@ class _CreateUpdateActividadWidgetState
                                                 .resolve(
                                                     Directionality.of(context)),
                                             child: ListaActividadesWidget(
-                                              refModulo: widget!.refModule!,
-                                              refSession: widget!.refSession!,
-                                              refCourse: widget!.refCourse!,
+                                              refModulo: widget.refModule!,
+                                              refSession: widget.refSession!,
+                                              refCourse: widget.refCourse!,
                                             ),
                                           );
                                         },
@@ -855,7 +851,7 @@ class _CreateUpdateActividadWidgetState
                                       safeSetState(() {});
                                     },
                                     text: valueOrDefault<String>(
-                                      widget!.refActividad != null
+                                      widget.refActividad != null
                                           ? 'ACTUALIZAR'
                                           : 'AGREGAR',
                                       'AGREGAR',
@@ -900,9 +896,9 @@ class _CreateUpdateActividadWidgetState
                                                 .resolve(
                                                     Directionality.of(context)),
                                             child: ListaActividadesWidget(
-                                              refModulo: widget!.refModule!,
-                                              refSession: widget!.refSession!,
-                                              refCourse: widget!.refCourse!,
+                                              refModulo: widget.refModule!,
+                                              refSession: widget.refSession!,
+                                              refCourse: widget.refCourse!,
                                             ),
                                           );
                                         },

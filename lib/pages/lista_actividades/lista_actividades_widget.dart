@@ -8,10 +8,7 @@ import '/pages/create_update_actividad/create_update_actividad_widget.dart';
 import '/pages/eliminar_actividad/eliminar_actividad_widget.dart';
 import '/pages/empty_actividades/empty_actividades_widget.dart';
 import '/pages/lista_modules/lista_modules_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lista_actividades_model.dart';
 export 'lista_actividades_model.dart';
 
@@ -119,8 +116,8 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                           Directionality.of(
                                                               context)),
                                               child: ListaModulesWidget(
-                                                refSession: widget!.refSession!,
-                                                refCourse: widget!.refCourse!,
+                                                refSession: widget.refSession!,
+                                                refCourse: widget.refCourse!,
                                               ),
                                             );
                                           },
@@ -170,7 +167,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                           builder: (alertDialogContext) {
                                             return AlertDialog(
                                               title: Text('Sistema'),
-                                              content: Text(widget!
+                                              content: Text(widget
                                                   .refModulo!.reference.id),
                                               actions: [
                                                 TextButton(
@@ -241,11 +238,11 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                       child:
                                                           CreateUpdateActividadWidget(
                                                         refModule:
-                                                            widget!.refModulo!,
+                                                            widget.refModulo!,
                                                         refSession:
-                                                            widget!.refSession!,
+                                                            widget.refSession!,
                                                         refCourse:
-                                                            widget!.refCourse!,
+                                                            widget.refCourse!,
                                                       ),
                                                     );
                                                   },
@@ -295,10 +292,10 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                             moduleClassRecord
                                                 .where(
                                                   'uid_Module',
-                                                  isEqualTo: widget!.refModulo
+                                                  isEqualTo: widget.refModulo
                                                               ?.reference.id !=
                                                           ''
-                                                      ? widget!.refModulo
+                                                      ? widget.refModulo
                                                           ?.reference.id
                                                       : null,
                                                 )
@@ -430,7 +427,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                             onSelectChanged) =>
                                                         DataRow(
                                                   color:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     listaActividadesIndex % 2 ==
                                                             0
                                                         ? Color(0xFFF6F6F6)
@@ -519,13 +516,13 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                                       refActividad:
                                                                           listaActividadesItem,
                                                                       refModule:
-                                                                          widget!
+                                                                          widget
                                                                               .refModulo!,
                                                                       refSession:
-                                                                          widget!
+                                                                          widget
                                                                               .refSession!,
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourse!,
                                                                     ),
                                                                   );
@@ -580,13 +577,13 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                                       refActividad:
                                                                           listaActividadesItem,
                                                                       refModule:
-                                                                          widget!
+                                                                          widget
                                                                               .refModulo!,
                                                                       refSession:
-                                                                          widget!
+                                                                          widget
                                                                               .refSession!,
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourse!,
                                                                     ),
                                                                   );

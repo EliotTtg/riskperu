@@ -1,11 +1,8 @@
 import '/auth/base_auth_user_provider.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'header_kpacita_model.dart';
 export 'header_kpacita_model.dart';
 
@@ -117,7 +114,7 @@ class _HeaderKpacitaWidgetState extends State<HeaderKpacitaWidget> {
                             height: 3.0,
                             decoration: BoxDecoration(
                               color: valueOrDefault<Color>(
-                                widget!.state == 1
+                                widget.state == 1
                                     ? FlutterFlowTheme.of(context)
                                         .secondaryBackground
                                     : Color(0xFF2E2E2E),
@@ -174,7 +171,7 @@ class _HeaderKpacitaWidgetState extends State<HeaderKpacitaWidget> {
                               height: 3.0,
                               decoration: BoxDecoration(
                                 color: valueOrDefault<Color>(
-                                  widget!.state == 2
+                                  widget.state == 2
                                       ? FlutterFlowTheme.of(context)
                                           .secondaryBackground
                                       : Color(0xFF2E2E2E),
@@ -231,7 +228,7 @@ class _HeaderKpacitaWidgetState extends State<HeaderKpacitaWidget> {
                               height: 3.0,
                               decoration: BoxDecoration(
                                 color: valueOrDefault<Color>(
-                                  widget!.state == 3
+                                  widget.state == 3
                                       ? FlutterFlowTheme.of(context)
                                           .secondaryBackground
                                       : Color(0xFF2E2E2E),

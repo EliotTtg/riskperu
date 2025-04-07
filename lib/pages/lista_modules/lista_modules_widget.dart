@@ -9,10 +9,7 @@ import '/pages/eliminar_modulo/eliminar_modulo_widget.dart';
 import '/pages/empty_modules/empty_modules_widget.dart';
 import '/pages/lista_actividades/lista_actividades_widget.dart';
 import '/pages/lista_sessions/lista_sessions_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lista_modules_model.dart';
 export 'lista_modules_model.dart';
 
@@ -118,7 +115,7 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                                           Directionality.of(
                                                               context)),
                                               child: ListaSessionsWidget(
-                                                refCourses: widget!.refCourse!,
+                                                refCourses: widget.refCourse!,
                                               ),
                                             );
                                           },
@@ -214,9 +211,9 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                                       child:
                                                           CreateUpdateModuleWidget(
                                                         refSession:
-                                                            widget!.refSession!,
+                                                            widget.refSession!,
                                                         refCourse:
-                                                            widget!.refCourse!,
+                                                            widget.refCourse!,
                                                       ),
                                                     );
                                                   },
@@ -270,10 +267,10 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                             moduleRecord
                                                 .where(
                                                   'uid_Session',
-                                                  isEqualTo: widget!.refSession
+                                                  isEqualTo: widget.refSession
                                                               ?.reference.id !=
                                                           ''
-                                                      ? widget!.refSession
+                                                      ? widget.refSession
                                                           ?.reference.id
                                                       : null,
                                                 )
@@ -385,7 +382,7 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                                             onSelectChanged) =>
                                                         DataRow(
                                                   color:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     listaModulosIndex % 2 == 0
                                                         ? Color(0xFFF6F6F6)
                                                         : Colors.white,
@@ -454,12 +451,12 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                                                     child:
                                                                         CreateUpdateModuleWidget(
                                                                       refSession:
-                                                                          widget!
+                                                                          widget
                                                                               .refSession!,
                                                                       refModule:
                                                                           listaModulosItem,
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourse!,
                                                                     ),
                                                                   );
@@ -514,10 +511,10 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                                                       refModule:
                                                                           listaModulosItem,
                                                                       refSession:
-                                                                          widget!
+                                                                          widget
                                                                               .refSession!,
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourse!,
                                                                     ),
                                                                   );
@@ -574,10 +571,10 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                                                       refModulo:
                                                                           listaModulosItem,
                                                                       refSession:
-                                                                          widget!
+                                                                          widget
                                                                               .refSession!,
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourse!,
                                                                     ),
                                                                   );

@@ -6,10 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/crear_update_anuncio/crear_update_anuncio_widget.dart';
 import '/pages/empty_actividades/empty_actividades_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lista_anuncios_model.dart';
 export 'lista_anuncios_model.dart';
 
@@ -107,7 +104,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                           builder: (alertDialogContext) {
                                             return AlertDialog(
                                               title: Text('Sistema'),
-                                              content: Text(widget!
+                                              content: Text(widget
                                                   .refCourse!.reference.id),
                                               actions: [
                                                 TextButton(
@@ -178,7 +175,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                       child:
                                                           CrearUpdateAnuncioWidget(
                                                         refCourse:
-                                                            widget!.refCourse!,
+                                                            widget.refCourse!,
                                                       ),
                                                     );
                                                   },
@@ -227,12 +224,12 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                 announcementsCoursesRecord
                                                     .where(
                                                       'uid_Course',
-                                                      isEqualTo: widget!
+                                                      isEqualTo: widget
                                                                   .refCourse
                                                                   ?.reference
                                                                   .id !=
                                                               ''
-                                                          ? widget!.refCourse
+                                                          ? widget.refCourse
                                                               ?.reference.id
                                                           : null,
                                                     )
@@ -364,7 +361,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                             onSelectChanged) =>
                                                         DataRow(
                                                   color:
-                                                      MaterialStateProperty.all(
+                                                      WidgetStateProperty.all(
                                                     listaAnunciosIndex % 2 == 0
                                                         ? Color(0xFFF6F6F6)
                                                         : Colors.white,
@@ -499,7 +496,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                                     child:
                                                                         CrearUpdateAnuncioWidget(
                                                                       refCourse:
-                                                                          widget!
+                                                                          widget
                                                                               .refCourse!,
                                                                       refAnnouncements:
                                                                           listaAnunciosItem,

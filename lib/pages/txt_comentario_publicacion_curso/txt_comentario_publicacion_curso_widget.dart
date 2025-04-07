@@ -1,13 +1,8 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'txt_comentario_publicacion_curso_model.dart';
 export 'txt_comentario_publicacion_curso_model.dart';
 
@@ -75,7 +70,7 @@ class _TxtComentarioPublicacionCursoWidgetState
                 fit: BoxFit.cover,
                 image: Image.network(
                   valueOrDefault<String>(
-                    widget!.parameter1,
+                    widget.parameter1,
                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/kpacita-ssg7c7/assets/kom25ftm37kk/Frame_1171276035.png',
                   ),
                 ).image,
@@ -95,14 +90,13 @@ class _TxtComentarioPublicacionCursoWidgetState
                   () => safeSetState(() {}),
                 ),
                 onFieldSubmitted: (_) async {
-                  if (_model.txtGuardarComentarioTextController.text != null &&
-                      _model.txtGuardarComentarioTextController.text != '') {
+                  if (_model.txtGuardarComentarioTextController.text != '') {
                     var announcementCommentsRecordReference =
                         AnnouncementCommentsRecord.collection.doc();
                     await announcementCommentsRecordReference.set({
                       ...createAnnouncementCommentsRecordData(
-                        createdBy: widget!.parameter2,
-                        uidAnnouncementsCourse: widget!.parameter3,
+                        createdBy: widget.parameter2,
+                        uidAnnouncementsCourse: widget.parameter3,
                         text: _model.txtGuardarComentarioTextController.text,
                       ),
                       ...mapToFirestore(
@@ -114,8 +108,8 @@ class _TxtComentarioPublicacionCursoWidgetState
                     _model.refComentarioPublicacion =
                         AnnouncementCommentsRecord.getDocumentFromData({
                       ...createAnnouncementCommentsRecordData(
-                        createdBy: widget!.parameter2,
-                        uidAnnouncementsCourse: widget!.parameter3,
+                        createdBy: widget.parameter2,
+                        uidAnnouncementsCourse: widget.parameter3,
                         text: _model.txtGuardarComentarioTextController.text,
                       ),
                       ...mapToFirestore(

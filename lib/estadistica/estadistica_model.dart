@@ -1,26 +1,14 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
-import '/flutter_flow/flutter_flow_charts.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/empty_actividades/empty_actividades_widget.dart';
 import '/pages/empty_course/empty_course_widget.dart';
 import '/pages/empty_dashboard/empty_dashboard_widget.dart';
 import '/pages/empty_test/empty_test_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import 'dart:ui';
-import '/custom_code/actions/index.dart' as actions;
 import '/index.dart';
 import 'estadistica_widget.dart' show EstadisticaWidget;
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class EstadisticaModel extends FlutterFlowModel<EstadisticaWidget> {
   ///  Local state fields for this page.

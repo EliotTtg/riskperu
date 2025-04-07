@@ -10,17 +10,11 @@ import '/pages/empty_certificates/empty_certificates_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
-import 'dart:ui';
 import 'package:barcode_widget/barcode_widget.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'certificates_model.dart';
 export 'certificates_model.dart';
@@ -264,7 +258,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                                           records
                                                                               .map(
                                                                                 (record) => TextSearchItem.fromTerms(record, [
-                                                                                  record.id!
+                                                                                  record.id
                                                                                 ]),
                                                                               )
                                                                               .toList(),
@@ -486,9 +480,9 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                           .where(
                                                             'uid_User',
                                                             isEqualTo:
-                                                                widget!.uidUser !=
+                                                                widget.uidUser !=
                                                                         ''
-                                                                    ? widget!
+                                                                    ? widget
                                                                         .uidUser
                                                                     : null,
                                                           )
@@ -808,7 +802,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                                           onSelectChanged) =>
                                                                       DataRow(
                                                                     color:
-                                                                        MaterialStateProperty
+                                                                        WidgetStateProperty
                                                                             .all(
                                                                       listCertificatesIndex % 2 ==
                                                                               0
@@ -931,7 +925,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                                             valueOrDefault<String>(
                                                                               textCoursesRecord != null
                                                                                   ? valueOrDefault<String>(
-                                                                                      textCoursesRecord?.name,
+                                                                                      textCoursesRecord.name,
                                                                                       '--',
                                                                                     )
                                                                                   : '--',

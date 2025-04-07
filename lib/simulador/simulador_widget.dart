@@ -9,14 +9,10 @@ import '/flutter_flow/form_field_controller.dart';
 import '/pages/empty_simulator/empty_simulator_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'simulador_model.dart';
 export 'simulador_model.dart';
@@ -434,7 +430,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                           TextSearchItem.fromTerms(
                                                                               record,
                                                                               [
-                                                                            record.name!
+                                                                            record.name
                                                                           ]),
                                                                     )
                                                                     .toList(),
@@ -574,9 +570,6 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                   ),
                                                   onPressed: () async {
                                                     if (_model.textController
-                                                                .text !=
-                                                            null &&
-                                                        _model.textController
                                                                 .text !=
                                                             '') {
                                                       _model.uidsCourse = _model

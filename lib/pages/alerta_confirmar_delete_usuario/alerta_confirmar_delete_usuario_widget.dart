@@ -2,11 +2,8 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'alerta_confirmar_delete_usuario_model.dart';
 export 'alerta_confirmar_delete_usuario_model.dart';
 
@@ -117,7 +114,7 @@ class _AlertaConfirmarDeleteUsuarioWidgetState
                                 onPressed: () async {
                                   _model.usuarioEliminado =
                                       await actions.eliminarUsuario(
-                                    widget!.refUser!.reference.id,
+                                    widget.refUser!.reference.id,
                                   );
                                   if (_model.usuarioEliminado!) {
                                     Navigator.pop(context);

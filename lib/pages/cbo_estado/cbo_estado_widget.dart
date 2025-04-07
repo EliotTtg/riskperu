@@ -1,13 +1,9 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'cbo_estado_model.dart';
 export 'cbo_estado_model.dart';
 
@@ -60,7 +56,7 @@ class _CboEstadoWidgetState extends State<CboEstadoWidget> {
         optionLabels: ['Activo', 'Inactivo'],
         onChanged: (val) async {
           safeSetState(() => _model.cboEstadoValue = val);
-          await widget!.parameter3!.update(createResultadosRecordData(
+          await widget.parameter3!.update(createResultadosRecordData(
             estado: _model.cboEstadoValue,
           ));
           safeSetState(() {
@@ -73,7 +69,7 @@ class _CboEstadoWidgetState extends State<CboEstadoWidget> {
               letterSpacing: 0.0,
             ),
         hintText: valueOrDefault<String>(
-          widget!.parameter1! ? 'Activo' : 'Inactivo',
+          widget.parameter1! ? 'Activo' : 'Inactivo',
           'Activo',
         ),
         icon: Icon(
@@ -82,7 +78,7 @@ class _CboEstadoWidgetState extends State<CboEstadoWidget> {
           size: 24.0,
         ),
         fillColor: valueOrDefault<Color>(
-          widget!.parameter1!
+          widget.parameter1!
               ? FlutterFlowTheme.of(context).success
               : FlutterFlowTheme.of(context).error,
           Color(0xFF00AC7E),

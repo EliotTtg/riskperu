@@ -5,12 +5,9 @@ import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_copy_model.dart';
 export 'home_copy_model.dart';
 

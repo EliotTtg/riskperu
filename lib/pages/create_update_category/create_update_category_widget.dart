@@ -1,13 +1,8 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_update_category_model.dart';
 export 'create_update_category_model.dart';
 
@@ -40,7 +35,7 @@ class _CreateUpdateCategoryWidgetState
     _model = createModel(context, () => CreateUpdateCategoryModel());
 
     _model.textController ??=
-        TextEditingController(text: widget!.refCategory?.name);
+        TextEditingController(text: widget.refCategory?.name);
     _model.textFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -191,9 +186,9 @@ class _CreateUpdateCategoryWidgetState
                                   final firestoreBatch =
                                       FirebaseFirestore.instance.batch();
                                   try {
-                                    if (widget!.refCategory != null) {
+                                    if (widget.refCategory != null) {
                                       firestoreBatch.update(
-                                          widget!.refCategory!.reference,
+                                          widget.refCategory!.reference,
                                           createCategoryCoursesRecordData(
                                             name: _model.textController.text,
                                           ));
@@ -273,7 +268,7 @@ class _CreateUpdateCategoryWidgetState
                                   safeSetState(() {});
                                 },
                                 text: valueOrDefault<String>(
-                                  widget!.refCategory != null
+                                  widget.refCategory != null
                                       ? 'ACTUALIZAR'
                                       : 'AGREGAR',
                                   'AGREGAR',

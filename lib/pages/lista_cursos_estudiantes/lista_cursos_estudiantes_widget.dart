@@ -4,13 +4,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/empty_course/empty_course_widget.dart';
-import 'dart:ui';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lista_cursos_estudiantes_model.dart';
 export 'lista_cursos_estudiantes_model.dart';
 
@@ -43,11 +39,11 @@ class _ListaCursosEstudiantesWidgetState
     _model = createModel(context, () => ListaCursosEstudiantesModel());
 
     _model.txttituloTextController ??=
-        TextEditingController(text: widget!.user?.displayName);
+        TextEditingController(text: widget.user?.displayName);
     _model.txttituloFocusNode ??= FocusNode();
 
     _model.txtencargadoTextController ??=
-        TextEditingController(text: widget!.user?.email);
+        TextEditingController(text: widget.user?.email);
     _model.txtencargadoFocusNode ??= FocusNode();
 
     _model.txttiempolimiteFocusNode ??= FocusNode();
@@ -364,7 +360,7 @@ class _ListaCursosEstudiantesWidgetState
                                               usersPlansRecord.where(
                                             'uid_user',
                                             isEqualTo:
-                                                widget!.user?.reference.id,
+                                                widget.user?.reference.id,
                                           ),
                                           singleRecord: true,
                                         ),
@@ -613,10 +609,10 @@ class _ListaCursosEstudiantesWidgetState
                                           usersCoursesRecord
                                               .where(
                                                 'uid_user',
-                                                isEqualTo: widget!.user
+                                                isEqualTo: widget.user
                                                             ?.reference.id !=
                                                         ''
-                                                    ? widget!.user?.reference.id
+                                                    ? widget.user?.reference.id
                                                     : null,
                                               )
                                               .orderBy('created_date',

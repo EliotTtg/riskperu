@@ -6,13 +6,10 @@ import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'course_price_copy_model.dart';
 export 'course_price_copy_model.dart';
@@ -133,7 +130,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                             ),
                                             Text(
                                               valueOrDefault<String>(
-                                                widget!.refCourse?.name,
+                                                widget.refCourse?.name,
                                                 '--',
                                               ),
                                               style: FlutterFlowTheme.of(
@@ -151,7 +148,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                             ),
                                             Text(
                                               valueOrDefault<String>(
-                                                widget!.refCourse?.description,
+                                                widget.refCourse?.description,
                                                 '--',
                                               ),
                                               textAlign: TextAlign.start,
@@ -212,7 +209,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                     sessionRecord
                                                                         .where(
                                                               'uid_Course',
-                                                              isEqualTo: widget!
+                                                              isEqualTo: widget
                                                                   .refCourse
                                                                   ?.reference
                                                                   .id,
@@ -341,7 +338,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                 text:
                                                                     valueOrDefault<
                                                                         String>(
-                                                                  widget!
+                                                                  widget
                                                                       .refCourse
                                                                       ?.hours,
                                                                   '0',
@@ -453,7 +450,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                       children: [
                                         FlutterFlowVideoPlayer(
                                           path:
-                                              '${widget!.refCourse?.videoPreview}',
+                                              '${widget.refCourse?.videoPreview}',
                                           videoType: VideoType.network,
                                           autoPlay: false,
                                           looping: true,
@@ -503,7 +500,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                   TextSpan(
                                                     text:
                                                         valueOrDefault<String>(
-                                                      widget!.refCourse?.price,
+                                                      widget.refCourse?.price,
                                                       '0',
                                                     ),
                                                     style: TextStyle(),
@@ -533,7 +530,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                               child: FFButtonWidget(
                                                 onPressed: () async {
                                                   await launchURL(functions
-                                                      .enviarAsesor(widget!
+                                                      .enviarAsesor(widget
                                                           .refCourse!.name));
                                                 },
                                                 text: 'Conversa con un asesor',
@@ -578,13 +575,13 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                 onPressed: () async {
                                                   if (!FFAppState()
                                                       .shoppingcart
-                                                      .contains(widget!
+                                                      .contains(widget
                                                           .refCourse
                                                           ?.reference
                                                           .id)) {
                                                     FFAppState()
                                                         .addToShoppingcart(
-                                                            widget!.refCourse!
+                                                            widget.refCourse!
                                                                 .reference.id);
                                                     FFAppState().update(() {});
                                                   }
@@ -592,7 +589,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                 text: valueOrDefault<String>(
                                                   FFAppState()
                                                           .shoppingcart
-                                                          .contains(widget!
+                                                          .contains(widget
                                                               .refCourse
                                                               ?.reference
                                                               .id)
@@ -689,7 +686,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                   queryBuilder: (usersRecord) =>
                                                       usersRecord.where(
                                                     'uid',
-                                                    isEqualTo: widget!
+                                                    isEqualTo: widget
                                                         .refCourse?.uidTechear,
                                                   ),
                                                   singleRecord: true,
@@ -938,7 +935,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                               sessionRecord
                                                                   .where(
                                                                     'uid_Course',
-                                                                    isEqualTo: widget!
+                                                                    isEqualTo: widget
                                                                         .refCourse
                                                                         ?.reference
                                                                         .id,

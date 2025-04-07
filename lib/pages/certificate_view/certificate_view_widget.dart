@@ -4,12 +4,7 @@ import '/flutter_flow/flutter_flow_pdf_viewer.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'certificate_view_model.dart';
 export 'certificate_view_model.dart';
 
@@ -148,7 +143,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                     flex: 2,
                                     child: FlutterFlowPdfViewer(
                                       networkPath:
-                                          '${widget!.refCertificate?.urlPdf}',
+                                          '${widget.refCertificate?.urlPdf}',
                                       width: double.infinity,
                                       height: 444.0,
                                       horizontalScroll: true,
@@ -177,63 +172,69 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                       mainAxisSize:
                                                           MainAxisSize.max,
                                                       children: [
-                                                        RichText(
-                                                          textScaler:
-                                                              MediaQuery.of(
-                                                                      context)
-                                                                  .textScaler,
-                                                          text: TextSpan(
-                                                            children: [
-                                                              TextSpan(
-                                                                text: 'Curso ',
-                                                                style: FlutterFlowTheme.of(
+                                                        Align(
+                                                          alignment:
+                                                              AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: RichText(
+                                                            textScaler:
+                                                                MediaQuery.of(
                                                                         context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      fontFamily:
-                                                                          'Poppins',
-                                                                      color: Color(
-                                                                          0xFF094B90),
-                                                                      fontSize:
-                                                                          20.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w600,
-                                                                    ),
-                                                              ),
-                                                              TextSpan(
-                                                                text:
-                                                                    valueOrDefault<
-                                                                        String>(
-                                                                  widget!
-                                                                      .refCourse
-                                                                      ?.name,
-                                                                  '--',
+                                                                    .textScaler,
+                                                            text: TextSpan(
+                                                              children: [
+                                                                TextSpan(
+                                                                  text:
+                                                                      'Curso ',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Poppins',
+                                                                        color: Color(
+                                                                            0xFF094B90),
+                                                                        fontSize:
+                                                                            20.0,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                      ),
                                                                 ),
-                                                                style:
-                                                                    TextStyle(),
-                                                              )
-                                                            ],
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Poppins',
-                                                                  color: Color(
-                                                                      0xFF094B90),
-                                                                  fontSize:
-                                                                      20.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
-                                                                ),
+                                                                TextSpan(
+                                                                  text: valueOrDefault<
+                                                                      String>(
+                                                                    widget
+                                                                        .refCourse
+                                                                        ?.name,
+                                                                    '--',
+                                                                  ),
+                                                                  style:
+                                                                      TextStyle(),
+                                                                )
+                                                              ],
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Poppins',
+                                                                    color: Color(
+                                                                        0xFF094B90),
+                                                                    fontSize:
+                                                                        20.0,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w600,
+                                                                  ),
+                                                            ),
+                                                            textAlign: TextAlign
+                                                                .center,
+                                                            maxLines: 1,
                                                           ),
-                                                          maxLines: 1,
                                                         ),
                                                         Container(
                                                           width: 100.0,
@@ -262,7 +263,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                       TextSpan(
                                                         text: valueOrDefault<
                                                             String>(
-                                                          widget!
+                                                          widget
                                                               .refCourse?.hours,
                                                           '0',
                                                         ),
@@ -387,7 +388,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                 ),
                                                 Text(
                                                   valueOrDefault<String>(
-                                                    widget!
+                                                    widget
                                                         .refUser?.displayName,
                                                     '--',
                                                   ),
@@ -488,7 +489,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                 FFButtonWidget(
                                                   onPressed: () async {
                                                     await launchURL(
-                                                        '${widget!.refCertificate?.urlPdf}');
+                                                        '${widget.refCertificate?.urlPdf}');
                                                   },
                                                   text: 'Descargar PDF',
                                                   options: FFButtonOptions(

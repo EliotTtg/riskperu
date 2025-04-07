@@ -19,16 +19,11 @@ import '/pages/lista_estudiantes_examen/lista_estudiantes_examen_widget.dart';
 import '/pages/lista_preguntas_examen/lista_preguntas_examen_widget.dart';
 import '/pages/mostar_eleccion_curso/mostar_eleccion_curso_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
-import 'dart:ui';
 import '/index.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'administration_teacher_model.dart';
 export 'administration_teacher_model.dart';
@@ -351,7 +346,7 @@ class _AdministrationTeacherWidgetState
                                                                                                             (records) => _model.simpleSearchResults1 = TextSearch(
                                                                                                               records
                                                                                                                   .map(
-                                                                                                                    (record) => TextSearchItem.fromTerms(record, [record.nombre!]),
+                                                                                                                    (record) => TextSearchItem.fromTerms(record, [record.nombre]),
                                                                                                                   )
                                                                                                                   .toList(),
                                                                                                             ).search(_model.txtbuscarExamenTextController1.text).map((r) => r.object).toList(),
@@ -611,7 +606,7 @@ class _AdministrationTeacherWidgetState
                                                                                                   ),
                                                                                                 ],
                                                                                                 dataRowBuilder: (listExamenesItem, listExamenesIndex, selected, onSelectChanged) => DataRow(
-                                                                                                  color: MaterialStateProperty.all(
+                                                                                                  color: WidgetStateProperty.all(
                                                                                                     listExamenesIndex % 2 == 0 ? Color(0xFFF6F6F6) : Colors.white,
                                                                                                   ),
                                                                                                   cells: [
@@ -864,7 +859,7 @@ class _AdministrationTeacherWidgetState
                                                                                                             (records) => _model.simpleSearchResults2 = TextSearch(
                                                                                                               records
                                                                                                                   .map(
-                                                                                                                    (record) => TextSearchItem.fromTerms(record, [record.name!]),
+                                                                                                                    (record) => TextSearchItem.fromTerms(record, [record.name]),
                                                                                                                   )
                                                                                                                   .toList(),
                                                                                                             ).search(_model.txtbuscarExamenTextController2.text).map((r) => r.object).toList(),
@@ -1128,7 +1123,7 @@ class _AdministrationTeacherWidgetState
                                                                                                   ),
                                                                                                 ],
                                                                                                 dataRowBuilder: (listacategoriasexamenItem, listacategoriasexamenIndex, selected, onSelectChanged) => DataRow(
-                                                                                                  color: MaterialStateProperty.all(
+                                                                                                  color: WidgetStateProperty.all(
                                                                                                     listacategoriasexamenIndex % 2 == 0 ? Color(0xFFF6F6F6) : Colors.white,
                                                                                                   ),
                                                                                                   cells: [
@@ -1383,7 +1378,7 @@ class _AdministrationTeacherWidgetState
                                                                                                       (records) => _model.simpleSearchResults3 = TextSearch(
                                                                                                         records
                                                                                                             .map(
-                                                                                                              (record) => TextSearchItem.fromTerms(record, [record.name!]),
+                                                                                                              (record) => TextSearchItem.fromTerms(record, [record.name]),
                                                                                                             )
                                                                                                             .toList(),
                                                                                                       ).search(_model.txtbuscarCursoTextController.text).map((r) => r.object).toList(),
@@ -1652,7 +1647,7 @@ class _AdministrationTeacherWidgetState
                                                                                             ),
                                                                                           ],
                                                                                           dataRowBuilder: (listCoursesItem, listCoursesIndex, selected, onSelectChanged) => DataRow(
-                                                                                            color: MaterialStateProperty.all(
+                                                                                            color: WidgetStateProperty.all(
                                                                                               listCoursesIndex % 2 == 0 ? Color(0xFFF6F6F6) : Colors.white,
                                                                                             ),
                                                                                             cells: [
@@ -1996,7 +1991,7 @@ class _AdministrationTeacherWidgetState
                                                                                               (records) => _model.simpleSearchResults4 = TextSearch(
                                                                                                 records
                                                                                                     .map(
-                                                                                                      (record) => TextSearchItem.fromTerms(record, [record.displayName!]),
+                                                                                                      (record) => TextSearchItem.fromTerms(record, [record.displayName]),
                                                                                                     )
                                                                                                     .toList(),
                                                                                               ).search(_model.txtbuscarEstudianteTextController.text).map((r) => r.object).toList(),
@@ -2250,7 +2245,7 @@ class _AdministrationTeacherWidgetState
                                                                                       ),
                                                                                     ],
                                                                                     dataRowBuilder: (listausuariosItem, listausuariosIndex, selected, onSelectChanged) => DataRow(
-                                                                                      color: MaterialStateProperty.all(
+                                                                                      color: WidgetStateProperty.all(
                                                                                         listausuariosIndex % 2 == 0 ? Color(0xFFF6F6F6) : Colors.white,
                                                                                       ),
                                                                                       cells: [

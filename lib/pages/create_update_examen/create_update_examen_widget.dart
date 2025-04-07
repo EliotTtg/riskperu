@@ -5,14 +5,10 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_update_examen_model.dart';
 export 'create_update_examen_model.dart';
 
@@ -47,29 +43,29 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
 
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      if (widget!.refExamen != null) {
-        _model.refTeacher = widget!.refExamen?.uidTeacher;
+      if (widget.refExamen != null) {
+        _model.refTeacher = widget.refExamen?.uidTeacher;
         _model.state = valueOrDefault<bool>(
-          widget!.refExamen?.state,
+          widget.refExamen?.state,
           false,
         );
         safeSetState(() {});
         safeSetState(() {
-          _model.cbostateValueController?.value = widget!.refExamen!.state;
+          _model.cbostateValueController?.value = widget.refExamen!.state;
         });
       }
     });
 
     _model.txttituloTextController ??=
-        TextEditingController(text: widget!.refExamen?.nombre);
+        TextEditingController(text: widget.refExamen?.nombre);
     _model.txttituloFocusNode ??= FocusNode();
 
     _model.txttiempolimiteTextController ??= TextEditingController(
-        text: widget!.refExamen?.tiempoLimite?.toString());
+        text: widget.refExamen?.tiempoLimite.toString());
     _model.txttiempolimiteFocusNode ??= FocusNode();
 
     _model.txtdescripcionTextController ??=
-        TextEditingController(text: widget!.refExamen?.descripcion);
+        TextEditingController(text: widget.refExamen?.descripcion);
     _model.txtdescripcionFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -130,7 +126,7 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                 children: [
                                   Text(
                                     valueOrDefault<String>(
-                                      widget!.refExamen != null
+                                      widget.refExamen != null
                                           ? 'Actualizar Examen'
                                           : 'Crear Examen',
                                       'Crear Examen',
@@ -567,7 +563,7 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                                       FormFieldController<
                                                           String>(
                                                     _model.cboencargadosValue ??=
-                                                        widget!.refExamen
+                                                        widget.refExamen
                                                             ?.uidTeacher,
                                                   ),
                                                   options: List<String>.from(
@@ -817,19 +813,19 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                       FFButtonWidget(
                                         onPressed: ((_model.txttituloTextController
                                                         .text ==
-                                                    widget!
+                                                    widget
                                                         .refExamen?.nombre) &&
                                                 (_model.state ==
-                                                    widget!.refExamen?.state) &&
+                                                    widget.refExamen?.state) &&
                                                 (_model.txttiempolimiteTextController
                                                         .text ==
-                                                    '${widget!.refExamen?.tiempoLimite?.toString()}') &&
+                                                    '${widget.refExamen?.tiempoLimite.toString()}') &&
                                                 (_model.refTeacher ==
-                                                    widget!.refExamen
+                                                    widget.refExamen
                                                         ?.uidTeacher) &&
                                                 (_model.txtdescripcionTextController
                                                         .text ==
-                                                    widget!.refExamen
+                                                    widget.refExamen
                                                         ?.descripcion))
                                             ? null
                                             : () async {
@@ -841,8 +837,8 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                                         .validate()) {
                                                   return;
                                                 }
-                                                if (widget!.refExamen != null) {
-                                                  await widget!
+                                                if (widget.refExamen != null) {
+                                                  await widget
                                                       .refExamen!.reference
                                                       .update(
                                                           createExamenesRecordData(
@@ -927,7 +923,7 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                                     uidTeacher:
                                                         _model.refTeacher,
                                                     state: _model.state,
-                                                    uidGroup: widget!
+                                                    uidGroup: widget
                                                         .refCategoryExamen,
                                                   ));
                                                   _model.refExamen = ExamenesRecord
@@ -948,7 +944,7 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                                             uidTeacher: _model
                                                                 .refTeacher,
                                                             state: _model.state,
-                                                            uidGroup: widget!
+                                                            uidGroup: widget
                                                                 .refCategoryExamen,
                                                           ),
                                                           examenesRecordReference);
@@ -1012,7 +1008,7 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                                 safeSetState(() {});
                                               },
                                         text: valueOrDefault<String>(
-                                          widget!.refExamen != null
+                                          widget.refExamen != null
                                               ? 'Guardar Cambios'
                                               : 'Crear Examen',
                                           'Crear Examen',
@@ -1045,7 +1041,7 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                                   .secondary,
                                         ),
                                       ),
-                                      if (widget!.refExamen != null)
+                                      if (widget.refExamen != null)
                                         FFButtonWidget(
                                           onPressed: () async {
                                             _model.refPreguntas =
@@ -1053,7 +1049,7 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                               queryBuilder: (preguntasRecord) =>
                                                   preguntasRecord.where(
                                                 'examen_ref',
-                                                isEqualTo: widget!
+                                                isEqualTo: widget
                                                     .refExamen?.reference.id,
                                               ),
                                               singleRecord: true,
@@ -1061,7 +1057,7 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                             if (!(_model.refPreguntas !=
                                                 null)) {
                                               Navigator.pop(context);
-                                              await widget!.refExamen!.reference
+                                              await widget.refExamen!.reference
                                                   .delete();
                                             }
                                             await Future.delayed(const Duration(

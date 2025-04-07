@@ -1,15 +1,12 @@
-import '/auth/base_auth_user_provider.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/log_out/log_out_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'header_model.dart';
 export 'header_model.dart';
@@ -206,14 +203,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                     valueOrDefault<
                                                                         Color>(
                                                                   () {
-                                                                    if (widget!
+                                                                    if (widget
                                                                             .state ==
                                                                         5) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
                                                                     } else if (_model
-                                                                        .mouseRegionHovered1!) {
+                                                                        .mouseRegionHovered1) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
@@ -301,14 +298,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                     valueOrDefault<
                                                                         Color>(
                                                                   () {
-                                                                    if (widget!
+                                                                    if (widget
                                                                             .state ==
                                                                         1) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
                                                                     } else if (_model
-                                                                        .mouseRegionHovered2!) {
+                                                                        .mouseRegionHovered2) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
@@ -396,14 +393,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                     valueOrDefault<
                                                                         Color>(
                                                                   () {
-                                                                    if (widget!
+                                                                    if (widget
                                                                             .state ==
                                                                         2) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
                                                                     } else if (_model
-                                                                        .mouseRegionHovered3!) {
+                                                                        .mouseRegionHovered3) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
@@ -491,14 +488,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                     valueOrDefault<
                                                                         Color>(
                                                                   () {
-                                                                    if (widget!
+                                                                    if (widget
                                                                             .state ==
                                                                         3) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
                                                                     } else if (_model
-                                                                        .mouseRegionHovered4!) {
+                                                                        .mouseRegionHovered4) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
@@ -595,14 +592,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                     valueOrDefault<
                                                                         Color>(
                                                                   () {
-                                                                    if (widget!
+                                                                    if (widget
                                                                             .state ==
                                                                         4) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;
                                                                     } else if (_model
-                                                                        .mouseRegionHovered5!) {
+                                                                        .mouseRegionHovered5) {
                                                                       return FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary;

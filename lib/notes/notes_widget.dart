@@ -10,12 +10,7 @@ import '/pages/empty_notes/empty_notes_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
-import 'dart:ui';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'notes_model.dart';
 export 'notes_model.dart';
 
@@ -1389,7 +1384,7 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                           onSelectChanged) =>
                                                                       DataRow(
                                                                     color:
-                                                                        MaterialStateProperty
+                                                                        WidgetStateProperty
                                                                             .all(
                                                                       listNotesIndex % 2 ==
                                                                               0
@@ -1460,7 +1455,7 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                             valueOrDefault<String>(
                                                                               textExamenesRecord != null
                                                                                   ? valueOrDefault<String>(
-                                                                                      textExamenesRecord?.nombre,
+                                                                                      textExamenesRecord.nombre,
                                                                                       '--',
                                                                                     )
                                                                                   : '--',
@@ -1576,7 +1571,7 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                                 textDetallesResultadosRecord != null
                                                                                     ? valueOrDefault<String>(
                                                                                         '${valueOrDefault<String>(
-                                                                                          textDetallesResultadosRecord?.porcentaje?.toString(),
+                                                                                          textDetallesResultadosRecord.porcentaje.toString(),
                                                                                           '0',
                                                                                         )}%',
                                                                                         '0%',
@@ -1641,7 +1636,7 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                                 textDetallesResultadosRecord != null
                                                                                     ? valueOrDefault<String>(
                                                                                         '${valueOrDefault<String>(
-                                                                                          textDetallesResultadosRecord?.porcentaje?.toString(),
+                                                                                          textDetallesResultadosRecord.porcentaje.toString(),
                                                                                           '0',
                                                                                         )}%',
                                                                                         '0%',
@@ -1706,7 +1701,7 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                                 textDetallesResultadosRecord != null
                                                                                     ? valueOrDefault<String>(
                                                                                         '${valueOrDefault<String>(
-                                                                                          textDetallesResultadosRecord?.porcentaje?.toString(),
+                                                                                          textDetallesResultadosRecord.porcentaje.toString(),
                                                                                           '0',
                                                                                         )}%',
                                                                                         '0%',
