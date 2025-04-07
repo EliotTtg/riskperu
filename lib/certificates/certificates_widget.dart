@@ -932,7 +932,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                                               '--',
                                                                             ),
                                                                             textAlign:
-                                                                                TextAlign.center,
+                                                                                TextAlign.start,
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Poppins',
                                                                                   letterSpacing: 0.0,
