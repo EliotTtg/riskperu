@@ -18,6 +18,10 @@ jobs:
         with:
           flutter-version: '3.19.6'
 
+      - name: Fix collection version conflict
+        run: |
+          sed -i 's/collection: \^1.19.0/collection: 1.18.0/' pubspec.yaml
+
       - name: Install dependencies
         run: flutter pub get
 
@@ -30,6 +34,9 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan 147.93.144.223 >> ~/.ssh/known_hosts
+
+      - name: Test SSH connection
+        run: ssh root@147.93.144.223 "echo SSH OK"
 
       - name: Deploy to Server
         run: |
