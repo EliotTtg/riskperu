@@ -1994,23 +1994,21 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           child:
                                                                               StreamBuilder<List<RespuestaStateRecord>>(
                                                                             stream:
-                                                                                FFAppState().respuestaState(
-                                                                              requestFn: () => queryRespuestaStateRecord(
-                                                                                queryBuilder: (respuestaStateRecord) => respuestaStateRecord
-                                                                                    .where(
-                                                                                      'uis_user',
-                                                                                      isEqualTo: widget.refUser?.id,
-                                                                                    )
-                                                                                    .where(
-                                                                                      'uid_examen',
-                                                                                      isEqualTo: widget.refExamination?.reference.id,
-                                                                                    )
-                                                                                    .where(
-                                                                                      'uid_question',
-                                                                                      isEqualTo: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                    ),
-                                                                                singleRecord: true,
-                                                                              ),
+                                                                                queryRespuestaStateRecord(
+                                                                              queryBuilder: (respuestaStateRecord) => respuestaStateRecord
+                                                                                  .where(
+                                                                                    'uis_user',
+                                                                                    isEqualTo: widget.refUser?.id,
+                                                                                  )
+                                                                                  .where(
+                                                                                    'uid_examen',
+                                                                                    isEqualTo: widget.refExamination?.reference.id,
+                                                                                  )
+                                                                                  .where(
+                                                                                    'uid_question',
+                                                                                    isEqualTo: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                                  ),
+                                                                              singleRecord: true,
                                                                             ),
                                                                             builder:
                                                                                 (context, snapshot) {

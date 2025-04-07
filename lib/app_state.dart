@@ -121,20 +121,4 @@ class FFAppState extends ChangeNotifier {
   void clearUsersAnswersCache() => _usersAnswersManager.clear();
   void clearUsersAnswersCacheKey(String? uniqueKey) =>
       _usersAnswersManager.clearRequest(uniqueKey);
-
-  final _respuestaStateManager =
-      StreamRequestManager<List<RespuestaStateRecord>>();
-  Stream<List<RespuestaStateRecord>> respuestaState({
-    String? uniqueQueryKey,
-    bool? overrideCache,
-    required Stream<List<RespuestaStateRecord>> Function() requestFn,
-  }) =>
-      _respuestaStateManager.performRequest(
-        uniqueQueryKey: uniqueQueryKey,
-        overrideCache: overrideCache,
-        requestFn: requestFn,
-      );
-  void clearRespuestaStateCache() => _respuestaStateManager.clear();
-  void clearRespuestaStateCacheKey(String? uniqueKey) =>
-      _respuestaStateManager.clearRequest(uniqueKey);
 }
