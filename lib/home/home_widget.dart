@@ -1093,8 +1093,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                           milliseconds:
                                                                               500),
                                                                   imageUrl:
-                                                                      wrapCoursesRecord
-                                                                          .imageCourse,
+                                                                      valueOrDefault<
+                                                                          String>(
+                                                                    wrapCoursesRecord
+                                                                        .imageCourse,
+                                                                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/kpacita-ssg7c7/assets/mouvjylm6zw7/Risk_Peru_rebranding_final_Mesa_de_trabajo_1_copia_11.png',
+                                                                  ),
                                                                   width: double
                                                                       .infinity,
                                                                   height: 140.0,
