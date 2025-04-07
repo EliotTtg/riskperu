@@ -1185,7 +1185,9 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                 allowPlaybackSpeedMenu: false,
                                               ),
                                               FFButtonWidget(
-                                                onPressed: () async {},
+                                                onPressed: () {
+                                                  print('Button pressed ...');
+                                                },
                                                 text: 'Demo',
                                                 options: FFButtonOptions(
                                                   width: double.infinity,
