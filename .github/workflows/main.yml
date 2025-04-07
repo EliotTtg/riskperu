@@ -26,8 +26,8 @@ jobs:
         run: flutter pub get
 
       - name: Build Flutter Web
-        run: flutter build web
-
+        run: flutter build web --web-renderer html
+        
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
