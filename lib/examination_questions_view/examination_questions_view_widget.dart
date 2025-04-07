@@ -6,19 +6,14 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/from_result_simulator/from_result_simulator_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'examination_questions_view_model.dart';
 export 'examination_questions_view_model.dart';
 
@@ -59,21 +54,21 @@ class _ExaminationQuestionsViewWidgetState
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      _model.refExamen = widget!.refExamination?.reference.id;
+      _model.refExamen = widget.refExamination?.reference.id;
       safeSetState(() {});
       await Future.wait([
         Future(() async {
           _model.porcentajeCourse = await actions.porcentajeCourseLinea(
-            widget!.refCourse!,
-            widget!.refUser!,
-            widget!.isdemo!,
+            widget.refCourse!,
+            widget.refUser!,
+            widget.isdemo!,
           );
         }),
         Future(() async {
           _model.porcentajeExamenes = await actions.porcentajeCourse(
-            widget!.refCourse!,
-            widget!.refUser!,
-            widget!.isdemo!,
+            widget.refCourse!,
+            widget.refUser!,
+            widget.isdemo!,
           );
         }),
       ]);
@@ -164,7 +159,7 @@ class _ExaminationQuestionsViewWidgetState
                                                           examGroupsRecord
                                                               .where(
                                                                 'uid_Course',
-                                                                isEqualTo: widget!
+                                                                isEqualTo: widget
                                                                     .refCourse
                                                                     ?.reference
                                                                     .id,
@@ -172,7 +167,7 @@ class _ExaminationQuestionsViewWidgetState
                                                               .where(
                                                                 'is_demo',
                                                                 isEqualTo:
-                                                                    widget!
+                                                                    widget
                                                                         .isdemo,
                                                               )
                                                               .where(
@@ -264,7 +259,7 @@ class _ExaminationQuestionsViewWidgetState
                                                                         TextSpan(
                                                                           text:
                                                                               valueOrDefault<String>(
-                                                                            widget!.type == 1
+                                                                            widget.type == 1
                                                                                 ? 'Curso'
                                                                                 : 'Simulador',
                                                                             'Simulador',
@@ -312,7 +307,7 @@ class _ExaminationQuestionsViewWidgetState
                                                           Text(
                                                             valueOrDefault<
                                                                 String>(
-                                                              widget!.refCourse
+                                                              widget.refCourse
                                                                   ?.name,
                                                               '-',
                                                             ),
@@ -812,7 +807,7 @@ class _ExaminationQuestionsViewWidgetState
                                                                   .where(
                                                                     'estudiante_ref',
                                                                     isEqualTo:
-                                                                        widget!
+                                                                        widget
                                                                             .refUser
                                                                             ?.id,
                                                                   )
@@ -826,7 +821,7 @@ class _ExaminationQuestionsViewWidgetState
                                                                   .where(
                                                                     'type',
                                                                     isEqualTo:
-                                                                        widget!
+                                                                        widget
                                                                             .type,
                                                                   )
                                                                   .orderBy(
@@ -941,7 +936,7 @@ class _ExaminationQuestionsViewWidgetState
                                                                               stream: queryPreguntasRecord(
                                                                                 queryBuilder: (preguntasRecord) => preguntasRecord.where(
                                                                                   'examen_ref',
-                                                                                  isEqualTo: widget!.refExamination?.reference.id != '' ? widget!.refExamination?.reference.id : null,
+                                                                                  isEqualTo: widget.refExamination?.reference.id != '' ? widget.refExamination?.reference.id : null,
                                                                                 ),
                                                                               ),
                                                                               builder: (context, snapshot) {
@@ -1183,7 +1178,7 @@ class _ExaminationQuestionsViewWidgetState
                                                                                       ...createResultadosRecordData(
                                                                                         estudianteRef: currentUserReference?.id,
                                                                                         estado: true,
-                                                                                        type: widget!.type,
+                                                                                        type: widget.type,
                                                                                         examenRef: containerExamenesRecord?.reference.id,
                                                                                       ),
                                                                                       ...mapToFirestore(
@@ -1196,7 +1191,7 @@ class _ExaminationQuestionsViewWidgetState
                                                                                       ...createResultadosRecordData(
                                                                                         estudianteRef: currentUserReference?.id,
                                                                                         estado: true,
-                                                                                        type: widget!.type,
+                                                                                        type: widget.type,
                                                                                         examenRef: containerExamenesRecord?.reference.id,
                                                                                       ),
                                                                                       ...mapToFirestore(
@@ -1210,12 +1205,12 @@ class _ExaminationQuestionsViewWidgetState
                                                                                       uid: _model.refResultado1?.reference.id,
                                                                                     ));
                                                                                     _model.refResultCourse1 = await ResultadosRecord.getDocumentOnce(_model.refResultado1!.reference);
-                                                                                    if (widget!.type == 2) {
+                                                                                    if (widget.type == 2) {
                                                                                       var registerSimulatorRecordReference = RegisterSimulatorRecord.collection.doc();
                                                                                       await registerSimulatorRecordReference.set({
                                                                                         ...createRegisterSimulatorRecordData(
-                                                                                          uidUser: widget!.refUser?.id,
-                                                                                          uidCourse: widget!.refCourse?.reference.id,
+                                                                                          uidUser: widget.refUser?.id,
+                                                                                          uidCourse: widget.refCourse?.reference.id,
                                                                                         ),
                                                                                         ...mapToFirestore(
                                                                                           {
@@ -1225,8 +1220,8 @@ class _ExaminationQuestionsViewWidgetState
                                                                                       });
                                                                                       _model.refRegister = RegisterSimulatorRecord.getDocumentFromData({
                                                                                         ...createRegisterSimulatorRecordData(
-                                                                                          uidUser: widget!.refUser?.id,
-                                                                                          uidCourse: widget!.refCourse?.reference.id,
+                                                                                          uidUser: widget.refUser?.id,
+                                                                                          uidCourse: widget.refCourse?.reference.id,
                                                                                         ),
                                                                                         ...mapToFirestore(
                                                                                           {
@@ -1272,8 +1267,8 @@ class _ExaminationQuestionsViewWidgetState
                                                                                             child: FromResultSimulatorWidget(
                                                                                               refExamen: containerExamenesRecord!,
                                                                                               refUser: currentUserReference!,
-                                                                                              refCourse: widget!.refCourse!,
-                                                                                              type: widget!.type!,
+                                                                                              refCourse: widget.refCourse!,
+                                                                                              type: widget.type!,
                                                                                             ),
                                                                                           ),
                                                                                         );
@@ -1292,7 +1287,7 @@ class _ExaminationQuestionsViewWidgetState
                                                                                           ParamType.Document,
                                                                                         ),
                                                                                         'refCourse': serializeParam(
-                                                                                          widget!.refCourse,
+                                                                                          widget.refCourse,
                                                                                           ParamType.Document,
                                                                                         ),
                                                                                         'refUser': serializeParam(
@@ -1300,18 +1295,18 @@ class _ExaminationQuestionsViewWidgetState
                                                                                           ParamType.DocumentReference,
                                                                                         ),
                                                                                         'type': serializeParam(
-                                                                                          widget!.type,
+                                                                                          widget.type,
                                                                                           ParamType.int,
                                                                                         ),
                                                                                         'isdemo': serializeParam(
-                                                                                          widget!.isdemo,
+                                                                                          widget.isdemo,
                                                                                           ParamType.bool,
                                                                                         ),
                                                                                       }.withoutNulls,
                                                                                       extra: <String, dynamic>{
                                                                                         'refExamination': containerExamenesRecord,
                                                                                         'refResult': _model.refResult,
-                                                                                        'refCourse': widget!.refCourse,
+                                                                                        'refCourse': widget.refCourse,
                                                                                         kTransitionInfoKey: TransitionInfo(
                                                                                           hasTransition: true,
                                                                                           transitionType: PageTransitionType.fade,

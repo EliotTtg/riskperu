@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_timer.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'timer_model.dart';
 export 'timer_model.dart';
 
@@ -47,7 +45,7 @@ class _TimerWidgetState extends State<TimerWidget> {
   @override
   Widget build(BuildContext context) {
     return FlutterFlowTimer(
-      initialTime: widget!.parameter1!,
+      initialTime: widget.parameter1!,
       getDisplayTime: (value) =>
           StopWatchTimer.getDisplayTime(value, milliSecond: false),
       controller: _model.timerController,

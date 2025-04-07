@@ -7,16 +7,10 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/pages/empty_preguntas_frecuentes_respuestas/empty_preguntas_frecuentes_respuestas_widget.dart';
-import 'dart:ui';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lista_preguntas_examen_model.dart';
 export 'lista_preguntas_examen_model.dart';
 
@@ -49,11 +43,11 @@ class _ListaPreguntasExamenWidgetState
     _model = createModel(context, () => ListaPreguntasExamenModel());
 
     _model.txttituloTextController ??=
-        TextEditingController(text: widget!.refExamen?.nombre);
+        TextEditingController(text: widget.refExamen?.nombre);
     _model.txttituloFocusNode ??= FocusNode();
 
     _model.txttiempolimiteTextController ??= TextEditingController(
-        text: widget!.refExamen?.tiempoLimite?.toString());
+        text: widget.refExamen?.tiempoLimite.toString());
     _model.txttiempolimiteFocusNode ??= FocusNode();
 
     _model.txtencargadoTextController ??= TextEditingController();
@@ -1235,7 +1229,7 @@ class _ListaPreguntasExamenWidgetState
                                                           currentUserReference
                                                               ?.id,
                                                       descripction:
-                                                          'Actualizo la pregunta ${_model.refPreguntaUpdate?.texto} al examen ${widget!.refExamen?.nombre}',
+                                                          'Actualizo la pregunta ${_model.refPreguntaUpdate?.texto} al examen ${widget.refExamen?.nombre}',
                                                       createdDate:
                                                           getCurrentTimestamp,
                                                     ));
@@ -1247,7 +1241,7 @@ class _ListaPreguntasExamenWidgetState
                                                                       currentUserReference
                                                                           ?.id,
                                                                   descripction:
-                                                                      'Actualizo la pregunta ${_model.refPreguntaUpdate?.texto} al examen ${widget!.refExamen?.nombre}',
+                                                                      'Actualizo la pregunta ${_model.refPreguntaUpdate?.texto} al examen ${widget.refExamen?.nombre}',
                                                                   createdDate:
                                                                       getCurrentTimestamp,
                                                                 ),
@@ -1271,7 +1265,7 @@ class _ListaPreguntasExamenWidgetState
                                                               preguntasRecord
                                                                   .where(
                                                         'examen_ref',
-                                                        isEqualTo: widget!
+                                                        isEqualTo: widget
                                                             .refExamen
                                                             ?.reference
                                                             .id,
@@ -1289,7 +1283,7 @@ class _ListaPreguntasExamenWidgetState
                                                         texto: _model
                                                             .txtpreguntaTextController
                                                             .text,
-                                                        examenRef: widget!
+                                                        examenRef: widget
                                                             .refExamen
                                                             ?.reference
                                                             .id,
@@ -1311,7 +1305,7 @@ class _ListaPreguntasExamenWidgetState
                                                                     texto: _model
                                                                         .txtpreguntaTextController
                                                                         .text,
-                                                                    examenRef: widget!
+                                                                    examenRef: widget
                                                                         .refExamen
                                                                         ?.reference
                                                                         .id,
@@ -1351,7 +1345,7 @@ class _ListaPreguntasExamenWidgetState
                                                             currentUserReference
                                                                 ?.id,
                                                         descripction:
-                                                            'Agregó la pregunta ${_model.refPreguntaUpdate?.texto} al examen ${widget!.refExamen?.nombre}',
+                                                            'Agregó la pregunta ${_model.refPreguntaUpdate?.texto} al examen ${widget.refExamen?.nombre}',
                                                         createdDate:
                                                             getCurrentTimestamp,
                                                       ));
@@ -1363,7 +1357,7 @@ class _ListaPreguntasExamenWidgetState
                                                                         currentUserReference
                                                                             ?.id,
                                                                     descripction:
-                                                                        'Agregó la pregunta ${_model.refPreguntaUpdate?.texto} al examen ${widget!.refExamen?.nombre}',
+                                                                        'Agregó la pregunta ${_model.refPreguntaUpdate?.texto} al examen ${widget.refExamen?.nombre}',
                                                                     createdDate:
                                                                         getCurrentTimestamp,
                                                                   ),
@@ -1780,7 +1774,7 @@ class _ListaPreguntasExamenWidgetState
                                                                           currentUserReference
                                                                               ?.id,
                                                                       descripction:
-                                                                          'Actualizo la respuesta ${_model.txtrespuestaTextController.text}de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget!.refExamen?.nombre}',
+                                                                          'Actualizo la respuesta ${_model.txtrespuestaTextController.text}de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget.refExamen?.nombre}',
                                                                       createdDate:
                                                                           getCurrentTimestamp,
                                                                     ));
@@ -1788,7 +1782,7 @@ class _ListaPreguntasExamenWidgetState
                                                                         ActionsRecord.getDocumentFromData(
                                                                             createActionsRecordData(
                                                                               uidUser: currentUserReference?.id,
-                                                                              descripction: 'Actualizo la respuesta ${_model.txtrespuestaTextController.text}de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget!.refExamen?.nombre}',
+                                                                              descripction: 'Actualizo la respuesta ${_model.txtrespuestaTextController.text}de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget.refExamen?.nombre}',
                                                                               createdDate: getCurrentTimestamp,
                                                                             ),
                                                                             actionsRecordReference1);
@@ -1859,7 +1853,7 @@ class _ListaPreguntasExamenWidgetState
                                                                           currentUserReference
                                                                               ?.id,
                                                                       descripction:
-                                                                          'Agregó la respuesta ${_model.txtrespuestaTextController.text} de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget!.refExamen?.nombre}',
+                                                                          'Agregó la respuesta ${_model.txtrespuestaTextController.text} de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget.refExamen?.nombre}',
                                                                       createdDate:
                                                                           getCurrentTimestamp,
                                                                     ));
@@ -1867,7 +1861,7 @@ class _ListaPreguntasExamenWidgetState
                                                                         ActionsRecord.getDocumentFromData(
                                                                             createActionsRecordData(
                                                                               uidUser: currentUserReference?.id,
-                                                                              descripction: 'Agregó la respuesta ${_model.txtrespuestaTextController.text} de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget!.refExamen?.nombre}',
+                                                                              descripction: 'Agregó la respuesta ${_model.txtrespuestaTextController.text} de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget.refExamen?.nombre}',
                                                                               createdDate: getCurrentTimestamp,
                                                                             ),
                                                                             actionsRecordReference2);
@@ -2143,13 +2137,13 @@ class _ListaPreguntasExamenWidgetState
                                                                               var actionsRecordReference = ActionsRecord.collection.doc();
                                                                               await actionsRecordReference.set(createActionsRecordData(
                                                                                 uidUser: currentUserReference?.id,
-                                                                                descripction: 'Elimino la respuesta ${listRespuestasItem.textoRespuesta} de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget!.refExamen?.nombre}',
+                                                                                descripction: 'Elimino la respuesta ${listRespuestasItem.textoRespuesta} de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget.refExamen?.nombre}',
                                                                                 createdDate: getCurrentTimestamp,
                                                                               ));
                                                                               _model.refQuestionDelete = ActionsRecord.getDocumentFromData(
                                                                                   createActionsRecordData(
                                                                                     uidUser: currentUserReference?.id,
-                                                                                    descripction: 'Elimino la respuesta ${listRespuestasItem.textoRespuesta} de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget!.refExamen?.nombre}',
+                                                                                    descripction: 'Elimino la respuesta ${listRespuestasItem.textoRespuesta} de la pregunta ${_model.refPreguntaUpdate?.texto} del examen ${widget.refExamen?.nombre}',
                                                                                     createdDate: getCurrentTimestamp,
                                                                                   ),
                                                                                   actionsRecordReference);
@@ -2275,10 +2269,10 @@ class _ListaPreguntasExamenWidgetState
                                         preguntasRecord
                                             .where(
                                               'examen_ref',
-                                              isEqualTo: widget!.refExamen
+                                              isEqualTo: widget.refExamen
                                                           ?.reference.id !=
                                                       ''
-                                                  ? widget!
+                                                  ? widget
                                                       .refExamen?.reference.id
                                                   : null,
                                             )
@@ -2513,13 +2507,13 @@ class _ListaPreguntasExamenWidgetState
                                                                                             var actionsRecordReference = ActionsRecord.collection.doc();
                                                                                             await actionsRecordReference.set(createActionsRecordData(
                                                                                               uidUser: currentUserReference?.id,
-                                                                                              descripction: 'Elimino la pregunta ${preguntasItem.texto} del examen ${widget!.refExamen?.nombre}',
+                                                                                              descripction: 'Elimino la pregunta ${preguntasItem.texto} del examen ${widget.refExamen?.nombre}',
                                                                                               createdDate: getCurrentTimestamp,
                                                                                             ));
                                                                                             _model.refQuestionDeletes = ActionsRecord.getDocumentFromData(
                                                                                                 createActionsRecordData(
                                                                                                   uidUser: currentUserReference?.id,
-                                                                                                  descripction: 'Elimino la pregunta ${preguntasItem.texto} del examen ${widget!.refExamen?.nombre}',
+                                                                                                  descripction: 'Elimino la pregunta ${preguntasItem.texto} del examen ${widget.refExamen?.nombre}',
                                                                                                   createdDate: getCurrentTimestamp,
                                                                                                 ),
                                                                                                 actionsRecordReference);
@@ -2536,7 +2530,7 @@ class _ListaPreguntasExamenWidgetState
                                                                                     ),
                                                                                   ],
                                                                                 ),
-                                                                                if (preguntasItem.enunciado != null && preguntasItem.enunciado != '')
+                                                                                if (preguntasItem.enunciado != '')
                                                                                   Text(
                                                                                     preguntasItem.enunciado,
                                                                                     textAlign: TextAlign.start,

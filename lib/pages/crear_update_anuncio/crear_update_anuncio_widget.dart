@@ -3,15 +3,9 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'crear_update_anuncio_model.dart';
 export 'crear_update_anuncio_model.dart';
 
@@ -45,11 +39,11 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
     _model = createModel(context, () => CrearUpdateAnuncioModel());
 
     _model.txttituloTextController ??=
-        TextEditingController(text: widget!.refAnnouncements?.title);
+        TextEditingController(text: widget.refAnnouncements?.title);
     _model.txttituloFocusNode ??= FocusNode();
 
     _model.txtcontenidoTextController ??=
-        TextEditingController(text: widget!.refAnnouncements?.text);
+        TextEditingController(text: widget.refAnnouncements?.text);
     _model.txtcontenidoFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -538,8 +532,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                     !_model.formKey.currentState!.validate()) {
                                   return;
                                 }
-                                if (widget!.refAnnouncements != null) {
-                                  await widget!.refAnnouncements!.reference
+                                if (widget.refAnnouncements != null) {
+                                  await widget.refAnnouncements!.reference
                                       .update(
                                           createAnnouncementsCoursesRecordData(
                                     title: _model.txttituloTextController.text,
@@ -554,7 +548,7 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                       .set({
                                     ...createAnnouncementsCoursesRecordData(
                                       uidCourse:
-                                          widget!.refCourse?.reference.id,
+                                          widget.refCourse?.reference.id,
                                       createdBy: currentUserReference?.id,
                                       title:
                                           _model.txttituloTextController.text,
@@ -572,7 +566,7 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                       .getDocumentFromData({
                                     ...createAnnouncementsCoursesRecordData(
                                       uidCourse:
-                                          widget!.refCourse?.reference.id,
+                                          widget.refCourse?.reference.id,
                                       createdBy: currentUserReference?.id,
                                       title:
                                           _model.txttituloTextController.text,

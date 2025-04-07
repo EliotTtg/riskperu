@@ -7,15 +7,10 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/empty_certificates/empty_certificates_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/index.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'course_test_model.dart';
 export 'course_test_model.dart';
 
@@ -75,7 +70,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                     model: _model.headerModel,
                     updateCallback: () => safeSetState(() {}),
                     child: HeaderWidget(
-                      state: widget!.refCourse?.courseType,
+                      state: widget.refCourse?.courseType,
                     ),
                   ),
                   Padding(
@@ -120,7 +115,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                         ),
                                         Text(
                                           valueOrDefault<String>(
-                                            widget!.refCourse?.name,
+                                            widget.refCourse?.name,
                                             '--',
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -137,7 +132,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                         ),
                                         Text(
                                           valueOrDefault<String>(
-                                            widget!.refCourse?.description,
+                                            widget.refCourse?.description,
                                             '--',
                                           ),
                                           textAlign: TextAlign.start,
@@ -356,7 +351,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                   )
                                   .where(
                                     'uid_Course',
-                                    isEqualTo: widget!.refCourse?.reference.id,
+                                    isEqualTo: widget.refCourse?.reference.id,
                                   )
                                   .orderBy('fecha_creacion'),
                             ),
@@ -498,7 +493,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                           )
                                                           .where(
                                                             'type',
-                                                            isEqualTo: widget!
+                                                            isEqualTo: widget
                                                                 .refCourse
                                                                 ?.courseType,
                                                           )
@@ -838,7 +833,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                       onSelectChanged) =>
                                                   DataRow(
                                                 color:
-                                                    MaterialStateProperty.all(
+                                                    WidgetStateProperty.all(
                                                   listExamenIndex % 2 == 0
                                                       ? Color(0xFFF6F6F6)
                                                       : FlutterFlowTheme.of(
@@ -919,7 +914,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                     )
                                                                     .where(
                                                                       'type',
-                                                                      isEqualTo: widget!
+                                                                      isEqualTo: widget
                                                                           .refCourse
                                                                           ?.courseType,
                                                                     )
@@ -969,7 +964,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                     String>(
                                                                     formatNumber(
                                                                       textResultadosRecord
-                                                                          ?.calificacion,
+                                                                          .calificacion,
                                                                       formatType:
                                                                           FormatType
                                                                               .compact,
@@ -1020,7 +1015,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                     )
                                                                     .where(
                                                                       'type',
-                                                                      isEqualTo: widget!
+                                                                      isEqualTo: widget
                                                                           .refCourse
                                                                           ?.courseType,
                                                                     )
@@ -1204,7 +1199,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                     )
                                                                     .where(
                                                                       'type',
-                                                                      isEqualTo: widget!
+                                                                      isEqualTo: widget
                                                                           .refCourse
                                                                           ?.courseType,
                                                                     )
@@ -1388,7 +1383,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                     )
                                                                     .where(
                                                                       'type',
-                                                                      isEqualTo: widget!
+                                                                      isEqualTo: widget
                                                                           .refCourse
                                                                           ?.courseType,
                                                                     )
@@ -1572,7 +1567,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                     )
                                                                     .where(
                                                                       'type',
-                                                                      isEqualTo: widget!
+                                                                      isEqualTo: widget
                                                                           .refCourse
                                                                           ?.courseType,
                                                                     )
@@ -1621,14 +1616,14 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                   null)) {
                                                                 return 'Pendiente';
                                                               } else if (textResultadosRecord
-                                                                      ?.fechaFinExamen ==
+                                                                      .fechaFinExamen ==
                                                                   null) {
                                                                 return 'En Proceso';
-                                                              } else if (textResultadosRecord!
+                                                              } else if (textResultadosRecord
                                                                       .calificacion >=
                                                                   13.0) {
                                                                 return 'Aprobado';
-                                                              } else if (textResultadosRecord!
+                                                              } else if (textResultadosRecord
                                                                       .calificacion <=
                                                                   13.0) {
                                                                 return 'Desaprobado';
@@ -1683,7 +1678,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                     )
                                                                     .where(
                                                                       'type',
-                                                                      isEqualTo: widget!
+                                                                      isEqualTo: widget
                                                                           .refCourse
                                                                           ?.courseType,
                                                                     )
@@ -1914,10 +1909,10 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                 onPressed:
                                                     !valueOrDefault<bool>(
                                                   (List<double> var1) {
-                                                    return (var1?.isEmpty ??
+                                                    return (var1.isEmpty ??
                                                             true)
                                                         ? false
-                                                        : (var1!
+                                                        : (var1
                                                                     .map((e) =>
                                                                         e ??
                                                                         0.0)
@@ -1947,7 +1942,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                           .where(
                                                                             'uid_Course',
                                                                             isEqualTo:
-                                                                                widget!.refCourse?.reference.id,
+                                                                                widget.refCourse?.reference.id,
                                                                           )
                                                                           .where(
                                                                             'uid_User',
@@ -1965,10 +1960,10 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                   bool>(
                                                                 (List<double>
                                                                     var1) {
-                                                                  return (var1?.isEmpty ??
+                                                                  return (var1.isEmpty ??
                                                                           true)
                                                                       ? false
-                                                                      : (var1!.map((e) => e ?? 0.0).reduce((a, b) => a + b) /
+                                                                      : (var1.map((e) => e ?? 0.0).reduce((a, b) => a + b) /
                                                                               var1.length) >=
                                                                           14;
                                                                 }(containerResultadosRecordList
@@ -1982,13 +1977,13 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                 _model.urlCertificate =
                                                                     await actions
                                                                         .downloadAndSaveCertificatePDF(
-                                                                  widget!
+                                                                  widget
                                                                       .refCourse!
                                                                       .name,
                                                                   'asincrónico',
                                                                   valueOrDefault<
                                                                       int>(
-                                                                    int.parse(widget!
+                                                                    int.parse(widget
                                                                         .refCourse!
                                                                         .hours),
                                                                     0,
@@ -2013,10 +2008,10 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                       double>(
                                                                     (List<double>
                                                                         var1) {
-                                                                      return (var1?.isEmpty ??
+                                                                      return (var1.isEmpty ??
                                                                               true)
                                                                           ? 0.0
-                                                                          : (var1!.map((e) => e ?? 0.0).reduce((a, b) => a + b) /
+                                                                          : (var1.map((e) => e ?? 0.0).reduce((a, b) => a + b) /
                                                                               var1.length);
                                                                     }(containerResultadosRecordList
                                                                         .map((e) => valueOrDefault<double>(
@@ -2032,7 +2027,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                         .codeCertificate(
                                                                   currentUserReference!
                                                                       .id,
-                                                                  widget!
+                                                                  widget
                                                                       .refCourse!
                                                                       .reference
                                                                       .id,
@@ -2045,7 +2040,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                 await certificatesRecordReference
                                                                     .set({
                                                                   ...createCertificatesRecordData(
-                                                                    uidCourse: widget!
+                                                                    uidCourse: widget
                                                                         .refCourse
                                                                         ?.reference
                                                                         .id,
@@ -2069,7 +2064,7 @@ class _CourseTestWidgetState extends State<CourseTestWidget> {
                                                                     CertificatesRecord
                                                                         .getDocumentFromData({
                                                                   ...createCertificatesRecordData(
-                                                                    uidCourse: widget!
+                                                                    uidCourse: widget
                                                                         .refCourse
                                                                         ?.reference
                                                                         .id,

@@ -4,11 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/lista_actividades/lista_actividades_widget.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'eliminar_actividad_model.dart';
 export 'eliminar_actividad_model.dart';
 
@@ -46,11 +42,11 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
     _model = createModel(context, () => EliminarActividadModel());
 
     _model.textController1 ??=
-        TextEditingController(text: widget!.refActividad?.name);
+        TextEditingController(text: widget.refActividad?.name);
     _model.textFieldFocusNode1 ??= FocusNode();
 
     _model.textController2 ??=
-        TextEditingController(text: widget!.refActividad?.linkVideo);
+        TextEditingController(text: widget.refActividad?.linkVideo);
     _model.textFieldFocusNode2 ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -314,7 +310,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                         ...createActionsRecordData(
                                           uidUser: currentUserReference?.id,
                                           descripction:
-                                              'Elimino una actividad llamada:${widget!.refActividad?.name}',
+                                              'Elimino una actividad llamada:${widget.refActividad?.name}',
                                         ),
                                         ...mapToFirestore(
                                           {
@@ -328,7 +324,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                         ...createActionsRecordData(
                                           uidUser: currentUserReference?.id,
                                           descripction:
-                                              'Elimino una actividad llamada:${widget!.refActividad?.name}',
+                                              'Elimino una actividad llamada:${widget.refActividad?.name}',
                                         ),
                                         ...mapToFirestore(
                                           {
@@ -344,7 +340,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                                 .refActionCreate?.reference.id,
                                           ));
                                       firestoreBatch.delete(
-                                          widget!.refActividad!.reference);
+                                          widget.refActividad!.reference);
                                       Navigator.pop(context);
                                       await showDialog(
                                         context: context,
@@ -358,9 +354,9 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                                 .resolve(
                                                     Directionality.of(context)),
                                             child: ListaActividadesWidget(
-                                              refModulo: widget!.refModule!,
-                                              refSession: widget!.refSession!,
-                                              refCourse: widget!.refCourse!,
+                                              refModulo: widget.refModule!,
+                                              refSession: widget.refSession!,
+                                              refCourse: widget.refCourse!,
                                             ),
                                           );
                                         },
@@ -413,9 +409,9 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                               .resolve(
                                                   Directionality.of(context)),
                                           child: ListaActividadesWidget(
-                                            refModulo: widget!.refModule!,
-                                            refSession: widget!.refSession!,
-                                            refCourse: widget!.refCourse!,
+                                            refModulo: widget.refModule!,
+                                            refSession: widget.refSession!,
+                                            refCourse: widget.refCourse!,
                                           ),
                                         );
                                       },

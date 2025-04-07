@@ -6,7 +6,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/pages/alerta_tipo_user/alerta_tipo_user_widget.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:aligned_tooltip/aligned_tooltip.dart';
@@ -14,8 +13,6 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_update_usuario_model.dart';
 export 'create_update_usuario_model.dart';
 
@@ -48,29 +45,29 @@ class _CreateUpdateUsuarioWidgetState extends State<CreateUpdateUsuarioWidget> {
 
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      if (widget!.refUser != null) {
-        _model.rol = widget!.refUser?.userType;
+      if (widget.refUser != null) {
+        _model.rol = widget.refUser?.userType;
         _model.updatePage(() {});
       }
     });
 
     _model.txtcodigoTextController ??=
-        TextEditingController(text: widget!.refUser?.codigo);
+        TextEditingController(text: widget.refUser?.codigo);
     _model.txtcodigoFocusNode ??= FocusNode();
 
     _model.txtDNITextController ??=
-        TextEditingController(text: widget!.refUser?.dni?.toString());
+        TextEditingController(text: widget.refUser?.dni.toString());
     _model.txtDNIFocusNode ??= FocusNode();
 
     _model.txtnombreTextController ??=
-        TextEditingController(text: widget!.refUser?.displayName);
+        TextEditingController(text: widget.refUser?.displayName);
     _model.txtnombreFocusNode ??= FocusNode();
 
     _model.txtpasswordTextController ??= TextEditingController();
     _model.txtpasswordFocusNode ??= FocusNode();
 
     _model.txtemailTextController ??=
-        TextEditingController(text: widget!.refUser?.email);
+        TextEditingController(text: widget.refUser?.email);
     _model.txtemailFocusNode ??= FocusNode();
 
     _model.txtconfirmarcontraseaTextController ??= TextEditingController();
@@ -147,7 +144,7 @@ class _CreateUpdateUsuarioWidgetState extends State<CreateUpdateUsuarioWidget> {
                                           children: [
                                             Text(
                                               valueOrDefault<String>(
-                                                widget!.refUser != null
+                                                widget.refUser != null
                                                     ? 'Actualizar Usuario'
                                                     : 'Agregar Usuario',
                                                 'Agregar Usuario',
@@ -230,7 +227,7 @@ class _CreateUpdateUsuarioWidgetState extends State<CreateUpdateUsuarioWidget> {
                                                                     .txtcodigoFocusNode,
                                                                 autofocus:
                                                                     false,
-                                                                readOnly: widget!
+                                                                readOnly: widget
                                                                         .refUser !=
                                                                     null,
                                                                 obscureText:
@@ -406,14 +403,14 @@ class _CreateUpdateUsuarioWidgetState extends State<CreateUpdateUsuarioWidget> {
                                                             ),
                                                             onPressed:
                                                                 () async {
-                                                              if (widget!
+                                                              if (widget
                                                                       .refUser !=
                                                                   null) {
-                                                                if (!(widget!
+                                                                if (!(widget
                                                                             .refUser
                                                                             ?.codigo !=
                                                                         null &&
-                                                                    widget!.refUser
+                                                                    widget.refUser
                                                                             ?.codigo !=
                                                                         '')) {
                                                                   _model.codeUserempty =
@@ -482,7 +479,7 @@ class _CreateUpdateUsuarioWidgetState extends State<CreateUpdateUsuarioWidget> {
                                                             FormFieldController<
                                                                 int>(
                                                           _model.cborolValue ??=
-                                                              widget!.refUser
+                                                              widget.refUser
                                                                   ?.userType,
                                                         ),
                                                         options: List<int>.from(
@@ -1863,9 +1860,6 @@ class _CreateUpdateUsuarioWidgetState extends State<CreateUpdateUsuarioWidget> {
                                                   ),
                                                   if (_model.txtconfirmarcontraseaTextController
                                                               .text ==
-                                                          null ||
-                                                      _model.txtconfirmarcontraseaTextController
-                                                              .text ==
                                                           '')
                                                     Text(
                                                       'Campo obligatorio incompleto.',
@@ -1948,17 +1942,14 @@ class _CreateUpdateUsuarioWidgetState extends State<CreateUpdateUsuarioWidget> {
                                                   }
                                                   if (_model.txtconfirmarcontraseaTextController
                                                               .text !=
-                                                          null &&
-                                                      _model.txtconfirmarcontraseaTextController
-                                                              .text !=
                                                           '') {
                                                     if (_model.rol != null) {
-                                                      if (widget!.refUser !=
+                                                      if (widget.refUser !=
                                                           null) {
                                                         _model.messageUpdateUser =
                                                             await actions
                                                                 .updateUser(
-                                                          widget!.refUser!
+                                                          widget.refUser!
                                                               .reference.id,
                                                           _model
                                                               .txtemailTextController

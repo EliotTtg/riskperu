@@ -15,19 +15,15 @@ import '/pages/header_course/header_course_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
 import '/pages/popup_add_coments/popup_add_coments_widget.dart';
 import '/pages/txt_comentario_publicacion_curso/txt_comentario_publicacion_curso_widget.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -74,15 +70,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
             )
             .where(
               'uid_courses',
-              isEqualTo: widget!.refCourses?.reference.id,
+              isEqualTo: widget.refCourses?.reference.id,
             ),
         singleRecord: true,
       ).then((s) => s.firstOrNull);
       if (_model.refUserCourse?.reference != null) {
-        _model.refCourseClass = widget!.refCoursesClass;
+        _model.refCourseClass = widget.refCoursesClass;
         safeSetState(() {});
         _model.totalActivities = await actions.totalActividadesCourse(
-          widget!.refCourses!,
+          widget.refCourses!,
         );
         _model.totalActividades = _model.totalActivities;
         safeSetState(() {});
@@ -91,12 +87,12 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
           CoursePriceWidget.routeName,
           queryParameters: {
             'refCourse': serializeParam(
-              widget!.refCourses,
+              widget.refCourses,
               ParamType.Document,
             ),
           }.withoutNulls,
           extra: <String, dynamic>{
-            'refCourse': widget!.refCourses,
+            'refCourse': widget.refCourses,
             kTransitionInfoKey: TransitionInfo(
               hasTransition: true,
               transitionType: PageTransitionType.fade,
@@ -158,15 +154,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                           usersModuleclassRecord
                               .where(
                                 'uid_user',
-                                isEqualTo: widget!.refUser?.reference.id != ''
-                                    ? widget!.refUser?.reference.id
+                                isEqualTo: widget.refUser?.reference.id != ''
+                                    ? widget.refUser?.reference.id
                                     : null,
                               )
                               .where(
                                 'uid_curse',
                                 isEqualTo:
-                                    widget!.refCourses?.reference.id != ''
-                                        ? widget!.refCourses?.reference.id
+                                    widget.refCourses?.reference.id != ''
+                                        ? widget.refCourses?.reference.id
                                         : null,
                               ),
                     ),
@@ -207,7 +203,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                             0.0,
                           ),
                           nombreCurso: valueOrDefault<String>(
-                            widget!.refCourses?.name,
+                            widget.refCourses?.name,
                             '-',
                           ),
                           urlPagina:
@@ -419,7 +415,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                 children: [
                                                                                   Text(
                                                                                     valueOrDefault<String>(
-                                                                                      widget!.refCourses?.name,
+                                                                                      widget.refCourses?.name,
                                                                                       'Sin Nombre',
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -432,7 +428,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                   ),
                                                                                   Text(
                                                                                     valueOrDefault<String>(
-                                                                                      widget!.refCourses?.introduction,
+                                                                                      widget.refCourses?.introduction,
                                                                                       '--',
                                                                                     ),
                                                                                     textAlign: TextAlign.start,
@@ -496,7 +492,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   stream: queryUsersCoursesRecord(
                                                                                                     queryBuilder: (usersCoursesRecord) => usersCoursesRecord.where(
                                                                                                       'uid_courses',
-                                                                                                      isEqualTo: widget!.refCourses?.reference.id != '' ? widget!.refCourses?.reference.id : null,
+                                                                                                      isEqualTo: widget.refCourses?.reference.id != '' ? widget.refCourses?.reference.id : null,
                                                                                                     ),
                                                                                                   ),
                                                                                                   builder: (context, snapshot) {
@@ -562,7 +558,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                     children: [
                                                                                                       TextSpan(
                                                                                                         text: valueOrDefault<String>(
-                                                                                                          widget!.refCourses?.hours,
+                                                                                                          widget.refCourses?.hours,
                                                                                                           '0',
                                                                                                         ),
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -626,7 +622,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 TextSpan(
                                                                                                   text: dateTimeFormat(
                                                                                                     "MMMM yyyy",
-                                                                                                    widget!.refCourses!.updatedDate!,
+                                                                                                    widget.refCourses!.updatedDate!,
                                                                                                     locale: FFLocalizations.of(context).languageCode,
                                                                                                   ),
                                                                                                   style: TextStyle(),
@@ -648,7 +644,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           queryBuilder: (languageRecord) => languageRecord.where(
                                                                                             'uid',
                                                                                             isEqualTo: valueOrDefault<String>(
-                                                                                              widget!.refCourses?.language,
+                                                                                              widget.refCourses?.language,
                                                                                               'Español',
                                                                                             ),
                                                                                           ),
@@ -831,7 +827,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           stream: queryUsersCoursesRecord(
                                                                                             queryBuilder: (usersCoursesRecord) => usersCoursesRecord.where(
                                                                                               'uid_courses',
-                                                                                              isEqualTo: widget!.refCourses?.reference.id != '' ? widget!.refCourses?.reference.id : null,
+                                                                                              isEqualTo: widget.refCourses?.reference.id != '' ? widget.refCourses?.reference.id : null,
                                                                                             ),
                                                                                           ),
                                                                                           builder: (context, snapshot) {
@@ -1203,7 +1199,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             if (_model.stateDescripcion) {
                                                                                               return Text(
                                                                                                 valueOrDefault<String>(
-                                                                                                  widget!.refCourses?.description,
+                                                                                                  widget.refCourses?.description,
                                                                                                   '--',
                                                                                                 ),
                                                                                                 textAlign: TextAlign.start,
@@ -1215,7 +1211,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             } else {
                                                                                               return GradientText(
                                                                                                 valueOrDefault<String>(
-                                                                                                  widget!.refCourses?.description,
+                                                                                                  widget.refCourses?.description,
                                                                                                   '--',
                                                                                                 ).maybeHandleOverflow(
                                                                                                   maxChars: 150,
@@ -1294,7 +1290,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                               queryBuilder: (comentariosRecord) => comentariosRecord
                                                                                   .where(
                                                                                     'uid_Courses',
-                                                                                    isEqualTo: widget!.refCourses?.reference.id,
+                                                                                    isEqualTo: widget.refCourses?.reference.id,
                                                                                   )
                                                                                   .where(
                                                                                     'pared_id',
@@ -1855,7 +1851,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   queryBuilder: (comentariosRecord) => comentariosRecord
                                                                                                                       .where(
                                                                                                                         'uid_Courses',
-                                                                                                                        isEqualTo: widget!.refCourses?.reference.id != '' ? widget!.refCourses?.reference.id : null,
+                                                                                                                        isEqualTo: widget.refCourses?.reference.id != '' ? widget.refCourses?.reference.id : null,
                                                                                                                       )
                                                                                                                       .where(
                                                                                                                         'pared_id',
@@ -1892,16 +1888,16 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                           if (FFAppState().listComent.contains(lisaComentarioItem.reference.id))
                                                                                                                             wrapWithModel(
                                                                                                                               model: _model.popupAddComentsModels1.getModel(
-                                                                                                                                widget!.refCourses!.reference.id,
+                                                                                                                                widget.refCourses!.reference.id,
                                                                                                                                 lisaComentarioIndex,
                                                                                                                               ),
                                                                                                                               updateCallback: () => safeSetState(() {}),
                                                                                                                               child: PopupAddComentsWidget(
                                                                                                                                 key: Key(
-                                                                                                                                  'Keyi2u_${widget!.refCourses!.reference.id}',
+                                                                                                                                  'Keyi2u_${widget.refCourses!.reference.id}',
                                                                                                                                 ),
                                                                                                                                 parameter1: lisaComentarioItem.reference.id,
-                                                                                                                                parameter2: widget!.refCourses?.reference.id,
+                                                                                                                                parameter2: widget.refCourses?.reference.id,
                                                                                                                               ),
                                                                                                                             ),
                                                                                                                           if (containerComentariosRecordList.isNotEmpty)
@@ -2379,7 +2375,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   queryBuilder: (comentariosRecord) => comentariosRecord
                                                                                                                       .where(
                                                                                                                         'uid_Courses',
-                                                                                                                        isEqualTo: widget!.refCourses?.reference.id != '' ? widget!.refCourses?.reference.id : null,
+                                                                                                                        isEqualTo: widget.refCourses?.reference.id != '' ? widget.refCourses?.reference.id : null,
                                                                                                                       )
                                                                                                                       .where(
                                                                                                                         'pared_id',
@@ -2416,16 +2412,16 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                           if (FFAppState().listComent.contains(lisaComentarioItem.reference.id))
                                                                                                                             wrapWithModel(
                                                                                                                               model: _model.popupAddComentsModels2.getModel(
-                                                                                                                                widget!.refCourses!.reference.id,
+                                                                                                                                widget.refCourses!.reference.id,
                                                                                                                                 lisaComentarioIndex,
                                                                                                                               ),
                                                                                                                               updateCallback: () => safeSetState(() {}),
                                                                                                                               child: PopupAddComentsWidget(
                                                                                                                                 key: Key(
-                                                                                                                                  'Keyfdu_${widget!.refCourses!.reference.id}',
+                                                                                                                                  'Keyfdu_${widget.refCourses!.reference.id}',
                                                                                                                                 ),
                                                                                                                                 parameter1: lisaComentarioItem.reference.id,
-                                                                                                                                parameter2: widget!.refCourses?.reference.id,
+                                                                                                                                parameter2: widget.refCourses?.reference.id,
                                                                                                                               ),
                                                                                                                             ),
                                                                                                                           if (containerComentariosRecordList.isNotEmpty)
@@ -2739,7 +2735,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                 FocusManager.instance.primaryFocus?.unfocus();
                                                                                                               },
                                                                                                               child: CrearTipoComentarioWidget(
-                                                                                                                refCurse: widget!.refCourses!,
+                                                                                                                refCurse: widget.refCourses!,
                                                                                                               ),
                                                                                                             ),
                                                                                                           );
@@ -2925,7 +2921,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           queryBuilder: (usersCoursesRecord) => usersCoursesRecord
                                                                                               .where(
                                                                                                 'uid_user',
-                                                                                                isEqualTo: widget!.refUser?.reference.id != '' ? widget!.refUser?.reference.id : null,
+                                                                                                isEqualTo: widget.refUser?.reference.id != '' ? widget.refUser?.reference.id : null,
                                                                                               )
                                                                                               .orderBy('created_date', descending: true),
                                                                                         ),
@@ -3073,7 +3069,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                 queryBuilder: (notasRecord) => notasRecord
                                                                                     .where(
                                                                                       'uid_User',
-                                                                                      isEqualTo: widget!.refUser?.reference.id != '' ? widget!.refUser?.reference.id : null,
+                                                                                      isEqualTo: widget.refUser?.reference.id != '' ? widget.refUser?.reference.id : null,
                                                                                     )
                                                                                     .orderBy('created_date', descending: true),
                                                                               ),
@@ -3296,7 +3292,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             FocusManager.instance.primaryFocus?.unfocus();
                                                                                                           },
                                                                                                           child: CrearNotaCursoWidget(
-                                                                                                            refCurse: widget!.refCourses!,
+                                                                                                            refCurse: widget.refCourses!,
                                                                                                           ),
                                                                                                         ),
                                                                                                       );
@@ -3352,7 +3348,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             FocusManager.instance.primaryFocus?.unfocus();
                                                                                                           },
                                                                                                           child: CrearNotaCursoWidget(
-                                                                                                            refCurse: widget!.refCourses!,
+                                                                                                            refCurse: widget.refCourses!,
                                                                                                           ),
                                                                                                         ),
                                                                                                       );
@@ -3391,8 +3387,8 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                             (announcementsCoursesRecord) =>
                                                                                 announcementsCoursesRecord.where(
                                                                           'uid_Course',
-                                                                          isEqualTo: widget!.refCourses?.reference.id != ''
-                                                                              ? widget!.refCourses?.reference.id
+                                                                          isEqualTo: widget.refCourses?.reference.id != ''
+                                                                              ? widget.refCourses?.reference.id
                                                                               : null,
                                                                         ),
                                                                       ),
@@ -3655,10 +3651,10 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   'Key0bo_${listViewAnnouncementsCoursesRecord.reference.id}',
                                                                                                 ),
                                                                                                 parameter1: valueOrDefault<String>(
-                                                                                                  widget!.refUser?.photoUrl,
+                                                                                                  widget.refUser?.photoUrl,
                                                                                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/kpacita-ssg7c7/assets/kom25ftm37kk/Frame_1171276035.png',
                                                                                                 ),
-                                                                                                parameter2: widget!.refUser?.reference.id,
+                                                                                                parameter2: widget.refUser?.reference.id,
                                                                                                 parameter3: listViewAnnouncementsCoursesRecord.reference.id,
                                                                                               ),
                                                                                             ),
@@ -3888,7 +3884,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                             (qualificationRecord) =>
                                                                                 qualificationRecord.where(
                                                                           'uidCourse',
-                                                                          isEqualTo: widget!
+                                                                          isEqualTo: widget
                                                                               .refCourses
                                                                               ?.reference
                                                                               .id,
@@ -4779,7 +4775,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                     sessionRecord
                                                         .where(
                                                           'uid_Course',
-                                                          isEqualTo: widget!
+                                                          isEqualTo: widget
                                                               .refCourses
                                                               ?.reference
                                                               .id,
@@ -5190,7 +5186,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                     queryBuilder: (usersModuleclassRecord) => usersModuleclassRecord
                                                                                                                         .where(
                                                                                                                           'uid_user',
-                                                                                                                          isEqualTo: widget!.refUser?.reference.id,
+                                                                                                                          isEqualTo: widget.refUser?.reference.id,
                                                                                                                         )
                                                                                                                         .where(
                                                                                                                           'uid_module',
@@ -5202,7 +5198,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                         )
                                                                                                                         .where(
                                                                                                                           'uid_curse',
-                                                                                                                          isEqualTo: widget!.refCourses?.reference.id,
+                                                                                                                          isEqualTo: widget.refCourses?.reference.id,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   builder: (context, snapshot) {
@@ -5349,7 +5345,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                               queryBuilder: (usersModuleclassRecord) => usersModuleclassRecord
                                                                                                                                   .where(
                                                                                                                                     'uid_user',
-                                                                                                                                    isEqualTo: widget!.refUser?.reference.id,
+                                                                                                                                    isEqualTo: widget.refUser?.reference.id,
                                                                                                                                   )
                                                                                                                                   .where(
                                                                                                                                     'uid_moduleclass',
@@ -5361,7 +5357,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                   )
                                                                                                                                   .where(
                                                                                                                                     'uid_curse',
-                                                                                                                                    isEqualTo: widget!.refCourses?.reference.id,
+                                                                                                                                    isEqualTo: widget.refCourses?.reference.id,
                                                                                                                                   ),
                                                                                                                               singleRecord: true,
                                                                                                                             ),
@@ -5395,30 +5391,30 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                   unselectedWidgetColor: FlutterFlowTheme.of(context).secondaryText,
                                                                                                                                 ),
                                                                                                                                 child: Checkbox(
-                                                                                                                                  value: _model.checkboxValueMap[listaModuloClasesItem] ??= checkboxUsersModuleclassRecord != null ? checkboxUsersModuleclassRecord!.stateView : false,
+                                                                                                                                  value: _model.checkboxValueMap[listaModuloClasesItem] ??= checkboxUsersModuleclassRecord != null ? checkboxUsersModuleclassRecord.stateView : false,
                                                                                                                                   onChanged: (newValue) async {
                                                                                                                                     safeSetState(() => _model.checkboxValueMap[listaModuloClasesItem] = newValue!);
                                                                                                                                     if (newValue!) {
                                                                                                                                       if (checkboxUsersModuleclassRecord != null) {
-                                                                                                                                        await checkboxUsersModuleclassRecord!.reference.update(createUsersModuleclassRecordData(
+                                                                                                                                        await checkboxUsersModuleclassRecord.reference.update(createUsersModuleclassRecordData(
                                                                                                                                           stateView: true,
                                                                                                                                         ));
                                                                                                                                       } else {
                                                                                                                                         var usersModuleclassRecordReference = UsersModuleclassRecord.collection.doc();
                                                                                                                                         await usersModuleclassRecordReference.set(createUsersModuleclassRecordData(
-                                                                                                                                          uidUser: widget!.refUser?.reference.id,
+                                                                                                                                          uidUser: widget.refUser?.reference.id,
                                                                                                                                           uidModuleclass: listaModuloClasesItem.reference.id,
                                                                                                                                           stateView: true,
                                                                                                                                           uidModule: listModuloItem.reference.id,
-                                                                                                                                          uidCurse: widget!.refCourses?.reference.id,
+                                                                                                                                          uidCurse: widget.refCourses?.reference.id,
                                                                                                                                         ));
                                                                                                                                         _model.refstatemoduleclasss = UsersModuleclassRecord.getDocumentFromData(
                                                                                                                                             createUsersModuleclassRecordData(
-                                                                                                                                              uidUser: widget!.refUser?.reference.id,
+                                                                                                                                              uidUser: widget.refUser?.reference.id,
                                                                                                                                               uidModuleclass: listaModuloClasesItem.reference.id,
                                                                                                                                               stateView: true,
                                                                                                                                               uidModule: listModuloItem.reference.id,
-                                                                                                                                              uidCurse: widget!.refCourses?.reference.id,
+                                                                                                                                              uidCurse: widget.refCourses?.reference.id,
                                                                                                                                             ),
                                                                                                                                             usersModuleclassRecordReference);
 
@@ -5430,25 +5426,25 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       safeSetState(() {});
                                                                                                                                     } else {
                                                                                                                                       if (checkboxUsersModuleclassRecord != null) {
-                                                                                                                                        await checkboxUsersModuleclassRecord!.reference.update(createUsersModuleclassRecordData(
+                                                                                                                                        await checkboxUsersModuleclassRecord.reference.update(createUsersModuleclassRecordData(
                                                                                                                                           stateView: false,
                                                                                                                                         ));
                                                                                                                                       } else {
                                                                                                                                         var usersModuleclassRecordReference = UsersModuleclassRecord.collection.doc();
                                                                                                                                         await usersModuleclassRecordReference.set(createUsersModuleclassRecordData(
-                                                                                                                                          uidUser: widget!.refUser?.reference.id,
+                                                                                                                                          uidUser: widget.refUser?.reference.id,
                                                                                                                                           uidModuleclass: listaModuloClasesItem.reference.id,
                                                                                                                                           stateView: false,
                                                                                                                                           uidModule: listModuloItem.reference.id,
-                                                                                                                                          uidCurse: widget!.refCourses?.reference.id,
+                                                                                                                                          uidCurse: widget.refCourses?.reference.id,
                                                                                                                                         ));
                                                                                                                                         _model.refstatemoduleclasssOff = UsersModuleclassRecord.getDocumentFromData(
                                                                                                                                             createUsersModuleclassRecordData(
-                                                                                                                                              uidUser: widget!.refUser?.reference.id,
+                                                                                                                                              uidUser: widget.refUser?.reference.id,
                                                                                                                                               uidModuleclass: listaModuloClasesItem.reference.id,
                                                                                                                                               stateView: false,
                                                                                                                                               uidModule: listModuloItem.reference.id,
-                                                                                                                                              uidCurse: widget!.refCourses?.reference.id,
+                                                                                                                                              uidCurse: widget.refCourses?.reference.id,
                                                                                                                                             ),
                                                                                                                                             usersModuleclassRecordReference);
 
@@ -5626,16 +5622,16 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                   usersModuleclassRecord
                                                                       .where(
                                                                         'uid_user',
-                                                                        isEqualTo: widget!.refUser?.reference.id !=
+                                                                        isEqualTo: widget.refUser?.reference.id !=
                                                                                 ''
-                                                                            ? widget!.refUser?.reference.id
+                                                                            ? widget.refUser?.reference.id
                                                                             : null,
                                                                       )
                                                                       .where(
                                                                         'uid_curse',
-                                                                        isEqualTo: widget!.refCourses?.reference.id !=
+                                                                        isEqualTo: widget.refCourses?.reference.id !=
                                                                                 ''
-                                                                            ? widget!.refCourses?.reference.id
+                                                                            ? widget.refCourses?.reference.id
                                                                             : null,
                                                                       ),
                                                         ),
@@ -5828,12 +5824,12 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                     CourseTestWidget.routeName,
                                                                                     queryParameters: {
                                                                                       'refCourse': serializeParam(
-                                                                                        widget!.refCourses,
+                                                                                        widget.refCourses,
                                                                                         ParamType.Document,
                                                                                       ),
                                                                                     }.withoutNulls,
                                                                                     extra: <String, dynamic>{
-                                                                                      'refCourse': widget!.refCourses,
+                                                                                      'refCourse': widget.refCourses,
                                                                                       kTransitionInfoKey: TransitionInfo(
                                                                                         hasTransition: true,
                                                                                         transitionType: PageTransitionType.fade,

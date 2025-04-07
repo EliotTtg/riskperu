@@ -8,13 +8,9 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/pages/empty_students/empty_students_widget.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lista_estudiantes_courses_model.dart';
 export 'lista_estudiantes_courses_model.dart';
 
@@ -47,12 +43,12 @@ class _ListaEstudiantesCoursesWidgetState
     _model = createModel(context, () => ListaEstudiantesCoursesModel());
 
     _model.txttituloTextController ??=
-        TextEditingController(text: widget!.refCourses?.name);
+        TextEditingController(text: widget.refCourses?.name);
     _model.txttituloFocusNode ??= FocusNode();
 
     _model.txttiempolimiteTextController ??= TextEditingController(
         text: valueOrDefault<String>(
-      widget!.refCourses?.price,
+      widget.refCourses?.price,
       '0',
     ));
     _model.txttiempolimiteFocusNode ??= FocusNode();
@@ -386,7 +382,7 @@ class _ListaEstudiantesCoursesWidgetState
                                               queryBuilder: (usersRecord) =>
                                                   usersRecord.where(
                                                 'uid',
-                                                isEqualTo: widget!
+                                                isEqualTo: widget
                                                     .refCourses?.uidTechear,
                                               ),
                                               singleRecord: true,
@@ -546,10 +542,10 @@ class _ListaEstudiantesCoursesWidgetState
                                         usersCoursesRecord
                                             .where(
                                               'uid_courses',
-                                              isEqualTo: widget!.refCourses
+                                              isEqualTo: widget.refCourses
                                                           ?.reference.id !=
                                                       ''
-                                                  ? widget!
+                                                  ? widget
                                                       .refCourses?.reference.id
                                                   : null,
                                             )
@@ -794,7 +790,7 @@ class _ListaEstudiantesCoursesWidgetState
                                                                 .refUser
                                                                 ?.reference
                                                                 .id,
-                                                            uidCourses: widget!
+                                                            uidCourses: widget
                                                                 .refCourses
                                                                 ?.reference
                                                                 .id,
@@ -809,7 +805,7 @@ class _ListaEstudiantesCoursesWidgetState
                                                                         .refUser
                                                                         ?.reference
                                                                         .id,
-                                                                    uidCourses: widget!
+                                                                    uidCourses: widget
                                                                         .refCourses
                                                                         ?.reference
                                                                         .id,
@@ -1052,7 +1048,7 @@ class _ListaEstudiantesCoursesWidgetState
                                                               selected,
                                                               onSelectChanged) =>
                                                           DataRow(
-                                                    color: MaterialStateProperty
+                                                    color: WidgetStateProperty
                                                         .all(
                                                       listaModulosIndex % 2 == 0
                                                           ? Color(0xFFF6F6F6)
@@ -1383,7 +1379,7 @@ class _ListaEstudiantesCoursesWidgetState
                                                                 String>(
                                                               textUsersRecord
                                                                   ?.dni
-                                                                  ?.toString(),
+                                                                  .toString(),
                                                               '---',
                                                             ),
                                                             maxLines: 1,

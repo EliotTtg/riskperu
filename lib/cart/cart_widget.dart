@@ -8,16 +8,12 @@ import '/pages/course_calification/course_calification_widget.dart';
 import '/pages/empty_cart/empty_cart_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cart_model.dart';
 export 'cart_model.dart';
@@ -702,7 +698,7 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                         text: valueOrDefault<String>(
                                                                                           formatNumber(
                                                                                             (List<String> var1) {
-                                                                                              return (var1?.isEmpty ?? true) ? 0.0 : (var1!.map((e) => double.tryParse(e ?? '0') ?? 0.0).reduce((a, b) => a + b));
+                                                                                              return (var1.isEmpty ?? true) ? 0.0 : (var1.map((e) => double.tryParse(e ?? '0') ?? 0.0).reduce((a, b) => a + b));
                                                                                             }(containerCoursesRecordList
                                                                                                 .map((e) => valueOrDefault<String>(
                                                                                                       e.price,

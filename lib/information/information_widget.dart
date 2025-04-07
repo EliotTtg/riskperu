@@ -8,15 +8,10 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
-import 'dart:ui';
 import 'package:barcode_widget/barcode_widget.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:provider/provider.dart';
 import 'information_model.dart';
 export 'information_model.dart';
 
@@ -246,12 +241,8 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                   builder:
                                                                       (context) {
                                                                     if ((currentUserPhoto !=
-                                                                                null &&
-                                                                            currentUserPhoto !=
                                                                                 '') &&
-                                                                        (_model.uploadedLocalFile1 ==
-                                                                                null ||
-                                                                            (_model.uploadedLocalFile1.bytes?.isEmpty ??
+                                                                        ((_model.uploadedLocalFile1.bytes?.isEmpty ??
                                                                                 true))) {
                                                                       return Container(
                                                                         width:
@@ -276,9 +267,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                               .cover,
                                                                         ),
                                                                       );
-                                                                    } else if (_model.uploadedLocalFile1 !=
-                                                                            null &&
-                                                                        (_model.uploadedLocalFile1.bytes?.isNotEmpty ??
+                                                                    } else if ((_model.uploadedLocalFile1.bytes?.isNotEmpty ??
                                                                             false)) {
                                                                       return Container(
                                                                         width:
@@ -327,12 +316,8 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                   builder:
                                                                       (context) {
                                                                     if ((currentUserPhoto !=
-                                                                                null &&
-                                                                            currentUserPhoto !=
                                                                                 '') &&
-                                                                        (_model.uploadedLocalFile1 ==
-                                                                                null ||
-                                                                            (_model.uploadedLocalFile1.bytes?.isEmpty ??
+                                                                        ((_model.uploadedLocalFile1.bytes?.isEmpty ??
                                                                                 true))) {
                                                                       return FlutterFlowIconButton(
                                                                         borderColor:
@@ -362,9 +347,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                               () {});
                                                                         },
                                                                       );
-                                                                    } else if (_model.uploadedLocalFile1 !=
-                                                                            null &&
-                                                                        (_model.uploadedLocalFile1.bytes?.isNotEmpty ??
+                                                                    } else if ((_model.uploadedLocalFile1.bytes?.isNotEmpty ??
                                                                             false)) {
                                                                       return FlutterFlowIconButton(
                                                                         borderColor:
@@ -1174,9 +1157,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                           .validate()) {
                                                                     return;
                                                                   }
-                                                                  if (_model.uploadedLocalFile1 !=
-                                                                          null &&
-                                                                      (_model
+                                                                  if ((_model
                                                                               .uploadedLocalFile1
                                                                               .bytes
                                                                               ?.isNotEmpty ??

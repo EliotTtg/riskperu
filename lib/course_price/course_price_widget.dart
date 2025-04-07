@@ -6,13 +6,10 @@ import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'course_price_model.dart';
 export 'course_price_model.dart';
@@ -134,7 +131,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                             ),
                                             Text(
                                               valueOrDefault<String>(
-                                                widget!.refCourse?.name,
+                                                widget.refCourse?.name,
                                                 '--',
                                               ),
                                               style: FlutterFlowTheme.of(
@@ -152,7 +149,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                             ),
                                             Text(
                                               valueOrDefault<String>(
-                                                widget!.refCourse?.description,
+                                                widget.refCourse?.description,
                                                 '--',
                                               ),
                                               textAlign: TextAlign.start,
@@ -301,7 +298,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                   queryBuilder: (usersRecord) =>
                                                       usersRecord.where(
                                                     'uid',
-                                                    isEqualTo: widget!
+                                                    isEqualTo: widget
                                                         .refCourse?.uidTechear,
                                                   ),
                                                   singleRecord: true,
@@ -441,7 +438,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                   sessionRecord
                                                                       .where(
                                                             'uid_Course',
-                                                            isEqualTo: widget!
+                                                            isEqualTo: widget
                                                                 .refCourse
                                                                 ?.reference
                                                                 .id,
@@ -571,7 +568,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                               text:
                                                                   valueOrDefault<
                                                                       String>(
-                                                                widget!
+                                                                widget
                                                                     .refCourse
                                                                     ?.hours,
                                                                 '0',
@@ -696,7 +693,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                           children: [
                                             FlutterFlowVideoPlayer(
                                               path:
-                                                  '${widget!.refCourse?.videoPreview}',
+                                                  '${widget.refCourse?.videoPreview}',
                                               videoType: VideoType.network,
                                               autoPlay: false,
                                               looping: true,
@@ -712,13 +709,13 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                     onPressed: () async {
                                                       if (!FFAppState()
                                                           .shoppingcart
-                                                          .contains(widget!
+                                                          .contains(widget
                                                               .refCourse
                                                               ?.reference
                                                               .id)) {
                                                         FFAppState()
                                                             .addToShoppingcart(
-                                                                widget!
+                                                                widget
                                                                     .refCourse!
                                                                     .reference
                                                                     .id);
@@ -730,7 +727,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                         valueOrDefault<String>(
                                                       FFAppState()
                                                               .shoppingcart
-                                                              .contains(widget!
+                                                              .contains(widget
                                                                   .refCourse
                                                                   ?.reference
                                                                   .id)
@@ -803,7 +800,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                   },
                                                   text:
                                                       'S/. ${valueOrDefault<String>(
-                                                    widget!.refCourse?.price,
+                                                    widget.refCourse?.price,
                                                     '0',
                                                   )}',
                                                   options: FFButtonOptions(
@@ -877,7 +874,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                   queryBuilder: (usersRecord) =>
                                                       usersRecord.where(
                                                     'uid',
-                                                    isEqualTo: widget!
+                                                    isEqualTo: widget
                                                         .refCourse?.uidTechear,
                                                   ),
                                                   singleRecord: true,
@@ -1126,7 +1123,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                               sessionRecord
                                                                   .where(
                                                                     'uid_Course',
-                                                                    isEqualTo: widget!
+                                                                    isEqualTo: widget
                                                                         .refCourse
                                                                         ?.reference
                                                                         .id,

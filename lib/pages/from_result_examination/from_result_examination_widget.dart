@@ -1,19 +1,13 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_timer.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'from_result_examination_model.dart';
 export 'from_result_examination_model.dart';
 
@@ -125,7 +119,7 @@ class _FromResultExaminationWidgetState
                                           queryBuilder: (usersRecord) =>
                                               usersRecord.where(
                                             'uid',
-                                            isEqualTo: widget!.refUser?.id,
+                                            isEqualTo: widget.refUser?.id,
                                           ),
                                           singleRecord: true,
                                         ),
@@ -266,10 +260,10 @@ class _FromResultExaminationWidgetState
                                             preguntasRecord
                                                 .where(
                                                   'examen_ref',
-                                                  isEqualTo: widget!.refExamen
+                                                  isEqualTo: widget.refExamen
                                                               ?.reference.id !=
                                                           ''
-                                                      ? widget!.refExamen
+                                                      ? widget.refExamen
                                                           ?.reference.id
                                                       : null,
                                                 )
@@ -344,7 +338,7 @@ class _FromResultExaminationWidgetState
                                                             .convertirCalificacion(
                                                                 valueOrDefault<
                                                                     double>(
-                                                          widget!.refResult
+                                                          widget.refResult
                                                               ?.calificacion,
                                                           0.0,
                                                         )),
@@ -361,7 +355,7 @@ class _FromResultExaminationWidgetState
                                                             .colorCalificacion(
                                                                 valueOrDefault<
                                                                     double>(
-                                                          widget!.refResult
+                                                          widget.refResult
                                                               ?.calificacion,
                                                           0.0,
                                                         )),
@@ -412,7 +406,7 @@ class _FromResultExaminationWidgetState
                                                                   text: valueOrDefault<
                                                                       String>(
                                                                     formatNumber(
-                                                                      widget!
+                                                                      widget
                                                                           .refResult
                                                                           ?.calificacion,
                                                                       formatType:
@@ -477,10 +471,10 @@ class _FromResultExaminationWidgetState
                                                                 TextSpan(
                                                                   text: valueOrDefault<
                                                                       String>(
-                                                                    widget!
+                                                                    widget
                                                                         .refResult
                                                                         ?.cantidadCorrectas
-                                                                        ?.toString(),
+                                                                        .toString(),
                                                                     '0',
                                                                   ),
                                                                   style: FlutterFlowTheme.of(
@@ -564,7 +558,7 @@ class _FromResultExaminationWidgetState
                                                     FlutterFlowTimer(
                                                       initialTime:
                                                           valueOrDefault<int>(
-                                                        widget!.refResult
+                                                        widget.refResult
                                                             ?.tiempoTranscurrido,
                                                         0,
                                                       ),
@@ -641,9 +635,9 @@ class _FromResultExaminationWidgetState
                                                             text:
                                                                 valueOrDefault<
                                                                     String>(
-                                                              widget!.refResult
+                                                              widget.refResult
                                                                   ?.cantidadCorrectas
-                                                                  ?.toString(),
+                                                                  .toString(),
                                                               '0',
                                                             ),
                                                             style: FlutterFlowTheme
@@ -731,7 +725,7 @@ class _FromResultExaminationWidgetState
                                                       },
                                                       text: valueOrDefault<
                                                           String>(
-                                                        widget!.refResult!
+                                                        widget.refResult!
                                                                     .calificacion >=
                                                                 14.0
                                                             ? 'Aprobado'
@@ -756,7 +750,7 @@ class _FromResultExaminationWidgetState
                                                                     0.0),
                                                         color: valueOrDefault<
                                                             Color>(
-                                                          widget!.refResult!
+                                                          widget.refResult!
                                                                       .calificacion >=
                                                                   14.0
                                                               ? FlutterFlowTheme
@@ -897,7 +891,7 @@ class _FromResultExaminationWidgetState
                                                                         detallesResultadosRecord
                                                                             .where(
                                                                               'uidResultado',
-                                                                              isEqualTo: widget!.refResult?.reference.id != '' ? widget!.refResult?.reference.id : null,
+                                                                              isEqualTo: widget.refResult?.reference.id != '' ? widget.refResult?.reference.id : null,
                                                                             )
                                                                             .where(
                                                                               'type',
@@ -1003,7 +997,7 @@ class _FromResultExaminationWidgetState
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: valueOrDefault<String>(
-                                                                                            containerDetallesResultadosRecordList.firstOrNull?.porcentaje?.toString(),
+                                                                                            containerDetallesResultadosRecordList.firstOrNull?.porcentaje.toString(),
                                                                                             '0',
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1061,7 +1055,7 @@ class _FromResultExaminationWidgetState
                                                                             ),
                                                                             Text(
                                                                               valueOrDefault<String>(
-                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasCorrectas?.toString(),
+                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasCorrectas.toString(),
                                                                                 '0',
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1090,7 +1084,7 @@ class _FromResultExaminationWidgetState
                                                                             ),
                                                                             Text(
                                                                               valueOrDefault<String>(
-                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasIncorrectas?.toString(),
+                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasIncorrectas.toString(),
                                                                                 '0',
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1136,7 +1130,7 @@ class _FromResultExaminationWidgetState
                                                                         detallesResultadosRecord
                                                                             .where(
                                                                               'uidResultado',
-                                                                              isEqualTo: widget!.refResult?.reference.id,
+                                                                              isEqualTo: widget.refResult?.reference.id,
                                                                             )
                                                                             .where(
                                                                               'type',
@@ -1237,7 +1231,7 @@ class _FromResultExaminationWidgetState
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: valueOrDefault<String>(
-                                                                                            containerDetallesResultadosRecordList.firstOrNull?.porcentaje?.toString(),
+                                                                                            containerDetallesResultadosRecordList.firstOrNull?.porcentaje.toString(),
                                                                                             '0',
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1295,7 +1289,7 @@ class _FromResultExaminationWidgetState
                                                                             ),
                                                                             Text(
                                                                               valueOrDefault<String>(
-                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasCorrectas?.toString(),
+                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasCorrectas.toString(),
                                                                                 '0',
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1324,7 +1318,7 @@ class _FromResultExaminationWidgetState
                                                                             ),
                                                                             Text(
                                                                               valueOrDefault<String>(
-                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasIncorrectas?.toString(),
+                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasIncorrectas.toString(),
                                                                                 '0',
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1370,7 +1364,7 @@ class _FromResultExaminationWidgetState
                                                                         detallesResultadosRecord
                                                                             .where(
                                                                               'uidResultado',
-                                                                              isEqualTo: widget!.refResult?.reference.id,
+                                                                              isEqualTo: widget.refResult?.reference.id,
                                                                             )
                                                                             .where(
                                                                               'type',
@@ -1470,7 +1464,7 @@ class _FromResultExaminationWidgetState
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: valueOrDefault<String>(
-                                                                                            containerDetallesResultadosRecordList.firstOrNull?.porcentaje?.toString(),
+                                                                                            containerDetallesResultadosRecordList.firstOrNull?.porcentaje.toString(),
                                                                                             '0',
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1528,7 +1522,7 @@ class _FromResultExaminationWidgetState
                                                                             ),
                                                                             Text(
                                                                               valueOrDefault<String>(
-                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasCorrectas?.toString(),
+                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasCorrectas.toString(),
                                                                                 '0',
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1557,7 +1551,7 @@ class _FromResultExaminationWidgetState
                                                                             ),
                                                                             Text(
                                                                               valueOrDefault<String>(
-                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasIncorrectas?.toString(),
+                                                                                containerDetallesResultadosRecordList.firstOrNull?.respuestasIncorrectas.toString(),
                                                                                 '0',
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1593,13 +1587,13 @@ class _FromResultExaminationWidgetState
                                                               .where(
                                                                 'estudiante_ref',
                                                                 isEqualTo:
-                                                                    widget!
+                                                                    widget
                                                                         .refUser
                                                                         ?.id,
                                                               )
                                                               .where(
                                                                 'examen_ref',
-                                                                isEqualTo: widget!
+                                                                isEqualTo: widget
                                                                     .refExamen
                                                                     ?.reference
                                                                     .id,
@@ -1646,28 +1640,28 @@ class _FromResultExaminationWidgetState
                                                               queryParameters: {
                                                                 'refExamination':
                                                                     serializeParam(
-                                                                  widget!
+                                                                  widget
                                                                       .refExamen,
                                                                   ParamType
                                                                       .Document,
                                                                 ),
                                                                 'refCourse':
                                                                     serializeParam(
-                                                                  widget!
+                                                                  widget
                                                                       .refCourse,
                                                                   ParamType
                                                                       .Document,
                                                                 ),
                                                                 'refUser':
                                                                     serializeParam(
-                                                                  widget!
+                                                                  widget
                                                                       .refUser,
                                                                   ParamType
                                                                       .DocumentReference,
                                                                 ),
                                                                 'type':
                                                                     serializeParam(
-                                                                  widget!.type,
+                                                                  widget.type,
                                                                   ParamType.int,
                                                                 ),
                                                                 'isdemo':
@@ -1680,10 +1674,10 @@ class _FromResultExaminationWidgetState
                                                               extra: <String,
                                                                   dynamic>{
                                                                 'refExamination':
-                                                                    widget!
+                                                                    widget
                                                                         .refExamen,
                                                                 'refCourse':
-                                                                    widget!
+                                                                    widget
                                                                         .refCourse,
                                                                 kTransitionInfoKey:
                                                                     TransitionInfo(
@@ -1758,9 +1752,9 @@ class _FromResultExaminationWidgetState
                                                         if (((containerResultadosRecordList
                                                                         .length <=
                                                                     2) &&
-                                                                (widget!.type ==
+                                                                (widget.type ==
                                                                     1)) ||
-                                                            (widget!.type == 2))
+                                                            (widget.type == 2))
                                                           Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1773,7 +1767,7 @@ class _FromResultExaminationWidgetState
                                                                 FFButtonWidget(
                                                               onPressed:
                                                                   () async {
-                                                                await widget!
+                                                                await widget
                                                                     .refResult!
                                                                     .reference
                                                                     .update(
@@ -1789,16 +1783,16 @@ class _FromResultExaminationWidgetState
                                                                     .set({
                                                                   ...createResultadosRecordData(
                                                                     estudianteRef:
-                                                                        widget!
+                                                                        widget
                                                                             .refUser
                                                                             ?.id,
                                                                     estado:
                                                                         true,
-                                                                    examenRef: widget!
+                                                                    examenRef: widget
                                                                         .refExamen
                                                                         ?.reference
                                                                         .id,
-                                                                    type: widget!
+                                                                    type: widget
                                                                         .type,
                                                                   ),
                                                                   ...mapToFirestore(
@@ -1814,16 +1808,16 @@ class _FromResultExaminationWidgetState
                                                                         .getDocumentFromData({
                                                                   ...createResultadosRecordData(
                                                                     estudianteRef:
-                                                                        widget!
+                                                                        widget
                                                                             .refUser
                                                                             ?.id,
                                                                     estado:
                                                                         true,
-                                                                    examenRef: widget!
+                                                                    examenRef: widget
                                                                         .refExamen
                                                                         ?.reference
                                                                         .id,
-                                                                    type: widget!
+                                                                    type: widget
                                                                         .type,
                                                                   ),
                                                                   ...mapToFirestore(
@@ -1849,7 +1843,7 @@ class _FromResultExaminationWidgetState
                                                                     await ResultadosRecord.getDocumentOnce(_model
                                                                         .refResult!
                                                                         .reference);
-                                                                if (widget!
+                                                                if (widget
                                                                         .type ==
                                                                     2) {
                                                                   var registerSimulatorRecordReference =
@@ -1859,10 +1853,10 @@ class _FromResultExaminationWidgetState
                                                                   await registerSimulatorRecordReference
                                                                       .set({
                                                                     ...createRegisterSimulatorRecordData(
-                                                                      uidUser: widget!
+                                                                      uidUser: widget
                                                                           .refUser
                                                                           ?.id,
-                                                                      uidCourse: widget!
+                                                                      uidCourse: widget
                                                                           .refCourse
                                                                           ?.reference
                                                                           .id,
@@ -1878,10 +1872,10 @@ class _FromResultExaminationWidgetState
                                                                       RegisterSimulatorRecord
                                                                           .getDocumentFromData({
                                                                     ...createRegisterSimulatorRecordData(
-                                                                      uidUser: widget!
+                                                                      uidUser: widget
                                                                           .refUser
                                                                           ?.id,
-                                                                      uidCourse: widget!
+                                                                      uidCourse: widget
                                                                           .refCourse
                                                                           ?.reference
                                                                           .id,
@@ -1913,35 +1907,35 @@ class _FromResultExaminationWidgetState
                                                                       {
                                                                     'refExamination':
                                                                         serializeParam(
-                                                                      widget!
+                                                                      widget
                                                                           .refExamen,
                                                                       ParamType
                                                                           .Document,
                                                                     ),
                                                                     'refCourse':
                                                                         serializeParam(
-                                                                      widget!
+                                                                      widget
                                                                           .refCourse,
                                                                       ParamType
                                                                           .Document,
                                                                     ),
                                                                     'refUser':
                                                                         serializeParam(
-                                                                      widget!
+                                                                      widget
                                                                           .refUser,
                                                                       ParamType
                                                                           .DocumentReference,
                                                                     ),
                                                                     'type':
                                                                         serializeParam(
-                                                                      widget!
+                                                                      widget
                                                                           .type,
                                                                       ParamType
                                                                           .int,
                                                                     ),
                                                                     'isdemo':
                                                                         serializeParam(
-                                                                      widget!
+                                                                      widget
                                                                           .isdemo,
                                                                       ParamType
                                                                           .bool,
@@ -1950,10 +1944,10 @@ class _FromResultExaminationWidgetState
                                                                   extra: <String,
                                                                       dynamic>{
                                                                     'refExamination':
-                                                                        widget!
+                                                                        widget
                                                                             .refExamen,
                                                                     'refCourse':
-                                                                        widget!
+                                                                        widget
                                                                             .refCourse,
                                                                     kTransitionInfoKey:
                                                                         TransitionInfo(

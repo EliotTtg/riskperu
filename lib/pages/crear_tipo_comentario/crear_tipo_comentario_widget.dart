@@ -3,16 +3,10 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'crear_tipo_comentario_model.dart';
 export 'crear_tipo_comentario_model.dart';
 
@@ -315,8 +309,8 @@ class _CrearTipoComentarioWidgetState extends State<CrearTipoComentarioWidget> {
                                             usersRecord.where(
                                           'uid',
                                           isEqualTo:
-                                              widget!.refCurse?.uidTechear != ''
-                                                  ? widget!.refCurse?.uidTechear
+                                              widget.refCurse?.uidTechear != ''
+                                                  ? widget.refCurse?.uidTechear
                                                   : null,
                                         ),
                                         singleRecord: true,
@@ -640,7 +634,7 @@ class _CrearTipoComentarioWidgetState extends State<CrearTipoComentarioWidget> {
                                       await comentariosRecordReference.set({
                                         ...createComentariosRecordData(
                                           uidCourses:
-                                              widget!.refCurse?.reference.id,
+                                              widget.refCurse?.reference.id,
                                           uidUser: currentUserReference?.id,
                                           contenido: _model
                                               .txtcontenidoTextController.text,
@@ -657,7 +651,7 @@ class _CrearTipoComentarioWidgetState extends State<CrearTipoComentarioWidget> {
                                           .getDocumentFromData({
                                         ...createComentariosRecordData(
                                           uidCourses:
-                                              widget!.refCurse?.reference.id,
+                                              widget.refCurse?.reference.id,
                                           uidUser: currentUserReference?.id,
                                           contenido: _model
                                               .txtcontenidoTextController.text,

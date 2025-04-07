@@ -3,10 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/alerta_confirmar_delete_usuario/alerta_confirmar_delete_usuario_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'delete_usuario_model.dart';
 export 'delete_usuario_model.dart';
 
@@ -37,29 +34,29 @@ class _DeleteUsuarioWidgetState extends State<DeleteUsuarioWidget> {
     _model = createModel(context, () => DeleteUsuarioModel());
 
     _model.textController1 ??=
-        TextEditingController(text: widget!.refUser?.displayName);
+        TextEditingController(text: widget.refUser?.displayName);
     _model.textFieldFocusNode1 ??= FocusNode();
 
     _model.textController2 ??=
-        TextEditingController(text: widget!.refUser?.email);
+        TextEditingController(text: widget.refUser?.email);
     _model.textFieldFocusNode2 ??= FocusNode();
 
     _model.textController3 ??=
-        TextEditingController(text: widget!.refUser?.phoneNumber);
+        TextEditingController(text: widget.refUser?.phoneNumber);
     _model.textFieldFocusNode3 ??= FocusNode();
 
     _model.textController4 ??=
-        TextEditingController(text: widget!.refUser?.dni?.toString());
+        TextEditingController(text: widget.refUser?.dni.toString());
     _model.textFieldFocusNode4 ??= FocusNode();
 
     _model.textController5 ??= TextEditingController(
         text: valueOrDefault<String>(
       () {
-        if (widget!.refUser?.userType == 1) {
+        if (widget.refUser?.userType == 1) {
           return 'Profesor';
-        } else if (widget!.refUser?.userType == 2) {
+        } else if (widget.refUser?.userType == 2) {
           return 'Estudiante';
-        } else if (widget!.refUser?.userType == 0) {
+        } else if (widget.refUser?.userType == 0) {
           return 'Administrador';
         } else {
           return 'Estudiante';
@@ -75,7 +72,7 @@ class _DeleteUsuarioWidgetState extends State<DeleteUsuarioWidget> {
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {
           _model.textController6?.text = dateTimeFormat(
             "relative",
-            widget!.refUser?.createdTime,
+            widget.refUser?.createdTime,
             locale: FFLocalizations.of(context).languageCode,
           );
         }));
@@ -710,7 +707,7 @@ class _DeleteUsuarioWidgetState extends State<DeleteUsuarioWidget> {
                                                   Directionality.of(context)),
                                           child:
                                               AlertaConfirmarDeleteUsuarioWidget(
-                                            refUser: widget!.refUser!,
+                                            refUser: widget.refUser!,
                                           ),
                                         );
                                       },

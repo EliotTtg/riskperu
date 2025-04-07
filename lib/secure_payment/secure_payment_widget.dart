@@ -3,12 +3,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'secure_payment_model.dart';
 export 'secure_payment_model.dart';
 
@@ -40,7 +36,7 @@ class _SecurePaymentWidgetState extends State<SecurePaymentWidget> {
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       _model.state = valueOrDefault<int>(
-        widget!.state,
+        widget.state,
         1,
       );
       safeSetState(() {});
@@ -1612,7 +1608,7 @@ class _SecurePaymentWidgetState extends State<SecurePaymentWidget> {
                                                                       child:
                                                                           Checkbox(
                                                                         value: _model
-                                                                            .chkfreeValue ??= widget!
+                                                                            .chkfreeValue ??= widget
                                                                                 .state ==
                                                                             1,
                                                                         onChanged:
@@ -1749,7 +1745,7 @@ class _SecurePaymentWidgetState extends State<SecurePaymentWidget> {
                                                                       child:
                                                                           Checkbox(
                                                                         value: _model
-                                                                            .chkbasicValue ??= widget!
+                                                                            .chkbasicValue ??= widget
                                                                                 .state ==
                                                                             2,
                                                                         onChanged:
@@ -1886,7 +1882,7 @@ class _SecurePaymentWidgetState extends State<SecurePaymentWidget> {
                                                                       child:
                                                                           Checkbox(
                                                                         value: _model
-                                                                            .chkpremiumValue ??= widget!
+                                                                            .chkpremiumValue ??= widget
                                                                                 .state ==
                                                                             3,
                                                                         onChanged:

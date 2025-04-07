@@ -1,11 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'share_course_model.dart';
 export 'share_course_model.dart';
 
@@ -35,7 +32,7 @@ class _ShareCourseWidgetState extends State<ShareCourseWidget> {
     super.initState();
     _model = createModel(context, () => ShareCourseModel());
 
-    _model.textController ??= TextEditingController(text: widget!.urlPagina);
+    _model.textController ??= TextEditingController(text: widget.urlPagina);
     _model.textFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -200,7 +197,7 @@ class _ShareCourseWidgetState extends State<ShareCourseWidget> {
                               ),
                               onPressed: () async {
                                 await Clipboard.setData(
-                                    ClipboardData(text: widget!.urlPagina!));
+                                    ClipboardData(text: widget.urlPagina!));
                               },
                             ),
                           ].divide(SizedBox(width: 10.0)),

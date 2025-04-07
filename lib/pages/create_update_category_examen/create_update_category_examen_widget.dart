@@ -5,12 +5,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_update_category_examen_model.dart';
 export 'create_update_category_examen_model.dart';
 
@@ -46,12 +42,12 @@ class _CreateUpdateCategoryExamenWidgetState
 
     // On component load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      if (widget!.refGroupExamen != null) {
+      if (widget.refGroupExamen != null) {
         await Future.wait([
           Future(() async {
             safeSetState(() {
               _model.cbostateValueController?.value = valueOrDefault<bool>(
-                widget!.refGroupExamen?.state,
+                widget.refGroupExamen?.state,
                 false,
               );
             });
@@ -59,7 +55,7 @@ class _CreateUpdateCategoryExamenWidgetState
           Future(() async {
             safeSetState(() {
               _model.cbotypeValueController?.value = valueOrDefault<bool>(
-                widget!.refGroupExamen?.isDemo,
+                widget.refGroupExamen?.isDemo,
                 false,
               );
             });
@@ -84,7 +80,7 @@ class _CreateUpdateCategoryExamenWidgetState
     });
 
     _model.textController ??=
-        TextEditingController(text: widget!.refGroupExamen?.name);
+        TextEditingController(text: widget.refGroupExamen?.name);
     _model.textFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -363,9 +359,9 @@ class _CreateUpdateCategoryExamenWidgetState
                                   final firestoreBatch =
                                       FirebaseFirestore.instance.batch();
                                   try {
-                                    if (widget!.refGroupExamen != null) {
+                                    if (widget.refGroupExamen != null) {
                                       firestoreBatch.update(
-                                          widget!.refGroupExamen!.reference, {
+                                          widget.refGroupExamen!.reference, {
                                         ...createExamGroupsRecordData(
                                           name: _model.textController.text,
                                           state: _model.cbostateValue,
@@ -404,7 +400,7 @@ class _CreateUpdateCategoryExamenWidgetState
                                         ...createExamGroupsRecordData(
                                           name: _model.textController.text,
                                           createdBy: currentUserReference?.id,
-                                          uidCourse: widget!.refCourse,
+                                          uidCourse: widget.refCourse,
                                           state: _model.cbostateValue,
                                           isDemo: _model.cbotypeValue,
                                         ),
@@ -422,7 +418,7 @@ class _CreateUpdateCategoryExamenWidgetState
                                         ...createExamGroupsRecordData(
                                           name: _model.textController.text,
                                           createdBy: currentUserReference?.id,
-                                          uidCourse: widget!.refCourse,
+                                          uidCourse: widget.refCourse,
                                           state: _model.cbostateValue,
                                           isDemo: _model.cbotypeValue,
                                         ),
@@ -468,7 +464,7 @@ class _CreateUpdateCategoryExamenWidgetState
                                   safeSetState(() {});
                                 },
                                 text: valueOrDefault<String>(
-                                  widget!.refGroupExamen != null
+                                  widget.refGroupExamen != null
                                       ? 'ACTUALIZAR'
                                       : 'AGREGAR',
                                   'AGREGAR',

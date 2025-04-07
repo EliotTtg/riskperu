@@ -4,12 +4,7 @@ import '/flutter_flow/flutter_flow_pdf_viewer.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'certificate_view_model.dart';
 export 'certificate_view_model.dart';
 
@@ -148,7 +143,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                     flex: 2,
                                     child: FlutterFlowPdfViewer(
                                       networkPath:
-                                          '${widget!.refCertificate?.urlPdf}',
+                                          '${widget.refCertificate?.urlPdf}',
                                       width: double.infinity,
                                       height: 444.0,
                                       horizontalScroll: true,
@@ -207,7 +202,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                                 text:
                                                                     valueOrDefault<
                                                                         String>(
-                                                                  widget!
+                                                                  widget
                                                                       .refCourse
                                                                       ?.name,
                                                                   '--',
@@ -262,7 +257,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                       TextSpan(
                                                         text: valueOrDefault<
                                                             String>(
-                                                          widget!
+                                                          widget
                                                               .refCourse?.hours,
                                                           '0',
                                                         ),
@@ -387,7 +382,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                 ),
                                                 Text(
                                                   valueOrDefault<String>(
-                                                    widget!
+                                                    widget
                                                         .refUser?.displayName,
                                                     '--',
                                                   ),
@@ -488,7 +483,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                 FFButtonWidget(
                                                   onPressed: () async {
                                                     await launchURL(
-                                                        '${widget!.refCertificate?.urlPdf}');
+                                                        '${widget.refCertificate?.urlPdf}');
                                                   },
                                                   text: 'Descargar PDF',
                                                   options: FFButtonOptions(

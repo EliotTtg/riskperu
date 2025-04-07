@@ -1,36 +1,11 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_data_table.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import '/pages/create_update_category_examen/create_update_category_examen_widget.dart';
-import '/pages/create_update_courses/create_update_courses_widget.dart';
-import '/pages/create_update_examen/create_update_examen_widget.dart';
-import '/pages/create_update_usuario/create_update_usuario_widget.dart';
-import '/pages/delete_usuario/delete_usuario_widget.dart';
-import '/pages/empty_course/empty_course_widget.dart';
-import '/pages/empty_student/empty_student_widget.dart';
 import '/pages/header/header_widget.dart';
-import '/pages/lista_cursos_estudiantes/lista_cursos_estudiantes_widget.dart';
-import '/pages/lista_estudiantes_courses/lista_estudiantes_courses_widget.dart';
-import '/pages/lista_estudiantes_examen/lista_estudiantes_examen_widget.dart';
-import '/pages/lista_preguntas_examen/lista_preguntas_examen_widget.dart';
-import '/pages/mostar_eleccion_curso/mostar_eleccion_curso_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'administration_teacher_widget.dart' show AdministrationTeacherWidget;
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:collection/collection.dart';
-import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
-import 'package:text_search/text_search.dart';
 
 class AdministrationTeacherModel
     extends FlutterFlowModel<AdministrationTeacherWidget> {

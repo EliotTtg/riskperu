@@ -4,12 +4,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/lista_modules/lista_modules_widget.dart';
-import 'dart:ui';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_update_module_model.dart';
 export 'create_update_module_model.dart';
 
@@ -45,7 +41,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
     _model = createModel(context, () => CreateUpdateModuleModel());
 
     _model.textController ??=
-        TextEditingController(text: widget!.refModule?.name);
+        TextEditingController(text: widget.refModule?.name);
     _model.textFieldFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -96,7 +92,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                         children: [
                           Text(
                             valueOrDefault<String>(
-                              widget!.refModule != null
+                              widget.refModule != null
                                   ? 'Actualizar Modulo'
                                   : 'Agregar Modulo',
                               'Agregar Modulo',
@@ -219,7 +215,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                 child: Builder(
                                   builder: (context) => FFButtonWidget(
                                     onPressed: (_model.textController.text ==
-                                            widget!.refModule?.name)
+                                            widget.refModule?.name)
                                         ? null
                                         : () async {
                                             if (_model.formKey.currentState ==
@@ -228,8 +224,8 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                                     .validate()) {
                                               return;
                                             }
-                                            if (widget!.refModule != null) {
-                                              await widget!.refModule!.reference
+                                            if (widget.refModule != null) {
+                                              await widget.refModule!.reference
                                                   .update(
                                                       createModuleRecordData(
                                                 name:
@@ -246,7 +242,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                                     getCurrentTimestamp,
                                                 createdBy:
                                                     currentUserReference?.id,
-                                                uidSession: widget!
+                                                uidSession: widget
                                                     .refSession?.reference.id,
                                               ));
                                               _model.refModule = ModuleRecord
@@ -260,7 +256,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                                         createdBy:
                                                             currentUserReference
                                                                 ?.id,
-                                                        uidSession: widget!
+                                                        uidSession: widget
                                                             .refSession
                                                             ?.reference
                                                             .id,
@@ -292,9 +288,9 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                                                   context)),
                                                   child: ListaModulesWidget(
                                                     refSession:
-                                                        widget!.refSession!,
+                                                        widget.refSession!,
                                                     refCourse:
-                                                        widget!.refCourse!,
+                                                        widget.refCourse!,
                                                   ),
                                                 );
                                               },
@@ -306,7 +302,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                             safeSetState(() {});
                                           },
                                     text: valueOrDefault<String>(
-                                      widget!.refModule != null
+                                      widget.refModule != null
                                           ? 'ACTUALIZAR'
                                           : 'AGREGAR',
                                       'AGREGAR',
@@ -357,8 +353,8 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                                 .resolve(
                                                     Directionality.of(context)),
                                             child: ListaModulesWidget(
-                                              refSession: widget!.refSession!,
-                                              refCourse: widget!.refCourse!,
+                                              refSession: widget.refSession!,
+                                              refCourse: widget.refCourse!,
                                             ),
                                           );
                                         },
