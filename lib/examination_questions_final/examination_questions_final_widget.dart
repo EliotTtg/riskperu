@@ -813,242 +813,280 @@ class _ExaminationQuestionsFinalWidgetState
                                                             BorderRadius
                                                                 .circular(10.0),
                                                       ),
-                                                      child: Container(
-                                                        decoration:
-                                                            BoxDecoration(),
-                                                        child: Container(
-                                                          decoration:
-                                                              BoxDecoration(),
-                                                          child: Padding(
-                                                            padding:
-                                                                EdgeInsets.all(
-                                                                    30.0),
-                                                            child: Column(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .max,
-                                                              mainAxisAlignment:
-                                                                  MainAxisAlignment
-                                                                      .start,
-                                                              crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .start,
-                                                              children: [
-                                                                Container(
-                                                                  decoration:
-                                                                      BoxDecoration(),
-                                                                  child: Column(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    children: [
-                                                                      Container(
-                                                                        width: double
-                                                                            .infinity,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              Color(0xFFEFF3F6),
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(4.0),
-                                                                        ),
-                                                                        child:
-                                                                            Padding(
-                                                                          padding:
-                                                                              EdgeInsets.all(10.0),
-                                                                          child:
-                                                                              Column(
+                                                      child: Padding(
+                                                        padding: EdgeInsets.all(
+                                                            30.0),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Container(
+                                                              decoration:
+                                                                  BoxDecoration(),
+                                                              child: Column(
+                                                                mainAxisSize:
+                                                                    MainAxisSize
+                                                                        .max,
+                                                                children: [
+                                                                  Container(
+                                                                    width: double
+                                                                        .infinity,
+                                                                    decoration:
+                                                                        BoxDecoration(
+                                                                      color: Color(
+                                                                          0xFFEFF3F6),
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
+                                                                              4.0),
+                                                                    ),
+                                                                    child:
+                                                                        Padding(
+                                                                      padding:
+                                                                          EdgeInsets.all(
+                                                                              10.0),
+                                                                      child:
+                                                                          Column(
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
+                                                                        crossAxisAlignment:
+                                                                            CrossAxisAlignment.start,
+                                                                        children:
+                                                                            [
+                                                                          Row(
                                                                             mainAxisSize:
                                                                                 MainAxisSize.max,
-                                                                            crossAxisAlignment:
-                                                                                CrossAxisAlignment.start,
-                                                                            children:
-                                                                                [
-                                                                              Row(
-                                                                                mainAxisSize: MainAxisSize.max,
-                                                                                children: [
-                                                                                  Text(
-                                                                                    'Limite de tiempo: ',
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
-                                                                                          fontSize: 12.0,
-                                                                                          letterSpacing: 0.0,
-                                                                                          fontWeight: FontWeight.w500,
-                                                                                        ),
-                                                                                  ),
-                                                                                  Builder(
-                                                                                    builder: (context) => FlutterFlowTimer(
-                                                                                      initialTime: valueOrDefault<int>(
-                                                                                        functions.tiempoRestanteExamen(
-                                                                                            widget.refResult!.fechaInicioExamen!,
-                                                                                            valueOrDefault<int>(
-                                                                                              widget.refExamination?.tiempoLimite,
-                                                                                              0,
-                                                                                            )),
-                                                                                        0,
-                                                                                      ),
-                                                                                      getDisplayTime: (value) => StopWatchTimer.getDisplayTime(value, milliSecond: false),
-                                                                                      controller: _model.timerController,
-                                                                                      updateStateInterval: Duration(milliseconds: 1000),
-                                                                                      onChanged: (value, displayTime, shouldUpdate) {
-                                                                                        _model.timerMilliseconds = value;
-                                                                                        _model.timerValue = displayTime;
-                                                                                        if (shouldUpdate) safeSetState(() {});
-                                                                                      },
-                                                                                      onEnded: () async {
-                                                                                        _model.timerController.onStopTimer();
-                                                                                        await actions.actualizarResultadoExamen(
-                                                                                          widget.refResult!.reference.id,
-                                                                                        );
-                                                                                        await actions.deleteRegister(
-                                                                                          widget.refExamination!.reference.id,
-                                                                                          widget.refUser!.id,
-                                                                                          widget.refCourse!.reference.id,
-                                                                                        );
-                                                                                        _model.resultadoFinalBienTime = await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
-                                                                                        await showDialog(
-                                                                                          context: context,
-                                                                                          builder: (dialogContext) {
-                                                                                            return Dialog(
-                                                                                              elevation: 0,
-                                                                                              insetPadding: EdgeInsets.zero,
-                                                                                              backgroundColor: Colors.transparent,
-                                                                                              alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
-                                                                                              child: GestureDetector(
-                                                                                                onTap: () {
-                                                                                                  FocusScope.of(dialogContext).unfocus();
-                                                                                                  FocusManager.instance.primaryFocus?.unfocus();
-                                                                                                },
-                                                                                                child: FromResultExaminationWidget(
-                                                                                                  refResult: _model.resultadoFinalBienTime!,
-                                                                                                  refUser: widget.refUser!,
-                                                                                                  refExamen: widget.refExamination!,
-                                                                                                  refCourse: widget.refCourse!,
-                                                                                                  type: widget.type!,
-                                                                                                  isdemo: widget.isdemo!,
-                                                                                                ),
-                                                                                              ),
-                                                                                            );
-                                                                                          },
-                                                                                        );
-
-                                                                                        safeSetState(() {});
-                                                                                      },
-                                                                                      textAlign: TextAlign.start,
-                                                                                      style: FlutterFlowTheme.of(context).headlineSmall.override(
-                                                                                            fontFamily: 'Poppins',
-                                                                                            color: FlutterFlowTheme.of(context).primaryText,
-                                                                                            fontSize: 12.0,
-                                                                                            letterSpacing: 0.0,
-                                                                                            fontWeight: FontWeight.w500,
-                                                                                          ),
+                                                                            children: [
+                                                                              Text(
+                                                                                'Limite de tiempo: ',
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: 'Poppins',
+                                                                                      fontSize: 12.0,
+                                                                                      letterSpacing: 0.0,
+                                                                                      fontWeight: FontWeight.w500,
                                                                                     ),
-                                                                                  ),
-                                                                                ],
                                                                               ),
-                                                                              LinearPercentIndicator(
-                                                                                percent: valueOrDefault<double>(
-                                                                                  (1 - (DateTime.now().difference(DateTime.parse(widget.refResult!.fechaInicioExamen!.toString())).inMinutes.toDouble() / widget.refExamination!.tiempoLimite)).clamp(0.0, 1.0),
-                                                                                  0.0,
-                                                                                ),
-                                                                                lineHeight: 5.0,
-                                                                                animation: true,
-                                                                                animateFromLastPercent: true,
-                                                                                progressColor: FlutterFlowTheme.of(context).primary,
-                                                                                backgroundColor: FlutterFlowTheme.of(context).accent4,
-                                                                                center: Text(
-                                                                                  '50%',
-                                                                                  style: FlutterFlowTheme.of(context).headlineSmall.override(
-                                                                                        fontFamily: 'Poppins',
-                                                                                        fontSize: 0.0,
-                                                                                        letterSpacing: 0.0,
-                                                                                        fontWeight: FontWeight.w300,
-                                                                                      ),
-                                                                                ),
-                                                                                padding: EdgeInsets.zero,
-                                                                              ),
-                                                                            ].divide(SizedBox(height: 5.0)),
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Container(
-                                                                        width: double
-                                                                            .infinity,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              Color(0xFFEFF3F6),
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(4.0),
-                                                                        ),
-                                                                        child:
-                                                                            Padding(
-                                                                          padding:
-                                                                              EdgeInsets.all(10.0),
-                                                                          child:
                                                                               Builder(
-                                                                            builder:
-                                                                                (context) {
-                                                                              final listaPreguntas = containerPreguntasRecordList.toList();
-
-                                                                              return Wrap(
-                                                                                spacing: 10.0,
-                                                                                runSpacing: 10.0,
-                                                                                alignment: WrapAlignment.start,
-                                                                                crossAxisAlignment: WrapCrossAlignment.start,
-                                                                                direction: Axis.horizontal,
-                                                                                runAlignment: WrapAlignment.start,
-                                                                                verticalDirection: VerticalDirection.down,
-                                                                                clipBehavior: Clip.antiAlias,
-                                                                                children: List.generate(listaPreguntas.length, (listaPreguntasIndex) {
-                                                                                  final listaPreguntasItem = listaPreguntas[listaPreguntasIndex];
-                                                                                  return StreamBuilder<List<RespuestaStateRecord>>(
-                                                                                    stream: queryRespuestaStateRecord(
-                                                                                      queryBuilder: (respuestaStateRecord) => respuestaStateRecord
-                                                                                          .where(
-                                                                                            'uis_user',
-                                                                                            isEqualTo: widget.refUser?.id,
-                                                                                          )
-                                                                                          .where(
-                                                                                            'uid_examen',
-                                                                                            isEqualTo: widget.refExamination?.reference.id,
-                                                                                          )
-                                                                                          .where(
-                                                                                            'uid_question',
-                                                                                            isEqualTo: listaPreguntasItem.reference.id,
-                                                                                          ),
-                                                                                      singleRecord: true,
-                                                                                    ),
-                                                                                    builder: (context, snapshot) {
-                                                                                      // Customize what your widget looks like when it's loading.
-                                                                                      if (!snapshot.hasData) {
-                                                                                        return Center(
-                                                                                          child: SizedBox(
-                                                                                            width: 14.0,
-                                                                                            height: 14.0,
-                                                                                            child: CircularProgressIndicator(
-                                                                                              valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                FlutterFlowTheme.of(context).primary,
-                                                                                              ),
+                                                                                builder: (context) => FlutterFlowTimer(
+                                                                                  initialTime: valueOrDefault<int>(
+                                                                                    functions.tiempoRestanteExamen(
+                                                                                        widget.refResult!.fechaInicioExamen!,
+                                                                                        valueOrDefault<int>(
+                                                                                          widget.refExamination?.tiempoLimite,
+                                                                                          0,
+                                                                                        )),
+                                                                                    0,
+                                                                                  ),
+                                                                                  getDisplayTime: (value) => StopWatchTimer.getDisplayTime(value, milliSecond: false),
+                                                                                  controller: _model.timerController,
+                                                                                  updateStateInterval: Duration(milliseconds: 1000),
+                                                                                  onChanged: (value, displayTime, shouldUpdate) {
+                                                                                    _model.timerMilliseconds = value;
+                                                                                    _model.timerValue = displayTime;
+                                                                                    if (shouldUpdate) safeSetState(() {});
+                                                                                  },
+                                                                                  onEnded: () async {
+                                                                                    _model.timerController.onStopTimer();
+                                                                                    await actions.actualizarResultadoExamen(
+                                                                                      widget.refResult!.reference.id,
+                                                                                    );
+                                                                                    await actions.deleteRegister(
+                                                                                      widget.refExamination!.reference.id,
+                                                                                      widget.refUser!.id,
+                                                                                      widget.refCourse!.reference.id,
+                                                                                    );
+                                                                                    _model.resultadoFinalBienTime = await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
+                                                                                    await showDialog(
+                                                                                      context: context,
+                                                                                      builder: (dialogContext) {
+                                                                                        return Dialog(
+                                                                                          elevation: 0,
+                                                                                          insetPadding: EdgeInsets.zero,
+                                                                                          backgroundColor: Colors.transparent,
+                                                                                          alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                                          child: GestureDetector(
+                                                                                            onTap: () {
+                                                                                              FocusScope.of(dialogContext).unfocus();
+                                                                                              FocusManager.instance.primaryFocus?.unfocus();
+                                                                                            },
+                                                                                            child: FromResultExaminationWidget(
+                                                                                              refResult: _model.resultadoFinalBienTime!,
+                                                                                              refUser: widget.refUser!,
+                                                                                              refExamen: widget.refExamination!,
+                                                                                              refCourse: widget.refCourse!,
+                                                                                              type: widget.type!,
+                                                                                              isdemo: widget.isdemo!,
                                                                                             ),
                                                                                           ),
                                                                                         );
-                                                                                      }
-                                                                                      List<RespuestaStateRecord> containerRespuestaStateRecordList = snapshot.data!;
-                                                                                      final containerRespuestaStateRecord = containerRespuestaStateRecordList.isNotEmpty ? containerRespuestaStateRecordList.first : null;
+                                                                                      },
+                                                                                    );
 
-                                                                                      return Container(
-                                                                                        decoration: BoxDecoration(),
-                                                                                        child: StreamBuilder<List<UsersAnswersRecord>>(
-                                                                                          stream: queryUsersAnswersRecord(
-                                                                                            queryBuilder: (usersAnswersRecord) => usersAnswersRecord
-                                                                                                .where(
-                                                                                                  'uid_user',
-                                                                                                  isEqualTo: widget.refResult?.estudianteRef,
-                                                                                                )
+                                                                                    safeSetState(() {});
+                                                                                  },
+                                                                                  textAlign: TextAlign.start,
+                                                                                  style: FlutterFlowTheme.of(context).headlineSmall.override(
+                                                                                        fontFamily: 'Poppins',
+                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                        fontSize: 12.0,
+                                                                                        letterSpacing: 0.0,
+                                                                                        fontWeight: FontWeight.w500,
+                                                                                      ),
+                                                                                ),
+                                                                              ),
+                                                                            ],
+                                                                          ),
+                                                                          LinearPercentIndicator(
+                                                                            percent:
+                                                                                valueOrDefault<double>(
+                                                                              (1 - (DateTime.now().difference(DateTime.parse(widget.refResult!.fechaInicioExamen!.toString())).inMinutes.toDouble() / widget.refExamination!.tiempoLimite)).clamp(0.0, 1.0),
+                                                                              0.0,
+                                                                            ),
+                                                                            lineHeight:
+                                                                                5.0,
+                                                                            animation:
+                                                                                true,
+                                                                            animateFromLastPercent:
+                                                                                true,
+                                                                            progressColor:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                            backgroundColor:
+                                                                                FlutterFlowTheme.of(context).accent4,
+                                                                            center:
+                                                                                Text(
+                                                                              '50%',
+                                                                              style: FlutterFlowTheme.of(context).headlineSmall.override(
+                                                                                    fontFamily: 'Poppins',
+                                                                                    fontSize: 0.0,
+                                                                                    letterSpacing: 0.0,
+                                                                                    fontWeight: FontWeight.w300,
+                                                                                  ),
+                                                                            ),
+                                                                            padding:
+                                                                                EdgeInsets.zero,
+                                                                          ),
+                                                                        ].divide(SizedBox(height: 5.0)),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                  StreamBuilder<
+                                                                      List<
+                                                                          RespuestaStateRecord>>(
+                                                                    stream:
+                                                                        queryRespuestaStateRecord(
+                                                                      queryBuilder: (respuestaStateRecord) => respuestaStateRecord
+                                                                          .where(
+                                                                            'uis_user',
+                                                                            isEqualTo:
+                                                                                widget.refUser?.id,
+                                                                          )
+                                                                          .where(
+                                                                            'uid_examen',
+                                                                            isEqualTo:
+                                                                                widget.refExamination?.reference.id,
+                                                                          ),
+                                                                    ),
+                                                                    builder:
+                                                                        (context,
+                                                                            snapshot) {
+                                                                      // Customize what your widget looks like when it's loading.
+                                                                      if (!snapshot
+                                                                          .hasData) {
+                                                                        return Center(
+                                                                          child:
+                                                                              SizedBox(
+                                                                            width:
+                                                                                14.0,
+                                                                            height:
+                                                                                14.0,
+                                                                            child:
+                                                                                CircularProgressIndicator(
+                                                                              valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        );
+                                                                      }
+                                                                      List<RespuestaStateRecord>
+                                                                          containerRespuestaStateRecordList =
+                                                                          snapshot
+                                                                              .data!;
+
+                                                                      return Container(
+                                                                        width: double
+                                                                            .infinity,
+                                                                        decoration:
+                                                                            BoxDecoration(
+                                                                          color:
+                                                                              Color(0xFFEFF3F6),
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(4.0),
+                                                                        ),
+                                                                        child: StreamBuilder<
+                                                                            List<UsersAnswersRecord>>(
+                                                                          stream:
+                                                                              queryUsersAnswersRecord(
+                                                                            queryBuilder: (usersAnswersRecord) =>
+                                                                                usersAnswersRecord.where(
+                                                                              'uid_user',
+                                                                              isEqualTo: widget.refResult?.estudianteRef,
+                                                                            ),
+                                                                          ),
+                                                                          builder:
+                                                                              (context, snapshot) {
+                                                                            // Customize what your widget looks like when it's loading.
+                                                                            if (!snapshot.hasData) {
+                                                                              return Center(
+                                                                                child: SizedBox(
+                                                                                  width: 14.0,
+                                                                                  height: 14.0,
+                                                                                  child: CircularProgressIndicator(
+                                                                                    valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                      FlutterFlowTheme.of(context).primary,
+                                                                                    ),
+                                                                                  ),
+                                                                                ),
+                                                                              );
+                                                                            }
+                                                                            List<UsersAnswersRecord>
+                                                                                containerUsersAnswersRecordList =
+                                                                                snapshot.data!;
+
+                                                                            return Container(
+                                                                              decoration: BoxDecoration(),
+                                                                              child: Padding(
+                                                                                padding: EdgeInsets.all(10.0),
+                                                                                child: Builder(
+                                                                                  builder: (context) {
+                                                                                    final listaPreguntas = containerPreguntasRecordList.toList();
+
+                                                                                    return Wrap(
+                                                                                      spacing: 10.0,
+                                                                                      runSpacing: 10.0,
+                                                                                      alignment: WrapAlignment.start,
+                                                                                      crossAxisAlignment: WrapCrossAlignment.start,
+                                                                                      direction: Axis.horizontal,
+                                                                                      runAlignment: WrapAlignment.start,
+                                                                                      verticalDirection: VerticalDirection.down,
+                                                                                      clipBehavior: Clip.antiAlias,
+                                                                                      children: List.generate(listaPreguntas.length, (listaPreguntasIndex) {
+                                                                                        final listaPreguntasItem = listaPreguntas[listaPreguntasIndex];
+                                                                                        return StreamBuilder<List<RespuestasRecord>>(
+                                                                                          stream: queryRespuestasRecord(
+                                                                                            queryBuilder: (respuestasRecord) => respuestasRecord
                                                                                                 .where(
                                                                                                   'uid_pregunta',
                                                                                                   isEqualTo: listaPreguntasItem.reference.id,
+                                                                                                )
+                                                                                                .where(
+                                                                                                  'es_correcta',
+                                                                                                  isEqualTo: true,
                                                                                                 ),
                                                                                           ),
                                                                                           builder: (context, snapshot) {
@@ -1066,177 +1104,87 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                 ),
                                                                                               );
                                                                                             }
-                                                                                            List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
+                                                                                            List<RespuestasRecord> containerRespuestasRecordList = snapshot.data!;
 
-                                                                                            return Container(
-                                                                                              decoration: BoxDecoration(),
-                                                                                              child: StreamBuilder<List<RespuestasRecord>>(
-                                                                                                stream: queryRespuestasRecord(
-                                                                                                  queryBuilder: (respuestasRecord) => respuestasRecord
-                                                                                                      .where(
-                                                                                                        'uid_pregunta',
-                                                                                                        isEqualTo: listaPreguntasItem.reference.id,
-                                                                                                      )
-                                                                                                      .where(
-                                                                                                        'es_correcta',
-                                                                                                        isEqualTo: true,
-                                                                                                      ),
-                                                                                                ),
-                                                                                                builder: (context, snapshot) {
-                                                                                                  // Customize what your widget looks like when it's loading.
-                                                                                                  if (!snapshot.hasData) {
-                                                                                                    return Center(
-                                                                                                      child: SizedBox(
-                                                                                                        width: 14.0,
-                                                                                                        height: 14.0,
-                                                                                                        child: CircularProgressIndicator(
-                                                                                                          valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                            FlutterFlowTheme.of(context).primary,
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                    );
-                                                                                                  }
-                                                                                                  List<RespuestasRecord> containerRespuestasRecordList = snapshot.data!;
-
-                                                                                                  return InkWell(
-                                                                                                    splashColor: Colors.transparent,
-                                                                                                    focusColor: Colors.transparent,
-                                                                                                    hoverColor: Colors.transparent,
-                                                                                                    highlightColor: Colors.transparent,
-                                                                                                    onTap: () async {
-                                                                                                      _model.indexQuestion = listaPreguntasIndex;
-                                                                                                      _model.stateEnding = false;
-                                                                                                      safeSetState(() {});
-                                                                                                    },
-                                                                                                    child: Container(
-                                                                                                      height: 30.0,
-                                                                                                      decoration: BoxDecoration(
-                                                                                                        color: valueOrDefault<Color>(
-                                                                                                          containerRespuestaStateRecord != null
-                                                                                                              ? valueOrDefault<Color>(
-                                                                                                                  Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()) && Set.from(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? Color(0xFF00A133) : Color(0xFFBD0020),
-                                                                                                                  Color(0xFFBD0020),
-                                                                                                                )
-                                                                                                              : Color(0xFFEFF3F6),
-                                                                                                          Color(0xFFEFF3F6),
-                                                                                                        ),
-                                                                                                        borderRadius: BorderRadius.circular(4.0),
-                                                                                                        border: Border.all(
-                                                                                                          color: valueOrDefault<Color>(
-                                                                                                            listaPreguntasIndex == _model.indexQuestion ? FlutterFlowTheme.of(context).secondary : Color(0xFFBFBFBF),
-                                                                                                            Color(0xFFBFBFBF),
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                      child: Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(15.0, 3.0, 15.0, 3.0),
-                                                                                                        child: Text(
-                                                                                                          valueOrDefault<String>(
-                                                                                                            (listaPreguntasIndex + 1).toString(),
-                                                                                                            '1',
-                                                                                                          ),
-                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Poppins',
-                                                                                                                color: valueOrDefault<Color>(
-                                                                                                                  containerRespuestaStateRecord != null ? FlutterFlowTheme.of(context).secondaryBackground : FlutterFlowTheme.of(context).primaryText,
-                                                                                                                  FlutterFlowTheme.of(context).primaryText,
-                                                                                                                ),
-                                                                                                                letterSpacing: 0.0,
-                                                                                                                fontWeight: FontWeight.w600,
-                                                                                                              ),
-                                                                                                        ),
-                                                                                                      ),
+                                                                                            return InkWell(
+                                                                                              splashColor: Colors.transparent,
+                                                                                              focusColor: Colors.transparent,
+                                                                                              hoverColor: Colors.transparent,
+                                                                                              highlightColor: Colors.transparent,
+                                                                                              onTap: () async {
+                                                                                                _model.indexQuestion = listaPreguntasIndex;
+                                                                                                _model.stateEnding = false;
+                                                                                                safeSetState(() {});
+                                                                                              },
+                                                                                              child: Container(
+                                                                                                height: 30.0,
+                                                                                                decoration: BoxDecoration(
+                                                                                                  color: valueOrDefault<Color>(
+                                                                                                    containerRespuestaStateRecordList.where((e) => e.uidQuestion == listaPreguntasItem.reference.id).toList().isNotEmpty
+                                                                                                        ? valueOrDefault<Color>(
+                                                                                                            Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.where((e) => e.uidPregunta == listaPreguntasItem.reference.id).toList().map((e) => e.reference.id).toList()) && Set.from(containerUsersAnswersRecordList.where((e) => e.uidPregunta == listaPreguntasItem.reference.id).toList().map((e) => e.reference.id).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? Color(0xFF00A133) : Color(0xFFBD0020),
+                                                                                                            Color(0xFFBD0020),
+                                                                                                          )
+                                                                                                        : Color(0xFFEFF3F6),
+                                                                                                    Color(0xFFEFF3F6),
+                                                                                                  ),
+                                                                                                  borderRadius: BorderRadius.circular(4.0),
+                                                                                                  border: Border.all(
+                                                                                                    color: valueOrDefault<Color>(
+                                                                                                      listaPreguntasIndex == _model.indexQuestion ? FlutterFlowTheme.of(context).secondary : Color(0xFFBFBFBF),
+                                                                                                      Color(0xFFBFBFBF),
                                                                                                     ),
-                                                                                                  );
-                                                                                                },
+                                                                                                  ),
+                                                                                                ),
+                                                                                                child: Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(15.0, 3.0, 15.0, 3.0),
+                                                                                                  child: Text(
+                                                                                                    valueOrDefault<String>(
+                                                                                                      (listaPreguntasIndex + 1).toString(),
+                                                                                                      '1',
+                                                                                                    ),
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          fontFamily: 'Poppins',
+                                                                                                          color: valueOrDefault<Color>(
+                                                                                                            containerRespuestaStateRecordList.where((e) => e.uidQuestion == listaPreguntasItem.reference.id).toList().isNotEmpty ? FlutterFlowTheme.of(context).secondaryBackground : FlutterFlowTheme.of(context).primaryText,
+                                                                                                            FlutterFlowTheme.of(context).primaryText,
+                                                                                                          ),
+                                                                                                          letterSpacing: 0.0,
+                                                                                                          fontWeight: FontWeight.w600,
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                ),
                                                                                               ),
                                                                                             );
                                                                                           },
-                                                                                        ),
-                                                                                      );
-                                                                                    },
-                                                                                  );
-                                                                                }),
-                                                                              );
-                                                                            },
-                                                                          ),
+                                                                                        );
+                                                                                      }),
+                                                                                    );
+                                                                                  },
+                                                                                ),
+                                                                              ),
+                                                                            );
+                                                                          },
                                                                         ),
-                                                                      ),
-                                                                    ].divide(SizedBox(
-                                                                        height:
-                                                                            5.0)),
+                                                                      );
+                                                                    },
                                                                   ),
-                                                                ),
-                                                                if (!_model
-                                                                    .stateEnding)
-                                                                  RichText(
-                                                                    textScaler:
-                                                                        MediaQuery.of(context)
-                                                                            .textScaler,
-                                                                    text:
-                                                                        TextSpan(
-                                                                      children: [
-                                                                        TextSpan(
-                                                                          text:
-                                                                              'PREGUNTA ',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Poppins',
-                                                                                color: Color(0xFF979797),
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FontWeight.w600,
-                                                                              ),
-                                                                        ),
-                                                                        TextSpan(
-                                                                          text:
-                                                                              valueOrDefault<String>(
-                                                                            (valueOrDefault<int>(
-                                                                                      _model.indexQuestion,
-                                                                                      0,
-                                                                                    ) +
-                                                                                    1)
-                                                                                .toString(),
-                                                                            '0',
-                                                                          ),
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Poppins',
-                                                                                color: Color(0xFF979797),
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FontWeight.w600,
-                                                                              ),
-                                                                        ),
-                                                                        TextSpan(
-                                                                          text:
-                                                                              ' de ',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Poppins',
-                                                                                color: Color(0xFF979797),
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FontWeight.w600,
-                                                                              ),
-                                                                        ),
-                                                                        TextSpan(
-                                                                          text:
-                                                                              valueOrDefault<String>(
-                                                                            containerPreguntasRecordList.length.toString(),
-                                                                            '0',
-                                                                          ),
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Poppins',
-                                                                                color: Color(0xFF979797),
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FontWeight.w600,
-                                                                              ),
-                                                                        )
-                                                                      ],
+                                                                ].divide(SizedBox(
+                                                                    height:
+                                                                        5.0)),
+                                                              ),
+                                                            ),
+                                                            if (!_model
+                                                                .stateEnding)
+                                                              RichText(
+                                                                textScaler: MediaQuery.of(
+                                                                        context)
+                                                                    .textScaler,
+                                                                text: TextSpan(
+                                                                  children: [
+                                                                    TextSpan(
+                                                                      text:
+                                                                          'PREGUNTA ',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -1245,34 +1193,829 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                 'Poppins',
                                                                             color:
                                                                                 Color(0xFF979797),
-                                                                            fontSize:
-                                                                                16.0,
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FontWeight.w600,
                                                                           ),
                                                                     ),
+                                                                    TextSpan(
+                                                                      text: valueOrDefault<
+                                                                          String>(
+                                                                        (valueOrDefault<int>(
+                                                                                  _model.indexQuestion,
+                                                                                  0,
+                                                                                ) +
+                                                                                1)
+                                                                            .toString(),
+                                                                        '0',
+                                                                      ),
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Poppins',
+                                                                            color:
+                                                                                Color(0xFF979797),
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FontWeight.w600,
+                                                                          ),
+                                                                    ),
+                                                                    TextSpan(
+                                                                      text:
+                                                                          ' de ',
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Poppins',
+                                                                            color:
+                                                                                Color(0xFF979797),
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FontWeight.w600,
+                                                                          ),
+                                                                    ),
+                                                                    TextSpan(
+                                                                      text: valueOrDefault<
+                                                                          String>(
+                                                                        containerPreguntasRecordList
+                                                                            .length
+                                                                            .toString(),
+                                                                        '0',
+                                                                      ),
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Poppins',
+                                                                            color:
+                                                                                Color(0xFF979797),
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FontWeight.w600,
+                                                                          ),
+                                                                    )
+                                                                  ],
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Poppins',
+                                                                        color: Color(
+                                                                            0xFF979797),
+                                                                        fontSize:
+                                                                            16.0,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                      ),
+                                                                ),
+                                                              ),
+                                                            if (!_model
+                                                                .stateEnding)
+                                                              StreamBuilder<
+                                                                  List<
+                                                                      PreguntasRecord>>(
+                                                                stream:
+                                                                    queryPreguntasRecord(
+                                                                  queryBuilder:
+                                                                      (preguntasRecord) =>
+                                                                          preguntasRecord
+                                                                              .where(
+                                                                    'uid',
+                                                                    isEqualTo: containerPreguntasRecordList
+                                                                        .elementAtOrNull(
+                                                                            _model.indexQuestion)
+                                                                        ?.reference
+                                                                        .id,
                                                                   ),
-                                                                Column(
+                                                                  singleRecord:
+                                                                      true,
+                                                                ),
+                                                                builder: (context,
+                                                                    snapshot) {
+                                                                  // Customize what your widget looks like when it's loading.
+                                                                  if (!snapshot
+                                                                      .hasData) {
+                                                                    return Center(
+                                                                      child:
+                                                                          SizedBox(
+                                                                        width:
+                                                                            14.0,
+                                                                        height:
+                                                                            14.0,
+                                                                        child:
+                                                                            CircularProgressIndicator(
+                                                                          valueColor:
+                                                                              AlwaysStoppedAnimation<Color>(
+                                                                            FlutterFlowTheme.of(context).primary,
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    );
+                                                                  }
+                                                                  List<PreguntasRecord>
+                                                                      containerPreguntasRecordList =
+                                                                      snapshot
+                                                                          .data!;
+                                                                  final containerPreguntasRecord = containerPreguntasRecordList
+                                                                          .isNotEmpty
+                                                                      ? containerPreguntasRecordList
+                                                                          .first
+                                                                      : null;
+
+                                                                  return Container(
+                                                                    decoration:
+                                                                        BoxDecoration(),
+                                                                    child:
+                                                                        Column(
+                                                                      mainAxisSize:
+                                                                          MainAxisSize
+                                                                              .max,
+                                                                      children:
+                                                                          [
+                                                                        Align(
+                                                                          alignment: AlignmentDirectional(
+                                                                              -1.0,
+                                                                              0.0),
+                                                                          child:
+                                                                              RichText(
+                                                                            textScaler:
+                                                                                MediaQuery.of(context).textScaler,
+                                                                            text:
+                                                                                TextSpan(
+                                                                              children: [
+                                                                                TextSpan(
+                                                                                  text: valueOrDefault<String>(
+                                                                                    (valueOrDefault<int>(
+                                                                                              _model.indexQuestion,
+                                                                                              0,
+                                                                                            ) +
+                                                                                            1)
+                                                                                        .toString(),
+                                                                                    '1',
+                                                                                  ),
+                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                        fontFamily: 'Poppins',
+                                                                                        fontSize: 14.0,
+                                                                                        letterSpacing: 0.0,
+                                                                                        fontWeight: FontWeight.w600,
+                                                                                      ),
+                                                                                ),
+                                                                                TextSpan(
+                                                                                  text: '.',
+                                                                                  style: TextStyle(),
+                                                                                ),
+                                                                                TextSpan(
+                                                                                  text: ' Pregunta',
+                                                                                  style: TextStyle(),
+                                                                                )
+                                                                              ],
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                    fontFamily: 'Poppins',
+                                                                                    fontSize: 14.0,
+                                                                                    letterSpacing: 0.0,
+                                                                                    fontWeight: FontWeight.w600,
+                                                                                  ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                        Divider(
+                                                                          height:
+                                                                              4.0,
+                                                                          thickness:
+                                                                              1.0,
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).alternate,
+                                                                        ),
+                                                                        StreamBuilder<
+                                                                            List<RespuestaStateRecord>>(
+                                                                          stream:
+                                                                              queryRespuestaStateRecord(
+                                                                            queryBuilder: (respuestaStateRecord) => respuestaStateRecord
+                                                                                .where(
+                                                                                  'uis_user',
+                                                                                  isEqualTo: widget.refUser?.id,
+                                                                                )
+                                                                                .where(
+                                                                                  'uid_examen',
+                                                                                  isEqualTo: widget.refExamination?.reference.id,
+                                                                                )
+                                                                                .where(
+                                                                                  'uid_question',
+                                                                                  isEqualTo: containerPreguntasRecord?.reference.id,
+                                                                                ),
+                                                                            singleRecord:
+                                                                                true,
+                                                                          ),
+                                                                          builder:
+                                                                              (context, snapshot) {
+                                                                            // Customize what your widget looks like when it's loading.
+                                                                            if (!snapshot.hasData) {
+                                                                              return Center(
+                                                                                child: SizedBox(
+                                                                                  width: 14.0,
+                                                                                  height: 14.0,
+                                                                                  child: CircularProgressIndicator(
+                                                                                    valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                      FlutterFlowTheme.of(context).primary,
+                                                                                    ),
+                                                                                  ),
+                                                                                ),
+                                                                              );
+                                                                            }
+                                                                            List<RespuestaStateRecord>
+                                                                                containerRespuestaStateRecordList =
+                                                                                snapshot.data!;
+                                                                            final containerRespuestaStateRecord = containerRespuestaStateRecordList.isNotEmpty
+                                                                                ? containerRespuestaStateRecordList.first
+                                                                                : null;
+
+                                                                            return Container(
+                                                                              decoration: BoxDecoration(),
+                                                                              child: Column(
+                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                children: [
+                                                                                  if (containerPreguntasRecord?.enunciado != null && containerPreguntasRecord?.enunciado != '')
+                                                                                    Padding(
+                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                                                                                      child: Text(
+                                                                                        valueOrDefault<String>(
+                                                                                          containerPreguntasRecord?.enunciado,
+                                                                                          '-',
+                                                                                        ),
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              fontFamily: 'Poppins',
+                                                                                              fontSize: 14.0,
+                                                                                              letterSpacing: 0.0,
+                                                                                              fontWeight: FontWeight.normal,
+                                                                                            ),
+                                                                                      ),
+                                                                                    ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 20.0),
+                                                                                    child: Text(
+                                                                                      valueOrDefault<String>(
+                                                                                        containerPreguntasRecord?.texto,
+                                                                                        '-',
+                                                                                      ),
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                            fontFamily: 'Poppins',
+                                                                                            fontSize: 14.0,
+                                                                                            letterSpacing: 0.0,
+                                                                                            fontWeight: FontWeight.w600,
+                                                                                          ),
+                                                                                    ),
+                                                                                  ),
+                                                                                  Padding(
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                    child: StreamBuilder<List<RespuestasRecord>>(
+                                                                                      stream: queryRespuestasRecord(
+                                                                                        queryBuilder: (respuestasRecord) => respuestasRecord
+                                                                                            .where(
+                                                                                              'uid_pregunta',
+                                                                                              isEqualTo: containerPreguntasRecord?.reference.id,
+                                                                                            )
+                                                                                            .orderBy('created_date', descending: true),
+                                                                                      ),
+                                                                                      builder: (context, snapshot) {
+                                                                                        // Customize what your widget looks like when it's loading.
+                                                                                        if (!snapshot.hasData) {
+                                                                                          return Center(
+                                                                                            child: SizedBox(
+                                                                                              width: 14.0,
+                                                                                              height: 14.0,
+                                                                                              child: CircularProgressIndicator(
+                                                                                                valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                  FlutterFlowTheme.of(context).primary,
+                                                                                                ),
+                                                                                              ),
+                                                                                            ),
+                                                                                          );
+                                                                                        }
+                                                                                        List<RespuestasRecord> containerRespuestasRecordList = snapshot.data!;
+
+                                                                                        return Container(
+                                                                                          decoration: BoxDecoration(),
+                                                                                          child: StreamBuilder<List<UsersAnswersRecord>>(
+                                                                                            stream: queryUsersAnswersRecord(
+                                                                                              queryBuilder: (usersAnswersRecord) => usersAnswersRecord
+                                                                                                  .where(
+                                                                                                    'uid_user',
+                                                                                                    isEqualTo: widget.refResult?.estudianteRef,
+                                                                                                  )
+                                                                                                  .where(
+                                                                                                    'uid_pregunta',
+                                                                                                    isEqualTo: containerPreguntasRecord?.reference.id,
+                                                                                                  )
+                                                                                                  .where(
+                                                                                                    'uid_examen',
+                                                                                                    isEqualTo: widget.refExamination?.reference.id,
+                                                                                                  ),
+                                                                                            ),
+                                                                                            builder: (context, snapshot) {
+                                                                                              // Customize what your widget looks like when it's loading.
+                                                                                              if (!snapshot.hasData) {
+                                                                                                return Center(
+                                                                                                  child: SizedBox(
+                                                                                                    width: 14.0,
+                                                                                                    height: 14.0,
+                                                                                                    child: CircularProgressIndicator(
+                                                                                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                        FlutterFlowTheme.of(context).primary,
+                                                                                                      ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                );
+                                                                                              }
+                                                                                              List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
+
+                                                                                              return Container(
+                                                                                                decoration: BoxDecoration(),
+                                                                                                child: Column(
+                                                                                                  mainAxisSize: MainAxisSize.max,
+                                                                                                  children: [
+                                                                                                    if (!(containerRespuestaStateRecord != null))
+                                                                                                      Container(
+                                                                                                        decoration: BoxDecoration(),
+                                                                                                        child: Builder(
+                                                                                                          builder: (context) {
+                                                                                                            final listaRespuesta2 = containerRespuestasRecordList.toList();
+
+                                                                                                            return ListView.separated(
+                                                                                                              padding: EdgeInsets.zero,
+                                                                                                              shrinkWrap: true,
+                                                                                                              scrollDirection: Axis.vertical,
+                                                                                                              itemCount: listaRespuesta2.length,
+                                                                                                              separatorBuilder: (_, __) => SizedBox(height: 5.0),
+                                                                                                              itemBuilder: (context, listaRespuesta2Index) {
+                                                                                                                final listaRespuesta2Item = listaRespuesta2[listaRespuesta2Index];
+                                                                                                                return InkWell(
+                                                                                                                  splashColor: Colors.transparent,
+                                                                                                                  focusColor: Colors.transparent,
+                                                                                                                  hoverColor: Colors.transparent,
+                                                                                                                  highlightColor: Colors.transparent,
+                                                                                                                  onTap: () async {
+                                                                                                                    final firestoreBatch = FirebaseFirestore.instance.batch();
+                                                                                                                    try {
+                                                                                                                      if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty) {
+                                                                                                                        await Future.delayed(const Duration(milliseconds: 1000));
+                                                                                                                        firestoreBatch.delete(containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().firstOrNull!.reference);
+                                                                                                                        await Future.delayed(const Duration(milliseconds: 1000));
+                                                                                                                      } else {
+                                                                                                                        if (containerRespuestasRecordList.where((e) => e.esCorrecta).toList().length > containerUsersAnswersRecordList.length) {
+                                                                                                                          await Future.delayed(const Duration(milliseconds: 1000));
+
+                                                                                                                          var usersAnswersRecordReference = UsersAnswersRecord.collection.doc();
+                                                                                                                          firestoreBatch.set(
+                                                                                                                              usersAnswersRecordReference,
+                                                                                                                              createUsersAnswersRecordData(
+                                                                                                                                uidUser: widget.refResult?.estudianteRef,
+                                                                                                                                uidPregunta: containerPreguntasRecord?.reference.id,
+                                                                                                                                respuestaUid: listaRespuesta2Item.reference.id,
+                                                                                                                                uidExamen: widget.refExamination?.reference.id,
+                                                                                                                              ));
+                                                                                                                          _model.refRespuestaCrear = UsersAnswersRecord.getDocumentFromData(
+                                                                                                                              createUsersAnswersRecordData(
+                                                                                                                                uidUser: widget.refResult?.estudianteRef,
+                                                                                                                                uidPregunta: containerPreguntasRecord?.reference.id,
+                                                                                                                                respuestaUid: listaRespuesta2Item.reference.id,
+                                                                                                                                uidExamen: widget.refExamination?.reference.id,
+                                                                                                                              ),
+                                                                                                                              usersAnswersRecordReference);
+
+                                                                                                                          firestoreBatch.update(
+                                                                                                                              _model.refRespuestaCrear!.reference,
+                                                                                                                              createUsersAnswersRecordData(
+                                                                                                                                uid: _model.refRespuestaCrear?.reference.id,
+                                                                                                                              ));
+                                                                                                                          await Future.delayed(const Duration(milliseconds: 1000));
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    } finally {
+                                                                                                                      await firestoreBatch.commit();
+                                                                                                                    }
+
+                                                                                                                    safeSetState(() {});
+                                                                                                                  },
+                                                                                                                  child: Container(
+                                                                                                                    decoration: BoxDecoration(
+                                                                                                                      color: valueOrDefault<Color>(
+                                                                                                                        containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty ? Color(0xFFC8E5CC) : Color(0xFFEFF3F6),
+                                                                                                                        Color(0xFFEFF3F6),
+                                                                                                                      ),
+                                                                                                                      borderRadius: BorderRadius.circular(10.0),
+                                                                                                                    ),
+                                                                                                                    child: Padding(
+                                                                                                                      padding: EdgeInsets.all(10.0),
+                                                                                                                      child: Row(
+                                                                                                                        mainAxisSize: MainAxisSize.max,
+                                                                                                                        children: [
+                                                                                                                          Builder(
+                                                                                                                            builder: (context) {
+                                                                                                                              if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty) {
+                                                                                                                                return Icon(
+                                                                                                                                  Icons.check_box_outlined,
+                                                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                                  size: 15.0,
+                                                                                                                                );
+                                                                                                                              } else {
+                                                                                                                                return Icon(
+                                                                                                                                  Icons.check_box_outline_blank,
+                                                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                                  size: 15.0,
+                                                                                                                                );
+                                                                                                                              }
+                                                                                                                            },
+                                                                                                                          ),
+                                                                                                                          RichText(
+                                                                                                                            textScaler: MediaQuery.of(context).textScaler,
+                                                                                                                            text: TextSpan(
+                                                                                                                              children: [
+                                                                                                                                TextSpan(
+                                                                                                                                  text: valueOrDefault<String>(
+                                                                                                                                    functions.numberToLetter(listaRespuesta2Index + 1),
+                                                                                                                                    '1',
+                                                                                                                                  ),
+                                                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                        fontSize: 12.0,
+                                                                                                                                        letterSpacing: 0.0,
+                                                                                                                                      ),
+                                                                                                                                ),
+                                                                                                                                TextSpan(
+                                                                                                                                  text: ')',
+                                                                                                                                  style: TextStyle(),
+                                                                                                                                )
+                                                                                                                              ],
+                                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontSize: 12.0,
+                                                                                                                                    letterSpacing: 0.0,
+                                                                                                                                  ),
+                                                                                                                            ),
+                                                                                                                          ),
+                                                                                                                          Flexible(
+                                                                                                                            child: Text(
+                                                                                                                              listaRespuesta2Item.textoRespuesta,
+                                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    color: Colors.black,
+                                                                                                                                    fontSize: 12.0,
+                                                                                                                                    letterSpacing: 0.0,
+                                                                                                                                  ),
+                                                                                                                            ),
+                                                                                                                          ),
+                                                                                                                        ].divide(SizedBox(width: 10.0)),
+                                                                                                                      ),
+                                                                                                                    ),
+                                                                                                                  ),
+                                                                                                                );
+                                                                                                              },
+                                                                                                            );
+                                                                                                          },
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    if (containerRespuestaStateRecord != null)
+                                                                                                      Container(
+                                                                                                        decoration: BoxDecoration(),
+                                                                                                        child: Column(
+                                                                                                          mainAxisSize: MainAxisSize.max,
+                                                                                                          children: [
+                                                                                                            Builder(
+                                                                                                              builder: (context) {
+                                                                                                                final listaRespuesta1 = containerRespuestasRecordList.toList();
+
+                                                                                                                return ListView.separated(
+                                                                                                                  padding: EdgeInsets.zero,
+                                                                                                                  shrinkWrap: true,
+                                                                                                                  scrollDirection: Axis.vertical,
+                                                                                                                  itemCount: listaRespuesta1.length,
+                                                                                                                  separatorBuilder: (_, __) => SizedBox(height: 5.0),
+                                                                                                                  itemBuilder: (context, listaRespuesta1Index) {
+                                                                                                                    final listaRespuesta1Item = listaRespuesta1[listaRespuesta1Index];
+                                                                                                                    return Container(
+                                                                                                                      decoration: BoxDecoration(
+                                                                                                                        color: valueOrDefault<Color>(
+                                                                                                                          () {
+                                                                                                                            if (listaRespuesta1Item.esCorrecta) {
+                                                                                                                              return Color(0xFFC8E5CC);
+                                                                                                                            } else if ((containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta1Item.reference.id).toList().isNotEmpty) && !listaRespuesta1Item.esCorrecta) {
+                                                                                                                              return Color(0x72D90429);
+                                                                                                                            } else {
+                                                                                                                              return Color(0xFFEFF3F6);
+                                                                                                                            }
+                                                                                                                          }(),
+                                                                                                                          Color(0xFFEFF3F6),
+                                                                                                                        ),
+                                                                                                                        borderRadius: BorderRadius.circular(10.0),
+                                                                                                                      ),
+                                                                                                                      child: Padding(
+                                                                                                                        padding: EdgeInsets.all(10.0),
+                                                                                                                        child: Row(
+                                                                                                                          mainAxisSize: MainAxisSize.max,
+                                                                                                                          children: [
+                                                                                                                            Builder(
+                                                                                                                              builder: (context) {
+                                                                                                                                if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta1Item.reference.id).toList().isNotEmpty) {
+                                                                                                                                  return Icon(
+                                                                                                                                    Icons.check_box_outlined,
+                                                                                                                                    color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                                    size: 15.0,
+                                                                                                                                  );
+                                                                                                                                } else {
+                                                                                                                                  return Icon(
+                                                                                                                                    Icons.check_box_outline_blank,
+                                                                                                                                    color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                                    size: 15.0,
+                                                                                                                                  );
+                                                                                                                                }
+                                                                                                                              },
+                                                                                                                            ),
+                                                                                                                            RichText(
+                                                                                                                              textScaler: MediaQuery.of(context).textScaler,
+                                                                                                                              text: TextSpan(
+                                                                                                                                children: [
+                                                                                                                                  TextSpan(
+                                                                                                                                    text: valueOrDefault<String>(
+                                                                                                                                      functions.numberToLetter(listaRespuesta1Index + 1),
+                                                                                                                                      '1',
+                                                                                                                                    ),
+                                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                          fontFamily: 'Poppins',
+                                                                                                                                          fontSize: 12.0,
+                                                                                                                                          letterSpacing: 0.0,
+                                                                                                                                        ),
+                                                                                                                                  ),
+                                                                                                                                  TextSpan(
+                                                                                                                                    text: ')',
+                                                                                                                                    style: TextStyle(),
+                                                                                                                                  )
+                                                                                                                                ],
+                                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                      fontSize: 12.0,
+                                                                                                                                      letterSpacing: 0.0,
+                                                                                                                                    ),
+                                                                                                                              ),
+                                                                                                                            ),
+                                                                                                                            Flexible(
+                                                                                                                              child: Text(
+                                                                                                                                listaRespuesta1Item.textoRespuesta,
+                                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                      color: Colors.black,
+                                                                                                                                      fontSize: 12.0,
+                                                                                                                                      letterSpacing: 0.0,
+                                                                                                                                    ),
+                                                                                                                              ),
+                                                                                                                            ),
+                                                                                                                          ].divide(SizedBox(width: 10.0)),
+                                                                                                                        ),
+                                                                                                                      ),
+                                                                                                                    );
+                                                                                                                  },
+                                                                                                                );
+                                                                                                              },
+                                                                                                            ),
+                                                                                                            StreamBuilder<List<RespuestasRecord>>(
+                                                                                                              stream: FFAppState().respuestas(
+                                                                                                                requestFn: () => queryRespuestasRecord(
+                                                                                                                  queryBuilder: (respuestasRecord) => respuestasRecord
+                                                                                                                      .where(
+                                                                                                                        'uid_pregunta',
+                                                                                                                        isEqualTo: containerPreguntasRecord?.reference.id,
+                                                                                                                      )
+                                                                                                                      .where(
+                                                                                                                        'es_correcta',
+                                                                                                                        isEqualTo: true,
+                                                                                                                      ),
+                                                                                                                ),
+                                                                                                              ),
+                                                                                                              builder: (context, snapshot) {
+                                                                                                                // Customize what your widget looks like when it's loading.
+                                                                                                                if (!snapshot.hasData) {
+                                                                                                                  return Center(
+                                                                                                                    child: SizedBox(
+                                                                                                                      width: 14.0,
+                                                                                                                      height: 14.0,
+                                                                                                                      child: CircularProgressIndicator(
+                                                                                                                        valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                                          FlutterFlowTheme.of(context).primary,
+                                                                                                                        ),
+                                                                                                                      ),
+                                                                                                                    ),
+                                                                                                                  );
+                                                                                                                }
+                                                                                                                List<RespuestasRecord> containerRespuestasRecordList = snapshot.data!;
+
+                                                                                                                return Container(
+                                                                                                                  decoration: BoxDecoration(),
+                                                                                                                  child: Padding(
+                                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                                                                                                                    child: StreamBuilder<List<UsersAnswersRecord>>(
+                                                                                                                      stream: FFAppState().usersAnswers(
+                                                                                                                        requestFn: () => queryUsersAnswersRecord(
+                                                                                                                          queryBuilder: (usersAnswersRecord) => usersAnswersRecord
+                                                                                                                              .where(
+                                                                                                                                'uid_user',
+                                                                                                                                isEqualTo: widget.refResult?.estudianteRef,
+                                                                                                                              )
+                                                                                                                              .where(
+                                                                                                                                'uid_pregunta',
+                                                                                                                                isEqualTo: containerPreguntasRecord?.reference.id,
+                                                                                                                              ),
+                                                                                                                        ),
+                                                                                                                      ),
+                                                                                                                      builder: (context, snapshot) {
+                                                                                                                        // Customize what your widget looks like when it's loading.
+                                                                                                                        if (!snapshot.hasData) {
+                                                                                                                          return Center(
+                                                                                                                            child: SizedBox(
+                                                                                                                              width: 14.0,
+                                                                                                                              height: 14.0,
+                                                                                                                              child: CircularProgressIndicator(
+                                                                                                                                valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                                                  FlutterFlowTheme.of(context).primary,
+                                                                                                                                ),
+                                                                                                                              ),
+                                                                                                                            ),
+                                                                                                                          );
+                                                                                                                        }
+                                                                                                                        List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
+
+                                                                                                                        return Container(
+                                                                                                                          width: double.infinity,
+                                                                                                                          decoration: BoxDecoration(
+                                                                                                                            color: Color(0xFFEFF3F6),
+                                                                                                                            borderRadius: BorderRadius.circular(10.0),
+                                                                                                                            border: Border.all(
+                                                                                                                              color: Color(0xFFCECECE),
+                                                                                                                            ),
+                                                                                                                          ),
+                                                                                                                          child: Container(
+                                                                                                                            decoration: BoxDecoration(),
+                                                                                                                            child: Padding(
+                                                                                                                              padding: EdgeInsets.all(20.0),
+                                                                                                                              child: Column(
+                                                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                                                children: [
+                                                                                                                                  Text(
+                                                                                                                                    valueOrDefault<String>(
+                                                                                                                                      Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()) && Set.from(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? 'Correcto' : 'Incorrecto',
+                                                                                                                                      'Incorrecto',
+                                                                                                                                    ),
+                                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                          fontFamily: 'Poppins',
+                                                                                                                                          color: valueOrDefault<Color>(
+                                                                                                                                            Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()) && Set.from(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? Color(0xFF00A133) : Color(0xFFBD0020),
+                                                                                                                                            Color(0xFFBD0020),
+                                                                                                                                          ),
+                                                                                                                                          fontSize: 14.0,
+                                                                                                                                          letterSpacing: 0.0,
+                                                                                                                                          fontWeight: FontWeight.w600,
+                                                                                                                                        ),
+                                                                                                                                  ),
+                                                                                                                                  Text(
+                                                                                                                                    'Respuesta',
+                                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                          fontFamily: 'Poppins',
+                                                                                                                                          letterSpacing: 0.0,
+                                                                                                                                          fontWeight: FontWeight.w600,
+                                                                                                                                        ),
+                                                                                                                                  ),
+                                                                                                                                  Text(
+                                                                                                                                    valueOrDefault<String>(
+                                                                                                                                      containerPreguntasRecord?.explicacion,
+                                                                                                                                      '-',
+                                                                                                                                    ),
+                                                                                                                                    textAlign: TextAlign.start,
+                                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                          fontFamily: 'Poppins',
+                                                                                                                                          fontSize: 12.0,
+                                                                                                                                          letterSpacing: 0.0,
+                                                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                                                        ),
+                                                                                                                                  ),
+                                                                                                                                ].divide(SizedBox(height: 10.0)),
+                                                                                                                              ),
+                                                                                                                            ),
+                                                                                                                          ),
+                                                                                                                        );
+                                                                                                                      },
+                                                                                                                    ),
+                                                                                                                  ),
+                                                                                                                );
+                                                                                                              },
+                                                                                                            ),
+                                                                                                          ].divide(SizedBox(height: 10.0)),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                  ],
+                                                                                                ),
+                                                                                              );
+                                                                                            },
+                                                                                          ),
+                                                                                        );
+                                                                                      },
+                                                                                    ),
+                                                                                  ),
+                                                                                ],
+                                                                              ),
+                                                                            );
+                                                                          },
+                                                                        ),
+                                                                      ].divide(SizedBox(
+                                                                              height: 5.0)),
+                                                                    ),
+                                                                  );
+                                                                },
+                                                              ),
+                                                            if (!_model
+                                                                .stateEnding)
+                                                              Container(
+                                                                width: double
+                                                                    .infinity,
+                                                                decoration:
+                                                                    BoxDecoration(),
+                                                                child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
                                                                           .max,
-                                                                  crossAxisAlignment:
-                                                                      CrossAxisAlignment
-                                                                          .start,
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .end,
                                                                   children: [
-                                                                    if (!_model
-                                                                        .stateEnding)
-                                                                      StreamBuilder<
-                                                                          List<
-                                                                              PreguntasRecord>>(
-                                                                        stream:
-                                                                            queryPreguntasRecord(
-                                                                          queryBuilder: (preguntasRecord) =>
-                                                                              preguntasRecord.where(
-                                                                            'uid',
-                                                                            isEqualTo:
-                                                                                containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                    if (_model
+                                                                            .indexQuestion !=
+                                                                        0)
+                                                                      Flexible(
+                                                                        child:
+                                                                            Align(
+                                                                          alignment: AlignmentDirectional(
+                                                                              -1.0,
+                                                                              0.0),
+                                                                          child:
+                                                                              FFButtonWidget(
+                                                                            onPressed:
+                                                                                () async {
+                                                                              _model.indexQuestion = valueOrDefault<int>(
+                                                                                _model.indexQuestion - 1,
+                                                                                0,
+                                                                              );
+                                                                              safeSetState(() {});
+                                                                            },
+                                                                            text:
+                                                                                'Atras',
+                                                                            options:
+                                                                                FFButtonOptions(
+                                                                              width: 173.0,
+                                                                              height: 26.0,
+                                                                              padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
+                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                              color: FlutterFlowTheme.of(context).primary,
+                                                                              textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                    fontFamily: 'Poppins',
+                                                                                    color: Colors.white,
+                                                                                    fontSize: 14.0,
+                                                                                    letterSpacing: 0.0,
+                                                                                    fontWeight: FontWeight.w500,
+                                                                                  ),
+                                                                              elevation: 0.0,
+                                                                              borderRadius: BorderRadius.circular(4.0),
+                                                                            ),
                                                                           ),
+                                                                        ),
+                                                                      ),
+                                                                    Flexible(
+                                                                      child: StreamBuilder<
+                                                                          List<
+                                                                              RespuestaStateRecord>>(
+                                                                        stream:
+                                                                            queryRespuestaStateRecord(
+                                                                          queryBuilder: (respuestaStateRecord) => respuestaStateRecord
+                                                                              .where(
+                                                                                'uis_user',
+                                                                                isEqualTo: widget.refUser?.id,
+                                                                              )
+                                                                              .where(
+                                                                                'uid_examen',
+                                                                                isEqualTo: widget.refExamination?.reference.id,
+                                                                              )
+                                                                              .where(
+                                                                                'uid_question',
+                                                                                isEqualTo: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                              ),
                                                                           singleRecord:
                                                                               true,
                                                                         ),
@@ -1294,996 +2037,295 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               ),
                                                                             );
                                                                           }
-                                                                          List<PreguntasRecord>
-                                                                              containerPreguntasRecordList =
+                                                                          List<RespuestaStateRecord>
+                                                                              containerRespuestaStateRecordList =
                                                                               snapshot.data!;
-                                                                          final containerPreguntasRecord = containerPreguntasRecordList.isNotEmpty
-                                                                              ? containerPreguntasRecordList.first
+                                                                          final containerRespuestaStateRecord = containerRespuestaStateRecordList.isNotEmpty
+                                                                              ? containerRespuestaStateRecordList.first
                                                                               : null;
 
                                                                           return Container(
                                                                             decoration:
                                                                                 BoxDecoration(),
                                                                             child:
-                                                                                Column(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
                                                                                 Row(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                  children: [
-                                                                                    Column(
-                                                                                      mainAxisSize: MainAxisSize.max,
-                                                                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                      children: [
-                                                                                        Align(
-                                                                                          alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                                          child: RichText(
-                                                                                            textScaler: MediaQuery.of(context).textScaler,
-                                                                                            text: TextSpan(
-                                                                                              children: [
-                                                                                                TextSpan(
-                                                                                                  text: valueOrDefault<String>(
-                                                                                                    (valueOrDefault<int>(
-                                                                                                              _model.indexQuestion,
-                                                                                                              0,
-                                                                                                            ) +
-                                                                                                            1)
-                                                                                                        .toString(),
-                                                                                                    '1',
-                                                                                                  ),
-                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
-                                                                                                        fontSize: 14.0,
-                                                                                                        letterSpacing: 0.0,
-                                                                                                        fontWeight: FontWeight.w600,
-                                                                                                      ),
-                                                                                                ),
-                                                                                                TextSpan(
-                                                                                                  text: '.',
-                                                                                                  style: TextStyle(),
-                                                                                                ),
-                                                                                                TextSpan(
-                                                                                                  text: ' Pregunta',
-                                                                                                  style: TextStyle(),
-                                                                                                )
-                                                                                              ],
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
-                                                                                                    fontSize: 14.0,
-                                                                                                    letterSpacing: 0.0,
-                                                                                                    fontWeight: FontWeight.w600,
-                                                                                                  ),
-                                                                                            ),
-                                                                                          ),
+                                                                              mainAxisSize: MainAxisSize.max,
+                                                                              mainAxisAlignment: MainAxisAlignment.end,
+                                                                              children: [
+                                                                                FFButtonWidget(
+                                                                                  onPressed: (containerRespuestaStateRecord != null)
+                                                                                      ? null
+                                                                                      : () async {
+                                                                                          var respuestaStateRecordReference = RespuestaStateRecord.collection.doc();
+                                                                                          await respuestaStateRecordReference.set(createRespuestaStateRecordData(
+                                                                                            uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                                            uisUser: widget.refUser?.id,
+                                                                                            uidExamen: widget.refExamination?.reference.id,
+                                                                                          ));
+                                                                                          _model.refStateQuestion = RespuestaStateRecord.getDocumentFromData(
+                                                                                              createRespuestaStateRecordData(
+                                                                                                uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                                                uisUser: widget.refUser?.id,
+                                                                                                uidExamen: widget.refExamination?.reference.id,
+                                                                                              ),
+                                                                                              respuestaStateRecordReference);
+
+                                                                                          await _model.refStateQuestion!.reference.update(createRespuestaStateRecordData(
+                                                                                            uid: _model.refStateQuestion?.reference.id,
+                                                                                          ));
+
+                                                                                          safeSetState(() {});
+                                                                                        },
+                                                                                  text: 'Comprobar',
+                                                                                  options: FFButtonOptions(
+                                                                                    width: 173.0,
+                                                                                    height: 26.0,
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
+                                                                                    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                    color: FlutterFlowTheme.of(context).primary,
+                                                                                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                          fontFamily: 'Poppins',
+                                                                                          color: Colors.white,
+                                                                                          fontSize: 14.0,
+                                                                                          letterSpacing: 0.0,
+                                                                                          fontWeight: FontWeight.w500,
                                                                                         ),
-                                                                                      ].divide(SizedBox(height: 10.0)),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                                Divider(
-                                                                                  height: 4.0,
-                                                                                  thickness: 1.0,
-                                                                                  color: FlutterFlowTheme.of(context).alternate,
-                                                                                ),
-                                                                                StreamBuilder<List<RespuestaStateRecord>>(
-                                                                                  stream: queryRespuestaStateRecord(
-                                                                                    queryBuilder: (respuestaStateRecord) => respuestaStateRecord
-                                                                                        .where(
-                                                                                          'uis_user',
-                                                                                          isEqualTo: widget.refUser?.id,
-                                                                                        )
-                                                                                        .where(
-                                                                                          'uid_examen',
-                                                                                          isEqualTo: widget.refExamination?.reference.id,
-                                                                                        )
-                                                                                        .where(
-                                                                                          'uid_question',
-                                                                                          isEqualTo: containerPreguntasRecord?.reference.id,
-                                                                                        ),
-                                                                                    singleRecord: true,
+                                                                                    elevation: 0.0,
+                                                                                    borderRadius: BorderRadius.circular(4.0),
+                                                                                    disabledColor: FlutterFlowTheme.of(context).secondary,
                                                                                   ),
-                                                                                  builder: (context, snapshot) {
-                                                                                    // Customize what your widget looks like when it's loading.
-                                                                                    if (!snapshot.hasData) {
-                                                                                      return Center(
-                                                                                        child: SizedBox(
-                                                                                          width: 14.0,
-                                                                                          height: 14.0,
-                                                                                          child: CircularProgressIndicator(
-                                                                                            valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                              FlutterFlowTheme.of(context).primary,
-                                                                                            ),
-                                                                                          ),
-                                                                                        ),
-                                                                                      );
-                                                                                    }
-                                                                                    List<RespuestaStateRecord> containerRespuestaStateRecordList = snapshot.data!;
-                                                                                    final containerRespuestaStateRecord = containerRespuestaStateRecordList.isNotEmpty ? containerRespuestaStateRecordList.first : null;
-
-                                                                                    return Container(
-                                                                                      decoration: BoxDecoration(),
-                                                                                      child: Column(
-                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                        children: [
-                                                                                          Column(
-                                                                                            mainAxisSize: MainAxisSize.max,
-                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                            children: [
-                                                                                              if (containerPreguntasRecord?.enunciado != null && containerPreguntasRecord?.enunciado != '')
-                                                                                                Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
-                                                                                                  child: Text(
-                                                                                                    valueOrDefault<String>(
-                                                                                                      containerPreguntasRecord?.enunciado,
-                                                                                                      '-',
-                                                                                                    ),
-                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
-                                                                                                          fontSize: 14.0,
-                                                                                                          letterSpacing: 0.0,
-                                                                                                          fontWeight: FontWeight.normal,
-                                                                                                        ),
-                                                                                                  ),
-                                                                                                ),
-                                                                                              Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 20.0),
-                                                                                                child: Text(
-                                                                                                  valueOrDefault<String>(
-                                                                                                    containerPreguntasRecord?.texto,
-                                                                                                    '-',
-                                                                                                  ),
-                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
-                                                                                                        fontSize: 14.0,
-                                                                                                        letterSpacing: 0.0,
-                                                                                                        fontWeight: FontWeight.w600,
-                                                                                                      ),
-                                                                                                ),
-                                                                                              ),
-                                                                                              Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                                                                                                child: StreamBuilder<List<RespuestasRecord>>(
-                                                                                                  stream: queryRespuestasRecord(
-                                                                                                    queryBuilder: (respuestasRecord) => respuestasRecord
-                                                                                                        .where(
-                                                                                                          'uid_pregunta',
-                                                                                                          isEqualTo: containerPreguntasRecord?.reference.id,
-                                                                                                        )
-                                                                                                        .orderBy('created_date', descending: true),
-                                                                                                  ),
-                                                                                                  builder: (context, snapshot) {
-                                                                                                    // Customize what your widget looks like when it's loading.
-                                                                                                    if (!snapshot.hasData) {
-                                                                                                      return Center(
-                                                                                                        child: SizedBox(
-                                                                                                          width: 14.0,
-                                                                                                          height: 14.0,
-                                                                                                          child: CircularProgressIndicator(
-                                                                                                            valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                              FlutterFlowTheme.of(context).primary,
-                                                                                                            ),
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                      );
-                                                                                                    }
-                                                                                                    List<RespuestasRecord> containerRespuestasRecordList = snapshot.data!;
-
-                                                                                                    return Container(
-                                                                                                      decoration: BoxDecoration(),
-                                                                                                      child: Container(
-                                                                                                        decoration: BoxDecoration(),
-                                                                                                        child: Column(
-                                                                                                          mainAxisSize: MainAxisSize.max,
-                                                                                                          children: [
-                                                                                                            if (!(containerRespuestaStateRecord != null))
-                                                                                                              StreamBuilder<List<UsersAnswersRecord>>(
-                                                                                                                stream: queryUsersAnswersRecord(
-                                                                                                                  queryBuilder: (usersAnswersRecord) => usersAnswersRecord
-                                                                                                                      .where(
-                                                                                                                        'uid_user',
-                                                                                                                        isEqualTo: widget.refResult?.estudianteRef,
-                                                                                                                      )
-                                                                                                                      .where(
-                                                                                                                        'uid_pregunta',
-                                                                                                                        isEqualTo: containerPreguntasRecord?.reference.id,
-                                                                                                                      )
-                                                                                                                      .where(
-                                                                                                                        'uid_examen',
-                                                                                                                        isEqualTo: widget.refExamination?.reference.id,
-                                                                                                                      ),
-                                                                                                                ),
-                                                                                                                builder: (context, snapshot) {
-                                                                                                                  // Customize what your widget looks like when it's loading.
-                                                                                                                  if (!snapshot.hasData) {
-                                                                                                                    return Center(
-                                                                                                                      child: SizedBox(
-                                                                                                                        width: 14.0,
-                                                                                                                        height: 14.0,
-                                                                                                                        child: CircularProgressIndicator(
-                                                                                                                          valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                            FlutterFlowTheme.of(context).primary,
-                                                                                                                          ),
-                                                                                                                        ),
-                                                                                                                      ),
-                                                                                                                    );
-                                                                                                                  }
-                                                                                                                  List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
-
-                                                                                                                  return Container(
-                                                                                                                    decoration: BoxDecoration(),
-                                                                                                                    child: Builder(
-                                                                                                                      builder: (context) {
-                                                                                                                        final listaRespuesta2 = containerRespuestasRecordList.toList();
-
-                                                                                                                        return ListView.separated(
-                                                                                                                          padding: EdgeInsets.zero,
-                                                                                                                          shrinkWrap: true,
-                                                                                                                          scrollDirection: Axis.vertical,
-                                                                                                                          itemCount: listaRespuesta2.length,
-                                                                                                                          separatorBuilder: (_, __) => SizedBox(height: 5.0),
-                                                                                                                          itemBuilder: (context, listaRespuesta2Index) {
-                                                                                                                            final listaRespuesta2Item = listaRespuesta2[listaRespuesta2Index];
-                                                                                                                            return InkWell(
-                                                                                                                              splashColor: Colors.transparent,
-                                                                                                                              focusColor: Colors.transparent,
-                                                                                                                              hoverColor: Colors.transparent,
-                                                                                                                              highlightColor: Colors.transparent,
-                                                                                                                              onTap: () async {
-                                                                                                                                if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty) {
-                                                                                                                                  await containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().firstOrNull!.reference.delete();
-                                                                                                                                } else {
-                                                                                                                                  if (containerRespuestasRecordList.where((e) => e.esCorrecta).toList().length >= containerUsersAnswersRecordList.length) {
-                                                                                                                                    var usersAnswersRecordReference = UsersAnswersRecord.collection.doc();
-                                                                                                                                    await usersAnswersRecordReference.set(createUsersAnswersRecordData(
-                                                                                                                                      uidUser: widget.refResult?.estudianteRef,
-                                                                                                                                      uidPregunta: containerPreguntasRecord?.reference.id,
-                                                                                                                                      respuestaUid: listaRespuesta2Item.reference.id,
-                                                                                                                                      uidExamen: widget.refExamination?.reference.id,
-                                                                                                                                    ));
-                                                                                                                                    _model.refRespuestaCrear = UsersAnswersRecord.getDocumentFromData(
-                                                                                                                                        createUsersAnswersRecordData(
-                                                                                                                                          uidUser: widget.refResult?.estudianteRef,
-                                                                                                                                          uidPregunta: containerPreguntasRecord?.reference.id,
-                                                                                                                                          respuestaUid: listaRespuesta2Item.reference.id,
-                                                                                                                                          uidExamen: widget.refExamination?.reference.id,
-                                                                                                                                        ),
-                                                                                                                                        usersAnswersRecordReference);
-
-                                                                                                                                    await _model.refRespuestaCrear!.reference.update(createUsersAnswersRecordData(
-                                                                                                                                      uid: _model.refRespuestaCrear?.reference.id,
-                                                                                                                                    ));
-                                                                                                                                  }
-                                                                                                                                }
-
-                                                                                                                                await Future.delayed(const Duration(milliseconds: 1000));
-
-                                                                                                                                safeSetState(() {});
-                                                                                                                              },
-                                                                                                                              child: Container(
-                                                                                                                                decoration: BoxDecoration(
-                                                                                                                                  color: valueOrDefault<Color>(
-                                                                                                                                    containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty ? Color(0xFFC8E5CC) : Color(0xFFEFF3F6),
-                                                                                                                                    Color(0xFFEFF3F6),
-                                                                                                                                  ),
-                                                                                                                                  borderRadius: BorderRadius.circular(10.0),
-                                                                                                                                ),
-                                                                                                                                child: Padding(
-                                                                                                                                  padding: EdgeInsets.all(10.0),
-                                                                                                                                  child: Row(
-                                                                                                                                    mainAxisSize: MainAxisSize.max,
-                                                                                                                                    children: [
-                                                                                                                                      Builder(
-                                                                                                                                        builder: (context) {
-                                                                                                                                          if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty) {
-                                                                                                                                            return Icon(
-                                                                                                                                              Icons.check_box_outlined,
-                                                                                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                                                              size: 15.0,
-                                                                                                                                            );
-                                                                                                                                          } else {
-                                                                                                                                            return Icon(
-                                                                                                                                              Icons.check_box_outline_blank,
-                                                                                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                                                              size: 15.0,
-                                                                                                                                            );
-                                                                                                                                          }
-                                                                                                                                        },
-                                                                                                                                      ),
-                                                                                                                                      RichText(
-                                                                                                                                        textScaler: MediaQuery.of(context).textScaler,
-                                                                                                                                        text: TextSpan(
-                                                                                                                                          children: [
-                                                                                                                                            TextSpan(
-                                                                                                                                              text: valueOrDefault<String>(
-                                                                                                                                                functions.numberToLetter(listaRespuesta2Index + 1),
-                                                                                                                                                '1',
-                                                                                                                                              ),
-                                                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                    fontFamily: 'Poppins',
-                                                                                                                                                    fontSize: 12.0,
-                                                                                                                                                    letterSpacing: 0.0,
-                                                                                                                                                  ),
-                                                                                                                                            ),
-                                                                                                                                            TextSpan(
-                                                                                                                                              text: ')',
-                                                                                                                                              style: TextStyle(),
-                                                                                                                                            )
-                                                                                                                                          ],
-                                                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                fontFamily: 'Poppins',
-                                                                                                                                                fontSize: 12.0,
-                                                                                                                                                letterSpacing: 0.0,
-                                                                                                                                              ),
-                                                                                                                                        ),
-                                                                                                                                      ),
-                                                                                                                                      Flexible(
-                                                                                                                                        child: Text(
-                                                                                                                                          listaRespuesta2Item.textoRespuesta,
-                                                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                fontFamily: 'Poppins',
-                                                                                                                                                color: Colors.black,
-                                                                                                                                                fontSize: 12.0,
-                                                                                                                                                letterSpacing: 0.0,
-                                                                                                                                              ),
-                                                                                                                                        ),
-                                                                                                                                      ),
-                                                                                                                                    ].divide(SizedBox(width: 10.0)),
-                                                                                                                                  ),
-                                                                                                                                ),
-                                                                                                                              ),
-                                                                                                                            );
-                                                                                                                          },
-                                                                                                                        );
-                                                                                                                      },
-                                                                                                                    ),
-                                                                                                                  );
-                                                                                                                },
-                                                                                                              ),
-                                                                                                            if (containerRespuestaStateRecord != null)
-                                                                                                              Container(
-                                                                                                                decoration: BoxDecoration(),
-                                                                                                                child: Column(
-                                                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                                                  children: [
-                                                                                                                    Builder(
-                                                                                                                      builder: (context) {
-                                                                                                                        final listaRespuesta1 = containerRespuestasRecordList.toList();
-
-                                                                                                                        return ListView.separated(
-                                                                                                                          padding: EdgeInsets.zero,
-                                                                                                                          shrinkWrap: true,
-                                                                                                                          scrollDirection: Axis.vertical,
-                                                                                                                          itemCount: listaRespuesta1.length,
-                                                                                                                          separatorBuilder: (_, __) => SizedBox(height: 5.0),
-                                                                                                                          itemBuilder: (context, listaRespuesta1Index) {
-                                                                                                                            final listaRespuesta1Item = listaRespuesta1[listaRespuesta1Index];
-                                                                                                                            return StreamBuilder<List<UsersAnswersRecord>>(
-                                                                                                                              stream: queryUsersAnswersRecord(
-                                                                                                                                queryBuilder: (usersAnswersRecord) => usersAnswersRecord
-                                                                                                                                    .where(
-                                                                                                                                      'uid_user',
-                                                                                                                                      isEqualTo: widget.refResult?.estudianteRef,
-                                                                                                                                    )
-                                                                                                                                    .where(
-                                                                                                                                      'uid_pregunta',
-                                                                                                                                      isEqualTo: containerPreguntasRecord?.reference.id,
-                                                                                                                                    )
-                                                                                                                                    .where(
-                                                                                                                                      'respuesta_uid',
-                                                                                                                                      isEqualTo: listaRespuesta1Item.reference.id,
-                                                                                                                                    ),
-                                                                                                                                singleRecord: true,
-                                                                                                                              ),
-                                                                                                                              builder: (context, snapshot) {
-                                                                                                                                // Customize what your widget looks like when it's loading.
-                                                                                                                                if (!snapshot.hasData) {
-                                                                                                                                  return Center(
-                                                                                                                                    child: SizedBox(
-                                                                                                                                      width: 14.0,
-                                                                                                                                      height: 14.0,
-                                                                                                                                      child: CircularProgressIndicator(
-                                                                                                                                        valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                                          FlutterFlowTheme.of(context).primary,
-                                                                                                                                        ),
-                                                                                                                                      ),
-                                                                                                                                    ),
-                                                                                                                                  );
-                                                                                                                                }
-                                                                                                                                List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
-                                                                                                                                final containerUsersAnswersRecord = containerUsersAnswersRecordList.isNotEmpty ? containerUsersAnswersRecordList.first : null;
-
-                                                                                                                                return Container(
-                                                                                                                                  decoration: BoxDecoration(
-                                                                                                                                    color: valueOrDefault<Color>(
-                                                                                                                                      () {
-                                                                                                                                        if (listaRespuesta1Item.esCorrecta) {
-                                                                                                                                          return Color(0xFFC8E5CC);
-                                                                                                                                        } else if ((containerUsersAnswersRecord != null) && !listaRespuesta1Item.esCorrecta) {
-                                                                                                                                          return Color(0x72D90429);
-                                                                                                                                        } else {
-                                                                                                                                          return Color(0xFFEFF3F6);
-                                                                                                                                        }
-                                                                                                                                      }(),
-                                                                                                                                      Color(0xFFEFF3F6),
-                                                                                                                                    ),
-                                                                                                                                    borderRadius: BorderRadius.circular(10.0),
-                                                                                                                                  ),
-                                                                                                                                  child: Padding(
-                                                                                                                                    padding: EdgeInsets.all(10.0),
-                                                                                                                                    child: Row(
-                                                                                                                                      mainAxisSize: MainAxisSize.max,
-                                                                                                                                      children: [
-                                                                                                                                        Builder(
-                                                                                                                                          builder: (context) {
-                                                                                                                                            if (containerUsersAnswersRecord != null) {
-                                                                                                                                              return Icon(
-                                                                                                                                                Icons.check_box_outlined,
-                                                                                                                                                color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                                                                size: 15.0,
-                                                                                                                                              );
-                                                                                                                                            } else {
-                                                                                                                                              return Icon(
-                                                                                                                                                Icons.check_box_outline_blank,
-                                                                                                                                                color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                                                                size: 15.0,
-                                                                                                                                              );
-                                                                                                                                            }
-                                                                                                                                          },
-                                                                                                                                        ),
-                                                                                                                                        RichText(
-                                                                                                                                          textScaler: MediaQuery.of(context).textScaler,
-                                                                                                                                          text: TextSpan(
-                                                                                                                                            children: [
-                                                                                                                                              TextSpan(
-                                                                                                                                                text: valueOrDefault<String>(
-                                                                                                                                                  functions.numberToLetter(listaRespuesta1Index + 1),
-                                                                                                                                                  '1',
-                                                                                                                                                ),
-                                                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Poppins',
-                                                                                                                                                      fontSize: 12.0,
-                                                                                                                                                      letterSpacing: 0.0,
-                                                                                                                                                    ),
-                                                                                                                                              ),
-                                                                                                                                              TextSpan(
-                                                                                                                                                text: ')',
-                                                                                                                                                style: TextStyle(),
-                                                                                                                                              )
-                                                                                                                                            ],
-                                                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                  fontFamily: 'Poppins',
-                                                                                                                                                  fontSize: 12.0,
-                                                                                                                                                  letterSpacing: 0.0,
-                                                                                                                                                ),
-                                                                                                                                          ),
-                                                                                                                                        ),
-                                                                                                                                        Flexible(
-                                                                                                                                          child: Text(
-                                                                                                                                            listaRespuesta1Item.textoRespuesta,
-                                                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                  fontFamily: 'Poppins',
-                                                                                                                                                  color: Colors.black,
-                                                                                                                                                  fontSize: 12.0,
-                                                                                                                                                  letterSpacing: 0.0,
-                                                                                                                                                ),
-                                                                                                                                          ),
-                                                                                                                                        ),
-                                                                                                                                      ].divide(SizedBox(width: 10.0)),
-                                                                                                                                    ),
-                                                                                                                                  ),
-                                                                                                                                );
-                                                                                                                              },
-                                                                                                                            );
-                                                                                                                          },
-                                                                                                                        );
-                                                                                                                      },
-                                                                                                                    ),
-                                                                                                                    StreamBuilder<List<RespuestasRecord>>(
-                                                                                                                      stream: FFAppState().respuestas(
-                                                                                                                        requestFn: () => queryRespuestasRecord(
-                                                                                                                          queryBuilder: (respuestasRecord) => respuestasRecord
-                                                                                                                              .where(
-                                                                                                                                'uid_pregunta',
-                                                                                                                                isEqualTo: containerPreguntasRecord?.reference.id,
-                                                                                                                              )
-                                                                                                                              .where(
-                                                                                                                                'es_correcta',
-                                                                                                                                isEqualTo: true,
-                                                                                                                              ),
-                                                                                                                        ),
-                                                                                                                      ),
-                                                                                                                      builder: (context, snapshot) {
-                                                                                                                        // Customize what your widget looks like when it's loading.
-                                                                                                                        if (!snapshot.hasData) {
-                                                                                                                          return Center(
-                                                                                                                            child: SizedBox(
-                                                                                                                              width: 14.0,
-                                                                                                                              height: 14.0,
-                                                                                                                              child: CircularProgressIndicator(
-                                                                                                                                valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                                  FlutterFlowTheme.of(context).primary,
-                                                                                                                                ),
-                                                                                                                              ),
-                                                                                                                            ),
-                                                                                                                          );
-                                                                                                                        }
-                                                                                                                        List<RespuestasRecord> containerRespuestasRecordList = snapshot.data!;
-
-                                                                                                                        return Container(
-                                                                                                                          decoration: BoxDecoration(),
-                                                                                                                          child: Padding(
-                                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
-                                                                                                                            child: StreamBuilder<List<UsersAnswersRecord>>(
-                                                                                                                              stream: FFAppState().usersAnswers(
-                                                                                                                                requestFn: () => queryUsersAnswersRecord(
-                                                                                                                                  queryBuilder: (usersAnswersRecord) => usersAnswersRecord
-                                                                                                                                      .where(
-                                                                                                                                        'uid_user',
-                                                                                                                                        isEqualTo: widget.refResult?.estudianteRef,
-                                                                                                                                      )
-                                                                                                                                      .where(
-                                                                                                                                        'uid_pregunta',
-                                                                                                                                        isEqualTo: containerPreguntasRecord?.reference.id,
-                                                                                                                                      ),
-                                                                                                                                ),
-                                                                                                                              ),
-                                                                                                                              builder: (context, snapshot) {
-                                                                                                                                // Customize what your widget looks like when it's loading.
-                                                                                                                                if (!snapshot.hasData) {
-                                                                                                                                  return Center(
-                                                                                                                                    child: SizedBox(
-                                                                                                                                      width: 14.0,
-                                                                                                                                      height: 14.0,
-                                                                                                                                      child: CircularProgressIndicator(
-                                                                                                                                        valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                                          FlutterFlowTheme.of(context).primary,
-                                                                                                                                        ),
-                                                                                                                                      ),
-                                                                                                                                    ),
-                                                                                                                                  );
-                                                                                                                                }
-                                                                                                                                List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
-
-                                                                                                                                return Container(
-                                                                                                                                  width: double.infinity,
-                                                                                                                                  decoration: BoxDecoration(
-                                                                                                                                    color: Color(0xFFEFF3F6),
-                                                                                                                                    borderRadius: BorderRadius.circular(10.0),
-                                                                                                                                    border: Border.all(
-                                                                                                                                      color: Color(0xFFCECECE),
-                                                                                                                                    ),
-                                                                                                                                  ),
-                                                                                                                                  child: Container(
-                                                                                                                                    decoration: BoxDecoration(),
-                                                                                                                                    child: Padding(
-                                                                                                                                      padding: EdgeInsets.all(20.0),
-                                                                                                                                      child: Column(
-                                                                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                                                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                                                                        children: [
-                                                                                                                                          Text(
-                                                                                                                                            valueOrDefault<String>(
-                                                                                                                                              Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()) && Set.from(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? 'Correcto' : 'Incorrecto',
-                                                                                                                                              'Incorrecto',
-                                                                                                                                            ),
-                                                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                  fontFamily: 'Poppins',
-                                                                                                                                                  color: valueOrDefault<Color>(
-                                                                                                                                                    Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()) && Set.from(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? Color(0xFF00A133) : Color(0xFFBD0020),
-                                                                                                                                                    Color(0xFFBD0020),
-                                                                                                                                                  ),
-                                                                                                                                                  fontSize: 14.0,
-                                                                                                                                                  letterSpacing: 0.0,
-                                                                                                                                                  fontWeight: FontWeight.w600,
-                                                                                                                                                ),
-                                                                                                                                          ),
-                                                                                                                                          Text(
-                                                                                                                                            'Respuesta',
-                                                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                  fontFamily: 'Poppins',
-                                                                                                                                                  letterSpacing: 0.0,
-                                                                                                                                                  fontWeight: FontWeight.w600,
-                                                                                                                                                ),
-                                                                                                                                          ),
-                                                                                                                                          Text(
-                                                                                                                                            valueOrDefault<String>(
-                                                                                                                                              containerPreguntasRecord?.explicacion,
-                                                                                                                                              '-',
-                                                                                                                                            ),
-                                                                                                                                            textAlign: TextAlign.start,
-                                                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                  fontFamily: 'Poppins',
-                                                                                                                                                  fontSize: 12.0,
-                                                                                                                                                  letterSpacing: 0.0,
-                                                                                                                                                  fontWeight: FontWeight.normal,
-                                                                                                                                                ),
-                                                                                                                                          ),
-                                                                                                                                        ].divide(SizedBox(height: 10.0)),
-                                                                                                                                      ),
-                                                                                                                                    ),
-                                                                                                                                  ),
-                                                                                                                                );
-                                                                                                                              },
-                                                                                                                            ),
-                                                                                                                          ),
-                                                                                                                        );
-                                                                                                                      },
-                                                                                                                    ),
-                                                                                                                  ].divide(SizedBox(height: 10.0)),
-                                                                                                                ),
-                                                                                                              ),
-                                                                                                          ],
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                    );
-                                                                                                  },
-                                                                                                ),
-                                                                                              ),
-                                                                                            ],
-                                                                                          ),
-                                                                                        ],
-                                                                                      ),
-                                                                                    );
-                                                                                  },
                                                                                 ),
-                                                                              ].divide(SizedBox(height: 5.0)),
+                                                                                FFButtonWidget(
+                                                                                  onPressed: () async {
+                                                                                    if (containerPreguntasRecordList.length ==
+                                                                                        valueOrDefault<int>(
+                                                                                          _model.indexQuestion + 1,
+                                                                                          0,
+                                                                                        )) {
+                                                                                      _model.stateEnding = true;
+                                                                                      safeSetState(() {});
+                                                                                    } else {
+                                                                                      _model.indexQuestion = valueOrDefault<int>(
+                                                                                        _model.indexQuestion + 1,
+                                                                                        0,
+                                                                                      );
+                                                                                      safeSetState(() {});
+                                                                                    }
+                                                                                  },
+                                                                                  text: valueOrDefault<String>(
+                                                                                    containerPreguntasRecordList.length ==
+                                                                                            valueOrDefault<int>(
+                                                                                              _model.indexQuestion + 1,
+                                                                                              0,
+                                                                                            )
+                                                                                        ? 'Terminar'
+                                                                                        : 'Siguiente ',
+                                                                                    'Siguiente',
+                                                                                  ),
+                                                                                  options: FFButtonOptions(
+                                                                                    width: 173.0,
+                                                                                    height: 26.0,
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
+                                                                                    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                    color: FlutterFlowTheme.of(context).primary,
+                                                                                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                          fontFamily: 'Poppins',
+                                                                                          color: Colors.white,
+                                                                                          fontSize: 14.0,
+                                                                                          letterSpacing: 0.0,
+                                                                                          fontWeight: FontWeight.w500,
+                                                                                        ),
+                                                                                    elevation: 0.0,
+                                                                                    borderRadius: BorderRadius.circular(4.0),
+                                                                                  ),
+                                                                                ),
+                                                                              ].divide(SizedBox(width: 20.0)),
                                                                             ),
                                                                           );
                                                                         },
                                                                       ),
-                                                                  ].divide(SizedBox(
-                                                                      height:
-                                                                          5.0)),
-                                                                ),
-                                                                if (!_model
-                                                                    .stateEnding)
-                                                                  Container(
-                                                                    width: double
-                                                                        .infinity,
-                                                                    decoration:
-                                                                        BoxDecoration(),
-                                                                    child: Row(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .end,
-                                                                      children:
-                                                                          [
-                                                                        if (_model.indexQuestion !=
-                                                                            0)
-                                                                          Flexible(
-                                                                            child:
-                                                                                Align(
-                                                                              alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                              child: FFButtonWidget(
-                                                                                onPressed: () async {
-                                                                                  _model.indexQuestion = valueOrDefault<int>(
-                                                                                    _model.indexQuestion - 1,
-                                                                                    0,
-                                                                                  );
-                                                                                  safeSetState(() {});
-                                                                                },
-                                                                                text: 'Atras',
-                                                                                options: FFButtonOptions(
-                                                                                  width: 173.0,
-                                                                                  height: 26.0,
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
-                                                                                  iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                  color: FlutterFlowTheme.of(context).primary,
-                                                                                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                        fontFamily: 'Poppins',
-                                                                                        color: Colors.white,
-                                                                                        fontSize: 14.0,
-                                                                                        letterSpacing: 0.0,
-                                                                                        fontWeight: FontWeight.w500,
-                                                                                      ),
-                                                                                  elevation: 0.0,
-                                                                                  borderRadius: BorderRadius.circular(4.0),
-                                                                                ),
-                                                                              ),
-                                                                            ),
-                                                                          ),
-                                                                        Flexible(
-                                                                          child:
-                                                                              StreamBuilder<List<RespuestaStateRecord>>(
-                                                                            stream:
-                                                                                queryRespuestaStateRecord(
-                                                                              queryBuilder: (respuestaStateRecord) => respuestaStateRecord
-                                                                                  .where(
-                                                                                    'uis_user',
-                                                                                    isEqualTo: widget.refUser?.id,
-                                                                                  )
-                                                                                  .where(
-                                                                                    'uid_examen',
-                                                                                    isEqualTo: widget.refExamination?.reference.id,
-                                                                                  )
-                                                                                  .where(
-                                                                                    'uid_question',
-                                                                                    isEqualTo: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                  ),
-                                                                              singleRecord: true,
-                                                                            ),
-                                                                            builder:
-                                                                                (context, snapshot) {
-                                                                              // Customize what your widget looks like when it's loading.
-                                                                              if (!snapshot.hasData) {
-                                                                                return Center(
-                                                                                  child: SizedBox(
-                                                                                    width: 14.0,
-                                                                                    height: 14.0,
-                                                                                    child: CircularProgressIndicator(
-                                                                                      valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                        FlutterFlowTheme.of(context).primary,
-                                                                                      ),
-                                                                                    ),
-                                                                                  ),
-                                                                                );
-                                                                              }
-                                                                              List<RespuestaStateRecord> containerRespuestaStateRecordList = snapshot.data!;
-                                                                              final containerRespuestaStateRecord = containerRespuestaStateRecordList.isNotEmpty ? containerRespuestaStateRecordList.first : null;
-
-                                                                              return Container(
-                                                                                decoration: BoxDecoration(),
-                                                                                child: Row(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  mainAxisAlignment: MainAxisAlignment.end,
-                                                                                  children: [
-                                                                                    FFButtonWidget(
-                                                                                      onPressed: (containerRespuestaStateRecord != null)
-                                                                                          ? null
-                                                                                          : () async {
-                                                                                              var respuestaStateRecordReference = RespuestaStateRecord.collection.doc();
-                                                                                              await respuestaStateRecordReference.set(createRespuestaStateRecordData(
-                                                                                                uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                                uisUser: widget.refUser?.id,
-                                                                                                uidExamen: widget.refExamination?.reference.id,
-                                                                                              ));
-                                                                                              _model.refStateQuestion = RespuestaStateRecord.getDocumentFromData(
-                                                                                                  createRespuestaStateRecordData(
-                                                                                                    uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                                    uisUser: widget.refUser?.id,
-                                                                                                    uidExamen: widget.refExamination?.reference.id,
-                                                                                                  ),
-                                                                                                  respuestaStateRecordReference);
-
-                                                                                              await _model.refStateQuestion!.reference.update(createRespuestaStateRecordData(
-                                                                                                uid: _model.refStateQuestion?.reference.id,
-                                                                                              ));
-
-                                                                                              safeSetState(() {});
-                                                                                            },
-                                                                                      text: 'Comprobar',
-                                                                                      options: FFButtonOptions(
-                                                                                        width: 173.0,
-                                                                                        height: 26.0,
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
-                                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                        color: FlutterFlowTheme.of(context).primary,
-                                                                                        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                              fontFamily: 'Poppins',
-                                                                                              color: Colors.white,
-                                                                                              fontSize: 14.0,
-                                                                                              letterSpacing: 0.0,
-                                                                                              fontWeight: FontWeight.w500,
-                                                                                            ),
-                                                                                        elevation: 0.0,
-                                                                                        borderRadius: BorderRadius.circular(4.0),
-                                                                                        disabledColor: FlutterFlowTheme.of(context).secondary,
-                                                                                      ),
-                                                                                    ),
-                                                                                    FFButtonWidget(
-                                                                                      onPressed: () async {
-                                                                                        if (containerPreguntasRecordList.length ==
-                                                                                            valueOrDefault<int>(
-                                                                                              _model.indexQuestion + 1,
-                                                                                              0,
-                                                                                            )) {
-                                                                                          _model.stateEnding = true;
-                                                                                          safeSetState(() {});
-                                                                                        } else {
-                                                                                          _model.indexQuestion = valueOrDefault<int>(
-                                                                                            _model.indexQuestion + 1,
-                                                                                            0,
-                                                                                          );
-                                                                                          safeSetState(() {});
-                                                                                        }
-                                                                                      },
-                                                                                      text: valueOrDefault<String>(
-                                                                                        containerPreguntasRecordList.length ==
-                                                                                                valueOrDefault<int>(
-                                                                                                  _model.indexQuestion + 1,
-                                                                                                  0,
-                                                                                                )
-                                                                                            ? 'Terminar'
-                                                                                            : 'Siguiente ',
-                                                                                        'Siguiente',
-                                                                                      ),
-                                                                                      options: FFButtonOptions(
-                                                                                        width: 173.0,
-                                                                                        height: 26.0,
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
-                                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                        color: FlutterFlowTheme.of(context).primary,
-                                                                                        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                              fontFamily: 'Poppins',
-                                                                                              color: Colors.white,
-                                                                                              fontSize: 14.0,
-                                                                                              letterSpacing: 0.0,
-                                                                                              fontWeight: FontWeight.w500,
-                                                                                            ),
-                                                                                        elevation: 0.0,
-                                                                                        borderRadius: BorderRadius.circular(4.0),
-                                                                                      ),
-                                                                                    ),
-                                                                                  ].divide(SizedBox(width: 20.0)),
-                                                                                ),
-                                                                              );
-                                                                            },
-                                                                          ),
-                                                                        ),
-                                                                      ].divide(SizedBox(
-                                                                              width: 20.0)),
                                                                     ),
-                                                                  ),
-                                                                if (_model
-                                                                    .stateEnding)
-                                                                  Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                  ].divide(SizedBox(
+                                                                      width:
+                                                                          20.0)),
+                                                                ),
+                                                              ),
+                                                            if (_model
+                                                                .stateEnding)
+                                                              Padding(
+                                                                padding:
+                                                                    EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             30.0),
-                                                                    child: Row(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .center,
-                                                                      children:
-                                                                          [
-                                                                        Builder(
-                                                                          builder: (context) =>
+                                                                child: Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    Builder(
+                                                                      builder:
+                                                                          (context) =>
                                                                               FFButtonWidget(
-                                                                            onPressed:
-                                                                                () async {
-                                                                              _model.estadoExamen = await actions.verificarPreguntasRespondidas(
-                                                                                widget.refResult!.estudianteRef,
-                                                                                widget.refExamination!.reference.id,
-                                                                              );
-                                                                              if (_model.estadoExamen!) {
-                                                                                _model.timerController.onStopTimer();
-                                                                                await actions.actualizarResultadoExamen(
-                                                                                  widget.refResult!.reference.id,
-                                                                                );
-                                                                                await actions.deleteRegister(
-                                                                                  widget.refExamination!.reference.id,
-                                                                                  widget.refUser!.id,
-                                                                                  widget.refCourse!.reference.id,
-                                                                                );
-                                                                                _model.resultadoFinalBien = await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
-                                                                                await showDialog(
-                                                                                  context: context,
-                                                                                  builder: (dialogContext) {
-                                                                                    return Dialog(
-                                                                                      elevation: 0,
-                                                                                      insetPadding: EdgeInsets.zero,
-                                                                                      backgroundColor: Colors.transparent,
-                                                                                      alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
-                                                                                      child: GestureDetector(
-                                                                                        onTap: () {
-                                                                                          FocusScope.of(dialogContext).unfocus();
-                                                                                          FocusManager.instance.primaryFocus?.unfocus();
-                                                                                        },
-                                                                                        child: FromResultExaminationWidget(
-                                                                                          refResult: _model.resultadoFinalBien!,
-                                                                                          refUser: widget.refUser!,
-                                                                                          refExamen: widget.refExamination!,
-                                                                                          refCourse: widget.refCourse!,
-                                                                                          type: widget.type!,
-                                                                                          isdemo: widget.isdemo!,
-                                                                                        ),
-                                                                                      ),
-                                                                                    );
-                                                                                  },
-                                                                                );
-                                                                              } else {
-                                                                                await showDialog(
-                                                                                  context: context,
-                                                                                  builder: (dialogContext) {
-                                                                                    return Dialog(
-                                                                                      elevation: 0,
-                                                                                      insetPadding: EdgeInsets.zero,
-                                                                                      backgroundColor: Colors.transparent,
-                                                                                      alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
-                                                                                      child: GestureDetector(
-                                                                                        onTap: () {
-                                                                                          FocusScope.of(dialogContext).unfocus();
-                                                                                          FocusManager.instance.primaryFocus?.unfocus();
-                                                                                        },
-                                                                                        child: AlertaTerminarExamenWidget(),
-                                                                                      ),
-                                                                                    );
-                                                                                  },
-                                                                                );
-
-                                                                                if (FFAppState().stateConfirmation) {
-                                                                                  _model.timerController.onStopTimer();
-                                                                                  FFAppState().stateConfirmation = false;
-                                                                                  safeSetState(() {});
-                                                                                  await actions.actualizarResultadoExamen(
-                                                                                    widget.refResult!.reference.id,
-                                                                                  );
-                                                                                  await actions.deleteRegister(
-                                                                                    widget.refExamination!.reference.id,
-                                                                                    widget.refUser!.id,
-                                                                                    widget.refCourse!.reference.id,
-                                                                                  );
-                                                                                  _model.resultadoFinalBien2 = await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
-                                                                                  await showDialog(
-                                                                                    context: context,
-                                                                                    builder: (dialogContext) {
-                                                                                      return Dialog(
-                                                                                        elevation: 0,
-                                                                                        insetPadding: EdgeInsets.zero,
-                                                                                        backgroundColor: Colors.transparent,
-                                                                                        alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
-                                                                                        child: GestureDetector(
-                                                                                          onTap: () {
-                                                                                            FocusScope.of(dialogContext).unfocus();
-                                                                                            FocusManager.instance.primaryFocus?.unfocus();
-                                                                                          },
-                                                                                          child: FromResultExaminationWidget(
-                                                                                            refResult: _model.resultadoFinalBien2!,
-                                                                                            refUser: widget.refUser!,
-                                                                                            refExamen: widget.refExamination!,
-                                                                                            refCourse: widget.refCourse!,
-                                                                                            type: widget.type!,
-                                                                                            isdemo: widget.isdemo!,
-                                                                                          ),
-                                                                                        ),
-                                                                                      );
+                                                                        onPressed:
+                                                                            () async {
+                                                                          _model.estadoExamen =
+                                                                              await actions.verificarPreguntasRespondidas(
+                                                                            widget.refResult!.estudianteRef,
+                                                                            widget.refExamination!.reference.id,
+                                                                          );
+                                                                          if (_model
+                                                                              .estadoExamen!) {
+                                                                            _model.timerController.onStopTimer();
+                                                                            await actions.actualizarResultadoExamen(
+                                                                              widget.refResult!.reference.id,
+                                                                            );
+                                                                            await actions.deleteRegister(
+                                                                              widget.refExamination!.reference.id,
+                                                                              widget.refUser!.id,
+                                                                              widget.refCourse!.reference.id,
+                                                                            );
+                                                                            _model.resultadoFinalBien =
+                                                                                await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
+                                                                            await showDialog(
+                                                                              context: context,
+                                                                              builder: (dialogContext) {
+                                                                                return Dialog(
+                                                                                  elevation: 0,
+                                                                                  insetPadding: EdgeInsets.zero,
+                                                                                  backgroundColor: Colors.transparent,
+                                                                                  alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                                  child: GestureDetector(
+                                                                                    onTap: () {
+                                                                                      FocusScope.of(dialogContext).unfocus();
+                                                                                      FocusManager.instance.primaryFocus?.unfocus();
                                                                                     },
-                                                                                  );
-                                                                                }
-                                                                              }
-
-                                                                              safeSetState(() {});
-                                                                            },
-                                                                            text:
-                                                                                'Confirmar Envio',
-                                                                            options:
-                                                                                FFButtonOptions(
-                                                                              width: 173.0,
-                                                                              height: 26.0,
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
-                                                                              iconAlignment: IconAlignment.start,
-                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                              color: FlutterFlowTheme.of(context).primary,
-                                                                              textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                    fontFamily: 'Poppins',
-                                                                                    color: Colors.white,
-                                                                                    fontSize: 12.0,
-                                                                                    letterSpacing: 0.0,
-                                                                                    fontWeight: FontWeight.w500,
+                                                                                    child: FromResultExaminationWidget(
+                                                                                      refResult: _model.resultadoFinalBien!,
+                                                                                      refUser: widget.refUser!,
+                                                                                      refExamen: widget.refExamination!,
+                                                                                      refCourse: widget.refCourse!,
+                                                                                      type: widget.type!,
+                                                                                      isdemo: widget.isdemo!,
+                                                                                    ),
                                                                                   ),
-                                                                              elevation: 0.0,
-                                                                              borderRadius: BorderRadius.circular(4.0),
-                                                                            ),
-                                                                          ),
+                                                                                );
+                                                                              },
+                                                                            );
+                                                                          } else {
+                                                                            await showDialog(
+                                                                              context: context,
+                                                                              builder: (dialogContext) {
+                                                                                return Dialog(
+                                                                                  elevation: 0,
+                                                                                  insetPadding: EdgeInsets.zero,
+                                                                                  backgroundColor: Colors.transparent,
+                                                                                  alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                                  child: GestureDetector(
+                                                                                    onTap: () {
+                                                                                      FocusScope.of(dialogContext).unfocus();
+                                                                                      FocusManager.instance.primaryFocus?.unfocus();
+                                                                                    },
+                                                                                    child: AlertaTerminarExamenWidget(),
+                                                                                  ),
+                                                                                );
+                                                                              },
+                                                                            );
+
+                                                                            if (FFAppState().stateConfirmation) {
+                                                                              _model.timerController.onStopTimer();
+                                                                              FFAppState().stateConfirmation = false;
+                                                                              safeSetState(() {});
+                                                                              await actions.actualizarResultadoExamen(
+                                                                                widget.refResult!.reference.id,
+                                                                              );
+                                                                              await actions.deleteRegister(
+                                                                                widget.refExamination!.reference.id,
+                                                                                widget.refUser!.id,
+                                                                                widget.refCourse!.reference.id,
+                                                                              );
+                                                                              _model.resultadoFinalBien2 = await ResultadosRecord.getDocumentOnce(widget.refResult!.reference);
+                                                                              await showDialog(
+                                                                                context: context,
+                                                                                builder: (dialogContext) {
+                                                                                  return Dialog(
+                                                                                    elevation: 0,
+                                                                                    insetPadding: EdgeInsets.zero,
+                                                                                    backgroundColor: Colors.transparent,
+                                                                                    alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                                    child: GestureDetector(
+                                                                                      onTap: () {
+                                                                                        FocusScope.of(dialogContext).unfocus();
+                                                                                        FocusManager.instance.primaryFocus?.unfocus();
+                                                                                      },
+                                                                                      child: FromResultExaminationWidget(
+                                                                                        refResult: _model.resultadoFinalBien2!,
+                                                                                        refUser: widget.refUser!,
+                                                                                        refExamen: widget.refExamination!,
+                                                                                        refCourse: widget.refCourse!,
+                                                                                        type: widget.type!,
+                                                                                        isdemo: widget.isdemo!,
+                                                                                      ),
+                                                                                    ),
+                                                                                  );
+                                                                                },
+                                                                              );
+                                                                            }
+                                                                          }
+
+                                                                          safeSetState(
+                                                                              () {});
+                                                                        },
+                                                                        text:
+                                                                            'Confirmar Envio',
+                                                                        options:
+                                                                            FFButtonOptions(
+                                                                          width:
+                                                                              173.0,
+                                                                          height:
+                                                                              26.0,
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              35.0,
+                                                                              0.0,
+                                                                              35.0,
+                                                                              0.0),
+                                                                          iconAlignment:
+                                                                              IconAlignment.start,
+                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0),
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).primary,
+                                                                          textStyle: FlutterFlowTheme.of(context)
+                                                                              .titleSmall
+                                                                              .override(
+                                                                                fontFamily: 'Poppins',
+                                                                                color: Colors.white,
+                                                                                fontSize: 12.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.w500,
+                                                                              ),
+                                                                          elevation:
+                                                                              0.0,
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(4.0),
                                                                         ),
-                                                                      ].divide(SizedBox(
-                                                                              width: 20.0)),
+                                                                      ),
                                                                     ),
-                                                                  ),
-                                                              ].divide(SizedBox(
-                                                                  height: 5.0)),
-                                                            ),
-                                                          ),
+                                                                  ].divide(SizedBox(
+                                                                      width:
+                                                                          20.0)),
+                                                                ),
+                                                              ),
+                                                          ].divide(SizedBox(
+                                                              height: 5.0)),
                                                         ),
                                                       ),
                                                     );
