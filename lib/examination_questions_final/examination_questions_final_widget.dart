@@ -1477,87 +1477,83 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                           mainAxisSize: MainAxisSize.max,
                                                                                                           children: [
                                                                                                             if (!(containerRespuestaStateRecord != null))
-                                                                                                              Container(
-                                                                                                                decoration: BoxDecoration(),
-                                                                                                                child: Builder(
-                                                                                                                  builder: (context) {
-                                                                                                                    final listaRespuesta2 = containerRespuestasRecordList.toList();
-
-                                                                                                                    return ListView.separated(
-                                                                                                                      padding: EdgeInsets.zero,
-                                                                                                                      shrinkWrap: true,
-                                                                                                                      scrollDirection: Axis.vertical,
-                                                                                                                      itemCount: listaRespuesta2.length,
-                                                                                                                      separatorBuilder: (_, __) => SizedBox(height: 5.0),
-                                                                                                                      itemBuilder: (context, listaRespuesta2Index) {
-                                                                                                                        final listaRespuesta2Item = listaRespuesta2[listaRespuesta2Index];
-                                                                                                                        return StreamBuilder<List<UsersAnswersRecord>>(
-                                                                                                                          stream: queryUsersAnswersRecord(
-                                                                                                                            queryBuilder: (usersAnswersRecord) => usersAnswersRecord
-                                                                                                                                .where(
-                                                                                                                                  'uid_user',
-                                                                                                                                  isEqualTo: widget.refResult?.estudianteRef,
-                                                                                                                                )
-                                                                                                                                .where(
-                                                                                                                                  'uid_pregunta',
-                                                                                                                                  isEqualTo: containerPreguntasRecord?.reference.id,
-                                                                                                                                )
-                                                                                                                                .where(
-                                                                                                                                  'respuesta_uid',
-                                                                                                                                  isEqualTo: listaRespuesta2Item.reference.id,
-                                                                                                                                )
-                                                                                                                                .where(
-                                                                                                                                  'uid_examen',
-                                                                                                                                  isEqualTo: widget.refExamination?.reference.id,
-                                                                                                                                ),
-                                                                                                                            singleRecord: true,
+                                                                                                              StreamBuilder<List<UsersAnswersRecord>>(
+                                                                                                                stream: queryUsersAnswersRecord(
+                                                                                                                  queryBuilder: (usersAnswersRecord) => usersAnswersRecord
+                                                                                                                      .where(
+                                                                                                                        'uid_user',
+                                                                                                                        isEqualTo: widget.refResult?.estudianteRef,
+                                                                                                                      )
+                                                                                                                      .where(
+                                                                                                                        'uid_pregunta',
+                                                                                                                        isEqualTo: containerPreguntasRecord?.reference.id,
+                                                                                                                      )
+                                                                                                                      .where(
+                                                                                                                        'uid_examen',
+                                                                                                                        isEqualTo: widget.refExamination?.reference.id,
+                                                                                                                      ),
+                                                                                                                ),
+                                                                                                                builder: (context, snapshot) {
+                                                                                                                  // Customize what your widget looks like when it's loading.
+                                                                                                                  if (!snapshot.hasData) {
+                                                                                                                    return Center(
+                                                                                                                      child: SizedBox(
+                                                                                                                        width: 14.0,
+                                                                                                                        height: 14.0,
+                                                                                                                        child: CircularProgressIndicator(
+                                                                                                                          valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                                            FlutterFlowTheme.of(context).primary,
                                                                                                                           ),
-                                                                                                                          builder: (context, snapshot) {
-                                                                                                                            // Customize what your widget looks like when it's loading.
-                                                                                                                            if (!snapshot.hasData) {
-                                                                                                                              return Center(
-                                                                                                                                child: SizedBox(
-                                                                                                                                  width: 14.0,
-                                                                                                                                  height: 14.0,
-                                                                                                                                  child: CircularProgressIndicator(
-                                                                                                                                    valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                                      FlutterFlowTheme.of(context).primary,
-                                                                                                                                    ),
-                                                                                                                                  ),
-                                                                                                                                ),
-                                                                                                                              );
-                                                                                                                            }
-                                                                                                                            List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
-                                                                                                                            final containerUsersAnswersRecord = containerUsersAnswersRecordList.isNotEmpty ? containerUsersAnswersRecordList.first : null;
+                                                                                                                        ),
+                                                                                                                      ),
+                                                                                                                    );
+                                                                                                                  }
+                                                                                                                  List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
 
+                                                                                                                  return Container(
+                                                                                                                    decoration: BoxDecoration(),
+                                                                                                                    child: Builder(
+                                                                                                                      builder: (context) {
+                                                                                                                        final listaRespuesta2 = containerRespuestasRecordList.toList();
+
+                                                                                                                        return ListView.separated(
+                                                                                                                          padding: EdgeInsets.zero,
+                                                                                                                          shrinkWrap: true,
+                                                                                                                          scrollDirection: Axis.vertical,
+                                                                                                                          itemCount: listaRespuesta2.length,
+                                                                                                                          separatorBuilder: (_, __) => SizedBox(height: 5.0),
+                                                                                                                          itemBuilder: (context, listaRespuesta2Index) {
+                                                                                                                            final listaRespuesta2Item = listaRespuesta2[listaRespuesta2Index];
                                                                                                                             return InkWell(
                                                                                                                               splashColor: Colors.transparent,
                                                                                                                               focusColor: Colors.transparent,
                                                                                                                               hoverColor: Colors.transparent,
                                                                                                                               highlightColor: Colors.transparent,
                                                                                                                               onTap: () async {
-                                                                                                                                if (containerUsersAnswersRecord != null) {
-                                                                                                                                  await containerUsersAnswersRecord.reference.delete();
+                                                                                                                                if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty) {
+                                                                                                                                  await containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().firstOrNull!.reference.delete();
                                                                                                                                 } else {
-                                                                                                                                  var usersAnswersRecordReference = UsersAnswersRecord.collection.doc();
-                                                                                                                                  await usersAnswersRecordReference.set(createUsersAnswersRecordData(
-                                                                                                                                    uidUser: widget.refResult?.estudianteRef,
-                                                                                                                                    uidPregunta: containerPreguntasRecord?.reference.id,
-                                                                                                                                    respuestaUid: listaRespuesta2Item.reference.id,
-                                                                                                                                    uidExamen: widget.refExamination?.reference.id,
-                                                                                                                                  ));
-                                                                                                                                  _model.refRespuestaCrear = UsersAnswersRecord.getDocumentFromData(
-                                                                                                                                      createUsersAnswersRecordData(
-                                                                                                                                        uidUser: widget.refResult?.estudianteRef,
-                                                                                                                                        uidPregunta: containerPreguntasRecord?.reference.id,
-                                                                                                                                        respuestaUid: listaRespuesta2Item.reference.id,
-                                                                                                                                        uidExamen: widget.refExamination?.reference.id,
-                                                                                                                                      ),
-                                                                                                                                      usersAnswersRecordReference);
+                                                                                                                                  if (containerRespuestasRecordList.where((e) => e.esCorrecta).toList().length >= containerUsersAnswersRecordList.length) {
+                                                                                                                                    var usersAnswersRecordReference = UsersAnswersRecord.collection.doc();
+                                                                                                                                    await usersAnswersRecordReference.set(createUsersAnswersRecordData(
+                                                                                                                                      uidUser: widget.refResult?.estudianteRef,
+                                                                                                                                      uidPregunta: containerPreguntasRecord?.reference.id,
+                                                                                                                                      respuestaUid: listaRespuesta2Item.reference.id,
+                                                                                                                                      uidExamen: widget.refExamination?.reference.id,
+                                                                                                                                    ));
+                                                                                                                                    _model.refRespuestaCrear = UsersAnswersRecord.getDocumentFromData(
+                                                                                                                                        createUsersAnswersRecordData(
+                                                                                                                                          uidUser: widget.refResult?.estudianteRef,
+                                                                                                                                          uidPregunta: containerPreguntasRecord?.reference.id,
+                                                                                                                                          respuestaUid: listaRespuesta2Item.reference.id,
+                                                                                                                                          uidExamen: widget.refExamination?.reference.id,
+                                                                                                                                        ),
+                                                                                                                                        usersAnswersRecordReference);
 
-                                                                                                                                  await _model.refRespuestaCrear!.reference.update(createUsersAnswersRecordData(
-                                                                                                                                    uid: _model.refRespuestaCrear?.reference.id,
-                                                                                                                                  ));
+                                                                                                                                    await _model.refRespuestaCrear!.reference.update(createUsersAnswersRecordData(
+                                                                                                                                      uid: _model.refRespuestaCrear?.reference.id,
+                                                                                                                                    ));
+                                                                                                                                  }
                                                                                                                                 }
 
                                                                                                                                 await Future.delayed(const Duration(milliseconds: 1000));
@@ -1567,7 +1563,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                               child: Container(
                                                                                                                                 decoration: BoxDecoration(
                                                                                                                                   color: valueOrDefault<Color>(
-                                                                                                                                    containerUsersAnswersRecord != null ? Color(0xFFC8E5CC) : Color(0xFFEFF3F6),
+                                                                                                                                    containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty ? Color(0xFFC8E5CC) : Color(0xFFEFF3F6),
                                                                                                                                     Color(0xFFEFF3F6),
                                                                                                                                   ),
                                                                                                                                   borderRadius: BorderRadius.circular(10.0),
@@ -1579,7 +1575,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                     children: [
                                                                                                                                       Builder(
                                                                                                                                         builder: (context) {
-                                                                                                                                          if (containerUsersAnswersRecord != null) {
+                                                                                                                                          if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty) {
                                                                                                                                             return Icon(
                                                                                                                                               Icons.check_box_outlined,
                                                                                                                                               color: FlutterFlowTheme.of(context).primaryText,
@@ -1640,9 +1636,9 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                           },
                                                                                                                         );
                                                                                                                       },
-                                                                                                                    );
-                                                                                                                  },
-                                                                                                                ),
+                                                                                                                    ),
+                                                                                                                  );
+                                                                                                                },
                                                                                                               ),
                                                                                                             if (containerRespuestaStateRecord != null)
                                                                                                               Container(
