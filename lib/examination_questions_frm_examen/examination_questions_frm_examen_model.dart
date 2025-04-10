@@ -1,15 +1,13 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/header/header_widget.dart';
 import '/pages/header_mobil/header_mobil_widget.dart';
-import '/pages/navbar/navbar_widget.dart';
 import '/index.dart';
-import 'examination_questions_view_widget.dart'
-    show ExaminationQuestionsViewWidget;
+import 'examination_questions_frm_examen_widget.dart'
+    show ExaminationQuestionsFrmExamenWidget;
 import 'package:flutter/material.dart';
 
-class ExaminationQuestionsViewModel
-    extends FlutterFlowModel<ExaminationQuestionsViewWidget> {
+class ExaminationQuestionsFrmExamenModel
+    extends FlutterFlowModel<ExaminationQuestionsFrmExamenWidget> {
   ///  Local state fields for this page.
 
   int indexQuestion = 0;
@@ -30,44 +28,24 @@ class ExaminationQuestionsViewModel
 
   String? refExamen;
 
-  ResultadosRecord? refResult;
-
   ///  State fields for stateful widgets in this page.
 
-  // Stores action output result for [Custom Action - porcentajeCourseLinea] action in examinationQuestionsView widget.
-  double? porcentajeCourse;
-  // Stores action output result for [Custom Action - porcentajeCourse] action in examinationQuestionsView widget.
-  double? porcentajeExamenes;
-  // Model for Header component.
-  late HeaderModel headerModel;
   // Model for HeaderMobil component.
   late HeaderMobilModel headerMobilModel;
-  // Model for Navbar component.
-  late NavbarModel navbarModel;
-  // Stores action output result for [Firestore Query - Query a collection] action in Button widget.
-  PreguntasRecord? refPreguntas;
-  // Stores action output result for [Firestore Query - Query a collection] action in Button widget.
-  RespuestasRecord? refQuestion;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
-  ResultadosRecord? refResultado1;
-  // Stores action output result for [Backend Call - Read Document] action in Button widget.
-  ResultadosRecord? refResultCourse1;
+  ResultadosRecord? refResult;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   RegisterSimulatorRecord? refRegister;
   // Stores action output result for [Backend Call - Read Document] action in Button widget.
-  ResultadosRecord? refResultCourse2;
+  ResultadosRecord? referenciaResultado;
 
   @override
   void initState(BuildContext context) {
-    headerModel = createModel(context, () => HeaderModel());
     headerMobilModel = createModel(context, () => HeaderMobilModel());
-    navbarModel = createModel(context, () => NavbarModel());
   }
 
   @override
   void dispose() {
-    headerModel.dispose();
     headerMobilModel.dispose();
-    navbarModel.dispose();
   }
 }

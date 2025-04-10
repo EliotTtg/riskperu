@@ -448,7 +448,8 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                       Colors.transparent,
                                                   onTap: () async {
                                                     context.pushNamed(
-                                                      NotesWidget.routeName,
+                                                      NotesStudientsWidget
+                                                          .routeName,
                                                       extra: <String, dynamic>{
                                                         kTransitionInfoKey:
                                                             TransitionInfo(
@@ -543,7 +544,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                       Colors.transparent,
                                                   onTap: () async {
                                                     context.pushNamed(
-                                                      CertificatesWidget
+                                                      CertificatesStudientsWidget
                                                           .routeName,
                                                       queryParameters: {
                                                         'uidUser':

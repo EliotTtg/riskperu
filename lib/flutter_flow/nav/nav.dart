@@ -405,6 +405,132 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                   ParamType.bool,
                 ),
               ),
+            ),
+            FFRoute(
+              name: NotesStudientsWidget.routeName,
+              path: NotesStudientsWidget.routePath,
+              requireAuth: true,
+              builder: (context, params) => NotesStudientsWidget(),
+            ),
+            FFRoute(
+              name: CertificatesStudientsWidget.routeName,
+              path: CertificatesStudientsWidget.routePath,
+              requireAuth: true,
+              builder: (context, params) => CertificatesStudientsWidget(
+                uidUser: params.getParam(
+                  'uidUser',
+                  ParamType.String,
+                ),
+              ),
+            ),
+            FFRoute(
+              name: ExaminationQuestionsFrmExamenWidget.routeName,
+              path: ExaminationQuestionsFrmExamenWidget.routePath,
+              requireAuth: true,
+              asyncParams: {
+                'refExamination':
+                    getDoc(['examenes'], ExamenesRecord.fromSnapshot),
+                'refResult':
+                    getDoc(['resultados'], ResultadosRecord.fromSnapshot),
+                'refCourse': getDoc(['Courses'], CoursesRecord.fromSnapshot),
+              },
+              builder: (context, params) => ExaminationQuestionsFrmExamenWidget(
+                refExamination: params.getParam(
+                  'refExamination',
+                  ParamType.Document,
+                ),
+                refResult: params.getParam(
+                  'refResult',
+                  ParamType.Document,
+                ),
+                refCourse: params.getParam(
+                  'refCourse',
+                  ParamType.Document,
+                ),
+                refUser: params.getParam(
+                  'refUser',
+                  ParamType.DocumentReference,
+                  isList: false,
+                  collectionNamePath: ['users'],
+                ),
+                type: params.getParam(
+                  'type',
+                  ParamType.int,
+                ),
+                isdemo: params.getParam(
+                  'isdemo',
+                  ParamType.bool,
+                ),
+              ),
+            ),
+            FFRoute(
+              name: ExaminationQuestionsViewMobilWidget.routeName,
+              path: ExaminationQuestionsViewMobilWidget.routePath,
+              requireAuth: true,
+              asyncParams: {
+                'refExamination':
+                    getDoc(['examenes'], ExamenesRecord.fromSnapshot),
+                'refCourse': getDoc(['Courses'], CoursesRecord.fromSnapshot),
+              },
+              builder: (context, params) => ExaminationQuestionsViewMobilWidget(
+                refExamination: params.getParam(
+                  'refExamination',
+                  ParamType.Document,
+                ),
+                refCourse: params.getParam(
+                  'refCourse',
+                  ParamType.Document,
+                ),
+                refUser: params.getParam(
+                  'refUser',
+                  ParamType.DocumentReference,
+                  isList: false,
+                  collectionNamePath: ['users'],
+                ),
+                type: params.getParam(
+                  'type',
+                  ParamType.int,
+                ),
+                isdemo: params.getParam(
+                  'isdemo',
+                  ParamType.bool,
+                ),
+              ),
+            ),
+            FFRoute(
+              name: ExaminationQuestionsFrmRespuestasWidget.routeName,
+              path: ExaminationQuestionsFrmRespuestasWidget.routePath,
+              requireAuth: true,
+              asyncParams: {
+                'refExamination':
+                    getDoc(['examenes'], ExamenesRecord.fromSnapshot),
+                'refCourse': getDoc(['Courses'], CoursesRecord.fromSnapshot),
+              },
+              builder: (context, params) =>
+                  ExaminationQuestionsFrmRespuestasWidget(
+                refExamination: params.getParam(
+                  'refExamination',
+                  ParamType.Document,
+                ),
+                refUser: params.getParam(
+                  'refUser',
+                  ParamType.DocumentReference,
+                  isList: false,
+                  collectionNamePath: ['users'],
+                ),
+                type: params.getParam(
+                  'type',
+                  ParamType.int,
+                ),
+                isdemo: params.getParam(
+                  'isdemo',
+                  ParamType.bool,
+                ),
+                refCourse: params.getParam(
+                  'refCourse',
+                  ParamType.Document,
+                ),
+              ),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

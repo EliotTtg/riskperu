@@ -1,6 +1,38 @@
 {
   "indexes": [
     {
+      "collectionGroup": "ExamGroups",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "is_demo",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid_Course",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "examenes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "uid_Group",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fecha_creacion",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
       "collectionGroup": "Session",
       "queryScope": "COLLECTION",
       "fields": [
@@ -583,24 +615,6 @@
       ]
     },
     {
-      "collectionGroup": "ExamGroups",
-      "queryScope": "COLLECTION",
-      "fields": [
-        {
-          "fieldPath": "uid_Course",
-          "order": "ASCENDING"
-        },
-        {
-          "fieldPath": "is_demo",
-          "order": "ASCENDING"
-        },
-        {
-          "fieldPath": "Created_date",
-          "order": "ASCENDING"
-        }
-      ]
-    },
-    {
       "collectionGroup": "examenes",
       "queryScope": "COLLECTION",
       "fields": [
@@ -641,16 +655,20 @@
       ]
     },
     {
-      "collectionGroup": "examenes",
+      "collectionGroup": "resultados",
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "uid_Group",
+          "fieldPath": "estudiante_ref",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "fecha_creacion",
+          "fieldPath": "examen_ref",
           "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
         }
       ]
     },

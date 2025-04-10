@@ -42,3 +42,12 @@ export '/examination_questions_final/examination_questions_final_widget.dart'
     show ExaminationQuestionsFinalWidget;
 export '/examination_questions_view/examination_questions_view_widget.dart'
     show ExaminationQuestionsViewWidget;
+export '/notes_studients/notes_studients_widget.dart' show NotesStudientsWidget;
+export '/certificates_studients/certificates_studients_widget.dart'
+    show CertificatesStudientsWidget;
+export '/examination_questions_frm_examen/examination_questions_frm_examen_widget.dart'
+    show ExaminationQuestionsFrmExamenWidget;
+export '/examination_questions_view_mobil/examination_questions_view_mobil_widget.dart'
+    show ExaminationQuestionsViewMobilWidget;
+export '/examination_questions_frm_respuestas/examination_questions_frm_respuestas_widget.dart'
+    show ExaminationQuestionsFrmRespuestasWidget;

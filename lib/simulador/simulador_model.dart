@@ -1,8 +1,8 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
+import '/pages/header_mobil/header_mobil_widget.dart';
 import '/index.dart';
 import 'simulador_widget.dart' show SimuladorWidget;
 import 'package:flutter/material.dart';
@@ -25,6 +25,8 @@ class SimuladorModel extends FlutterFlowModel<SimuladorWidget> {
 
   // Model for Header component.
   late HeaderModel headerModel;
+  // Model for HeaderMobil component.
+  late HeaderMobilModel headerMobilModel;
   // State field(s) for cboCategory widget.
   String? cboCategoryValue;
   FormFieldController<String>? cboCategoryValueController;
@@ -33,21 +35,18 @@ class SimuladorModel extends FlutterFlowModel<SimuladorWidget> {
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
   List<CoursesRecord> simpleSearchResults = [];
-  // Model for Footer component.
-  late FooterModel footerModel;
 
   @override
   void initState(BuildContext context) {
     headerModel = createModel(context, () => HeaderModel());
-    footerModel = createModel(context, () => FooterModel());
+    headerMobilModel = createModel(context, () => HeaderMobilModel());
   }
 
   @override
   void dispose() {
     headerModel.dispose();
+    headerMobilModel.dispose();
     textFieldFocusNode?.dispose();
     textController?.dispose();
-
-    footerModel.dispose();
   }
 }
