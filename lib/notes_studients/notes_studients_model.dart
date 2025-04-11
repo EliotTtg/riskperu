@@ -2,7 +2,9 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_data_table.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
+import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
+import '/pages/header_mobil/header_mobil_widget.dart';
 import 'notes_studients_widget.dart' show NotesStudientsWidget;
 import 'package:flutter/material.dart';
 
@@ -25,6 +27,8 @@ class NotesStudientsModel extends FlutterFlowModel<NotesStudientsWidget> {
 
   // Model for Header component.
   late HeaderModel headerModel;
+  // Model for HeaderMobil component.
+  late HeaderMobilModel headerMobilModel;
   // State field(s) for cboExamenes widget.
   String? cboExamenesValue;
   FormFieldController<String>? cboExamenesValueController;
@@ -42,15 +46,21 @@ class NotesStudientsModel extends FlutterFlowModel<NotesStudientsWidget> {
   // State field(s) for PaginatedDataTable widget.
   final paginatedDataTableController =
       FlutterFlowDataTableController<ResultadosRecord>();
+  // Model for Footer component.
+  late FooterModel footerModel;
 
   @override
   void initState(BuildContext context) {
     headerModel = createModel(context, () => HeaderModel());
+    headerMobilModel = createModel(context, () => HeaderMobilModel());
+    footerModel = createModel(context, () => FooterModel());
   }
 
   @override
   void dispose() {
     headerModel.dispose();
+    headerMobilModel.dispose();
     paginatedDataTableController.dispose();
+    footerModel.dispose();
   }
 }

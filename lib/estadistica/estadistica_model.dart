@@ -6,6 +6,7 @@ import '/pages/empty_dashboard/empty_dashboard_widget.dart';
 import '/pages/empty_test/empty_test_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
+import '/pages/header_mobil/header_mobil_widget.dart';
 import '/index.dart';
 import 'estadistica_widget.dart' show EstadisticaWidget;
 import 'package:flutter/material.dart';
@@ -54,6 +55,8 @@ class EstadisticaModel extends FlutterFlowModel<EstadisticaWidget> {
   List<UsersNumberStruct>? dataGeneral;
   // Model for Header component.
   late HeaderModel headerModel;
+  // Model for HeaderMobil component.
+  late HeaderMobilModel headerMobilModel;
   // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
   UsersCoursesRecord? refCourseUser;
   // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
@@ -94,6 +97,7 @@ class EstadisticaModel extends FlutterFlowModel<EstadisticaWidget> {
   @override
   void initState(BuildContext context) {
     headerModel = createModel(context, () => HeaderModel());
+    headerMobilModel = createModel(context, () => HeaderMobilModel());
     emptyCourseModel1 = createModel(context, () => EmptyCourseModel());
     emptyTestModel1 = createModel(context, () => EmptyTestModel());
     emptyActividadesModel1 =
@@ -109,6 +113,7 @@ class EstadisticaModel extends FlutterFlowModel<EstadisticaWidget> {
   @override
   void dispose() {
     headerModel.dispose();
+    headerMobilModel.dispose();
     emptyCourseModel1.dispose();
     emptyTestModel1.dispose();
     emptyActividadesModel1.dispose();

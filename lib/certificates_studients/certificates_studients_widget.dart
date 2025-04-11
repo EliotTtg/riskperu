@@ -7,6 +7,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/certificate_view/certificate_view_widget.dart';
 import '/pages/empty_certificates/empty_certificates_widget.dart';
+import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import 'package:barcode_widget/barcode_widget.dart';
 import 'package:collection/collection.dart';
@@ -1088,6 +1089,15 @@ class _CertificatesStudientsWidgetState
                               ),
                             ),
                           ),
+                          if (responsiveVisibility(
+                            context: context,
+                            phone: false,
+                          ))
+                            wrapWithModel(
+                              model: _model.footerModel,
+                              updateCallback: () => safeSetState(() {}),
+                              child: FooterWidget(),
+                            ),
                         ],
                       ),
                     ),

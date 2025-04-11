@@ -1163,110 +1163,146 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                   (widget.type == 2))
                                                 FFButtonWidget(
                                                   onPressed: () async {
-                                                    final firestoreBatch =
-                                                        FirebaseFirestore
-                                                            .instance
-                                                            .batch();
-                                                    try {
-                                                      context.goNamed(
-                                                        ExaminationQuestionsViewMobilWidget
-                                                            .routeName,
-                                                        queryParameters: {
-                                                          'refExamination':
-                                                              serializeParam(
+                                                    context.goNamed(
+                                                      ExaminationQuestionsViewMobilWidget
+                                                          .routeName,
+                                                      queryParameters: {
+                                                        'refExamination':
+                                                            serializeParam(
+                                                          widget
+                                                              .refExamination,
+                                                          ParamType.Document,
+                                                        ),
+                                                        'refCourse':
+                                                            serializeParam(
+                                                          widget.refCourse,
+                                                          ParamType.Document,
+                                                        ),
+                                                        'refUser':
+                                                            serializeParam(
+                                                          widget.refUser,
+                                                          ParamType
+                                                              .DocumentReference,
+                                                        ),
+                                                        'type': serializeParam(
+                                                          widget.type,
+                                                          ParamType.int,
+                                                        ),
+                                                        'isdemo':
+                                                            serializeParam(
+                                                          widget.isdemo,
+                                                          ParamType.bool,
+                                                        ),
+                                                      }.withoutNulls,
+                                                      extra: <String, dynamic>{
+                                                        'refExamination':
                                                             widget
                                                                 .refExamination,
-                                                            ParamType.Document,
-                                                          ),
-                                                          'refCourse':
-                                                              serializeParam(
+                                                        'refCourse':
                                                             widget.refCourse,
-                                                            ParamType.Document,
-                                                          ),
-                                                          'refUser':
-                                                              serializeParam(
-                                                            widget.refUser,
-                                                            ParamType
-                                                                .DocumentReference,
-                                                          ),
-                                                          'type':
-                                                              serializeParam(
-                                                            widget.type,
-                                                            ParamType.int,
-                                                          ),
-                                                          'isdemo':
-                                                              serializeParam(
-                                                            widget.isdemo,
-                                                            ParamType.bool,
-                                                          ),
-                                                        }.withoutNulls,
-                                                        extra: <String,
-                                                            dynamic>{
-                                                          'refExamination':
-                                                              widget
-                                                                  .refExamination,
-                                                          'refCourse':
-                                                              widget.refCourse,
-                                                          kTransitionInfoKey:
-                                                              TransitionInfo(
-                                                            hasTransition: true,
-                                                            transitionType:
-                                                                PageTransitionType
-                                                                    .fade,
-                                                            duration: Duration(
-                                                                milliseconds:
-                                                                    0),
-                                                          ),
+                                                        kTransitionInfoKey:
+                                                            TransitionInfo(
+                                                          hasTransition: true,
+                                                          transitionType:
+                                                              PageTransitionType
+                                                                  .fade,
+                                                          duration: Duration(
+                                                              milliseconds: 0),
+                                                        ),
+                                                      },
+                                                    );
+
+                                                    await widget
+                                                        .refResult!.reference
+                                                        .update(
+                                                            createResultadosRecordData(
+                                                      estado: false,
+                                                    ));
+
+                                                    var resultadosRecordReference1 =
+                                                        ResultadosRecord
+                                                            .collection
+                                                            .doc();
+                                                    await resultadosRecordReference1
+                                                        .set({
+                                                      ...createResultadosRecordData(
+                                                        estudianteRef:
+                                                            widget.refUser?.id,
+                                                        estado: true,
+                                                        examenRef: widget
+                                                            .refExamination
+                                                            ?.reference
+                                                            .id,
+                                                        type: widget.type,
+                                                      ),
+                                                      ...mapToFirestore(
+                                                        {
+                                                          'created_date': FieldValue
+                                                              .serverTimestamp(),
                                                         },
-                                                      );
+                                                      ),
+                                                    });
+                                                    _model.refResult =
+                                                        ResultadosRecord
+                                                            .getDocumentFromData({
+                                                      ...createResultadosRecordData(
+                                                        estudianteRef:
+                                                            widget.refUser?.id,
+                                                        estado: true,
+                                                        examenRef: widget
+                                                            .refExamination
+                                                            ?.reference
+                                                            .id,
+                                                        type: widget.type,
+                                                      ),
+                                                      ...mapToFirestore(
+                                                        {
+                                                          'created_date':
+                                                              DateTime.now(),
+                                                        },
+                                                      ),
+                                                    }, resultadosRecordReference1);
 
-                                                      firestoreBatch.update(
-                                                          widget.refResult!
-                                                              .reference,
-                                                          createResultadosRecordData(
-                                                            estado: false,
-                                                          ));
-
-                                                      var resultadosRecordReference1 =
-                                                          ResultadosRecord
+                                                    await _model
+                                                        .refResult!.reference
+                                                        .update(
+                                                            createResultadosRecordData(
+                                                      uid: _model.refResult
+                                                          ?.reference.id,
+                                                    ));
+                                                    if (widget.type == 2) {
+                                                      var registerSimulatorRecordReference =
+                                                          RegisterSimulatorRecord
                                                               .collection
                                                               .doc();
-                                                      firestoreBatch.set(
-                                                          resultadosRecordReference1,
-                                                          {
-                                                            ...createResultadosRecordData(
-                                                              estudianteRef:
-                                                                  widget
-                                                                      .refUser
-                                                                      ?.id,
-                                                              estado: true,
-                                                              examenRef: widget
-                                                                  .refExamination
-                                                                  ?.reference
-                                                                  .id,
-                                                              type:
-                                                                  widget.type,
-                                                            ),
-                                                            ...mapToFirestore(
-                                                              {
-                                                                'created_date':
-                                                                    FieldValue
-                                                                        .serverTimestamp(),
-                                                              },
-                                                            ),
-                                                          });
-                                                      _model.refResult =
-                                                          ResultadosRecord
-                                                              .getDocumentFromData({
-                                                        ...createResultadosRecordData(
-                                                          estudianteRef: widget
+                                                      await registerSimulatorRecordReference
+                                                          .set({
+                                                        ...createRegisterSimulatorRecordData(
+                                                          uidUser: widget
                                                               .refUser?.id,
-                                                          estado: true,
-                                                          examenRef: widget
-                                                              .refExamination
+                                                          uidCourse: widget
+                                                              .refCourse
                                                               ?.reference
                                                               .id,
-                                                          type: widget.type,
+                                                        ),
+                                                        ...mapToFirestore(
+                                                          {
+                                                            'created_date':
+                                                                FieldValue
+                                                                    .serverTimestamp(),
+                                                          },
+                                                        ),
+                                                      });
+                                                      _model.refRegister =
+                                                          RegisterSimulatorRecord
+                                                              .getDocumentFromData({
+                                                        ...createRegisterSimulatorRecordData(
+                                                          uidUser: widget
+                                                              .refUser?.id,
+                                                          uidCourse: widget
+                                                              .refCourse
+                                                              ?.reference
+                                                              .id,
                                                         ),
                                                         ...mapToFirestore(
                                                           {
@@ -1274,86 +1310,26 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                 DateTime.now(),
                                                           },
                                                         ),
-                                                      }, resultadosRecordReference1);
+                                                      }, registerSimulatorRecordReference);
 
-                                                      firestoreBatch.update(
-                                                          _model.refResult!
-                                                              .reference,
-                                                          createResultadosRecordData(
-                                                            uid: _model
-                                                                .refResult
-                                                                ?.reference
-                                                                .id,
-                                                          ));
-                                                      if (widget.type == 2) {
-                                                        var registerSimulatorRecordReference =
-                                                            RegisterSimulatorRecord
-                                                                .collection
-                                                                .doc();
-                                                        firestoreBatch.set(
-                                                            registerSimulatorRecordReference,
-                                                            {
-                                                              ...createRegisterSimulatorRecordData(
-                                                                uidUser: widget
-                                                                    .refUser
-                                                                    ?.id,
-                                                                uidCourse: widget
-                                                                    .refCourse
-                                                                    ?.reference
-                                                                    .id,
-                                                              ),
-                                                              ...mapToFirestore(
-                                                                {
-                                                                  'created_date':
-                                                                      FieldValue
-                                                                          .serverTimestamp(),
-                                                                },
-                                                              ),
-                                                            });
-                                                        _model.refRegister =
-                                                            RegisterSimulatorRecord
-                                                                .getDocumentFromData({
-                                                          ...createRegisterSimulatorRecordData(
-                                                            uidUser: widget
-                                                                .refUser?.id,
-                                                            uidCourse: widget
-                                                                .refCourse
-                                                                ?.reference
-                                                                .id,
-                                                          ),
-                                                          ...mapToFirestore(
-                                                            {
-                                                              'created_date':
-                                                                  DateTime
-                                                                      .now(),
-                                                            },
-                                                          ),
-                                                        }, registerSimulatorRecordReference);
-
-                                                        firestoreBatch.update(
-                                                            _model.refRegister!
-                                                                .reference,
-                                                            createRegisterSimulatorRecordData(
-                                                              uid: _model
-                                                                  .refRegister
-                                                                  ?.reference
-                                                                  .id,
-                                                            ));
-                                                      }
-                                                      _model.referenciaResultado =
-                                                          await ResultadosRecord
-                                                              .getDocumentOnce(
-                                                                  _model
-                                                                      .refResult!
-                                                                      .reference);
-                                                      await Future.delayed(
-                                                          const Duration(
-                                                              milliseconds:
-                                                                  1000));
-                                                    } finally {
-                                                      await firestoreBatch
-                                                          .commit();
+                                                      await _model.refRegister!
+                                                          .reference
+                                                          .update(
+                                                              createRegisterSimulatorRecordData(
+                                                        uid: _model.refRegister
+                                                            ?.reference.id,
+                                                      ));
                                                     }
+                                                    _model.referenciaResultado =
+                                                        await ResultadosRecord
+                                                            .getDocumentOnce(
+                                                                _model
+                                                                    .refResult!
+                                                                    .reference);
+                                                    await Future.delayed(
+                                                        const Duration(
+                                                            milliseconds:
+                                                                1000));
 
                                                     safeSetState(() {});
                                                   },

@@ -1,7 +1,6 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_data_table.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
 import 'certificates_widget.dart' show CertificatesWidget;
@@ -38,14 +37,11 @@ class CertificatesModel extends FlutterFlowModel<CertificatesWidget> {
   CoursesRecord? refCourse;
   // Stores action output result for [Firestore Query - Query a collection] action in IconButton widget.
   UsersRecord? refUser;
-  // Model for Footer component.
-  late FooterModel footerModel;
 
   @override
   void initState(BuildContext context) {
     headerModel = createModel(context, () => HeaderModel());
     navbarModel = createModel(context, () => NavbarModel());
-    footerModel = createModel(context, () => FooterModel());
   }
 
   @override
@@ -56,6 +52,5 @@ class CertificatesModel extends FlutterFlowModel<CertificatesWidget> {
     textController?.dispose();
 
     paginatedDataTableController.dispose();
-    footerModel.dispose();
   }
 }

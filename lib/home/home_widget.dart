@@ -10,6 +10,7 @@ import '/pages/course_calification/course_calification_widget.dart';
 import '/pages/empty_course/empty_course_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
+import '/pages/header_mobil/header_mobil_widget.dart';
 import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:collection/collection.dart';
@@ -70,12 +71,32 @@ class _HomeWidgetState extends State<HomeWidget> {
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  wrapWithModel(
-                    model: _model.headerModel,
-                    updateCallback: () => safeSetState(() {}),
-                    child: HeaderWidget(
-                      state: 1,
-                    ),
+                  Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      if (responsiveVisibility(
+                        context: context,
+                        phone: false,
+                      ))
+                        wrapWithModel(
+                          model: _model.headerModel,
+                          updateCallback: () => safeSetState(() {}),
+                          child: HeaderWidget(
+                            state: 1,
+                          ),
+                        ),
+                      if (responsiveVisibility(
+                        context: context,
+                        tablet: false,
+                        tabletLandscape: false,
+                        desktop: false,
+                      ))
+                        wrapWithModel(
+                          model: _model.headerMobilModel,
+                          updateCallback: () => safeSetState(() {}),
+                          child: HeaderMobilWidget(),
+                        ),
+                    ],
                   ),
                   Flexible(
                     child: Column(

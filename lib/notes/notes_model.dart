@@ -2,7 +2,6 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_data_table.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
 import 'notes_widget.dart' show NotesWidget;
@@ -46,14 +45,11 @@ class NotesModel extends FlutterFlowModel<NotesWidget> {
   // State field(s) for PaginatedDataTable widget.
   final paginatedDataTableController =
       FlutterFlowDataTableController<ResultadosRecord>();
-  // Model for Footer component.
-  late FooterModel footerModel;
 
   @override
   void initState(BuildContext context) {
     headerModel = createModel(context, () => HeaderModel());
     navbarModel = createModel(context, () => NavbarModel());
-    footerModel = createModel(context, () => FooterModel());
   }
 
   @override
@@ -61,6 +57,5 @@ class NotesModel extends FlutterFlowModel<NotesWidget> {
     headerModel.dispose();
     navbarModel.dispose();
     paginatedDataTableController.dispose();
-    footerModel.dispose();
   }
 }
