@@ -252,6 +252,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                               CrossAxisAlignment.start,
                                           children: [
                                             Flexible(
+                                              flex: 3,
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -4769,78 +4770,81 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                     SizedBox(height: 20.0)),
                                               ),
                                             ),
-                                            StreamBuilder<List<SessionRecord>>(
-                                              stream: querySessionRecord(
-                                                queryBuilder: (sessionRecord) =>
-                                                    sessionRecord
-                                                        .where(
-                                                          'uid_Course',
-                                                          isEqualTo: widget
-                                                              .refCourses
-                                                              ?.reference
-                                                              .id,
-                                                        )
-                                                        .orderBy(
-                                                            'Created_Date'),
-                                              ),
-                                              builder: (context, snapshot) {
-                                                // Customize what your widget looks like when it's loading.
-                                                if (!snapshot.hasData) {
-                                                  return Center(
-                                                    child: SizedBox(
-                                                      width: 14.0,
-                                                      height: 14.0,
-                                                      child:
-                                                          CircularProgressIndicator(
-                                                        valueColor:
-                                                            AlwaysStoppedAnimation<
-                                                                Color>(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                        ),
-                                                      ),
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              phone: false,
+                                            ))
+                                              Flexible(
+                                                flex: 1,
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          20.0, 0.0, 0.0, 0.0),
+                                                  child: StreamBuilder<
+                                                      List<SessionRecord>>(
+                                                    stream: querySessionRecord(
+                                                      queryBuilder:
+                                                          (sessionRecord) =>
+                                                              sessionRecord
+                                                                  .where(
+                                                                    'uid_Course',
+                                                                    isEqualTo: widget
+                                                                        .refCourses
+                                                                        ?.reference
+                                                                        .id,
+                                                                  )
+                                                                  .orderBy(
+                                                                      'Created_Date'),
                                                     ),
-                                                  );
-                                                }
-                                                List<SessionRecord>
-                                                    containerSessionRecordList =
-                                                    snapshot.data!;
+                                                    builder:
+                                                        (context, snapshot) {
+                                                      // Customize what your widget looks like when it's loading.
+                                                      if (!snapshot.hasData) {
+                                                        return Center(
+                                                          child: SizedBox(
+                                                            width: 14.0,
+                                                            height: 14.0,
+                                                            child:
+                                                                CircularProgressIndicator(
+                                                              valueColor:
+                                                                  AlwaysStoppedAnimation<
+                                                                      Color>(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        );
+                                                      }
+                                                      List<SessionRecord>
+                                                          containerSessionRecordList =
+                                                          snapshot.data!;
 
-                                                return Container(
-                                                  width:
-                                                      MediaQuery.sizeOf(context)
-                                                              .width *
-                                                          0.25,
-                                                  decoration: BoxDecoration(),
-                                                  child: Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    children: [
-                                                      Container(
-                                                        width: 424.0,
+                                                      return Container(
+                                                        width:
+                                                            MediaQuery.sizeOf(
+                                                                        context)
+                                                                    .width *
+                                                                0.25,
                                                         decoration:
-                                                            BoxDecoration(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryBackground,
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      10.0),
-                                                        ),
+                                                            BoxDecoration(),
                                                         child: Column(
                                                           mainAxisSize:
                                                               MainAxisSize.max,
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
                                                           children: [
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsets
-                                                                      .all(
-                                                                          20.0),
+                                                            Container(
+                                                              width: 424.0,
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryBackground,
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            10.0),
+                                                              ),
                                                               child: Column(
                                                                 mainAxisSize:
                                                                     MainAxisSize
@@ -4849,1052 +4853,1011 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                     CrossAxisAlignment
                                                                         .start,
                                                                 children: [
-                                                                  Text(
-                                                                    'Contenido del curso',
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Poppins',
-                                                                          color:
-                                                                              Color(0xFF094B90),
-                                                                          fontSize:
-                                                                              16.0,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight:
-                                                                              FontWeight.bold,
+                                                                  Padding(
+                                                                    padding:
+                                                                        EdgeInsets.all(
+                                                                            20.0),
+                                                                    child:
+                                                                        Column(
+                                                                      mainAxisSize:
+                                                                          MainAxisSize
+                                                                              .max,
+                                                                      crossAxisAlignment:
+                                                                          CrossAxisAlignment
+                                                                              .start,
+                                                                      children: [
+                                                                        Text(
+                                                                          'Contenido del curso',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Poppins',
+                                                                                color: Color(0xFF094B90),
+                                                                                fontSize: 16.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.bold,
+                                                                              ),
                                                                         ),
-                                                                  ),
-                                                                  Container(
-                                                                    width:
-                                                                        230.0,
-                                                                    height: 3.0,
-                                                                    decoration:
-                                                                        BoxDecoration(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primary,
-                                                                      borderRadius:
-                                                                          BorderRadius.circular(
-                                                                              10.0),
+                                                                        Container(
+                                                                          width:
+                                                                              230.0,
+                                                                          height:
+                                                                              3.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(10.0),
+                                                                          ),
+                                                                        ),
+                                                                      ],
                                                                     ),
                                                                   ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                            Builder(
-                                                              builder:
-                                                                  (context) {
-                                                                final listSession =
-                                                                    containerSessionRecordList
-                                                                        .toList();
+                                                                  Builder(
+                                                                    builder:
+                                                                        (context) {
+                                                                      final listSession =
+                                                                          containerSessionRecordList
+                                                                              .toList();
 
-                                                                return ListView
-                                                                    .builder(
-                                                                  padding:
-                                                                      EdgeInsets
-                                                                          .zero,
-                                                                  primary:
-                                                                      false,
-                                                                  shrinkWrap:
-                                                                      true,
-                                                                  scrollDirection:
-                                                                      Axis.vertical,
-                                                                  itemCount:
-                                                                      listSession
-                                                                          .length,
-                                                                  itemBuilder:
-                                                                      (context,
-                                                                          listSessionIndex) {
-                                                                    final listSessionItem =
-                                                                        listSession[
-                                                                            listSessionIndex];
-                                                                    return StreamBuilder<
-                                                                        List<
-                                                                            ModuleRecord>>(
-                                                                      stream:
-                                                                          queryModuleRecord(
-                                                                        queryBuilder: (moduleRecord) => moduleRecord
-                                                                            .where(
-                                                                              'uid_Session',
-                                                                              isEqualTo: listSessionItem.reference.id,
-                                                                            )
-                                                                            .orderBy('Created_date'),
-                                                                      ),
-                                                                      builder:
-                                                                          (context,
-                                                                              snapshot) {
-                                                                        // Customize what your widget looks like when it's loading.
-                                                                        if (!snapshot
-                                                                            .hasData) {
-                                                                          return Center(
-                                                                            child:
-                                                                                SizedBox(
-                                                                              width: 14.0,
-                                                                              height: 14.0,
-                                                                              child: CircularProgressIndicator(
-                                                                                valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                  FlutterFlowTheme.of(context).primary,
-                                                                                ),
-                                                                              ),
+                                                                      return ListView
+                                                                          .builder(
+                                                                        padding:
+                                                                            EdgeInsets.zero,
+                                                                        primary:
+                                                                            false,
+                                                                        shrinkWrap:
+                                                                            true,
+                                                                        scrollDirection:
+                                                                            Axis.vertical,
+                                                                        itemCount:
+                                                                            listSession.length,
+                                                                        itemBuilder:
+                                                                            (context,
+                                                                                listSessionIndex) {
+                                                                          final listSessionItem =
+                                                                              listSession[listSessionIndex];
+                                                                          return StreamBuilder<
+                                                                              List<ModuleRecord>>(
+                                                                            stream:
+                                                                                queryModuleRecord(
+                                                                              queryBuilder: (moduleRecord) => moduleRecord
+                                                                                  .where(
+                                                                                    'uid_Session',
+                                                                                    isEqualTo: listSessionItem.reference.id,
+                                                                                  )
+                                                                                  .orderBy('Created_date'),
                                                                             ),
-                                                                          );
-                                                                        }
-                                                                        List<ModuleRecord>
-                                                                            containerModuleRecordList =
-                                                                            snapshot.data!;
-
-                                                                        return Container(
-                                                                          decoration:
-                                                                              BoxDecoration(),
-                                                                          child:
-                                                                              Column(
-                                                                            mainAxisSize:
-                                                                                MainAxisSize.max,
-                                                                            children: [
-                                                                              InkWell(
-                                                                                splashColor: Colors.transparent,
-                                                                                focusColor: Colors.transparent,
-                                                                                hoverColor: Colors.transparent,
-                                                                                highlightColor: Colors.transparent,
-                                                                                onTap: () async {
-                                                                                  if (_model.listViewSession.contains(listSessionItem.reference.id)) {
-                                                                                    _model.removeFromListViewSession(listSessionItem.reference.id);
-                                                                                    safeSetState(() {});
-                                                                                  } else {
-                                                                                    _model.addToListViewSession(listSessionItem.reference.id);
-                                                                                    safeSetState(() {});
-                                                                                  }
-
-                                                                                  await Future.delayed(const Duration(milliseconds: 1000));
-                                                                                },
-                                                                                child: Container(
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: Color(0xFFF1F1F1),
-                                                                                  ),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
-                                                                                    child: Column(
-                                                                                      mainAxisSize: MainAxisSize.max,
-                                                                                      children: [
-                                                                                        Row(
-                                                                                          mainAxisSize: MainAxisSize.max,
-                                                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                          children: [
-                                                                                            Flexible(
-                                                                                              child: RichText(
-                                                                                                textScaler: MediaQuery.of(context).textScaler,
-                                                                                                text: TextSpan(
-                                                                                                  children: [
-                                                                                                    TextSpan(
-                                                                                                      text: 'Sesión ',
-                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Poppins',
-                                                                                                            fontSize: 16.0,
-                                                                                                            letterSpacing: 0.0,
-                                                                                                            fontWeight: FontWeight.bold,
-                                                                                                          ),
-                                                                                                    ),
-                                                                                                    TextSpan(
-                                                                                                      text: (listSessionIndex + 1).toString(),
-                                                                                                      style: TextStyle(
-                                                                                                        fontWeight: FontWeight.bold,
-                                                                                                        fontSize: 16.0,
-                                                                                                      ),
-                                                                                                    ),
-                                                                                                    TextSpan(
-                                                                                                      text: ':  ',
-                                                                                                      style: TextStyle(
-                                                                                                        fontWeight: FontWeight.bold,
-                                                                                                        fontSize: 16.0,
-                                                                                                      ),
-                                                                                                    ),
-                                                                                                    TextSpan(
-                                                                                                      text: valueOrDefault<String>(
-                                                                                                        listSessionItem.name,
-                                                                                                        '--',
-                                                                                                      ),
-                                                                                                      style: TextStyle(
-                                                                                                        color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                        fontWeight: FontWeight.w300,
-                                                                                                        fontSize: 16.0,
-                                                                                                      ),
-                                                                                                    )
-                                                                                                  ],
-                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
-                                                                                                        fontSize: 16.0,
-                                                                                                        letterSpacing: 0.0,
-                                                                                                        fontWeight: FontWeight.normal,
-                                                                                                      ),
-                                                                                                ),
-                                                                                              ),
-                                                                                            ),
-                                                                                            Container(
-                                                                                              decoration: BoxDecoration(),
-                                                                                              child: FaIcon(
-                                                                                                FontAwesomeIcons.caretDown,
-                                                                                                color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                size: 19.0,
-                                                                                              ),
-                                                                                            ),
-                                                                                          ].divide(SizedBox(width: 20.0)),
-                                                                                        ),
-                                                                                      ],
+                                                                            builder:
+                                                                                (context, snapshot) {
+                                                                              // Customize what your widget looks like when it's loading.
+                                                                              if (!snapshot.hasData) {
+                                                                                return Center(
+                                                                                  child: SizedBox(
+                                                                                    width: 14.0,
+                                                                                    height: 14.0,
+                                                                                    child: CircularProgressIndicator(
+                                                                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                        FlutterFlowTheme.of(context).primary,
+                                                                                      ),
                                                                                     ),
                                                                                   ),
-                                                                                ),
-                                                                              ),
-                                                                              if (_model.listViewSession.contains(listSessionItem.reference.id))
-                                                                                Builder(
-                                                                                  builder: (context) {
-                                                                                    final listModulo = containerModuleRecordList.toList();
+                                                                                );
+                                                                              }
+                                                                              List<ModuleRecord> containerModuleRecordList = snapshot.data!;
 
-                                                                                    return ListView.builder(
-                                                                                      padding: EdgeInsets.zero,
-                                                                                      primary: false,
-                                                                                      shrinkWrap: true,
-                                                                                      scrollDirection: Axis.vertical,
-                                                                                      itemCount: listModulo.length,
-                                                                                      itemBuilder: (context, listModuloIndex) {
-                                                                                        final listModuloItem = listModulo[listModuloIndex];
-                                                                                        return StreamBuilder<List<ModuleClassRecord>>(
-                                                                                          stream: queryModuleClassRecord(
-                                                                                            queryBuilder: (moduleClassRecord) => moduleClassRecord
-                                                                                                .where(
-                                                                                                  'uid_Module',
-                                                                                                  isEqualTo: listModuloItem.reference.id != '' ? listModuloItem.reference.id : null,
-                                                                                                )
-                                                                                                .orderBy('Created_date'),
-                                                                                          ),
-                                                                                          builder: (context, snapshot) {
-                                                                                            // Customize what your widget looks like when it's loading.
-                                                                                            if (!snapshot.hasData) {
-                                                                                              return Center(
-                                                                                                child: SizedBox(
-                                                                                                  width: 14.0,
-                                                                                                  height: 14.0,
-                                                                                                  child: CircularProgressIndicator(
-                                                                                                    valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                      FlutterFlowTheme.of(context).primary,
+                                                                              return Container(
+                                                                                decoration: BoxDecoration(),
+                                                                                child: Column(
+                                                                                  mainAxisSize: MainAxisSize.max,
+                                                                                  children: [
+                                                                                    InkWell(
+                                                                                      splashColor: Colors.transparent,
+                                                                                      focusColor: Colors.transparent,
+                                                                                      hoverColor: Colors.transparent,
+                                                                                      highlightColor: Colors.transparent,
+                                                                                      onTap: () async {
+                                                                                        if (_model.listViewSession.contains(listSessionItem.reference.id)) {
+                                                                                          _model.removeFromListViewSession(listSessionItem.reference.id);
+                                                                                          safeSetState(() {});
+                                                                                        } else {
+                                                                                          _model.addToListViewSession(listSessionItem.reference.id);
+                                                                                          safeSetState(() {});
+                                                                                        }
+
+                                                                                        await Future.delayed(const Duration(milliseconds: 1000));
+                                                                                      },
+                                                                                      child: Container(
+                                                                                        decoration: BoxDecoration(
+                                                                                          color: Color(0xFFF1F1F1),
+                                                                                        ),
+                                                                                        child: Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
+                                                                                          child: Column(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Row(
+                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                children: [
+                                                                                                  Flexible(
+                                                                                                    child: RichText(
+                                                                                                      textScaler: MediaQuery.of(context).textScaler,
+                                                                                                      text: TextSpan(
+                                                                                                        children: [
+                                                                                                          TextSpan(
+                                                                                                            text: 'Sesión ',
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontSize: 16.0,
+                                                                                                                  letterSpacing: 0.0,
+                                                                                                                  fontWeight: FontWeight.bold,
+                                                                                                                ),
+                                                                                                          ),
+                                                                                                          TextSpan(
+                                                                                                            text: (listSessionIndex + 1).toString(),
+                                                                                                            style: TextStyle(
+                                                                                                              fontWeight: FontWeight.bold,
+                                                                                                              fontSize: 16.0,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                          TextSpan(
+                                                                                                            text: ':  ',
+                                                                                                            style: TextStyle(
+                                                                                                              fontWeight: FontWeight.bold,
+                                                                                                              fontSize: 16.0,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                          TextSpan(
+                                                                                                            text: valueOrDefault<String>(
+                                                                                                              listSessionItem.name,
+                                                                                                              '--',
+                                                                                                            ),
+                                                                                                            style: TextStyle(
+                                                                                                              color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                              fontWeight: FontWeight.w300,
+                                                                                                              fontSize: 16.0,
+                                                                                                            ),
+                                                                                                          )
+                                                                                                        ],
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                              fontFamily: 'Poppins',
+                                                                                                              fontSize: 16.0,
+                                                                                                              letterSpacing: 0.0,
+                                                                                                              fontWeight: FontWeight.normal,
+                                                                                                            ),
+                                                                                                      ),
                                                                                                     ),
                                                                                                   ),
+                                                                                                  Container(
+                                                                                                    decoration: BoxDecoration(),
+                                                                                                    child: FaIcon(
+                                                                                                      FontAwesomeIcons.caretDown,
+                                                                                                      color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                      size: 19.0,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ].divide(SizedBox(width: 20.0)),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ),
+                                                                                    if (_model.listViewSession.contains(listSessionItem.reference.id))
+                                                                                      Builder(
+                                                                                        builder: (context) {
+                                                                                          final listModulo = containerModuleRecordList.toList();
+
+                                                                                          return ListView.builder(
+                                                                                            padding: EdgeInsets.zero,
+                                                                                            primary: false,
+                                                                                            shrinkWrap: true,
+                                                                                            scrollDirection: Axis.vertical,
+                                                                                            itemCount: listModulo.length,
+                                                                                            itemBuilder: (context, listModuloIndex) {
+                                                                                              final listModuloItem = listModulo[listModuloIndex];
+                                                                                              return StreamBuilder<List<ModuleClassRecord>>(
+                                                                                                stream: queryModuleClassRecord(
+                                                                                                  queryBuilder: (moduleClassRecord) => moduleClassRecord
+                                                                                                      .where(
+                                                                                                        'uid_Module',
+                                                                                                        isEqualTo: listModuloItem.reference.id != '' ? listModuloItem.reference.id : null,
+                                                                                                      )
+                                                                                                      .orderBy('Created_date'),
                                                                                                 ),
-                                                                                              );
-                                                                                            }
-                                                                                            List<ModuleClassRecord> containerModuleClassRecordList = snapshot.data!;
-
-                                                                                            return Container(
-                                                                                              decoration: BoxDecoration(),
-                                                                                              child: Column(
-                                                                                                mainAxisSize: MainAxisSize.max,
-                                                                                                children: [
-                                                                                                  InkWell(
-                                                                                                    splashColor: Colors.transparent,
-                                                                                                    focusColor: Colors.transparent,
-                                                                                                    hoverColor: Colors.transparent,
-                                                                                                    highlightColor: Colors.transparent,
-                                                                                                    onTap: () async {
-                                                                                                      if (_model.listViewModule.contains(listModuloItem.reference.id)) {
-                                                                                                        _model.removeFromListViewModule(listModuloItem.reference.id);
-                                                                                                        safeSetState(() {});
-                                                                                                      } else {
-                                                                                                        _model.addToListViewModule(listModuloItem.reference.id);
-                                                                                                        safeSetState(() {});
-                                                                                                      }
-
-                                                                                                      await Future.delayed(const Duration(milliseconds: 1000));
-                                                                                                    },
-                                                                                                    child: Container(
-                                                                                                      decoration: BoxDecoration(
-                                                                                                        color: Color(0x82F1F1F1),
+                                                                                                builder: (context, snapshot) {
+                                                                                                  // Customize what your widget looks like when it's loading.
+                                                                                                  if (!snapshot.hasData) {
+                                                                                                    return Center(
+                                                                                                      child: SizedBox(
+                                                                                                        width: 14.0,
+                                                                                                        height: 14.0,
+                                                                                                        child: CircularProgressIndicator(
+                                                                                                          valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                            FlutterFlowTheme.of(context).primary,
+                                                                                                          ),
+                                                                                                        ),
                                                                                                       ),
-                                                                                                      child: Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
-                                                                                                        child: Column(
-                                                                                                          mainAxisSize: MainAxisSize.max,
-                                                                                                          children: [
-                                                                                                            Row(
-                                                                                                              mainAxisSize: MainAxisSize.max,
-                                                                                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                                              children: [
-                                                                                                                Flexible(
-                                                                                                                  child: RichText(
-                                                                                                                    textScaler: MediaQuery.of(context).textScaler,
-                                                                                                                    text: TextSpan(
-                                                                                                                      children: [
-                                                                                                                        TextSpan(
-                                                                                                                          text: 'Módulo ',
-                                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Poppins',
-                                                                                                                                fontSize: 16.0,
-                                                                                                                                letterSpacing: 0.0,
-                                                                                                                                fontWeight: FontWeight.bold,
-                                                                                                                              ),
-                                                                                                                        ),
-                                                                                                                        TextSpan(
-                                                                                                                          text: (listModuloIndex + 1).toString(),
-                                                                                                                          style: TextStyle(
-                                                                                                                            fontWeight: FontWeight.bold,
-                                                                                                                            fontSize: 16.0,
-                                                                                                                          ),
-                                                                                                                        ),
-                                                                                                                        TextSpan(
-                                                                                                                          text: ':  ',
-                                                                                                                          style: TextStyle(
-                                                                                                                            fontWeight: FontWeight.bold,
-                                                                                                                            fontSize: 16.0,
-                                                                                                                          ),
-                                                                                                                        ),
-                                                                                                                        TextSpan(
-                                                                                                                          text: listModuloItem.name,
-                                                                                                                          style: TextStyle(
-                                                                                                                            color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                                            fontWeight: FontWeight.w300,
-                                                                                                                            fontSize: 16.0,
-                                                                                                                          ),
-                                                                                                                        )
-                                                                                                                      ],
-                                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                            fontFamily: 'Poppins',
-                                                                                                                            fontSize: 16.0,
-                                                                                                                            letterSpacing: 0.0,
-                                                                                                                            fontWeight: FontWeight.normal,
-                                                                                                                          ),
-                                                                                                                    ),
-                                                                                                                  ),
-                                                                                                                ),
-                                                                                                                Container(
-                                                                                                                  decoration: BoxDecoration(),
-                                                                                                                  child: FaIcon(
-                                                                                                                    FontAwesomeIcons.caretDown,
-                                                                                                                    color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                                    size: 19.0,
-                                                                                                                  ),
-                                                                                                                ),
-                                                                                                              ].divide(SizedBox(width: 20.0)),
-                                                                                                            ),
-                                                                                                            Row(
-                                                                                                              mainAxisSize: MainAxisSize.max,
-                                                                                                              children: [
-                                                                                                                StreamBuilder<List<UsersModuleclassRecord>>(
-                                                                                                                  stream: queryUsersModuleclassRecord(
-                                                                                                                    queryBuilder: (usersModuleclassRecord) => usersModuleclassRecord
-                                                                                                                        .where(
-                                                                                                                          'uid_user',
-                                                                                                                          isEqualTo: widget.refUser?.reference.id,
-                                                                                                                        )
-                                                                                                                        .where(
-                                                                                                                          'uid_module',
-                                                                                                                          isEqualTo: listModuloItem.reference.id,
-                                                                                                                        )
-                                                                                                                        .where(
-                                                                                                                          'stateView',
-                                                                                                                          isEqualTo: true,
-                                                                                                                        )
-                                                                                                                        .where(
-                                                                                                                          'uid_curse',
-                                                                                                                          isEqualTo: widget.refCourses?.reference.id,
-                                                                                                                        ),
-                                                                                                                  ),
-                                                                                                                  builder: (context, snapshot) {
-                                                                                                                    // Customize what your widget looks like when it's loading.
-                                                                                                                    if (!snapshot.hasData) {
-                                                                                                                      return Center(
-                                                                                                                        child: SizedBox(
-                                                                                                                          width: 14.0,
-                                                                                                                          height: 14.0,
-                                                                                                                          child: CircularProgressIndicator(
-                                                                                                                            valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                              FlutterFlowTheme.of(context).primary,
-                                                                                                                            ),
-                                                                                                                          ),
-                                                                                                                        ),
-                                                                                                                      );
-                                                                                                                    }
-                                                                                                                    List<UsersModuleclassRecord> richTextUsersModuleclassRecordList = snapshot.data!;
+                                                                                                    );
+                                                                                                  }
+                                                                                                  List<ModuleClassRecord> containerModuleClassRecordList = snapshot.data!;
 
-                                                                                                                    return RichText(
-                                                                                                                      textScaler: MediaQuery.of(context).textScaler,
-                                                                                                                      text: TextSpan(
-                                                                                                                        children: [
-                                                                                                                          TextSpan(
-                                                                                                                            text: valueOrDefault<String>(
-                                                                                                                              formatNumber(
-                                                                                                                                richTextUsersModuleclassRecordList.length,
-                                                                                                                                formatType: FormatType.compact,
+                                                                                                  return Container(
+                                                                                                    decoration: BoxDecoration(),
+                                                                                                    child: Column(
+                                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                                      children: [
+                                                                                                        InkWell(
+                                                                                                          splashColor: Colors.transparent,
+                                                                                                          focusColor: Colors.transparent,
+                                                                                                          hoverColor: Colors.transparent,
+                                                                                                          highlightColor: Colors.transparent,
+                                                                                                          onTap: () async {
+                                                                                                            if (_model.listViewModule.contains(listModuloItem.reference.id)) {
+                                                                                                              _model.removeFromListViewModule(listModuloItem.reference.id);
+                                                                                                              safeSetState(() {});
+                                                                                                            } else {
+                                                                                                              _model.addToListViewModule(listModuloItem.reference.id);
+                                                                                                              safeSetState(() {});
+                                                                                                            }
+
+                                                                                                            await Future.delayed(const Duration(milliseconds: 1000));
+                                                                                                          },
+                                                                                                          child: Container(
+                                                                                                            decoration: BoxDecoration(
+                                                                                                              color: Color(0x82F1F1F1),
+                                                                                                            ),
+                                                                                                            child: Padding(
+                                                                                                              padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
+                                                                                                              child: Column(
+                                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                                children: [
+                                                                                                                  Row(
+                                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                                    children: [
+                                                                                                                      Flexible(
+                                                                                                                        child: RichText(
+                                                                                                                          textScaler: MediaQuery.of(context).textScaler,
+                                                                                                                          text: TextSpan(
+                                                                                                                            children: [
+                                                                                                                              TextSpan(
+                                                                                                                                text: 'Módulo ',
+                                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                      fontSize: 16.0,
+                                                                                                                                      letterSpacing: 0.0,
+                                                                                                                                      fontWeight: FontWeight.bold,
+                                                                                                                                    ),
                                                                                                                               ),
-                                                                                                                              '0',
-                                                                                                                            ),
+                                                                                                                              TextSpan(
+                                                                                                                                text: (listModuloIndex + 1).toString(),
+                                                                                                                                style: TextStyle(
+                                                                                                                                  fontWeight: FontWeight.bold,
+                                                                                                                                  fontSize: 16.0,
+                                                                                                                                ),
+                                                                                                                              ),
+                                                                                                                              TextSpan(
+                                                                                                                                text: ':  ',
+                                                                                                                                style: TextStyle(
+                                                                                                                                  fontWeight: FontWeight.bold,
+                                                                                                                                  fontSize: 16.0,
+                                                                                                                                ),
+                                                                                                                              ),
+                                                                                                                              TextSpan(
+                                                                                                                                text: listModuloItem.name,
+                                                                                                                                style: TextStyle(
+                                                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                                  fontWeight: FontWeight.w300,
+                                                                                                                                  fontSize: 16.0,
+                                                                                                                                ),
+                                                                                                                              )
+                                                                                                                            ],
                                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                                   fontFamily: 'Poppins',
                                                                                                                                   fontSize: 16.0,
                                                                                                                                   letterSpacing: 0.0,
+                                                                                                                                  fontWeight: FontWeight.normal,
                                                                                                                                 ),
                                                                                                                           ),
-                                                                                                                          TextSpan(
-                                                                                                                            text: '/',
-                                                                                                                            style: TextStyle(
-                                                                                                                              fontSize: 16.0,
-                                                                                                                            ),
-                                                                                                                          ),
-                                                                                                                          TextSpan(
-                                                                                                                            text: valueOrDefault<String>(
-                                                                                                                              formatNumber(
-                                                                                                                                containerModuleClassRecordList.length,
-                                                                                                                                formatType: FormatType.compact,
-                                                                                                                              ),
-                                                                                                                              '0',
-                                                                                                                            ),
-                                                                                                                            style: TextStyle(),
-                                                                                                                          )
-                                                                                                                        ],
-                                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                              fontFamily: 'Poppins',
-                                                                                                                              fontSize: 16.0,
-                                                                                                                              letterSpacing: 0.0,
-                                                                                                                              fontWeight: FontWeight.normal,
-                                                                                                                            ),
-                                                                                                                      ),
-                                                                                                                    );
-                                                                                                                  },
-                                                                                                                ),
-                                                                                                                Text(
-                                                                                                                  '|',
-                                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                        fontFamily: 'Poppins',
-                                                                                                                        letterSpacing: 0.0,
-                                                                                                                      ),
-                                                                                                                ),
-                                                                                                                RichText(
-                                                                                                                  textScaler: MediaQuery.of(context).textScaler,
-                                                                                                                  text: TextSpan(
-                                                                                                                    children: [
-                                                                                                                      TextSpan(
-                                                                                                                        text: '10 ',
-                                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                              fontFamily: 'Poppins',
-                                                                                                                              fontSize: 16.0,
-                                                                                                                              letterSpacing: 0.0,
-                                                                                                                            ),
-                                                                                                                      ),
-                                                                                                                      TextSpan(
-                                                                                                                        text: 'Min',
-                                                                                                                        style: TextStyle(),
-                                                                                                                      )
-                                                                                                                    ],
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                          fontFamily: 'Poppins',
-                                                                                                                          fontSize: 16.0,
-                                                                                                                          letterSpacing: 0.0,
-                                                                                                                          fontWeight: FontWeight.normal,
                                                                                                                         ),
+                                                                                                                      ),
+                                                                                                                      Container(
+                                                                                                                        decoration: BoxDecoration(),
+                                                                                                                        child: FaIcon(
+                                                                                                                          FontAwesomeIcons.caretDown,
+                                                                                                                          color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                          size: 19.0,
+                                                                                                                        ),
+                                                                                                                      ),
+                                                                                                                    ].divide(SizedBox(width: 20.0)),
                                                                                                                   ),
-                                                                                                                ),
-                                                                                                              ].divide(SizedBox(width: 5.0)),
-                                                                                                            ),
-                                                                                                          ],
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                    ),
-                                                                                                  ),
-                                                                                                  if (_model.listViewModule.contains(listModuloItem.reference.id))
-                                                                                                    Builder(
-                                                                                                      builder: (context) {
-                                                                                                        final listaModuloClases = containerModuleClassRecordList.toList();
-
-                                                                                                        return ListView.builder(
-                                                                                                          padding: EdgeInsets.zero,
-                                                                                                          shrinkWrap: true,
-                                                                                                          scrollDirection: Axis.vertical,
-                                                                                                          itemCount: listaModuloClases.length,
-                                                                                                          itemBuilder: (context, listaModuloClasesIndex) {
-                                                                                                            final listaModuloClasesItem = listaModuloClases[listaModuloClasesIndex];
-                                                                                                            return InkWell(
-                                                                                                              splashColor: Colors.transparent,
-                                                                                                              focusColor: Colors.transparent,
-                                                                                                              hoverColor: Colors.transparent,
-                                                                                                              highlightColor: Colors.transparent,
-                                                                                                              onTap: () async {
-                                                                                                                _model.refCourseClass = listaModuloClasesItem;
-                                                                                                                safeSetState(() {});
-                                                                                                              },
-                                                                                                              child: Container(
-                                                                                                                width: double.infinity,
-                                                                                                                decoration: BoxDecoration(
-                                                                                                                  color: valueOrDefault<Color>(
-                                                                                                                    _model.refCourseClass?.reference == listaModuloClasesItem.reference ? FlutterFlowTheme.of(context).alternate : Colors.white,
-                                                                                                                    FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                                                  ),
-                                                                                                                ),
-                                                                                                                child: Padding(
-                                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
-                                                                                                                  child: Column(
+                                                                                                                  Row(
                                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                                     children: [
-                                                                                                                      Row(
-                                                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                                                                                        children: [
-                                                                                                                          StreamBuilder<List<UsersModuleclassRecord>>(
-                                                                                                                            stream: queryUsersModuleclassRecord(
-                                                                                                                              queryBuilder: (usersModuleclassRecord) => usersModuleclassRecord
-                                                                                                                                  .where(
-                                                                                                                                    'uid_user',
-                                                                                                                                    isEqualTo: widget.refUser?.reference.id,
-                                                                                                                                  )
-                                                                                                                                  .where(
-                                                                                                                                    'uid_moduleclass',
-                                                                                                                                    isEqualTo: listaModuloClasesItem.reference.id,
-                                                                                                                                  )
-                                                                                                                                  .where(
-                                                                                                                                    'uid_module',
-                                                                                                                                    isEqualTo: listModuloItem.reference.id,
-                                                                                                                                  )
-                                                                                                                                  .where(
-                                                                                                                                    'uid_curse',
-                                                                                                                                    isEqualTo: widget.refCourses?.reference.id,
+                                                                                                                      StreamBuilder<List<UsersModuleclassRecord>>(
+                                                                                                                        stream: queryUsersModuleclassRecord(
+                                                                                                                          queryBuilder: (usersModuleclassRecord) => usersModuleclassRecord
+                                                                                                                              .where(
+                                                                                                                                'uid_user',
+                                                                                                                                isEqualTo: widget.refUser?.reference.id,
+                                                                                                                              )
+                                                                                                                              .where(
+                                                                                                                                'uid_module',
+                                                                                                                                isEqualTo: listModuloItem.reference.id,
+                                                                                                                              )
+                                                                                                                              .where(
+                                                                                                                                'stateView',
+                                                                                                                                isEqualTo: true,
+                                                                                                                              )
+                                                                                                                              .where(
+                                                                                                                                'uid_curse',
+                                                                                                                                isEqualTo: widget.refCourses?.reference.id,
+                                                                                                                              ),
+                                                                                                                        ),
+                                                                                                                        builder: (context, snapshot) {
+                                                                                                                          // Customize what your widget looks like when it's loading.
+                                                                                                                          if (!snapshot.hasData) {
+                                                                                                                            return Center(
+                                                                                                                              child: SizedBox(
+                                                                                                                                width: 14.0,
+                                                                                                                                height: 14.0,
+                                                                                                                                child: CircularProgressIndicator(
+                                                                                                                                  valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                                                    FlutterFlowTheme.of(context).primary,
                                                                                                                                   ),
-                                                                                                                              singleRecord: true,
-                                                                                                                            ),
-                                                                                                                            builder: (context, snapshot) {
-                                                                                                                              // Customize what your widget looks like when it's loading.
-                                                                                                                              if (!snapshot.hasData) {
-                                                                                                                                return Center(
-                                                                                                                                  child: SizedBox(
-                                                                                                                                    width: 14.0,
-                                                                                                                                    height: 14.0,
-                                                                                                                                    child: CircularProgressIndicator(
-                                                                                                                                      valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                                        FlutterFlowTheme.of(context).primary,
-                                                                                                                                      ),
-                                                                                                                                    ),
-                                                                                                                                  ),
-                                                                                                                                );
-                                                                                                                              }
-                                                                                                                              List<UsersModuleclassRecord> checkboxUsersModuleclassRecordList = snapshot.data!;
-                                                                                                                              final checkboxUsersModuleclassRecord = checkboxUsersModuleclassRecordList.isNotEmpty ? checkboxUsersModuleclassRecordList.first : null;
-
-                                                                                                                              return Theme(
-                                                                                                                                data: ThemeData(
-                                                                                                                                  checkboxTheme: CheckboxThemeData(
-                                                                                                                                    visualDensity: VisualDensity.compact,
-                                                                                                                                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                                                                                                                                    shape: RoundedRectangleBorder(
-                                                                                                                                      borderRadius: BorderRadius.circular(4.0),
-                                                                                                                                    ),
-                                                                                                                                  ),
-                                                                                                                                  unselectedWidgetColor: FlutterFlowTheme.of(context).secondaryText,
                                                                                                                                 ),
-                                                                                                                                child: Checkbox(
-                                                                                                                                  value: _model.checkboxValueMap[listaModuloClasesItem] ??= checkboxUsersModuleclassRecord != null ? checkboxUsersModuleclassRecord.stateView : false,
-                                                                                                                                  onChanged: (newValue) async {
-                                                                                                                                    safeSetState(() => _model.checkboxValueMap[listaModuloClasesItem] = newValue!);
-                                                                                                                                    if (newValue!) {
-                                                                                                                                      if (checkboxUsersModuleclassRecord != null) {
-                                                                                                                                        await checkboxUsersModuleclassRecord.reference.update(createUsersModuleclassRecordData(
-                                                                                                                                          stateView: true,
-                                                                                                                                        ));
-                                                                                                                                      } else {
-                                                                                                                                        var usersModuleclassRecordReference = UsersModuleclassRecord.collection.doc();
-                                                                                                                                        await usersModuleclassRecordReference.set(createUsersModuleclassRecordData(
-                                                                                                                                          uidUser: widget.refUser?.reference.id,
-                                                                                                                                          uidModuleclass: listaModuloClasesItem.reference.id,
-                                                                                                                                          stateView: true,
-                                                                                                                                          uidModule: listModuloItem.reference.id,
-                                                                                                                                          uidCurse: widget.refCourses?.reference.id,
-                                                                                                                                        ));
-                                                                                                                                        _model.refstatemoduleclasss = UsersModuleclassRecord.getDocumentFromData(
-                                                                                                                                            createUsersModuleclassRecordData(
-                                                                                                                                              uidUser: widget.refUser?.reference.id,
-                                                                                                                                              uidModuleclass: listaModuloClasesItem.reference.id,
-                                                                                                                                              stateView: true,
-                                                                                                                                              uidModule: listModuloItem.reference.id,
-                                                                                                                                              uidCurse: widget.refCourses?.reference.id,
-                                                                                                                                            ),
-                                                                                                                                            usersModuleclassRecordReference);
+                                                                                                                              ),
+                                                                                                                            );
+                                                                                                                          }
+                                                                                                                          List<UsersModuleclassRecord> richTextUsersModuleclassRecordList = snapshot.data!;
 
-                                                                                                                                        await _model.refstatemoduleclasss!.reference.update(createUsersModuleclassRecordData(
-                                                                                                                                          uid: _model.refstatemoduleclasss?.reference.id,
-                                                                                                                                        ));
-                                                                                                                                      }
-
-                                                                                                                                      safeSetState(() {});
-                                                                                                                                    } else {
-                                                                                                                                      if (checkboxUsersModuleclassRecord != null) {
-                                                                                                                                        await checkboxUsersModuleclassRecord.reference.update(createUsersModuleclassRecordData(
-                                                                                                                                          stateView: false,
-                                                                                                                                        ));
-                                                                                                                                      } else {
-                                                                                                                                        var usersModuleclassRecordReference = UsersModuleclassRecord.collection.doc();
-                                                                                                                                        await usersModuleclassRecordReference.set(createUsersModuleclassRecordData(
-                                                                                                                                          uidUser: widget.refUser?.reference.id,
-                                                                                                                                          uidModuleclass: listaModuloClasesItem.reference.id,
-                                                                                                                                          stateView: false,
-                                                                                                                                          uidModule: listModuloItem.reference.id,
-                                                                                                                                          uidCurse: widget.refCourses?.reference.id,
-                                                                                                                                        ));
-                                                                                                                                        _model.refstatemoduleclasssOff = UsersModuleclassRecord.getDocumentFromData(
-                                                                                                                                            createUsersModuleclassRecordData(
-                                                                                                                                              uidUser: widget.refUser?.reference.id,
-                                                                                                                                              uidModuleclass: listaModuloClasesItem.reference.id,
-                                                                                                                                              stateView: false,
-                                                                                                                                              uidModule: listModuloItem.reference.id,
-                                                                                                                                              uidCurse: widget.refCourses?.reference.id,
-                                                                                                                                            ),
-                                                                                                                                            usersModuleclassRecordReference);
-
-                                                                                                                                        await _model.refstatemoduleclasssOff!.reference.update(createUsersModuleclassRecordData(
-                                                                                                                                          uid: _model.refstatemoduleclasssOff?.reference.id,
-                                                                                                                                        ));
-                                                                                                                                      }
-
-                                                                                                                                      safeSetState(() {});
-                                                                                                                                    }
-                                                                                                                                  },
-                                                                                                                                  side: BorderSide(
-                                                                                                                                    width: 2,
-                                                                                                                                    color: FlutterFlowTheme.of(context).secondaryText,
+                                                                                                                          return RichText(
+                                                                                                                            textScaler: MediaQuery.of(context).textScaler,
+                                                                                                                            text: TextSpan(
+                                                                                                                              children: [
+                                                                                                                                TextSpan(
+                                                                                                                                  text: valueOrDefault<String>(
+                                                                                                                                    formatNumber(
+                                                                                                                                      richTextUsersModuleclassRecordList.length,
+                                                                                                                                      formatType: FormatType.compact,
+                                                                                                                                    ),
+                                                                                                                                    '0',
                                                                                                                                   ),
-                                                                                                                                  activeColor: FlutterFlowTheme.of(context).accent1,
-                                                                                                                                  checkColor: FlutterFlowTheme.of(context).info,
-                                                                                                                                ),
-                                                                                                                              );
-                                                                                                                            },
-                                                                                                                          ),
-                                                                                                                          Flexible(
-                                                                                                                            child: Padding(
-                                                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 5.0),
-                                                                                                                              child: RichText(
-                                                                                                                                textScaler: MediaQuery.of(context).textScaler,
-                                                                                                                                text: TextSpan(
-                                                                                                                                  children: [
-                                                                                                                                    TextSpan(
-                                                                                                                                      text: 'Actividad ',
-                                                                                                                                      style: TextStyle(
-                                                                                                                                        fontSize: 14.0,
-                                                                                                                                      ),
-                                                                                                                                    ),
-                                                                                                                                    TextSpan(
-                                                                                                                                      text: valueOrDefault<String>(
-                                                                                                                                        (listaModuloClasesIndex + 1).toString(),
-                                                                                                                                        '1',
-                                                                                                                                      ),
-                                                                                                                                      style: TextStyle(),
-                                                                                                                                    ),
-                                                                                                                                    TextSpan(
-                                                                                                                                      text: '.-',
-                                                                                                                                      style: TextStyle(),
-                                                                                                                                    ),
-                                                                                                                                    TextSpan(
-                                                                                                                                      text: ' ',
-                                                                                                                                      style: TextStyle(),
-                                                                                                                                    ),
-                                                                                                                                    TextSpan(
-                                                                                                                                      text: listaModuloClasesItem.name,
-                                                                                                                                      style: TextStyle(),
-                                                                                                                                    )
-                                                                                                                                  ],
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                                         fontFamily: 'Poppins',
-                                                                                                                                        fontSize: 14.0,
+                                                                                                                                        fontSize: 16.0,
                                                                                                                                         letterSpacing: 0.0,
-                                                                                                                                        lineHeight: 1.0,
                                                                                                                                       ),
                                                                                                                                 ),
-                                                                                                                              ),
-                                                                                                                            ),
-                                                                                                                          ),
-                                                                                                                        ].divide(SizedBox(width: 10.0)),
-                                                                                                                      ),
-                                                                                                                      Padding(
-                                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 20.0, 0.0),
-                                                                                                                        child: Row(
-                                                                                                                          mainAxisSize: MainAxisSize.max,
-                                                                                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                                                          children: [
-                                                                                                                            Flexible(
-                                                                                                                              child: Row(
-                                                                                                                                mainAxisSize: MainAxisSize.max,
-                                                                                                                                mainAxisAlignment: MainAxisAlignment.start,
-                                                                                                                                children: [
-                                                                                                                                  Icon(
-                                                                                                                                    Icons.video_settings,
-                                                                                                                                    color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                                                    size: 24.0,
-                                                                                                                                  ),
-                                                                                                                                  Text(
-                                                                                                                                    '${valueOrDefault<String>(
-                                                                                                                                      listaModuloClasesItem.minutes.toString(),
-                                                                                                                                      '0',
-                                                                                                                                    )} Min.',
-                                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                          fontFamily: 'Poppins',
-                                                                                                                                          letterSpacing: 0.0,
-                                                                                                                                        ),
-                                                                                                                                  ),
-                                                                                                                                ].divide(SizedBox(width: 10.0)),
-                                                                                                                              ),
-                                                                                                                            ),
-                                                                                                                            if (listaModuloClasesItem.archives.isNotEmpty)
-                                                                                                                              Padding(
-                                                                                                                                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                                                                                                                                child: FFButtonWidget(
-                                                                                                                                  onPressed: () async {
-                                                                                                                                    while (listaModuloClasesItem.archives.length >= ((_model.indiceRecourse!) + 1)) {
-                                                                                                                                      await downloadFile(
-                                                                                                                                        filename: 'Recurso ${((_model.indiceRecourse!) + 1).toString()}: ${valueOrDefault<String>(
-                                                                                                                                          listaModuloClasesItem.name,
-                                                                                                                                          '-',
-                                                                                                                                        )}',
-                                                                                                                                        url: valueOrDefault<String>(
-                                                                                                                                          listaModuloClasesItem.archives.elementAtOrNull(_model.indiceRecourse!),
-                                                                                                                                          '0',
-                                                                                                                                        ),
-                                                                                                                                      );
-                                                                                                                                      _model.indiceRecourse = _model.indiceRecourse! + 1;
-                                                                                                                                      safeSetState(() {});
-                                                                                                                                    }
-                                                                                                                                    _model.indiceRecourse = 0;
-                                                                                                                                    safeSetState(() {});
-                                                                                                                                  },
-                                                                                                                                  text: 'Recursos',
-                                                                                                                                  options: FFButtonOptions(
-                                                                                                                                    height: 25.0,
-                                                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                                                                                                                                    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                                                    color: FlutterFlowTheme.of(context).primary,
-                                                                                                                                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                          fontFamily: 'Poppins',
-                                                                                                                                          color: Colors.white,
-                                                                                                                                          fontSize: 12.0,
-                                                                                                                                          letterSpacing: 0.0,
-                                                                                                                                        ),
-                                                                                                                                    elevation: 0.0,
-                                                                                                                                    borderRadius: BorderRadius.circular(4.0),
+                                                                                                                                TextSpan(
+                                                                                                                                  text: '/',
+                                                                                                                                  style: TextStyle(
+                                                                                                                                    fontSize: 16.0,
                                                                                                                                   ),
                                                                                                                                 ),
+                                                                                                                                TextSpan(
+                                                                                                                                  text: valueOrDefault<String>(
+                                                                                                                                    formatNumber(
+                                                                                                                                      containerModuleClassRecordList.length,
+                                                                                                                                      formatType: FormatType.compact,
+                                                                                                                                    ),
+                                                                                                                                    '0',
+                                                                                                                                  ),
+                                                                                                                                  style: TextStyle(),
+                                                                                                                                )
+                                                                                                                              ],
+                                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontSize: 16.0,
+                                                                                                                                    letterSpacing: 0.0,
+                                                                                                                                    fontWeight: FontWeight.normal,
+                                                                                                                                  ),
+                                                                                                                            ),
+                                                                                                                          );
+                                                                                                                        },
+                                                                                                                      ),
+                                                                                                                      Text(
+                                                                                                                        '|',
+                                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                              fontFamily: 'Poppins',
+                                                                                                                              letterSpacing: 0.0,
+                                                                                                                            ),
+                                                                                                                      ),
+                                                                                                                      RichText(
+                                                                                                                        textScaler: MediaQuery.of(context).textScaler,
+                                                                                                                        text: TextSpan(
+                                                                                                                          children: [
+                                                                                                                            TextSpan(
+                                                                                                                              text: '10 ',
+                                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontSize: 16.0,
+                                                                                                                                    letterSpacing: 0.0,
+                                                                                                                                  ),
+                                                                                                                            ),
+                                                                                                                            TextSpan(
+                                                                                                                              text: 'Min',
+                                                                                                                              style: TextStyle(),
+                                                                                                                            )
+                                                                                                                          ],
+                                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                fontSize: 16.0,
+                                                                                                                                letterSpacing: 0.0,
+                                                                                                                                fontWeight: FontWeight.normal,
                                                                                                                               ),
+                                                                                                                        ),
+                                                                                                                      ),
+                                                                                                                    ].divide(SizedBox(width: 5.0)),
+                                                                                                                  ),
+                                                                                                                ],
+                                                                                                              ),
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                        if (_model.listViewModule.contains(listModuloItem.reference.id))
+                                                                                                          Builder(
+                                                                                                            builder: (context) {
+                                                                                                              final listaModuloClases = containerModuleClassRecordList.toList();
+
+                                                                                                              return ListView.builder(
+                                                                                                                padding: EdgeInsets.zero,
+                                                                                                                shrinkWrap: true,
+                                                                                                                scrollDirection: Axis.vertical,
+                                                                                                                itemCount: listaModuloClases.length,
+                                                                                                                itemBuilder: (context, listaModuloClasesIndex) {
+                                                                                                                  final listaModuloClasesItem = listaModuloClases[listaModuloClasesIndex];
+                                                                                                                  return InkWell(
+                                                                                                                    splashColor: Colors.transparent,
+                                                                                                                    focusColor: Colors.transparent,
+                                                                                                                    hoverColor: Colors.transparent,
+                                                                                                                    highlightColor: Colors.transparent,
+                                                                                                                    onTap: () async {
+                                                                                                                      _model.refCourseClass = listaModuloClasesItem;
+                                                                                                                      safeSetState(() {});
+                                                                                                                    },
+                                                                                                                    child: Container(
+                                                                                                                      width: double.infinity,
+                                                                                                                      decoration: BoxDecoration(
+                                                                                                                        color: valueOrDefault<Color>(
+                                                                                                                          _model.refCourseClass?.reference == listaModuloClasesItem.reference ? FlutterFlowTheme.of(context).alternate : Colors.white,
+                                                                                                                          FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                                                        ),
+                                                                                                                      ),
+                                                                                                                      child: Padding(
+                                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+                                                                                                                        child: Column(
+                                                                                                                          mainAxisSize: MainAxisSize.max,
+                                                                                                                          children: [
+                                                                                                                            Row(
+                                                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                                                              children: [
+                                                                                                                                StreamBuilder<List<UsersModuleclassRecord>>(
+                                                                                                                                  stream: queryUsersModuleclassRecord(
+                                                                                                                                    queryBuilder: (usersModuleclassRecord) => usersModuleclassRecord
+                                                                                                                                        .where(
+                                                                                                                                          'uid_user',
+                                                                                                                                          isEqualTo: widget.refUser?.reference.id,
+                                                                                                                                        )
+                                                                                                                                        .where(
+                                                                                                                                          'uid_moduleclass',
+                                                                                                                                          isEqualTo: listaModuloClasesItem.reference.id,
+                                                                                                                                        )
+                                                                                                                                        .where(
+                                                                                                                                          'uid_module',
+                                                                                                                                          isEqualTo: listModuloItem.reference.id,
+                                                                                                                                        )
+                                                                                                                                        .where(
+                                                                                                                                          'uid_curse',
+                                                                                                                                          isEqualTo: widget.refCourses?.reference.id,
+                                                                                                                                        ),
+                                                                                                                                    singleRecord: true,
+                                                                                                                                  ),
+                                                                                                                                  builder: (context, snapshot) {
+                                                                                                                                    // Customize what your widget looks like when it's loading.
+                                                                                                                                    if (!snapshot.hasData) {
+                                                                                                                                      return Center(
+                                                                                                                                        child: SizedBox(
+                                                                                                                                          width: 14.0,
+                                                                                                                                          height: 14.0,
+                                                                                                                                          child: CircularProgressIndicator(
+                                                                                                                                            valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                                                              FlutterFlowTheme.of(context).primary,
+                                                                                                                                            ),
+                                                                                                                                          ),
+                                                                                                                                        ),
+                                                                                                                                      );
+                                                                                                                                    }
+                                                                                                                                    List<UsersModuleclassRecord> checkboxUsersModuleclassRecordList = snapshot.data!;
+                                                                                                                                    final checkboxUsersModuleclassRecord = checkboxUsersModuleclassRecordList.isNotEmpty ? checkboxUsersModuleclassRecordList.first : null;
+
+                                                                                                                                    return Theme(
+                                                                                                                                      data: ThemeData(
+                                                                                                                                        checkboxTheme: CheckboxThemeData(
+                                                                                                                                          visualDensity: VisualDensity.compact,
+                                                                                                                                          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                                                                                                                                          shape: RoundedRectangleBorder(
+                                                                                                                                            borderRadius: BorderRadius.circular(4.0),
+                                                                                                                                          ),
+                                                                                                                                        ),
+                                                                                                                                        unselectedWidgetColor: FlutterFlowTheme.of(context).secondaryText,
+                                                                                                                                      ),
+                                                                                                                                      child: Checkbox(
+                                                                                                                                        value: _model.checkboxValueMap[listaModuloClasesItem] ??= checkboxUsersModuleclassRecord != null ? checkboxUsersModuleclassRecord.stateView : false,
+                                                                                                                                        onChanged: (newValue) async {
+                                                                                                                                          safeSetState(() => _model.checkboxValueMap[listaModuloClasesItem] = newValue!);
+                                                                                                                                          if (newValue!) {
+                                                                                                                                            if (checkboxUsersModuleclassRecord != null) {
+                                                                                                                                              await checkboxUsersModuleclassRecord.reference.update(createUsersModuleclassRecordData(
+                                                                                                                                                stateView: true,
+                                                                                                                                              ));
+                                                                                                                                            } else {
+                                                                                                                                              var usersModuleclassRecordReference = UsersModuleclassRecord.collection.doc();
+                                                                                                                                              await usersModuleclassRecordReference.set(createUsersModuleclassRecordData(
+                                                                                                                                                uidUser: widget.refUser?.reference.id,
+                                                                                                                                                uidModuleclass: listaModuloClasesItem.reference.id,
+                                                                                                                                                stateView: true,
+                                                                                                                                                uidModule: listModuloItem.reference.id,
+                                                                                                                                                uidCurse: widget.refCourses?.reference.id,
+                                                                                                                                              ));
+                                                                                                                                              _model.refstatemoduleclasss = UsersModuleclassRecord.getDocumentFromData(
+                                                                                                                                                  createUsersModuleclassRecordData(
+                                                                                                                                                    uidUser: widget.refUser?.reference.id,
+                                                                                                                                                    uidModuleclass: listaModuloClasesItem.reference.id,
+                                                                                                                                                    stateView: true,
+                                                                                                                                                    uidModule: listModuloItem.reference.id,
+                                                                                                                                                    uidCurse: widget.refCourses?.reference.id,
+                                                                                                                                                  ),
+                                                                                                                                                  usersModuleclassRecordReference);
+
+                                                                                                                                              await _model.refstatemoduleclasss!.reference.update(createUsersModuleclassRecordData(
+                                                                                                                                                uid: _model.refstatemoduleclasss?.reference.id,
+                                                                                                                                              ));
+                                                                                                                                            }
+
+                                                                                                                                            safeSetState(() {});
+                                                                                                                                          } else {
+                                                                                                                                            if (checkboxUsersModuleclassRecord != null) {
+                                                                                                                                              await checkboxUsersModuleclassRecord.reference.update(createUsersModuleclassRecordData(
+                                                                                                                                                stateView: false,
+                                                                                                                                              ));
+                                                                                                                                            } else {
+                                                                                                                                              var usersModuleclassRecordReference = UsersModuleclassRecord.collection.doc();
+                                                                                                                                              await usersModuleclassRecordReference.set(createUsersModuleclassRecordData(
+                                                                                                                                                uidUser: widget.refUser?.reference.id,
+                                                                                                                                                uidModuleclass: listaModuloClasesItem.reference.id,
+                                                                                                                                                stateView: false,
+                                                                                                                                                uidModule: listModuloItem.reference.id,
+                                                                                                                                                uidCurse: widget.refCourses?.reference.id,
+                                                                                                                                              ));
+                                                                                                                                              _model.refstatemoduleclasssOff = UsersModuleclassRecord.getDocumentFromData(
+                                                                                                                                                  createUsersModuleclassRecordData(
+                                                                                                                                                    uidUser: widget.refUser?.reference.id,
+                                                                                                                                                    uidModuleclass: listaModuloClasesItem.reference.id,
+                                                                                                                                                    stateView: false,
+                                                                                                                                                    uidModule: listModuloItem.reference.id,
+                                                                                                                                                    uidCurse: widget.refCourses?.reference.id,
+                                                                                                                                                  ),
+                                                                                                                                                  usersModuleclassRecordReference);
+
+                                                                                                                                              await _model.refstatemoduleclasssOff!.reference.update(createUsersModuleclassRecordData(
+                                                                                                                                                uid: _model.refstatemoduleclasssOff?.reference.id,
+                                                                                                                                              ));
+                                                                                                                                            }
+
+                                                                                                                                            safeSetState(() {});
+                                                                                                                                          }
+                                                                                                                                        },
+                                                                                                                                        side: BorderSide(
+                                                                                                                                          width: 2,
+                                                                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
+                                                                                                                                        ),
+                                                                                                                                        activeColor: FlutterFlowTheme.of(context).accent1,
+                                                                                                                                        checkColor: FlutterFlowTheme.of(context).info,
+                                                                                                                                      ),
+                                                                                                                                    );
+                                                                                                                                  },
+                                                                                                                                ),
+                                                                                                                                Flexible(
+                                                                                                                                  child: Padding(
+                                                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 5.0),
+                                                                                                                                    child: RichText(
+                                                                                                                                      textScaler: MediaQuery.of(context).textScaler,
+                                                                                                                                      text: TextSpan(
+                                                                                                                                        children: [
+                                                                                                                                          TextSpan(
+                                                                                                                                            text: 'Actividad ',
+                                                                                                                                            style: TextStyle(
+                                                                                                                                              fontSize: 14.0,
+                                                                                                                                            ),
+                                                                                                                                          ),
+                                                                                                                                          TextSpan(
+                                                                                                                                            text: valueOrDefault<String>(
+                                                                                                                                              (listaModuloClasesIndex + 1).toString(),
+                                                                                                                                              '1',
+                                                                                                                                            ),
+                                                                                                                                            style: TextStyle(),
+                                                                                                                                          ),
+                                                                                                                                          TextSpan(
+                                                                                                                                            text: '.-',
+                                                                                                                                            style: TextStyle(),
+                                                                                                                                          ),
+                                                                                                                                          TextSpan(
+                                                                                                                                            text: ' ',
+                                                                                                                                            style: TextStyle(),
+                                                                                                                                          ),
+                                                                                                                                          TextSpan(
+                                                                                                                                            text: listaModuloClasesItem.name,
+                                                                                                                                            style: TextStyle(),
+                                                                                                                                          )
+                                                                                                                                        ],
+                                                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                              fontFamily: 'Poppins',
+                                                                                                                                              fontSize: 14.0,
+                                                                                                                                              letterSpacing: 0.0,
+                                                                                                                                              lineHeight: 1.0,
+                                                                                                                                            ),
+                                                                                                                                      ),
+                                                                                                                                    ),
+                                                                                                                                  ),
+                                                                                                                                ),
+                                                                                                                              ].divide(SizedBox(width: 10.0)),
+                                                                                                                            ),
+                                                                                                                            Padding(
+                                                                                                                              padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 20.0, 0.0),
+                                                                                                                              child: Row(
+                                                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                                                                children: [
+                                                                                                                                  Flexible(
+                                                                                                                                    child: Row(
+                                                                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                                                                      mainAxisAlignment: MainAxisAlignment.start,
+                                                                                                                                      children: [
+                                                                                                                                        Icon(
+                                                                                                                                          Icons.video_settings,
+                                                                                                                                          color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                                          size: 24.0,
+                                                                                                                                        ),
+                                                                                                                                        Text(
+                                                                                                                                          '${valueOrDefault<String>(
+                                                                                                                                            listaModuloClasesItem.minutes.toString(),
+                                                                                                                                            '0',
+                                                                                                                                          )} Min.',
+                                                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                                letterSpacing: 0.0,
+                                                                                                                                              ),
+                                                                                                                                        ),
+                                                                                                                                      ].divide(SizedBox(width: 10.0)),
+                                                                                                                                    ),
+                                                                                                                                  ),
+                                                                                                                                  if (listaModuloClasesItem.archives.isNotEmpty)
+                                                                                                                                    Padding(
+                                                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                                                                      child: FFButtonWidget(
+                                                                                                                                        onPressed: () async {
+                                                                                                                                          while (listaModuloClasesItem.archives.length >= ((_model.indiceRecourse!) + 1)) {
+                                                                                                                                            await downloadFile(
+                                                                                                                                              filename: 'Recurso ${((_model.indiceRecourse!) + 1).toString()}: ${valueOrDefault<String>(
+                                                                                                                                                listaModuloClasesItem.name,
+                                                                                                                                                '-',
+                                                                                                                                              )}',
+                                                                                                                                              url: valueOrDefault<String>(
+                                                                                                                                                listaModuloClasesItem.archives.elementAtOrNull(_model.indiceRecourse!),
+                                                                                                                                                '0',
+                                                                                                                                              ),
+                                                                                                                                            );
+                                                                                                                                            _model.indiceRecourse = _model.indiceRecourse! + 1;
+                                                                                                                                            safeSetState(() {});
+                                                                                                                                          }
+                                                                                                                                          _model.indiceRecourse = 0;
+                                                                                                                                          safeSetState(() {});
+                                                                                                                                        },
+                                                                                                                                        text: 'Recursos',
+                                                                                                                                        options: FFButtonOptions(
+                                                                                                                                          height: 25.0,
+                                                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                                                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                                                          color: FlutterFlowTheme.of(context).primary,
+                                                                                                                                          textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                                color: Colors.white,
+                                                                                                                                                fontSize: 12.0,
+                                                                                                                                                letterSpacing: 0.0,
+                                                                                                                                              ),
+                                                                                                                                          elevation: 0.0,
+                                                                                                                                          borderRadius: BorderRadius.circular(4.0),
+                                                                                                                                        ),
+                                                                                                                                      ),
+                                                                                                                                    ),
+                                                                                                                                ],
+                                                                                                                              ),
+                                                                                                                            ),
                                                                                                                           ],
                                                                                                                         ),
                                                                                                                       ),
-                                                                                                                    ],
-                                                                                                                  ),
-                                                                                                                ),
-                                                                                                              ),
-                                                                                                            );
-                                                                                                          },
-                                                                                                        );
-                                                                                                      },
+                                                                                                                    ),
+                                                                                                                  );
+                                                                                                                },
+                                                                                                              );
+                                                                                                            },
+                                                                                                          ),
+                                                                                                      ],
                                                                                                     ),
-                                                                                                ],
-                                                                                              ),
-                                                                                            );
+                                                                                                  );
+                                                                                                },
+                                                                                              );
+                                                                                            },
+                                                                                          );
+                                                                                        },
+                                                                                      ),
+                                                                                  ],
+                                                                                ),
+                                                                              );
+                                                                            },
+                                                                          );
+                                                                        },
+                                                                      );
+                                                                    },
+                                                                  ),
+                                                                ],
+                                                              ),
+                                                            ),
+                                                            StreamBuilder<
+                                                                List<
+                                                                    UsersModuleclassRecord>>(
+                                                              stream:
+                                                                  queryUsersModuleclassRecord(
+                                                                queryBuilder:
+                                                                    (usersModuleclassRecord) =>
+                                                                        usersModuleclassRecord
+                                                                            .where(
+                                                                              'uid_user',
+                                                                              isEqualTo: widget.refUser?.reference.id != '' ? widget.refUser?.reference.id : null,
+                                                                            )
+                                                                            .where(
+                                                                              'uid_curse',
+                                                                              isEqualTo: widget.refCourses?.reference.id != '' ? widget.refCourses?.reference.id : null,
+                                                                            ),
+                                                              ),
+                                                              builder: (context,
+                                                                  snapshot) {
+                                                                // Customize what your widget looks like when it's loading.
+                                                                if (!snapshot
+                                                                    .hasData) {
+                                                                  return Center(
+                                                                    child:
+                                                                        SizedBox(
+                                                                      width:
+                                                                          14.0,
+                                                                      height:
+                                                                          14.0,
+                                                                      child:
+                                                                          CircularProgressIndicator(
+                                                                        valueColor:
+                                                                            AlwaysStoppedAnimation<Color>(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .primary,
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                }
+                                                                List<UsersModuleclassRecord>
+                                                                    containerUsersModuleclassRecordList =
+                                                                    snapshot
+                                                                        .data!;
+
+                                                                return Container(
+                                                                  width: 424.0,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryBackground,
+                                                                    borderRadius:
+                                                                        BorderRadius
+                                                                            .only(
+                                                                      bottomLeft:
+                                                                          Radius.circular(
+                                                                              10.0),
+                                                                      bottomRight:
+                                                                          Radius.circular(
+                                                                              10.0),
+                                                                      topLeft: Radius
+                                                                          .circular(
+                                                                              0.0),
+                                                                      topRight:
+                                                                          Radius.circular(
+                                                                              0.0),
+                                                                    ),
+                                                                  ),
+                                                                  child:
+                                                                      Padding(
+                                                                    padding:
+                                                                        EdgeInsets.all(
+                                                                            20.0),
+                                                                    child:
+                                                                        SingleChildScrollView(
+                                                                      child:
+                                                                          Column(
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
+                                                                        crossAxisAlignment:
+                                                                            CrossAxisAlignment.start,
+                                                                        children:
+                                                                            [
+                                                                          Container(
+                                                                            width:
+                                                                                double.infinity,
+                                                                            height:
+                                                                                3.0,
+                                                                            decoration:
+                                                                                BoxDecoration(
+                                                                              color: FlutterFlowTheme.of(context).primary,
+                                                                              borderRadius: BorderRadius.circular(10.0),
+                                                                            ),
+                                                                          ),
+                                                                          RichText(
+                                                                            textScaler:
+                                                                                MediaQuery.of(context).textScaler,
+                                                                            text:
+                                                                                TextSpan(
+                                                                              children: [
+                                                                                TextSpan(
+                                                                                  text: 'Finalizacion del Curso:  ',
+                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                        fontFamily: 'Poppins',
+                                                                                        color: Colors.black,
+                                                                                        fontSize: 16.0,
+                                                                                        letterSpacing: 0.0,
+                                                                                        fontWeight: FontWeight.bold,
+                                                                                      ),
+                                                                                ),
+                                                                                TextSpan(
+                                                                                  text: valueOrDefault<String>(
+                                                                                    formatNumber(
+                                                                                      (valueOrDefault<double>(
+                                                                                            containerUsersModuleclassRecordList.where((e) => e.stateView).toList().length.toDouble(),
+                                                                                            0.0,
+                                                                                          ) /
+                                                                                          valueOrDefault<double>(
+                                                                                            _model.totalActividades,
+                                                                                            0.0,
+                                                                                          ) *
+                                                                                          100),
+                                                                                      formatType: FormatType.custom,
+                                                                                      format: '0',
+                                                                                      locale: '',
+                                                                                    ),
+                                                                                    '0',
+                                                                                  ),
+                                                                                  style: TextStyle(
+                                                                                    color: Color(0xFFB2B2B2),
+                                                                                  ),
+                                                                                ),
+                                                                                TextSpan(
+                                                                                  text: '%',
+                                                                                  style: TextStyle(
+                                                                                    color: Color(0xFFB2B2B2),
+                                                                                  ),
+                                                                                )
+                                                                              ],
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                    fontFamily: 'Poppins',
+                                                                                    color: Colors.black,
+                                                                                    fontSize: 16.0,
+                                                                                    letterSpacing: 0.0,
+                                                                                    fontWeight: FontWeight.w600,
+                                                                                  ),
+                                                                            ),
+                                                                          ),
+                                                                          Align(
+                                                                            alignment:
+                                                                                AlignmentDirectional(0.0, 0.0),
+                                                                            child:
+                                                                                FFButtonWidget(
+                                                                              onPressed: (valueOrDefault<String>(
+                                                                                        formatNumber(
+                                                                                          (valueOrDefault<double>(
+                                                                                                containerUsersModuleclassRecordList.where((e) => e.stateView).toList().length.toDouble(),
+                                                                                                0.0,
+                                                                                              ) /
+                                                                                              valueOrDefault<double>(
+                                                                                                _model.totalActividades,
+                                                                                                0.0,
+                                                                                              ) *
+                                                                                              100),
+                                                                                          formatType: FormatType.custom,
+                                                                                          format: '0',
+                                                                                          locale: '',
+                                                                                        ),
+                                                                                        '0',
+                                                                                      ) !=
+                                                                                      '100')
+                                                                                  ? null
+                                                                                  : () async {
+                                                                                      if (valueOrDefault<String>(
+                                                                                            formatNumber(
+                                                                                              (valueOrDefault<double>(
+                                                                                                    containerUsersModuleclassRecordList.where((e) => e.stateView).toList().length.toDouble(),
+                                                                                                    0.0,
+                                                                                                  ) /
+                                                                                                  valueOrDefault<double>(
+                                                                                                    _model.totalActividades,
+                                                                                                    0.0,
+                                                                                                  ) *
+                                                                                                  100),
+                                                                                              formatType: FormatType.custom,
+                                                                                              format: '0',
+                                                                                              locale: '',
+                                                                                            ),
+                                                                                            '0',
+                                                                                          ) ==
+                                                                                          '100') {
+                                                                                        context.pushNamed(
+                                                                                          CourseTestWidget.routeName,
+                                                                                          queryParameters: {
+                                                                                            'refCourse': serializeParam(
+                                                                                              widget.refCourses,
+                                                                                              ParamType.Document,
+                                                                                            ),
+                                                                                          }.withoutNulls,
+                                                                                          extra: <String, dynamic>{
+                                                                                            'refCourse': widget.refCourses,
+                                                                                            kTransitionInfoKey: TransitionInfo(
+                                                                                              hasTransition: true,
+                                                                                              transitionType: PageTransitionType.fade,
+                                                                                              duration: Duration(milliseconds: 0),
+                                                                                            ),
                                                                                           },
                                                                                         );
-                                                                                      },
-                                                                                    );
-                                                                                  },
-                                                                                ),
-                                                                            ],
+
+                                                                                        await Future.delayed(const Duration(milliseconds: 1000));
+                                                                                      }
+                                                                                    },
+                                                                              text: 'Confirmar Finalización',
+                                                                              options: FFButtonOptions(
+                                                                                width: 176.0,
+                                                                                height: 34.0,
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                color: Color(0xFF17236A),
+                                                                                textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                      fontFamily: 'Poppins',
+                                                                                      color: Colors.white,
+                                                                                      letterSpacing: 0.0,
+                                                                                      fontWeight: FontWeight.w500,
+                                                                                    ),
+                                                                                elevation: 0.0,
+                                                                                borderRadius: BorderRadius.circular(5.0),
+                                                                                disabledColor: FlutterFlowTheme.of(context).alternate,
+                                                                                disabledTextColor: FlutterFlowTheme.of(context).secondary,
+                                                                              ),
+                                                                            ),
                                                                           ),
-                                                                        );
-                                                                      },
-                                                                    );
-                                                                  },
+                                                                        ].divide(SizedBox(height: 10.0)),
+                                                                      ),
+                                                                    ),
+                                                                  ),
                                                                 );
                                                               },
                                                             ),
                                                           ],
                                                         ),
-                                                      ),
-                                                      StreamBuilder<
-                                                          List<
-                                                              UsersModuleclassRecord>>(
-                                                        stream:
-                                                            queryUsersModuleclassRecord(
-                                                          queryBuilder:
-                                                              (usersModuleclassRecord) =>
-                                                                  usersModuleclassRecord
-                                                                      .where(
-                                                                        'uid_user',
-                                                                        isEqualTo: widget.refUser?.reference.id !=
-                                                                                ''
-                                                                            ? widget.refUser?.reference.id
-                                                                            : null,
-                                                                      )
-                                                                      .where(
-                                                                        'uid_curse',
-                                                                        isEqualTo: widget.refCourses?.reference.id !=
-                                                                                ''
-                                                                            ? widget.refCourses?.reference.id
-                                                                            : null,
-                                                                      ),
-                                                        ),
-                                                        builder: (context,
-                                                            snapshot) {
-                                                          // Customize what your widget looks like when it's loading.
-                                                          if (!snapshot
-                                                              .hasData) {
-                                                            return Center(
-                                                              child: SizedBox(
-                                                                width: 14.0,
-                                                                height: 14.0,
-                                                                child:
-                                                                    CircularProgressIndicator(
-                                                                  valueColor:
-                                                                      AlwaysStoppedAnimation<
-                                                                          Color>(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primary,
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            );
-                                                          }
-                                                          List<UsersModuleclassRecord>
-                                                              containerUsersModuleclassRecordList =
-                                                              snapshot.data!;
-
-                                                          return Container(
-                                                            width: 424.0,
-                                                            decoration:
-                                                                BoxDecoration(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondaryBackground,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .only(
-                                                                bottomLeft: Radius
-                                                                    .circular(
-                                                                        10.0),
-                                                                bottomRight: Radius
-                                                                    .circular(
-                                                                        10.0),
-                                                                topLeft: Radius
-                                                                    .circular(
-                                                                        0.0),
-                                                                topRight: Radius
-                                                                    .circular(
-                                                                        0.0),
-                                                              ),
-                                                            ),
-                                                            child: Padding(
-                                                              padding:
-                                                                  EdgeInsets
-                                                                      .all(
-                                                                          20.0),
-                                                              child:
-                                                                  SingleChildScrollView(
-                                                                child: Column(
-                                                                  mainAxisSize:
-                                                                      MainAxisSize
-                                                                          .max,
-                                                                  crossAxisAlignment:
-                                                                      CrossAxisAlignment
-                                                                          .start,
-                                                                  children: [
-                                                                    Container(
-                                                                      width: double
-                                                                          .infinity,
-                                                                      height:
-                                                                          3.0,
-                                                                      decoration:
-                                                                          BoxDecoration(
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .primary,
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(10.0),
-                                                                      ),
-                                                                    ),
-                                                                    RichText(
-                                                                      textScaler:
-                                                                          MediaQuery.of(context)
-                                                                              .textScaler,
-                                                                      text:
-                                                                          TextSpan(
-                                                                        children: [
-                                                                          TextSpan(
-                                                                            text:
-                                                                                'Finalizacion del Curso:  ',
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Poppins',
-                                                                                  color: Colors.black,
-                                                                                  fontSize: 16.0,
-                                                                                  letterSpacing: 0.0,
-                                                                                  fontWeight: FontWeight.bold,
-                                                                                ),
-                                                                          ),
-                                                                          TextSpan(
-                                                                            text:
-                                                                                valueOrDefault<String>(
-                                                                              formatNumber(
-                                                                                (valueOrDefault<double>(
-                                                                                      containerUsersModuleclassRecordList.where((e) => e.stateView).toList().length.toDouble(),
-                                                                                      0.0,
-                                                                                    ) /
-                                                                                    valueOrDefault<double>(
-                                                                                      _model.totalActividades,
-                                                                                      0.0,
-                                                                                    ) *
-                                                                                    100),
-                                                                                formatType: FormatType.custom,
-                                                                                format: '0',
-                                                                                locale: '',
-                                                                              ),
-                                                                              '0',
-                                                                            ),
-                                                                            style:
-                                                                                TextStyle(
-                                                                              color: Color(0xFFB2B2B2),
-                                                                            ),
-                                                                          ),
-                                                                          TextSpan(
-                                                                            text:
-                                                                                '%',
-                                                                            style:
-                                                                                TextStyle(
-                                                                              color: Color(0xFFB2B2B2),
-                                                                            ),
-                                                                          )
-                                                                        ],
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              fontFamily: 'Poppins',
-                                                                              color: Colors.black,
-                                                                              fontSize: 16.0,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w600,
-                                                                            ),
-                                                                      ),
-                                                                    ),
-                                                                    Align(
-                                                                      alignment:
-                                                                          AlignmentDirectional(
-                                                                              0.0,
-                                                                              0.0),
-                                                                      child:
-                                                                          FFButtonWidget(
-                                                                        onPressed: (valueOrDefault<String>(
-                                                                                  formatNumber(
-                                                                                    (valueOrDefault<double>(
-                                                                                          containerUsersModuleclassRecordList.where((e) => e.stateView).toList().length.toDouble(),
-                                                                                          0.0,
-                                                                                        ) /
-                                                                                        valueOrDefault<double>(
-                                                                                          _model.totalActividades,
-                                                                                          0.0,
-                                                                                        ) *
-                                                                                        100),
-                                                                                    formatType: FormatType.custom,
-                                                                                    format: '0',
-                                                                                    locale: '',
-                                                                                  ),
-                                                                                  '0',
-                                                                                ) !=
-                                                                                '100')
-                                                                            ? null
-                                                                            : () async {
-                                                                                if (valueOrDefault<String>(
-                                                                                      formatNumber(
-                                                                                        (valueOrDefault<double>(
-                                                                                              containerUsersModuleclassRecordList.where((e) => e.stateView).toList().length.toDouble(),
-                                                                                              0.0,
-                                                                                            ) /
-                                                                                            valueOrDefault<double>(
-                                                                                              _model.totalActividades,
-                                                                                              0.0,
-                                                                                            ) *
-                                                                                            100),
-                                                                                        formatType: FormatType.custom,
-                                                                                        format: '0',
-                                                                                        locale: '',
-                                                                                      ),
-                                                                                      '0',
-                                                                                    ) ==
-                                                                                    '100') {
-                                                                                  context.pushNamed(
-                                                                                    CourseTestWidget.routeName,
-                                                                                    queryParameters: {
-                                                                                      'refCourse': serializeParam(
-                                                                                        widget.refCourses,
-                                                                                        ParamType.Document,
-                                                                                      ),
-                                                                                    }.withoutNulls,
-                                                                                    extra: <String, dynamic>{
-                                                                                      'refCourse': widget.refCourses,
-                                                                                      kTransitionInfoKey: TransitionInfo(
-                                                                                        hasTransition: true,
-                                                                                        transitionType: PageTransitionType.fade,
-                                                                                        duration: Duration(milliseconds: 0),
-                                                                                      ),
-                                                                                    },
-                                                                                  );
-
-                                                                                  await Future.delayed(const Duration(milliseconds: 1000));
-                                                                                }
-                                                                              },
-                                                                        text:
-                                                                            'Confirmar Finalización',
-                                                                        options:
-                                                                            FFButtonOptions(
-                                                                          width:
-                                                                              176.0,
-                                                                          height:
-                                                                              34.0,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
-                                                                              16.0,
-                                                                              0.0,
-                                                                              16.0,
-                                                                              0.0),
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          color:
-                                                                              Color(0xFF17236A),
-                                                                          textStyle: FlutterFlowTheme.of(context)
-                                                                              .titleSmall
-                                                                              .override(
-                                                                                fontFamily: 'Poppins',
-                                                                                color: Colors.white,
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FontWeight.w500,
-                                                                              ),
-                                                                          elevation:
-                                                                              0.0,
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(5.0),
-                                                                          disabledColor:
-                                                                              FlutterFlowTheme.of(context).alternate,
-                                                                          disabledTextColor:
-                                                                              FlutterFlowTheme.of(context).secondary,
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                  ].divide(SizedBox(
-                                                                      height:
-                                                                          10.0)),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          );
-                                                        },
-                                                      ),
-                                                    ],
+                                                      );
+                                                    },
                                                   ),
-                                                );
-                                              },
-                                            ),
-                                          ].divide(SizedBox(width: 20.0)),
+                                                ),
+                                              ),
+                                          ],
                                         ),
                                       ),
                                     ],

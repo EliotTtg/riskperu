@@ -190,8 +190,8 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'Home': HomeWidget(),
       'Estadistica': EstadisticaWidget(),
+      'Home': HomeWidget(),
       'Simulador': SimuladorWidget(),
       'NotesStudients': NotesStudientsWidget(),
       'CertificatesStudients': CertificatesStudientsWidget(),
@@ -236,14 +236,14 @@ class _NavBarPageState extends State<NavBarPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.book,
+                    Icons.home_outlined,
                     color: currentIndex == 0
                         ? FlutterFlowTheme.of(context).primary
                         : FlutterFlowTheme.of(context).secondaryText,
                     size: 24.0,
                   ),
                   Text(
-                    'Cursos',
+                    'Inicio',
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       color: currentIndex == 0
@@ -260,14 +260,14 @@ class _NavBarPageState extends State<NavBarPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.home_outlined,
+                    Icons.book,
                     color: currentIndex == 1
                         ? FlutterFlowTheme.of(context).primary
                         : FlutterFlowTheme.of(context).secondaryText,
                     size: 24.0,
                   ),
                   Text(
-                    'Inicio',
+                    'Cursos',
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       color: currentIndex == 1

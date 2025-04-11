@@ -179,8 +179,26 @@ class _ExaminationQuestionsFinalWidgetState
                                       Padding(
                                         padding: EdgeInsets.all(
                                             valueOrDefault<double>(
-                                          isAndroid ? 0.0 : 30.0,
-                                          30.0,
+                                          () {
+                                            if (MediaQuery.sizeOf(context)
+                                                    .width <
+                                                kBreakpointSmall) {
+                                              return 20.0;
+                                            } else if (MediaQuery.sizeOf(
+                                                        context)
+                                                    .width <
+                                                kBreakpointMedium) {
+                                              return 50.0;
+                                            } else if (MediaQuery.sizeOf(
+                                                        context)
+                                                    .width <
+                                                kBreakpointLarge) {
+                                              return 50.0;
+                                            } else {
+                                              return 50.0;
+                                            }
+                                          }(),
+                                          50.0,
                                         )),
                                         child: Container(
                                           decoration: BoxDecoration(),
