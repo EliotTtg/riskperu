@@ -148,7 +148,20 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                             decoration: BoxDecoration(),
                             child: Padding(
                               padding: EdgeInsets.all(valueOrDefault<double>(
-                                isAndroid ? 0.0 : 50.0,
+                                () {
+                                  if (MediaQuery.sizeOf(context).width <
+                                      kBreakpointSmall) {
+                                    return 20.0;
+                                  } else if (MediaQuery.sizeOf(context).width <
+                                      kBreakpointMedium) {
+                                    return 50.0;
+                                  } else if (MediaQuery.sizeOf(context).width <
+                                      kBreakpointLarge) {
+                                    return 50.0;
+                                  } else {
+                                    return 50.0;
+                                  }
+                                }(),
                                 50.0,
                               )),
                               child: Column(
@@ -2227,7 +2240,9 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                       },
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 25.0)),
+                                ]
+                                    .divide(SizedBox(height: 25.0))
+                                    .addToEnd(SizedBox(height: 50.0)),
                               ),
                             ),
                           ),
