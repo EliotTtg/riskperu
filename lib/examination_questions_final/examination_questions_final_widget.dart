@@ -784,24 +784,19 @@ class _ExaminationQuestionsFinalWidgetState
                                                   ),
                                                 ),
                                               Flexible(
-                                                child: StreamBuilder<
+                                                child: FutureBuilder<
                                                     List<PreguntasRecord>>(
-                                                  stream: queryPreguntasRecord(
+                                                  future:
+                                                      queryPreguntasRecordOnce(
                                                     queryBuilder:
                                                         (preguntasRecord) =>
                                                             preguntasRecord
                                                                 .where(
                                                                   'examen_ref',
                                                                   isEqualTo: widget
-                                                                              .refExamination
-                                                                              ?.reference
-                                                                              .id !=
-                                                                          ''
-                                                                      ? widget
-                                                                          .refExamination
-                                                                          ?.reference
-                                                                          .id
-                                                                      : null,
+                                                                      .refExamination
+                                                                      ?.reference
+                                                                      .id,
                                                                 )
                                                                 .orderBy(
                                                                     'created_time'),
@@ -999,11 +994,11 @@ class _ExaminationQuestionsFinalWidgetState
                                                                       ),
                                                                     ),
                                                                   ),
-                                                                  StreamBuilder<
+                                                                  FutureBuilder<
                                                                       List<
                                                                           RespuestaStateRecord>>(
-                                                                    stream:
-                                                                        queryRespuestaStateRecord(
+                                                                    future:
+                                                                        queryRespuestaStateRecordOnce(
                                                                       queryBuilder: (respuestaStateRecord) => respuestaStateRecord
                                                                           .where(
                                                                             'uis_user',
@@ -1053,15 +1048,19 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           borderRadius:
                                                                               BorderRadius.circular(4.0),
                                                                         ),
-                                                                        child: StreamBuilder<
+                                                                        child: FutureBuilder<
                                                                             List<UsersAnswersRecord>>(
-                                                                          stream:
-                                                                              queryUsersAnswersRecord(
-                                                                            queryBuilder: (usersAnswersRecord) =>
-                                                                                usersAnswersRecord.where(
-                                                                              'uid_user',
-                                                                              isEqualTo: widget.refResult?.estudianteRef,
-                                                                            ),
+                                                                          future:
+                                                                              queryUsersAnswersRecordOnce(
+                                                                            queryBuilder: (usersAnswersRecord) => usersAnswersRecord
+                                                                                .where(
+                                                                                  'uid_user',
+                                                                                  isEqualTo: widget.refResult?.estudianteRef,
+                                                                                )
+                                                                                .where(
+                                                                                  'uid_examen',
+                                                                                  isEqualTo: widget.refExamination?.reference.id,
+                                                                                ),
                                                                           ),
                                                                           builder:
                                                                               (context, snapshot) {
@@ -1147,7 +1146,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                   color: valueOrDefault<Color>(
                                                                                                     containerRespuestaStateRecordList.where((e) => e.uidQuestion == listaPreguntasItem.reference.id).toList().isNotEmpty
                                                                                                         ? valueOrDefault<Color>(
-                                                                                                            Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.where((e) => e.uidPregunta == listaPreguntasItem.reference.id).toList().map((e) => e.reference.id).toList()) && Set.from(containerUsersAnswersRecordList.where((e) => e.uidPregunta == listaPreguntasItem.reference.id).toList().map((e) => e.reference.id).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? Color(0xFF00A133) : Color(0xFFBD0020),
+                                                                                                            Set.from(containerRespuestasRecordList.map((e) => e.uid).toList()).containsAll(containerUsersAnswersRecordList.where((e) => e.uidPregunta == listaPreguntasItem.reference.id).toList().map((e) => e.respuestaUid).toList()) && Set.from(containerUsersAnswersRecordList.where((e) => e.uidPregunta == listaPreguntasItem.reference.id).toList().map((e) => e.respuestaUid).toList()).containsAll(containerRespuestasRecordList.map((e) => e.uid).toList()) ? Color(0xFF00A133) : Color(0xFFBD0020),
                                                                                                             Color(0xFFBD0020),
                                                                                                           )
                                                                                                         : Color(0xFFEFF3F6),
@@ -1421,10 +1420,10 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           color:
                                                                               FlutterFlowTheme.of(context).alternate,
                                                                         ),
-                                                                        StreamBuilder<
+                                                                        FutureBuilder<
                                                                             List<RespuestaStateRecord>>(
-                                                                          stream:
-                                                                              queryRespuestaStateRecord(
+                                                                          future:
+                                                                              queryRespuestaStateRecordOnce(
                                                                             queryBuilder: (respuestaStateRecord) => respuestaStateRecord
                                                                                 .where(
                                                                                   'uis_user',
@@ -1503,8 +1502,8 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                   ),
                                                                                   Padding(
                                                                                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                                                                                    child: StreamBuilder<List<RespuestasRecord>>(
-                                                                                      stream: queryRespuestasRecord(
+                                                                                    child: FutureBuilder<List<RespuestasRecord>>(
+                                                                                      future: queryRespuestasRecordOnce(
                                                                                         queryBuilder: (respuestasRecord) => respuestasRecord
                                                                                             .where(
                                                                                               'uid_pregunta',
@@ -1531,8 +1530,8 @@ class _ExaminationQuestionsFinalWidgetState
 
                                                                                         return Container(
                                                                                           decoration: BoxDecoration(),
-                                                                                          child: StreamBuilder<List<UsersAnswersRecord>>(
-                                                                                            stream: queryUsersAnswersRecord(
+                                                                                          child: FutureBuilder<List<UsersAnswersRecord>>(
+                                                                                            future: queryUsersAnswersRecordOnce(
                                                                                               queryBuilder: (usersAnswersRecord) => usersAnswersRecord
                                                                                                   .where(
                                                                                                     'uid_user',
@@ -1812,136 +1811,126 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                 );
                                                                                                               },
                                                                                                             ),
-                                                                                                            StreamBuilder<List<RespuestasRecord>>(
-                                                                                                              stream: FFAppState().respuestas(
-                                                                                                                requestFn: () => queryRespuestasRecord(
-                                                                                                                  queryBuilder: (respuestasRecord) => respuestasRecord
-                                                                                                                      .where(
-                                                                                                                        'uid_pregunta',
-                                                                                                                        isEqualTo: containerPreguntasRecord?.reference.id,
-                                                                                                                      )
-                                                                                                                      .where(
-                                                                                                                        'es_correcta',
-                                                                                                                        isEqualTo: true,
-                                                                                                                      ),
+                                                                                                            Padding(
+                                                                                                              padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+                                                                                                              child: Container(
+                                                                                                                width: double.infinity,
+                                                                                                                decoration: BoxDecoration(
+                                                                                                                  color: Color(0xFFEFF3F6),
+                                                                                                                  borderRadius: BorderRadius.circular(10.0),
+                                                                                                                  border: Border.all(
+                                                                                                                    color: Color(0xFFCECECE),
+                                                                                                                  ),
                                                                                                                 ),
-                                                                                                              ),
-                                                                                                              builder: (context, snapshot) {
-                                                                                                                // Customize what your widget looks like when it's loading.
-                                                                                                                if (!snapshot.hasData) {
-                                                                                                                  return Center(
-                                                                                                                    child: SizedBox(
-                                                                                                                      width: 14.0,
-                                                                                                                      height: 14.0,
-                                                                                                                      child: CircularProgressIndicator(
-                                                                                                                        valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                          FlutterFlowTheme.of(context).primary,
-                                                                                                                        ),
-                                                                                                                      ),
-                                                                                                                    ),
-                                                                                                                  );
-                                                                                                                }
-                                                                                                                List<RespuestasRecord> containerRespuestasRecordList = snapshot.data!;
-
-                                                                                                                return Container(
+                                                                                                                child: Container(
                                                                                                                   decoration: BoxDecoration(),
                                                                                                                   child: Padding(
-                                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
-                                                                                                                    child: StreamBuilder<List<UsersAnswersRecord>>(
-                                                                                                                      stream: FFAppState().usersAnswers(
-                                                                                                                        requestFn: () => queryUsersAnswersRecord(
-                                                                                                                          queryBuilder: (usersAnswersRecord) => usersAnswersRecord
-                                                                                                                              .where(
-                                                                                                                                'uid_user',
-                                                                                                                                isEqualTo: widget.refResult?.estudianteRef,
-                                                                                                                              )
-                                                                                                                              .where(
-                                                                                                                                'uid_pregunta',
-                                                                                                                                isEqualTo: containerPreguntasRecord?.reference.id,
+                                                                                                                    padding: EdgeInsets.all(20.0),
+                                                                                                                    child: Column(
+                                                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                                      children: [
+                                                                                                                        Text(
+                                                                                                                          valueOrDefault<String>(
+                                                                                                                            Set.from(containerRespuestasRecordList
+                                                                                                                                            .where((e) => e.esCorrecta)
+                                                                                                                                            .toList()
+                                                                                                                                            .map((e) => valueOrDefault<String>(
+                                                                                                                                                  e.uid,
+                                                                                                                                                  '-',
+                                                                                                                                                ))
+                                                                                                                                            .toList())
+                                                                                                                                        .containsAll(containerUsersAnswersRecordList
+                                                                                                                                            .map((e) => valueOrDefault<String>(
+                                                                                                                                                  e.respuestaUid,
+                                                                                                                                                  '-',
+                                                                                                                                                ))
+                                                                                                                                            .toList()) &&
+                                                                                                                                    Set.from(containerUsersAnswersRecordList
+                                                                                                                                            .map((e) => valueOrDefault<String>(
+                                                                                                                                                  e.respuestaUid,
+                                                                                                                                                  '-',
+                                                                                                                                                ))
+                                                                                                                                            .toList())
+                                                                                                                                        .containsAll(containerRespuestasRecordList
+                                                                                                                                            .where((e) => e.esCorrecta)
+                                                                                                                                            .toList()
+                                                                                                                                            .map((e) => valueOrDefault<String>(
+                                                                                                                                                  e.uid,
+                                                                                                                                                  '-',
+                                                                                                                                                ))
+                                                                                                                                            .toList())
+                                                                                                                                ? 'Correcto'
+                                                                                                                                : 'Incorrecto',
+                                                                                                                            'Incorrecto',
+                                                                                                                          ),
+                                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                color: valueOrDefault<Color>(
+                                                                                                                                  Set.from(containerRespuestasRecordList
+                                                                                                                                                  .where((e) => e.esCorrecta)
+                                                                                                                                                  .toList()
+                                                                                                                                                  .map((e) => valueOrDefault<String>(
+                                                                                                                                                        e.uid,
+                                                                                                                                                        '-',
+                                                                                                                                                      ))
+                                                                                                                                                  .toList())
+                                                                                                                                              .containsAll(containerUsersAnswersRecordList
+                                                                                                                                                  .map((e) => valueOrDefault<String>(
+                                                                                                                                                        e.respuestaUid,
+                                                                                                                                                        '-',
+                                                                                                                                                      ))
+                                                                                                                                                  .toList()) &&
+                                                                                                                                          Set.from(containerUsersAnswersRecordList
+                                                                                                                                                  .map((e) => valueOrDefault<String>(
+                                                                                                                                                        e.respuestaUid,
+                                                                                                                                                        '-',
+                                                                                                                                                      ))
+                                                                                                                                                  .toList())
+                                                                                                                                              .containsAll(containerRespuestasRecordList
+                                                                                                                                                  .where((e) => e.esCorrecta)
+                                                                                                                                                  .toList()
+                                                                                                                                                  .map((e) => valueOrDefault<String>(
+                                                                                                                                                        e.uid,
+                                                                                                                                                        '-',
+                                                                                                                                                      ))
+                                                                                                                                                  .toList())
+                                                                                                                                      ? Color(0xFF00A133)
+                                                                                                                                      : Color(0xFFBD0020),
+                                                                                                                                  Color(0xFFBD0020),
+                                                                                                                                ),
+                                                                                                                                fontSize: 12.0,
+                                                                                                                                letterSpacing: 0.0,
+                                                                                                                                fontWeight: FontWeight.w600,
                                                                                                                               ),
                                                                                                                         ),
-                                                                                                                      ),
-                                                                                                                      builder: (context, snapshot) {
-                                                                                                                        // Customize what your widget looks like when it's loading.
-                                                                                                                        if (!snapshot.hasData) {
-                                                                                                                          return Center(
-                                                                                                                            child: SizedBox(
-                                                                                                                              width: 14.0,
-                                                                                                                              height: 14.0,
-                                                                                                                              child: CircularProgressIndicator(
-                                                                                                                                valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                                                  FlutterFlowTheme.of(context).primary,
-                                                                                                                                ),
+                                                                                                                        Text(
+                                                                                                                          'Respuesta',
+                                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                fontSize: 12.0,
+                                                                                                                                letterSpacing: 0.0,
+                                                                                                                                fontWeight: FontWeight.w600,
                                                                                                                               ),
-                                                                                                                            ),
-                                                                                                                          );
-                                                                                                                        }
-                                                                                                                        List<UsersAnswersRecord> containerUsersAnswersRecordList = snapshot.data!;
-
-                                                                                                                        return Container(
-                                                                                                                          width: double.infinity,
-                                                                                                                          decoration: BoxDecoration(
-                                                                                                                            color: Color(0xFFEFF3F6),
-                                                                                                                            borderRadius: BorderRadius.circular(10.0),
-                                                                                                                            border: Border.all(
-                                                                                                                              color: Color(0xFFCECECE),
-                                                                                                                            ),
+                                                                                                                        ),
+                                                                                                                        Text(
+                                                                                                                          valueOrDefault<String>(
+                                                                                                                            containerPreguntasRecord?.explicacion,
+                                                                                                                            '-',
                                                                                                                           ),
-                                                                                                                          child: Container(
-                                                                                                                            decoration: BoxDecoration(),
-                                                                                                                            child: Padding(
-                                                                                                                              padding: EdgeInsets.all(20.0),
-                                                                                                                              child: Column(
-                                                                                                                                mainAxisSize: MainAxisSize.max,
-                                                                                                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                                                                children: [
-                                                                                                                                  Text(
-                                                                                                                                    valueOrDefault<String>(
-                                                                                                                                      Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()) && Set.from(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? 'Correcto' : 'Incorrecto',
-                                                                                                                                      'Incorrecto',
-                                                                                                                                    ),
-                                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                          fontFamily: 'Poppins',
-                                                                                                                                          color: valueOrDefault<Color>(
-                                                                                                                                            Set.from(containerRespuestasRecordList.map((e) => e.reference.id).toList()).containsAll(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()) && Set.from(containerUsersAnswersRecordList.map((e) => e.respuestaUid).toList()).containsAll(containerRespuestasRecordList.map((e) => e.reference.id).toList()) ? Color(0xFF00A133) : Color(0xFFBD0020),
-                                                                                                                                            Color(0xFFBD0020),
-                                                                                                                                          ),
-                                                                                                                                          fontSize: 14.0,
-                                                                                                                                          letterSpacing: 0.0,
-                                                                                                                                          fontWeight: FontWeight.w600,
-                                                                                                                                        ),
-                                                                                                                                  ),
-                                                                                                                                  Text(
-                                                                                                                                    'Respuesta',
-                                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                          fontFamily: 'Poppins',
-                                                                                                                                          letterSpacing: 0.0,
-                                                                                                                                          fontWeight: FontWeight.w600,
-                                                                                                                                        ),
-                                                                                                                                  ),
-                                                                                                                                  Text(
-                                                                                                                                    valueOrDefault<String>(
-                                                                                                                                      containerPreguntasRecord?.explicacion,
-                                                                                                                                      '-',
-                                                                                                                                    ),
-                                                                                                                                    textAlign: TextAlign.start,
-                                                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                          fontFamily: 'Poppins',
-                                                                                                                                          fontSize: 12.0,
-                                                                                                                                          letterSpacing: 0.0,
-                                                                                                                                          fontWeight: FontWeight.normal,
-                                                                                                                                        ),
-                                                                                                                                  ),
-                                                                                                                                ].divide(SizedBox(height: 10.0)),
+                                                                                                                          textAlign: TextAlign.start,
+                                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                fontSize: 12.0,
+                                                                                                                                letterSpacing: 0.0,
+                                                                                                                                fontWeight: FontWeight.normal,
                                                                                                                               ),
-                                                                                                                            ),
-                                                                                                                          ),
-                                                                                                                        );
-                                                                                                                      },
+                                                                                                                        ),
+                                                                                                                      ].divide(SizedBox(height: 10.0)),
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                );
-                                                                                                              },
+                                                                                                                ),
+                                                                                                              ),
                                                                                                             ),
                                                                                                           ].divide(SizedBox(height: 10.0)),
                                                                                                         ),
@@ -1989,184 +1978,173 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           decoration:
                                                                               BoxDecoration(),
                                                                           child:
-                                                                              Visibility(
-                                                                            visible:
-                                                                                responsiveVisibility(
-                                                                              context: context,
-                                                                              phone: false,
-                                                                            ),
-                                                                            child:
-                                                                                Row(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              mainAxisAlignment: MainAxisAlignment.end,
-                                                                              children: [
-                                                                                if (_model.indexQuestion != 0)
-                                                                                  Flexible(
-                                                                                    child: Align(
-                                                                                      alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                                      child: FFButtonWidget(
-                                                                                        onPressed: () async {
-                                                                                          _model.indexQuestion = valueOrDefault<int>(
-                                                                                            _model.indexQuestion - 1,
-                                                                                            0,
-                                                                                          );
-                                                                                          safeSetState(() {});
-                                                                                        },
-                                                                                        text: 'Atras',
-                                                                                        options: FFButtonOptions(
-                                                                                          width: 173.0,
-                                                                                          height: 26.0,
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
-                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                          color: FlutterFlowTheme.of(context).primary,
-                                                                                          textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                fontFamily: 'Poppins',
-                                                                                                color: Colors.white,
-                                                                                                fontSize: 14.0,
-                                                                                                letterSpacing: 0.0,
-                                                                                                fontWeight: FontWeight.w500,
-                                                                                              ),
-                                                                                          elevation: 0.0,
-                                                                                          borderRadius: BorderRadius.circular(4.0),
-                                                                                        ),
+                                                                              Row(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.end,
+                                                                            children:
+                                                                                [
+                                                                              if (_model.indexQuestion != 0)
+                                                                                Flexible(
+                                                                                  child: Align(
+                                                                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                    child: FFButtonWidget(
+                                                                                      onPressed: () async {
+                                                                                        _model.indexQuestion = _model.indexQuestion + -1;
+                                                                                        safeSetState(() {});
+                                                                                      },
+                                                                                      text: 'Atras',
+                                                                                      options: FFButtonOptions(
+                                                                                        width: 173.0,
+                                                                                        height: 26.0,
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
+                                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                        color: FlutterFlowTheme.of(context).primary,
+                                                                                        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                              fontFamily: 'Poppins',
+                                                                                              color: Colors.white,
+                                                                                              fontSize: 14.0,
+                                                                                              letterSpacing: 0.0,
+                                                                                              fontWeight: FontWeight.w500,
+                                                                                            ),
+                                                                                        elevation: 0.0,
+                                                                                        borderRadius: BorderRadius.circular(4.0),
                                                                                       ),
                                                                                     ),
                                                                                   ),
-                                                                                StreamBuilder<List<RespuestaStateRecord>>(
-                                                                                  stream: queryRespuestaStateRecord(
-                                                                                    queryBuilder: (respuestaStateRecord) => respuestaStateRecord
-                                                                                        .where(
-                                                                                          'uis_user',
-                                                                                          isEqualTo: widget.refUser?.id,
-                                                                                        )
-                                                                                        .where(
-                                                                                          'uid_examen',
-                                                                                          isEqualTo: widget.refExamination?.reference.id,
-                                                                                        )
-                                                                                        .where(
-                                                                                          'uid_question',
-                                                                                          isEqualTo: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                        ),
-                                                                                    singleRecord: true,
-                                                                                  ),
-                                                                                  builder: (context, snapshot) {
-                                                                                    // Customize what your widget looks like when it's loading.
-                                                                                    if (!snapshot.hasData) {
-                                                                                      return Center(
-                                                                                        child: SizedBox(
-                                                                                          width: 14.0,
-                                                                                          height: 14.0,
-                                                                                          child: CircularProgressIndicator(
-                                                                                            valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                              FlutterFlowTheme.of(context).primary,
-                                                                                            ),
+                                                                                ),
+                                                                              StreamBuilder<List<RespuestaStateRecord>>(
+                                                                                stream: queryRespuestaStateRecord(
+                                                                                  queryBuilder: (respuestaStateRecord) => respuestaStateRecord
+                                                                                      .where(
+                                                                                        'uis_user',
+                                                                                        isEqualTo: widget.refUser?.id,
+                                                                                      )
+                                                                                      .where(
+                                                                                        'uid_examen',
+                                                                                        isEqualTo: widget.refExamination?.reference.id,
+                                                                                      )
+                                                                                      .where(
+                                                                                        'uid_question',
+                                                                                        isEqualTo: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                                      ),
+                                                                                  singleRecord: true,
+                                                                                ),
+                                                                                builder: (context, snapshot) {
+                                                                                  // Customize what your widget looks like when it's loading.
+                                                                                  if (!snapshot.hasData) {
+                                                                                    return Center(
+                                                                                      child: SizedBox(
+                                                                                        width: 14.0,
+                                                                                        height: 14.0,
+                                                                                        child: CircularProgressIndicator(
+                                                                                          valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                            FlutterFlowTheme.of(context).primary,
                                                                                           ),
                                                                                         ),
-                                                                                      );
-                                                                                    }
-                                                                                    List<RespuestaStateRecord> containerRespuestaStateRecordList = snapshot.data!;
-                                                                                    final containerRespuestaStateRecord = containerRespuestaStateRecordList.isNotEmpty ? containerRespuestaStateRecordList.first : null;
-
-                                                                                    return Container(
-                                                                                      decoration: BoxDecoration(),
-                                                                                      child: Row(
-                                                                                        mainAxisSize: MainAxisSize.max,
-                                                                                        mainAxisAlignment: MainAxisAlignment.end,
-                                                                                        children: [
-                                                                                          FFButtonWidget(
-                                                                                            onPressed: (containerRespuestaStateRecord != null)
-                                                                                                ? null
-                                                                                                : () async {
-                                                                                                    var respuestaStateRecordReference = RespuestaStateRecord.collection.doc();
-                                                                                                    await respuestaStateRecordReference.set(createRespuestaStateRecordData(
-                                                                                                      uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                                      uisUser: widget.refUser?.id,
-                                                                                                      uidExamen: widget.refExamination?.reference.id,
-                                                                                                    ));
-                                                                                                    _model.refStateQuestion = RespuestaStateRecord.getDocumentFromData(
-                                                                                                        createRespuestaStateRecordData(
-                                                                                                          uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
-                                                                                                          uisUser: widget.refUser?.id,
-                                                                                                          uidExamen: widget.refExamination?.reference.id,
-                                                                                                        ),
-                                                                                                        respuestaStateRecordReference);
-
-                                                                                                    await _model.refStateQuestion!.reference.update(createRespuestaStateRecordData(
-                                                                                                      uid: _model.refStateQuestion?.reference.id,
-                                                                                                    ));
-
-                                                                                                    safeSetState(() {});
-                                                                                                  },
-                                                                                            text: 'Comprobar',
-                                                                                            options: FFButtonOptions(
-                                                                                              width: 173.0,
-                                                                                              height: 26.0,
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
-                                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                              color: FlutterFlowTheme.of(context).primary,
-                                                                                              textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Poppins',
-                                                                                                    color: Colors.white,
-                                                                                                    fontSize: 14.0,
-                                                                                                    letterSpacing: 0.0,
-                                                                                                    fontWeight: FontWeight.w500,
-                                                                                                  ),
-                                                                                              elevation: 0.0,
-                                                                                              borderRadius: BorderRadius.circular(4.0),
-                                                                                              disabledColor: FlutterFlowTheme.of(context).secondary,
-                                                                                            ),
-                                                                                          ),
-                                                                                          FFButtonWidget(
-                                                                                            onPressed: () async {
-                                                                                              if (containerPreguntasRecordList.length ==
-                                                                                                  valueOrDefault<int>(
-                                                                                                    _model.indexQuestion + 1,
-                                                                                                    0,
-                                                                                                  )) {
-                                                                                                _model.stateEnding = true;
-                                                                                                safeSetState(() {});
-                                                                                              } else {
-                                                                                                _model.indexQuestion = valueOrDefault<int>(
-                                                                                                  _model.indexQuestion + 1,
-                                                                                                  0,
-                                                                                                );
-                                                                                                safeSetState(() {});
-                                                                                              }
-                                                                                            },
-                                                                                            text: valueOrDefault<String>(
-                                                                                              containerPreguntasRecordList.length ==
-                                                                                                      valueOrDefault<int>(
-                                                                                                        _model.indexQuestion + 1,
-                                                                                                        0,
-                                                                                                      )
-                                                                                                  ? 'Terminar'
-                                                                                                  : 'Siguiente ',
-                                                                                              'Siguiente',
-                                                                                            ),
-                                                                                            options: FFButtonOptions(
-                                                                                              width: 173.0,
-                                                                                              height: 26.0,
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
-                                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                              color: FlutterFlowTheme.of(context).primary,
-                                                                                              textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Poppins',
-                                                                                                    color: Colors.white,
-                                                                                                    fontSize: 14.0,
-                                                                                                    letterSpacing: 0.0,
-                                                                                                    fontWeight: FontWeight.w500,
-                                                                                                  ),
-                                                                                              elevation: 0.0,
-                                                                                              borderRadius: BorderRadius.circular(4.0),
-                                                                                            ),
-                                                                                          ),
-                                                                                        ].divide(SizedBox(width: 20.0)),
                                                                                       ),
                                                                                     );
-                                                                                  },
-                                                                                ),
-                                                                              ].divide(SizedBox(width: 20.0)),
-                                                                            ),
+                                                                                  }
+                                                                                  List<RespuestaStateRecord> containerRespuestaStateRecordList = snapshot.data!;
+                                                                                  final containerRespuestaStateRecord = containerRespuestaStateRecordList.isNotEmpty ? containerRespuestaStateRecordList.first : null;
+
+                                                                                  return Container(
+                                                                                    decoration: BoxDecoration(),
+                                                                                    child: Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      mainAxisAlignment: MainAxisAlignment.end,
+                                                                                      children: [
+                                                                                        FFButtonWidget(
+                                                                                          onPressed: (containerRespuestaStateRecord != null)
+                                                                                              ? null
+                                                                                              : () async {
+                                                                                                  var respuestaStateRecordReference = RespuestaStateRecord.collection.doc();
+                                                                                                  await respuestaStateRecordReference.set(createRespuestaStateRecordData(
+                                                                                                    uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                                                    uisUser: widget.refUser?.id,
+                                                                                                    uidExamen: widget.refExamination?.reference.id,
+                                                                                                  ));
+                                                                                                  _model.refStateQuestion = RespuestaStateRecord.getDocumentFromData(
+                                                                                                      createRespuestaStateRecordData(
+                                                                                                        uidQuestion: containerPreguntasRecordList.elementAtOrNull(_model.indexQuestion)?.reference.id,
+                                                                                                        uisUser: widget.refUser?.id,
+                                                                                                        uidExamen: widget.refExamination?.reference.id,
+                                                                                                      ),
+                                                                                                      respuestaStateRecordReference);
+
+                                                                                                  await _model.refStateQuestion!.reference.update(createRespuestaStateRecordData(
+                                                                                                    uid: _model.refStateQuestion?.reference.id,
+                                                                                                  ));
+
+                                                                                                  safeSetState(() {});
+                                                                                                },
+                                                                                          text: 'Comprobar',
+                                                                                          options: FFButtonOptions(
+                                                                                            width: 173.0,
+                                                                                            height: 26.0,
+                                                                                            padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
+                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            color: FlutterFlowTheme.of(context).primary,
+                                                                                            textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                                  fontFamily: 'Poppins',
+                                                                                                  color: Colors.white,
+                                                                                                  fontSize: 14.0,
+                                                                                                  letterSpacing: 0.0,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                ),
+                                                                                            elevation: 0.0,
+                                                                                            borderRadius: BorderRadius.circular(4.0),
+                                                                                            disabledColor: FlutterFlowTheme.of(context).secondary,
+                                                                                          ),
+                                                                                        ),
+                                                                                        FFButtonWidget(
+                                                                                          onPressed: () async {
+                                                                                            if (containerPreguntasRecordList.length ==
+                                                                                                valueOrDefault<int>(
+                                                                                                  _model.indexQuestion + 1,
+                                                                                                  0,
+                                                                                                )) {
+                                                                                              _model.stateEnding = true;
+                                                                                              safeSetState(() {});
+                                                                                            } else {
+                                                                                              _model.indexQuestion = _model.indexQuestion + 1;
+                                                                                              safeSetState(() {});
+                                                                                            }
+                                                                                          },
+                                                                                          text: valueOrDefault<String>(
+                                                                                            containerPreguntasRecordList.length ==
+                                                                                                    valueOrDefault<int>(
+                                                                                                      _model.indexQuestion + 1,
+                                                                                                      0,
+                                                                                                    )
+                                                                                                ? 'Terminar'
+                                                                                                : 'Siguiente ',
+                                                                                            'Siguiente',
+                                                                                          ),
+                                                                                          options: FFButtonOptions(
+                                                                                            width: 173.0,
+                                                                                            height: 26.0,
+                                                                                            padding: EdgeInsetsDirectional.fromSTEB(35.0, 0.0, 35.0, 0.0),
+                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            color: FlutterFlowTheme.of(context).primary,
+                                                                                            textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                                  fontFamily: 'Poppins',
+                                                                                                  color: Colors.white,
+                                                                                                  fontSize: 14.0,
+                                                                                                  letterSpacing: 0.0,
+                                                                                                  fontWeight: FontWeight.w500,
+                                                                                                ),
+                                                                                            elevation: 0.0,
+                                                                                            borderRadius: BorderRadius.circular(4.0),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ].divide(SizedBox(width: 20.0)),
+                                                                                    ),
+                                                                                  );
+                                                                                },
+                                                                              ),
+                                                                            ].divide(SizedBox(width: 20.0)),
                                                                           ),
                                                                         ),
                                                                       if (_model
@@ -2342,10 +2320,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               if (_model.indexQuestion != 0)
                                                                                 FFButtonWidget(
                                                                                   onPressed: () async {
-                                                                                    _model.indexQuestion = valueOrDefault<int>(
-                                                                                      _model.indexQuestion - 1,
-                                                                                      0,
-                                                                                    );
+                                                                                    _model.indexQuestion = _model.indexQuestion + -1;
                                                                                     safeSetState(() {});
                                                                                   },
                                                                                   text: 'Atras',
@@ -2459,10 +2434,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                               _model.stateEnding = true;
                                                                                               safeSetState(() {});
                                                                                             } else {
-                                                                                              _model.indexQuestion = valueOrDefault<int>(
-                                                                                                _model.indexQuestion + 1,
-                                                                                                0,
-                                                                                              );
+                                                                                              _model.indexQuestion = _model.indexQuestion + 1;
                                                                                               safeSetState(() {});
                                                                                             }
                                                                                           },
