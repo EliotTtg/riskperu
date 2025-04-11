@@ -6,6 +6,7 @@ import '/backend/backend.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
+import '/main.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 import '/index.dart';
@@ -76,13 +77,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? EstadisticaWidget() : LoginWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? EstadisticaWidget() : LoginWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : LoginWidget(),
           routes: [
             FFRoute(
               name: TeachersWidget.routeName,
@@ -252,7 +253,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: HomeWidget.routeName,
               path: HomeWidget.routePath,
               requireAuth: true,
-              builder: (context, params) => HomeWidget(),
+              builder: (context, params) => params.isEmpty
+                  ? NavBarPage(initialPage: 'Home')
+                  : HomeWidget(),
             ),
             FFRoute(
               name: RegisterWidget.routeName,
@@ -262,7 +265,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: EstadisticaWidget.routeName,
               path: EstadisticaWidget.routePath,
-              builder: (context, params) => EstadisticaWidget(),
+              builder: (context, params) => params.isEmpty
+                  ? NavBarPage(initialPage: 'Estadistica')
+                  : EstadisticaWidget(),
             ),
             FFRoute(
               name: HomeCopyWidget.routeName,
@@ -311,7 +316,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: SimuladorWidget.routeName,
               path: SimuladorWidget.routePath,
               requireAuth: true,
-              builder: (context, params) => SimuladorWidget(),
+              builder: (context, params) => params.isEmpty
+                  ? NavBarPage(initialPage: 'Simulador')
+                  : SimuladorWidget(),
             ),
             FFRoute(
               name: CoursePriceCopyWidget.routeName,
@@ -410,18 +417,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: NotesStudientsWidget.routeName,
               path: NotesStudientsWidget.routePath,
               requireAuth: true,
-              builder: (context, params) => NotesStudientsWidget(),
+              builder: (context, params) => params.isEmpty
+                  ? NavBarPage(initialPage: 'NotesStudients')
+                  : NotesStudientsWidget(),
             ),
             FFRoute(
               name: CertificatesStudientsWidget.routeName,
               path: CertificatesStudientsWidget.routePath,
               requireAuth: true,
-              builder: (context, params) => CertificatesStudientsWidget(
-                uidUser: params.getParam(
-                  'uidUser',
-                  ParamType.String,
-                ),
-              ),
+              builder: (context, params) => params.isEmpty
+                  ? NavBarPage(initialPage: 'CertificatesStudients')
+                  : CertificatesStudientsWidget(
+                      uidUser: params.getParam(
+                        'uidUser',
+                        ParamType.String,
+                      ),
+                    ),
             ),
             FFRoute(
               name: ExaminationQuestionsFrmExamenWidget.routeName,

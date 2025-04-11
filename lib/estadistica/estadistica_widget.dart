@@ -9,6 +9,7 @@ import '/pages/empty_dashboard/empty_dashboard_widget.dart';
 import '/pages/empty_test/empty_test_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
+import '/pages/header_mobil/header_mobil_widget.dart';
 import '/custom_code/actions/index.dart' as actions;
 import '/index.dart';
 import 'package:collection/collection.dart';
@@ -107,12 +108,32 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
               top: true,
               child: Stack(
                 children: [
-                  wrapWithModel(
-                    model: _model.headerModel,
-                    updateCallback: () => safeSetState(() {}),
-                    child: HeaderWidget(
-                      state: 5,
-                    ),
+                  Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      if (responsiveVisibility(
+                        context: context,
+                        phone: false,
+                      ))
+                        wrapWithModel(
+                          model: _model.headerModel,
+                          updateCallback: () => safeSetState(() {}),
+                          child: HeaderWidget(
+                            state: 5,
+                          ),
+                        ),
+                      if (responsiveVisibility(
+                        context: context,
+                        tablet: false,
+                        tabletLandscape: false,
+                        desktop: false,
+                      ))
+                        wrapWithModel(
+                          model: _model.headerMobilModel,
+                          updateCallback: () => safeSetState(() {}),
+                          child: HeaderMobilWidget(),
+                        ),
+                    ],
                   ),
                   Padding(
                     padding:

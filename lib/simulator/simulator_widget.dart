@@ -739,7 +739,7 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                         children: [
                                                           FaIcon(
                                                             FontAwesomeIcons
-                                                                .trophy,
+                                                                .medal,
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,

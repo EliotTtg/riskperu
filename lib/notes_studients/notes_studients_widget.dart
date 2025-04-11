@@ -7,7 +7,9 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/pages/empty_notes/empty_notes_widget.dart';
+import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
+import '/pages/header_mobil/header_mobil_widget.dart';
 import 'package:flutter/material.dart';
 import 'notes_studients_model.dart';
 export 'notes_studients_model.dart';
@@ -60,12 +62,32 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
               top: true,
               child: Stack(
                 children: [
-                  wrapWithModel(
-                    model: _model.headerModel,
-                    updateCallback: () => safeSetState(() {}),
-                    child: HeaderWidget(
-                      state: 3,
-                    ),
+                  Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      if (responsiveVisibility(
+                        context: context,
+                        phone: false,
+                      ))
+                        wrapWithModel(
+                          model: _model.headerModel,
+                          updateCallback: () => safeSetState(() {}),
+                          child: HeaderWidget(
+                            state: 3,
+                          ),
+                        ),
+                      if (responsiveVisibility(
+                        context: context,
+                        tablet: false,
+                        tabletLandscape: false,
+                        desktop: false,
+                      ))
+                        wrapWithModel(
+                          model: _model.headerMobilModel,
+                          updateCallback: () => safeSetState(() {}),
+                          child: HeaderMobilWidget(),
+                        ),
+                    ],
                   ),
                   Padding(
                     padding:
@@ -457,11 +479,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                           height: 5.0)),
                                                     ),
                                                   ),
-                                                ]
-                                                    .divide(
-                                                        SizedBox(width: 50.0))
-                                                    .around(
-                                                        SizedBox(width: 50.0)),
+                                                ].divide(SizedBox(width: 20.0)),
                                               ),
                                               Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -925,11 +943,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                           height: 5.0)),
                                                     ),
                                                   ),
-                                                ]
-                                                    .divide(
-                                                        SizedBox(width: 50.0))
-                                                    .around(
-                                                        SizedBox(width: 50.0)),
+                                                ].divide(SizedBox(width: 20.0)),
                                               ),
                                             ].divide(SizedBox(height: 20.0)),
                                           ),
@@ -1930,6 +1944,15 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                               ),
                             ),
                           ),
+                          if (responsiveVisibility(
+                            context: context,
+                            phone: false,
+                          ))
+                            wrapWithModel(
+                              model: _model.footerModel,
+                              updateCallback: () => safeSetState(() {}),
+                              child: FooterWidget(),
+                            ),
                         ],
                       ),
                     ),

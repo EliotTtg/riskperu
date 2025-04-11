@@ -8,10 +8,14 @@ import 'auth/firebase_auth/firebase_user_provider.dart';
 import 'auth/firebase_auth/auth_util.dart';
 
 import 'backend/firebase/firebase_config.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
 import 'package:flutter/foundation.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
+import 'index.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -157,6 +161,199 @@ class _MyAppState extends State<MyApp> {
       ),
       themeMode: _themeMode,
       routerConfig: _router,
+    );
+  }
+}
+
+class NavBarPage extends StatefulWidget {
+  NavBarPage({Key? key, this.initialPage, this.page}) : super(key: key);
+
+  final String? initialPage;
+  final Widget? page;
+
+  @override
+  _NavBarPageState createState() => _NavBarPageState();
+}
+
+/// This is the private State class that goes with NavBarPage.
+class _NavBarPageState extends State<NavBarPage> {
+  String _currentPageName = 'Estadistica';
+  late Widget? _currentPage;
+
+  @override
+  void initState() {
+    super.initState();
+    _currentPageName = widget.initialPage ?? _currentPageName;
+    _currentPage = widget.page;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final tabs = {
+      'Home': HomeWidget(),
+      'Estadistica': EstadisticaWidget(),
+      'Simulador': SimuladorWidget(),
+      'NotesStudients': NotesStudientsWidget(),
+      'CertificatesStudients': CertificatesStudientsWidget(),
+    };
+    final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
+
+    final MediaQueryData queryData = MediaQuery.of(context);
+
+    return Scaffold(
+      body: MediaQuery(
+          data: queryData
+              .removeViewInsets(removeBottom: true)
+              .removeViewPadding(removeBottom: true),
+          child: _currentPage ?? tabs[_currentPageName]!),
+      extendBody: true,
+      bottomNavigationBar: Visibility(
+        visible: responsiveVisibility(
+          context: context,
+          tablet: false,
+          tabletLandscape: false,
+          desktop: false,
+        ),
+        child: FloatingNavbar(
+          currentIndex: currentIndex,
+          onTap: (i) => safeSetState(() {
+            _currentPage = null;
+            _currentPageName = tabs.keys.toList()[i];
+          }),
+          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          selectedItemColor: FlutterFlowTheme.of(context).primary,
+          unselectedItemColor: FlutterFlowTheme.of(context).secondaryText,
+          selectedBackgroundColor: Color(0x00000000),
+          borderRadius: 8.0,
+          itemBorderRadius: 8.0,
+          margin: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+          width: double.infinity,
+          elevation: 0.0,
+          items: [
+            FloatingNavbarItem(
+              customWidget: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.book,
+                    color: currentIndex == 0
+                        ? FlutterFlowTheme.of(context).primary
+                        : FlutterFlowTheme.of(context).secondaryText,
+                    size: 24.0,
+                  ),
+                  Text(
+                    'Cursos',
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: currentIndex == 0
+                          ? FlutterFlowTheme.of(context).primary
+                          : FlutterFlowTheme.of(context).secondaryText,
+                      fontSize: 11.0,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            FloatingNavbarItem(
+              customWidget: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.home_outlined,
+                    color: currentIndex == 1
+                        ? FlutterFlowTheme.of(context).primary
+                        : FlutterFlowTheme.of(context).secondaryText,
+                    size: 24.0,
+                  ),
+                  Text(
+                    'Inicio',
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: currentIndex == 1
+                          ? FlutterFlowTheme.of(context).primary
+                          : FlutterFlowTheme.of(context).secondaryText,
+                      fontSize: 11.0,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            FloatingNavbarItem(
+              customWidget: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.library_books_outlined,
+                    color: currentIndex == 2
+                        ? FlutterFlowTheme.of(context).primary
+                        : FlutterFlowTheme.of(context).secondaryText,
+                    size: 24.0,
+                  ),
+                  Text(
+                    'Simulador',
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: currentIndex == 2
+                          ? FlutterFlowTheme.of(context).primary
+                          : FlutterFlowTheme.of(context).secondaryText,
+                      fontSize: 11.0,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            FloatingNavbarItem(
+              customWidget: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.menu_book,
+                    color: currentIndex == 3
+                        ? FlutterFlowTheme.of(context).primary
+                        : FlutterFlowTheme.of(context).secondaryText,
+                    size: 24.0,
+                  ),
+                  Text(
+                    'Notas',
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: currentIndex == 3
+                          ? FlutterFlowTheme.of(context).primary
+                          : FlutterFlowTheme.of(context).secondaryText,
+                      fontSize: 11.0,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            FloatingNavbarItem(
+              customWidget: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    FontAwesomeIcons.certificate,
+                    color: currentIndex == 4
+                        ? FlutterFlowTheme.of(context).primary
+                        : FlutterFlowTheme.of(context).secondaryText,
+                    size: 24.0,
+                  ),
+                  Text(
+                    'Certificados',
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: currentIndex == 4
+                          ? FlutterFlowTheme.of(context).primary
+                          : FlutterFlowTheme.of(context).secondaryText,
+                      fontSize: 11.0,
+                    ),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }

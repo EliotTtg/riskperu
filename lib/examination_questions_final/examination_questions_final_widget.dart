@@ -177,8 +177,11 @@ class _ExaminationQuestionsFinalWidgetState
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            30.0, 30.0, 30.0, 30.0),
+                                        padding: EdgeInsets.all(
+                                            valueOrDefault<double>(
+                                          isAndroid ? 0.0 : 30.0,
+                                          30.0,
+                                        )),
                                         child: Container(
                                           decoration: BoxDecoration(),
                                           child: Row(
@@ -1592,13 +1595,10 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                     final firestoreBatch = FirebaseFirestore.instance.batch();
                                                                                                                     try {
                                                                                                                       if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty) {
-                                                                                                                        await Future.delayed(const Duration(milliseconds: 1000));
                                                                                                                         firestoreBatch.delete(containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().firstOrNull!.reference);
                                                                                                                         await Future.delayed(const Duration(milliseconds: 1000));
                                                                                                                       } else {
                                                                                                                         if (containerRespuestasRecordList.where((e) => e.esCorrecta).toList().length > containerUsersAnswersRecordList.length) {
-                                                                                                                          await Future.delayed(const Duration(milliseconds: 1000));
-
                                                                                                                           var usersAnswersRecordReference = UsersAnswersRecord.collection.doc();
                                                                                                                           firestoreBatch.set(
                                                                                                                               usersAnswersRecordReference,
