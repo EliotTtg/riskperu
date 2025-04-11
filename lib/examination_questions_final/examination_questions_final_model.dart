@@ -45,10 +45,10 @@ class ExaminationQuestionsFinalModel
   // Model for Navbar component.
   late NavbarModel navbarModel;
   // State field(s) for Timer widget.
-  final timerInitialTimeMs1 = 0;
-  int timerMilliseconds1 = 0;
-  String timerValue1 = StopWatchTimer.getDisplayTime(0, milliSecond: false);
-  FlutterFlowTimerController timerController1 =
+  final timerInitialTimeMs = 0;
+  int timerMilliseconds = 0;
+  String timerValue = StopWatchTimer.getDisplayTime(0, milliSecond: false);
+  FlutterFlowTimerController timerController =
       FlutterFlowTimerController(StopWatchTimer(mode: StopWatchMode.countDown));
 
   // Stores action output result for [Backend Call - Read Document] action in Timer widget.
@@ -63,15 +63,6 @@ class ExaminationQuestionsFinalModel
   ResultadosRecord? resultadoFinalBien;
   // Stores action output result for [Backend Call - Read Document] action in Button widget.
   ResultadosRecord? resultadoFinalBien2;
-  // State field(s) for Timer widget.
-  final timerInitialTimeMs2 = 0;
-  int timerMilliseconds2 = 0;
-  String timerValue2 = StopWatchTimer.getDisplayTime(0, milliSecond: false);
-  FlutterFlowTimerController timerController2 =
-      FlutterFlowTimerController(StopWatchTimer(mode: StopWatchMode.countDown));
-
-  // Stores action output result for [Backend Call - Create Document] action in Container widget.
-  UsersAnswersRecord? refRespuestaCrearMobil;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   RespuestaStateRecord? refStateQuestionMobil;
   // Stores action output result for [Custom Action - verificarPreguntasRespondidas] action in Button widget.
@@ -93,7 +84,6 @@ class ExaminationQuestionsFinalModel
     headerModel.dispose();
     headerMobilModel.dispose();
     navbarModel.dispose();
-    timerController1.dispose();
-    timerController2.dispose();
+    timerController.dispose();
   }
 }
