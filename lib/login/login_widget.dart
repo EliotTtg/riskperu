@@ -99,67 +99,80 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Flexible(
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          AutoSizeText(
-                                            'Iniciar Sesión',
-                                            minFontSize: 14.0,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Poppins',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  fontSize: 24.0,
-                                                  letterSpacing: 0.0,
-                                                ),
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      phone: false,
+                                    ))
+                                      Flexible(
+                                        flex: 2,
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 40.0, 0.0),
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              AutoSizeText(
+                                                'Iniciar Sesión',
+                                                minFontSize: 14.0,
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                          fontSize: 24.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                              ),
+                                              AutoSizeText(
+                                                'Inicia Sesión  y amplia tu conocimiento',
+                                                minFontSize: 50.0,
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                          fontSize: 64.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          lineHeight: 1.0,
+                                                        ),
+                                              ),
+                                              AutoSizeText(
+                                                '\"El éxito es la suma de pequeños esfuerzos repetidos día tras día.\" – Robert Collier.',
+                                                textAlign: TextAlign.start,
+                                                minFontSize: 10.0,
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                          fontSize: 20.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                              ),
+                                            ].divide(SizedBox(height: 20.0)),
                                           ),
-                                          AutoSizeText(
-                                            'Inicia Sesión  y amplia tu conocimiento',
-                                            minFontSize: 50.0,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Poppins',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  fontSize: 64.0,
-                                                  letterSpacing: 0.0,
-                                                  fontWeight: FontWeight.w500,
-                                                  lineHeight: 1.0,
-                                                ),
-                                          ),
-                                          AutoSizeText(
-                                            '\"El éxito es la suma de pequeños esfuerzos repetidos día tras día.\" – Robert Collier.',
-                                            textAlign: TextAlign.start,
-                                            minFontSize: 10.0,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Poppins',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  fontSize: 20.0,
-                                                  letterSpacing: 0.0,
-                                                ),
-                                          ),
-                                        ].divide(SizedBox(height: 20.0)),
+                                        ),
                                       ),
-                                    ),
                                     Flexible(
+                                      flex: 1,
                                       child: Container(
-                                        width:
-                                            MediaQuery.sizeOf(context).width *
-                                                0.3,
+                                        width: double.infinity,
                                         decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(10.0),
@@ -826,7 +839,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         ),
                                       ),
                                     ),
-                                  ].divide(SizedBox(width: 40.0)),
+                                  ],
                                 ),
                               ),
                             ],

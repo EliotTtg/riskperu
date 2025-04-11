@@ -65,11 +65,27 @@ class EstadisticaModel extends FlutterFlowModel<EstadisticaWidget> {
   // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
   UsersRecord? refUser;
   // Model for EmptyCourse component.
-  late EmptyCourseModel emptyCourseModel;
+  late EmptyCourseModel emptyCourseModel1;
   // Model for EmptyTest component.
-  late EmptyTestModel emptyTestModel;
+  late EmptyTestModel emptyTestModel1;
   // Model for EmptyActividades component.
-  late EmptyActividadesModel emptyActividadesModel;
+  late EmptyActividadesModel emptyActividadesModel1;
+  // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
+  UsersCoursesRecord? refCourseUserMobil;
+  // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
+  SessionRecord? refSessionStudentMobil;
+  // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
+  ModuleRecord? refModulesCourseMobil;
+  // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
+  ModuleClassRecord? refClassCourseMobil;
+  // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
+  UsersRecord? refUserMobil;
+  // Model for EmptyCourse component.
+  late EmptyCourseModel emptyCourseModel2;
+  // Model for EmptyTest component.
+  late EmptyTestModel emptyTestModel2;
+  // Model for EmptyActividades component.
+  late EmptyActividadesModel emptyActividadesModel2;
   // Model for EmptyDashboard component.
   late EmptyDashboardModel emptyDashboardModel;
   // Model for Footer component.
@@ -78,9 +94,14 @@ class EstadisticaModel extends FlutterFlowModel<EstadisticaWidget> {
   @override
   void initState(BuildContext context) {
     headerModel = createModel(context, () => HeaderModel());
-    emptyCourseModel = createModel(context, () => EmptyCourseModel());
-    emptyTestModel = createModel(context, () => EmptyTestModel());
-    emptyActividadesModel = createModel(context, () => EmptyActividadesModel());
+    emptyCourseModel1 = createModel(context, () => EmptyCourseModel());
+    emptyTestModel1 = createModel(context, () => EmptyTestModel());
+    emptyActividadesModel1 =
+        createModel(context, () => EmptyActividadesModel());
+    emptyCourseModel2 = createModel(context, () => EmptyCourseModel());
+    emptyTestModel2 = createModel(context, () => EmptyTestModel());
+    emptyActividadesModel2 =
+        createModel(context, () => EmptyActividadesModel());
     emptyDashboardModel = createModel(context, () => EmptyDashboardModel());
     footerModel = createModel(context, () => FooterModel());
   }
@@ -88,9 +109,12 @@ class EstadisticaModel extends FlutterFlowModel<EstadisticaWidget> {
   @override
   void dispose() {
     headerModel.dispose();
-    emptyCourseModel.dispose();
-    emptyTestModel.dispose();
-    emptyActividadesModel.dispose();
+    emptyCourseModel1.dispose();
+    emptyTestModel1.dispose();
+    emptyActividadesModel1.dispose();
+    emptyCourseModel2.dispose();
+    emptyTestModel2.dispose();
+    emptyActividadesModel2.dispose();
     emptyDashboardModel.dispose();
     footerModel.dispose();
   }

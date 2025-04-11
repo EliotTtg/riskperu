@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'flutter_flow/request_manager.dart';
-import '/backend/backend.dart';
 
 class FFAppState extends ChangeNotifier {
   static FFAppState _instance = FFAppState._internal();
@@ -91,34 +89,4 @@ class FFAppState extends ChangeNotifier {
   void insertAtIndexInShoppingcart(int index, String value) {
     shoppingcart.insert(index, value);
   }
-
-  final _respuestasManager = StreamRequestManager<List<RespuestasRecord>>();
-  Stream<List<RespuestasRecord>> respuestas({
-    String? uniqueQueryKey,
-    bool? overrideCache,
-    required Stream<List<RespuestasRecord>> Function() requestFn,
-  }) =>
-      _respuestasManager.performRequest(
-        uniqueQueryKey: uniqueQueryKey,
-        overrideCache: overrideCache,
-        requestFn: requestFn,
-      );
-  void clearRespuestasCache() => _respuestasManager.clear();
-  void clearRespuestasCacheKey(String? uniqueKey) =>
-      _respuestasManager.clearRequest(uniqueKey);
-
-  final _usersAnswersManager = StreamRequestManager<List<UsersAnswersRecord>>();
-  Stream<List<UsersAnswersRecord>> usersAnswers({
-    String? uniqueQueryKey,
-    bool? overrideCache,
-    required Stream<List<UsersAnswersRecord>> Function() requestFn,
-  }) =>
-      _usersAnswersManager.performRequest(
-        uniqueQueryKey: uniqueQueryKey,
-        overrideCache: overrideCache,
-        requestFn: requestFn,
-      );
-  void clearUsersAnswersCache() => _usersAnswersManager.clear();
-  void clearUsersAnswersCacheKey(String? uniqueKey) =>
-      _usersAnswersManager.clearRequest(uniqueKey);
 }

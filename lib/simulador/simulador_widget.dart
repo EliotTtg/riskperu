@@ -145,6 +145,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                             fontFamily: 'Poppins',
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
+                                            fontSize: 12.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -206,7 +207,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                   fontFamily:
                                                                       'Poppins',
                                                                   fontSize:
-                                                                      18.0,
+                                                                      14.0,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -283,7 +284,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                       () {});
                                                                 },
                                                                 width: 200.0,
-                                                                height: 40.0,
+                                                                height: 35.0,
                                                                 maxHeight:
                                                                     300.0,
                                                                 searchHintTextStyle:
@@ -296,7 +297,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                           color:
                                                                               FlutterFlowTheme.of(context).primary,
                                                                           fontSize:
-                                                                              16.0,
+                                                                              14.0,
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -320,7 +321,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                               context)
                                                                           .primary,
                                                                       fontSize:
-                                                                          16.0,
+                                                                          14.0,
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -409,6 +410,8 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                       'Poppins',
                                                                   color: Color(
                                                                       0xFF454545),
+                                                                  fontSize:
+                                                                      14.0,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -498,7 +501,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                           context)
                                                                       .primary,
                                                                   fontSize:
-                                                                      16.0,
+                                                                      14.0,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -515,7 +518,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                           context)
                                                                       .primary,
                                                                   fontSize:
-                                                                      16.0,
+                                                                      14.0,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -599,7 +602,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                   ),
                                                   FlutterFlowIconButton(
                                                     borderRadius: 10.0,
-                                                    buttonSize: 40.0,
+                                                    buttonSize: 36.0,
                                                     fillColor:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -610,7 +613,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .info,
-                                                      size: 24.0,
+                                                      size: 20.0,
                                                     ),
                                                     onPressed: () async {
                                                       if (_model.textController
@@ -1195,7 +1198,6 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                       ),
                                                       child: Container(
                                                         width: double.infinity,
-                                                        height: 180.0,
                                                         decoration:
                                                             BoxDecoration(
                                                           color: FlutterFlowTheme
@@ -1216,7 +1218,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                     .max,
                                                             crossAxisAlignment:
                                                                 CrossAxisAlignment
-                                                                    .start,
+                                                                    .center,
                                                             children: [
                                                               ClipRRect(
                                                                 borderRadius:
@@ -1236,12 +1238,8 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                   imageUrl:
                                                                       wrapCoursesRecord
                                                                           .imageCourse,
-                                                                  width: MediaQuery.sizeOf(
-                                                                              context)
-                                                                          .width *
-                                                                      0.3,
-                                                                  height: double
-                                                                      .infinity,
+                                                                  width: 100.0,
+                                                                  height: 100.0,
                                                                   fit: BoxFit
                                                                       .fill,
                                                                   errorWidget: (context,
@@ -1250,11 +1248,10 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                       Image
                                                                           .asset(
                                                                     'assets/images/error_image.png',
-                                                                    width: MediaQuery.sizeOf(context)
-                                                                            .width *
-                                                                        0.3,
-                                                                    height: double
-                                                                        .infinity,
+                                                                    width:
+                                                                        100.0,
+                                                                    height:
+                                                                        100.0,
                                                                     fit: BoxFit
                                                                         .fill,
                                                                   ),
