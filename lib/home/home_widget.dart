@@ -167,424 +167,460 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       children: [
                                         Row(
                                           mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: [
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              phone: false,
+                                            ))
+                                              Flexible(
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.end,
+                                                  children: [
+                                                    Flexible(
+                                                      child: Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Text(
+                                                            'Filtrar por',
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Poppins',
+                                                                  fontSize:
+                                                                      18.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                          ),
+                                                          StreamBuilder<
+                                                              List<
+                                                                  CategoryCoursesRecord>>(
+                                                            stream:
+                                                                queryCategoryCoursesRecord(
+                                                              queryBuilder: (categoryCoursesRecord) =>
+                                                                  categoryCoursesRecord.orderBy(
+                                                                      'Created_Date',
+                                                                      descending:
+                                                                          true),
+                                                            ),
+                                                            builder: (context,
+                                                                snapshot) {
+                                                              // Customize what your widget looks like when it's loading.
+                                                              if (!snapshot
+                                                                  .hasData) {
+                                                                return Center(
+                                                                  child:
+                                                                      SizedBox(
+                                                                    width: 14.0,
+                                                                    height:
+                                                                        14.0,
+                                                                    child:
+                                                                        CircularProgressIndicator(
+                                                                      valueColor:
+                                                                          AlwaysStoppedAnimation<
+                                                                              Color>(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .primary,
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                );
+                                                              }
+                                                              List<CategoryCoursesRecord>
+                                                                  cboCategoryCategoryCoursesRecordList =
+                                                                  snapshot
+                                                                      .data!;
+
+                                                              return FlutterFlowDropDown<
+                                                                  String>(
+                                                                controller: _model
+                                                                        .cboCategoryValueController ??=
+                                                                    FormFieldController<
+                                                                        String>(
+                                                                  _model.cboCategoryValue ??=
+                                                                      '',
+                                                                ),
+                                                                options: List<
+                                                                        String>.from(
+                                                                    cboCategoryCategoryCoursesRecordList
+                                                                        .map((e) => e
+                                                                            .reference
+                                                                            .id)
+                                                                        .toList()),
+                                                                optionLabels:
+                                                                    cboCategoryCategoryCoursesRecordList
+                                                                        .map((e) =>
+                                                                            e.name)
+                                                                        .toList(),
+                                                                onChanged:
+                                                                    (val) async {
+                                                                  safeSetState(() =>
+                                                                      _model.cboCategoryValue =
+                                                                          val);
+                                                                  _model.courseCategory =
+                                                                      _model
+                                                                          .cboCategoryValue;
+                                                                  safeSetState(
+                                                                      () {});
+                                                                },
+                                                                width: 200.0,
+                                                                height: 40.0,
+                                                                maxHeight:
+                                                                    300.0,
+                                                                searchHintTextStyle:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .override(
+                                                                          fontFamily:
+                                                                              'Poppins',
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).primary,
+                                                                          fontSize:
+                                                                              16.0,
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                        ),
+                                                                searchTextStyle:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .override(
+                                                                          fontFamily:
+                                                                              'Poppins',
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                        ),
+                                                                textStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Poppins',
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary,
+                                                                      fontSize:
+                                                                          16.0,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                    ),
+                                                                hintText:
+                                                                    'Categorias',
+                                                                searchHintText:
+                                                                    'Buscar categoria',
+                                                                icon: Icon(
+                                                                  Icons
+                                                                      .keyboard_arrow_down_rounded,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryText,
+                                                                  size: 24.0,
+                                                                ),
+                                                                fillColor: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryBackground,
+                                                                elevation: 2.0,
+                                                                borderColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
+                                                                borderWidth:
+                                                                    0.0,
+                                                                borderRadius:
+                                                                    8.0,
+                                                                margin: EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        12.0,
+                                                                        0.0,
+                                                                        12.0,
+                                                                        0.0),
+                                                                hidesUnderline:
+                                                                    true,
+                                                                isOverButton:
+                                                                    false,
+                                                                isSearchable:
+                                                                    true,
+                                                                isMultiSelect:
+                                                                    false,
+                                                              );
+                                                            },
+                                                          ),
+                                                        ].divide(SizedBox(
+                                                            height: 5.0)),
+                                                      ),
+                                                    ),
+                                                    FFButtonWidget(
+                                                      onPressed: () async {
+                                                        _model.courseCategory =
+                                                            null;
+                                                        safeSetState(() {});
+                                                        safeSetState(() {
+                                                          _model
+                                                              .cboCategoryValueController
+                                                              ?.reset();
+                                                        });
+                                                      },
+                                                      text: 'Restablecer',
+                                                      options: FFButtonOptions(
+                                                        height: 40.0,
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    20.0,
+                                                                    0.0,
+                                                                    20.0,
+                                                                    0.0),
+                                                        iconPadding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .secondaryBackground,
+                                                        textStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Poppins',
+                                                                  color: Color(
+                                                                      0xFF454545),
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                        elevation: 0.0,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8.0),
+                                                      ),
+                                                    ),
+                                                  ].divide(
+                                                      SizedBox(width: 10.0)),
+                                                ),
+                                              ),
                                             Flexible(
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
                                                 children: [
                                                   Flexible(
-                                                    child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Text(
-                                                          'Filtrar por',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Poppins',
-                                                                fontSize: 18.0,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                        ),
-                                                        StreamBuilder<
-                                                            List<
-                                                                CategoryCoursesRecord>>(
-                                                          stream:
-                                                              queryCategoryCoursesRecord(
-                                                            queryBuilder: (categoryCoursesRecord) =>
-                                                                categoryCoursesRecord.orderBy(
-                                                                    'Created_Date',
-                                                                    descending:
-                                                                        true),
-                                                          ),
-                                                          builder: (context,
-                                                              snapshot) {
-                                                            // Customize what your widget looks like when it's loading.
-                                                            if (!snapshot
-                                                                .hasData) {
-                                                              return Center(
-                                                                child: SizedBox(
-                                                                  width: 14.0,
-                                                                  height: 14.0,
-                                                                  child:
-                                                                      CircularProgressIndicator(
-                                                                    valueColor:
-                                                                        AlwaysStoppedAnimation<
-                                                                            Color>(
-                                                                      FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primary,
-                                                                    ),
-                                                                  ),
-                                                                ),
-                                                              );
-                                                            }
-                                                            List<CategoryCoursesRecord>
-                                                                cboCategoryCategoryCoursesRecordList =
-                                                                snapshot.data!;
-
-                                                            return FlutterFlowDropDown<
-                                                                String>(
-                                                              controller: _model
-                                                                      .cboCategoryValueController ??=
-                                                                  FormFieldController<
-                                                                      String>(
-                                                                _model.cboCategoryValue ??=
-                                                                    '',
-                                                              ),
-                                                              options: List<
-                                                                      String>.from(
-                                                                  cboCategoryCategoryCoursesRecordList
-                                                                      .map((e) => e
-                                                                          .reference
-                                                                          .id)
-                                                                      .toList()),
-                                                              optionLabels:
-                                                                  cboCategoryCategoryCoursesRecordList
-                                                                      .map((e) =>
-                                                                          e.name)
-                                                                      .toList(),
-                                                              onChanged:
-                                                                  (val) async {
-                                                                safeSetState(() =>
-                                                                    _model.cboCategoryValue =
-                                                                        val);
-                                                                _model.courseCategory =
-                                                                    _model
-                                                                        .cboCategoryValue;
-                                                                safeSetState(
-                                                                    () {});
-                                                              },
-                                                              width: 200.0,
-                                                              height: 40.0,
-                                                              maxHeight: 300.0,
-                                                              searchHintTextStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .override(
-                                                                        fontFamily:
-                                                                            'Poppins',
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .primary,
-                                                                        fontSize:
-                                                                            16.0,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                      ),
-                                                              searchTextStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .override(
-                                                                        fontFamily:
-                                                                            'Poppins',
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                      ),
-                                                              textStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .override(
-                                                                        fontFamily:
-                                                                            'Poppins',
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .primary,
-                                                                        fontSize:
-                                                                            16.0,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                      ),
-                                                              hintText:
-                                                                  'Categorias',
-                                                              searchHintText:
-                                                                  'Buscar categoria',
-                                                              icon: Icon(
-                                                                Icons
-                                                                    .keyboard_arrow_down_rounded,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .secondaryText,
-                                                                size: 24.0,
-                                                              ),
-                                                              fillColor: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondaryBackground,
-                                                              elevation: 2.0,
-                                                              borderColor:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primary,
-                                                              borderWidth: 0.0,
-                                                              borderRadius: 8.0,
-                                                              margin:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          12.0,
-                                                                          0.0,
-                                                                          12.0,
-                                                                          0.0),
-                                                              hidesUnderline:
-                                                                  true,
-                                                              isOverButton:
-                                                                  false,
-                                                              isSearchable:
-                                                                  true,
-                                                              isMultiSelect:
-                                                                  false,
-                                                            );
+                                                    child: Container(
+                                                      width: double.infinity,
+                                                      child: TextFormField(
+                                                        controller: _model
+                                                            .textController,
+                                                        focusNode: _model
+                                                            .textFieldFocusNode,
+                                                        onChanged: (_) =>
+                                                            EasyDebounce
+                                                                .debounce(
+                                                          '_model.textController',
+                                                          Duration(
+                                                              milliseconds:
+                                                                  2000),
+                                                          () async {
+                                                            await queryCoursesRecordOnce()
+                                                                .then(
+                                                                  (records) => _model
+                                                                          .simpleSearchResults =
+                                                                      TextSearch(
+                                                                    records
+                                                                        .map(
+                                                                          (record) => TextSearchItem.fromTerms(
+                                                                              record,
+                                                                              [
+                                                                                record.name
+                                                                              ]),
+                                                                        )
+                                                                        .toList(),
+                                                                  )
+                                                                          .search(_model
+                                                                              .textController
+                                                                              .text)
+                                                                          .map((r) => r
+                                                                              .object)
+                                                                          .take(
+                                                                              29)
+                                                                          .toList(),
+                                                                )
+                                                                .onError((_,
+                                                                        __) =>
+                                                                    _model.simpleSearchResults =
+                                                                        [])
+                                                                .whenComplete(() =>
+                                                                    safeSetState(
+                                                                        () {}));
                                                           },
                                                         ),
-                                                      ].divide(SizedBox(
-                                                          height: 5.0)),
+                                                        autofocus: false,
+                                                        obscureText: false,
+                                                        decoration:
+                                                            InputDecoration(
+                                                          isDense: true,
+                                                          labelStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Poppins',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
+                                                                    fontSize:
+                                                                        16.0,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
+                                                          hintText:
+                                                              'Buscar mis cursos',
+                                                          hintStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Poppins',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
+                                                                    fontSize:
+                                                                        16.0,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                  ),
+                                                          enabledBorder:
+                                                              OutlineInputBorder(
+                                                            borderSide:
+                                                                BorderSide(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primary,
+                                                              width: 1.0,
+                                                            ),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                          ),
+                                                          focusedBorder:
+                                                              OutlineInputBorder(
+                                                            borderSide:
+                                                                BorderSide(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primary,
+                                                              width: 1.0,
+                                                            ),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                          ),
+                                                          errorBorder:
+                                                              OutlineInputBorder(
+                                                            borderSide:
+                                                                BorderSide(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .error,
+                                                              width: 1.0,
+                                                            ),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                          ),
+                                                          focusedErrorBorder:
+                                                              OutlineInputBorder(
+                                                            borderSide:
+                                                                BorderSide(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .error,
+                                                              width: 1.0,
+                                                            ),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                          ),
+                                                          filled: true,
+                                                          fillColor: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                        ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Poppins',
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                ),
+                                                        cursorColor:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                        validator: _model
+                                                            .textControllerValidator
+                                                            .asValidator(
+                                                                context),
+                                                      ),
                                                     ),
                                                   ),
-                                                  FFButtonWidget(
-                                                    onPressed: () async {
-                                                      _model.courseCategory =
-                                                          null;
-                                                      safeSetState(() {});
-                                                      safeSetState(() {
-                                                        _model
-                                                            .cboCategoryValueController
-                                                            ?.reset();
-                                                      });
-                                                    },
-                                                    text: 'Restablecer',
-                                                    options: FFButtonOptions(
-                                                      height: 40.0,
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  20.0,
-                                                                  0.0,
-                                                                  20.0,
-                                                                  0.0),
-                                                      iconPadding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                      textStyle:
+                                                  FlutterFlowIconButton(
+                                                    borderRadius: 10.0,
+                                                    buttonSize: 40.0,
+                                                    fillColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
+                                                    icon: Icon(
+                                                      Icons.search_sharp,
+                                                      color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .titleSmall
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Poppins',
-                                                                color: Color(
-                                                                    0xFF454545),
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                      elevation: 0.0,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              8.0),
+                                                              .info,
+                                                      size: 24.0,
                                                     ),
+                                                    onPressed: () async {
+                                                      if (_model.textController
+                                                                  .text !=
+                                                              '') {
+                                                        _model.uidsCourse = _model
+                                                            .simpleSearchResults
+                                                            .map((e) => e.uid)
+                                                            .toList()
+                                                            .cast<String>();
+                                                        safeSetState(() {});
+                                                      } else {
+                                                        _model.uidsCourse = [];
+                                                        safeSetState(() {});
+                                                      }
+                                                    },
                                                   ),
                                                 ].divide(SizedBox(width: 10.0)),
                                               ),
-                                            ),
-                                            Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                Container(
-                                                  width: 200.0,
-                                                  child: TextFormField(
-                                                    controller:
-                                                        _model.textController,
-                                                    focusNode: _model
-                                                        .textFieldFocusNode,
-                                                    onChanged: (_) =>
-                                                        EasyDebounce.debounce(
-                                                      '_model.textController',
-                                                      Duration(
-                                                          milliseconds: 2000),
-                                                      () async {
-                                                        await queryCoursesRecordOnce()
-                                                            .then(
-                                                              (records) => _model
-                                                                      .simpleSearchResults =
-                                                                  TextSearch(
-                                                                records
-                                                                    .map(
-                                                                      (record) =>
-                                                                          TextSearchItem.fromTerms(
-                                                                              record,
-                                                                              [
-                                                                            record.name
-                                                                          ]),
-                                                                    )
-                                                                    .toList(),
-                                                              )
-                                                                      .search(_model
-                                                                          .textController
-                                                                          .text)
-                                                                      .map((r) =>
-                                                                          r.object)
-                                                                      .take(29)
-                                                                      .toList(),
-                                                            )
-                                                            .onError((_, __) =>
-                                                                _model.simpleSearchResults =
-                                                                    [])
-                                                            .whenComplete(() =>
-                                                                safeSetState(
-                                                                    () {}));
-                                                      },
-                                                    ),
-                                                    autofocus: false,
-                                                    obscureText: false,
-                                                    decoration: InputDecoration(
-                                                      isDense: true,
-                                                      labelStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Poppins',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primary,
-                                                                fontSize: 16.0,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                      hintText:
-                                                          'Buscar mis cursos',
-                                                      hintStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Poppins',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primary,
-                                                                fontSize: 16.0,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                      enabledBorder:
-                                                          OutlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primary,
-                                                          width: 1.0,
-                                                        ),
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(8.0),
-                                                      ),
-                                                      focusedBorder:
-                                                          OutlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primary,
-                                                          width: 1.0,
-                                                        ),
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(8.0),
-                                                      ),
-                                                      errorBorder:
-                                                          OutlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .error,
-                                                          width: 1.0,
-                                                        ),
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(8.0),
-                                                      ),
-                                                      focusedErrorBorder:
-                                                          OutlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .error,
-                                                          width: 1.0,
-                                                        ),
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(8.0),
-                                                      ),
-                                                      filled: true,
-                                                      fillColor: FlutterFlowTheme
-                                                              .of(context)
-                                                          .secondaryBackground,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          letterSpacing: 0.0,
-                                                        ),
-                                                    cursorColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primaryText,
-                                                    validator: _model
-                                                        .textControllerValidator
-                                                        .asValidator(context),
-                                                  ),
-                                                ),
-                                                FlutterFlowIconButton(
-                                                  borderRadius: 10.0,
-                                                  buttonSize: 40.0,
-                                                  fillColor:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .primary,
-                                                  icon: Icon(
-                                                    Icons.search_sharp,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .info,
-                                                    size: 24.0,
-                                                  ),
-                                                  onPressed: () async {
-                                                    if (_model.textController
-                                                                .text !=
-                                                            '') {
-                                                      _model.uidsCourse = _model
-                                                          .simpleSearchResults
-                                                          .map((e) => e.uid)
-                                                          .toList()
-                                                          .cast<String>();
-                                                      safeSetState(() {});
-                                                    } else {
-                                                      _model.uidsCourse = [];
-                                                      safeSetState(() {});
-                                                    }
-                                                  },
-                                                ),
-                                              ].divide(SizedBox(width: 10.0)),
                                             ),
                                           ].divide(SizedBox(width: 10.0)),
                                         ),
@@ -1350,9 +1386,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     ),
                                   ),
                                 ),
-                                if (valueOrDefault(
-                                        currentUserDocument?.userType, 0) ==
-                                    2)
+                                if ((valueOrDefault(
+                                            currentUserDocument?.userType, 0) ==
+                                        2) &&
+                                    responsiveVisibility(
+                                      context: context,
+                                      phone: false,
+                                    ))
                                   AuthUserStreamWidget(
                                     builder: (context) => wrapWithModel(
                                       model: _model.footerModel,
