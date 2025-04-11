@@ -87,6 +87,11 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
       Color(0xFFEA553D),
       Color(0xFF979797)
     ];
+    final chartPieChartColorsList2 = [
+      Color(0xFF1C9E6C),
+      Color(0xFFEA553D),
+      Color(0xFF979797)
+    ];
     return Title(
         title: 'RiskPeru',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
@@ -121,59 +126,1582 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                             width: double.infinity,
                             decoration: BoxDecoration(),
                             child: Padding(
-                              padding: EdgeInsets.all(50.0),
+                              padding: EdgeInsets.all(valueOrDefault<double>(
+                                isAndroid ? 0.0 : 50.0,
+                                50.0,
+                              )),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  Row(
+                                  Column(
                                     mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
                                     children: [
-                                      Flexible(
-                                        child:
-                                            StreamBuilder<List<CoursesRecord>>(
-                                          stream: queryCoursesRecord(
-                                            queryBuilder: (coursesRecord) =>
-                                                coursesRecord
-                                                    .where(
-                                                      'course_type',
-                                                      isEqualTo: 1,
-                                                    )
-                                                    .where(
-                                                      'State',
-                                                      isEqualTo: true,
-                                                    )
-                                                    .orderBy('Created_Date',
-                                                        descending: true),
-                                            limit: 10,
-                                          ),
-                                          builder: (context, snapshot) {
-                                            // Customize what your widget looks like when it's loading.
-                                            if (!snapshot.hasData) {
-                                              return Center(
-                                                child: SizedBox(
-                                                  width: 14.0,
-                                                  height: 14.0,
-                                                  child:
-                                                      CircularProgressIndicator(
-                                                    valueColor:
-                                                        AlwaysStoppedAnimation<
-                                                            Color>(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .primary,
-                                                    ),
-                                                  ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        phone: false,
+                                      ))
+                                        Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Flexible(
+                                              child: StreamBuilder<
+                                                  List<CoursesRecord>>(
+                                                stream: queryCoursesRecord(
+                                                  queryBuilder:
+                                                      (coursesRecord) =>
+                                                          coursesRecord
+                                                              .where(
+                                                                'course_type',
+                                                                isEqualTo: 1,
+                                                              )
+                                                              .where(
+                                                                'State',
+                                                                isEqualTo: true,
+                                                              )
+                                                              .orderBy(
+                                                                  'Created_Date',
+                                                                  descending:
+                                                                      true),
+                                                  limit: 10,
                                                 ),
-                                              );
-                                            }
-                                            List<CoursesRecord>
-                                                containerCoursesRecordList =
-                                                snapshot.data!;
+                                                builder: (context, snapshot) {
+                                                  // Customize what your widget looks like when it's loading.
+                                                  if (!snapshot.hasData) {
+                                                    return Center(
+                                                      child: SizedBox(
+                                                        width: 14.0,
+                                                        height: 14.0,
+                                                        child:
+                                                            CircularProgressIndicator(
+                                                          valueColor:
+                                                              AlwaysStoppedAnimation<
+                                                                  Color>(
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    );
+                                                  }
+                                                  List<CoursesRecord>
+                                                      containerCoursesRecordList =
+                                                      snapshot.data!;
 
-                                            return Container(
+                                                  return Container(
+                                                    width: double.infinity,
+                                                    height: 404.0,
+                                                    decoration: BoxDecoration(
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .secondaryBackground,
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              4.0),
+                                                    ),
+                                                    child: Builder(
+                                                      builder: (context) {
+                                                        if (containerCoursesRecordList
+                                                            .isNotEmpty) {
+                                                          return Column(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                            mainAxisAlignment:
+                                                                MainAxisAlignment
+                                                                    .start,
+                                                            crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .start,
+                                                            children: [
+                                                              Padding(
+                                                                padding: EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        20.0,
+                                                                        20.0,
+                                                                        20.0,
+                                                                        0.0),
+                                                                child: Column(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  crossAxisAlignment:
+                                                                      CrossAxisAlignment
+                                                                          .start,
+                                                                  children: [
+                                                                    Text(
+                                                                      'Cursos Recientes',
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Poppins',
+                                                                            color:
+                                                                                Color(0xFF094B90),
+                                                                            fontSize:
+                                                                                16.0,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FontWeight.w600,
+                                                                          ),
+                                                                    ),
+                                                                    Container(
+                                                                      width:
+                                                                          227.0,
+                                                                      height:
+                                                                          3.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .primary,
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(10.0),
+                                                                      ),
+                                                                    ),
+                                                                  ].divide(SizedBox(
+                                                                      height:
+                                                                          5.0)),
+                                                                ),
+                                                              ),
+                                                              Flexible(
+                                                                child:
+                                                                    SingleChildScrollView(
+                                                                  primary:
+                                                                      false,
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    children: [
+                                                                      Builder(
+                                                                        builder:
+                                                                            (context) {
+                                                                          final listCursosEstrenados =
+                                                                              containerCoursesRecordList.toList();
+
+                                                                          return ListView
+                                                                              .builder(
+                                                                            padding:
+                                                                                EdgeInsets.zero,
+                                                                            shrinkWrap:
+                                                                                true,
+                                                                            scrollDirection:
+                                                                                Axis.vertical,
+                                                                            itemCount:
+                                                                                listCursosEstrenados.length,
+                                                                            itemBuilder:
+                                                                                (context, listCursosEstrenadosIndex) {
+                                                                              final listCursosEstrenadosItem = listCursosEstrenados[listCursosEstrenadosIndex];
+                                                                              return Container(
+                                                                                decoration: BoxDecoration(),
+                                                                                child: Padding(
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Container(
+                                                                                        decoration: BoxDecoration(
+                                                                                          color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                        ),
+                                                                                        child: Padding(
+                                                                                          padding: EdgeInsets.all(20.0),
+                                                                                          child: Column(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Row(
+                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                children: [
+                                                                                                  Flexible(
+                                                                                                    child: Text(
+                                                                                                      listCursosEstrenadosItem.name,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontSize: 16.0,
+                                                                                                            letterSpacing: 0.0,
+                                                                                                            fontWeight: FontWeight.bold,
+                                                                                                          ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  InkWell(
+                                                                                                    splashColor: Colors.transparent,
+                                                                                                    focusColor: Colors.transparent,
+                                                                                                    hoverColor: Colors.transparent,
+                                                                                                    highlightColor: Colors.transparent,
+                                                                                                    onTap: () async {
+                                                                                                      _model.refCourseUser = await queryUsersCoursesRecordOnce(
+                                                                                                        queryBuilder: (usersCoursesRecord) => usersCoursesRecord
+                                                                                                            .where(
+                                                                                                              'uid_user',
+                                                                                                              isEqualTo: currentUserReference?.id,
+                                                                                                            )
+                                                                                                            .where(
+                                                                                                              'uid_courses',
+                                                                                                              isEqualTo: listCursosEstrenadosItem.reference.id,
+                                                                                                            ),
+                                                                                                        singleRecord: true,
+                                                                                                      ).then((s) => s.firstOrNull);
+                                                                                                      if (_model.refCourseUser != null) {
+                                                                                                        _model.refSessionStudent = await querySessionRecordOnce(
+                                                                                                          queryBuilder: (sessionRecord) => sessionRecord
+                                                                                                              .where(
+                                                                                                                'uid_Course',
+                                                                                                                isEqualTo: listCursosEstrenadosItem.reference.id,
+                                                                                                              )
+                                                                                                              .orderBy('Created_Date'),
+                                                                                                          singleRecord: true,
+                                                                                                        ).then((s) => s.firstOrNull);
+                                                                                                        if (_model.refSessionStudent != null) {
+                                                                                                          _model.refModulesCourse = await queryModuleRecordOnce(
+                                                                                                            queryBuilder: (moduleRecord) => moduleRecord
+                                                                                                                .where(
+                                                                                                                  'uid_Session',
+                                                                                                                  isEqualTo: _model.refSessionStudent?.reference.id,
+                                                                                                                )
+                                                                                                                .orderBy('Created_date'),
+                                                                                                            singleRecord: true,
+                                                                                                          ).then((s) => s.firstOrNull);
+                                                                                                          if (_model.refModulesCourse != null) {
+                                                                                                            _model.refClassCourse = await queryModuleClassRecordOnce(
+                                                                                                              queryBuilder: (moduleClassRecord) => moduleClassRecord
+                                                                                                                  .where(
+                                                                                                                    'uid_Module',
+                                                                                                                    isEqualTo: _model.refModulesCourse?.reference.id,
+                                                                                                                  )
+                                                                                                                  .orderBy('Created_date'),
+                                                                                                              singleRecord: true,
+                                                                                                            ).then((s) => s.firstOrNull);
+                                                                                                            if (_model.refClassCourse != null) {
+                                                                                                              _model.refUser = await queryUsersRecordOnce(
+                                                                                                                queryBuilder: (usersRecord) => usersRecord.where(
+                                                                                                                  'uid',
+                                                                                                                  isEqualTo: currentUserReference?.id,
+                                                                                                                ),
+                                                                                                                singleRecord: true,
+                                                                                                              ).then((s) => s.firstOrNull);
+
+                                                                                                              context.pushNamed(
+                                                                                                                CourseDatailsWidget.routeName,
+                                                                                                                queryParameters: {
+                                                                                                                  'refCourses': serializeParam(
+                                                                                                                    listCursosEstrenadosItem,
+                                                                                                                    ParamType.Document,
+                                                                                                                  ),
+                                                                                                                  'refCoursesClass': serializeParam(
+                                                                                                                    _model.refClassCourse,
+                                                                                                                    ParamType.Document,
+                                                                                                                  ),
+                                                                                                                  'refUser': serializeParam(
+                                                                                                                    _model.refUser,
+                                                                                                                    ParamType.Document,
+                                                                                                                  ),
+                                                                                                                }.withoutNulls,
+                                                                                                                extra: <String, dynamic>{
+                                                                                                                  'refCourses': listCursosEstrenadosItem,
+                                                                                                                  'refCoursesClass': _model.refClassCourse,
+                                                                                                                  'refUser': _model.refUser,
+                                                                                                                  kTransitionInfoKey: TransitionInfo(
+                                                                                                                    hasTransition: true,
+                                                                                                                    transitionType: PageTransitionType.fade,
+                                                                                                                    duration: Duration(milliseconds: 0),
+                                                                                                                  ),
+                                                                                                                },
+                                                                                                              );
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      } else {
+                                                                                                        context.pushNamed(
+                                                                                                          CoursePriceWidget.routeName,
+                                                                                                          queryParameters: {
+                                                                                                            'refCourse': serializeParam(
+                                                                                                              listCursosEstrenadosItem,
+                                                                                                              ParamType.Document,
+                                                                                                            ),
+                                                                                                          }.withoutNulls,
+                                                                                                          extra: <String, dynamic>{
+                                                                                                            'refCourse': listCursosEstrenadosItem,
+                                                                                                            kTransitionInfoKey: TransitionInfo(
+                                                                                                              hasTransition: true,
+                                                                                                              transitionType: PageTransitionType.fade,
+                                                                                                              duration: Duration(milliseconds: 0),
+                                                                                                            ),
+                                                                                                          },
+                                                                                                        );
+                                                                                                      }
+
+                                                                                                      safeSetState(() {});
+                                                                                                    },
+                                                                                                    child: Container(
+                                                                                                      decoration: BoxDecoration(
+                                                                                                        color: Color(0xFF094B90),
+                                                                                                        borderRadius: BorderRadius.circular(4.0),
+                                                                                                      ),
+                                                                                                      child: Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(15.0, 5.0, 15.0, 5.0),
+                                                                                                        child: Text(
+                                                                                                          'Ir',
+                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                fontFamily: 'Poppins',
+                                                                                                                color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                                                fontSize: 12.0,
+                                                                                                                letterSpacing: 0.0,
+                                                                                                              ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ].divide(SizedBox(width: 20.0)),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Container(
+                                                                                        width: double.infinity,
+                                                                                        height: 2.0,
+                                                                                        decoration: BoxDecoration(
+                                                                                          color: FlutterFlowTheme.of(context).alternate,
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ),
+                                                                              );
+                                                                            },
+                                                                          );
+                                                                        },
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ].divide(SizedBox(
+                                                                height: 10.0)),
+                                                          );
+                                                        } else {
+                                                          return wrapWithModel(
+                                                            model: _model
+                                                                .emptyCourseModel1,
+                                                            updateCallback: () =>
+                                                                safeSetState(
+                                                                    () {}),
+                                                            child:
+                                                                EmptyCourseWidget(),
+                                                          );
+                                                        }
+                                                      },
+                                                    ),
+                                                  );
+                                                },
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: StreamBuilder<
+                                                  List<CoursesRecord>>(
+                                                stream: queryCoursesRecord(
+                                                  queryBuilder:
+                                                      (coursesRecord) =>
+                                                          coursesRecord
+                                                              .where(
+                                                                'course_type',
+                                                                isEqualTo: 2,
+                                                              )
+                                                              .where(
+                                                                'State',
+                                                                isEqualTo: true,
+                                                              )
+                                                              .orderBy(
+                                                                  'Created_Date',
+                                                                  descending:
+                                                                      true),
+                                                  limit: 10,
+                                                ),
+                                                builder: (context, snapshot) {
+                                                  // Customize what your widget looks like when it's loading.
+                                                  if (!snapshot.hasData) {
+                                                    return Center(
+                                                      child: SizedBox(
+                                                        width: 14.0,
+                                                        height: 14.0,
+                                                        child:
+                                                            CircularProgressIndicator(
+                                                          valueColor:
+                                                              AlwaysStoppedAnimation<
+                                                                  Color>(
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    );
+                                                  }
+                                                  List<CoursesRecord>
+                                                      containerCoursesRecordList =
+                                                      snapshot.data!;
+
+                                                  return Container(
+                                                    width: double.infinity,
+                                                    height: 404.0,
+                                                    decoration: BoxDecoration(
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .secondaryBackground,
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              4.0),
+                                                    ),
+                                                    child: Builder(
+                                                      builder: (context) {
+                                                        if (containerCoursesRecordList
+                                                            .isNotEmpty) {
+                                                          return Column(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                            mainAxisAlignment:
+                                                                MainAxisAlignment
+                                                                    .start,
+                                                            crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .start,
+                                                            children: [
+                                                              Padding(
+                                                                padding: EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        20.0,
+                                                                        20.0,
+                                                                        20.0,
+                                                                        0.0),
+                                                                child: Column(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  crossAxisAlignment:
+                                                                      CrossAxisAlignment
+                                                                          .start,
+                                                                  children: [
+                                                                    InkWell(
+                                                                      splashColor:
+                                                                          Colors
+                                                                              .transparent,
+                                                                      focusColor:
+                                                                          Colors
+                                                                              .transparent,
+                                                                      hoverColor:
+                                                                          Colors
+                                                                              .transparent,
+                                                                      highlightColor:
+                                                                          Colors
+                                                                              .transparent,
+                                                                      onTap:
+                                                                          () async {
+                                                                        context.goNamed(
+                                                                            LoadingWidget.routeName);
+                                                                      },
+                                                                      child:
+                                                                          Text(
+                                                                        'Simuladores',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              fontFamily: 'Poppins',
+                                                                              color: Color(0xFF094B90),
+                                                                              fontSize: 16.0,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FontWeight.w600,
+                                                                            ),
+                                                                      ),
+                                                                    ),
+                                                                    Container(
+                                                                      width:
+                                                                          227.0,
+                                                                      height:
+                                                                          3.0,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .primary,
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(10.0),
+                                                                      ),
+                                                                    ),
+                                                                  ].divide(SizedBox(
+                                                                      height:
+                                                                          5.0)),
+                                                                ),
+                                                              ),
+                                                              Flexible(
+                                                                child:
+                                                                    SingleChildScrollView(
+                                                                  primary:
+                                                                      false,
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    children: [
+                                                                      Builder(
+                                                                        builder:
+                                                                            (context) {
+                                                                          final listExamenes =
+                                                                              containerCoursesRecordList.toList();
+
+                                                                          return ListView
+                                                                              .builder(
+                                                                            padding:
+                                                                                EdgeInsets.zero,
+                                                                            shrinkWrap:
+                                                                                true,
+                                                                            scrollDirection:
+                                                                                Axis.vertical,
+                                                                            itemCount:
+                                                                                listExamenes.length,
+                                                                            itemBuilder:
+                                                                                (context, listExamenesIndex) {
+                                                                              final listExamenesItem = listExamenes[listExamenesIndex];
+                                                                              return Container(
+                                                                                decoration: BoxDecoration(),
+                                                                                child: Padding(
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Container(
+                                                                                        decoration: BoxDecoration(
+                                                                                          color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                        ),
+                                                                                        child: Padding(
+                                                                                          padding: EdgeInsets.all(20.0),
+                                                                                          child: Column(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Row(
+                                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                                children: [
+                                                                                                  Flexible(
+                                                                                                    child: Text(
+                                                                                                      listExamenesItem.name,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontSize: 16.0,
+                                                                                                            letterSpacing: 0.0,
+                                                                                                            fontWeight: FontWeight.bold,
+                                                                                                          ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                  InkWell(
+                                                                                                    splashColor: Colors.transparent,
+                                                                                                    focusColor: Colors.transparent,
+                                                                                                    hoverColor: Colors.transparent,
+                                                                                                    highlightColor: Colors.transparent,
+                                                                                                    onTap: () async {
+                                                                                                      context.pushNamed(
+                                                                                                        SimulatorWidget.routeName,
+                                                                                                        queryParameters: {
+                                                                                                          'refCourse': serializeParam(
+                                                                                                            listExamenesItem,
+                                                                                                            ParamType.Document,
+                                                                                                          ),
+                                                                                                        }.withoutNulls,
+                                                                                                        extra: <String, dynamic>{
+                                                                                                          'refCourse': listExamenesItem,
+                                                                                                          kTransitionInfoKey: TransitionInfo(
+                                                                                                            hasTransition: true,
+                                                                                                            transitionType: PageTransitionType.fade,
+                                                                                                            duration: Duration(milliseconds: 0),
+                                                                                                          ),
+                                                                                                        },
+                                                                                                      );
+                                                                                                    },
+                                                                                                    child: Container(
+                                                                                                      decoration: BoxDecoration(
+                                                                                                        color: Color(0xFF094B90),
+                                                                                                        borderRadius: BorderRadius.circular(4.0),
+                                                                                                      ),
+                                                                                                      child: Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(15.0, 5.0, 15.0, 5.0),
+                                                                                                        child: Text(
+                                                                                                          'Ir',
+                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                fontFamily: 'Poppins',
+                                                                                                                color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                                                fontSize: 12.0,
+                                                                                                                letterSpacing: 0.0,
+                                                                                                              ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ].divide(SizedBox(width: 20.0)),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                      Container(
+                                                                                        width: double.infinity,
+                                                                                        height: 2.0,
+                                                                                        decoration: BoxDecoration(
+                                                                                          color: FlutterFlowTheme.of(context).alternate,
+                                                                                        ),
+                                                                                      ),
+                                                                                    ],
+                                                                                  ),
+                                                                                ),
+                                                                              );
+                                                                            },
+                                                                          );
+                                                                        },
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ].divide(SizedBox(
+                                                                height: 10.0)),
+                                                          );
+                                                        } else {
+                                                          return wrapWithModel(
+                                                            model: _model
+                                                                .emptyTestModel1,
+                                                            updateCallback: () =>
+                                                                safeSetState(
+                                                                    () {}),
+                                                            child:
+                                                                EmptyTestWidget(),
+                                                          );
+                                                        }
+                                                      },
+                                                    ),
+                                                  );
+                                                },
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Container(
+                                                width: double.infinity,
+                                                height: 404.0,
+                                                decoration: BoxDecoration(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          4.0),
+                                                ),
+                                                child: Builder(
+                                                  builder: (context) {
+                                                    if (_model.countGeneral
+                                                        .isNotEmpty) {
+                                                      return Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .start,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        20.0,
+                                                                        20.0,
+                                                                        20.0,
+                                                                        0.0),
+                                                            child: Column(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              crossAxisAlignment:
+                                                                  CrossAxisAlignment
+                                                                      .start,
+                                                              children: [
+                                                                Text(
+                                                                  'Registro de Preguntas',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Poppins',
+                                                                        color: Color(
+                                                                            0xFF094B90),
+                                                                        fontSize:
+                                                                            16.0,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                      ),
+                                                                ),
+                                                                Container(
+                                                                  width: 227.0,
+                                                                  height: 3.0,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            10.0),
+                                                                  ),
+                                                                ),
+                                                              ].divide(SizedBox(
+                                                                  height: 5.0)),
+                                                            ),
+                                                          ),
+                                                          Flexible(
+                                                            child: Column(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              children: [
+                                                                Flexible(
+                                                                  child:
+                                                                      Container(
+                                                                    width: double
+                                                                        .infinity,
+                                                                    height: double
+                                                                        .infinity,
+                                                                    decoration:
+                                                                        BoxDecoration(
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryBackground,
+                                                                    ),
+                                                                    child:
+                                                                        FlutterFlowPieChart(
+                                                                      data:
+                                                                          FFPieChartData(
+                                                                        values: _model
+                                                                            .countGeneral
+                                                                            .map((e) =>
+                                                                                e.number)
+                                                                            .toList(),
+                                                                        colors:
+                                                                            chartPieChartColorsList1,
+                                                                        radius: [
+                                                                          100.0
+                                                                        ],
+                                                                      ),
+                                                                      donutHoleRadius:
+                                                                          0.0,
+                                                                      donutHoleColor:
+                                                                          Colors
+                                                                              .transparent,
+                                                                      sectionLabelStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineSmall
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Poppins',
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                          ),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                                Padding(
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          20.0),
+                                                                  child: Row(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .center,
+                                                                    children: [
+                                                                      Flexible(
+                                                                        child:
+                                                                            Row(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.max,
+                                                                          mainAxisAlignment:
+                                                                              MainAxisAlignment.center,
+                                                                          children:
+                                                                              [
+                                                                            Container(
+                                                                              width: 10.0,
+                                                                              height: 10.0,
+                                                                              decoration: BoxDecoration(
+                                                                                color: Color(0xFF1C9E6C),
+                                                                              ),
+                                                                            ),
+                                                                            Flexible(
+                                                                              child: Text(
+                                                                                'Correctas',
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: 'Poppins',
+                                                                                      fontSize: 12.0,
+                                                                                      letterSpacing: 0.0,
+                                                                                      lineHeight: 1.0,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                          ].divide(SizedBox(width: 10.0)),
+                                                                        ),
+                                                                      ),
+                                                                      Flexible(
+                                                                        child:
+                                                                            Row(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.max,
+                                                                          mainAxisAlignment:
+                                                                              MainAxisAlignment.center,
+                                                                          children:
+                                                                              [
+                                                                            Container(
+                                                                              width: 10.0,
+                                                                              height: 10.0,
+                                                                              decoration: BoxDecoration(
+                                                                                color: Color(0xFFEA553D),
+                                                                              ),
+                                                                            ),
+                                                                            Flexible(
+                                                                              child: Text(
+                                                                                'Incorrectas',
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: 'Poppins',
+                                                                                      fontSize: 12.0,
+                                                                                      letterSpacing: 0.0,
+                                                                                      lineHeight: 1.0,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                          ].divide(SizedBox(width: 10.0)),
+                                                                        ),
+                                                                      ),
+                                                                      Flexible(
+                                                                        child:
+                                                                            Row(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.max,
+                                                                          mainAxisAlignment:
+                                                                              MainAxisAlignment.center,
+                                                                          children:
+                                                                              [
+                                                                            Container(
+                                                                              width: 10.0,
+                                                                              height: 10.0,
+                                                                              decoration: BoxDecoration(
+                                                                                color: Color(0xFF979797),
+                                                                              ),
+                                                                            ),
+                                                                            Flexible(
+                                                                              child: Text(
+                                                                                'Pendientes',
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: 'Poppins',
+                                                                                      fontSize: 12.0,
+                                                                                      letterSpacing: 0.0,
+                                                                                      lineHeight: 1.0,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                          ].divide(SizedBox(width: 10.0)),
+                                                                        ),
+                                                                      ),
+                                                                    ]
+                                                                        .divide(SizedBox(
+                                                                            width:
+                                                                                20.0))
+                                                                        .addToStart(SizedBox(
+                                                                            width:
+                                                                                10.0))
+                                                                        .addToEnd(SizedBox(
+                                                                            width:
+                                                                                10.0)),
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ].divide(SizedBox(
+                                                            height: 10.0)),
+                                                      );
+                                                    } else {
+                                                      return wrapWithModel(
+                                                        model: _model
+                                                            .emptyActividadesModel1,
+                                                        updateCallback: () =>
+                                                            safeSetState(() {}),
+                                                        child:
+                                                            EmptyActividadesWidget(),
+                                                      );
+                                                    }
+                                                  },
+                                                ),
+                                              ),
+                                            ),
+                                          ].divide(SizedBox(width: 50.0)),
+                                        ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tablet: false,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            StreamBuilder<List<CoursesRecord>>(
+                                              stream: queryCoursesRecord(
+                                                queryBuilder: (coursesRecord) =>
+                                                    coursesRecord
+                                                        .where(
+                                                          'course_type',
+                                                          isEqualTo: 1,
+                                                        )
+                                                        .where(
+                                                          'State',
+                                                          isEqualTo: true,
+                                                        )
+                                                        .orderBy('Created_Date',
+                                                            descending: true),
+                                                limit: 10,
+                                              ),
+                                              builder: (context, snapshot) {
+                                                // Customize what your widget looks like when it's loading.
+                                                if (!snapshot.hasData) {
+                                                  return Center(
+                                                    child: SizedBox(
+                                                      width: 14.0,
+                                                      height: 14.0,
+                                                      child:
+                                                          CircularProgressIndicator(
+                                                        valueColor:
+                                                            AlwaysStoppedAnimation<
+                                                                Color>(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  );
+                                                }
+                                                List<CoursesRecord>
+                                                    containerCoursesRecordList =
+                                                    snapshot.data!;
+
+                                                return Container(
+                                                  width: double.infinity,
+                                                  height: 404.0,
+                                                  decoration: BoxDecoration(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryBackground,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            4.0),
+                                                  ),
+                                                  child: Builder(
+                                                    builder: (context) {
+                                                      if (containerCoursesRecordList
+                                                          .isNotEmpty) {
+                                                        return Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          20.0,
+                                                                          20.0,
+                                                                          20.0,
+                                                                          0.0),
+                                                              child: Column(
+                                                                mainAxisSize:
+                                                                    MainAxisSize
+                                                                        .max,
+                                                                crossAxisAlignment:
+                                                                    CrossAxisAlignment
+                                                                        .start,
+                                                                children: [
+                                                                  Text(
+                                                                    'Cursos Recientes',
+                                                                    style: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .override(
+                                                                          fontFamily:
+                                                                              'Poppins',
+                                                                          color:
+                                                                              Color(0xFF094B90),
+                                                                          fontSize:
+                                                                              16.0,
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                          fontWeight:
+                                                                              FontWeight.w600,
+                                                                        ),
+                                                                  ),
+                                                                  Container(
+                                                                    width:
+                                                                        227.0,
+                                                                    height: 3.0,
+                                                                    decoration:
+                                                                        BoxDecoration(
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary,
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
+                                                                              10.0),
+                                                                    ),
+                                                                  ),
+                                                                ].divide(SizedBox(
+                                                                    height:
+                                                                        5.0)),
+                                                              ),
+                                                            ),
+                                                            Flexible(
+                                                              child:
+                                                                  SingleChildScrollView(
+                                                                primary: false,
+                                                                child: Column(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Builder(
+                                                                      builder:
+                                                                          (context) {
+                                                                        final listCursosEstrenados =
+                                                                            containerCoursesRecordList.toList();
+
+                                                                        return ListView
+                                                                            .builder(
+                                                                          padding:
+                                                                              EdgeInsets.zero,
+                                                                          shrinkWrap:
+                                                                              true,
+                                                                          scrollDirection:
+                                                                              Axis.vertical,
+                                                                          itemCount:
+                                                                              listCursosEstrenados.length,
+                                                                          itemBuilder:
+                                                                              (context, listCursosEstrenadosIndex) {
+                                                                            final listCursosEstrenadosItem =
+                                                                                listCursosEstrenados[listCursosEstrenadosIndex];
+                                                                            return Container(
+                                                                              decoration: BoxDecoration(),
+                                                                              child: Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                                                                                child: Column(
+                                                                                  mainAxisSize: MainAxisSize.max,
+                                                                                  children: [
+                                                                                    Container(
+                                                                                      decoration: BoxDecoration(
+                                                                                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                      ),
+                                                                                      child: Padding(
+                                                                                        padding: EdgeInsets.all(20.0),
+                                                                                        child: Column(
+                                                                                          mainAxisSize: MainAxisSize.max,
+                                                                                          children: [
+                                                                                            Row(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                              children: [
+                                                                                                Flexible(
+                                                                                                  child: Text(
+                                                                                                    listCursosEstrenadosItem.name,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontSize: 16.0,
+                                                                                                          letterSpacing: 0.0,
+                                                                                                          fontWeight: FontWeight.bold,
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                ),
+                                                                                                InkWell(
+                                                                                                  splashColor: Colors.transparent,
+                                                                                                  focusColor: Colors.transparent,
+                                                                                                  hoverColor: Colors.transparent,
+                                                                                                  highlightColor: Colors.transparent,
+                                                                                                  onTap: () async {
+                                                                                                    _model.refCourseUserMobil = await queryUsersCoursesRecordOnce(
+                                                                                                      queryBuilder: (usersCoursesRecord) => usersCoursesRecord
+                                                                                                          .where(
+                                                                                                            'uid_user',
+                                                                                                            isEqualTo: currentUserReference?.id,
+                                                                                                          )
+                                                                                                          .where(
+                                                                                                            'uid_courses',
+                                                                                                            isEqualTo: listCursosEstrenadosItem.reference.id,
+                                                                                                          ),
+                                                                                                      singleRecord: true,
+                                                                                                    ).then((s) => s.firstOrNull);
+                                                                                                    if (_model.refCourseUserMobil != null) {
+                                                                                                      _model.refSessionStudentMobil = await querySessionRecordOnce(
+                                                                                                        queryBuilder: (sessionRecord) => sessionRecord
+                                                                                                            .where(
+                                                                                                              'uid_Course',
+                                                                                                              isEqualTo: listCursosEstrenadosItem.reference.id,
+                                                                                                            )
+                                                                                                            .orderBy('Created_Date'),
+                                                                                                        singleRecord: true,
+                                                                                                      ).then((s) => s.firstOrNull);
+                                                                                                      if (_model.refSessionStudentMobil != null) {
+                                                                                                        _model.refModulesCourseMobil = await queryModuleRecordOnce(
+                                                                                                          queryBuilder: (moduleRecord) => moduleRecord
+                                                                                                              .where(
+                                                                                                                'uid_Session',
+                                                                                                                isEqualTo: _model.refSessionStudentMobil?.reference.id,
+                                                                                                              )
+                                                                                                              .orderBy('Created_date'),
+                                                                                                          singleRecord: true,
+                                                                                                        ).then((s) => s.firstOrNull);
+                                                                                                        if (_model.refModulesCourseMobil != null) {
+                                                                                                          _model.refClassCourseMobil = await queryModuleClassRecordOnce(
+                                                                                                            queryBuilder: (moduleClassRecord) => moduleClassRecord
+                                                                                                                .where(
+                                                                                                                  'uid_Module',
+                                                                                                                  isEqualTo: _model.refModulesCourseMobil?.reference.id,
+                                                                                                                )
+                                                                                                                .orderBy('Created_date'),
+                                                                                                            singleRecord: true,
+                                                                                                          ).then((s) => s.firstOrNull);
+                                                                                                          if (_model.refClassCourseMobil != null) {
+                                                                                                            _model.refUserMobil = await queryUsersRecordOnce(
+                                                                                                              queryBuilder: (usersRecord) => usersRecord.where(
+                                                                                                                'uid',
+                                                                                                                isEqualTo: currentUserReference?.id,
+                                                                                                              ),
+                                                                                                              singleRecord: true,
+                                                                                                            ).then((s) => s.firstOrNull);
+
+                                                                                                            context.pushNamed(
+                                                                                                              CourseDatailsWidget.routeName,
+                                                                                                              queryParameters: {
+                                                                                                                'refCourses': serializeParam(
+                                                                                                                  listCursosEstrenadosItem,
+                                                                                                                  ParamType.Document,
+                                                                                                                ),
+                                                                                                                'refCoursesClass': serializeParam(
+                                                                                                                  _model.refClassCourseMobil,
+                                                                                                                  ParamType.Document,
+                                                                                                                ),
+                                                                                                                'refUser': serializeParam(
+                                                                                                                  _model.refUserMobil,
+                                                                                                                  ParamType.Document,
+                                                                                                                ),
+                                                                                                              }.withoutNulls,
+                                                                                                              extra: <String, dynamic>{
+                                                                                                                'refCourses': listCursosEstrenadosItem,
+                                                                                                                'refCoursesClass': _model.refClassCourseMobil,
+                                                                                                                'refUser': _model.refUserMobil,
+                                                                                                                kTransitionInfoKey: TransitionInfo(
+                                                                                                                  hasTransition: true,
+                                                                                                                  transitionType: PageTransitionType.fade,
+                                                                                                                  duration: Duration(milliseconds: 0),
+                                                                                                                ),
+                                                                                                              },
+                                                                                                            );
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    } else {
+                                                                                                      context.pushNamed(
+                                                                                                        CoursePriceWidget.routeName,
+                                                                                                        queryParameters: {
+                                                                                                          'refCourse': serializeParam(
+                                                                                                            listCursosEstrenadosItem,
+                                                                                                            ParamType.Document,
+                                                                                                          ),
+                                                                                                        }.withoutNulls,
+                                                                                                        extra: <String, dynamic>{
+                                                                                                          'refCourse': listCursosEstrenadosItem,
+                                                                                                          kTransitionInfoKey: TransitionInfo(
+                                                                                                            hasTransition: true,
+                                                                                                            transitionType: PageTransitionType.fade,
+                                                                                                            duration: Duration(milliseconds: 0),
+                                                                                                          ),
+                                                                                                        },
+                                                                                                      );
+                                                                                                    }
+
+                                                                                                    safeSetState(() {});
+                                                                                                  },
+                                                                                                  child: Container(
+                                                                                                    decoration: BoxDecoration(
+                                                                                                      color: Color(0xFF094B90),
+                                                                                                      borderRadius: BorderRadius.circular(4.0),
+                                                                                                    ),
+                                                                                                    child: Padding(
+                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(15.0, 5.0, 15.0, 5.0),
+                                                                                                      child: Text(
+                                                                                                        'Ir',
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                              fontFamily: 'Poppins',
+                                                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                                              fontSize: 12.0,
+                                                                                                              letterSpacing: 0.0,
+                                                                                                            ),
+                                                                                                      ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ].divide(SizedBox(width: 20.0)),
+                                                                                            ),
+                                                                                          ],
+                                                                                        ),
+                                                                                      ),
+                                                                                    ),
+                                                                                    Container(
+                                                                                      width: double.infinity,
+                                                                                      height: 2.0,
+                                                                                      decoration: BoxDecoration(
+                                                                                        color: FlutterFlowTheme.of(context).alternate,
+                                                                                      ),
+                                                                                    ),
+                                                                                  ],
+                                                                                ),
+                                                                              ),
+                                                                            );
+                                                                          },
+                                                                        );
+                                                                      },
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              height: 10.0)),
+                                                        );
+                                                      } else {
+                                                        return wrapWithModel(
+                                                          model: _model
+                                                              .emptyCourseModel2,
+                                                          updateCallback: () =>
+                                                              safeSetState(
+                                                                  () {}),
+                                                          child:
+                                                              EmptyCourseWidget(),
+                                                        );
+                                                      }
+                                                    },
+                                                  ),
+                                                );
+                                              },
+                                            ),
+                                            StreamBuilder<List<CoursesRecord>>(
+                                              stream: queryCoursesRecord(
+                                                queryBuilder: (coursesRecord) =>
+                                                    coursesRecord
+                                                        .where(
+                                                          'course_type',
+                                                          isEqualTo: 2,
+                                                        )
+                                                        .where(
+                                                          'State',
+                                                          isEqualTo: true,
+                                                        )
+                                                        .orderBy('Created_Date',
+                                                            descending: true),
+                                                limit: 10,
+                                              ),
+                                              builder: (context, snapshot) {
+                                                // Customize what your widget looks like when it's loading.
+                                                if (!snapshot.hasData) {
+                                                  return Center(
+                                                    child: SizedBox(
+                                                      width: 14.0,
+                                                      height: 14.0,
+                                                      child:
+                                                          CircularProgressIndicator(
+                                                        valueColor:
+                                                            AlwaysStoppedAnimation<
+                                                                Color>(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  );
+                                                }
+                                                List<CoursesRecord>
+                                                    containerCoursesRecordList =
+                                                    snapshot.data!;
+
+                                                return Container(
+                                                  width: double.infinity,
+                                                  height: 404.0,
+                                                  decoration: BoxDecoration(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryBackground,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            4.0),
+                                                  ),
+                                                  child: Builder(
+                                                    builder: (context) {
+                                                      if (containerCoursesRecordList
+                                                          .isNotEmpty) {
+                                                        return Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          20.0,
+                                                                          20.0,
+                                                                          20.0,
+                                                                          0.0),
+                                                              child: Column(
+                                                                mainAxisSize:
+                                                                    MainAxisSize
+                                                                        .max,
+                                                                crossAxisAlignment:
+                                                                    CrossAxisAlignment
+                                                                        .start,
+                                                                children: [
+                                                                  InkWell(
+                                                                    splashColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    focusColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    hoverColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    highlightColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    onTap:
+                                                                        () async {
+                                                                      context.goNamed(
+                                                                          LoadingWidget
+                                                                              .routeName);
+                                                                    },
+                                                                    child: Text(
+                                                                      'Simuladores',
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Poppins',
+                                                                            color:
+                                                                                Color(0xFF094B90),
+                                                                            fontSize:
+                                                                                16.0,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FontWeight.w600,
+                                                                          ),
+                                                                    ),
+                                                                  ),
+                                                                  Container(
+                                                                    width:
+                                                                        227.0,
+                                                                    height: 3.0,
+                                                                    decoration:
+                                                                        BoxDecoration(
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary,
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
+                                                                              10.0),
+                                                                    ),
+                                                                  ),
+                                                                ].divide(SizedBox(
+                                                                    height:
+                                                                        5.0)),
+                                                              ),
+                                                            ),
+                                                            Flexible(
+                                                              child:
+                                                                  SingleChildScrollView(
+                                                                primary: false,
+                                                                child: Column(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Builder(
+                                                                      builder:
+                                                                          (context) {
+                                                                        final listExamenes =
+                                                                            containerCoursesRecordList.toList();
+
+                                                                        return ListView
+                                                                            .builder(
+                                                                          padding:
+                                                                              EdgeInsets.zero,
+                                                                          shrinkWrap:
+                                                                              true,
+                                                                          scrollDirection:
+                                                                              Axis.vertical,
+                                                                          itemCount:
+                                                                              listExamenes.length,
+                                                                          itemBuilder:
+                                                                              (context, listExamenesIndex) {
+                                                                            final listExamenesItem =
+                                                                                listExamenes[listExamenesIndex];
+                                                                            return Container(
+                                                                              decoration: BoxDecoration(),
+                                                                              child: Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                                                                                child: Column(
+                                                                                  mainAxisSize: MainAxisSize.max,
+                                                                                  children: [
+                                                                                    Container(
+                                                                                      decoration: BoxDecoration(
+                                                                                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                      ),
+                                                                                      child: Padding(
+                                                                                        padding: EdgeInsets.all(20.0),
+                                                                                        child: Column(
+                                                                                          mainAxisSize: MainAxisSize.max,
+                                                                                          children: [
+                                                                                            Row(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                              children: [
+                                                                                                Flexible(
+                                                                                                  child: Text(
+                                                                                                    listExamenesItem.name,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontSize: 16.0,
+                                                                                                          letterSpacing: 0.0,
+                                                                                                          fontWeight: FontWeight.bold,
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                ),
+                                                                                                InkWell(
+                                                                                                  splashColor: Colors.transparent,
+                                                                                                  focusColor: Colors.transparent,
+                                                                                                  hoverColor: Colors.transparent,
+                                                                                                  highlightColor: Colors.transparent,
+                                                                                                  onTap: () async {
+                                                                                                    context.pushNamed(
+                                                                                                      SimulatorWidget.routeName,
+                                                                                                      queryParameters: {
+                                                                                                        'refCourse': serializeParam(
+                                                                                                          listExamenesItem,
+                                                                                                          ParamType.Document,
+                                                                                                        ),
+                                                                                                      }.withoutNulls,
+                                                                                                      extra: <String, dynamic>{
+                                                                                                        'refCourse': listExamenesItem,
+                                                                                                        kTransitionInfoKey: TransitionInfo(
+                                                                                                          hasTransition: true,
+                                                                                                          transitionType: PageTransitionType.fade,
+                                                                                                          duration: Duration(milliseconds: 0),
+                                                                                                        ),
+                                                                                                      },
+                                                                                                    );
+                                                                                                  },
+                                                                                                  child: Container(
+                                                                                                    decoration: BoxDecoration(
+                                                                                                      color: Color(0xFF094B90),
+                                                                                                      borderRadius: BorderRadius.circular(4.0),
+                                                                                                    ),
+                                                                                                    child: Padding(
+                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(15.0, 5.0, 15.0, 5.0),
+                                                                                                      child: Text(
+                                                                                                        'Ir',
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                              fontFamily: 'Poppins',
+                                                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                                              fontSize: 12.0,
+                                                                                                              letterSpacing: 0.0,
+                                                                                                            ),
+                                                                                                      ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ].divide(SizedBox(width: 20.0)),
+                                                                                            ),
+                                                                                          ],
+                                                                                        ),
+                                                                                      ),
+                                                                                    ),
+                                                                                    Container(
+                                                                                      width: double.infinity,
+                                                                                      height: 2.0,
+                                                                                      decoration: BoxDecoration(
+                                                                                        color: FlutterFlowTheme.of(context).alternate,
+                                                                                      ),
+                                                                                    ),
+                                                                                  ],
+                                                                                ),
+                                                                              ),
+                                                                            );
+                                                                          },
+                                                                        );
+                                                                      },
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              height: 10.0)),
+                                                        );
+                                                      } else {
+                                                        return wrapWithModel(
+                                                          model: _model
+                                                              .emptyTestModel2,
+                                                          updateCallback: () =>
+                                                              safeSetState(
+                                                                  () {}),
+                                                          child:
+                                                              EmptyTestWidget(),
+                                                        );
+                                                      }
+                                                    },
+                                                  ),
+                                                );
+                                              },
+                                            ),
+                                            Container(
                                               width: double.infinity,
                                               height: 404.0,
                                               decoration: BoxDecoration(
@@ -185,7 +1713,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                               ),
                                               child: Builder(
                                                 builder: (context) {
-                                                  if (containerCoursesRecordList
+                                                  if (_model.countGeneral
                                                       .isNotEmpty) {
                                                     return Column(
                                                       mainAxisSize:
@@ -214,7 +1742,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                     .start,
                                                             children: [
                                                               Text(
-                                                                'Cursos Recientes',
+                                                                'Registro de Preguntas',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
@@ -251,655 +1779,45 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                           ),
                                                         ),
                                                         Flexible(
-                                                          child:
-                                                              SingleChildScrollView(
-                                                            primary: false,
-                                                            child: Column(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .max,
-                                                              children: [
-                                                                Builder(
-                                                                  builder:
-                                                                      (context) {
-                                                                    final listCursosEstrenados =
-                                                                        containerCoursesRecordList
-                                                                            .toList();
-
-                                                                    return ListView
-                                                                        .builder(
-                                                                      padding:
-                                                                          EdgeInsets
-                                                                              .zero,
-                                                                      shrinkWrap:
-                                                                          true,
-                                                                      scrollDirection:
-                                                                          Axis.vertical,
-                                                                      itemCount:
-                                                                          listCursosEstrenados
-                                                                              .length,
-                                                                      itemBuilder:
-                                                                          (context,
-                                                                              listCursosEstrenadosIndex) {
-                                                                        final listCursosEstrenadosItem =
-                                                                            listCursosEstrenados[listCursosEstrenadosIndex];
-                                                                        return Container(
-                                                                          decoration:
-                                                                              BoxDecoration(),
-                                                                          child:
-                                                                              Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
-                                                                                20.0,
-                                                                                0.0,
-                                                                                20.0,
-                                                                                0.0),
-                                                                            child:
-                                                                                Column(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
-                                                                                Container(
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                  ),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsets.all(20.0),
-                                                                                    child: Column(
-                                                                                      mainAxisSize: MainAxisSize.max,
-                                                                                      children: [
-                                                                                        Row(
-                                                                                          mainAxisSize: MainAxisSize.max,
-                                                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                          children: [
-                                                                                            Flexible(
-                                                                                              child: Text(
-                                                                                                listCursosEstrenadosItem.name,
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
-                                                                                                      fontSize: 16.0,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      fontWeight: FontWeight.bold,
-                                                                                                    ),
-                                                                                              ),
-                                                                                            ),
-                                                                                            InkWell(
-                                                                                              splashColor: Colors.transparent,
-                                                                                              focusColor: Colors.transparent,
-                                                                                              hoverColor: Colors.transparent,
-                                                                                              highlightColor: Colors.transparent,
-                                                                                              onTap: () async {
-                                                                                                _model.refCourseUser = await queryUsersCoursesRecordOnce(
-                                                                                                  queryBuilder: (usersCoursesRecord) => usersCoursesRecord
-                                                                                                      .where(
-                                                                                                        'uid_user',
-                                                                                                        isEqualTo: currentUserReference?.id,
-                                                                                                      )
-                                                                                                      .where(
-                                                                                                        'uid_courses',
-                                                                                                        isEqualTo: listCursosEstrenadosItem.reference.id,
-                                                                                                      ),
-                                                                                                  singleRecord: true,
-                                                                                                ).then((s) => s.firstOrNull);
-                                                                                                if (_model.refCourseUser != null) {
-                                                                                                  _model.refSessionStudent = await querySessionRecordOnce(
-                                                                                                    queryBuilder: (sessionRecord) => sessionRecord
-                                                                                                        .where(
-                                                                                                          'uid_Course',
-                                                                                                          isEqualTo: listCursosEstrenadosItem.reference.id,
-                                                                                                        )
-                                                                                                        .orderBy('Created_Date'),
-                                                                                                    singleRecord: true,
-                                                                                                  ).then((s) => s.firstOrNull);
-                                                                                                  if (_model.refSessionStudent != null) {
-                                                                                                    _model.refModulesCourse = await queryModuleRecordOnce(
-                                                                                                      queryBuilder: (moduleRecord) => moduleRecord
-                                                                                                          .where(
-                                                                                                            'uid_Session',
-                                                                                                            isEqualTo: _model.refSessionStudent?.reference.id,
-                                                                                                          )
-                                                                                                          .orderBy('Created_date'),
-                                                                                                      singleRecord: true,
-                                                                                                    ).then((s) => s.firstOrNull);
-                                                                                                    if (_model.refModulesCourse != null) {
-                                                                                                      _model.refClassCourse = await queryModuleClassRecordOnce(
-                                                                                                        queryBuilder: (moduleClassRecord) => moduleClassRecord
-                                                                                                            .where(
-                                                                                                              'uid_Module',
-                                                                                                              isEqualTo: _model.refModulesCourse?.reference.id,
-                                                                                                            )
-                                                                                                            .orderBy('Created_date'),
-                                                                                                        singleRecord: true,
-                                                                                                      ).then((s) => s.firstOrNull);
-                                                                                                      if (_model.refClassCourse != null) {
-                                                                                                        _model.refUser = await queryUsersRecordOnce(
-                                                                                                          queryBuilder: (usersRecord) => usersRecord.where(
-                                                                                                            'uid',
-                                                                                                            isEqualTo: currentUserReference?.id,
-                                                                                                          ),
-                                                                                                          singleRecord: true,
-                                                                                                        ).then((s) => s.firstOrNull);
-
-                                                                                                        context.pushNamed(
-                                                                                                          CourseDatailsWidget.routeName,
-                                                                                                          queryParameters: {
-                                                                                                            'refCourses': serializeParam(
-                                                                                                              listCursosEstrenadosItem,
-                                                                                                              ParamType.Document,
-                                                                                                            ),
-                                                                                                            'refCoursesClass': serializeParam(
-                                                                                                              _model.refClassCourse,
-                                                                                                              ParamType.Document,
-                                                                                                            ),
-                                                                                                            'refUser': serializeParam(
-                                                                                                              _model.refUser,
-                                                                                                              ParamType.Document,
-                                                                                                            ),
-                                                                                                          }.withoutNulls,
-                                                                                                          extra: <String, dynamic>{
-                                                                                                            'refCourses': listCursosEstrenadosItem,
-                                                                                                            'refCoursesClass': _model.refClassCourse,
-                                                                                                            'refUser': _model.refUser,
-                                                                                                            kTransitionInfoKey: TransitionInfo(
-                                                                                                              hasTransition: true,
-                                                                                                              transitionType: PageTransitionType.fade,
-                                                                                                              duration: Duration(milliseconds: 0),
-                                                                                                            ),
-                                                                                                          },
-                                                                                                        );
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                } else {
-                                                                                                  context.pushNamed(
-                                                                                                    CoursePriceWidget.routeName,
-                                                                                                    queryParameters: {
-                                                                                                      'refCourse': serializeParam(
-                                                                                                        listCursosEstrenadosItem,
-                                                                                                        ParamType.Document,
-                                                                                                      ),
-                                                                                                    }.withoutNulls,
-                                                                                                    extra: <String, dynamic>{
-                                                                                                      'refCourse': listCursosEstrenadosItem,
-                                                                                                      kTransitionInfoKey: TransitionInfo(
-                                                                                                        hasTransition: true,
-                                                                                                        transitionType: PageTransitionType.fade,
-                                                                                                        duration: Duration(milliseconds: 0),
-                                                                                                      ),
-                                                                                                    },
-                                                                                                  );
-                                                                                                }
-
-                                                                                                safeSetState(() {});
-                                                                                              },
-                                                                                              child: Container(
-                                                                                                decoration: BoxDecoration(
-                                                                                                  color: Color(0xFF094B90),
-                                                                                                  borderRadius: BorderRadius.circular(4.0),
-                                                                                                ),
-                                                                                                child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(15.0, 5.0, 15.0, 5.0),
-                                                                                                  child: Text(
-                                                                                                    'Ir',
-                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
-                                                                                                          color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                                          fontSize: 12.0,
-                                                                                                          letterSpacing: 0.0,
-                                                                                                        ),
-                                                                                                  ),
-                                                                                                ),
-                                                                                              ),
-                                                                                            ),
-                                                                                          ].divide(SizedBox(width: 20.0)),
-                                                                                        ),
-                                                                                      ],
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                                Container(
-                                                                                  width: double.infinity,
-                                                                                  height: 2.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).alternate,
-                                                                                  ),
-                                                                                ),
-                                                                              ],
-                                                                            ),
-                                                                          ),
-                                                                        );
-                                                                      },
-                                                                    );
-                                                                  },
-                                                                ),
-                                                              ],
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ].divide(SizedBox(
-                                                          height: 10.0)),
-                                                    );
-                                                  } else {
-                                                    return wrapWithModel(
-                                                      model: _model
-                                                          .emptyCourseModel,
-                                                      updateCallback: () =>
-                                                          safeSetState(() {}),
-                                                      child:
-                                                          EmptyCourseWidget(),
-                                                    );
-                                                  }
-                                                },
-                                              ),
-                                            );
-                                          },
-                                        ),
-                                      ),
-                                      Expanded(
-                                        child:
-                                            StreamBuilder<List<CoursesRecord>>(
-                                          stream: queryCoursesRecord(
-                                            queryBuilder: (coursesRecord) =>
-                                                coursesRecord
-                                                    .where(
-                                                      'course_type',
-                                                      isEqualTo: 2,
-                                                    )
-                                                    .where(
-                                                      'State',
-                                                      isEqualTo: true,
-                                                    )
-                                                    .orderBy('Created_Date',
-                                                        descending: true),
-                                            limit: 10,
-                                          ),
-                                          builder: (context, snapshot) {
-                                            // Customize what your widget looks like when it's loading.
-                                            if (!snapshot.hasData) {
-                                              return Center(
-                                                child: SizedBox(
-                                                  width: 14.0,
-                                                  height: 14.0,
-                                                  child:
-                                                      CircularProgressIndicator(
-                                                    valueColor:
-                                                        AlwaysStoppedAnimation<
-                                                            Color>(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .primary,
-                                                    ),
-                                                  ),
-                                                ),
-                                              );
-                                            }
-                                            List<CoursesRecord>
-                                                containerCoursesRecordList =
-                                                snapshot.data!;
-
-                                            return Container(
-                                              width: double.infinity,
-                                              height: 404.0,
-                                              decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
-                                                borderRadius:
-                                                    BorderRadius.circular(4.0),
-                                              ),
-                                              child: Builder(
-                                                builder: (context) {
-                                                  if (containerCoursesRecordList
-                                                      .isNotEmpty) {
-                                                    return Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .start,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      20.0,
-                                                                      20.0,
-                                                                      20.0,
-                                                                      0.0),
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
                                                                     .max,
-                                                            crossAxisAlignment:
-                                                                CrossAxisAlignment
-                                                                    .start,
                                                             children: [
-                                                              InkWell(
-                                                                splashColor: Colors
-                                                                    .transparent,
-                                                                focusColor: Colors
-                                                                    .transparent,
-                                                                hoverColor: Colors
-                                                                    .transparent,
-                                                                highlightColor:
-                                                                    Colors
-                                                                        .transparent,
-                                                                onTap:
-                                                                    () async {
-                                                                  context.goNamed(
-                                                                      LoadingWidget
-                                                                          .routeName);
-                                                                },
-                                                                child: Text(
-                                                                  'Simuladores',
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .override(
-                                                                        fontFamily:
-                                                                            'Poppins',
-                                                                        color: Color(
-                                                                            0xFF094B90),
-                                                                        fontSize:
-                                                                            16.0,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                        fontWeight:
-                                                                            FontWeight.w600,
-                                                                      ),
-                                                                ),
-                                                              ),
-                                                              Container(
-                                                                width: 227.0,
-                                                                height: 3.0,
-                                                                decoration:
-                                                                    BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primary,
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              10.0),
-                                                                ),
-                                                              ),
-                                                            ].divide(SizedBox(
-                                                                height: 5.0)),
-                                                          ),
-                                                        ),
-                                                        Flexible(
-                                                          child:
-                                                              SingleChildScrollView(
-                                                            primary: false,
-                                                            child: Column(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .max,
-                                                              children: [
-                                                                Builder(
-                                                                  builder:
-                                                                      (context) {
-                                                                    final listExamenes =
-                                                                        containerCoursesRecordList
-                                                                            .toList();
-
-                                                                    return ListView
-                                                                        .builder(
-                                                                      padding:
-                                                                          EdgeInsets
-                                                                              .zero,
-                                                                      shrinkWrap:
-                                                                          true,
-                                                                      scrollDirection:
-                                                                          Axis.vertical,
-                                                                      itemCount:
-                                                                          listExamenes
-                                                                              .length,
-                                                                      itemBuilder:
-                                                                          (context,
-                                                                              listExamenesIndex) {
-                                                                        final listExamenesItem =
-                                                                            listExamenes[listExamenesIndex];
-                                                                        return Container(
-                                                                          decoration:
-                                                                              BoxDecoration(),
-                                                                          child:
-                                                                              Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
-                                                                                20.0,
-                                                                                0.0,
-                                                                                20.0,
-                                                                                0.0),
-                                                                            child:
-                                                                                Column(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              children: [
-                                                                                Container(
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                  ),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsets.all(20.0),
-                                                                                    child: Column(
-                                                                                      mainAxisSize: MainAxisSize.max,
-                                                                                      children: [
-                                                                                        Row(
-                                                                                          mainAxisSize: MainAxisSize.max,
-                                                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                          children: [
-                                                                                            Flexible(
-                                                                                              child: Text(
-                                                                                                listExamenesItem.name,
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
-                                                                                                      fontSize: 16.0,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      fontWeight: FontWeight.bold,
-                                                                                                    ),
-                                                                                              ),
-                                                                                            ),
-                                                                                            InkWell(
-                                                                                              splashColor: Colors.transparent,
-                                                                                              focusColor: Colors.transparent,
-                                                                                              hoverColor: Colors.transparent,
-                                                                                              highlightColor: Colors.transparent,
-                                                                                              onTap: () async {
-                                                                                                context.pushNamed(
-                                                                                                  SimulatorWidget.routeName,
-                                                                                                  queryParameters: {
-                                                                                                    'refCourse': serializeParam(
-                                                                                                      listExamenesItem,
-                                                                                                      ParamType.Document,
-                                                                                                    ),
-                                                                                                  }.withoutNulls,
-                                                                                                  extra: <String, dynamic>{
-                                                                                                    'refCourse': listExamenesItem,
-                                                                                                    kTransitionInfoKey: TransitionInfo(
-                                                                                                      hasTransition: true,
-                                                                                                      transitionType: PageTransitionType.fade,
-                                                                                                      duration: Duration(milliseconds: 0),
-                                                                                                    ),
-                                                                                                  },
-                                                                                                );
-                                                                                              },
-                                                                                              child: Container(
-                                                                                                decoration: BoxDecoration(
-                                                                                                  color: Color(0xFF094B90),
-                                                                                                  borderRadius: BorderRadius.circular(4.0),
-                                                                                                ),
-                                                                                                child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(15.0, 5.0, 15.0, 5.0),
-                                                                                                  child: Text(
-                                                                                                    'Ir',
-                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
-                                                                                                          color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                                          fontSize: 12.0,
-                                                                                                          letterSpacing: 0.0,
-                                                                                                        ),
-                                                                                                  ),
-                                                                                                ),
-                                                                                              ),
-                                                                                            ),
-                                                                                          ].divide(SizedBox(width: 20.0)),
-                                                                                        ),
-                                                                                      ],
-                                                                                    ),
-                                                                                  ),
-                                                                                ),
-                                                                                Container(
-                                                                                  width: double.infinity,
-                                                                                  height: 2.0,
-                                                                                  decoration: BoxDecoration(
-                                                                                    color: FlutterFlowTheme.of(context).alternate,
-                                                                                  ),
-                                                                                ),
-                                                                              ],
-                                                                            ),
-                                                                          ),
-                                                                        );
-                                                                      },
-                                                                    );
-                                                                  },
-                                                                ),
-                                                              ],
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ].divide(SizedBox(
-                                                          height: 10.0)),
-                                                    );
-                                                  } else {
-                                                    return wrapWithModel(
-                                                      model:
-                                                          _model.emptyTestModel,
-                                                      updateCallback: () =>
-                                                          safeSetState(() {}),
-                                                      child: EmptyTestWidget(),
-                                                    );
-                                                  }
-                                                },
-                                              ),
-                                            );
-                                          },
-                                        ),
-                                      ),
-                                      Expanded(
-                                        child: Container(
-                                          width: double.infinity,
-                                          height: 404.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                            borderRadius:
-                                                BorderRadius.circular(4.0),
-                                          ),
-                                          child: Builder(
-                                            builder: (context) {
-                                              if (_model
-                                                  .countGeneral.isNotEmpty) {
-                                                return Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.start,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  20.0,
-                                                                  20.0,
-                                                                  20.0,
-                                                                  0.0),
-                                                      child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          Text(
-                                                            'Registro de Preguntas',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Poppins',
-                                                                  color: Color(
-                                                                      0xFF094B90),
-                                                                  fontSize:
-                                                                      16.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
-                                                                ),
-                                                          ),
-                                                          Container(
-                                                            width: 227.0,
-                                                            height: 3.0,
-                                                            decoration:
-                                                                BoxDecoration(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          10.0),
-                                                            ),
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            height: 5.0)),
-                                                      ),
-                                                    ),
-                                                    Flexible(
-                                                      child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Flexible(
-                                                            child: Container(
-                                                              width: double
-                                                                  .infinity,
-                                                              height: double
-                                                                  .infinity,
-                                                              decoration:
-                                                                  BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .secondaryBackground,
-                                                              ),
-                                                              child:
-                                                                  FlutterFlowPieChart(
-                                                                data:
-                                                                    FFPieChartData(
-                                                                  values: _model
-                                                                      .countGeneral
-                                                                      .map((e) =>
-                                                                          e.number)
-                                                                      .toList(),
-                                                                  colors:
-                                                                      chartPieChartColorsList1,
-                                                                  radius: [
-                                                                    100.0
-                                                                  ],
-                                                                ),
-                                                                donutHoleRadius:
-                                                                    0.0,
-                                                                donutHoleColor:
-                                                                    Colors
-                                                                        .transparent,
-                                                                sectionLabelStyle:
-                                                                    FlutterFlowTheme.of(
+                                                              Flexible(
+                                                                child:
+                                                                    Container(
+                                                                  width: double
+                                                                      .infinity,
+                                                                  height: double
+                                                                      .infinity,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryBackground,
+                                                                  ),
+                                                                  child:
+                                                                      FlutterFlowPieChart(
+                                                                    data:
+                                                                        FFPieChartData(
+                                                                      values: _model
+                                                                          .countGeneral
+                                                                          .map((e) =>
+                                                                              e.number)
+                                                                          .toList(),
+                                                                      colors:
+                                                                          chartPieChartColorsList2,
+                                                                      radius: [
+                                                                        100.0
+                                                                      ],
+                                                                    ),
+                                                                    donutHoleRadius:
+                                                                        0.0,
+                                                                    donutHoleColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    sectionLabelStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .headlineSmall
                                                                         .override(
@@ -908,177 +1826,162 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
+                                                                  ),
+                                                                ),
                                                               ),
-                                                            ),
-                                                          ),
-                                                          Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        20.0),
-                                                            child: Row(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .max,
-                                                              mainAxisAlignment:
-                                                                  MainAxisAlignment
-                                                                      .center,
-                                                              children: [
-                                                                Flexible(
-                                                                  child: Row(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    mainAxisAlignment:
-                                                                        MainAxisAlignment
-                                                                            .center,
-                                                                    children: [
-                                                                      Container(
-                                                                        width:
-                                                                            10.0,
-                                                                        height:
-                                                                            10.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              Color(0xFF1C9E6C),
-                                                                        ),
+                                                              Padding(
+                                                                padding:
+                                                                    EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            20.0),
+                                                                child: Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    Flexible(
+                                                                      child:
+                                                                          Row(
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
+                                                                        mainAxisAlignment:
+                                                                            MainAxisAlignment.center,
+                                                                        children:
+                                                                            [
+                                                                          Container(
+                                                                            width:
+                                                                                10.0,
+                                                                            height:
+                                                                                10.0,
+                                                                            decoration:
+                                                                                BoxDecoration(
+                                                                              color: Color(0xFF1C9E6C),
+                                                                            ),
+                                                                          ),
+                                                                          Flexible(
+                                                                            child:
+                                                                                Text(
+                                                                              'Correctas',
+                                                                              textAlign: TextAlign.start,
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                    fontFamily: 'Poppins',
+                                                                                    fontSize: 12.0,
+                                                                                    letterSpacing: 0.0,
+                                                                                    lineHeight: 1.0,
+                                                                                  ),
+                                                                            ),
+                                                                          ),
+                                                                        ].divide(SizedBox(width: 10.0)),
                                                                       ),
-                                                                      Flexible(
-                                                                        child:
-                                                                            Text(
-                                                                          'Correctas',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Poppins',
-                                                                                fontSize: 12.0,
-                                                                                letterSpacing: 0.0,
-                                                                                lineHeight: 1.0,
-                                                                              ),
-                                                                        ),
+                                                                    ),
+                                                                    Flexible(
+                                                                      child:
+                                                                          Row(
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
+                                                                        mainAxisAlignment:
+                                                                            MainAxisAlignment.center,
+                                                                        children:
+                                                                            [
+                                                                          Container(
+                                                                            width:
+                                                                                10.0,
+                                                                            height:
+                                                                                10.0,
+                                                                            decoration:
+                                                                                BoxDecoration(
+                                                                              color: Color(0xFFEA553D),
+                                                                            ),
+                                                                          ),
+                                                                          Flexible(
+                                                                            child:
+                                                                                Text(
+                                                                              'Incorrectas',
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                    fontFamily: 'Poppins',
+                                                                                    fontSize: 12.0,
+                                                                                    letterSpacing: 0.0,
+                                                                                    lineHeight: 1.0,
+                                                                                  ),
+                                                                            ),
+                                                                          ),
+                                                                        ].divide(SizedBox(width: 10.0)),
                                                                       ),
-                                                                    ].divide(SizedBox(
-                                                                        width:
-                                                                            10.0)),
-                                                                  ),
-                                                                ),
-                                                                Flexible(
-                                                                  child: Row(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    mainAxisAlignment:
-                                                                        MainAxisAlignment
-                                                                            .center,
-                                                                    children: [
-                                                                      Container(
-                                                                        width:
-                                                                            10.0,
-                                                                        height:
-                                                                            10.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              Color(0xFFEA553D),
-                                                                        ),
+                                                                    ),
+                                                                    Flexible(
+                                                                      child:
+                                                                          Row(
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
+                                                                        mainAxisAlignment:
+                                                                            MainAxisAlignment.center,
+                                                                        children:
+                                                                            [
+                                                                          Container(
+                                                                            width:
+                                                                                10.0,
+                                                                            height:
+                                                                                10.0,
+                                                                            decoration:
+                                                                                BoxDecoration(
+                                                                              color: Color(0xFF979797),
+                                                                            ),
+                                                                          ),
+                                                                          Flexible(
+                                                                            child:
+                                                                                Text(
+                                                                              'Pendientes',
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                    fontFamily: 'Poppins',
+                                                                                    fontSize: 12.0,
+                                                                                    letterSpacing: 0.0,
+                                                                                    lineHeight: 1.0,
+                                                                                  ),
+                                                                            ),
+                                                                          ),
+                                                                        ].divide(SizedBox(width: 10.0)),
                                                                       ),
-                                                                      Flexible(
-                                                                        child:
-                                                                            Text(
-                                                                          'Incorrectas',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Poppins',
-                                                                                fontSize: 12.0,
-                                                                                letterSpacing: 0.0,
-                                                                                lineHeight: 1.0,
-                                                                              ),
-                                                                        ),
-                                                                      ),
-                                                                    ].divide(SizedBox(
-                                                                        width:
-                                                                            10.0)),
-                                                                  ),
-                                                                ),
-                                                                Flexible(
-                                                                  child: Row(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    mainAxisAlignment:
-                                                                        MainAxisAlignment
-                                                                            .center,
-                                                                    children: [
-                                                                      Container(
-                                                                        width:
-                                                                            10.0,
-                                                                        height:
-                                                                            10.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              Color(0xFF979797),
-                                                                        ),
-                                                                      ),
-                                                                      Flexible(
-                                                                        child:
-                                                                            Text(
-                                                                          'Pendientes',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Poppins',
-                                                                                fontSize: 12.0,
-                                                                                letterSpacing: 0.0,
-                                                                                lineHeight: 1.0,
-                                                                              ),
-                                                                        ),
-                                                                      ),
-                                                                    ].divide(SizedBox(
-                                                                        width:
-                                                                            10.0)),
-                                                                  ),
-                                                                ),
-                                                              ]
-                                                                  .divide(SizedBox(
-                                                                      width:
-                                                                          20.0))
-                                                                  .addToStart(
-                                                                      SizedBox(
+                                                                    ),
+                                                                  ]
+                                                                      .divide(SizedBox(
+                                                                          width:
+                                                                              20.0))
+                                                                      .addToStart(SizedBox(
                                                                           width:
                                                                               10.0))
-                                                                  .addToEnd(
-                                                                      SizedBox(
+                                                                      .addToEnd(SizedBox(
                                                                           width:
                                                                               10.0)),
-                                                            ),
+                                                                ),
+                                                              ),
+                                                            ],
                                                           ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ].divide(
-                                                      SizedBox(height: 10.0)),
-                                                );
-                                              } else {
-                                                return wrapWithModel(
-                                                  model: _model
-                                                      .emptyActividadesModel,
-                                                  updateCallback: () =>
-                                                      safeSetState(() {}),
-                                                  child:
-                                                      EmptyActividadesWidget(),
-                                                );
-                                              }
-                                            },
-                                          ),
+                                                        ),
+                                                      ].divide(SizedBox(
+                                                          height: 10.0)),
+                                                    );
+                                                  } else {
+                                                    return wrapWithModel(
+                                                      model: _model
+                                                          .emptyActividadesModel2,
+                                                      updateCallback: () =>
+                                                          safeSetState(() {}),
+                                                      child:
+                                                          EmptyActividadesWidget(),
+                                                    );
+                                                  }
+                                                },
+                                              ),
+                                            ),
+                                          ].divide(SizedBox(height: 20.0)),
                                         ),
-                                      ),
-                                    ].divide(SizedBox(width: 50.0)),
+                                    ],
                                   ),
                                   Container(
                                     width: double.infinity,
@@ -1307,9 +2210,13 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                               ),
                             ),
                           ),
-                          if (valueOrDefault(
-                                  currentUserDocument?.userType, 0) ==
-                              2)
+                          if ((valueOrDefault(
+                                      currentUserDocument?.userType, 0) ==
+                                  2) &&
+                              responsiveVisibility(
+                                context: context,
+                                phone: false,
+                              ))
                             AuthUserStreamWidget(
                               builder: (context) => wrapWithModel(
                                 model: _model.footerModel,
