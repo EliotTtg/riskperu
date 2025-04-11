@@ -656,21 +656,12 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                             'State',
                                                             isEqualTo: true,
                                                           )
-                                                          .whereIn(
-                                                              'uid',
-                                                              _model.uidsCourse !=
-                                                                      ''
-                                                                  ? _model
-                                                                      .uidsCourse
-                                                                  : null)
+                                                          .whereIn('uid',
+                                                              _model.uidsCourse)
                                                           .where(
                                                             'uid_CategoryCourses',
                                                             isEqualTo: _model
-                                                                        .courseCategory !=
-                                                                    ''
-                                                                ? _model
-                                                                    .courseCategory
-                                                                : null,
+                                                                .courseCategory,
                                                           )
                                                           .orderBy(
                                                               'Created_Date'),
