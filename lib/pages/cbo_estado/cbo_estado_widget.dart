@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'cbo_estado_model.dart';
 export 'cbo_estado_model.dart';
 
@@ -64,9 +65,14 @@ class _CboEstadoWidgetState extends State<CboEstadoWidget> {
           });
         },
         textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: 'Montserrat',
+              font: GoogleFonts.montserrat(
+                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+              ),
               color: FlutterFlowTheme.of(context).secondaryBackground,
               letterSpacing: 0.0,
+              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
             ),
         hintText: valueOrDefault<String>(
           widget.parameter1! ? 'Activo' : 'Inactivo',

@@ -9,6 +9,7 @@ import '/pages/navbar/navbar_widget.dart';
 import '/index.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'courses_user_model.dart';
 export 'courses_user_model.dart';
 
@@ -197,8 +198,14 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight:
+                                                                              FontWeight.w600,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         color: Color(
                                                                             0xFF094B90),
                                                                         fontSize:
@@ -207,6 +214,9 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w600,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 Container(
@@ -359,10 +369,14 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                                   child: Text(
                                                                                     listViewCategoryCoursesRecord.name,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.bold,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           fontSize: 16.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.bold,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                           lineHeight: 1.0,
                                                                                         ),
                                                                                   ),
@@ -574,10 +588,14 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                                                               ),
                                                                                                               maxLines: 2,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                      fontWeight: FontWeight.w600,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                    ),
                                                                                                                     fontSize: 14.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     fontWeight: FontWeight.w600,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                   ),
                                                                                                             ),
                                                                                                             StreamBuilder<List<UsersRecord>>(
@@ -617,9 +635,14 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                                                                   ),
                                                                                                                   maxLines: 1,
                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                        ),
                                                                                                                         fontSize: 10.0,
                                                                                                                         letterSpacing: 0.0,
+                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                       ),
                                                                                                                 );
                                                                                                               },

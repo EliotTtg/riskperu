@@ -24,6 +24,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -329,23 +330,49 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                           context)
                                                                       .titleMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Glory',
+                                                                        font: GoogleFonts
+                                                                            .glory(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .titleMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .titleMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         fontSize:
                                                                             14.0,
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .titleMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .titleMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                   unselectedLabelStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Glory',
+                                                                        font: GoogleFonts
+                                                                            .glory(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .titleMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .titleMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         fontSize:
                                                                             14.0,
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .titleMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .titleMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                   indicatorColor:
                                                                       FlutterFlowTheme.of(
@@ -421,11 +448,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       'Sin Nombre',
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.bold,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           color: Color(0xFF01203F),
                                                                                           fontSize: 16.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.bold,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                   ),
                                                                                   Text(
@@ -435,9 +466,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                     ),
                                                                                     textAlign: TextAlign.start,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           fontSize: 14.0,
                                                                                           letterSpacing: 0.0,
+                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                   ),
                                                                                   Row(
@@ -456,8 +492,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 Text(
                                                                                                   '4,6',
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                                 Icon(
@@ -470,11 +511,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             Text(
                                                                                               '731 Calificaciones',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FontWeight.w600,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     color: Color(0xFF848484),
                                                                                                     fontSize: 10.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w600,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                           ],
@@ -523,8 +568,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                         '0',
                                                                                                       ),
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     );
                                                                                                   },
@@ -534,11 +584,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             Text(
                                                                                               'Estudiantes',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FontWeight.w600,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     color: Color(0xFF848484),
                                                                                                     fontSize: 10.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w600,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                           ],
@@ -564,8 +618,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                           '0',
                                                                                                         ),
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                              ),
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                             ),
                                                                                                       ),
                                                                                                       TextSpan(
@@ -574,8 +633,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       )
                                                                                                     ],
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                 ),
@@ -584,11 +648,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             Text(
                                                                                               'Total',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FontWeight.w600,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     color: Color(0xFF848484),
                                                                                                     fontSize: 10.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w600,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                           ],
@@ -614,10 +682,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 TextSpan(
                                                                                                   text: 'Última actualización ',
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -631,10 +704,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 )
                                                                                               ],
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     lineHeight: 1.0,
                                                                                                   ),
                                                                                             ),
@@ -688,10 +766,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       'Español',
                                                                                                     ),
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           color: FlutterFlowTheme.of(context).primaryText,
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           lineHeight: 1.0,
                                                                                                         ),
                                                                                                   ),
@@ -715,10 +798,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             'Español',
                                                                                                           ),
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -728,10 +816,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                         )
                                                                                                       ],
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             color: FlutterFlowTheme.of(context).primaryText,
                                                                                                             fontSize: 14.0,
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                             lineHeight: 1.0,
                                                                                                           ),
                                                                                                     ),
@@ -783,10 +876,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       Text(
                                                                                         'Por Cifras',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                                               fontSize: 14.0,
                                                                                               letterSpacing: 0.0,
+                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               lineHeight: 1.0,
                                                                                             ),
                                                                                       ),
@@ -804,10 +902,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               TextSpan(
                                                                                                 text: 'Nivel de habilidad: ',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       fontSize: 14.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       lineHeight: 1.0,
                                                                                                     ),
                                                                                               ),
@@ -817,10 +920,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               )
                                                                                             ],
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -856,10 +964,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   TextSpan(
                                                                                                     text: 'Estudiantes: ',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           color: FlutterFlowTheme.of(context).primaryText,
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           lineHeight: 1.0,
                                                                                                         ),
                                                                                                   ),
@@ -875,10 +988,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   )
                                                                                                 ],
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       fontSize: 14.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       lineHeight: 1.0,
                                                                                                     ),
                                                                                               ),
@@ -892,10 +1010,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               TextSpan(
                                                                                                 text: 'Idiomas: ',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       fontSize: 14.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       lineHeight: 1.0,
                                                                                                     ),
                                                                                               ),
@@ -905,10 +1028,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               )
                                                                                             ],
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -920,10 +1048,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               TextSpan(
                                                                                                 text: 'Subtitulos: ',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       fontSize: 14.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       lineHeight: 1.0,
                                                                                                     ),
                                                                                               ),
@@ -933,10 +1066,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               )
                                                                                             ],
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -983,10 +1121,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       Text(
                                                                                         'Certificados',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                                               fontSize: 14.0,
                                                                                               letterSpacing: 0.0,
+                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               lineHeight: 1.0,
                                                                                             ),
                                                                                       ),
@@ -1003,19 +1146,29 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             TextSpan(
                                                                                               text: 'Consigue el Certificado de Risk al completar todo el Curso',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     lineHeight: 1.0,
                                                                                                   ),
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                 fontSize: 14.0,
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                 lineHeight: 1.0,
                                                                                               ),
                                                                                         ),
@@ -1035,9 +1188,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                           color: FlutterFlowTheme.of(context).primary,
                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                ),
                                                                                                 color: Colors.white,
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                               ),
                                                                                           elevation: 0.0,
                                                                                           borderRadius: BorderRadius.circular(4.0),
@@ -1084,10 +1242,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       Text(
                                                                                         'Caracteristicas',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                                               fontSize: 14.0,
                                                                                               letterSpacing: 0.0,
+                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               lineHeight: 1.0,
                                                                                             ),
                                                                                       ),
@@ -1104,10 +1267,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             TextSpan(
                                                                                               text: 'Disponible en ',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     lineHeight: 1.0,
                                                                                                   ),
                                                                                             ),
@@ -1133,10 +1301,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                 fontSize: 14.0,
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                 lineHeight: 1.0,
                                                                                               ),
                                                                                         ),
@@ -1186,10 +1359,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           Text(
                                                                                             'Descripción',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -1206,8 +1384,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 ),
                                                                                                 textAlign: TextAlign.start,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               );
                                                                                             } else {
@@ -1220,8 +1403,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 ),
                                                                                                 textAlign: TextAlign.start,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                                 colors: [
                                                                                                   Color(0xFF666666),
@@ -1262,9 +1450,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                       color: Color(0x00DB0B17),
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                            ),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                           ),
                                                                                       elevation: 0.0,
                                                                                       borderRadius: BorderRadius.circular(8.0),
@@ -1358,14 +1551,24 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                         decoration: InputDecoration(
                                                                                                           isDense: true,
                                                                                                           labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                               ),
                                                                                                           hintText: 'Buscar Todas las preguntas del curso',
                                                                                                           hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF767676),
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                               ),
                                                                                                           enabledBorder: OutlineInputBorder(
                                                                                                             borderSide: BorderSide(
@@ -1419,8 +1622,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                           fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                         ),
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                              ),
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                             ),
                                                                                                         cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                                         validator: _model.textController1Validator.asValidator(context),
@@ -1453,9 +1661,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                     Text(
                                                                                                       'Filtros:',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FontWeight.w600,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.w600,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     FlutterFlowDropDown<String>(
@@ -1466,8 +1678,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       height: 40.0,
                                                                                                       maxHeight: 300.0,
                                                                                                       textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                       hintText: 'Todas las Clases',
                                                                                                       icon: FaIcon(
@@ -1496,9 +1713,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       Text(
                                                                                                         'Ordenar Por:',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FontWeight.w600,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                              ),
                                                                                                               letterSpacing: 0.0,
                                                                                                               fontWeight: FontWeight.w600,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                             ),
                                                                                                       ),
                                                                                                       Row(
@@ -1517,8 +1738,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               height: 40.0,
                                                                                                               maxHeight: 300.0,
                                                                                                               textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                    ),
                                                                                                                     letterSpacing: 0.0,
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                   ),
                                                                                                               hintText: 'Ordenar por Recomendados',
                                                                                                               icon: FaIcon(
@@ -1550,8 +1776,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             height: 40.0,
                                                                                                             maxHeight: 300.0,
                                                                                                             textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   letterSpacing: 0.0,
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                             hintText: 'Filtrar Preguntas',
                                                                                                             icon: Icon(
@@ -1607,10 +1838,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   TextSpan(
                                                                                                     text: 'Preguntas Destacadas en este Curso (',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                   TextSpan(
@@ -1623,10 +1858,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   )
                                                                                                 ],
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       fontSize: 16.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               ),
                                                                                             ),
@@ -1741,10 +1980,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                 ),
                                                                                                                                                 maxLines: 2,
                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                      ),
                                                                                                                                                       fontSize: 16.0,
                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                       fontWeight: FontWeight.bold,
+                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                     ),
                                                                                                                                               ),
                                                                                                                                               Text(
@@ -1754,8 +1997,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                 ),
                                                                                                                                                 maxLines: 5,
                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                      ),
                                                                                                                                                       letterSpacing: 0.0,
+                                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                     ),
                                                                                                                                               ),
                                                                                                                                             ],
@@ -1777,14 +2025,24 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                         'Sin fecha',
                                                                                                                                                       ),
                                                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                            fontFamily: 'Montserrat',
+                                                                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                            ),
                                                                                                                                                             letterSpacing: 0.0,
+                                                                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                           ),
                                                                                                                                                     )
                                                                                                                                                   ],
                                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                        ),
                                                                                                                                                         letterSpacing: 0.0,
+                                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                       ),
                                                                                                                                                 ),
                                                                                                                                               ),
@@ -1805,11 +2063,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                                   color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                                                        ),
                                                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                                         fontSize: 12.0,
                                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                                                                       ),
                                                                                                                                                   elevation: 0.0,
                                                                                                                                                   borderRadius: BorderRadius.circular(16.0),
@@ -1933,11 +2195,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                            fontFamily: 'Montserrat',
+                                                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                                                              fontWeight: FontWeight.normal,
+                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                                            ),
                                                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                                                             fontSize: 12.0,
                                                                                                                                             letterSpacing: 0.0,
                                                                                                                                             fontWeight: FontWeight.normal,
+                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                                                           ),
                                                                                                                                       elevation: 0.0,
                                                                                                                                       borderRadius: BorderRadius.circular(16.0),
@@ -1972,11 +2238,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                            fontFamily: 'Montserrat',
+                                                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                                                              fontWeight: FontWeight.normal,
+                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                                            ),
                                                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                                                             fontSize: 12.0,
                                                                                                                                             letterSpacing: 0.0,
                                                                                                                                             fontWeight: FontWeight.normal,
+                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                                                           ),
                                                                                                                                       elevation: 0.0,
                                                                                                                                       borderRadius: BorderRadius.circular(16.0),
@@ -2081,10 +2351,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                               ),
                                                                                                                                                               maxLines: 2,
                                                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                                                      fontWeight: FontWeight.bold,
+                                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                                    ),
                                                                                                                                                                     fontSize: 16.0,
                                                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                                                     fontWeight: FontWeight.bold,
+                                                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                                   ),
                                                                                                                                                             ),
                                                                                                                                                             Text(
@@ -2094,8 +2368,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                               ),
                                                                                                                                                               maxLines: 5,
                                                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                                    ),
                                                                                                                                                                     letterSpacing: 0.0,
+                                                                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                                   ),
                                                                                                                                                             ),
                                                                                                                                                           ],
@@ -2117,14 +2396,24 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                                       'Sin fecha',
                                                                                                                                                                     ),
                                                                                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                          fontFamily: 'Montserrat',
+                                                                                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                                          ),
                                                                                                                                                                           letterSpacing: 0.0,
+                                                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                                         ),
                                                                                                                                                                   )
                                                                                                                                                                 ],
                                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                                      ),
                                                                                                                                                                       letterSpacing: 0.0,
+                                                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                                     ),
                                                                                                                                                               ),
                                                                                                                                                             ),
@@ -2265,10 +2554,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                 ),
                                                                                                                                                 maxLines: 2,
                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                      ),
                                                                                                                                                       fontSize: 16.0,
                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                       fontWeight: FontWeight.bold,
+                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                     ),
                                                                                                                                               ),
                                                                                                                                               Text(
@@ -2278,8 +2571,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                 ),
                                                                                                                                                 maxLines: 5,
                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                      ),
                                                                                                                                                       letterSpacing: 0.0,
+                                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                     ),
                                                                                                                                               ),
                                                                                                                                             ],
@@ -2301,14 +2599,24 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                         'Sin fecha',
                                                                                                                                                       ),
                                                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                            fontFamily: 'Montserrat',
+                                                                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                            ),
                                                                                                                                                             letterSpacing: 0.0,
+                                                                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                           ),
                                                                                                                                                     )
                                                                                                                                                   ],
                                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                        ),
                                                                                                                                                         letterSpacing: 0.0,
+                                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                       ),
                                                                                                                                                 ),
                                                                                                                                               ),
@@ -2329,11 +2637,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                                   color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                                                        ),
                                                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                                         fontSize: 12.0,
                                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                                                                       ),
                                                                                                                                                   elevation: 0.0,
                                                                                                                                                   borderRadius: BorderRadius.circular(16.0),
@@ -2457,11 +2769,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                            fontFamily: 'Montserrat',
+                                                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                                                              fontWeight: FontWeight.normal,
+                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                                            ),
                                                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                                                             fontSize: 12.0,
                                                                                                                                             letterSpacing: 0.0,
                                                                                                                                             fontWeight: FontWeight.normal,
+                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                                                           ),
                                                                                                                                       elevation: 0.0,
                                                                                                                                       borderRadius: BorderRadius.circular(16.0),
@@ -2496,11 +2812,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                            fontFamily: 'Montserrat',
+                                                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                                                              fontWeight: FontWeight.normal,
+                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                                            ),
                                                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                                                             fontSize: 12.0,
                                                                                                                                             letterSpacing: 0.0,
                                                                                                                                             fontWeight: FontWeight.normal,
+                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                                                           ),
                                                                                                                                       elevation: 0.0,
                                                                                                                                       borderRadius: BorderRadius.circular(16.0),
@@ -2607,18 +2927,27 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                                 ),
                                                                                                                                                                 maxLines: 2,
                                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                                      ),
                                                                                                                                                                       fontSize: 16.0,
                                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                                       fontWeight: FontWeight.bold,
+                                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                                     ),
                                                                                                                                                               ),
                                                                                                                                                               Text(
                                                                                                                                                                 listaComentarioRespondidosItem.contenido,
                                                                                                                                                                 maxLines: 5,
                                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                                      ),
                                                                                                                                                                       letterSpacing: 0.0,
+                                                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                                     ),
                                                                                                                                                               ),
                                                                                                                                                             ],
@@ -2640,14 +2969,24 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                                         'Sin Fecha',
                                                                                                                                                                       ),
                                                                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                            fontFamily: 'Montserrat',
+                                                                                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                                            ),
                                                                                                                                                                             letterSpacing: 0.0,
+                                                                                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                                           ),
                                                                                                                                                                     )
                                                                                                                                                                   ],
                                                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                                        ),
                                                                                                                                                                         letterSpacing: 0.0,
+                                                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                                                       ),
                                                                                                                                                                 ),
                                                                                                                                                               ),
@@ -2708,10 +3047,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FontWeight.bold,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                            ),
                                                                                                             color: FlutterFlowTheme.of(context).primaryText,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                           ),
                                                                                                       elevation: 0.0,
                                                                                                       borderSide: BorderSide(
@@ -2755,10 +3098,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FontWeight.bold,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                            ),
                                                                                                             color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                           ),
                                                                                                       elevation: 0.0,
                                                                                                       borderSide: BorderSide(
@@ -2830,14 +3177,24 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               decoration: InputDecoration(
                                                                                                 isDense: true,
                                                                                                 labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                     ),
                                                                                                 hintText: 'Buscar Todas las preguntas del curso',
                                                                                                 hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                      ),
                                                                                                       color: Color(0xFF767676),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                     ),
                                                                                                 enabledBorder: OutlineInputBorder(
                                                                                                   borderSide: BorderSide(
@@ -2891,8 +3248,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                               ),
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                               cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                               validator: _model.textController2Validator.asValidator(context),
@@ -2982,17 +3344,31 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   height: 40.0,
                                                                                                   maxHeight: 300.0,
                                                                                                   searchHintTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                        ),
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                       ),
                                                                                                   searchTextStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                   textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                   hintText: 'Todas las Clases',
                                                                                                   searchHintText: 'Buscar curso..',
@@ -3033,9 +3409,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             height: 40.0,
                                                                                             maxHeight: 300.0,
                                                                                             textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.bold,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.bold,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                 ),
                                                                                             hintText: 'Ordenar por Recomendados',
                                                                                             icon: FaIcon(
@@ -3151,9 +3531,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                           '--',
                                                                                                                         ),
                                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                              fontFamily: 'Montserrat',
+                                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                              ),
                                                                                                                               fontSize: 18.0,
                                                                                                                               letterSpacing: 0.0,
+                                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                             ),
                                                                                                                       ),
                                                                                                                       StreamBuilder<List<CoursesRecord>>(
@@ -3189,11 +3574,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 TextSpan(
                                                                                                                                   text: 'Curso: ',
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                          fontWeight: FontWeight.bold,
+                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                        ),
                                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                         fontSize: 12.0,
                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                         fontWeight: FontWeight.bold,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                       ),
                                                                                                                                 ),
                                                                                                                                 TextSpan(
@@ -3205,11 +3594,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 )
                                                                                                                               ],
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                      fontWeight: FontWeight.normal,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                    ),
                                                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                     fontSize: 12.0,
                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                     fontWeight: FontWeight.normal,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                   ),
                                                                                                                             ),
                                                                                                                           );
@@ -3222,11 +3615,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             TextSpan(
                                                                                                                               text: 'Fecha de creacion: ',
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                      fontWeight: FontWeight.bold,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                    ),
                                                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                     fontSize: 12.0,
                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                     fontWeight: FontWeight.bold,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                   ),
                                                                                                                             ),
                                                                                                                             TextSpan(
@@ -3242,11 +3639,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             )
                                                                                                                           ],
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                                  fontWeight: FontWeight.normal,
+                                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                ),
                                                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                 fontSize: 12.0,
                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                 fontWeight: FontWeight.normal,
+                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                               ),
                                                                                                                         ),
                                                                                                                       ),
@@ -3309,10 +3710,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                        ),
                                                                                                         color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                       ),
                                                                                                   elevation: 0.0,
                                                                                                   borderSide: BorderSide(
@@ -3360,10 +3765,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 child: Text(
                                                                                                   'Haga clic aquí para crear su primera nota.',
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.w500,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.w500,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ),
@@ -3510,11 +3919,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             'Sistema',
                                                                                                           ),
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FontWeight.bold,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                 fontSize: 16.0,
                                                                                                                 letterSpacing: 0.0,
                                                                                                                 fontWeight: FontWeight.bold,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 decoration: TextDecoration.underline,
                                                                                                               ),
                                                                                                         ),
@@ -3525,8 +3938,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               TextSpan(
                                                                                                                 text: 'Ha publicado un anuncio ',
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                      ),
                                                                                                                       letterSpacing: 0.0,
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
@@ -3546,8 +3964,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   letterSpacing: 0.0,
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                           ),
                                                                                                         ),
@@ -3582,10 +4005,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                     'Sin Titulo',
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                                 Text(
@@ -3595,9 +4022,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   ),
                                                                                                   textAlign: TextAlign.start,
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ].divide(SizedBox(height: 5.0)),
@@ -3680,10 +4112,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       TextSpan(
                                                                                                         text: 'Mostrar comentarios (',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FontWeight.bold,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                              ),
                                                                                                               fontSize: 16.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               fontWeight: FontWeight.bold,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                               decoration: TextDecoration.underline,
                                                                                                             ),
                                                                                                       ),
@@ -3704,10 +4140,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       )
                                                                                                     ],
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                 ),
@@ -3802,10 +4242,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 ),
                                                                                                                                 maxLines: 2,
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                      ),
                                                                                                                                       fontSize: 16.0,
                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                       fontWeight: FontWeight.bold,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                     ),
                                                                                                                               ),
                                                                                                                               Text(
@@ -3815,8 +4259,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 ),
                                                                                                                                 maxLines: 5,
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                      ),
                                                                                                                                       letterSpacing: 0.0,
+                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                     ),
                                                                                                                               ),
                                                                                                                             ],
@@ -3838,14 +4287,24 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                         'Sin Fecha',
                                                                                                                                       ),
                                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                            fontFamily: 'Montserrat',
+                                                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                            ),
                                                                                                                                             letterSpacing: 0.0,
+                                                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                           ),
                                                                                                                                     )
                                                                                                                                   ],
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                        ),
                                                                                                                                         letterSpacing: 0.0,
+                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                       ),
                                                                                                                                 ),
                                                                                                                               ),
@@ -3955,10 +4414,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   '0',
                                                                                                 ),
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FontWeight.w600,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       fontSize: 64.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.w600,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       lineHeight: 1.0,
                                                                                                     ),
                                                                                               ),
@@ -3992,9 +4455,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               Text(
                                                                                                 'Valoración del curso',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               ),
                                                                                             ].divide(SizedBox(height: 5.0)),
@@ -4063,8 +4530,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                      ),
                                                                                                                       letterSpacing: 0.0,
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
@@ -4073,8 +4545,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   letterSpacing: 0.0,
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                           ),
                                                                                                         ),
@@ -4132,8 +4609,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                      ),
                                                                                                                       letterSpacing: 0.0,
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
@@ -4142,8 +4624,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   letterSpacing: 0.0,
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                           ),
                                                                                                         ),
@@ -4201,8 +4688,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                      ),
                                                                                                                       letterSpacing: 0.0,
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
@@ -4211,8 +4703,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   letterSpacing: 0.0,
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                           ),
                                                                                                         ),
@@ -4270,8 +4767,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                      ),
                                                                                                                       letterSpacing: 0.0,
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
@@ -4280,8 +4782,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   letterSpacing: 0.0,
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                           ),
                                                                                                         ),
@@ -4339,8 +4846,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                      ),
                                                                                                                       letterSpacing: 0.0,
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
@@ -4349,8 +4861,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   letterSpacing: 0.0,
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                           ),
                                                                                                         ),
@@ -4375,10 +4892,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       Text(
                                                                                         'Valoraciones',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FontWeight.bold,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               fontSize: 16.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.bold,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               decoration: TextDecoration.underline,
                                                                                             ),
                                                                                       ),
@@ -4414,14 +4935,24 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             decoration: InputDecoration(
                                                                                                               isDense: true,
                                                                                                               labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                                    ),
                                                                                                                     letterSpacing: 0.0,
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                                   ),
                                                                                                               hintText: 'Buscar Todas las preguntas del curso',
                                                                                                               hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                                    ),
                                                                                                                     color: Color(0xFF767676),
                                                                                                                     letterSpacing: 0.0,
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                                   ),
                                                                                                               enabledBorder: OutlineInputBorder(
                                                                                                                 borderSide: BorderSide(
@@ -4475,8 +5006,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                             ),
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   letterSpacing: 0.0,
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                             cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                                             validator: _model.textController3Validator.asValidator(context),
@@ -4508,9 +5044,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   Text(
                                                                                                     'Filtrar Valoraciones',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.w600,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.w600,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                   FlutterFlowDropDown<String>(
@@ -4521,8 +5061,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                     height: 40.0,
                                                                                                     maxHeight: 300.0,
                                                                                                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                     hintText: 'Todas las Valoraciones',
                                                                                                     icon: FaIcon(
@@ -4644,10 +5189,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 '-',
                                                                                                                               ),
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                      fontWeight: FontWeight.bold,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                    ),
                                                                                                                                     fontSize: 16.0,
                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                     fontWeight: FontWeight.bold,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                   ),
                                                                                                                             ),
                                                                                                                             Row(
@@ -4672,9 +5221,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                   ),
                                                                                                                                   maxLines: 1,
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                        ),
                                                                                                                                         fontSize: 16.0,
                                                                                                                                         letterSpacing: 0.0,
+                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                       ),
                                                                                                                                 ),
                                                                                                                               ].divide(SizedBox(width: 10.0)),
@@ -4688,10 +5242,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             Text(
                                                                                                                               listqualificationItem.text,
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                    ),
                                                                                                                                     color: Color(0xFF9F9F9F),
                                                                                                                                     fontSize: 16.0,
                                                                                                                                     letterSpacing: 0.0,
+                                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                   ),
                                                                                                                             ),
                                                                                                                           ].divide(SizedBox(height: 10.0)),
@@ -4721,9 +5280,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           TextSpan(
                                                                                             text: 'Mostrar comentarios (',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.bold,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.bold,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   decoration: TextDecoration.underline,
                                                                                                 ),
                                                                                           ),
@@ -4743,9 +5306,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           )
                                                                                         ],
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FontWeight.bold,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.bold,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               decoration: TextDecoration.underline,
                                                                                             ),
                                                                                       ),
@@ -4872,11 +5439,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Montserrat',
+                                                                                font: GoogleFonts.montserrat(
+                                                                                  fontWeight: FontWeight.bold,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                ),
                                                                                 color: Color(0xFF094B90),
                                                                                 fontSize: 16.0,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
                                                                         ),
                                                                         Container(
@@ -4991,10 +5562,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                           TextSpan(
                                                                                                             text: 'Sesión ',
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                    fontWeight: FontWeight.bold,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                  ),
                                                                                                                   fontSize: 16.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   fontWeight: FontWeight.bold,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                 ),
                                                                                                           ),
                                                                                                           TextSpan(
@@ -5024,10 +5599,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                           )
                                                                                                         ],
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FontWeight.normal,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                              ),
                                                                                                               fontSize: 16.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               fontWeight: FontWeight.normal,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                             ),
                                                                                                       ),
                                                                                                     ),
@@ -5129,10 +5708,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                               TextSpan(
                                                                                                                                 text: 'Módulo ',
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                      ),
                                                                                                                                       fontSize: 16.0,
                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                       fontWeight: FontWeight.bold,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                     ),
                                                                                                                               ),
                                                                                                                               TextSpan(
@@ -5159,10 +5742,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                               )
                                                                                                                             ],
                                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                  fontFamily: 'Montserrat',
+                                                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                                                    fontWeight: FontWeight.normal,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                  ),
                                                                                                                                   fontSize: 16.0,
                                                                                                                                   letterSpacing: 0.0,
                                                                                                                                   fontWeight: FontWeight.normal,
+                                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                 ),
                                                                                                                           ),
                                                                                                                         ),
@@ -5230,9 +5817,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                     '0',
                                                                                                                                   ),
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                        ),
                                                                                                                                         fontSize: 16.0,
                                                                                                                                         letterSpacing: 0.0,
+                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                       ),
                                                                                                                                 ),
                                                                                                                                 TextSpan(
@@ -5253,10 +5845,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 )
                                                                                                                               ],
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                      fontWeight: FontWeight.normal,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                    ),
                                                                                                                                     fontSize: 16.0,
                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                     fontWeight: FontWeight.normal,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                   ),
                                                                                                                             ),
                                                                                                                           );
@@ -5265,8 +5861,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                       Text(
                                                                                                                         '|',
                                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                              fontFamily: 'Montserrat',
+                                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                              ),
                                                                                                                               letterSpacing: 0.0,
+                                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                             ),
                                                                                                                       ),
                                                                                                                       RichText(
@@ -5276,9 +5877,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             TextSpan(
                                                                                                                               text: '10 ',
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                    ),
                                                                                                                                     fontSize: 16.0,
                                                                                                                                     letterSpacing: 0.0,
+                                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                   ),
                                                                                                                             ),
                                                                                                                             TextSpan(
@@ -5287,10 +5893,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             )
                                                                                                                           ],
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                                  fontWeight: FontWeight.normal,
+                                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                ),
                                                                                                                                 fontSize: 16.0,
                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                 fontWeight: FontWeight.normal,
+                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                               ),
                                                                                                                         ),
                                                                                                                       ),
@@ -5499,9 +6109,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                           )
                                                                                                                                         ],
                                                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                              fontFamily: 'Montserrat',
+                                                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                              ),
                                                                                                                                               fontSize: 14.0,
                                                                                                                                               letterSpacing: 0.0,
+                                                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                               lineHeight: 1.0,
                                                                                                                                             ),
                                                                                                                                       ),
@@ -5532,8 +6147,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                             '0',
                                                                                                                                           )} Min.',
                                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                                ),
                                                                                                                                                 letterSpacing: 0.0,
+                                                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                               ),
                                                                                                                                         ),
                                                                                                                                       ].divide(SizedBox(width: 10.0)),
@@ -5568,10 +6188,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                           iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                           color: FlutterFlowTheme.of(context).primary,
                                                                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                                                ),
                                                                                                                                                 color: Colors.white,
                                                                                                                                                 fontSize: 12.0,
                                                                                                                                                 letterSpacing: 0.0,
+                                                                                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                                                               ),
                                                                                                                                           elevation: 0.0,
                                                                                                                                           borderRadius: BorderRadius.circular(4.0),
@@ -5715,11 +6340,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                 TextSpan(
                                                                                   text: 'Finalizacion del Curso:  ',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Montserrat',
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FontWeight.bold,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                        ),
                                                                                         color: Colors.black,
                                                                                         fontSize: 16.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                       ),
                                                                                 ),
                                                                                 TextSpan(
@@ -5752,11 +6381,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                 )
                                                                               ],
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Montserrat',
+                                                                                    font: GoogleFonts.montserrat(
+                                                                                      fontWeight: FontWeight.w600,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                    ),
                                                                                     color: Colors.black,
                                                                                     fontSize: 16.0,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w600,
+                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
                                                                             ),
                                                                           ),
@@ -5832,10 +6465,14 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: Color(0xFF17236A),
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FontWeight.w500,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                      ),
                                                                                       color: Colors.white,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                     ),
                                                                                 elevation: 0.0,
                                                                                 borderRadius: BorderRadius.circular(5.0),

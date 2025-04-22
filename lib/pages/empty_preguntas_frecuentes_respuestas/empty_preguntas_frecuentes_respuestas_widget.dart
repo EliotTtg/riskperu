@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'empty_preguntas_frecuentes_respuestas_model.dart';
 export 'empty_preguntas_frecuentes_respuestas_model.dart';
 
@@ -45,11 +46,15 @@ class _EmptyPreguntasFrecuentesRespuestasWidgetState
       child: Text(
         'No se encontraron respuestas',
         style: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: 'Montserrat',
+              font: GoogleFonts.montserrat(
+                fontWeight: FontWeight.w300,
+                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+              ),
               color: FlutterFlowTheme.of(context).alternate,
               fontSize: 16.0,
               letterSpacing: 0.0,
               fontWeight: FontWeight.w300,
+              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
             ),
       ),
     );
