@@ -605,6 +605,36 @@
           "order": "ASCENDING"
         },
         {
+          "fieldPath": "set",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Created_Date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Courses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "course_type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "State",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "uid_CategoryCourses",
+          "order": "ASCENDING"
+        },
+        {
           "fieldPath": "uid",
           "order": "ASCENDING"
         },

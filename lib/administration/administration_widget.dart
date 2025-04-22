@@ -4607,6 +4607,73 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                             },
                                                                                                           ),
                                                                                                         ),
+                                                                                                        Builder(
+                                                                                                          builder: (context) {
+                                                                                                            if (listExamenesItem.state) {
+                                                                                                              return FlutterFlowIconButton(
+                                                                                                                borderColor: Colors.transparent,
+                                                                                                                borderRadius: 8.0,
+                                                                                                                buttonSize: 46.0,
+                                                                                                                icon: Icon(
+                                                                                                                  Icons.star,
+                                                                                                                  color: Color(0xFF707070),
+                                                                                                                  size: 13.5,
+                                                                                                                ),
+                                                                                                                onPressed: () async {
+                                                                                                                  final firestoreBatch = FirebaseFirestore.instance.batch();
+                                                                                                                  try {
+                                                                                                                    if (listExamenesItem.state) {
+                                                                                                                      firestoreBatch.update(
+                                                                                                                          listExamenesItem.reference,
+                                                                                                                          createExamenesRecordData(
+                                                                                                                            state: false,
+                                                                                                                          ));
+                                                                                                                    } else {
+                                                                                                                      firestoreBatch.update(
+                                                                                                                          listExamenesItem.reference,
+                                                                                                                          createExamenesRecordData(
+                                                                                                                            state: true,
+                                                                                                                          ));
+                                                                                                                    }
+                                                                                                                  } finally {
+                                                                                                                    await firestoreBatch.commit();
+                                                                                                                  }
+                                                                                                                },
+                                                                                                              );
+                                                                                                            } else {
+                                                                                                              return FlutterFlowIconButton(
+                                                                                                                borderColor: Colors.transparent,
+                                                                                                                borderRadius: 8.0,
+                                                                                                                buttonSize: 46.0,
+                                                                                                                icon: Icon(
+                                                                                                                  Icons.star_border,
+                                                                                                                  color: Color(0xFF707070),
+                                                                                                                  size: 13.5,
+                                                                                                                ),
+                                                                                                                onPressed: () async {
+                                                                                                                  final firestoreBatch = FirebaseFirestore.instance.batch();
+                                                                                                                  try {
+                                                                                                                    if (listExamenesItem.state) {
+                                                                                                                      firestoreBatch.update(
+                                                                                                                          listExamenesItem.reference,
+                                                                                                                          createExamenesRecordData(
+                                                                                                                            state: false,
+                                                                                                                          ));
+                                                                                                                    } else {
+                                                                                                                      firestoreBatch.update(
+                                                                                                                          listExamenesItem.reference,
+                                                                                                                          createExamenesRecordData(
+                                                                                                                            state: true,
+                                                                                                                          ));
+                                                                                                                    }
+                                                                                                                  } finally {
+                                                                                                                    await firestoreBatch.commit();
+                                                                                                                  }
+                                                                                                                },
+                                                                                                              );
+                                                                                                            }
+                                                                                                          },
+                                                                                                        ),
                                                                                                       ],
                                                                                                     ),
                                                                                                   ].map((c) => DataCell(c)).toList(),
