@@ -911,7 +911,7 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
-                                                              size: 24.0,
+                                                              size: 21.0,
                                                             ),
                                                             Text(
                                                               'Certificado',

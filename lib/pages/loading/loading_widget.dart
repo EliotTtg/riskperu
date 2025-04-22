@@ -1,10 +1,5 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/custom_code/actions/index.dart' as actions;
-import '/index.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,81 +27,7 @@ class _LoadingWidgetState extends State<LoadingWidget> {
     _model = createModel(context, () => LoadingModel());
 
     // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      _model.returnURLcodigo = await actions.obtenerLinkPaypalRegreso(
-        context,
-        'riskperu://riskperu.com${GoRouterState.of(context).uri.toString()}',
-      );
-      _model.qPasarela = await queryPasarelaPagosRecordOnce(
-        queryBuilder: (pasarelaPagosRecord) => pasarelaPagosRecord.where(
-          'codigo',
-          isEqualTo: _model.returnURLcodigo,
-        ),
-        singleRecord: true,
-      ).then((s) => s.firstOrNull);
-      _model.returnOrder = await actions.approveOrderPaypal(
-        _model.qPasarela!.token,
-        _model.qPasarela!.ordenID,
-        _model.qPasarela!.codigo,
-      );
-      if (_model.returnOrder == 'exito') {
-        _model.refuserplan = await queryPasarelaPagosRecordOnce(
-          queryBuilder: (pasarelaPagosRecord) => pasarelaPagosRecord
-              .where(
-                'uid_user',
-                isEqualTo: currentUserReference?.id,
-              )
-              .orderBy('created_time', descending: true),
-          singleRecord: true,
-        ).then((s) => s.firstOrNull);
-        _model.userPlan = await queryUsersPlansRecordOnce(
-          queryBuilder: (usersPlansRecord) => usersPlansRecord.where(
-            'uid_user',
-            isEqualTo: _model.refuserplan?.uidUser,
-          ),
-          singleRecord: true,
-        ).then((s) => s.firstOrNull);
-
-        await _model.userPlan!.reference.update({
-          ...createUsersPlansRecordData(
-            uidPlan: _model.refuserplan?.uidPlan,
-          ),
-          ...mapToFirestore(
-            {
-              'Update_date': FieldValue.serverTimestamp(),
-            },
-          ),
-        });
-
-        context.goNamed(
-          BusinessPlansWidget.routeName,
-          extra: <String, dynamic>{
-            kTransitionInfoKey: TransitionInfo(
-              hasTransition: true,
-              transitionType: PageTransitionType.fade,
-              duration: Duration(milliseconds: 0),
-            ),
-          },
-        );
-      } else {
-        await showDialog(
-          context: context,
-          builder: (alertDialogContext) {
-            return AlertDialog(
-              content: Text('Error'),
-              actions: [
-                TextButton(
-                  onPressed: () => Navigator.pop(alertDialogContext),
-                  child: Text('Ok'),
-                ),
-              ],
-            );
-          },
-        );
-      }
-
-      await Future.delayed(const Duration(milliseconds: 5000));
-    });
+    SchedulerBinding.instance.addPostFrameCallback((_) async {});
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }

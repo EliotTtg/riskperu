@@ -86,27 +86,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               appStateNotifier.loggedIn ? NavBarPage() : LoginWidget(),
           routes: [
             FFRoute(
-              name: ContactsWidget.routeName,
-              path: ContactsWidget.routePath,
-              builder: (context, params) => ContactsWidget(),
-            ),
-            FFRoute(
-              name: BusinessPlansWidget.routeName,
-              path: BusinessPlansWidget.routePath,
-              requireAuth: true,
-              builder: (context, params) => BusinessPlansWidget(),
-            ),
-            FFRoute(
-              name: SecurePaymentWidget.routeName,
-              path: SecurePaymentWidget.routePath,
-              builder: (context, params) => SecurePaymentWidget(
-                state: params.getParam(
-                  'state',
-                  ParamType.int,
-                ),
-              ),
-            ),
-            FFRoute(
               name: SimulatorWidget.routeName,
               path: SimulatorWidget.routePath,
               requireAuth: true,
@@ -187,11 +166,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => LoginWidget(),
             ),
             FFRoute(
-              name: SimulatorOriginalWidget.routeName,
-              path: SimulatorOriginalWidget.routePath,
-              builder: (context, params) => SimulatorOriginalWidget(),
-            ),
-            FFRoute(
               name: NotesWidget.routeName,
               path: NotesWidget.routePath,
               requireAuth: true,
@@ -218,11 +192,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: LoadingWidget.routeName,
               path: LoadingWidget.routePath,
               builder: (context, params) => LoadingWidget(),
-            ),
-            FFRoute(
-              name: ContactsCopyWidget.routeName,
-              path: ContactsCopyWidget.routePath,
-              builder: (context, params) => ContactsCopyWidget(),
             ),
             FFRoute(
               name: HomeWidget.routeName,
@@ -289,11 +258,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => params.isEmpty
                   ? NavBarPage(initialPage: 'Simulador')
                   : SimuladorWidget(),
-            ),
-            FFRoute(
-              name: LoginAppWidget.routeName,
-              path: LoginAppWidget.routePath,
-              builder: (context, params) => LoginAppWidget(),
             ),
             FFRoute(
               name: ExaminationQuestionsFinalWidget.routeName,
