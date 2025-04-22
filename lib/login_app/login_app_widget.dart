@@ -6,6 +6,7 @@ import '/pages/header/header_widget.dart';
 import '/pages/update_password/update_password_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'login_app_model.dart';
 export 'login_app_model.dart';
 
@@ -185,10 +186,27 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                       context)
                                                                   .labelMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     letterSpacing:
                                                                         0.0,
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontStyle,
                                                                   ),
                                                           hintText:
                                                               'Correo electrónico',
@@ -197,13 +215,30 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                       context)
                                                                   .labelMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                     letterSpacing:
                                                                         0.0,
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontStyle,
                                                                   ),
                                                           enabledBorder:
                                                               OutlineInputBorder(
@@ -297,10 +332,27 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                         cursorColor:
                                                             FlutterFlowTheme.of(
@@ -389,10 +441,27 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                       context)
                                                                   .labelMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     letterSpacing:
                                                                         0.0,
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontStyle,
                                                                   ),
                                                           hintText:
                                                               'Contraseña',
@@ -401,13 +470,30 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                       context)
                                                                   .labelMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
                                                                     letterSpacing:
                                                                         0.0,
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontStyle,
                                                                   ),
                                                           enabledBorder:
                                                               OutlineInputBorder(
@@ -523,10 +609,27 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                         cursorColor:
                                                             FlutterFlowTheme.of(
@@ -604,13 +707,30 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                       ),
                                                     ),
@@ -715,10 +835,31 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmall
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmall
+                                                                    .fontStyle,
+                                                          ),
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .fontStyle,
                                                         ),
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -756,7 +897,16 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                         context)
                                                     .bodyMedium
                                                     .override(
-                                                      fontFamily: 'Montserrat',
+                                                      font: GoogleFonts
+                                                          .montserrat(
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -764,6 +914,11 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                       letterSpacing: 0.0,
                                                       fontWeight:
                                                           FontWeight.normal,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
                                                     ),
                                               ),
                                             ),

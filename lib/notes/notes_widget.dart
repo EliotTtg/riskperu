@@ -10,6 +10,7 @@ import '/pages/empty_notes/empty_notes_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/navbar/navbar_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'notes_model.dart';
 export 'notes_model.dart';
 
@@ -152,8 +153,16 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w600,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: Color(
                                                                       0xFF003366),
                                                                   fontSize:
@@ -163,6 +172,10 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                           )
                                                         ],
@@ -170,8 +183,16 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                 .of(context)
                                                             .bodyMedium
                                                             .override(
-                                                              fontFamily:
-                                                                  'Montserrat',
+                                                              font: GoogleFonts
+                                                                  .montserrat(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
                                                               color: Color(
                                                                   0xFF003366),
                                                               fontSize: 40.0,
@@ -180,6 +201,11 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w600,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                             ),
                                                       ),
                                                       textAlign:
@@ -226,8 +252,14 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.bold,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       color: Color(
                                                                           0xFF17232B),
                                                                       fontSize:
@@ -237,6 +269,10 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                               Container(
@@ -305,28 +341,49 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                               context)
                                                                           .labelMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                            ),
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                           ),
                                                                       searchTextStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                       textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                       hintText:
                                                                           'Seleccione',
@@ -389,8 +446,14 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.bold,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       color: Color(
                                                                           0xFF17232B),
                                                                       fontSize:
@@ -400,6 +463,10 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                               Container(
@@ -431,28 +498,67 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                           context)
                                                                       .labelMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .labelMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .labelMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .labelMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .labelMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                   searchTextStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                   textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                   hintText:
                                                                       'Seleccione',
@@ -526,8 +632,14 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.bold,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       color: Color(
                                                                           0xFF17232B),
                                                                       fontSize:
@@ -537,6 +649,10 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                               InkWell(
@@ -592,10 +708,14 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                           headerTextStyle: FlutterFlowTheme.of(context)
                                                                               .headlineLarge
                                                                               .override(
-                                                                                fontFamily: 'Glory',
+                                                                                font: GoogleFonts.glory(
+                                                                                  fontWeight: FontWeight.w600,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).headlineLarge.fontStyle,
+                                                                                ),
                                                                                 fontSize: 32.0,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).headlineLarge.fontStyle,
                                                                               ),
                                                                           pickerBackgroundColor:
                                                                               FlutterFlowTheme.of(context).secondaryBackground,
@@ -670,10 +790,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                     hintText:
                                                                         valueOrDefault<
@@ -749,8 +880,14 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.bold,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       color: Color(
                                                                           0xFF17232B),
                                                                       fontSize:
@@ -760,6 +897,10 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                               InkWell(
@@ -808,10 +949,14 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                             headerForegroundColor:
                                                                                 FlutterFlowTheme.of(context).info,
                                                                             headerTextStyle: FlutterFlowTheme.of(context).headlineLarge.override(
-                                                                                  fontFamily: 'Glory',
+                                                                                  font: GoogleFonts.glory(
+                                                                                    fontWeight: FontWeight.w600,
+                                                                                    fontStyle: FlutterFlowTheme.of(context).headlineLarge.fontStyle,
+                                                                                  ),
                                                                                   fontSize: 32.0,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w600,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).headlineLarge.fontStyle,
                                                                                 ),
                                                                             pickerBackgroundColor:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
@@ -887,10 +1032,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                     hintText:
                                                                         valueOrDefault<
@@ -1004,14 +1160,31 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                     context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: Colors
                                                                       .white,
                                                                   fontSize:
                                                                       15.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall
+                                                                      .fontStyle,
                                                                 ),
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -1064,8 +1237,17 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                     context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1073,6 +1255,14 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                       15.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall
+                                                                      .fontStyle,
                                                                 ),
                                                         elevation: 0.0,
                                                         borderSide: BorderSide(
@@ -1195,10 +1385,23 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 TextSpan(
@@ -1214,12 +1417,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight:
+                                                                              FontWeight.normal,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         letterSpacing:
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.normal,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 TextSpan(
@@ -1228,10 +1440,23 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 TextSpan(
@@ -1248,10 +1473,27 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     letterSpacing:
                                                                         0.0,
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
                                                                   ),
                                                             ),
                                                           ),
@@ -1262,13 +1504,25 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ].divide(SizedBox(
@@ -1319,14 +1573,25 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                             context)
                                                                         .labelLarge
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                          ),
                                                                           color:
                                                                               Color(0xFF212529),
                                                                           fontSize:
                                                                               15.0,
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .labelLarge
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .labelLarge
+                                                                              .fontStyle,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -1343,14 +1608,25 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                             context)
                                                                         .labelLarge
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                          ),
                                                                           color:
                                                                               Color(0xFF212529),
                                                                           fontSize:
                                                                               15.0,
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .labelLarge
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .labelLarge
+                                                                              .fontStyle,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -1372,14 +1648,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                               context)
                                                                           .labelLarge
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF212529),
                                                                             fontSize:
                                                                                 15.0,
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                           ),
                                                                     ),
                                                                   ),
@@ -1402,14 +1685,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                               context)
                                                                           .labelLarge
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF212529),
                                                                             fontSize:
                                                                                 15.0,
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                           ),
                                                                     ),
                                                                   ),
@@ -1432,14 +1722,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                               context)
                                                                           .labelLarge
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF212529),
                                                                             fontSize:
                                                                                 15.0,
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                           ),
                                                                     ),
                                                                   ),
@@ -1462,14 +1759,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                               context)
                                                                           .labelLarge
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF212529),
                                                                             fontSize:
                                                                                 15.0,
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                           ),
                                                                     ),
                                                                   ),
@@ -1492,14 +1796,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                               context)
                                                                           .labelLarge
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF212529),
                                                                             fontSize:
                                                                                 15.0,
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                           ),
                                                                     ),
                                                                   ),
@@ -1542,10 +1853,23 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 StreamBuilder<
@@ -1612,10 +1936,17 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                     );
                                                                   },
@@ -1647,10 +1978,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -1684,10 +2026,21 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                   ),
                                                                 ),
@@ -1766,8 +2119,13 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       );
                                                                     },
@@ -1848,8 +2206,13 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       );
                                                                     },
@@ -1930,8 +2293,13 @@ class _NotesWidgetState extends State<NotesWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       );
                                                                     },

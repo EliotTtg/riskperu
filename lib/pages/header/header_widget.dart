@@ -7,6 +7,7 @@ import '/pages/log_out/log_out_widget.dart';
 import '/index.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'header_model.dart';
 export 'header_model.dart';
@@ -197,8 +198,17 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -226,6 +236,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                 ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -292,8 +310,17 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -321,6 +348,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                 ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -387,8 +422,17 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -416,6 +460,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                 ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -483,8 +535,17 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -512,6 +573,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                 ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -587,8 +656,17 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -616,6 +694,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                 ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -655,11 +741,32 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                             context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmall
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmall
+                                                                    .fontStyle,
+                                                          ),
                                                           color: Colors.white,
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .fontStyle,
                                                         ),
                                                   ),
                                                   showBadge: FFAppState()
@@ -848,11 +955,24 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                               ),
                                             ),
@@ -887,14 +1007,35 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      color: Colors.white,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            textStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .titleSmall
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleSmall
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleSmall
+                                                            .fontStyle,
+                                                  ),
+                                                  color: Colors.white,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .fontStyle,
+                                                ),
                                             elevation: 0.0,
                                             borderRadius:
                                                 BorderRadius.circular(4.0),
@@ -938,9 +1079,26 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Montserrat',
+                                              font: GoogleFonts.montserrat(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .fontStyle,
+                                              ),
                                               color: Colors.white,
                                               letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontStyle,
                                             ),
                                         elevation: 0.0,
                                         borderRadius:

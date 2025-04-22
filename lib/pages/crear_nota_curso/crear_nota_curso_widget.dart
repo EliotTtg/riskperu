@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'crear_nota_curso_model.dart';
 export 'crear_nota_curso_model.dart';
 
@@ -90,11 +91,19 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
+                                    ),
                                     color: Colors.black,
                                     fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontStyle,
                                   ),
                           elevation: 0.0,
                           borderSide: BorderSide(
@@ -112,10 +121,18 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  font: GoogleFonts.inter(
+                                    fontWeight: FontWeight.bold,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .fontStyle,
                                 ),
                           ),
                           Column(
@@ -145,10 +162,20 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Inter',
+                                              font: GoogleFonts.inter(
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
                                             ),
                                       ),
                                       Column(
@@ -181,9 +208,30 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Inter',
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ),
@@ -216,9 +264,30 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Inter',
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ),
@@ -251,9 +320,30 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Inter',
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ),
@@ -282,10 +372,20 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Montserrat',
+                                            font: GoogleFonts.montserrat(
+                                              fontWeight: FontWeight.bold,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
+                                            ),
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
                                           ),
                                     ),
                                     Container(
@@ -303,23 +403,61 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           isDense: true,
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Montserrat',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
                                           hintText:
                                               'P. ej.: Recuerda revisar el código en el minuto 05:28.',
-                                          hintStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Montserrat',
-                                                    color: Color(0xFFA2A2A2),
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          hintStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Color(0xFFA2A2A2),
+                                                letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Colors.black,
@@ -365,8 +503,25 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Montserrat',
+                                              font: GoogleFonts.montserrat(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
                                               letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
                                             ),
                                         maxLines: 5,
                                         maxLength: 255,
@@ -451,12 +606,20 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Inter',
+                                      font: GoogleFonts.inter(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.bold,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
                                     ),
                                 elevation: 0.0,
                                 borderSide: BorderSide(

@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'create_update_category_model.dart';
 export 'create_update_category_model.dart';
 
@@ -85,10 +86,18 @@ class _CreateUpdateCategoryWidgetState
                           'Categoria',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Montserrat',
+                                    font: GoogleFonts.montserrat(
+                                      fontWeight: FontWeight.w600,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                   ),
                         ),
                         Column(
@@ -100,8 +109,21 @@ class _CreateUpdateCategoryWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Montserrat',
+                                    font: GoogleFonts.montserrat(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                   ),
                             ),
                             Container(
@@ -116,15 +138,45 @@ class _CreateUpdateCategoryWidgetState
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        fontFamily: 'Montserrat',
+                                        font: GoogleFonts.montserrat(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelMedium
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelMedium
+                                                  .fontStyle,
+                                        ),
                                         letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .labelMedium
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .labelMedium
+                                            .fontStyle,
                                       ),
                                   hintText: 'Ingrese la respuesta',
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        fontFamily: 'Montserrat',
+                                        font: GoogleFonts.montserrat(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelMedium
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelMedium
+                                                  .fontStyle,
+                                        ),
                                         letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .labelMedium
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .labelMedium
+                                            .fontStyle,
                                       ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
@@ -165,8 +217,21 @@ class _CreateUpdateCategoryWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Montserrat',
+                                      font: GoogleFonts.montserrat(
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .fontStyle,
+                                      ),
                                       letterSpacing: 0.0,
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
                                     ),
                                 cursorColor:
                                     FlutterFlowTheme.of(context).primaryText,
@@ -284,9 +349,24 @@ class _CreateUpdateCategoryWidgetState
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Montserrat',
+                                        font: GoogleFonts.montserrat(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
+                                        ),
                                         color: Colors.white,
                                         letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
                                       ),
                                   elevation: 0.0,
                                   borderRadius: BorderRadius.circular(4.0),
@@ -310,9 +390,24 @@ class _CreateUpdateCategoryWidgetState
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Montserrat',
+                                        font: GoogleFonts.montserrat(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
+                                        ),
                                         color: Colors.white,
                                         letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
                                       ),
                                   elevation: 0.0,
                                   borderRadius: BorderRadius.circular(4.0),

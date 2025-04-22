@@ -6,6 +6,7 @@ import '/pages/header_kpacita/header_kpacita_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'home_government_model.dart';
 export 'home_government_model.dart';
 
@@ -123,8 +124,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
@@ -132,6 +141,11 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                         lineHeight: 1.0,
                                                       ),
                                                 ),
@@ -148,14 +162,31 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 fontSize: 20.0,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                     ),
                                                   ],
@@ -214,8 +245,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
@@ -226,6 +265,10 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
                                                                   ),
                                                             ),
                                                           ),
@@ -295,8 +338,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
@@ -307,6 +358,10 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
                                                                   ),
                                                             ),
                                                             TextSpan(
@@ -367,14 +422,26 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 fontSize: 48.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                                 lineHeight: 1.0,
                                                               ),
                                                         ),
@@ -469,10 +536,14 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.bold,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               fontSize: 15.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.bold,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -480,9 +551,14 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               fontSize: 15.0,
                                                                               letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                     ].divide(SizedBox(
@@ -520,12 +596,19 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                               context)
                                                                           .titleSmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Colors.white,
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                           ),
                                                                       elevation:
                                                                           0.0,
@@ -606,10 +689,14 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.bold,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               fontSize: 15.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.bold,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -617,9 +704,14 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               fontSize: 15.0,
                                                                               letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                     ].divide(SizedBox(
@@ -657,12 +749,19 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                               context)
                                                                           .titleSmall
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Colors.white,
                                                                             letterSpacing:
                                                                                 0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                           ),
                                                                       elevation:
                                                                           0.0,
@@ -724,8 +823,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
@@ -733,6 +840,11 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                               ),
                                               Flexible(
@@ -742,8 +854,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
@@ -751,6 +871,11 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                         lineHeight: 1.0,
                                                       ),
                                                 ),
@@ -778,8 +903,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
@@ -787,6 +920,11 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                               ),
                                               Flexible(
@@ -796,8 +934,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color: FlutterFlowTheme
                                                                 .of(context)
                                                             .secondaryBackground,
@@ -805,6 +951,11 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                         lineHeight: 1.0,
                                                       ),
                                                 ),
@@ -852,13 +1003,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Montserrat',
+                                                    font:
+                                                        GoogleFonts.montserrat(
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     fontSize: 44.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
                                                     lineHeight: 1.0,
                                                   ),
                                             ),
@@ -881,13 +1046,24 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Montserrat',
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight: FontWeight.w500,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
                                                 fontSize: 20.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
                                               ),
                                         ),
                                       ].divide(SizedBox(height: 30.0)),
@@ -922,17 +1098,36 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                       'Capacitación de nivel\nmundial',
                                                       textAlign:
                                                           TextAlign.center,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Montserrat',
-                                                            color: Color(
-                                                                0xFFDB0B17),
-                                                            fontSize: 24.0,
-                                                            letterSpacing: 0.0,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                color: Color(
+                                                                    0xFFDB0B17),
+                                                                fontSize: 24.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
                                                     ),
                                                     Text(
                                                       'Empodera a tus estudiantes con capacitación y credenciales de nivel mundial de más de 275 universidades y empresas líderes.',
@@ -943,14 +1138,31 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                     ),
                                                   ].divide(
@@ -978,17 +1190,36 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                       'Habilidades en\ndemanda',
                                                       textAlign:
                                                           TextAlign.center,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Montserrat',
-                                                            color: Color(
-                                                                0xFFDB0B17),
-                                                            fontSize: 24.0,
-                                                            letterSpacing: 0.0,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                color: Color(
+                                                                    0xFFDB0B17),
+                                                                fontSize: 24.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
                                                     ),
                                                     Text(
                                                       'Ofrecer capacitación en datos, tecnología y habilidades de liderazgo.',
@@ -999,14 +1230,31 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                     ),
                                                   ].divide(
@@ -1041,17 +1289,36 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                       'Aprendizaje práctico',
                                                       textAlign:
                                                           TextAlign.center,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Montserrat',
-                                                            color: Color(
-                                                                0xFFDB0B17),
-                                                            fontSize: 24.0,
-                                                            letterSpacing: 0.0,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                color: Color(
+                                                                    0xFFDB0B17),
+                                                                fontSize: 24.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
                                                     ),
                                                     Text(
                                                       'Permite desarrollar habilidades a partir de aprendizaje aplicado a través de evaluaciones y proyectos del mundo real.',
@@ -1062,14 +1329,31 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                     ),
                                                   ].divide(
@@ -1097,17 +1381,36 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                       'Información práctica',
                                                       textAlign:
                                                           TextAlign.center,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Montserrat',
-                                                            color: Color(
-                                                                0xFFDB0B17),
-                                                            fontSize: 24.0,
-                                                            letterSpacing: 0.0,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                color: Color(
+                                                                    0xFFDB0B17),
+                                                                fontSize: 24.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
                                                     ),
                                                     Text(
                                                       'Realiza un seguimiento, mide y evalúa de forma comparativa el progreso del estudiante para guiar las estrategias de capacitación.',
@@ -1118,14 +1421,31 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                     ),
                                                   ].divide(
@@ -1176,8 +1496,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1186,6 +1514,11 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                         lineHeight: 1.0,
                                                       ),
                                                 ),
@@ -1210,7 +1543,16 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Montserrat',
+                                                    font:
+                                                        GoogleFonts.montserrat(
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .primaryText,
@@ -1218,6 +1560,11 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                     letterSpacing: 0.0,
                                                     fontWeight:
                                                         FontWeight.normal,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
                                                   ),
                                             ),
                                             Column(
@@ -1248,8 +1595,17 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -1257,6 +1613,14 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                       20.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                           ),
                                                         ),
@@ -1287,8 +1651,17 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -1296,6 +1669,14 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                       20.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                           ),
                                                         ),
@@ -1326,8 +1707,17 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -1335,6 +1725,14 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                       20.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                           ),
                                                         ),
@@ -1365,8 +1763,17 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -1374,6 +1781,14 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                       20.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                           ),
                                                         ),
@@ -1422,10 +1837,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       hintText: 'Nombre',
                                                       hintStyle:
@@ -1433,10 +1865,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
@@ -1493,9 +1942,30 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                                     cursorColor:
                                                         FlutterFlowTheme.of(
@@ -1522,10 +1992,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       hintText: 'Apellido',
                                                       hintStyle:
@@ -1533,10 +2020,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
@@ -1593,9 +2097,30 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                                     cursorColor:
                                                         FlutterFlowTheme.of(
@@ -1622,10 +2147,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       hintText: 'Email',
                                                       hintStyle:
@@ -1633,10 +2175,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
@@ -1693,9 +2252,30 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                                     cursorColor:
                                                         FlutterFlowTheme.of(
@@ -1722,10 +2302,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       hintText:
                                                           'Número de telefono',
@@ -1734,10 +2331,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
@@ -1794,9 +2408,30 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                                     cursorColor:
                                                         FlutterFlowTheme.of(
@@ -1823,10 +2458,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       hintText:
                                                           'Nombre de la organizacion',
@@ -1835,10 +2487,27 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
@@ -1895,9 +2564,30 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                                     cursorColor:
                                                         FlutterFlowTheme.of(
@@ -1931,10 +2621,31 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmall
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmall
+                                                                    .fontStyle,
+                                                          ),
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .fontStyle,
                                                         ),
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1973,13 +2684,23 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Montserrat',
+                                              font: GoogleFonts.montserrat(
+                                                fontWeight: FontWeight.w600,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
                                               fontSize: 44.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
                                               lineHeight: 1.0,
                                             ),
                                       ),
@@ -2001,12 +2722,22 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Montserrat',
+                                          font: GoogleFonts.montserrat(
+                                            fontWeight: FontWeight.w600,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                          ),
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           fontSize: 16.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
                                         ),
                                   ),
                                   FFButtonWidget(
@@ -2027,9 +2758,26 @@ class _HomeGovernmentWidgetState extends State<HomeGovernmentWidget> {
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Montserrat',
+                                            font: GoogleFonts.montserrat(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontStyle,
+                                            ),
                                             color: Colors.white,
                                             letterSpacing: 0.0,
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontStyle,
                                           ),
                                       elevation: 0.0,
                                       borderRadius: BorderRadius.circular(4.0),

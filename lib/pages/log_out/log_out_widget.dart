@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'log_out_model.dart';
 export 'log_out_model.dart';
 
@@ -76,10 +77,18 @@ class _LogOutWidgetState extends State<LogOutWidget> {
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Montserrat',
+                                    font: GoogleFonts.montserrat(
+                                      fontWeight: FontWeight.w600,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                   ),
                         ),
                         Row(
@@ -102,9 +111,22 @@ class _LogOutWidgetState extends State<LogOutWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Montserrat',
+                                      font: GoogleFonts.montserrat(
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
                                       color: Colors.white,
                                       letterSpacing: 0.0,
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
                                     ),
                                 elevation: 0.0,
                                 borderRadius: BorderRadius.circular(4.0),
@@ -131,9 +153,22 @@ class _LogOutWidgetState extends State<LogOutWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Montserrat',
+                                      font: GoogleFonts.montserrat(
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
                                       color: Colors.white,
                                       letterSpacing: 0.0,
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
                                     ),
                                 elevation: 0.0,
                                 borderRadius: BorderRadius.circular(4.0),

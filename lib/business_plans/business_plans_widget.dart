@@ -10,6 +10,7 @@ import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'business_plans_model.dart';
 export 'business_plans_model.dart';
 
@@ -122,11 +123,33 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                                       context)
                                                   .titleSmall
                                                   .override(
-                                                    fontFamily: 'Montserrat',
+                                                    font:
+                                                        GoogleFonts.montserrat(
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontStyle,
+                                                    ),
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .primary,
                                                     letterSpacing: 0.0,
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleSmall
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleSmall
+                                                            .fontStyle,
                                                     decoration: TextDecoration
                                                         .underline,
                                                   ),
@@ -145,10 +168,22 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Montserrat',
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight: FontWeight.w600,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
                                                   fontSize: 64.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
                                                 ),
                                           ),
                                           Container(
@@ -170,9 +205,26 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Montserrat',
+                                              font: GoogleFonts.montserrat(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
                                             ),
                                       ),
                                     ]
@@ -296,14 +348,26 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 fontSize: 35.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                         Container(
@@ -377,14 +441,19 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FontWeight.w300,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             fontSize:
                                                                                 20.0,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
                                                                                 FontWeight.w300,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                     ),
                                                                   ),
@@ -587,14 +656,31 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                                                       context)
                                                                   .titleSmall
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall
+                                                                          .fontStyle,
+                                                                    ),
                                                                     color: Colors
                                                                         .white,
                                                                     fontSize:
                                                                         15.0,
                                                                     letterSpacing:
                                                                         0.0,
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .fontStyle,
                                                                   ),
                                                           elevation: 0.0,
                                                           borderRadius:

@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'empty_methodologys_model.dart';
 export 'empty_methodologys_model.dart';
 
@@ -43,11 +44,15 @@ class _EmptyMethodologysWidgetState extends State<EmptyMethodologysWidget> {
       child: Text(
         'No se encontraron acciones',
         style: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: 'Montserrat',
+              font: GoogleFonts.montserrat(
+                fontWeight: FontWeight.w300,
+                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+              ),
               color: FlutterFlowTheme.of(context).alternate,
               fontSize: 16.0,
               letterSpacing: 0.0,
               fontWeight: FontWeight.w300,
+              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
             ),
       ),
     );

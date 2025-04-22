@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'form_register_demo_model.dart';
 export 'form_register_demo_model.dart';
 
@@ -101,10 +102,19 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Montserrat',
+                                        font: GoogleFonts.montserrat(
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
+                                        ),
                                         fontSize: 44.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .fontStyle,
                                       ),
                                 ),
                                 Container(
@@ -122,10 +132,18 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Montserrat',
+                                    font: GoogleFonts.montserrat(
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                   ),
                             ),
                             Column(
@@ -146,21 +164,63 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           obscureText: false,
                                           decoration: InputDecoration(
                                             isDense: true,
-                                            labelStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            labelStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
                                             hintText: 'Nombre',
-                                            hintStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            hintStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
                                             enabledBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0xFFAAAAAA),
@@ -206,11 +266,30 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Montserrat',
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
                                                 letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
                                               ),
                                           cursorColor:
                                               FlutterFlowTheme.of(context)
@@ -233,21 +312,63 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           obscureText: false,
                                           decoration: InputDecoration(
                                             isDense: true,
-                                            labelStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            labelStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
                                             hintText: 'Apellido',
-                                            hintStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            hintStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
                                             enabledBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0xFFAAAAAA),
@@ -293,11 +414,30 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Montserrat',
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
                                                 letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
                                               ),
                                           cursorColor:
                                               FlutterFlowTheme.of(context)
@@ -325,21 +465,63 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           obscureText: false,
                                           decoration: InputDecoration(
                                             isDense: true,
-                                            labelStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            labelStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
                                             hintText: 'Correo Electronico',
-                                            hintStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            hintStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
                                             enabledBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0xFFAAAAAA),
@@ -385,11 +567,30 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Montserrat',
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
                                                 letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
                                               ),
                                           cursorColor:
                                               FlutterFlowTheme.of(context)
@@ -411,21 +612,63 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           obscureText: false,
                                           decoration: InputDecoration(
                                             isDense: true,
-                                            labelStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            labelStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
                                             hintText: 'Número',
-                                            hintStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                            hintStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
                                             enabledBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0xFFAAAAAA),
@@ -471,11 +714,30 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Montserrat',
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
                                                 letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
                                               ),
                                           cursorColor:
                                               FlutterFlowTheme.of(context)
@@ -503,21 +765,59 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           isDense: true,
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Montserrat',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
                                           hintText: 'Contraseña',
-                                          hintStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Montserrat',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          hintStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0xFFAAAAAA),
@@ -563,11 +863,28 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Montserrat',
+                                              font: GoogleFonts.montserrat(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
                                             ),
                                         cursorColor:
                                             FlutterFlowTheme.of(context)
@@ -597,9 +914,22 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Montserrat',
+                                      font: GoogleFonts.montserrat(
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
                                       color: Colors.white,
                                       letterSpacing: 0.0,
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
                                     ),
                                 elevation: 0.0,
                                 borderRadius: BorderRadius.circular(15.0),

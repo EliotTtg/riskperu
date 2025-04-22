@@ -17,6 +17,7 @@ import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
 import 'examination_questions_final_model.dart';
@@ -324,10 +325,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Montserrat',
+                                                                                font: GoogleFonts.montserrat(
+                                                                                  fontWeight: FontWeight.bold,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                ),
                                                                                 fontSize: 16.0,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
                                                                         ),
                                                                       ],
@@ -361,8 +366,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
@@ -373,6 +384,10 @@ class _ExaminationQuestionsFinalWidgetState
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                               LinearPercentIndicator(
@@ -401,14 +416,23 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           context)
                                                                       .headlineSmall
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Glory',
+                                                                        font: GoogleFonts
+                                                                            .glory(
+                                                                          fontWeight:
+                                                                              FontWeight.w300,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .headlineSmall
+                                                                              .fontStyle,
+                                                                        ),
                                                                         fontSize:
                                                                             0.0,
                                                                         letterSpacing:
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w300,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .headlineSmall
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 padding:
@@ -444,10 +468,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Montserrat',
+                                                                                font: GoogleFonts.montserrat(
+                                                                                  fontWeight: FontWeight.w300,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                ),
                                                                                 color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.w300,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
                                                                         ),
                                                                         TextSpan(
@@ -467,14 +495,19 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FontWeight.w300,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryText,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
                                                                                 FontWeight.w300,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                     ),
                                                                   ),
@@ -484,14 +517,22 @@ class _ExaminationQuestionsFinalWidgetState
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FontWeight.w300,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
                                                                           color:
                                                                               FlutterFlowTheme.of(context).secondaryText,
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.w300,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                   ),
                                                                 ],
@@ -621,10 +662,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                       )
                                                                                                     ],
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.normal,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                 ),
@@ -649,9 +694,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                     TextSpan(
                                                                                                       text: '0',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             fontSize: 16.0,
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     TextSpan(
@@ -669,10 +719,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                     )
                                                                                                   ],
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ),
@@ -768,9 +822,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                 )
                                                                                                               ],
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                    ),
                                                                                                                     fontSize: 14.0,
                                                                                                                     letterSpacing: 0.0,
+                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                     lineHeight: 1.0,
                                                                                                                   ),
                                                                                                             ),
@@ -906,10 +965,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               Text(
                                                                                 'Limite de tiempo: ',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FontWeight.w500,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                      ),
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                     ),
                                                                               ),
                                                                               Builder(
@@ -972,11 +1035,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                   },
                                                                                   textAlign: TextAlign.start,
                                                                                   style: FlutterFlowTheme.of(context).headlineSmall.override(
-                                                                                        fontFamily: 'Glory',
+                                                                                        font: GoogleFonts.glory(
+                                                                                          fontWeight: FontWeight.w500,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).headlineSmall.fontStyle,
+                                                                                        ),
                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).headlineSmall.fontStyle,
                                                                                       ),
                                                                                 ),
                                                                               ),
@@ -1002,10 +1069,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                 Text(
                                                                               '50%',
                                                                               style: FlutterFlowTheme.of(context).headlineSmall.override(
-                                                                                    fontFamily: 'Glory',
+                                                                                    font: GoogleFonts.glory(
+                                                                                      fontWeight: FontWeight.w300,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).headlineSmall.fontStyle,
+                                                                                    ),
                                                                                     fontSize: 0.0,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w300,
+                                                                                    fontStyle: FlutterFlowTheme.of(context).headlineSmall.fontStyle,
                                                                                   ),
                                                                             ),
                                                                             padding:
@@ -1189,13 +1260,17 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                       '1',
                                                                                                     ),
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.w600,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           color: valueOrDefault<Color>(
                                                                                                             containerRespuestaStateRecordList.where((e) => e.uidQuestion == listaPreguntasItem.reference.id).toList().isNotEmpty ? FlutterFlowTheme.of(context).secondaryBackground : FlutterFlowTheme.of(context).primaryText,
                                                                                                             FlutterFlowTheme.of(context).primaryText,
                                                                                                           ),
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.w600,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                 ),
@@ -1234,14 +1309,19 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF979797),
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
                                                                                 FontWeight.w600,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                     ),
                                                                     TextSpan(
@@ -1259,14 +1339,19 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF979797),
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
                                                                                 FontWeight.w600,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                     ),
                                                                     TextSpan(
@@ -1276,14 +1361,19 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF979797),
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
                                                                                 FontWeight.w600,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                     ),
                                                                     TextSpan(
@@ -1298,14 +1388,19 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               context)
                                                                           .bodyMedium
                                                                           .override(
-                                                                            fontFamily:
-                                                                                'Montserrat',
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
                                                                             color:
                                                                                 Color(0xFF979797),
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
                                                                                 FontWeight.w600,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                           ),
                                                                     )
                                                                   ],
@@ -1313,14 +1408,27 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         color: Color(
                                                                             0xFF979797),
                                                                         fontSize:
                                                                             16.0,
                                                                         letterSpacing:
                                                                             0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                               ),
@@ -1409,10 +1517,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                     '1',
                                                                                   ),
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Montserrat',
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FontWeight.w600,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                        ),
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                       ),
                                                                                 ),
                                                                                 TextSpan(
@@ -1425,10 +1537,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                 )
                                                                               ],
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Montserrat',
+                                                                                    font: GoogleFonts.montserrat(
+                                                                                      fontWeight: FontWeight.w600,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                    ),
                                                                                     fontSize: 12.0,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w600,
+                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
                                                                             ),
                                                                           ),
@@ -1499,10 +1615,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                           '-',
                                                                                         ),
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FontWeight.normal,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.normal,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                             ),
                                                                                       ),
                                                                                     ),
@@ -1514,10 +1634,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                         '-',
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FontWeight.w600,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.w600,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                           ),
                                                                                     ),
                                                                                   ),
@@ -1657,9 +1781,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                     '1',
                                                                                                                                   ),
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Montserrat',
+                                                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                        ),
                                                                                                                                         fontSize: 12.0,
                                                                                                                                         letterSpacing: 0.0,
+                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                       ),
                                                                                                                                 ),
                                                                                                                                 TextSpan(
@@ -1668,9 +1797,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                 )
                                                                                                                               ],
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                    ),
                                                                                                                                     fontSize: 12.0,
                                                                                                                                     letterSpacing: 0.0,
+                                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                   ),
                                                                                                                             ),
                                                                                                                           ),
@@ -1678,10 +1812,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                             child: Text(
                                                                                                                               listaRespuesta2Item.textoRespuesta,
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Montserrat',
+                                                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                    ),
                                                                                                                                     color: Colors.black,
                                                                                                                                     fontSize: 12.0,
                                                                                                                                     letterSpacing: 0.0,
+                                                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                   ),
                                                                                                                             ),
                                                                                                                           ),
@@ -1761,9 +1900,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                       '1',
                                                                                                                                     ),
                                                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                          fontFamily: 'Montserrat',
+                                                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                          ),
                                                                                                                                           fontSize: 12.0,
                                                                                                                                           letterSpacing: 0.0,
+                                                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                         ),
                                                                                                                                   ),
                                                                                                                                   TextSpan(
@@ -1772,9 +1916,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                   )
                                                                                                                                 ],
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                      ),
                                                                                                                                       fontSize: 12.0,
                                                                                                                                       letterSpacing: 0.0,
+                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                     ),
                                                                                                                               ),
                                                                                                                             ),
@@ -1782,10 +1931,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                               child: Text(
                                                                                                                                 listaRespuesta1Item.textoRespuesta,
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Montserrat',
+                                                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                      ),
                                                                                                                                       color: Colors.black,
                                                                                                                                       fontSize: 12.0,
                                                                                                                                       letterSpacing: 0.0,
+                                                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                                     ),
                                                                                                                               ),
                                                                                                                             ),
@@ -1851,7 +2005,10 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                             'Incorrecto',
                                                                                                                           ),
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                                  fontWeight: FontWeight.w600,
+                                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                ),
                                                                                                                                 color: valueOrDefault<Color>(
                                                                                                                                   Set.from(containerRespuestasRecordList
                                                                                                                                                   .where((e) => e.esCorrecta)
@@ -1888,15 +2045,20 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                 fontSize: 12.0,
                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                 fontWeight: FontWeight.w600,
+                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                               ),
                                                                                                                         ),
                                                                                                                         Text(
                                                                                                                           'Respuesta',
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                                  fontWeight: FontWeight.w600,
+                                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                ),
                                                                                                                                 fontSize: 12.0,
                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                 fontWeight: FontWeight.w600,
+                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                               ),
                                                                                                                         ),
                                                                                                                         Text(
@@ -1906,10 +2068,14 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                           ),
                                                                                                                           textAlign: TextAlign.start,
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                                  fontWeight: FontWeight.normal,
+                                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                                ),
                                                                                                                                 fontSize: 12.0,
                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                 fontWeight: FontWeight.normal,
+                                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                                               ),
                                                                                                                         ),
                                                                                                                       ].divide(SizedBox(height: 10.0)),
@@ -1988,11 +2154,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                         iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                         color: FlutterFlowTheme.of(context).primary,
                                                                                         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FontWeight.w500,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                              ),
                                                                                               color: Colors.white,
                                                                                               fontSize: 14.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w500,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                             ),
                                                                                         elevation: 0.0,
                                                                                         borderRadius: BorderRadius.circular(4.0),
@@ -2073,11 +2243,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.w500,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                  ),
                                                                                                   color: Colors.white,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                 ),
                                                                                             elevation: 0.0,
                                                                                             borderRadius: BorderRadius.circular(4.0),
@@ -2115,11 +2289,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.w500,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                  ),
                                                                                                   color: Colors.white,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                 ),
                                                                                             elevation: 0.0,
                                                                                             borderRadius: BorderRadius.circular(4.0),
@@ -2260,11 +2438,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                       color: FlutterFlowTheme.of(context).primary,
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FontWeight.w500,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                            ),
                                                                                             color: Colors.white,
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.w500,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                           ),
                                                                                       elevation: 0.0,
                                                                                       borderRadius: BorderRadius.circular(4.0),
@@ -2317,11 +2499,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                     iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                     color: FlutterFlowTheme.of(context).primary,
                                                                                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.w500,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                          ),
                                                                                           color: Colors.white,
                                                                                           fontSize: 12.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w500,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                         ),
                                                                                     elevation: 0.0,
                                                                                     borderRadius: BorderRadius.circular(4.0),
@@ -2399,11 +2585,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.w500,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                  ),
                                                                                                   color: Colors.white,
                                                                                                   fontSize: 12.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                 ),
                                                                                             elevation: 0.0,
                                                                                             borderRadius: BorderRadius.circular(4.0),
@@ -2441,11 +2631,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.w500,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                  ),
                                                                                                   color: Colors.white,
                                                                                                   fontSize: 12.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w500,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                 ),
                                                                                             elevation: 0.0,
                                                                                             borderRadius: BorderRadius.circular(4.0),
@@ -2610,11 +2804,15 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                        fontFamily: 'Montserrat',
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FontWeight.w500,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                        ),
                                                                                         color: Colors.white,
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w500,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                       ),
                                                                                   elevation: 0.0,
                                                                                   borderRadius: BorderRadius.circular(4.0),

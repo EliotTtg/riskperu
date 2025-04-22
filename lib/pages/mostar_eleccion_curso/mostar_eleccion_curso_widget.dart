@@ -7,6 +7,7 @@ import '/pages/lista_anuncios/lista_anuncios_widget.dart';
 import '/pages/lista_sessions/lista_sessions_widget.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'mostar_eleccion_curso_model.dart';
 export 'mostar_eleccion_curso_model.dart';
 
@@ -85,10 +86,18 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Montserrat',
+                                    font: GoogleFonts.montserrat(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
                                   ),
                             ),
                             FFButtonWidget(
@@ -107,11 +116,19 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Inter',
+                                      font: GoogleFonts.inter(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
                                       color: Colors.black,
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.bold,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
                                     ),
                                 elevation: 0.0,
                                 borderSide: BorderSide(
@@ -294,10 +311,20 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Montserrat',
+                                          font: GoogleFonts.montserrat(
+                                            fontWeight: FontWeight.bold,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                          ),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
                                         ),
                                   ),
                                 ].divide(SizedBox(height: 20.0)),
@@ -391,10 +418,20 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Montserrat',
+                                          font: GoogleFonts.montserrat(
+                                            fontWeight: FontWeight.bold,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                          ),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
                                         ),
                                   ),
                                 ].divide(SizedBox(height: 20.0)),

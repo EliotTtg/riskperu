@@ -26,6 +26,7 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:text_search/text_search.dart';
 import 'administration_model.dart';
 export 'administration_model.dart';
@@ -212,8 +213,16 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w600,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: Color(
                                                                       0xFF01203F),
                                                                   fontSize:
@@ -223,6 +232,10 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                   lineHeight:
                                                                       1.0,
                                                                 ),
@@ -242,18 +255,37 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                       ),
                                                       Text(
                                                         'La administración de la página de cursos se encarga de gestionar los diferentes cursos ofrecidos, organizando los contenidos y evaluaciones que forman parte del proceso de aprendizaje y certificación.',
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Montserrat',
-                                                              color: Color(
-                                                                  0xFF979797),
-                                                              fontSize: 12.0,
-                                                              letterSpacing:
-                                                                  0.0,
-                                                            ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
+                                                                  color: Color(
+                                                                      0xFF979797),
+                                                                  fontSize:
+                                                                      12.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                       ),
                                                       Flexible(
                                                         child: Column(
@@ -277,24 +309,50 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                         context)
                                                                     .titleMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Glory',
+                                                                      font: GoogleFonts
+                                                                          .glory(
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .titleMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .titleMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       fontSize:
                                                                           14.0,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleMedium
+                                                                          .fontStyle,
                                                                     ),
                                                                 unselectedLabelStyle:
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Glory',
+                                                                          font:
+                                                                              GoogleFonts.glory(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).titleMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).titleMedium.fontStyle,
+                                                                          ),
                                                                           fontSize:
                                                                               14.0,
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .titleMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .titleMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                 indicatorColor:
                                                                     Color(
@@ -359,8 +417,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                               Text(
                                                                                 'Buscar:',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                      ),
                                                                                       letterSpacing: 0.0,
+                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                     ),
                                                                               ),
                                                                               Container(
@@ -393,14 +456,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                     decoration: InputDecoration(
                                                                                       isDense: true,
                                                                                       labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 13.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                           ),
                                                                                       hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 13.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                           ),
                                                                                       enabledBorder: OutlineInputBorder(
                                                                                         borderSide: BorderSide(
@@ -434,10 +507,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                       fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.normal,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           fontSize: 14.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.normal,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                     cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                     validator: _model.txtbuscarUsuarioTextControllerValidator.asValidator(context),
@@ -489,10 +566,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                      ),
                                                                                       color: Colors.white,
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
+                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                     ),
                                                                                 elevation: 0.0,
                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -552,10 +634,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Fecha de creación',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -567,10 +654,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Código',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -582,10 +674,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Rol',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -597,10 +694,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Nombre',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -612,10 +714,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Email',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -629,10 +736,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             child: Text(
                                                                                               'Estado',
                                                                                               style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                    ),
                                                                                                     color: Color(0xFF212529),
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                     lineHeight: 1.0,
                                                                                                   ),
                                                                                             ),
@@ -647,10 +759,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             child: Text(
                                                                                               'Acción',
                                                                                               style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                    ),
                                                                                                     color: Color(0xFF212529),
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                     lineHeight: 1.0,
                                                                                                   ),
                                                                                             ),
@@ -674,8 +791,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -685,8 +807,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -706,8 +833,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -717,8 +849,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -728,8 +865,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Align(
@@ -759,8 +901,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               ),
                                                                                               maxLines: 1,
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                           ),
@@ -914,8 +1061,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             Text(
                                                                                               'Buscar:',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                             Container(
@@ -948,14 +1100,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   decoration: InputDecoration(
                                                                                                     isDense: true,
                                                                                                     labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     enabledBorder: OutlineInputBorder(
                                                                                                       borderSide: BorderSide(
@@ -989,10 +1151,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                   cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                                   validator: _model.txtbuscarExamenTextController1Validator.asValidator(context),
@@ -1036,10 +1202,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                      ),
                                                                                                       color: Colors.white,
                                                                                                       fontSize: 12.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                     ),
                                                                                                 elevation: 0.0,
                                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -1058,10 +1229,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: FlutterFlowTheme.of(context).primary,
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                    ),
                                                                                                     color: Colors.white,
                                                                                                     fontSize: 12.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                   ),
                                                                                               elevation: 0.0,
                                                                                               borderRadius: BorderRadius.circular(4.0),
@@ -1120,10 +1296,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Fecha de creación',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1135,10 +1316,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Nombre',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1150,10 +1336,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Encargado',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1165,10 +1356,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Tiempo Limite',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1182,10 +1378,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                         child: Text(
                                                                                                           'Acción',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -1209,8 +1410,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Text(
@@ -1220,8 +1426,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     StreamBuilder<List<UsersRecord>>(
@@ -1257,8 +1468,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                           ),
                                                                                                           maxLines: 1,
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                               ),
                                                                                                         );
                                                                                                       },
@@ -1270,8 +1486,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       )} Min.',
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Row(
@@ -1427,8 +1648,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             Text(
                                                                                               'Buscar:',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                             Container(
@@ -1461,14 +1687,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   decoration: InputDecoration(
                                                                                                     isDense: true,
                                                                                                     labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     enabledBorder: OutlineInputBorder(
                                                                                                       borderSide: BorderSide(
@@ -1502,10 +1738,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                   cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                                   validator: _model.txtbuscarExamenTextController2Validator.asValidator(context),
@@ -1549,10 +1789,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                      ),
                                                                                                       color: Colors.white,
                                                                                                       fontSize: 12.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                     ),
                                                                                                 elevation: 0.0,
                                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -1571,10 +1816,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: FlutterFlowTheme.of(context).primary,
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                    ),
                                                                                                     color: Colors.white,
                                                                                                     fontSize: 12.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                   ),
                                                                                               elevation: 0.0,
                                                                                               borderRadius: BorderRadius.circular(4.0),
@@ -1634,10 +1884,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Fecha de creación',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1649,10 +1904,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Nombre',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1664,10 +1924,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Creado por',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1681,10 +1946,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                         child: Text(
                                                                                                           'Examenes',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -1699,10 +1969,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                         child: Text(
                                                                                                           'Acción',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -1726,8 +2001,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Text(
@@ -1737,8 +2017,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     StreamBuilder<List<UsersRecord>>(
@@ -1774,8 +2059,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                           ),
                                                                                                           maxLines: 1,
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                               ),
                                                                                                         );
                                                                                                       },
@@ -1795,10 +2085,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                           iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                           color: Color(0xFF094B90),
                                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Colors.white,
                                                                                                                 fontSize: 12.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                               ),
                                                                                                           elevation: 0.0,
                                                                                                           borderRadius: BorderRadius.circular(4.0),
@@ -1946,8 +2241,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                       Text(
                                                                                         'Buscar:',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               letterSpacing: 0.0,
+                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                             ),
                                                                                       ),
                                                                                       Container(
@@ -1980,14 +2280,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             decoration: InputDecoration(
                                                                                               isDense: true,
                                                                                               labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                    ),
                                                                                                     fontSize: 13.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                   ),
                                                                                               hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                    ),
                                                                                                     fontSize: 13.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                   ),
                                                                                               enabledBorder: OutlineInputBorder(
                                                                                                 borderSide: BorderSide(
@@ -2021,10 +2331,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                             ),
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.normal,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.normal,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                 ),
                                                                                             cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                             validator: _model.txtbuscarCursoTextController1Validator.asValidator(context),
@@ -2066,10 +2380,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                       color: FlutterFlowTheme.of(context).primary,
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                            ),
                                                                                             color: Colors.white,
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                           ),
                                                                                       elevation: 0.0,
                                                                                       borderRadius: BorderRadius.circular(4.0),
@@ -2127,10 +2446,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Fecha de creación',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -2142,10 +2466,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Nombre',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -2157,10 +2486,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Encargado',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -2172,10 +2506,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Categoria',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -2187,10 +2526,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Estado',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -2205,10 +2549,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     'Grupo de Examenes',
                                                                                                     textAlign: TextAlign.center,
                                                                                                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                          ),
                                                                                                           color: Color(0xFF212529),
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                           lineHeight: 1.0,
                                                                                                         ),
                                                                                                   ),
@@ -2223,10 +2572,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   child: Text(
                                                                                                     'Acción',
                                                                                                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                          ),
                                                                                                           color: Color(0xFF212529),
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                           lineHeight: 1.0,
                                                                                                         ),
                                                                                                   ),
@@ -2250,8 +2604,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 ),
                                                                                                 maxLines: 1,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               ),
                                                                                               Text(
@@ -2261,8 +2620,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 ),
                                                                                                 maxLines: 1,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               ),
                                                                                               StreamBuilder<List<UsersRecord>>(
@@ -2298,8 +2662,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     ),
                                                                                                     maxLines: 1,
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   );
                                                                                                 },
@@ -2337,8 +2706,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     ),
                                                                                                     maxLines: 1,
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   );
                                                                                                 },
@@ -2368,8 +2742,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   ),
                                                                                                   maxLines: 1,
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ),
@@ -2388,10 +2767,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                     color: Color(0xFF094B90),
                                                                                                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                          ),
                                                                                                           color: Colors.white,
                                                                                                           fontSize: 12.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                         ),
                                                                                                     elevation: 0.0,
                                                                                                     borderRadius: BorderRadius.circular(4.0),
@@ -2559,8 +2943,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                               Text(
                                                                                 'Buscar:',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                      ),
                                                                                       letterSpacing: 0.0,
+                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                     ),
                                                                               ),
                                                                               Container(
@@ -2593,14 +2982,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                     decoration: InputDecoration(
                                                                                       isDense: true,
                                                                                       labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 13.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                           ),
                                                                                       hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 13.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                           ),
                                                                                       enabledBorder: OutlineInputBorder(
                                                                                         borderSide: BorderSide(
@@ -2634,10 +3033,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                       fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.normal,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           fontSize: 14.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.normal,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                     cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                     validator: _model.txtbuscarEstudianteTextControllerValidator.asValidator(context),
@@ -2676,10 +3079,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                      ),
                                                                                       color: Colors.white,
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
+                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                     ),
                                                                                 elevation: 0.0,
                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -2744,10 +3152,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Fecha de creación',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2759,10 +3172,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Nombre y Apellido',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2774,10 +3192,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Correo',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2789,10 +3212,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Número',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2804,10 +3232,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Cursos',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2821,10 +3254,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             child: Text(
                                                                                               'Acción',
                                                                                               style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                    ),
                                                                                                     color: Color(0xFF212529),
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                     lineHeight: 1.0,
                                                                                                   ),
                                                                                             ),
@@ -2848,8 +3286,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -2859,8 +3302,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -2870,8 +3318,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -2881,8 +3334,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Builder(
@@ -2917,10 +3375,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: Color(0xFF094B90),
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                    ),
                                                                                                     color: Colors.white,
                                                                                                     fontSize: 12.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                   ),
                                                                                               elevation: 0.0,
                                                                                               borderRadius: BorderRadius.circular(4.0),
@@ -3069,8 +3532,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                               Text(
                                                                                 'Buscar:',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                      ),
                                                                                       letterSpacing: 0.0,
+                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                     ),
                                                                               ),
                                                                               Container(
@@ -3103,14 +3571,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                     decoration: InputDecoration(
                                                                                       isDense: true,
                                                                                       labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 13.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                           ),
                                                                                       hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 13.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                           ),
                                                                                       enabledBorder: OutlineInputBorder(
                                                                                         borderSide: BorderSide(
@@ -3144,10 +3622,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                       fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.normal,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           fontSize: 14.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.normal,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                     cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                     validator: _model.txtbuscarCategoriaTextControllerValidator.asValidator(context),
@@ -3199,10 +3681,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                      ),
                                                                                       color: Colors.white,
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
+                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                     ),
                                                                                 elevation: 0.0,
                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -3262,10 +3749,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Fecha de creación',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -3277,10 +3769,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Nombre',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -3293,10 +3790,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           child: Text(
                                                                                             'Creado por',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -3310,10 +3812,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             child: Text(
                                                                                               'Acción',
                                                                                               style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                    ),
                                                                                                     color: Color(0xFF212529),
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                     lineHeight: 1.0,
                                                                                                   ),
                                                                                             ),
@@ -3337,8 +3844,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -3348,8 +3860,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         StreamBuilder<List<UsersRecord>>(
@@ -3385,8 +3902,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               ),
                                                                                               maxLines: 1,
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             );
                                                                                           },
@@ -3544,8 +4066,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             Text(
                                                                                               'Buscar:',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                             Container(
@@ -3578,14 +4105,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   decoration: InputDecoration(
                                                                                                     isDense: true,
                                                                                                     labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     enabledBorder: OutlineInputBorder(
                                                                                                       borderSide: BorderSide(
@@ -3619,10 +4156,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                   cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                                   validator: _model.txtbuscarExamenTextController3Validator.asValidator(context),
@@ -3666,10 +4207,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                      ),
                                                                                                       color: Colors.white,
                                                                                                       fontSize: 12.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                     ),
                                                                                                 elevation: 0.0,
                                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -3688,10 +4234,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: FlutterFlowTheme.of(context).primary,
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                    ),
                                                                                                     color: Colors.white,
                                                                                                     fontSize: 12.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                   ),
                                                                                               elevation: 0.0,
                                                                                               borderRadius: BorderRadius.circular(4.0),
@@ -3750,10 +4301,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Fecha de creación',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -3765,10 +4321,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Nombre',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -3780,10 +4341,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Encargado',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -3795,10 +4361,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Tiempo Limite',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -3812,10 +4383,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                         child: Text(
                                                                                                           'Acción',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -3839,8 +4415,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Text(
@@ -3850,8 +4431,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     StreamBuilder<List<UsersRecord>>(
@@ -3887,8 +4473,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                           ),
                                                                                                           maxLines: 1,
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                               ),
                                                                                                         );
                                                                                                       },
@@ -3900,8 +4491,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       )} Min.',
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Row(
@@ -4057,8 +4653,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             Text(
                                                                                               'Buscar:',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                             Container(
@@ -4091,14 +4692,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   decoration: InputDecoration(
                                                                                                     isDense: true,
                                                                                                     labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     enabledBorder: OutlineInputBorder(
                                                                                                       borderSide: BorderSide(
@@ -4132,10 +4743,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                   cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                                   validator: _model.txtbuscarExamenTextController4Validator.asValidator(context),
@@ -4179,10 +4794,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                      ),
                                                                                                       color: Colors.white,
                                                                                                       fontSize: 12.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                     ),
                                                                                                 elevation: 0.0,
                                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -4201,10 +4821,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: FlutterFlowTheme.of(context).primary,
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                    ),
                                                                                                     color: Colors.white,
                                                                                                     fontSize: 12.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                   ),
                                                                                               elevation: 0.0,
                                                                                               borderRadius: BorderRadius.circular(4.0),
@@ -4264,10 +4889,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Fecha de creación',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -4279,10 +4909,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Nombre',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -4294,10 +4929,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       child: Text(
                                                                                                         'Creado por',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -4311,10 +4951,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                         child: Text(
                                                                                                           'Examenes',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -4329,10 +4974,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                         child: Text(
                                                                                                           'Acción',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -4356,8 +5006,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Text(
@@ -4367,8 +5022,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     StreamBuilder<List<UsersRecord>>(
@@ -4404,8 +5064,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                           ),
                                                                                                           maxLines: 1,
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                               ),
                                                                                                         );
                                                                                                       },
@@ -4425,10 +5090,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                           iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                           color: Color(0xFF094B90),
                                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Colors.white,
                                                                                                                 fontSize: 12.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                               ),
                                                                                                           elevation: 0.0,
                                                                                                           borderRadius: BorderRadius.circular(4.0),
@@ -4576,8 +5246,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                       Text(
                                                                                         'Buscar:',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               letterSpacing: 0.0,
+                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                             ),
                                                                                       ),
                                                                                       Container(
@@ -4610,14 +5285,24 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                             decoration: InputDecoration(
                                                                                               isDense: true,
                                                                                               labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                    ),
                                                                                                     fontSize: 13.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                   ),
                                                                                               hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                    ),
                                                                                                     fontSize: 13.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                   ),
                                                                                               enabledBorder: OutlineInputBorder(
                                                                                                 borderSide: BorderSide(
@@ -4651,10 +5336,14 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                               fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                             ),
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.normal,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.normal,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                 ),
                                                                                             cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                             validator: _model.txtbuscarCursoTextController2Validator.asValidator(context),
@@ -4696,10 +5385,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                       color: FlutterFlowTheme.of(context).primary,
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                            ),
                                                                                             color: Colors.white,
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                           ),
                                                                                       elevation: 0.0,
                                                                                       borderRadius: BorderRadius.circular(4.0),
@@ -4757,10 +5451,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Fecha de creación',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -4772,10 +5471,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Nombre',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -4787,10 +5491,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Encargado',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -4802,10 +5511,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Categoria',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -4817,10 +5531,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 child: Text(
                                                                                                   'Estado',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -4835,10 +5554,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     'Grupo de Examenes',
                                                                                                     textAlign: TextAlign.center,
                                                                                                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                          ),
                                                                                                           color: Color(0xFF212529),
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                           lineHeight: 1.0,
                                                                                                         ),
                                                                                                   ),
@@ -4853,10 +5577,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   child: Text(
                                                                                                     'Acción',
                                                                                                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                          ),
                                                                                                           color: Color(0xFF212529),
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                           lineHeight: 1.0,
                                                                                                         ),
                                                                                                   ),
@@ -4880,8 +5609,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 ),
                                                                                                 maxLines: 1,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               ),
                                                                                               Text(
@@ -4891,8 +5625,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                 ),
                                                                                                 maxLines: 1,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               ),
                                                                                               StreamBuilder<List<UsersRecord>>(
@@ -4928,8 +5667,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     ),
                                                                                                     maxLines: 1,
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   );
                                                                                                 },
@@ -4967,8 +5711,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     ),
                                                                                                     maxLines: 1,
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   );
                                                                                                 },
@@ -4998,8 +5747,13 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   ),
                                                                                                   maxLines: 1,
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ),
@@ -5018,10 +5772,15 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                     iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                     color: Color(0xFF094B90),
                                                                                                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                          ),
                                                                                                           color: Colors.white,
                                                                                                           fontSize: 12.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                         ),
                                                                                                     elevation: 0.0,
                                                                                                     borderRadius: BorderRadius.circular(4.0),

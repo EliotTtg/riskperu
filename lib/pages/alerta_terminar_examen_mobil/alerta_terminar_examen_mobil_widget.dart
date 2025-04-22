@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'alerta_terminar_examen_mobil_model.dart';
 export 'alerta_terminar_examen_mobil_model.dart';
 
@@ -105,12 +106,25 @@ class _AlertaTerminarExamenMobilWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                               ),
                                             ].divide(SizedBox(height: 5.0)),
@@ -127,12 +141,26 @@ class _AlertaTerminarExamenMobilWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .normal,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.normal,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                               ),
                                             ].divide(SizedBox(height: 5.0)),
@@ -169,12 +197,22 @@ class _AlertaTerminarExamenMobilWidgetState
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Inter',
+                                            font: GoogleFonts.inter(
+                                              fontWeight: FontWeight.bold,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontStyle,
+                                            ),
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                             fontSize: 10.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontStyle,
                                           ),
                                       elevation: 0.0,
                                       borderSide: BorderSide(
@@ -206,12 +244,22 @@ class _AlertaTerminarExamenMobilWidgetState
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Inter',
+                                            font: GoogleFonts.inter(
+                                              fontWeight: FontWeight.bold,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontStyle,
+                                            ),
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
                                             fontSize: 10.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontStyle,
                                           ),
                                       elevation: 0.0,
                                       borderSide: BorderSide(

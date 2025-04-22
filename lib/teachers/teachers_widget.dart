@@ -7,6 +7,7 @@ import '/pages/header/header_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'teachers_model.dart';
 export 'teachers_model.dart';
 
@@ -103,13 +104,27 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Montserrat',
+                                                    font:
+                                                        GoogleFonts.montserrat(
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
                                                     fontSize: 54.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
                                                   ),
                                             ),
                                             InkWell(
@@ -161,8 +176,16 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w600,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
@@ -173,6 +196,10 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                       ),
                                                     ].divide(
@@ -219,11 +246,21 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Montserrat',
+                                              font: GoogleFonts.montserrat(
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
                                               color: Color(0xFF17236A),
                                               fontSize: 44.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
                                             ),
                                       ),
                                       Container(
@@ -290,14 +327,27 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             Color(0xFF382D8B),
                                                         fontSize: 23.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Text(
@@ -306,9 +356,30 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Container(
@@ -330,10 +401,31 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ].divide(SizedBox(height: 10.0)),
@@ -365,14 +457,27 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             Color(0xFF382D8B),
                                                         fontSize: 23.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Text(
@@ -381,9 +486,30 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Container(
@@ -405,10 +531,31 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ].divide(SizedBox(height: 10.0)),
@@ -441,14 +588,27 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             Color(0xFF382D8B),
                                                         fontSize: 23.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Text(
@@ -457,9 +617,30 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Container(
@@ -481,10 +662,31 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ].divide(SizedBox(height: 10.0)),
@@ -531,9 +733,26 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Montserrat',
+                                          font: GoogleFonts.montserrat(
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                          ),
                                           fontSize: 28.0,
                                           letterSpacing: 0.0,
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
                                         ),
                                   ),
                                   Row(
@@ -565,8 +784,16 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -575,6 +802,11 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Text(
@@ -583,14 +815,27 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             Color(0xFF152D43),
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ],
@@ -604,8 +849,16 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -614,6 +867,11 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Text(
@@ -622,14 +880,27 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             Color(0xFF152D43),
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ],
@@ -643,8 +914,16 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -653,6 +932,11 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                                 Text(
@@ -661,14 +945,27 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             Color(0xFF152D43),
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                 ),
                                               ],

@@ -12,6 +12,7 @@ import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:text_search/text_search.dart';
 import 'simulador_model.dart';
 export 'simulador_model.dart';
@@ -126,13 +127,24 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Montserrat',
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
                                                 fontSize: 24.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
                                               ),
                                         ),
                                       ),
@@ -142,11 +154,28 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Montserrat',
+                                            font: GoogleFonts.montserrat(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
+                                            ),
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
                                           ),
                                     ),
                                   ].divide(SizedBox(height: 10.0)),
@@ -204,12 +233,29 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   fontSize:
                                                                       14.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                           ),
                                                           StreamBuilder<
@@ -292,31 +338,60 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                             context)
                                                                         .labelMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                          ),
                                                                           color:
                                                                               FlutterFlowTheme.of(context).primary,
                                                                           fontSize:
                                                                               14.0,
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .labelMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .labelMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                 searchTextStyle:
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                 textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary,
@@ -324,6 +399,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                           14.0,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                                 hintText:
                                                                     'Categorias',
@@ -406,14 +489,31 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                     context)
                                                                 .titleSmall
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: Color(
                                                                       0xFF454545),
                                                                   fontSize:
                                                                       14.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall
+                                                                      .fontStyle,
                                                                 ),
                                                         elevation: 0.0,
                                                         borderRadius:
@@ -495,8 +595,17 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -504,6 +613,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                       14.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
                                                                 ),
                                                         hintText:
                                                             'Buscar mis simuladores',
@@ -512,8 +629,17 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -521,6 +647,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                       14.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
                                                                 ),
                                                         enabledBorder:
                                                             OutlineInputBorder(
@@ -583,14 +717,33 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                 .of(context)
                                                             .secondaryBackground,
                                                       ),
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Montserrat',
-                                                            letterSpacing: 0.0,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
                                                       cursorColor:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -838,10 +991,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                     wrapCoursesRecord.name,
                                                                                     maxLines: 2,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.w600,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           fontSize: 24.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w600,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                   ),
                                                                                 ),
@@ -852,10 +1009,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                       TextSpan(
                                                                                         text: 'S/. ',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FontWeight.bold,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               fontSize: 18.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.bold,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                             ),
                                                                                       ),
                                                                                       TextSpan(
@@ -867,10 +1028,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                       )
                                                                                     ],
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.bold,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           fontSize: 18.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.bold,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                   ),
                                                                                 ),
@@ -933,10 +1098,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                                 '0',
                                                                                               ),
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FontWeight.w300,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     fontSize: 18.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w300,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                             TextSpan(
@@ -984,10 +1153,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FontWeight.w300,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 fontSize: 18.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w300,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                       );
@@ -1040,10 +1213,15 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                  fontFamily: 'Montserrat',
+                                                                                  font: GoogleFonts.montserrat(
+                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                  ),
                                                                                   color: Colors.white,
                                                                                   fontSize: 18.0,
                                                                                   letterSpacing: 0.0,
+                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                 ),
                                                                             elevation:
                                                                                 0.0,
@@ -1294,10 +1472,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                   wrapCoursesRecord.name,
                                                                                   maxLines: 2,
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Montserrat',
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FontWeight.w600,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                        ),
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                       ),
                                                                                 ),
                                                                               ),
@@ -1308,10 +1490,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                     TextSpan(
                                                                                       text: 'S/. ',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FontWeight.bold,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                           ),
                                                                                     ),
                                                                                     TextSpan(
@@ -1323,10 +1509,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                     )
                                                                                   ],
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Montserrat',
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FontWeight.bold,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                        ),
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                       ),
                                                                                 ),
                                                                               ),
@@ -1392,10 +1582,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                               '0',
                                                                                             ),
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.w300,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   fontSize: 12.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w300,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                 ),
                                                                                           ),
                                                                                           TextSpan(
@@ -1443,10 +1637,14 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                           )
                                                                                         ],
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FontWeight.w300,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w300,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                             ),
                                                                                       ),
                                                                                     );
@@ -1504,10 +1702,15 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                           textStyle: FlutterFlowTheme.of(context)
                                                                               .titleSmall
                                                                               .override(
-                                                                                fontFamily: 'Montserrat',
+                                                                                font: GoogleFonts.montserrat(
+                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                ),
                                                                                 color: Colors.white,
                                                                                 fontSize: 12.0,
                                                                                 letterSpacing: 0.0,
+                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                               ),
                                                                           elevation:
                                                                               0.0,

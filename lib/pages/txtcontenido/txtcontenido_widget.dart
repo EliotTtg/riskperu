@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'txtcontenido_model.dart';
 export 'txtcontenido_model.dart';
 
@@ -57,14 +58,26 @@ class _TxtcontenidoWidgetState extends State<TxtcontenidoWidget> {
         decoration: InputDecoration(
           isDense: true,
           labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                fontFamily: 'Montserrat',
+                font: GoogleFonts.montserrat(
+                  fontWeight:
+                      FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                  fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                ),
                 letterSpacing: 0.0,
+                fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
               ),
           hintText: 'P.ej.: En el minuto 05:28...',
           hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                fontFamily: 'Montserrat',
+                font: GoogleFonts.montserrat(
+                  fontWeight:
+                      FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                  fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                ),
                 color: Color(0xFFA2A2A2),
                 letterSpacing: 0.0,
+                fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
               ),
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(
@@ -98,8 +111,13 @@ class _TxtcontenidoWidgetState extends State<TxtcontenidoWidget> {
           fillColor: FlutterFlowTheme.of(context).secondaryBackground,
         ),
         style: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: 'Montserrat',
+              font: GoogleFonts.montserrat(
+                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+              ),
               letterSpacing: 0.0,
+              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
             ),
         maxLines: 5,
         maxLength: 255,

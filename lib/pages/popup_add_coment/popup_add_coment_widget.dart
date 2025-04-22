@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'popup_add_coment_model.dart';
 export 'popup_add_coment_model.dart';
 
@@ -73,10 +74,17 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                   Text(
                     'Titulo o Resumen',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Montserrat',
+                          font: GoogleFonts.montserrat(
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
+                          ),
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
+                          fontStyle:
+                              FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
                   ),
                   Container(
@@ -95,15 +103,41 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                         isDense: true,
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Montserrat',
+                                  font: GoogleFonts.montserrat(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
+                                  ),
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontStyle,
                                 ),
                         hintText: 'P.ej.: ¿Por qué utilizamos El Excel?',
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Montserrat',
+                                  font: GoogleFonts.montserrat(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFFA2A2A2),
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontStyle,
                                 ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
@@ -138,8 +172,21 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                             FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Montserrat',
+                            font: GoogleFonts.montserrat(
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
+                            ),
                             letterSpacing: 0.0,
+                            fontWeight: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontWeight,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
                           ),
                       maxLines: 2,
                       minLines: 1,
@@ -164,10 +211,17 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                   Text(
                     'Detalle',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Montserrat',
+                          font: GoogleFonts.montserrat(
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
+                          ),
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
+                          fontStyle:
+                              FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
                   ),
                   Container(
@@ -186,15 +240,41 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                         isDense: true,
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Montserrat',
+                                  font: GoogleFonts.montserrat(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
+                                  ),
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontStyle,
                                 ),
                         hintText: 'P.ej.: En el minuto 05:28...',
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Montserrat',
+                                  font: GoogleFonts.montserrat(
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFFA2A2A2),
                                   letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontStyle,
                                 ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
@@ -229,8 +309,21 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                             FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Montserrat',
+                            font: GoogleFonts.montserrat(
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
+                            ),
                             letterSpacing: 0.0,
+                            fontWeight: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontWeight,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
                           ),
                       maxLines: 5,
                       maxLength: 255,
@@ -270,11 +363,19 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: 'Inter',
+                                font: GoogleFonts.inter(
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontStyle,
+                                ),
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 fontSize: 16.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.bold,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .fontStyle,
                               ),
                           elevation: 0.0,
                           borderRadius: BorderRadius.circular(16.0),
@@ -337,12 +438,20 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                           color: FlutterFlowTheme.of(context).primaryText,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
+                                    ),
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontStyle,
                                   ),
                           elevation: 0.0,
                           borderSide: BorderSide(

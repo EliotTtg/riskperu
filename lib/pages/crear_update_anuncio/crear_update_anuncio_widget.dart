@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'crear_update_anuncio_model.dart';
 export 'crear_update_anuncio_model.dart';
 
@@ -98,11 +99,19 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Inter',
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
+                                    ),
                                     color: Colors.black,
                                     fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontStyle,
                                   ),
                           elevation: 0.0,
                           borderSide: BorderSide(
@@ -177,23 +186,38 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                   AuthUserStreamWidget(
                                                     builder: (context) => Text(
                                                       currentUserDisplayName,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Montserrat',
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primaryText,
-                                                            fontSize: 16.0,
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            decoration:
-                                                                TextDecoration
-                                                                    .underline,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                                fontSize: 16.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                                decoration:
+                                                                    TextDecoration
+                                                                        .underline,
+                                                              ),
                                                     ),
                                                   ),
                                                   RichText(
@@ -209,10 +233,27 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                         TextSpan(
@@ -234,14 +275,33 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                           style: TextStyle(),
                                                         )
                                                       ],
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Montserrat',
-                                                            letterSpacing: 0.0,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
                                                     ),
                                                   ),
                                                 ],
@@ -259,12 +319,25 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                               ),
                                               Container(
@@ -285,25 +358,67 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     isDense: true,
-                                                    labelStyle: FlutterFlowTheme
-                                                            .of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Montserrat',
-                                                          letterSpacing: 0.0,
-                                                        ),
+                                                    labelStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .override(
+                                                              font: GoogleFonts
+                                                                  .montserrat(
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
+                                                              ),
+                                                              letterSpacing:
+                                                                  0.0,
+                                                              fontWeight:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                            ),
                                                     hintText:
                                                         'Finalizacion del Curso',
                                                     hintStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           color:
                                                               Color(0xFFA2A2A2),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
@@ -360,9 +475,30 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                   maxLines: 2,
                                                   minLines: 1,
@@ -397,12 +533,25 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                               ),
                                               Container(
@@ -423,25 +572,67 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     isDense: true,
-                                                    labelStyle: FlutterFlowTheme
-                                                            .of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Montserrat',
-                                                          letterSpacing: 0.0,
-                                                        ),
+                                                    labelStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .override(
+                                                              font: GoogleFonts
+                                                                  .montserrat(
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
+                                                              ),
+                                                              letterSpacing:
+                                                                  0.0,
+                                                              fontWeight:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                            ),
                                                     hintText:
                                                         'P.ej.: En el minuto 05:28...',
                                                     hintStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           color:
                                                               Color(0xFFA2A2A2),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
                                                         ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
@@ -498,9 +689,30 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
+                                                        ),
                                                         letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
                                                       ),
                                                   maxLines: 5,
                                                   maxLength: 255,
@@ -610,12 +822,20 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Inter',
+                                      font: GoogleFonts.inter(
+                                        fontWeight: FontWeight.bold,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.bold,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
                                     ),
                                 elevation: 0.0,
                                 borderSide: BorderSide(

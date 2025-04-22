@@ -24,6 +24,7 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:text_search/text_search.dart';
 import 'administration_teacher_model.dart';
 export 'administration_teacher_model.dart';
@@ -188,8 +189,16 @@ class _AdministrationTeacherWidgetState
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w600,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: Color(
                                                                       0xFF01203F),
                                                                   fontSize:
@@ -199,6 +208,10 @@ class _AdministrationTeacherWidgetState
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                   lineHeight:
                                                                       1.0,
                                                                 ),
@@ -218,18 +231,37 @@ class _AdministrationTeacherWidgetState
                                                       ),
                                                       Text(
                                                         'Este diseño permite a los profesores gestionar de manera eficiente los elementos esenciales de su labor educativa: los cursos, los exámenes y la administración de los estudiantes, todo a través de una interfaz intuitiva y fácil de utilizar.',
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Montserrat',
-                                                              color: Color(
-                                                                  0xFF979797),
-                                                              fontSize: 12.0,
-                                                              letterSpacing:
-                                                                  0.0,
-                                                            ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
+                                                                  color: Color(
+                                                                      0xFF979797),
+                                                                  fontSize:
+                                                                      12.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                       ),
                                                       Expanded(
                                                         child: Column(
@@ -253,24 +285,50 @@ class _AdministrationTeacherWidgetState
                                                                         context)
                                                                     .titleMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Glory',
+                                                                      font: GoogleFonts
+                                                                          .glory(
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .titleMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .titleMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       fontSize:
                                                                           14.0,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleMedium
+                                                                          .fontStyle,
                                                                     ),
                                                                 unselectedLabelStyle:
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Glory',
+                                                                          font:
+                                                                              GoogleFonts.glory(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).titleMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).titleMedium.fontStyle,
+                                                                          ),
                                                                           fontSize:
                                                                               14.0,
                                                                           letterSpacing:
                                                                               0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .titleMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .titleMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                 indicatorColor:
                                                                     Color(
@@ -327,8 +385,13 @@ class _AdministrationTeacherWidgetState
                                                                                             Text(
                                                                                               'Buscar:',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                             Container(
@@ -361,14 +424,24 @@ class _AdministrationTeacherWidgetState
                                                                                                   decoration: InputDecoration(
                                                                                                     isDense: true,
                                                                                                     labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     enabledBorder: OutlineInputBorder(
                                                                                                       borderSide: BorderSide(
@@ -402,10 +475,14 @@ class _AdministrationTeacherWidgetState
                                                                                                     fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                   cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                                   validator: _model.txtbuscarExamenTextController1Validator.asValidator(context),
@@ -449,10 +526,15 @@ class _AdministrationTeacherWidgetState
                                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                      ),
                                                                                                       color: Colors.white,
                                                                                                       fontSize: 12.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                     ),
                                                                                                 elevation: 0.0,
                                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -471,10 +553,15 @@ class _AdministrationTeacherWidgetState
                                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: FlutterFlowTheme.of(context).primary,
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                    ),
                                                                                                     color: Colors.white,
                                                                                                     fontSize: 12.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                   ),
                                                                                               elevation: 0.0,
                                                                                               borderRadius: BorderRadius.circular(4.0),
@@ -533,10 +620,15 @@ class _AdministrationTeacherWidgetState
                                                                                                       child: Text(
                                                                                                         'Fecha de creación',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -548,10 +640,15 @@ class _AdministrationTeacherWidgetState
                                                                                                       child: Text(
                                                                                                         'Nombre',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -563,10 +660,15 @@ class _AdministrationTeacherWidgetState
                                                                                                       child: Text(
                                                                                                         'Encargado',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -578,10 +680,15 @@ class _AdministrationTeacherWidgetState
                                                                                                       child: Text(
                                                                                                         'Tiempo Limite',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -595,10 +702,15 @@ class _AdministrationTeacherWidgetState
                                                                                                         child: Text(
                                                                                                           'Acción',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -622,8 +734,13 @@ class _AdministrationTeacherWidgetState
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Text(
@@ -633,8 +750,13 @@ class _AdministrationTeacherWidgetState
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     StreamBuilder<List<UsersRecord>>(
@@ -670,8 +792,13 @@ class _AdministrationTeacherWidgetState
                                                                                                           ),
                                                                                                           maxLines: 1,
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                               ),
                                                                                                         );
                                                                                                       },
@@ -683,8 +810,13 @@ class _AdministrationTeacherWidgetState
                                                                                                       )} Min.',
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Row(
@@ -840,8 +972,13 @@ class _AdministrationTeacherWidgetState
                                                                                             Text(
                                                                                               'Buscar:',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
                                                                                             ),
                                                                                             Container(
@@ -874,14 +1011,24 @@ class _AdministrationTeacherWidgetState
                                                                                                   decoration: InputDecoration(
                                                                                                     isDense: true,
                                                                                                     labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 13.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                         ),
                                                                                                     enabledBorder: OutlineInputBorder(
                                                                                                       borderSide: BorderSide(
@@ -915,10 +1062,14 @@ class _AdministrationTeacherWidgetState
                                                                                                     fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                   cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                                   validator: _model.txtbuscarExamenTextController2Validator.asValidator(context),
@@ -962,10 +1113,15 @@ class _AdministrationTeacherWidgetState
                                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                      ),
                                                                                                       color: Colors.white,
                                                                                                       fontSize: 12.0,
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                     ),
                                                                                                 elevation: 0.0,
                                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -984,10 +1140,15 @@ class _AdministrationTeacherWidgetState
                                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: FlutterFlowTheme.of(context).primary,
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                    ),
                                                                                                     color: Colors.white,
                                                                                                     fontSize: 12.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                   ),
                                                                                               elevation: 0.0,
                                                                                               borderRadius: BorderRadius.circular(4.0),
@@ -1047,10 +1208,15 @@ class _AdministrationTeacherWidgetState
                                                                                                       child: Text(
                                                                                                         'Fecha de creación',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1062,10 +1228,15 @@ class _AdministrationTeacherWidgetState
                                                                                                       child: Text(
                                                                                                         'Nombre',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1077,10 +1248,15 @@ class _AdministrationTeacherWidgetState
                                                                                                       child: Text(
                                                                                                         'Creado por',
                                                                                                         style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                              ),
                                                                                                               color: Color(0xFF212529),
                                                                                                               fontSize: 14.0,
                                                                                                               letterSpacing: 0.0,
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                               lineHeight: 1.0,
                                                                                                             ),
                                                                                                       ),
@@ -1094,10 +1270,15 @@ class _AdministrationTeacherWidgetState
                                                                                                         child: Text(
                                                                                                           'Examenes',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -1112,10 +1293,15 @@ class _AdministrationTeacherWidgetState
                                                                                                         child: Text(
                                                                                                           'Acción',
                                                                                                           style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Color(0xFF212529),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                                 lineHeight: 1.0,
                                                                                                               ),
                                                                                                         ),
@@ -1139,8 +1325,13 @@ class _AdministrationTeacherWidgetState
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     Text(
@@ -1150,8 +1341,13 @@ class _AdministrationTeacherWidgetState
                                                                                                       ),
                                                                                                       maxLines: 1,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     StreamBuilder<List<UsersRecord>>(
@@ -1187,8 +1383,13 @@ class _AdministrationTeacherWidgetState
                                                                                                           ),
                                                                                                           maxLines: 1,
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                               ),
                                                                                                         );
                                                                                                       },
@@ -1208,10 +1409,15 @@ class _AdministrationTeacherWidgetState
                                                                                                           iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                           color: Color(0xFF094B90),
                                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                                ),
                                                                                                                 color: Colors.white,
                                                                                                                 fontSize: 12.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                               ),
                                                                                                           elevation: 0.0,
                                                                                                           borderRadius: BorderRadius.circular(4.0),
@@ -1359,8 +1565,13 @@ class _AdministrationTeacherWidgetState
                                                                                       Text(
                                                                                         'Buscar:',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               letterSpacing: 0.0,
+                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                             ),
                                                                                       ),
                                                                                       Container(
@@ -1393,14 +1604,24 @@ class _AdministrationTeacherWidgetState
                                                                                             decoration: InputDecoration(
                                                                                               isDense: true,
                                                                                               labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                    ),
                                                                                                     fontSize: 13.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                   ),
                                                                                               hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                                    ),
                                                                                                     fontSize: 13.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                                   ),
                                                                                               enabledBorder: OutlineInputBorder(
                                                                                                 borderSide: BorderSide(
@@ -1434,10 +1655,14 @@ class _AdministrationTeacherWidgetState
                                                                                               fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                             ),
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.normal,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.normal,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                 ),
                                                                                             cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                             validator: _model.txtbuscarCursoTextControllerValidator.asValidator(context),
@@ -1479,10 +1704,15 @@ class _AdministrationTeacherWidgetState
                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                       color: FlutterFlowTheme.of(context).primary,
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                            ),
                                                                                             color: Colors.white,
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                           ),
                                                                                       elevation: 0.0,
                                                                                       borderRadius: BorderRadius.circular(4.0),
@@ -1540,10 +1770,15 @@ class _AdministrationTeacherWidgetState
                                                                                                 child: Text(
                                                                                                   'Fecha de creación',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -1555,10 +1790,15 @@ class _AdministrationTeacherWidgetState
                                                                                                 child: Text(
                                                                                                   'Nombre',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -1570,10 +1810,15 @@ class _AdministrationTeacherWidgetState
                                                                                                 child: Text(
                                                                                                   'Encargado',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -1585,10 +1830,15 @@ class _AdministrationTeacherWidgetState
                                                                                                 child: Text(
                                                                                                   'Categoria',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -1600,10 +1850,15 @@ class _AdministrationTeacherWidgetState
                                                                                                 child: Text(
                                                                                                   'Estado',
                                                                                                   style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                        ),
                                                                                                         color: Color(0xFF212529),
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                         lineHeight: 1.0,
                                                                                                       ),
                                                                                                 ),
@@ -1618,10 +1873,15 @@ class _AdministrationTeacherWidgetState
                                                                                                     'Grupo de Examenes',
                                                                                                     textAlign: TextAlign.center,
                                                                                                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                          ),
                                                                                                           color: Color(0xFF212529),
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                           lineHeight: 1.0,
                                                                                                         ),
                                                                                                   ),
@@ -1636,10 +1896,15 @@ class _AdministrationTeacherWidgetState
                                                                                                   child: Text(
                                                                                                     'Acción',
                                                                                                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                          ),
                                                                                                           color: Color(0xFF212529),
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                           lineHeight: 1.0,
                                                                                                         ),
                                                                                                   ),
@@ -1663,8 +1928,13 @@ class _AdministrationTeacherWidgetState
                                                                                                 ),
                                                                                                 maxLines: 1,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               ),
                                                                                               Text(
@@ -1674,8 +1944,13 @@ class _AdministrationTeacherWidgetState
                                                                                                 ),
                                                                                                 maxLines: 1,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Montserrat',
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
                                                                                                       letterSpacing: 0.0,
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                     ),
                                                                                               ),
                                                                                               StreamBuilder<List<UsersRecord>>(
@@ -1711,8 +1986,13 @@ class _AdministrationTeacherWidgetState
                                                                                                     ),
                                                                                                     maxLines: 1,
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   );
                                                                                                 },
@@ -1750,8 +2030,13 @@ class _AdministrationTeacherWidgetState
                                                                                                     ),
                                                                                                     maxLines: 1,
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   );
                                                                                                 },
@@ -1781,8 +2066,13 @@ class _AdministrationTeacherWidgetState
                                                                                                   ),
                                                                                                   maxLines: 1,
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ),
@@ -1801,10 +2091,15 @@ class _AdministrationTeacherWidgetState
                                                                                                     iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                     color: Color(0xFF094B90),
                                                                                                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                          ),
                                                                                                           color: Colors.white,
                                                                                                           fontSize: 12.0,
                                                                                                           letterSpacing: 0.0,
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                         ),
                                                                                                     elevation: 0.0,
                                                                                                     borderRadius: BorderRadius.circular(4.0),
@@ -1972,8 +2267,13 @@ class _AdministrationTeacherWidgetState
                                                                               Text(
                                                                                 'Buscar:',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                      ),
                                                                                       letterSpacing: 0.0,
+                                                                                      fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                     ),
                                                                               ),
                                                                               Container(
@@ -2006,14 +2306,24 @@ class _AdministrationTeacherWidgetState
                                                                                     decoration: InputDecoration(
                                                                                       isDense: true,
                                                                                       labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 13.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                           ),
                                                                                       hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                            fontFamily: 'Montserrat',
+                                                                                            font: GoogleFonts.montserrat(
+                                                                                              fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
+                                                                                            ),
                                                                                             fontSize: 13.0,
                                                                                             letterSpacing: 0.0,
+                                                                                            fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                           ),
                                                                                       enabledBorder: OutlineInputBorder(
                                                                                         borderSide: BorderSide(
@@ -2047,10 +2357,14 @@ class _AdministrationTeacherWidgetState
                                                                                       fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.normal,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           fontSize: 14.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.normal,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                     cursorColor: FlutterFlowTheme.of(context).primaryText,
                                                                                     validator: _model.txtbuscarEstudianteTextControllerValidator.asValidator(context),
@@ -2089,10 +2403,15 @@ class _AdministrationTeacherWidgetState
                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                      fontFamily: 'Montserrat',
+                                                                                      font: GoogleFonts.montserrat(
+                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                      ),
                                                                                       color: Colors.white,
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
+                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                     ),
                                                                                 elevation: 0.0,
                                                                                 borderRadius: BorderRadius.circular(4.0),
@@ -2157,10 +2476,15 @@ class _AdministrationTeacherWidgetState
                                                                                           child: Text(
                                                                                             'Fecha de creación',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2172,10 +2496,15 @@ class _AdministrationTeacherWidgetState
                                                                                           child: Text(
                                                                                             'Nombre y Apellido',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2187,10 +2516,15 @@ class _AdministrationTeacherWidgetState
                                                                                           child: Text(
                                                                                             'Correo',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2202,10 +2536,15 @@ class _AdministrationTeacherWidgetState
                                                                                           child: Text(
                                                                                             'Número',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2217,10 +2556,15 @@ class _AdministrationTeacherWidgetState
                                                                                           child: Text(
                                                                                             'Cursos',
                                                                                             style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                  ),
                                                                                                   color: Color(0xFF212529),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                   lineHeight: 1.0,
                                                                                                 ),
                                                                                           ),
@@ -2234,10 +2578,15 @@ class _AdministrationTeacherWidgetState
                                                                                             child: Text(
                                                                                               'Acción',
                                                                                               style: FlutterFlowTheme.of(context).labelLarge.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
+                                                                                                    ),
                                                                                                     color: Color(0xFF212529),
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                                                                                                     lineHeight: 1.0,
                                                                                                   ),
                                                                                             ),
@@ -2261,8 +2610,13 @@ class _AdministrationTeacherWidgetState
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -2272,8 +2626,13 @@ class _AdministrationTeacherWidgetState
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -2283,8 +2642,13 @@ class _AdministrationTeacherWidgetState
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Text(
@@ -2294,8 +2658,13 @@ class _AdministrationTeacherWidgetState
                                                                                           ),
                                                                                           maxLines: 1,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Montserrat',
+                                                                                                font: GoogleFonts.montserrat(
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
                                                                                                 letterSpacing: 0.0,
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
                                                                                         ),
                                                                                         Builder(
@@ -2330,10 +2699,15 @@ class _AdministrationTeacherWidgetState
                                                                                               iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: Color(0xFF094B90),
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                    fontFamily: 'Montserrat',
+                                                                                                    font: GoogleFonts.montserrat(
+                                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                    ),
                                                                                                     color: Colors.white,
                                                                                                     fontSize: 12.0,
                                                                                                     letterSpacing: 0.0,
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                   ),
                                                                                               elevation: 0.0,
                                                                                               borderRadius: BorderRadius.circular(4.0),

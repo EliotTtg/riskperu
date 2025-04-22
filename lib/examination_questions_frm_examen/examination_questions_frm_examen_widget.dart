@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/header_mobil/header_mobil_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'examination_questions_frm_examen_model.dart';
 export 'examination_questions_frm_examen_model.dart';
 
@@ -199,8 +200,16 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w600,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
@@ -211,6 +220,10 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                           ),
                                                           RichText(
@@ -241,8 +254,14 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight:
+                                                                              FontWeight.bold,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         fontSize:
@@ -251,6 +270,9 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.bold,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 TextSpan(
@@ -264,8 +286,16 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .bold,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
@@ -276,6 +306,10 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .bold,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
                                                                   ),
                                                             ),
                                                           ),
@@ -299,8 +333,14 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight:
+                                                                              FontWeight.w600,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         fontSize:
@@ -309,6 +349,9 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w600,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 TextSpan(
@@ -332,8 +375,16 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                       .of(context)
                                                                   .bodyMedium
                                                                   .override(
-                                                                    fontFamily:
-                                                                        'Montserrat',
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
@@ -344,6 +395,10 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
                                                                   ),
                                                             ),
                                                           ),
@@ -366,12 +421,25 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMedium
+                                                                  .fontStyle,
                                                         ),
                                                   ),
                                                   Container(
@@ -471,13 +539,23 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                               Container(
@@ -537,11 +615,15 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               fontSize: 14.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -556,10 +638,14 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                     ].divide(SizedBox(
@@ -604,11 +690,15 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               fontSize: 14.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -623,10 +713,14 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                     ].divide(SizedBox(
@@ -727,13 +821,23 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                               Container(
@@ -793,11 +897,15 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               fontSize: 14.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -812,10 +920,14 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                     ].divide(SizedBox(
@@ -860,11 +972,15 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               fontSize: 14.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -879,10 +995,14 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                     ].divide(SizedBox(
@@ -983,13 +1103,23 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                               Container(
@@ -1049,11 +1179,15 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               fontSize: 14.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -1068,10 +1202,14 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                     ].divide(SizedBox(
@@ -1116,11 +1254,15 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               fontSize: 14.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                       Text(
@@ -1135,10 +1277,14 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
                                                                       ),
                                                                     ].divide(SizedBox(
@@ -1353,13 +1499,26 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmall
+                                                                    .fontStyle,
+                                                          ),
                                                           color: Colors.white,
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .fontStyle,
                                                         ),
                                                     elevation: 0.0,
                                                     borderRadius:
@@ -1432,8 +1591,16 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                           .of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily:
-                                                            'Montserrat',
+                                                        font: GoogleFonts
+                                                            .montserrat(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .fontStyle,
+                                                        ),
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1442,6 +1609,11 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.bold,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontStyle,
                                                       ),
                                                   elevation: 0.0,
                                                   borderSide: BorderSide(

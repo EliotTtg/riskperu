@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_timer.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'time_mobil_model.dart';
 export 'time_mobil_model.dart';
 
@@ -57,10 +58,14 @@ class _TimeMobilWidgetState extends State<TimeMobilWidget> {
       },
       textAlign: TextAlign.start,
       style: FlutterFlowTheme.of(context).headlineSmall.override(
-            fontFamily: 'Glory',
+            font: GoogleFonts.glory(
+              fontWeight: FontWeight.normal,
+              fontStyle: FlutterFlowTheme.of(context).headlineSmall.fontStyle,
+            ),
             fontSize: 12.0,
             letterSpacing: 0.0,
             fontWeight: FontWeight.normal,
+            fontStyle: FlutterFlowTheme.of(context).headlineSmall.fontStyle,
           ),
     );
   }

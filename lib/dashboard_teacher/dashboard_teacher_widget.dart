@@ -13,6 +13,7 @@ import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'dashboard_teacher_model.dart';
 export 'dashboard_teacher_model.dart';
 
@@ -234,11 +235,15 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                           Text(
                                                                             'Cursos Accedidos Recientemente',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Montserrat',
+                                                                                  font: GoogleFonts.montserrat(
+                                                                                    fontWeight: FontWeight.w600,
+                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                  ),
                                                                                   color: Color(0xFF094B90),
                                                                                   fontSize: 20.0,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w600,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
                                                                           ),
                                                                           Container(
@@ -419,10 +424,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                       wrapCoursesRecord.name,
                                                                                                       maxLines: 2,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FontWeight.bold,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             fontSize: 20.0,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                             lineHeight: 1.0,
                                                                                                           ),
                                                                                                     ),
@@ -430,10 +439,15 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                       'Usuario-1-ADM-\nEjemplo.com',
                                                                                                       maxLines: 2,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             color: Color(0xFFA7A7A7),
                                                                                                             fontSize: 12.0,
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                   ].divide(SizedBox(height: 10.0)),
@@ -545,11 +559,15 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Montserrat',
+                                                                                font: GoogleFonts.montserrat(
+                                                                                  fontWeight: FontWeight.w600,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                ),
                                                                                 color: Color(0xFF094B90),
                                                                                 fontSize: 20.0,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.w600,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
                                                                         ),
                                                                         Container(
@@ -620,10 +638,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                       TextSpan(
                                                                                                         text: 'Módulo ',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Montserrat',
+                                                                                                              font: GoogleFonts.montserrat(
+                                                                                                                fontWeight: FontWeight.bold,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                              ),
                                                                                                               fontSize: 16.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               fontWeight: FontWeight.bold,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                             ),
                                                                                                       ),
                                                                                                       TextSpan(
@@ -646,10 +668,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                       )
                                                                                                     ],
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                 ),
@@ -674,9 +700,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                     TextSpan(
                                                                                                       text: '0',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             fontSize: 16.0,
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     TextSpan(
@@ -697,10 +728,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                     )
                                                                                                   ],
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ),
@@ -711,9 +746,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                     TextSpan(
                                                                                                       text: '1',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             fontSize: 16.0,
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     TextSpan(
@@ -734,10 +774,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                     )
                                                                                                   ],
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ),
@@ -821,9 +865,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                         TextSpan(
                                                                                                           text: 'Actividad ',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Montserrat',
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
+                                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                               ),
                                                                                                         ),
                                                                                                         TextSpan(
@@ -853,9 +902,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                         )
                                                                                                       ],
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             fontSize: 14.0,
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                             lineHeight: 1.0,
                                                                                                           ),
                                                                                                     ),
@@ -950,8 +1004,14 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                           context)
                                                                       .bodyMedium
                                                                       .override(
-                                                                        fontFamily:
-                                                                            'Montserrat',
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight:
+                                                                              FontWeight.w600,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
                                                                         color: Color(
                                                                             0xFF094B90),
                                                                         fontSize:
@@ -960,6 +1020,9 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                             0.0,
                                                                         fontWeight:
                                                                             FontWeight.w600,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
                                                                       ),
                                                                 ),
                                                                 Container(
@@ -1106,8 +1169,13 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               lineHeight: 1.0,
                                                                             ),
                                                                       ),
@@ -1136,8 +1204,13 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Montserrat',
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
                                                                               letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               lineHeight: 1.0,
                                                                             ),
                                                                       ),

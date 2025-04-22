@@ -12,6 +12,7 @@ import '/pages/empty_students/empty_students_widget.dart';
 import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'lista_estudiantes_examen_model.dart';
 export 'lista_estudiantes_examen_model.dart';
 
@@ -112,11 +113,20 @@ class _ListaEstudiantesExamenWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Montserrat',
+                                        font: GoogleFonts.montserrat(
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
+                                        ),
                                         color: Color(0xFF094B90),
                                         fontSize: 24.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .fontStyle,
                                       ),
                                 ),
                                 Container(
@@ -142,11 +152,21 @@ class _ListaEstudiantesExamenWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Montserrat',
+                                            font: GoogleFonts.montserrat(
+                                              fontWeight: FontWeight.bold,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
+                                            ),
                                             color: Color(0xFF17232B),
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
                                           ),
                                     ),
                                     Container(
@@ -165,22 +185,60 @@ class _ListaEstudiantesExamenWidgetState
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           isDense: true,
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Montserrat',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
                                           hintText: '---',
-                                          hintStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Montserrat',
-                                                    color: Color(0xFFA8A8A8),
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          hintStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts.montserrat(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Color(0xFFA8A8A8),
+                                                letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
                                               color: Color(0xFFE4E4E7),
@@ -224,8 +282,25 @@ class _ListaEstudiantesExamenWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Montserrat',
+                                              font: GoogleFonts.montserrat(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
                                               letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
                                             ),
                                         cursorColor:
                                             FlutterFlowTheme.of(context)
@@ -252,11 +327,23 @@ class _ListaEstudiantesExamenWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Montserrat',
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
                                                   color: Color(0xFF17232B),
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
                                                 ),
                                           ),
                                           Container(
@@ -281,19 +368,63 @@ class _ListaEstudiantesExamenWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
                                                         ),
                                                 hintText: '---',
-                                                hintStyle: FlutterFlowTheme.of(
-                                                        context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      color: Color(0xFFA8A8A8),
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                hintStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .override(
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
+                                                          ),
+                                                          color:
+                                                              Color(0xFFA8A8A8),
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -340,14 +471,35 @@ class _ListaEstudiantesExamenWidgetState
                                                 filled: true,
                                                 fillColor: Color(0xFFE4E4E7),
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Montserrat',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font:
+                                                        GoogleFonts.montserrat(
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
+                                                    letterSpacing: 0.0,
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
                                               cursorColor:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
@@ -370,11 +522,23 @@ class _ListaEstudiantesExamenWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Montserrat',
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
                                                   color: Color(0xFF17232B),
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
                                                 ),
                                           ),
                                           Container(
@@ -399,19 +563,63 @@ class _ListaEstudiantesExamenWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Montserrat',
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
+                                                          ),
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
                                                         ),
                                                 hintText: '---',
-                                                hintStyle: FlutterFlowTheme.of(
-                                                        context)
-                                                    .labelMedium
-                                                    .override(
-                                                      fontFamily: 'Montserrat',
-                                                      color: Color(0xFFA8A8A8),
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                hintStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .override(
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
+                                                          ),
+                                                          color:
+                                                              Color(0xFFA8A8A8),
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -458,14 +666,35 @@ class _ListaEstudiantesExamenWidgetState
                                                 filled: true,
                                                 fillColor: Color(0xFFE4E4E7),
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Montserrat',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font:
+                                                        GoogleFonts.montserrat(
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
+                                                    letterSpacing: 0.0,
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
                                               cursorColor:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
@@ -532,11 +761,23 @@ class _ListaEstudiantesExamenWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Montserrat',
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
                                                   color: Color(0xFF17232B),
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
                                                 ),
                                           ),
                                           Row(
@@ -644,30 +885,81 @@ class _ListaEstudiantesExamenWidgetState
                                                                   context)
                                                               .labelMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMedium
+                                                                    .fontStyle,
                                                               ),
                                                       searchTextStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                               ),
                                                       hintText: 'Seleccione',
                                                       searchHintText:
@@ -872,8 +1164,16 @@ class _ListaEstudiantesExamenWidgetState
                                                                   .of(context)
                                                               .labelLarge
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLarge
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -882,6 +1182,10 @@ class _ListaEstudiantesExamenWidgetState
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -896,8 +1200,16 @@ class _ListaEstudiantesExamenWidgetState
                                                                   .of(context)
                                                               .labelLarge
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLarge
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -906,6 +1218,10 @@ class _ListaEstudiantesExamenWidgetState
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -920,8 +1236,16 @@ class _ListaEstudiantesExamenWidgetState
                                                                   .of(context)
                                                               .labelLarge
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLarge
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -930,6 +1254,10 @@ class _ListaEstudiantesExamenWidgetState
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -944,8 +1272,16 @@ class _ListaEstudiantesExamenWidgetState
                                                                   .of(context)
                                                               .labelLarge
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLarge
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -954,6 +1290,10 @@ class _ListaEstudiantesExamenWidgetState
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -968,8 +1308,16 @@ class _ListaEstudiantesExamenWidgetState
                                                                   .of(context)
                                                               .labelLarge
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLarge
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -978,6 +1326,10 @@ class _ListaEstudiantesExamenWidgetState
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -992,8 +1344,16 @@ class _ListaEstudiantesExamenWidgetState
                                                                   .of(context)
                                                               .labelLarge
                                                               .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLarge
+                                                                      .fontStyle,
+                                                                ),
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -1002,6 +1362,10 @@ class _ListaEstudiantesExamenWidgetState
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelLarge
+                                                                    .fontStyle,
                                                               ),
                                                         ),
                                                       ),
@@ -1081,14 +1445,31 @@ class _ListaEstudiantesExamenWidgetState
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: Colors
                                                                       .black,
                                                                   fontSize:
                                                                       13.0,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                           );
                                                         },
@@ -1137,10 +1518,27 @@ class _ListaEstudiantesExamenWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                       ),
                                                       Text(
@@ -1161,10 +1559,27 @@ class _ListaEstudiantesExamenWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                       ),
                                                       Text(
@@ -1186,10 +1601,27 @@ class _ListaEstudiantesExamenWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                       ),
                                                       Text(
@@ -1218,10 +1650,27 @@ class _ListaEstudiantesExamenWidgetState
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Montserrat',
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
                                                       ),
                                                     ]
@@ -1291,9 +1740,26 @@ class _ListaEstudiantesExamenWidgetState
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Montserrat',
+                                          font: GoogleFonts.montserrat(
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontStyle,
+                                          ),
                                           color: Colors.white,
                                           letterSpacing: 0.0,
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
                                         ),
                                     elevation: 0.0,
                                     borderRadius: BorderRadius.circular(4.0),

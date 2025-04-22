@@ -14,6 +14,7 @@ import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'cart_model.dart';
 export 'cart_model.dart';
@@ -142,13 +143,25 @@ class _CartWidgetState extends State<CartWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Montserrat',
+                                                  font: GoogleFonts.montserrat(
+                                                    fontWeight: FontWeight.w600,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
                                                   fontSize: 36.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
                                                 ),
                                           ),
                                         ),
@@ -213,12 +226,20 @@ class _CartWidgetState extends State<CartWidget> {
                                                                             context)
                                                                         .bodyMedium
                                                                         .override(
-                                                                          fontFamily:
-                                                                              'Montserrat',
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FontWeight.bold,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
                                                                           letterSpacing:
                                                                               0.0,
                                                                           fontWeight:
                                                                               FontWeight.bold,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
                                                                         ),
                                                                   ),
                                                                   TextSpan(
@@ -232,13 +253,23 @@ class _CartWidgetState extends State<CartWidget> {
                                                                         context)
                                                                     .bodyMedium
                                                                     .override(
-                                                                      fontFamily:
-                                                                          'Montserrat',
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight:
+                                                                            FontWeight.bold,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
                                                                     ),
                                                               ),
                                                             ),
@@ -404,10 +435,14 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                             ),
                                                                                             maxLines: 2,
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.w600,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w600,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                 ),
                                                                                           ),
                                                                                           StreamBuilder<List<UsersRecord>>(
@@ -447,9 +482,14 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                                     TextSpan(
                                                                                                       text: 'Por ',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             fontSize: 10.0,
                                                                                                             letterSpacing: 0.0,
+                                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     TextSpan(
@@ -461,9 +501,14 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                                     )
                                                                                                   ],
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         fontSize: 10.0,
                                                                                                         letterSpacing: 0.0,
+                                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                                 maxLines: 1,
@@ -480,11 +525,15 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                                   Text(
                                                                                                     '4,1',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           color: FlutterFlowTheme.of(context).warning,
                                                                                                           fontSize: 12.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                   wrapWithModel(
@@ -502,11 +551,15 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                                   Text(
                                                                                                     '(65 valoraciones)',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Montserrat',
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.normal,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
                                                                                                           color: FlutterFlowTheme.of(context).primaryText,
                                                                                                           fontSize: 12.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.normal,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                         ),
                                                                                                   ),
                                                                                                 ].divide(SizedBox(width: 5.0)),
@@ -534,9 +587,14 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Montserrat',
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                                  ),
                                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                                   letterSpacing: 0.0,
+                                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                                 ),
                                                                                             elevation: 0.0,
                                                                                             borderRadius: BorderRadius.circular(8.0),
@@ -568,11 +626,15 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                                         '0',
                                                                                                       ),
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Montserrat',
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FontWeight.bold,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                             fontSize: 16.0,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                           ),
                                                                                                     ),
                                                                                                     TextSpan(
@@ -581,11 +643,15 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                                     )
                                                                                                   ],
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Montserrat',
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
                                                                                                         color: FlutterFlowTheme.of(context).primary,
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
                                                                                                 ),
                                                                                               ),
@@ -681,11 +747,15 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                 child: Text(
                                                                                   'Total:',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Montserrat',
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FontWeight.bold,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                        ),
                                                                                         color: Color(0xFF595C73),
                                                                                         fontSize: 16.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                       ),
                                                                                 ),
                                                                               ),
@@ -713,11 +783,15 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                           '0',
                                                                                         ),
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Montserrat',
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FontWeight.bold,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
                                                                                               color: Color(0xFF303141),
                                                                                               fontSize: 31.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.bold,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                             ),
                                                                                       ),
                                                                                       TextSpan(
@@ -726,11 +800,15 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                       )
                                                                                     ],
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Montserrat',
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.bold,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
                                                                                           color: Color(0xFF303141),
                                                                                           fontSize: 31.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.bold,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
                                                                                   ),
                                                                                 ),
@@ -804,10 +882,15 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                        fontFamily: 'Montserrat',
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                        ),
                                                                                         color: Colors.white,
                                                                                         fontSize: 18.0,
                                                                                         letterSpacing: 0.0,
+                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                       ),
                                                                                   elevation: 0.0,
                                                                                   borderRadius: BorderRadius.circular(4.0),
@@ -818,9 +901,14 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                 child: Text(
                                                                                   'Todavia no se te cobrara',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Montserrat',
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                        ),
                                                                                         color: Color(0xFF9A9A9A),
                                                                                         letterSpacing: 0.0,
+                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                       ),
                                                                                 ),
                                                                               ),
