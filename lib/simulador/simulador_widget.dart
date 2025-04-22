@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -11,6 +12,7 @@ import '/pages/header/header_widget.dart';
 import '/pages/header_mobil/header_mobil_widget.dart';
 import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:collection/collection.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -1394,61 +1396,19 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        Row(
-                                                                                          mainAxisSize: MainAxisSize.max,
-                                                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                          children: [
-                                                                                            Flexible(
-                                                                                              child: Text(
-                                                                                                listaSimuladoresAncladosItem.name,
-                                                                                                maxLines: 2,
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      font: GoogleFonts.glory(
-                                                                                                        fontWeight: FontWeight.w600,
-                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                      ),
-                                                                                                      fontSize: 24.0,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      fontWeight: FontWeight.w600,
-                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                    ),
+                                                                                        Text(
+                                                                                          listaSimuladoresAncladosItem.name,
+                                                                                          maxLines: 3,
+                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                font: GoogleFonts.glory(
+                                                                                                  fontWeight: FontWeight.w600,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
+                                                                                                fontSize: 24.0,
+                                                                                                letterSpacing: 0.0,
+                                                                                                fontWeight: FontWeight.w600,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                               ),
-                                                                                            ),
-                                                                                            RichText(
-                                                                                              textScaler: MediaQuery.of(context).textScaler,
-                                                                                              text: TextSpan(
-                                                                                                children: [
-                                                                                                  TextSpan(
-                                                                                                    text: 'S/. ',
-                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          font: GoogleFonts.montserrat(
-                                                                                                            fontWeight: FontWeight.bold,
-                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                          ),
-                                                                                                          fontSize: 18.0,
-                                                                                                          letterSpacing: 0.0,
-                                                                                                          fontWeight: FontWeight.bold,
-                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                        ),
-                                                                                                  ),
-                                                                                                  TextSpan(
-                                                                                                    text: listaSimuladoresAncladosItem.price,
-                                                                                                    style: TextStyle(),
-                                                                                                  )
-                                                                                                ],
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      font: GoogleFonts.montserrat(
-                                                                                                        fontWeight: FontWeight.bold,
-                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                      ),
-                                                                                                      fontSize: 18.0,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      fontWeight: FontWeight.bold,
-                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                    ),
-                                                                                              ),
-                                                                                            ),
-                                                                                          ].divide(SizedBox(width: 10.0)),
                                                                                         ),
                                                                                         StreamBuilder<List<ExamenesRecord>>(
                                                                                           stream: queryExamenesRecord(
@@ -1582,23 +1542,105 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                     ),
                                                                                     FFButtonWidget(
                                                                                       onPressed: () async {
-                                                                                        context.pushNamed(
-                                                                                          SimulatorWidget.routeName,
-                                                                                          queryParameters: {
-                                                                                            'refCourse': serializeParam(
-                                                                                              listaSimuladoresAncladosItem,
-                                                                                              ParamType.Document,
-                                                                                            ),
-                                                                                          }.withoutNulls,
-                                                                                          extra: <String, dynamic>{
-                                                                                            'refCourse': listaSimuladoresAncladosItem,
-                                                                                            kTransitionInfoKey: TransitionInfo(
-                                                                                              hasTransition: true,
-                                                                                              transitionType: PageTransitionType.fade,
-                                                                                              duration: Duration(milliseconds: 0),
-                                                                                            ),
-                                                                                          },
-                                                                                        );
+                                                                                        _model.refGroup = await queryExamGroupsRecordOnce(
+                                                                                          queryBuilder: (examGroupsRecord) => examGroupsRecord
+                                                                                              .where(
+                                                                                                'uid_Course',
+                                                                                                isEqualTo: listaSimuladoresAncladosItem.reference.id,
+                                                                                              )
+                                                                                              .where(
+                                                                                                'is_demo',
+                                                                                                isEqualTo: true,
+                                                                                              )
+                                                                                              .where(
+                                                                                                'state',
+                                                                                                isEqualTo: true,
+                                                                                              )
+                                                                                              .orderBy('Created_date'),
+                                                                                          singleRecord: true,
+                                                                                        ).then((s) => s.firstOrNull);
+                                                                                        if (_model.refGroup != null) {
+                                                                                          _model.refExamen = await queryExamenesRecordOnce(
+                                                                                            queryBuilder: (examenesRecord) => examenesRecord
+                                                                                                .where(
+                                                                                                  'uid_Group',
+                                                                                                  isEqualTo: _model.refGroup?.reference.id,
+                                                                                                )
+                                                                                                .where(
+                                                                                                  'state',
+                                                                                                  isEqualTo: true,
+                                                                                                )
+                                                                                                .orderBy('fecha_creacion'),
+                                                                                            singleRecord: true,
+                                                                                          ).then((s) => s.firstOrNull);
+                                                                                          if (_model.refExamen != null) {
+                                                                                            context.pushNamed(
+                                                                                              ExaminationQuestionsViewWidget.routeName,
+                                                                                              queryParameters: {
+                                                                                                'refExamination': serializeParam(
+                                                                                                  _model.refExamen,
+                                                                                                  ParamType.Document,
+                                                                                                ),
+                                                                                                'refCourse': serializeParam(
+                                                                                                  listaSimuladoresAncladosItem,
+                                                                                                  ParamType.Document,
+                                                                                                ),
+                                                                                                'refUser': serializeParam(
+                                                                                                  currentUserReference,
+                                                                                                  ParamType.DocumentReference,
+                                                                                                ),
+                                                                                                'type': serializeParam(
+                                                                                                  2,
+                                                                                                  ParamType.int,
+                                                                                                ),
+                                                                                                'isdemo': serializeParam(
+                                                                                                  true,
+                                                                                                  ParamType.bool,
+                                                                                                ),
+                                                                                              }.withoutNulls,
+                                                                                              extra: <String, dynamic>{
+                                                                                                'refExamination': _model.refExamen,
+                                                                                                'refCourse': listaSimuladoresAncladosItem,
+                                                                                                kTransitionInfoKey: TransitionInfo(
+                                                                                                  hasTransition: true,
+                                                                                                  transitionType: PageTransitionType.fade,
+                                                                                                  duration: Duration(milliseconds: 0),
+                                                                                                ),
+                                                                                              },
+                                                                                            );
+
+                                                                                            var registerSimulatorRecordReference = RegisterSimulatorRecord.collection.doc();
+                                                                                            await registerSimulatorRecordReference.set({
+                                                                                              ...createRegisterSimulatorRecordData(
+                                                                                                uidUser: currentUserReference?.id,
+                                                                                                uidCourse: listaSimuladoresAncladosItem.reference.id,
+                                                                                              ),
+                                                                                              ...mapToFirestore(
+                                                                                                {
+                                                                                                  'created_date': FieldValue.serverTimestamp(),
+                                                                                                },
+                                                                                              ),
+                                                                                            });
+                                                                                            _model.refHistory = RegisterSimulatorRecord.getDocumentFromData({
+                                                                                              ...createRegisterSimulatorRecordData(
+                                                                                                uidUser: currentUserReference?.id,
+                                                                                                uidCourse: listaSimuladoresAncladosItem.reference.id,
+                                                                                              ),
+                                                                                              ...mapToFirestore(
+                                                                                                {
+                                                                                                  'created_date': DateTime.now(),
+                                                                                                },
+                                                                                              ),
+                                                                                            }, registerSimulatorRecordReference);
+
+                                                                                            await _model.refHistory!.reference.update(createRegisterSimulatorRecordData(
+                                                                                              uid: _model.refHistory?.reference.id,
+                                                                                            ));
+                                                                                            await Future.delayed(const Duration(milliseconds: 1000));
+                                                                                          }
+                                                                                        }
+
+                                                                                        safeSetState(() {});
                                                                                       },
                                                                                       text: 'Conoce más',
                                                                                       options: FFButtonOptions(

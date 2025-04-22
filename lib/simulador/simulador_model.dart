@@ -36,6 +36,12 @@ class SimuladorModel extends FlutterFlowModel<SimuladorWidget> {
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
   List<CoursesRecord> simpleSearchResults = [];
+  // Stores action output result for [Firestore Query - Query a collection] action in Button widget.
+  ExamGroupsRecord? refGroup;
+  // Stores action output result for [Firestore Query - Query a collection] action in Button widget.
+  ExamenesRecord? refExamen;
+  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  RegisterSimulatorRecord? refHistory;
   // Model for Footer component.
   late FooterModel footerModel;
 
