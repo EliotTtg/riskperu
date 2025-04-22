@@ -148,7 +148,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             color: Color(
                                                                 0xFF003366),
                                                             fontSize: 24.0,
@@ -162,7 +162,8 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF003366),
                                                         fontSize: 40.0,
@@ -210,7 +211,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF17232B),
                                                                 fontSize: 16.0,
@@ -296,7 +297,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                         .labelMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -306,7 +307,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -315,7 +316,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -378,7 +379,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF17232B),
                                                                 fontSize: 16.0,
@@ -416,7 +417,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -426,7 +427,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -436,7 +437,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -501,7 +502,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF17232B),
                                                                 fontSize: 16.0,
@@ -566,7 +567,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                         .headlineLarge
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Glory',
                                                                           fontSize:
                                                                               32.0,
                                                                           letterSpacing:
@@ -651,7 +652,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -727,7 +728,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF17232B),
                                                                 fontSize: 16.0,
@@ -790,7 +791,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                           .headlineLarge
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Glory',
                                                                             fontSize:
                                                                                 32.0,
                                                                             letterSpacing:
@@ -882,7 +883,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -977,15 +978,17 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.white,
-                                                        fontSize: 15.0,
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            color: Colors.white,
+                                                            fontSize: 15.0,
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   elevation: 0.0,
                                                   borderRadius:
                                                       BorderRadius.circular(
@@ -1027,7 +1030,8 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                           .of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1143,7 +1147,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1163,7 +1167,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -1178,7 +1182,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1199,7 +1203,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1212,7 +1216,8 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
@@ -1262,7 +1267,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                   .labelLarge
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: Color(
                                                                         0xFF212529),
                                                                     fontSize:
@@ -1285,7 +1290,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                   .labelLarge
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: Color(
                                                                         0xFF212529),
                                                                     fontSize:
@@ -1312,7 +1317,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: Color(
                                                                           0xFF212529),
                                                                       fontSize:
@@ -1340,7 +1345,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: Color(
                                                                           0xFF212529),
                                                                       fontSize:
@@ -1368,7 +1373,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: Color(
                                                                           0xFF212529),
                                                                       fontSize:
@@ -1396,7 +1401,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: Color(
                                                                           0xFF212529),
                                                                       fontSize:
@@ -1424,7 +1429,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: Color(
                                                                           0xFF212529),
                                                                       fontSize:
@@ -1472,7 +1477,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1547,7 +1552,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -1580,7 +1585,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1619,7 +1624,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1706,7 +1711,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -1795,7 +1800,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -1884,7 +1889,7 @@ class _NotesStudientsWidgetState extends State<NotesStudientsWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),

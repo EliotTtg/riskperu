@@ -182,7 +182,7 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .primaryText,
@@ -210,7 +210,7 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -239,7 +239,7 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                     ),
@@ -259,7 +259,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -288,7 +289,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                             .of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                     hintText:
@@ -297,7 +299,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                             .of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color:
                                                               Color(0xFFA2A2A2),
                                                           letterSpacing: 0.0,
@@ -357,7 +360,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                                   maxLines: 2,
@@ -393,7 +397,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -422,7 +427,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                             .of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                     hintText:
@@ -431,7 +437,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                             .of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color:
                                                               Color(0xFFA2A2A2),
                                                           letterSpacing: 0.0,
@@ -491,7 +498,8 @@ class _CrearUpdateAnuncioWidgetState extends State<CrearUpdateAnuncioWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                                   maxLines: 5,

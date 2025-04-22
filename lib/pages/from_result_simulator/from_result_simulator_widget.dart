@@ -163,7 +163,8 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -187,7 +188,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondary,
@@ -209,7 +210,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
                                             letterSpacing: 0.0,
@@ -377,7 +378,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
@@ -448,7 +449,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
@@ -488,7 +489,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
                                                                             fontSize:
@@ -511,7 +512,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         fontSize:
@@ -543,7 +544,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
                                                                             fontSize:
@@ -577,7 +578,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         fontSize:
@@ -605,7 +606,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
@@ -656,7 +657,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                               .headlineSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Glory',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
@@ -679,7 +680,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
@@ -760,7 +761,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           color:
                                                                               FlutterFlowTheme.of(context).secondaryBackground,
                                                                           letterSpacing:
@@ -792,7 +793,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
@@ -820,7 +821,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
@@ -887,7 +888,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                     .titleSmall
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
@@ -972,7 +973,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -1034,7 +1035,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                           .labelLarge
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
@@ -1056,7 +1057,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                           .labelLarge
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
@@ -1078,7 +1079,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                           .labelLarge
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
                                                                             letterSpacing:
@@ -1105,7 +1106,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelLarge
                                                                             .override(
-                                                                              fontFamily: 'Poppins',
+                                                                              fontFamily: 'Montserrat',
                                                                               color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                               letterSpacing: 0.0,
                                                                             ),
@@ -1151,7 +1152,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -1169,7 +1170,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 letterSpacing: 0.0,
                                                                               ),
                                                                         ),
@@ -1188,7 +1189,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
@@ -1272,7 +1273,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                                   '0',
                                                                                 ),
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.normal,
@@ -1291,7 +1292,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                               )
                                                                             ],
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Poppins',
+                                                                                  fontFamily: 'Montserrat',
                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.normal,
@@ -1388,7 +1389,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                   .titleSmall
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
@@ -1600,7 +1601,7 @@ class _FromResultSimulatorWidgetState extends State<FromResultSimulatorWidget> {
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Colors
                                                                             .white,
                                                                         letterSpacing:

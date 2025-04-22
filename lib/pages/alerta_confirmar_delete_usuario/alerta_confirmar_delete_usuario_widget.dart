@@ -82,7 +82,7 @@ class _AlertaConfirmarDeleteUsuarioWidgetState
                           'Mensaje',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -97,7 +97,7 @@ class _AlertaConfirmarDeleteUsuarioWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -133,7 +133,7 @@ class _AlertaConfirmarDeleteUsuarioWidgetState
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         color: Colors.white,
                                         letterSpacing: 0.0,
                                       ),
@@ -159,7 +159,7 @@ class _AlertaConfirmarDeleteUsuarioWidgetState
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         color: Colors.white,
                                         letterSpacing: 0.0,
                                       ),

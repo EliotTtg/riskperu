@@ -135,12 +135,12 @@ class _TxtComentarioPublicacionCursoWidgetState
                 decoration: InputDecoration(
                   isDense: true,
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Poppins',
+                        fontFamily: 'Montserrat',
                         letterSpacing: 0.0,
                       ),
                   hintText: 'Crear una nueva nota',
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Poppins',
+                        fontFamily: 'Montserrat',
                         color: Color(0xFF767676),
                         letterSpacing: 0.0,
                       ),
@@ -196,7 +196,7 @@ class _TxtComentarioPublicacionCursoWidgetState
                   fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                       letterSpacing: 0.0,
                     ),
                 cursorColor: FlutterFlowTheme.of(context).primaryText,

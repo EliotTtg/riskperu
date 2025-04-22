@@ -204,7 +204,7 @@ class _LoadingCartWidgetState extends State<LoadingCartWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
                                   ),

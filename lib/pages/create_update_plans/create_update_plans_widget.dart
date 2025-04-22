@@ -129,7 +129,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color: Color(0xFF01203F),
                                               fontSize: 16.0,
                                               letterSpacing: 0.0,
@@ -170,7 +170,8 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17232B),
                                                         fontSize: 16.0,
@@ -198,7 +199,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -209,7 +210,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Color(
                                                                       0xFFA8A8A8),
                                                                   letterSpacing:
@@ -323,7 +324,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       cursorColor:
@@ -351,7 +352,8 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17232B),
                                                         fontSize: 16.0,
@@ -379,7 +381,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -390,7 +392,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Color(
                                                                       0xFFA8A8A8),
                                                                   letterSpacing:
@@ -504,7 +506,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       cursorColor:
@@ -544,7 +546,8 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17232B),
                                                         fontSize: 16.0,
@@ -639,7 +642,8 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17232B),
                                                         fontSize: 16.0,
@@ -786,7 +790,8 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17232B),
                                                         fontSize: 16.0,
@@ -823,7 +828,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -835,7 +840,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Color(
                                                                             0xFFA8A8A8),
                                                                         letterSpacing:
@@ -953,7 +958,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1073,7 +1078,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -1134,18 +1139,17 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                        fontSize: 15.0,
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                              textStyle: FlutterFlowTheme.of(
+                                                      context)
+                                                  .titleSmall
+                                                  .override(
+                                                    fontFamily: 'Montserrat',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    fontSize: 15.0,
+                                                    letterSpacing: 0.0,
+                                                  ),
                                               elevation: 0.0,
                                               borderSide: BorderSide(
                                                 color:
@@ -1202,7 +1206,8 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color: Colors.white,
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,

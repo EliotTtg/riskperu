@@ -85,7 +85,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
                                           fontSize: 40.0,
@@ -98,7 +98,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: FlutterFlowTheme.of(context)
                                               .alternate,
                                           fontSize: 18.0,
@@ -147,7 +147,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -167,7 +168,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -188,7 +189,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -216,7 +217,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -278,7 +279,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -298,7 +300,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -319,7 +321,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -347,7 +349,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -409,7 +411,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -429,7 +432,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -450,7 +453,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -478,7 +481,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -526,7 +529,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: Color(0xFF152D43),
                                           fontSize: 18.0,
                                           letterSpacing: 0.0,
@@ -580,7 +583,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -600,7 +604,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -621,7 +625,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -649,7 +653,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -711,7 +715,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -731,7 +736,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -752,7 +757,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -780,7 +785,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -845,7 +850,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -865,7 +871,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -886,7 +892,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -914,7 +920,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -976,7 +982,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -996,7 +1003,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1017,7 +1024,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1045,7 +1052,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1107,7 +1114,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -1127,7 +1135,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1148,7 +1156,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1176,7 +1184,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1238,7 +1246,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -1258,7 +1267,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1279,7 +1288,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1307,7 +1316,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1369,7 +1378,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -1389,7 +1399,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1410,7 +1420,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1438,7 +1448,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1500,7 +1510,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -1520,7 +1531,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1541,7 +1552,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1569,7 +1580,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1631,7 +1642,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -1651,7 +1663,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1672,7 +1684,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1700,7 +1712,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1762,7 +1774,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -1782,7 +1795,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1803,7 +1816,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1831,7 +1844,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1893,7 +1906,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -1913,7 +1927,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1934,7 +1948,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1962,7 +1976,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -2024,7 +2038,8 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -2044,7 +2059,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -2065,7 +2080,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -2093,7 +2108,7 @@ class _CoursesV1WidgetState extends State<CoursesV1Widget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,

@@ -101,7 +101,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         fontSize: 44.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
@@ -122,7 +122,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -150,7 +150,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             hintText: 'Nombre',
@@ -158,7 +158,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
@@ -206,7 +206,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
@@ -237,7 +237,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             hintText: 'Apellido',
@@ -245,7 +245,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
@@ -293,7 +293,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
@@ -329,7 +329,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             hintText: 'Correo Electronico',
@@ -337,7 +337,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
@@ -385,7 +385,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
@@ -415,7 +415,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             hintText: 'Número',
@@ -423,7 +423,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
@@ -471,7 +471,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryText,
@@ -507,7 +507,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     letterSpacing: 0.0,
                                                   ),
                                           hintText: 'Contraseña',
@@ -515,7 +515,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     letterSpacing: 0.0,
                                                   ),
                                           enabledBorder: OutlineInputBorder(
@@ -563,7 +563,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
@@ -597,7 +597,7 @@ class _FormRegisterDemoWidgetState extends State<FormRegisterDemoWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Poppins',
+                                      fontFamily: 'Montserrat',
                                       color: Colors.white,
                                       letterSpacing: 0.0,
                                     ),

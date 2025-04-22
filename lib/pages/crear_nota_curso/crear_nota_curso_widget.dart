@@ -282,7 +282,7 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
@@ -307,7 +307,7 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     letterSpacing: 0.0,
                                                   ),
                                           hintText:
@@ -316,7 +316,7 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFFA2A2A2),
                                                     letterSpacing: 0.0,
                                                   ),
@@ -365,7 +365,7 @@ class _CrearNotaCursoWidgetState extends State<CrearNotaCursoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         maxLines: 5,

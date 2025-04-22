@@ -48,7 +48,7 @@ class _EmptyCartWidgetState extends State<EmptyCartWidget> {
           child: Text(
             'Tu cesta está vacía. ¡Sigue comprando para encontrar un curso!',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Poppins',
+                  fontFamily: 'Montserrat',
                   color: FlutterFlowTheme.of(context).primaryText,
                   fontSize: 16.0,
                   letterSpacing: 0.0,
@@ -76,7 +76,7 @@ class _EmptyCartWidgetState extends State<EmptyCartWidget> {
             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
             color: FlutterFlowTheme.of(context).primary,
             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                  fontFamily: 'Poppins',
+                  fontFamily: 'Montserrat',
                   color: Colors.white,
                   letterSpacing: 0.0,
                 ),

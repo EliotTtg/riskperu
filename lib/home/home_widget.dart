@@ -106,7 +106,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color: Color(0xFF17236A),
+                            color: FlutterFlowTheme.of(context).secondary,
                           ),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
@@ -129,7 +129,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
@@ -198,7 +198,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   fontSize:
                                                                       18.0,
                                                                   letterSpacing:
@@ -286,7 +286,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         .labelMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           color:
                                                                               FlutterFlowTheme.of(context).primary,
                                                                           fontSize:
@@ -300,7 +300,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -309,7 +309,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary,
@@ -400,7 +400,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Color(
                                                                       0xFF454545),
                                                                   letterSpacing:
@@ -480,7 +480,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
@@ -497,7 +497,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .primary,
@@ -573,7 +573,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1193,7 +1193,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           fontSize:
                                                                               14.0,
                                                                           letterSpacing:
@@ -1267,7 +1267,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Poppins',
+                                                                              fontFamily: 'Montserrat',
                                                                               fontSize: 10.0,
                                                                               letterSpacing: 0.0,
                                                                             ),
@@ -1290,7 +1290,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                           Text(
                                                                             '4,1',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Poppins',
+                                                                                  fontFamily: 'Montserrat',
                                                                                   color: FlutterFlowTheme.of(context).warning,
                                                                                   fontSize: 12.0,
                                                                                   letterSpacing: 0.0,
@@ -1315,7 +1315,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                           Text(
                                                                             '(411)',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Poppins',
+                                                                                  fontFamily: 'Montserrat',
                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                   fontSize: 12.0,
                                                                                   letterSpacing: 0.0,
@@ -1333,7 +1333,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                             TextSpan(
                                                                               text: ' S/',
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Poppins',
+                                                                                    fontFamily: 'Montserrat',
                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                     fontSize: 14.0,
                                                                                     letterSpacing: 0.0,
@@ -1351,7 +1351,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                 fontSize: 14.0,
                                                                                 letterSpacing: 0.0,

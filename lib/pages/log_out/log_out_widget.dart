@@ -76,7 +76,7 @@ class _LogOutWidgetState extends State<LogOutWidget> {
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -102,7 +102,7 @@ class _LogOutWidgetState extends State<LogOutWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Poppins',
+                                      fontFamily: 'Montserrat',
                                       color: Colors.white,
                                       letterSpacing: 0.0,
                                     ),
@@ -131,7 +131,7 @@ class _LogOutWidgetState extends State<LogOutWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Poppins',
+                                      fontFamily: 'Montserrat',
                                       color: Colors.white,
                                       letterSpacing: 0.0,
                                     ),

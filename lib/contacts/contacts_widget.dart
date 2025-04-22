@@ -129,7 +129,8 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 44.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -157,7 +158,8 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 17.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -193,7 +195,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -205,7 +207,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -273,7 +275,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -310,7 +312,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -322,7 +324,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -390,7 +392,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -437,7 +439,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -449,7 +451,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -517,7 +519,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -561,7 +563,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -618,7 +620,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -629,7 +631,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -698,7 +700,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -742,7 +744,8 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                           .of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -792,7 +795,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             fontSize: 44.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
@@ -837,7 +840,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -857,7 +860,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -883,7 +886,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -903,7 +906,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -929,7 +932,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -949,7 +952,7 @@ class _ContactsWidgetState extends State<ContactsWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:

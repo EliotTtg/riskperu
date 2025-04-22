@@ -53,8 +53,6 @@ class ExaminationQuestionsFinalModel
 
   // Stores action output result for [Backend Call - Read Document] action in Timer widget.
   ResultadosRecord? resultadoFinalBienTime;
-  // Stores action output result for [Backend Call - Create Document] action in Container widget.
-  UsersAnswersRecord? refRespuestaCrear;
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   RespuestaStateRecord? refStateQuestion;
   // Stores action output result for [Custom Action - verificarPreguntasRespondidas] action in Button widget.

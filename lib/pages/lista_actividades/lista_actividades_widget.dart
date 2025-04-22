@@ -139,7 +139,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondary,
@@ -186,7 +186,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color: Color(0xFF094B90),
                                               fontSize: 24.0,
                                               letterSpacing: 0.0,
@@ -272,7 +272,8 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: Colors.white,
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
@@ -353,7 +354,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF212529),
                                                               fontSize: 14.0,
@@ -377,7 +378,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF212529),
                                                               fontSize: 14.0,
@@ -405,7 +406,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -446,7 +447,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             color: Colors.black,
                                                             fontSize: 13.0,
                                                             letterSpacing: 0.0,
@@ -464,7 +465,7 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                     ),

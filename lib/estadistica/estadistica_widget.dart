@@ -274,7 +274,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 Color(0xFF094B90),
                                                                             fontSize:
@@ -357,7 +357,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                                     child: Text(
                                                                                                       listCursosEstrenadosItem.name,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             fontSize: 16.0,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.bold,
@@ -483,7 +483,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                                         child: Text(
                                                                                                           'Ir',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Poppins',
+                                                                                                                fontFamily: 'Montserrat',
                                                                                                                 color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                 fontSize: 12.0,
                                                                                                                 letterSpacing: 0.0,
@@ -647,7 +647,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Poppins',
+                                                                              fontFamily: 'Montserrat',
                                                                               color: Color(0xFF094B90),
                                                                               fontSize: 16.0,
                                                                               letterSpacing: 0.0,
@@ -727,7 +727,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                                     child: Text(
                                                                                                       listExamenesItem.name,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             fontSize: 16.0,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.bold,
@@ -768,7 +768,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                                         child: Text(
                                                                                                           'Ir',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Poppins',
+                                                                                                                fontFamily: 'Montserrat',
                                                                                                                 color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                 fontSize: 12.0,
                                                                                                                 letterSpacing: 0.0,
@@ -871,7 +871,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Color(
                                                                             0xFF094B90),
                                                                         fontSize:
@@ -943,7 +943,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                           .headlineSmall
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Glory',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
@@ -985,7 +985,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                               child: Text(
                                                                                 'Correctas',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
                                                                                       lineHeight: 1.0,
@@ -1015,7 +1015,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                               child: Text(
                                                                                 'Incorrectas',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
                                                                                       lineHeight: 1.0,
@@ -1045,7 +1045,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                               child: Text(
                                                                                 'Pendientes',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
                                                                                       lineHeight: 1.0,
@@ -1186,7 +1186,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           color:
                                                                               Color(0xFF094B90),
                                                                           fontSize:
@@ -1270,7 +1270,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                                   child: Text(
                                                                                                     listCursosEstrenadosItem.name,
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.bold,
@@ -1396,7 +1396,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                                       child: Text(
                                                                                                         'Ir',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Poppins',
+                                                                                                              fontFamily: 'Montserrat',
                                                                                                               color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                               fontSize: 12.0,
                                                                                                               letterSpacing: 0.0,
@@ -1556,7 +1556,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 Color(0xFF094B90),
                                                                             fontSize:
@@ -1641,7 +1641,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                                   child: Text(
                                                                                                     listExamenesItem.name,
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.bold,
@@ -1682,7 +1682,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                                       child: Text(
                                                                                                         'Ir',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Poppins',
+                                                                                                              fontFamily: 'Montserrat',
                                                                                                               color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                               fontSize: 12.0,
                                                                                                               letterSpacing: 0.0,
@@ -1782,7 +1782,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: Color(
                                                                           0xFF094B90),
                                                                       fontSize:
@@ -1856,7 +1856,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                         .headlineSmall
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Glory',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -1904,7 +1904,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                               'Correctas',
                                                                               textAlign: TextAlign.start,
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Poppins',
+                                                                                    fontFamily: 'Montserrat',
                                                                                     fontSize: 12.0,
                                                                                     letterSpacing: 0.0,
                                                                                     lineHeight: 1.0,
@@ -1938,7 +1938,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                 Text(
                                                                               'Incorrectas',
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Poppins',
+                                                                                    fontFamily: 'Montserrat',
                                                                                     fontSize: 12.0,
                                                                                     letterSpacing: 0.0,
                                                                                     lineHeight: 1.0,
@@ -1972,7 +1972,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                                                 Text(
                                                                               'Pendientes',
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Poppins',
+                                                                                    fontFamily: 'Montserrat',
                                                                                     fontSize: 12.0,
                                                                                     letterSpacing: 0.0,
                                                                                     lineHeight: 1.0,
@@ -2052,7 +2052,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             color: Color(
                                                                 0xFF094B90),
                                                             fontSize: 16.0,
@@ -2178,7 +2178,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               fontSize: 12.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -2208,7 +2208,7 @@ class _EstadisticaWidgetState extends State<EstadisticaWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               fontSize: 12.0,
                                                               letterSpacing:
                                                                   0.0,

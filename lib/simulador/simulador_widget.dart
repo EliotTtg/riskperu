@@ -102,7 +102,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color: Color(0xFF17236A),
+                            color: FlutterFlowTheme.of(context).secondary,
                           ),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
@@ -126,7 +126,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
@@ -142,7 +142,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                             fontSize: 12.0,
@@ -205,7 +205,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   fontSize:
                                                                       14.0,
                                                                   letterSpacing:
@@ -293,7 +293,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                         .labelMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           color:
                                                                               FlutterFlowTheme.of(context).primary,
                                                                           fontSize:
@@ -307,7 +307,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -316,7 +316,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .primary,
@@ -407,7 +407,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Color(
                                                                       0xFF454545),
                                                                   fontSize:
@@ -496,7 +496,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -513,7 +513,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -588,7 +588,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       cursorColor:
@@ -838,7 +838,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                     wrapCoursesRecord.name,
                                                                                     maxLines: 2,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           fontSize: 24.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w600,
@@ -852,7 +852,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                       TextSpan(
                                                                                         text: 'S/. ',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               fontSize: 18.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.bold,
@@ -867,7 +867,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                       )
                                                                                     ],
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           fontSize: 18.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.bold,
@@ -933,7 +933,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                                 '0',
                                                                                               ),
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     fontSize: 18.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.w300,
@@ -984,7 +984,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 fontSize: 18.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w300,
@@ -1040,7 +1040,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                  fontFamily: 'Poppins',
+                                                                                  fontFamily: 'Montserrat',
                                                                                   color: Colors.white,
                                                                                   fontSize: 18.0,
                                                                                   letterSpacing: 0.0,
@@ -1294,7 +1294,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                   wrapCoursesRecord.name,
                                                                                   maxLines: 2,
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
@@ -1308,7 +1308,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                     TextSpan(
                                                                                       text: 'S/. ',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
@@ -1323,7 +1323,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                     )
                                                                                   ],
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
@@ -1392,7 +1392,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                               '0',
                                                                                             ),
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   fontSize: 12.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.w300,
@@ -1443,7 +1443,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                           )
                                                                                         ],
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.w300,
@@ -1504,7 +1504,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                           textStyle: FlutterFlowTheme.of(context)
                                                                               .titleSmall
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 color: Colors.white,
                                                                                 fontSize: 12.0,
                                                                                 letterSpacing: 0.0,

@@ -106,7 +106,7 @@ class LightModeTheme extends FlutterFlowTheme {
   Color get tertiaryColor => tertiary;
 
   late Color primary = const Color(0xFF007DF9);
-  late Color secondary = const Color(0xFF01203F);
+  late Color secondary = const Color(0xFF152D43);
   late Color tertiary = const Color(0xFFEE8B60);
   late Color alternate = const Color(0xFFE0E3E7);
   late Color primaryText = const Color(0xFF000000);
@@ -163,107 +163,107 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Poppins';
+  String get displayLargeFamily => 'Glory';
   TextStyle get displayLarge => GoogleFonts.getFont(
-        'Poppins',
+        'Glory',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 64.0,
       );
-  String get displayMediumFamily => 'Poppins';
+  String get displayMediumFamily => 'Glory';
   TextStyle get displayMedium => GoogleFonts.getFont(
-        'Poppins',
+        'Glory',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 44.0,
       );
-  String get displaySmallFamily => 'Poppins';
+  String get displaySmallFamily => 'Glory';
   TextStyle get displaySmall => GoogleFonts.getFont(
-        'Poppins',
+        'Glory',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 36.0,
       );
-  String get headlineLargeFamily => 'Poppins';
+  String get headlineLargeFamily => 'Glory';
   TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Poppins',
+        'Glory',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 32.0,
       );
-  String get headlineMediumFamily => 'Poppins';
+  String get headlineMediumFamily => 'Glory';
   TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Poppins',
+        'Glory',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 28.0,
       );
-  String get headlineSmallFamily => 'Poppins';
+  String get headlineSmallFamily => 'Glory';
   TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Poppins',
+        'Glory',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 24.0,
       );
-  String get titleLargeFamily => 'Poppins';
+  String get titleLargeFamily => 'Glory';
   TextStyle get titleLarge => GoogleFonts.getFont(
-        'Poppins',
+        'Glory',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 20.0,
       );
-  String get titleMediumFamily => 'Poppins';
+  String get titleMediumFamily => 'Glory';
   TextStyle get titleMedium => GoogleFonts.getFont(
-        'Poppins',
+        'Glory',
         color: theme.info,
         fontWeight: FontWeight.w600,
         fontSize: 18.0,
       );
-  String get titleSmallFamily => 'Poppins';
+  String get titleSmallFamily => 'Montserrat';
   TextStyle get titleSmall => GoogleFonts.getFont(
-        'Poppins',
+        'Montserrat',
         color: theme.info,
         fontWeight: FontWeight.w600,
         fontSize: 16.0,
       );
-  String get labelLargeFamily => 'Poppins';
+  String get labelLargeFamily => 'Montserrat';
   TextStyle get labelLarge => GoogleFonts.getFont(
-        'Poppins',
+        'Montserrat',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
       );
-  String get labelMediumFamily => 'Poppins';
+  String get labelMediumFamily => 'Montserrat';
   TextStyle get labelMedium => GoogleFonts.getFont(
-        'Poppins',
+        'Montserrat',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
-  String get labelSmallFamily => 'Poppins';
+  String get labelSmallFamily => 'Montserrat';
   TextStyle get labelSmall => GoogleFonts.getFont(
-        'Poppins',
+        'Montserrat',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,
       );
-  String get bodyLargeFamily => 'Poppins';
+  String get bodyLargeFamily => 'Montserrat';
   TextStyle get bodyLarge => GoogleFonts.getFont(
-        'Poppins',
+        'Montserrat',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
       );
-  String get bodyMediumFamily => 'Poppins';
+  String get bodyMediumFamily => 'Montserrat';
   TextStyle get bodyMedium => GoogleFonts.getFont(
-        'Poppins',
+        'Montserrat',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
-  String get bodySmallFamily => 'Poppins';
+  String get bodySmallFamily => 'Montserrat';
   TextStyle get bodySmall => GoogleFonts.getFont(
-        'Poppins',
+        'Montserrat',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,

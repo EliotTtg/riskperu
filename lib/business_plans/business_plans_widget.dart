@@ -118,20 +118,18 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                        letterSpacing: 0.0,
-                                                        decoration:
-                                                            TextDecoration
-                                                                .underline,
-                                                      ),
+                                              textStyle: FlutterFlowTheme.of(
+                                                      context)
+                                                  .titleSmall
+                                                  .override(
+                                                    fontFamily: 'Montserrat',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primary,
+                                                    letterSpacing: 0.0,
+                                                    decoration: TextDecoration
+                                                        .underline,
+                                                  ),
                                               elevation: 0.0,
                                               borderRadius:
                                                   BorderRadius.circular(4.0),
@@ -147,7 +145,7 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   fontSize: 64.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
@@ -172,7 +170,7 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               fontSize: 20.0,
                                               letterSpacing: 0.0,
                                             ),
@@ -299,7 +297,7 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 fontSize: 35.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -380,7 +378,7 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             fontSize:
                                                                                 20.0,
                                                                             letterSpacing:
@@ -590,7 +588,7 @@ class _BusinessPlansWidgetState extends State<BusinessPlansWidget> {
                                                                   .titleSmall
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: Colors
                                                                         .white,
                                                                     fontSize:

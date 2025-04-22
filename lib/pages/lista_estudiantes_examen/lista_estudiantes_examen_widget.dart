@@ -112,7 +112,7 @@ class _ListaEstudiantesExamenWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         color: Color(0xFF094B90),
                                         fontSize: 24.0,
                                         letterSpacing: 0.0,
@@ -142,7 +142,7 @@ class _ListaEstudiantesExamenWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             color: Color(0xFF17232B),
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
@@ -169,7 +169,7 @@ class _ListaEstudiantesExamenWidgetState
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     letterSpacing: 0.0,
                                                   ),
                                           hintText: '---',
@@ -177,7 +177,7 @@ class _ListaEstudiantesExamenWidgetState
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFFA8A8A8),
                                                     letterSpacing: 0.0,
                                                   ),
@@ -224,7 +224,7 @@ class _ListaEstudiantesExamenWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         cursorColor:
@@ -252,7 +252,7 @@ class _ListaEstudiantesExamenWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: Color(0xFF17232B),
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
@@ -281,19 +281,19 @@ class _ListaEstudiantesExamenWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 hintText: '---',
-                                                hintStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color:
-                                                              Color(0xFFA8A8A8),
-                                                          letterSpacing: 0.0,
-                                                        ),
+                                                hintStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .labelMedium
+                                                    .override(
+                                                      fontFamily: 'Montserrat',
+                                                      color: Color(0xFFA8A8A8),
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -344,7 +344,8 @@ class _ListaEstudiantesExamenWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                               cursorColor:
@@ -369,7 +370,7 @@ class _ListaEstudiantesExamenWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: Color(0xFF17232B),
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
@@ -398,19 +399,19 @@ class _ListaEstudiantesExamenWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 hintText: '---',
-                                                hintStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color:
-                                                              Color(0xFFA8A8A8),
-                                                          letterSpacing: 0.0,
-                                                        ),
+                                                hintStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .labelMedium
+                                                    .override(
+                                                      fontFamily: 'Montserrat',
+                                                      color: Color(0xFFA8A8A8),
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -461,7 +462,8 @@ class _ListaEstudiantesExamenWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                               cursorColor:
@@ -530,7 +532,7 @@ class _ListaEstudiantesExamenWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: Color(0xFF17232B),
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
@@ -643,7 +645,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -653,7 +655,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -663,7 +665,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -871,7 +873,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -895,7 +897,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -919,7 +921,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -943,7 +945,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -967,7 +969,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -991,7 +993,7 @@ class _ListaEstudiantesExamenWidgetState
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -1080,7 +1082,7 @@ class _ListaEstudiantesExamenWidgetState
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Colors
                                                                       .black,
                                                                   fontSize:
@@ -1136,7 +1138,7 @@ class _ListaEstudiantesExamenWidgetState
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1160,7 +1162,7 @@ class _ListaEstudiantesExamenWidgetState
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1185,7 +1187,7 @@ class _ListaEstudiantesExamenWidgetState
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1217,7 +1219,7 @@ class _ListaEstudiantesExamenWidgetState
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1289,7 +1291,7 @@ class _ListaEstudiantesExamenWidgetState
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: Colors.white,
                                           letterSpacing: 0.0,
                                         ),

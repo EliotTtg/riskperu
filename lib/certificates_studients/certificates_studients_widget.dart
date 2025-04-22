@@ -144,7 +144,7 @@ class _CertificatesStudientsWidgetState
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF003366),
                                                               fontSize: 24.0,
@@ -160,7 +160,8 @@ class _CertificatesStudientsWidgetState
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color:
                                                               Color(0xFF003366),
                                                           fontSize: 24.0,
@@ -249,7 +250,7 @@ class _CertificatesStudientsWidgetState
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
@@ -265,7 +266,7 @@ class _CertificatesStudientsWidgetState
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFFA8A8A8),
                                                                 fontSize: 12.0,
@@ -326,7 +327,8 @@ class _CertificatesStudientsWidgetState
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -388,7 +390,7 @@ class _CertificatesStudientsWidgetState
                                                               .titleSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Colors
                                                                     .white,
                                                                 fontSize: 15.0,
@@ -494,7 +496,7 @@ class _CertificatesStudientsWidgetState
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -514,7 +516,7 @@ class _CertificatesStudientsWidgetState
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight:
@@ -529,7 +531,7 @@ class _CertificatesStudientsWidgetState
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -550,7 +552,7 @@ class _CertificatesStudientsWidgetState
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -564,7 +566,7 @@ class _CertificatesStudientsWidgetState
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w600,
@@ -621,7 +623,7 @@ class _CertificatesStudientsWidgetState
                                                                       .labelLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Color(
                                                                             0xFF212529),
                                                                         fontSize:
@@ -655,7 +657,7 @@ class _CertificatesStudientsWidgetState
                                                                       .labelLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Color(
                                                                             0xFF212529),
                                                                         fontSize:
@@ -684,7 +686,7 @@ class _CertificatesStudientsWidgetState
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: Color(
                                                                           0xFF212529),
                                                                       fontSize:
@@ -707,7 +709,7 @@ class _CertificatesStudientsWidgetState
                                                                     .labelLarge
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: Color(
                                                                           0xFF212529),
                                                                       fontSize:
@@ -735,7 +737,7 @@ class _CertificatesStudientsWidgetState
                                                                       .labelLarge
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Color(
                                                                             0xFF212529),
                                                                         fontSize:
@@ -787,7 +789,7 @@ class _CertificatesStudientsWidgetState
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
@@ -864,7 +866,7 @@ class _CertificatesStudientsWidgetState
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -941,7 +943,7 @@ class _CertificatesStudientsWidgetState
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),

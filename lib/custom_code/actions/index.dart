@@ -29,3 +29,4 @@ export 'porcentaje_course_linea.dart' show porcentajeCourseLinea;
 export 'porcentaje_course.dart' show porcentajeCourse;
 export 'delete_register.dart' show deleteRegister;
 export 'obtener_data_admin.dart' show obtenerDataAdmin;
+export 'validar_resultado.dart' show validarResultado;

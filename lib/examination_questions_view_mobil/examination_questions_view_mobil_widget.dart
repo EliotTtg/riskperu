@@ -302,7 +302,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                 fontSize: 14.0,
                                                                                 letterSpacing: 0.0,
@@ -366,7 +366,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                  fontFamily: 'Poppins',
+                                                                                  fontFamily: 'Montserrat',
                                                                                   color: Colors.white,
                                                                                   fontSize: 12.0,
                                                                                   letterSpacing: 0.0,
@@ -386,7 +386,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 color: Color(0xFF979797),
                                                                                 letterSpacing: 0.0,
                                                                               ),
@@ -439,7 +439,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                                       TextSpan(
                                                                                         text: 'Examen ',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               color: Color(0xFF979797),
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
@@ -449,7 +449,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                                       TextSpan(
                                                                                         text: ' de ',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               color: Color(0xFF979797),
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
@@ -462,7 +462,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                                           '0',
                                                                                         ),
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               color: Color(0xFF979797),
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
@@ -477,7 +477,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                                       )
                                                                                     ],
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           color: Color(0xFF979797),
                                                                                           fontSize: 12.0,
                                                                                           letterSpacing: 0.0,
@@ -514,7 +514,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                                   Text(
                                                                                     'Contenido de Examen',
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           color: Color(0xFF01203F),
                                                                                           fontSize: 16.0,
                                                                                           letterSpacing: 0.0,
@@ -565,7 +565,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                                   ),
                                                                                   maxLines: 1,
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         color: Colors.black,
                                                                                         fontSize: 13.0,
                                                                                         letterSpacing: 0.0,
@@ -790,7 +790,7 @@ class _ExaminationQuestionsViewMobilWidgetState
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                  fontFamily: 'Poppins',
+                                                                                  fontFamily: 'Montserrat',
                                                                                   color: Colors.white,
                                                                                   fontSize: 14.0,
                                                                                   letterSpacing: 0.0,

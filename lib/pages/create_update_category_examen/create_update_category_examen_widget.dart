@@ -130,7 +130,7 @@ class _CreateUpdateCategoryExamenWidgetState
                           'Grupo de Examen',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -145,7 +145,7 @@ class _CreateUpdateCategoryExamenWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -161,14 +161,14 @@ class _CreateUpdateCategoryExamenWidgetState
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         letterSpacing: 0.0,
                                       ),
                                   hintText: 'Ingrese la respuesta',
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -210,7 +210,7 @@ class _CreateUpdateCategoryExamenWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Poppins',
+                                      fontFamily: 'Montserrat',
                                       letterSpacing: 0.0,
                                     ),
                                 cursorColor:
@@ -230,7 +230,7 @@ class _CreateUpdateCategoryExamenWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -247,19 +247,19 @@ class _CreateUpdateCategoryExamenWidgetState
                               searchHintTextStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                               searchTextStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                               textStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                               hintText: 'Seleccione',
@@ -294,7 +294,7 @@ class _CreateUpdateCategoryExamenWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -311,19 +311,19 @@ class _CreateUpdateCategoryExamenWidgetState
                               searchHintTextStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                               searchTextStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                               textStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                               hintText: 'Seleccione',
@@ -480,7 +480,7 @@ class _CreateUpdateCategoryExamenWidgetState
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         color: Colors.white,
                                         letterSpacing: 0.0,
                                       ),
@@ -506,7 +506,7 @@ class _CreateUpdateCategoryExamenWidgetState
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         color: Colors.white,
                                         letterSpacing: 0.0,
                                       ),

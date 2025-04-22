@@ -206,7 +206,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Poppins',
+                                                                              fontFamily: 'Montserrat',
                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                               fontSize: 24.0,
                                                                               letterSpacing: 0.0,
@@ -231,7 +231,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           color:
                                                                               FlutterFlowTheme.of(context).primaryText,
                                                                           fontSize:
@@ -268,7 +268,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     fontSize:
                                                                         20.0,
                                                                     letterSpacing:
@@ -374,7 +374,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                                     ),
                                                                                     maxLines: 1,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           color: FlutterFlowTheme.of(context).primaryText,
                                                                                           fontSize: 44.0,
                                                                                           letterSpacing: 0.0,
@@ -407,7 +407,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                               Text(
                                                                                 'Usuarios Registrados',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
@@ -497,7 +497,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                                     ),
                                                                                     maxLines: 1,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           color: FlutterFlowTheme.of(context).primaryText,
                                                                                           fontSize: 44.0,
                                                                                           letterSpacing: 0.0,
@@ -530,7 +530,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                               Text(
                                                                                 'Recuento Total de comentarios',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
@@ -634,7 +634,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                                     ),
                                                                                     maxLines: 1,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           color: FlutterFlowTheme.of(context).primaryText,
                                                                                           fontSize: 44.0,
                                                                                           letterSpacing: 0.0,
@@ -668,7 +668,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                                 'Suscripciones Pagas',
                                                                                 textAlign: TextAlign.start,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
@@ -728,7 +728,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                                 '0',
                                                                                 maxLines: 1,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                       fontSize: 44.0,
                                                                                       letterSpacing: 0.0,
@@ -759,7 +759,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                               Text(
                                                                                 'Visible frente a Todos los cursos',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
@@ -824,7 +824,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .primaryText,
                                                                         fontSize:
@@ -962,7 +962,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                                       ),
                                                                                       textAlign: TextAlign.center,
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                           ),
                                                                                     ),
@@ -1009,7 +1009,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                                                 'Sistema',
                                                                                               ),
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                             ),
@@ -1030,7 +1030,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                         ),
@@ -1107,7 +1107,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                         .headlineSmall
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Glory',
                                                                           color:
                                                                               FlutterFlowTheme.of(context).secondaryBackground,
                                                                           fontSize:
@@ -1174,7 +1174,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 fontSize: 12.0,
                                                                                 letterSpacing: 0.0,
                                                                                 lineHeight: 1.0,
@@ -1213,7 +1213,7 @@ class _DashboardAdminWidgetState extends State<DashboardAdminWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 fontSize: 12.0,
                                                                                 letterSpacing: 0.0,
                                                                                 lineHeight: 1.0,

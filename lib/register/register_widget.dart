@@ -120,7 +120,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
@@ -134,7 +134,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
@@ -151,7 +151,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
@@ -206,7 +206,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     fontSize:
                                                                         20.0,
                                                                     letterSpacing:
@@ -220,7 +220,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
@@ -297,7 +297,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               fontSize: 20.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -333,7 +333,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     fontSize:
                                                                         20.0,
                                                                     letterSpacing:
@@ -347,7 +347,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
@@ -424,7 +424,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               fontSize: 20.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -457,7 +457,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -469,7 +469,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
@@ -546,7 +546,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               fontSize: 20.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -591,7 +591,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         fontSize:
                                                                             20.0,
                                                                         letterSpacing:
@@ -605,7 +605,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .alternate,
                                                                         fontSize:
@@ -702,7 +702,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   fontSize:
                                                                       20.0,
                                                                   letterSpacing:
@@ -857,7 +857,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
@@ -957,7 +957,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
@@ -1173,7 +1173,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
@@ -1229,7 +1229,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,

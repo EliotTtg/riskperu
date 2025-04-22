@@ -103,7 +103,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color: Color(0xFF094B90),
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
@@ -194,7 +194,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: Color(
                                                                         0xFF094B90),
                                                                     fontSize:
@@ -224,7 +224,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF094B90),
                                                                 fontSize: 20.0,
@@ -272,7 +272,8 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondary,
@@ -287,19 +288,20 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                     style: TextStyle(),
                                                   )
                                                 ],
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Montserrat',
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .secondary,
-                                                          fontSize: 14.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                      fontSize: 14.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                               textAlign: TextAlign.center,
                                             ),
@@ -328,7 +330,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Color(
                                                                       0xFF094B90),
                                                                   fontSize:
@@ -346,7 +348,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF094B90),
                                                               fontSize: 20.0,
@@ -386,7 +388,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondary,
@@ -420,7 +422,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Color(
                                                                       0xFF094B90),
                                                                   fontSize:
@@ -438,7 +440,7 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF094B90),
                                                               fontSize: 20.0,
@@ -489,7 +491,8 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -520,7 +523,8 @@ class _CertificateViewWidgetState extends State<CertificateViewWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),

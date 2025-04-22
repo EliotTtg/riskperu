@@ -66,7 +66,7 @@ class _AnuncioPlansWidgetState extends State<AnuncioPlansWidget> {
                   Text(
                     'Suscribete a un plan y conéctate con nuestra comunidad de profesionales.',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
+                          fontFamily: 'Montserrat',
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
                           fontSize: 16.0,
@@ -108,7 +108,7 @@ class _AnuncioPlansWidgetState extends State<AnuncioPlansWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).error,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily: 'Poppins',
+                        fontFamily: 'Montserrat',
                         color: Colors.white,
                         fontSize: 14.0,
                         letterSpacing: 0.0,

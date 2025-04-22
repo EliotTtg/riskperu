@@ -176,7 +176,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: Color(0xFF094B90),
                                           fontSize: 24.0,
                                           letterSpacing: 0.0,
@@ -213,7 +213,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -233,7 +233,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color: Color(0xFF17232B),
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
@@ -438,7 +438,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color:
                                                               Color(0xFF17232B),
                                                           fontSize: 16.0,
@@ -458,18 +459,17 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     style: TextStyle(),
                                                   )
                                                 ],
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color:
-                                                              Color(0xFF17232B),
-                                                          fontSize: 16.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Montserrat',
+                                                      color: Color(0xFF17232B),
+                                                      fontSize: 16.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ),
                                               ),
                                             ),
                                             Container(
@@ -489,19 +489,22 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   isDense: true,
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Escriba',
                                                   hintStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFFA8A8A8),
                                                         letterSpacing: 0.0,
@@ -562,7 +565,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 cursorColor:
@@ -594,7 +598,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -614,7 +618,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color: Color(0xFF17232B),
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
@@ -643,7 +647,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       letterSpacing: 0.0,
                                                     ),
                                             hintText: 'Escriba',
@@ -651,7 +655,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       color: Color(0xFFA8A8A8),
                                                       letterSpacing: 0.0,
                                                     ),
@@ -700,7 +704,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 letterSpacing: 0.0,
                                               ),
                                           maxLines: null,
@@ -732,7 +736,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -812,7 +816,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           .labelMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                   searchTextStyle:
@@ -821,16 +825,18 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Seleccione',
                                                   searchHintText:
                                                       'Buscar categoria..',
@@ -876,7 +882,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -908,21 +914,24 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                               searchTextStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                               textStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                               hintText: 'Seleccione',
@@ -978,7 +987,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17232B),
                                                         fontSize: 16.0,
@@ -1006,19 +1016,22 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   isDense: true,
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Escriba',
                                                   hintStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFFA8A8A8),
                                                         letterSpacing: 0.0,
@@ -1079,7 +1092,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 keyboardType:
@@ -1111,7 +1125,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -1186,7 +1200,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           .labelMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                   searchTextStyle:
@@ -1195,16 +1209,18 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Seleccione',
                                                   searchHintText:
                                                       'Buscar encargados..',
@@ -1257,7 +1273,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -1281,19 +1297,22 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   isDense: true,
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Escriba',
                                                   hintStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFFA8A8A8),
                                                         letterSpacing: 0.0,
@@ -1354,7 +1373,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 cursorColor:
@@ -1384,7 +1404,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -1458,7 +1478,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           .labelMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                   searchTextStyle:
@@ -1467,16 +1487,18 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Seleccione',
                                                   searchHintText:
                                                       'Buscar lenguaje..',
@@ -1529,7 +1551,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -1553,19 +1575,22 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   isDense: true,
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Escriba',
                                                   hintStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFFA8A8A8),
                                                         letterSpacing: 0.0,
@@ -1626,7 +1651,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 maxLines: null,
@@ -1654,7 +1680,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -1678,19 +1704,22 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   isDense: true,
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Escriba',
                                                   hintStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFFA8A8A8),
                                                         letterSpacing: 0.0,
@@ -1751,7 +1780,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 maxLines: null,
@@ -1786,7 +1816,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -1825,7 +1855,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1836,7 +1866,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Color(
                                                                       0xFFA8A8A8),
                                                                   letterSpacing:
@@ -1906,7 +1936,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       cursorColor:
@@ -2070,7 +2100,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
@@ -2130,7 +2160,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -2167,7 +2197,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -2178,7 +2208,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                                 .labelMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: Color(
                                                                       0xFFA8A8A8),
                                                                   letterSpacing:
@@ -2248,7 +2278,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             letterSpacing: 0.0,
                                                           ),
                                                       cursorColor:
@@ -2416,7 +2446,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             letterSpacing:
                                                                                 0.0,
                                                                           ),
@@ -2482,7 +2512,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17232B),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -2502,7 +2532,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color: Color(0xFF17232B),
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
@@ -2531,19 +2561,22 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   isDense: true,
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  labelStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   hintText: 'Escriba',
                                                   hintStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFFA8A8A8),
                                                         letterSpacing: 0.0,
@@ -2604,7 +2637,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 cursorColor:
@@ -2702,7 +2736,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                   context)
                                               .titleSmall
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,
@@ -3188,7 +3222,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .titleSmall
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Colors.white,
                                                     fontSize: 15.0,
                                                     letterSpacing: 0.0,
@@ -3228,7 +3262,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       color: Colors.white,
                                                       fontSize: 15.0,
                                                       letterSpacing: 0.0,

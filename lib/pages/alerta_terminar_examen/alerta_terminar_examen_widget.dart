@@ -105,7 +105,8 @@ class _AlertaTerminarExamenWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 25.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -126,7 +127,8 @@ class _AlertaTerminarExamenWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -162,8 +164,8 @@ class _AlertaTerminarExamenWidgetState
                                       iconPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
@@ -177,7 +179,7 @@ class _AlertaTerminarExamenWidgetState
                                       elevation: 0.0,
                                       borderSide: BorderSide(
                                         color: FlutterFlowTheme.of(context)
-                                            .primaryText,
+                                            .primary,
                                       ),
                                       borderRadius: BorderRadius.circular(4.0),
                                     ),
@@ -205,7 +207,8 @@ class _AlertaTerminarExamenWidgetState
                                           .titleSmall
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: Colors.black,
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
@@ -213,7 +216,7 @@ class _AlertaTerminarExamenWidgetState
                                       elevation: 0.0,
                                       borderSide: BorderSide(
                                         color: FlutterFlowTheme.of(context)
-                                            .primaryText,
+                                            .primary,
                                       ),
                                       borderRadius: BorderRadius.circular(4.0),
                                       hoverColor: FlutterFlowTheme.of(context)

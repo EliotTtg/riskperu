@@ -173,7 +173,8 @@ class _HeaderMobilWidgetState extends State<HeaderMobilWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
@@ -215,7 +216,7 @@ class _HeaderMobilWidgetState extends State<HeaderMobilWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
                                                     ),

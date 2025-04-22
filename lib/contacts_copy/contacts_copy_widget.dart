@@ -126,7 +126,8 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 44.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -154,7 +155,8 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 17.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -190,7 +192,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -202,7 +204,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -270,7 +272,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -307,7 +309,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -319,7 +321,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -387,7 +389,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -434,7 +436,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -446,7 +448,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -514,7 +516,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -558,7 +560,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -615,7 +617,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -626,7 +628,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -695,7 +697,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -739,7 +741,8 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                           .of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -786,7 +789,8 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 44.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -828,7 +832,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -849,7 +853,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -874,7 +878,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -895,7 +899,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:
@@ -920,7 +924,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryText,
@@ -941,7 +945,7 @@ class _ContactsCopyWidgetState extends State<ContactsCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:

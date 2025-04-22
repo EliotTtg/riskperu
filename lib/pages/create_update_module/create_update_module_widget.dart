@@ -100,7 +100,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'Montserrat',
                                   fontSize: 24.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -118,7 +118,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -139,14 +139,14 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         hintText: 'Escribe',
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
@@ -194,7 +194,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             letterSpacing: 0.0,
                                           ),
                                       cursorColor: FlutterFlowTheme.of(context)
@@ -320,7 +320,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             color: Colors.white,
                                             letterSpacing: 0.0,
                                           ),
@@ -377,7 +377,7 @@ class _CreateUpdateModuleWidgetState extends State<CreateUpdateModuleWidget> {
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             color: Colors.white,
                                             letterSpacing: 0.0,
                                           ),
