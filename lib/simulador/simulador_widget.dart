@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/pages/empty_simulator/empty_simulator_widget.dart';
+import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/header_mobil/header_mobil_widget.dart';
 import '/index.dart';
@@ -186,6 +187,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                         ),
                         Flexible(
                           child: SingleChildScrollView(
+                            primary: false,
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -798,451 +800,846 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(20.0),
-                                              child: StreamBuilder<
-                                                  List<CoursesRecord>>(
-                                                stream: queryCoursesRecord(
-                                                  queryBuilder: (coursesRecord) =>
-                                                      coursesRecord
-                                                          .where(
-                                                            'course_type',
-                                                            isEqualTo: 2,
-                                                          )
-                                                          .where(
-                                                            'State',
-                                                            isEqualTo: true,
-                                                          )
-                                                          .whereIn('uid',
-                                                              _model.uidsCourse)
-                                                          .where(
-                                                            'uid_CategoryCourses',
-                                                            isEqualTo: _model
-                                                                .courseCategory,
-                                                          )
-                                                          .orderBy(
-                                                              'Created_Date'),
-                                                ),
-                                                builder: (context, snapshot) {
-                                                  // Customize what your widget looks like when it's loading.
-                                                  if (!snapshot.hasData) {
-                                                    return Center(
-                                                      child: SizedBox(
-                                                        width: 14.0,
-                                                        height: 14.0,
-                                                        child:
-                                                            CircularProgressIndicator(
-                                                          valueColor:
-                                                              AlwaysStoppedAnimation<
-                                                                  Color>(
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                          ),
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      0.0, 20.0, 0.0, 20.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Flexible(
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  20.0,
+                                                                  0.0,
+                                                                  20.0,
+                                                                  0.0),
+                                                      child: StreamBuilder<
+                                                          List<CoursesRecord>>(
+                                                        stream:
+                                                            queryCoursesRecord(
+                                                          queryBuilder:
+                                                              (coursesRecord) =>
+                                                                  coursesRecord
+                                                                      .where(
+                                                                        'course_type',
+                                                                        isEqualTo:
+                                                                            2,
+                                                                      )
+                                                                      .where(
+                                                                        'State',
+                                                                        isEqualTo:
+                                                                            true,
+                                                                      )
+                                                                      .whereIn(
+                                                                          'uid',
+                                                                          _model
+                                                                              .uidsCourse)
+                                                                      .where(
+                                                                        'uid_CategoryCourses',
+                                                                        isEqualTo:
+                                                                            _model.courseCategory,
+                                                                      )
+                                                                      .where(
+                                                                        'set',
+                                                                        isEqualTo:
+                                                                            false,
+                                                                      )
+                                                                      .orderBy(
+                                                                          'Created_Date'),
                                                         ),
-                                                      ),
-                                                    );
-                                                  }
-                                                  List<CoursesRecord>
-                                                      wrapCoursesRecordList =
-                                                      snapshot.data!;
-                                                  if (wrapCoursesRecordList
-                                                      .isEmpty) {
-                                                    return Center(
-                                                      child: Container(
-                                                        height: 250.0,
-                                                        child:
-                                                            EmptySimulatorWidget(),
-                                                      ),
-                                                    );
-                                                  }
+                                                        builder: (context,
+                                                            snapshot) {
+                                                          // Customize what your widget looks like when it's loading.
+                                                          if (!snapshot
+                                                              .hasData) {
+                                                            return Center(
+                                                              child: SizedBox(
+                                                                width: 14.0,
+                                                                height: 14.0,
+                                                                child:
+                                                                    CircularProgressIndicator(
+                                                                  valueColor:
+                                                                      AlwaysStoppedAnimation<
+                                                                          Color>(
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            );
+                                                          }
+                                                          List<CoursesRecord>
+                                                              listViewCoursesRecordList =
+                                                              snapshot.data!;
+                                                          if (listViewCoursesRecordList
+                                                              .isEmpty) {
+                                                            return Center(
+                                                              child: Container(
+                                                                height: 250.0,
+                                                                child:
+                                                                    EmptySimulatorWidget(),
+                                                              ),
+                                                            );
+                                                          }
 
-                                                  return Wrap(
-                                                    spacing: 20.0,
-                                                    runSpacing: 20.0,
-                                                    alignment:
-                                                        WrapAlignment.start,
-                                                    crossAxisAlignment:
-                                                        WrapCrossAlignment
-                                                            .start,
-                                                    direction: Axis.horizontal,
-                                                    runAlignment:
-                                                        WrapAlignment.start,
-                                                    verticalDirection:
-                                                        VerticalDirection.down,
-                                                    clipBehavior:
-                                                        Clip.antiAlias,
-                                                    children: List.generate(
-                                                        wrapCoursesRecordList
-                                                            .length,
-                                                        (wrapIndex) {
-                                                      final wrapCoursesRecord =
-                                                          wrapCoursesRecordList[
-                                                              wrapIndex];
-                                                      return Material(
-                                                        color:
-                                                            Colors.transparent,
-                                                        elevation: 1.0,
-                                                        shape:
-                                                            RoundedRectangleBorder(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      8.0),
-                                                        ),
-                                                        child: Container(
-                                                          width:
-                                                              double.infinity,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryBackground,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        8.0),
-                                                          ),
-                                                          child: Padding(
+                                                          return ListView
+                                                              .separated(
                                                             padding:
-                                                                EdgeInsets.all(
-                                                                    20.0),
-                                                            child: Row(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .max,
-                                                              crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .start,
-                                                              children: [
-                                                                ClipRRect(
+                                                                EdgeInsets.zero,
+                                                            shrinkWrap: true,
+                                                            scrollDirection:
+                                                                Axis.vertical,
+                                                            itemCount:
+                                                                listViewCoursesRecordList
+                                                                    .length,
+                                                            separatorBuilder: (_,
+                                                                    __) =>
+                                                                SizedBox(
+                                                                    height:
+                                                                        20.0),
+                                                            itemBuilder: (context,
+                                                                listViewIndex) {
+                                                              final listViewCoursesRecord =
+                                                                  listViewCoursesRecordList[
+                                                                      listViewIndex];
+                                                              return Material(
+                                                                color: Colors
+                                                                    .transparent,
+                                                                elevation: 1.0,
+                                                                shape:
+                                                                    RoundedRectangleBorder(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
                                                                               8.0),
-                                                                  child:
-                                                                      CachedNetworkImage(
-                                                                    fadeInDuration:
-                                                                        Duration(
-                                                                            milliseconds:
-                                                                                500),
-                                                                    fadeOutDuration:
-                                                                        Duration(
-                                                                            milliseconds:
-                                                                                500),
-                                                                    imageUrl:
-                                                                        wrapCoursesRecord
-                                                                            .imageCourse,
-                                                                    width: MediaQuery.sizeOf(context)
-                                                                            .width *
-                                                                        0.2,
-                                                                    height:
-                                                                        200.0,
-                                                                    fit: BoxFit
-                                                                        .cover,
-                                                                    errorWidget: (context,
-                                                                            error,
-                                                                            stackTrace) =>
-                                                                        Image
-                                                                            .asset(
-                                                                      'assets/images/error_image.png',
-                                                                      width: MediaQuery.sizeOf(context)
-                                                                              .width *
-                                                                          0.2,
-                                                                      height:
-                                                                          200.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
-                                                                    ),
-                                                                  ),
                                                                 ),
-                                                                Flexible(
+                                                                child:
+                                                                    Container(
+                                                                  width: double
+                                                                      .infinity,
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryBackground,
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            8.0),
+                                                                  ),
                                                                   child:
-                                                                      Container(
-                                                                    width: double
-                                                                        .infinity,
-                                                                    decoration:
-                                                                        BoxDecoration(),
-                                                                    child:
-                                                                        Column(
+                                                                      Padding(
+                                                                    padding:
+                                                                        EdgeInsets.all(
+                                                                            20.0),
+                                                                    child: Row(
                                                                       mainAxisSize:
                                                                           MainAxisSize
                                                                               .max,
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .spaceBetween,
                                                                       crossAxisAlignment:
                                                                           CrossAxisAlignment
                                                                               .start,
                                                                       children:
                                                                           [
-                                                                        Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children:
-                                                                              [
-                                                                            Row(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                              children: [
-                                                                                Flexible(
-                                                                                  child: Text(
-                                                                                    wrapCoursesRecord.name,
-                                                                                    maxLines: 2,
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          font: GoogleFonts.montserrat(
-                                                                                            fontWeight: FontWeight.w600,
-                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                          ),
-                                                                                          fontSize: 24.0,
-                                                                                          letterSpacing: 0.0,
-                                                                                          fontWeight: FontWeight.w600,
-                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                        ),
-                                                                                  ),
-                                                                                ),
-                                                                                RichText(
-                                                                                  textScaler: MediaQuery.of(context).textScaler,
-                                                                                  text: TextSpan(
-                                                                                    children: [
-                                                                                      TextSpan(
-                                                                                        text: 'S/. ',
-                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              font: GoogleFonts.montserrat(
-                                                                                                fontWeight: FontWeight.bold,
-                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                              ),
-                                                                                              fontSize: 18.0,
-                                                                                              letterSpacing: 0.0,
-                                                                                              fontWeight: FontWeight.bold,
-                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                            ),
-                                                                                      ),
-                                                                                      TextSpan(
-                                                                                        text: valueOrDefault<String>(
-                                                                                          wrapCoursesRecord.price,
-                                                                                          '0',
-                                                                                        ),
-                                                                                        style: TextStyle(),
-                                                                                      )
-                                                                                    ],
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          font: GoogleFonts.montserrat(
-                                                                                            fontWeight: FontWeight.bold,
-                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                          ),
-                                                                                          fontSize: 18.0,
-                                                                                          letterSpacing: 0.0,
-                                                                                          fontWeight: FontWeight.bold,
-                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                        ),
-                                                                                  ),
-                                                                                ),
-                                                                              ].divide(SizedBox(width: 10.0)),
+                                                                        ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              CachedNetworkImage(
+                                                                            fadeInDuration:
+                                                                                Duration(milliseconds: 500),
+                                                                            fadeOutDuration:
+                                                                                Duration(milliseconds: 500),
+                                                                            imageUrl:
+                                                                                listViewCoursesRecord.imageCourse,
+                                                                            width:
+                                                                                MediaQuery.sizeOf(context).width * 0.2,
+                                                                            height:
+                                                                                200.0,
+                                                                            fit:
+                                                                                BoxFit.cover,
+                                                                            errorWidget: (context, error, stackTrace) =>
+                                                                                Image.asset(
+                                                                              'assets/images/error_image.png',
+                                                                              width: MediaQuery.sizeOf(context).width * 0.2,
+                                                                              height: 200.0,
+                                                                              fit: BoxFit.cover,
                                                                             ),
-                                                                            StreamBuilder<List<ExamenesRecord>>(
-                                                                              stream: queryExamenesRecord(
-                                                                                queryBuilder: (examenesRecord) => examenesRecord.where(
-                                                                                  'uid_Course',
-                                                                                  isEqualTo: wrapCoursesRecord.reference.id,
-                                                                                ),
-                                                                              ),
-                                                                              builder: (context, snapshot) {
-                                                                                // Customize what your widget looks like when it's loading.
-                                                                                if (!snapshot.hasData) {
-                                                                                  return Center(
-                                                                                    child: SizedBox(
-                                                                                      width: 14.0,
-                                                                                      height: 14.0,
-                                                                                      child: CircularProgressIndicator(
-                                                                                        valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                          FlutterFlowTheme.of(context).primary,
-                                                                                        ),
-                                                                                      ),
-                                                                                    ),
-                                                                                  );
-                                                                                }
-                                                                                List<ExamenesRecord> containerExamenesRecordList = snapshot.data!;
-
-                                                                                return Container(
-                                                                                  decoration: BoxDecoration(),
-                                                                                  child: StreamBuilder<List<PreguntasRecord>>(
-                                                                                    stream: queryPreguntasRecord(
-                                                                                      queryBuilder: (preguntasRecord) => preguntasRecord.whereIn('examen_ref', containerExamenesRecordList.map((e) => e.reference.id).toList()),
-                                                                                    ),
-                                                                                    builder: (context, snapshot) {
-                                                                                      // Customize what your widget looks like when it's loading.
-                                                                                      if (!snapshot.hasData) {
-                                                                                        return Center(
-                                                                                          child: SizedBox(
-                                                                                            width: 14.0,
-                                                                                            height: 14.0,
-                                                                                            child: CircularProgressIndicator(
-                                                                                              valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                                FlutterFlowTheme.of(context).primary,
-                                                                                              ),
-                                                                                            ),
-                                                                                          ),
-                                                                                        );
-                                                                                      }
-                                                                                      List<PreguntasRecord> richTextPreguntasRecordList = snapshot.data!;
-
-                                                                                      return RichText(
-                                                                                        textScaler: MediaQuery.of(context).textScaler,
-                                                                                        text: TextSpan(
-                                                                                          children: [
-                                                                                            TextSpan(
-                                                                                              text: valueOrDefault<String>(
-                                                                                                richTextPreguntasRecordList.length.toString(),
-                                                                                                '0',
-                                                                                              ),
-                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    font: GoogleFonts.montserrat(
-                                                                                                      fontWeight: FontWeight.w300,
-                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                    ),
-                                                                                                    fontSize: 18.0,
-                                                                                                    letterSpacing: 0.0,
-                                                                                                    fontWeight: FontWeight.w300,
-                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                  ),
-                                                                                            ),
-                                                                                            TextSpan(
-                                                                                              text: ' ',
-                                                                                              style: TextStyle(),
-                                                                                            ),
-                                                                                            TextSpan(
-                                                                                              text: valueOrDefault<String>(
-                                                                                                valueOrDefault<int>(
-                                                                                                          richTextPreguntasRecordList.length,
-                                                                                                          0,
-                                                                                                        ) >
-                                                                                                        1
-                                                                                                    ? 'preguntas'
-                                                                                                    : 'pregunta',
-                                                                                                'pregunta',
-                                                                                              ),
-                                                                                              style: TextStyle(),
-                                                                                            ),
-                                                                                            TextSpan(
-                                                                                              text: ' y ',
-                                                                                              style: TextStyle(),
-                                                                                            ),
-                                                                                            TextSpan(
-                                                                                              text: valueOrDefault<String>(
-                                                                                                containerExamenesRecordList.length.toString(),
-                                                                                                '0',
-                                                                                              ),
-                                                                                              style: TextStyle(),
-                                                                                            ),
-                                                                                            TextSpan(
-                                                                                              text: ' ',
-                                                                                              style: TextStyle(),
-                                                                                            ),
-                                                                                            TextSpan(
-                                                                                              text: valueOrDefault<String>(
-                                                                                                containerExamenesRecordList.length > 1 ? 'examenes' : 'examen',
-                                                                                                'examen',
-                                                                                              ),
-                                                                                              style: TextStyle(),
-                                                                                            ),
-                                                                                            TextSpan(
-                                                                                              text: ' de practicas para el examen de certificación',
-                                                                                              style: TextStyle(),
-                                                                                            )
-                                                                                          ],
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                font: GoogleFonts.montserrat(
-                                                                                                  fontWeight: FontWeight.w300,
-                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                                ),
-                                                                                                fontSize: 18.0,
-                                                                                                letterSpacing: 0.0,
-                                                                                                fontWeight: FontWeight.w300,
-                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                              ),
-                                                                                        ),
-                                                                                      );
-                                                                                    },
-                                                                                  ),
-                                                                                );
-                                                                              },
-                                                                            ),
-                                                                          ].divide(SizedBox(height: 10.0)),
+                                                                          ),
                                                                         ),
-                                                                        FFButtonWidget(
-                                                                          onPressed:
-                                                                              () async {
-                                                                            context.pushNamed(
-                                                                              SimulatorWidget.routeName,
-                                                                              queryParameters: {
-                                                                                'refCourse': serializeParam(
-                                                                                  wrapCoursesRecord,
-                                                                                  ParamType.Document,
-                                                                                ),
-                                                                              }.withoutNulls,
-                                                                              extra: <String, dynamic>{
-                                                                                'refCourse': wrapCoursesRecord,
-                                                                                kTransitionInfoKey: TransitionInfo(
-                                                                                  hasTransition: true,
-                                                                                  transitionType: PageTransitionType.fade,
-                                                                                  duration: Duration(milliseconds: 0),
-                                                                                ),
-                                                                              },
-                                                                            );
-                                                                          },
-                                                                          text:
-                                                                              'Conoce más',
-                                                                          options:
-                                                                              FFButtonOptions(
+                                                                        Flexible(
+                                                                          child:
+                                                                              Container(
                                                                             width:
                                                                                 double.infinity,
-                                                                            height:
-                                                                                50.0,
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
-                                                                                16.0,
-                                                                                0.0,
-                                                                                16.0,
-                                                                                0.0),
-                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                                                                0.0,
-                                                                                0.0,
-                                                                                0.0,
-                                                                                0.0),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                            textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                  font: GoogleFonts.montserrat(
-                                                                                    fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                    fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                                  ),
-                                                                                  color: Colors.white,
-                                                                                  fontSize: 18.0,
-                                                                                  letterSpacing: 0.0,
-                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                            decoration:
+                                                                                BoxDecoration(),
+                                                                            child:
+                                                                                Column(
+                                                                              mainAxisSize: MainAxisSize.max,
+                                                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                                                              children: [
+                                                                                Column(
+                                                                                  mainAxisSize: MainAxisSize.max,
+                                                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                  children: [
+                                                                                    Row(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                      children: [
+                                                                                        Flexible(
+                                                                                          child: Text(
+                                                                                            listViewCoursesRecord.name,
+                                                                                            maxLines: 2,
+                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.w600,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
+                                                                                                  fontSize: 24.0,
+                                                                                                  letterSpacing: 0.0,
+                                                                                                  fontWeight: FontWeight.w600,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                        RichText(
+                                                                                          textScaler: MediaQuery.of(context).textScaler,
+                                                                                          text: TextSpan(
+                                                                                            children: [
+                                                                                              TextSpan(
+                                                                                                text: 'S/. ',
+                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
+                                                                                                      fontSize: 18.0,
+                                                                                                      letterSpacing: 0.0,
+                                                                                                      fontWeight: FontWeight.bold,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
+                                                                                              ),
+                                                                                              TextSpan(
+                                                                                                text: valueOrDefault<String>(
+                                                                                                  listViewCoursesRecord.price,
+                                                                                                  '0',
+                                                                                                ),
+                                                                                                style: TextStyle(),
+                                                                                              )
+                                                                                            ],
+                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                    fontWeight: FontWeight.bold,
+                                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                  ),
+                                                                                                  fontSize: 18.0,
+                                                                                                  letterSpacing: 0.0,
+                                                                                                  fontWeight: FontWeight.bold,
+                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                ),
+                                                                                          ),
+                                                                                        ),
+                                                                                      ].divide(SizedBox(width: 10.0)),
+                                                                                    ),
+                                                                                    StreamBuilder<List<ExamenesRecord>>(
+                                                                                      stream: queryExamenesRecord(
+                                                                                        queryBuilder: (examenesRecord) => examenesRecord.where(
+                                                                                          'uid_Course',
+                                                                                          isEqualTo: listViewCoursesRecord.reference.id,
+                                                                                        ),
+                                                                                      ),
+                                                                                      builder: (context, snapshot) {
+                                                                                        // Customize what your widget looks like when it's loading.
+                                                                                        if (!snapshot.hasData) {
+                                                                                          return Center(
+                                                                                            child: SizedBox(
+                                                                                              width: 14.0,
+                                                                                              height: 14.0,
+                                                                                              child: CircularProgressIndicator(
+                                                                                                valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                  FlutterFlowTheme.of(context).primary,
+                                                                                                ),
+                                                                                              ),
+                                                                                            ),
+                                                                                          );
+                                                                                        }
+                                                                                        List<ExamenesRecord> containerExamenesRecordList = snapshot.data!;
+
+                                                                                        return Container(
+                                                                                          decoration: BoxDecoration(),
+                                                                                          child: StreamBuilder<List<PreguntasRecord>>(
+                                                                                            stream: queryPreguntasRecord(
+                                                                                              queryBuilder: (preguntasRecord) => preguntasRecord.whereIn('examen_ref', containerExamenesRecordList.map((e) => e.reference.id).toList()),
+                                                                                            ),
+                                                                                            builder: (context, snapshot) {
+                                                                                              // Customize what your widget looks like when it's loading.
+                                                                                              if (!snapshot.hasData) {
+                                                                                                return Center(
+                                                                                                  child: SizedBox(
+                                                                                                    width: 14.0,
+                                                                                                    height: 14.0,
+                                                                                                    child: CircularProgressIndicator(
+                                                                                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                        FlutterFlowTheme.of(context).primary,
+                                                                                                      ),
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                );
+                                                                                              }
+                                                                                              List<PreguntasRecord> richTextPreguntasRecordList = snapshot.data!;
+
+                                                                                              return RichText(
+                                                                                                textScaler: MediaQuery.of(context).textScaler,
+                                                                                                text: TextSpan(
+                                                                                                  children: [
+                                                                                                    TextSpan(
+                                                                                                      text: valueOrDefault<String>(
+                                                                                                        richTextPreguntasRecordList.length.toString(),
+                                                                                                        '0',
+                                                                                                      ),
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FontWeight.w300,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
+                                                                                                            fontSize: 18.0,
+                                                                                                            letterSpacing: 0.0,
+                                                                                                            fontWeight: FontWeight.w300,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
+                                                                                                    ),
+                                                                                                    TextSpan(
+                                                                                                      text: ' ',
+                                                                                                      style: TextStyle(),
+                                                                                                    ),
+                                                                                                    TextSpan(
+                                                                                                      text: valueOrDefault<String>(
+                                                                                                        valueOrDefault<int>(
+                                                                                                                  richTextPreguntasRecordList.length,
+                                                                                                                  0,
+                                                                                                                ) >
+                                                                                                                1
+                                                                                                            ? 'preguntas'
+                                                                                                            : 'pregunta',
+                                                                                                        'pregunta',
+                                                                                                      ),
+                                                                                                      style: TextStyle(),
+                                                                                                    ),
+                                                                                                    TextSpan(
+                                                                                                      text: ' y ',
+                                                                                                      style: TextStyle(),
+                                                                                                    ),
+                                                                                                    TextSpan(
+                                                                                                      text: valueOrDefault<String>(
+                                                                                                        containerExamenesRecordList.length.toString(),
+                                                                                                        '0',
+                                                                                                      ),
+                                                                                                      style: TextStyle(),
+                                                                                                    ),
+                                                                                                    TextSpan(
+                                                                                                      text: ' ',
+                                                                                                      style: TextStyle(),
+                                                                                                    ),
+                                                                                                    TextSpan(
+                                                                                                      text: valueOrDefault<String>(
+                                                                                                        containerExamenesRecordList.length > 1 ? 'examenes' : 'examen',
+                                                                                                        'examen',
+                                                                                                      ),
+                                                                                                      style: TextStyle(),
+                                                                                                    ),
+                                                                                                    TextSpan(
+                                                                                                      text: ' de practicas para el examen de certificación',
+                                                                                                      style: TextStyle(),
+                                                                                                    )
+                                                                                                  ],
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        font: GoogleFonts.montserrat(
+                                                                                                          fontWeight: FontWeight.w300,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
+                                                                                                        fontSize: 18.0,
+                                                                                                        letterSpacing: 0.0,
+                                                                                                        fontWeight: FontWeight.w300,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
+                                                                                                ),
+                                                                                              );
+                                                                                            },
+                                                                                          ),
+                                                                                        );
+                                                                                      },
+                                                                                    ),
+                                                                                  ].divide(SizedBox(height: 10.0)),
                                                                                 ),
-                                                                            elevation:
-                                                                                0.0,
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(8.0),
+                                                                                FFButtonWidget(
+                                                                                  onPressed: () async {
+                                                                                    context.pushNamed(
+                                                                                      SimulatorWidget.routeName,
+                                                                                      queryParameters: {
+                                                                                        'refCourse': serializeParam(
+                                                                                          listViewCoursesRecord,
+                                                                                          ParamType.Document,
+                                                                                        ),
+                                                                                      }.withoutNulls,
+                                                                                      extra: <String, dynamic>{
+                                                                                        'refCourse': listViewCoursesRecord,
+                                                                                        kTransitionInfoKey: TransitionInfo(
+                                                                                          hasTransition: true,
+                                                                                          transitionType: PageTransitionType.fade,
+                                                                                          duration: Duration(milliseconds: 0),
+                                                                                        ),
+                                                                                      },
+                                                                                    );
+                                                                                  },
+                                                                                  text: 'Conoce más',
+                                                                                  options: FFButtonOptions(
+                                                                                    width: double.infinity,
+                                                                                    height: 50.0,
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                                                                    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                    color: FlutterFlowTheme.of(context).primary,
+                                                                                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                          ),
+                                                                                          color: Colors.white,
+                                                                                          fontSize: 18.0,
+                                                                                          letterSpacing: 0.0,
+                                                                                          fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                        ),
+                                                                                    elevation: 0.0,
+                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                  ),
+                                                                                ),
+                                                                              ].divide(SizedBox(height: 10.0)),
+                                                                            ),
                                                                           ),
                                                                         ),
                                                                       ].divide(SizedBox(
-                                                                              height: 10.0)),
+                                                                              width: 20.0)),
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
-                                                                  width: 20.0)),
+                                                              );
+                                                            },
+                                                          );
+                                                        },
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  StreamBuilder<
+                                                      List<CoursesRecord>>(
+                                                    stream: queryCoursesRecord(
+                                                      queryBuilder: (coursesRecord) =>
+                                                          coursesRecord
+                                                              .where(
+                                                                'course_type',
+                                                                isEqualTo: 2,
+                                                              )
+                                                              .where(
+                                                                'State',
+                                                                isEqualTo: true,
+                                                              )
+                                                              .whereIn(
+                                                                  'uid',
+                                                                  _model
+                                                                      .uidsCourse)
+                                                              .where(
+                                                                'uid_CategoryCourses',
+                                                                isEqualTo: _model
+                                                                    .courseCategory,
+                                                              )
+                                                              .where(
+                                                                'set',
+                                                                isEqualTo: true,
+                                                              )
+                                                              .orderBy(
+                                                                  'Created_Date'),
+                                                    ),
+                                                    builder:
+                                                        (context, snapshot) {
+                                                      // Customize what your widget looks like when it's loading.
+                                                      if (!snapshot.hasData) {
+                                                        return Center(
+                                                          child: SizedBox(
+                                                            width: 14.0,
+                                                            height: 14.0,
+                                                            child:
+                                                                CircularProgressIndicator(
+                                                              valueColor:
+                                                                  AlwaysStoppedAnimation<
+                                                                      Color>(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        );
+                                                      }
+                                                      List<CoursesRecord>
+                                                          containerCoursesRecordList =
+                                                          snapshot.data!;
+
+                                                      return Container(
+                                                        decoration:
+                                                            BoxDecoration(),
+                                                        child: Visibility(
+                                                          visible:
+                                                              containerCoursesRecordList
+                                                                  .isNotEmpty,
+                                                          child: Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        0.0,
+                                                                        20.0,
+                                                                        0.0),
+                                                            child: Container(
+                                                              width: 300.0,
+                                                              decoration:
+                                                                  BoxDecoration(),
+                                                              child: Builder(
+                                                                builder:
+                                                                    (context) {
+                                                                  final listaSimuladoresAnclados =
+                                                                      containerCoursesRecordList
+                                                                          .toList();
+
+                                                                  return ListView
+                                                                      .separated(
+                                                                    padding:
+                                                                        EdgeInsets
+                                                                            .zero,
+                                                                    shrinkWrap:
+                                                                        true,
+                                                                    scrollDirection:
+                                                                        Axis.vertical,
+                                                                    itemCount:
+                                                                        listaSimuladoresAnclados
+                                                                            .length,
+                                                                    separatorBuilder: (_,
+                                                                            __) =>
+                                                                        SizedBox(
+                                                                            height:
+                                                                                20.0),
+                                                                    itemBuilder:
+                                                                        (context,
+                                                                            listaSimuladoresAncladosIndex) {
+                                                                      final listaSimuladoresAncladosItem =
+                                                                          listaSimuladoresAnclados[
+                                                                              listaSimuladoresAncladosIndex];
+                                                                      return Material(
+                                                                        color: Colors
+                                                                            .transparent,
+                                                                        elevation:
+                                                                            1.0,
+                                                                        shape:
+                                                                            RoundedRectangleBorder(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                        ),
+                                                                        child:
+                                                                            Container(
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).secondaryBackground,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(8.0),
+                                                                          ),
+                                                                          child:
+                                                                              Padding(
+                                                                            padding:
+                                                                                EdgeInsets.all(20.0),
+                                                                            child:
+                                                                                Column(
+                                                                              mainAxisSize: MainAxisSize.max,
+                                                                              children: [
+                                                                                Padding(
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                  child: ClipRRect(
+                                                                                    borderRadius: BorderRadius.circular(8.0),
+                                                                                    child: CachedNetworkImage(
+                                                                                      fadeInDuration: Duration(milliseconds: 500),
+                                                                                      fadeOutDuration: Duration(milliseconds: 500),
+                                                                                      imageUrl: listaSimuladoresAncladosItem.imageCourse,
+                                                                                      width: double.infinity,
+                                                                                      height: 150.0,
+                                                                                      fit: BoxFit.cover,
+                                                                                      errorWidget: (context, error, stackTrace) => Image.asset(
+                                                                                        'assets/images/error_image.png',
+                                                                                        width: double.infinity,
+                                                                                        height: 150.0,
+                                                                                        fit: BoxFit.cover,
+                                                                                      ),
+                                                                                    ),
+                                                                                  ),
+                                                                                ),
+                                                                                Column(
+                                                                                  mainAxisSize: MainAxisSize.max,
+                                                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                  children: [
+                                                                                    Column(
+                                                                                      mainAxisSize: MainAxisSize.max,
+                                                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                      children: [
+                                                                                        Row(
+                                                                                          mainAxisSize: MainAxisSize.max,
+                                                                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                          children: [
+                                                                                            Flexible(
+                                                                                              child: Text(
+                                                                                                listaSimuladoresAncladosItem.name,
+                                                                                                maxLines: 2,
+                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                      font: GoogleFonts.glory(
+                                                                                                        fontWeight: FontWeight.w600,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
+                                                                                                      fontSize: 24.0,
+                                                                                                      letterSpacing: 0.0,
+                                                                                                      fontWeight: FontWeight.w600,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
+                                                                                              ),
+                                                                                            ),
+                                                                                            RichText(
+                                                                                              textScaler: MediaQuery.of(context).textScaler,
+                                                                                              text: TextSpan(
+                                                                                                children: [
+                                                                                                  TextSpan(
+                                                                                                    text: 'S/. ',
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          font: GoogleFonts.montserrat(
+                                                                                                            fontWeight: FontWeight.bold,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
+                                                                                                          fontSize: 18.0,
+                                                                                                          letterSpacing: 0.0,
+                                                                                                          fontWeight: FontWeight.bold,
+                                                                                                          fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                  TextSpan(
+                                                                                                    text: listaSimuladoresAncladosItem.price,
+                                                                                                    style: TextStyle(),
+                                                                                                  )
+                                                                                                ],
+                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                        fontWeight: FontWeight.bold,
+                                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                      ),
+                                                                                                      fontSize: 18.0,
+                                                                                                      letterSpacing: 0.0,
+                                                                                                      fontWeight: FontWeight.bold,
+                                                                                                      fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                    ),
+                                                                                              ),
+                                                                                            ),
+                                                                                          ].divide(SizedBox(width: 10.0)),
+                                                                                        ),
+                                                                                        StreamBuilder<List<ExamenesRecord>>(
+                                                                                          stream: queryExamenesRecord(
+                                                                                            queryBuilder: (examenesRecord) => examenesRecord.where(
+                                                                                              'uid_Course',
+                                                                                              isEqualTo: listaSimuladoresAncladosItem.reference.id,
+                                                                                            ),
+                                                                                          ),
+                                                                                          builder: (context, snapshot) {
+                                                                                            // Customize what your widget looks like when it's loading.
+                                                                                            if (!snapshot.hasData) {
+                                                                                              return Center(
+                                                                                                child: SizedBox(
+                                                                                                  width: 14.0,
+                                                                                                  height: 14.0,
+                                                                                                  child: CircularProgressIndicator(
+                                                                                                    valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                      FlutterFlowTheme.of(context).primary,
+                                                                                                    ),
+                                                                                                  ),
+                                                                                                ),
+                                                                                              );
+                                                                                            }
+                                                                                            List<ExamenesRecord> containerExamenesRecordList = snapshot.data!;
+
+                                                                                            return Container(
+                                                                                              decoration: BoxDecoration(),
+                                                                                              child: StreamBuilder<List<PreguntasRecord>>(
+                                                                                                stream: queryPreguntasRecord(
+                                                                                                  queryBuilder: (preguntasRecord) => preguntasRecord.whereIn('examen_ref', containerExamenesRecordList.map((e) => e.reference.id).toList()),
+                                                                                                ),
+                                                                                                builder: (context, snapshot) {
+                                                                                                  // Customize what your widget looks like when it's loading.
+                                                                                                  if (!snapshot.hasData) {
+                                                                                                    return Center(
+                                                                                                      child: SizedBox(
+                                                                                                        width: 14.0,
+                                                                                                        height: 14.0,
+                                                                                                        child: CircularProgressIndicator(
+                                                                                                          valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                                            FlutterFlowTheme.of(context).primary,
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    );
+                                                                                                  }
+                                                                                                  List<PreguntasRecord> richTextPreguntasRecordList = snapshot.data!;
+
+                                                                                                  return RichText(
+                                                                                                    textScaler: MediaQuery.of(context).textScaler,
+                                                                                                    text: TextSpan(
+                                                                                                      children: [
+                                                                                                        TextSpan(
+                                                                                                          text: valueOrDefault<String>(
+                                                                                                            richTextPreguntasRecordList.length.toString(),
+                                                                                                            '0',
+                                                                                                          ),
+                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                font: GoogleFonts.montserrat(
+                                                                                                                  fontWeight: FontWeight.w300,
+                                                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                                ),
+                                                                                                                fontSize: 18.0,
+                                                                                                                letterSpacing: 0.0,
+                                                                                                                fontWeight: FontWeight.w300,
+                                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                              ),
+                                                                                                        ),
+                                                                                                        TextSpan(
+                                                                                                          text: ' ',
+                                                                                                          style: TextStyle(),
+                                                                                                        ),
+                                                                                                        TextSpan(
+                                                                                                          text: valueOrDefault<String>(
+                                                                                                            valueOrDefault<int>(
+                                                                                                                      richTextPreguntasRecordList.length,
+                                                                                                                      0,
+                                                                                                                    ) >
+                                                                                                                    1
+                                                                                                                ? 'preguntas'
+                                                                                                                : 'pregunta',
+                                                                                                            'pregunta',
+                                                                                                          ),
+                                                                                                          style: TextStyle(),
+                                                                                                        ),
+                                                                                                        TextSpan(
+                                                                                                          text: ' y ',
+                                                                                                          style: TextStyle(),
+                                                                                                        ),
+                                                                                                        TextSpan(
+                                                                                                          text: valueOrDefault<String>(
+                                                                                                            containerExamenesRecordList.length.toString(),
+                                                                                                            '0',
+                                                                                                          ),
+                                                                                                          style: TextStyle(),
+                                                                                                        ),
+                                                                                                        TextSpan(
+                                                                                                          text: ' ',
+                                                                                                          style: TextStyle(),
+                                                                                                        ),
+                                                                                                        TextSpan(
+                                                                                                          text: valueOrDefault<String>(
+                                                                                                            containerExamenesRecordList.length > 1 ? 'examenes' : 'examen',
+                                                                                                            'examen',
+                                                                                                          ),
+                                                                                                          style: TextStyle(),
+                                                                                                        ),
+                                                                                                        TextSpan(
+                                                                                                          text: ' de practicas para el examen de certificación',
+                                                                                                          style: TextStyle(),
+                                                                                                        )
+                                                                                                      ],
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            font: GoogleFonts.montserrat(
+                                                                                                              fontWeight: FontWeight.w300,
+                                                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                            ),
+                                                                                                            fontSize: 18.0,
+                                                                                                            letterSpacing: 0.0,
+                                                                                                            fontWeight: FontWeight.w300,
+                                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                                          ),
+                                                                                                    ),
+                                                                                                  );
+                                                                                                },
+                                                                                              ),
+                                                                                            );
+                                                                                          },
+                                                                                        ),
+                                                                                      ].divide(SizedBox(height: 10.0)),
+                                                                                    ),
+                                                                                    FFButtonWidget(
+                                                                                      onPressed: () async {
+                                                                                        context.pushNamed(
+                                                                                          SimulatorWidget.routeName,
+                                                                                          queryParameters: {
+                                                                                            'refCourse': serializeParam(
+                                                                                              listaSimuladoresAncladosItem,
+                                                                                              ParamType.Document,
+                                                                                            ),
+                                                                                          }.withoutNulls,
+                                                                                          extra: <String, dynamic>{
+                                                                                            'refCourse': listaSimuladoresAncladosItem,
+                                                                                            kTransitionInfoKey: TransitionInfo(
+                                                                                              hasTransition: true,
+                                                                                              transitionType: PageTransitionType.fade,
+                                                                                              duration: Duration(milliseconds: 0),
+                                                                                            ),
+                                                                                          },
+                                                                                        );
+                                                                                      },
+                                                                                      text: 'Conoce más',
+                                                                                      options: FFButtonOptions(
+                                                                                        width: double.infinity,
+                                                                                        height: 50.0,
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                        color: FlutterFlowTheme.of(context).primary,
+                                                                                        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                              ),
+                                                                                              color: Colors.white,
+                                                                                              fontSize: 18.0,
+                                                                                              letterSpacing: 0.0,
+                                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                            ),
+                                                                                        elevation: 0.0,
+                                                                                        borderRadius: BorderRadius.circular(8.0),
+                                                                                      ),
+                                                                                    ),
+                                                                                  ].divide(SizedBox(height: 10.0)),
+                                                                                ),
+                                                                              ],
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                      );
+                                                                    },
+                                                                  );
+                                                                },
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
                                                       );
-                                                    }),
-                                                  );
-                                                },
+                                                    },
+                                                  ),
+                                                ],
                                               ),
                                             ),
                                           ),
@@ -1740,6 +2137,15 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                             .around(SizedBox(height: 20.0)),
                                       ),
                                     ),
+                                  ),
+                                if (responsiveVisibility(
+                                  context: context,
+                                  phone: false,
+                                ))
+                                  wrapWithModel(
+                                    model: _model.footerModel,
+                                    updateCallback: () => safeSetState(() {}),
+                                    child: FooterWidget(),
                                   ),
                               ],
                             ),

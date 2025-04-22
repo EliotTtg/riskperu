@@ -5591,6 +5591,7 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                   ),
                                                                                                 ),
                                                                                               ),
+                                                                                              fixedWidth: MediaQuery.sizeOf(context).width * 0.15,
                                                                                             ),
                                                                                           ],
                                                                                           dataRowBuilder: (listCoursesItem, listCoursesIndex, selected, onSelectChanged) => DataRow(
@@ -5895,6 +5896,73 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                                       },
                                                                                                     ),
                                                                                                   ),
+                                                                                                  Builder(
+                                                                                                    builder: (context) {
+                                                                                                      if (listCoursesItem.set) {
+                                                                                                        return FlutterFlowIconButton(
+                                                                                                          borderColor: Colors.transparent,
+                                                                                                          borderRadius: 8.0,
+                                                                                                          buttonSize: 46.0,
+                                                                                                          icon: Icon(
+                                                                                                            Icons.star,
+                                                                                                            color: Color(0xFF707070),
+                                                                                                            size: 13.5,
+                                                                                                          ),
+                                                                                                          onPressed: () async {
+                                                                                                            final firestoreBatch = FirebaseFirestore.instance.batch();
+                                                                                                            try {
+                                                                                                              if (listCoursesItem.set) {
+                                                                                                                firestoreBatch.update(
+                                                                                                                    listCoursesItem.reference,
+                                                                                                                    createCoursesRecordData(
+                                                                                                                      set: false,
+                                                                                                                    ));
+                                                                                                              } else {
+                                                                                                                firestoreBatch.update(
+                                                                                                                    listCoursesItem.reference,
+                                                                                                                    createCoursesRecordData(
+                                                                                                                      set: true,
+                                                                                                                    ));
+                                                                                                              }
+                                                                                                            } finally {
+                                                                                                              await firestoreBatch.commit();
+                                                                                                            }
+                                                                                                          },
+                                                                                                        );
+                                                                                                      } else {
+                                                                                                        return FlutterFlowIconButton(
+                                                                                                          borderColor: Colors.transparent,
+                                                                                                          borderRadius: 8.0,
+                                                                                                          buttonSize: 46.0,
+                                                                                                          icon: Icon(
+                                                                                                            Icons.star_border,
+                                                                                                            color: Color(0xFF707070),
+                                                                                                            size: 13.5,
+                                                                                                          ),
+                                                                                                          onPressed: () async {
+                                                                                                            final firestoreBatch = FirebaseFirestore.instance.batch();
+                                                                                                            try {
+                                                                                                              if (listCoursesItem.set) {
+                                                                                                                firestoreBatch.update(
+                                                                                                                    listCoursesItem.reference,
+                                                                                                                    createCoursesRecordData(
+                                                                                                                      set: false,
+                                                                                                                    ));
+                                                                                                              } else {
+                                                                                                                firestoreBatch.update(
+                                                                                                                    listCoursesItem.reference,
+                                                                                                                    createCoursesRecordData(
+                                                                                                                      set: true,
+                                                                                                                    ));
+                                                                                                              }
+                                                                                                            } finally {
+                                                                                                              await firestoreBatch.commit();
+                                                                                                            }
+                                                                                                          },
+                                                                                                        );
+                                                                                                      }
+                                                                                                    },
+                                                                                                  ),
                                                                                                 ],
                                                                                               ),
                                                                                             ].map((c) => DataCell(c)).toList(),
@@ -5906,6 +5974,7 @@ class _AdministrationWidgetState extends State<AdministrationWidget>
                                                                                           selectable: false,
                                                                                           hidePaginator: false,
                                                                                           showFirstLastButtons: true,
+                                                                                          minWidth: 1400.0,
                                                                                           headingRowHeight: 56.0,
                                                                                           dataRowHeight: 48.0,
                                                                                           columnSpacing: 20.0,

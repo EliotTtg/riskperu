@@ -549,42 +549,32 @@
       ]
     },
     {
-      "collectionGroup": "examenes",
+      "collectionGroup": "Courses",
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "state",
+          "fieldPath": "course_type",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "uid_Course",
+          "fieldPath": "State",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "fecha_creacion",
-          "order": "ASCENDING"
-        }
-      ]
-    },
-    {
-      "collectionGroup": "resultados",
-      "queryScope": "COLLECTION",
-      "fields": [
-        {
-          "fieldPath": "examen_ref",
+          "fieldPath": "uid_CategoryCourses",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "estudiante_ref",
+          "fieldPath": "set",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "type",
+          "fieldPath": "uid",
           "order": "ASCENDING"
         },
         {
-          "fieldPath": "created_date",
-          "order": "DESCENDING"
+          "fieldPath": "Created_Date",
+          "order": "ASCENDING"
         }
       ]
     },
@@ -651,6 +641,28 @@
         {
           "fieldPath": "Created_date",
           "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "resultados",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "estudiante_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "examen_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_date",
+          "order": "DESCENDING"
         }
       ]
     },

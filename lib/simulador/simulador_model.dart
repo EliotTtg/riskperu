@@ -1,6 +1,7 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
+import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/header_mobil/header_mobil_widget.dart';
 import '/index.dart';
@@ -35,11 +36,14 @@ class SimuladorModel extends FlutterFlowModel<SimuladorWidget> {
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
   List<CoursesRecord> simpleSearchResults = [];
+  // Model for Footer component.
+  late FooterModel footerModel;
 
   @override
   void initState(BuildContext context) {
     headerModel = createModel(context, () => HeaderModel());
     headerMobilModel = createModel(context, () => HeaderMobilModel());
+    footerModel = createModel(context, () => FooterModel());
   }
 
   @override
@@ -48,5 +52,7 @@ class SimuladorModel extends FlutterFlowModel<SimuladorWidget> {
     headerMobilModel.dispose();
     textFieldFocusNode?.dispose();
     textController?.dispose();
+
+    footerModel.dispose();
   }
 }
