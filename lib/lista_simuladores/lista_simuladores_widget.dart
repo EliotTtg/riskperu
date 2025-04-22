@@ -146,7 +146,7 @@ class _ListaSimuladoresWidgetState extends State<ListaSimuladoresWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .primaryText,
@@ -206,7 +206,7 @@ class _ListaSimuladoresWidgetState extends State<ListaSimuladoresWidget> {
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .primary,
                                                                         letterSpacing:
@@ -424,7 +424,7 @@ class _ListaSimuladoresWidgetState extends State<ListaSimuladoresWidget> {
                                                                               child: Text(
                                                                                 listViewCoursesRecord.name,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       letterSpacing: 0.0,
                                                                                     ),
                                                                               ),

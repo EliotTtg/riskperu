@@ -133,7 +133,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
@@ -174,7 +174,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -243,7 +243,8 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                           .of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -293,16 +294,18 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
-                                                  textStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .override(
+                                                            fontFamily:
+                                                                'Montserrat',
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .secondaryBackground,
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   elevation: 0.0,
                                                   borderSide: BorderSide(
                                                     color: FlutterFlowTheme.of(
@@ -354,7 +357,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17236A),
                                                     fontSize: 44.0,
                                                     letterSpacing: 0.0,
@@ -381,7 +384,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color: Color(0xFF1F1F1F),
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
@@ -408,7 +411,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
                                                     ),
@@ -614,7 +617,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: Color(0xFF152D43),
                                           fontSize: 18.0,
                                           letterSpacing: 0.0,
@@ -668,7 +671,8 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -688,7 +692,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -709,7 +713,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -737,7 +741,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -799,7 +803,8 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -819,7 +824,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -840,7 +845,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -868,7 +873,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -933,7 +938,8 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -953,7 +959,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -974,7 +980,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1002,7 +1008,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1064,7 +1070,8 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -1084,7 +1091,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -1105,7 +1112,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondary,
@@ -1133,7 +1140,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondary,
@@ -1191,7 +1198,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color: Colors.white,
                                               letterSpacing: 0.0,
                                             ),
@@ -1242,7 +1249,8 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17236A),
                                                         fontSize: 44.0,
@@ -1273,7 +1281,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17236A),
                                                     fontSize: 13.0,
                                                     letterSpacing: 0.0,
@@ -1300,7 +1308,8 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17236A),
                                                         fontSize: 44.0,
@@ -1331,7 +1340,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF17236A),
                                                     fontSize: 13.0,
                                                     letterSpacing: 0.0,
@@ -1378,7 +1387,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color: Color(0xFF152D43),
                                               fontSize: 24.0,
                                               letterSpacing: 0.0,
@@ -1393,7 +1402,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: Color(0xFF050505),
                                           fontSize: 16.0,
                                           letterSpacing: 0.0,

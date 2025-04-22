@@ -174,7 +174,8 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
@@ -541,7 +542,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                     Text(
                                                                                       'Nombre Completo',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
                                                                                           ),
@@ -562,11 +563,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                           decoration: InputDecoration(
                                                                                             isDense: true,
                                                                                             labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             enabledBorder: OutlineInputBorder(
@@ -602,7 +603,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                             hoverColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                           cursorColor: FlutterFlowTheme.of(context).primaryText,
@@ -619,7 +620,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                     Text(
                                                                                       'Tipo de usuario',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
                                                                                           ),
@@ -641,11 +642,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                           decoration: InputDecoration(
                                                                                             isDense: true,
                                                                                             labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             enabledBorder: OutlineInputBorder(
@@ -681,7 +682,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                             hoverColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                           cursorColor: FlutterFlowTheme.of(context).primaryText,
@@ -698,7 +699,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                     Text(
                                                                                       'DNI',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
                                                                                           ),
@@ -719,11 +720,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                           decoration: InputDecoration(
                                                                                             isDense: true,
                                                                                             labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             enabledBorder: OutlineInputBorder(
@@ -759,7 +760,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                             hoverColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                           keyboardType: TextInputType.number,
@@ -780,7 +781,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                     Text(
                                                                                       'Ultima Conexion',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
                                                                                           ),
@@ -802,11 +803,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                           decoration: InputDecoration(
                                                                                             isDense: true,
                                                                                             labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             enabledBorder: OutlineInputBorder(
@@ -842,7 +843,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                             hoverColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                           cursorColor: FlutterFlowTheme.of(context).primaryText,
@@ -859,7 +860,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                     Text(
                                                                                       'Telefono',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
                                                                                           ),
@@ -880,11 +881,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                           decoration: InputDecoration(
                                                                                             isDense: true,
                                                                                             labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             enabledBorder: OutlineInputBorder(
@@ -920,7 +921,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                             hoverColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                           keyboardType: TextInputType.number,
@@ -941,7 +942,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                     Text(
                                                                                       'Descripción',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.bold,
                                                                                           ),
@@ -962,11 +963,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                           decoration: InputDecoration(
                                                                                             isDense: true,
                                                                                             labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                 ),
                                                                                             enabledBorder: OutlineInputBorder(
@@ -1002,7 +1003,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                             hoverColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                           ),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                           maxLines: null,
@@ -1038,7 +1039,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                 Text(
                                                                                   'Correo Electronico',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
                                                                                       ),
@@ -1063,11 +1064,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                         decoration: InputDecoration(
                                                                                           isDense: true,
                                                                                           labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                           hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
                                                                                           enabledBorder: OutlineInputBorder(
@@ -1103,7 +1104,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                           hoverColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                         ),
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               letterSpacing: 0.0,
                                                                                             ),
                                                                                         cursorColor: FlutterFlowTheme.of(context).primaryText,
@@ -1121,7 +1122,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                         iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                         color: FlutterFlowTheme.of(context).primary,
                                                                                         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               color: Colors.white,
                                                                                               letterSpacing: 0.0,
                                                                                             ),
@@ -1286,7 +1287,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                       .titleSmall
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Colors
                                                                             .white,
                                                                         letterSpacing:

@@ -198,7 +198,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -293,7 +293,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -388,7 +388,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -484,7 +484,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -588,7 +588,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color:
                                                                     valueOrDefault<
                                                                         Color>(
@@ -655,7 +655,8 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                             context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: Colors.white,
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
@@ -847,7 +848,8 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
@@ -889,7 +891,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily: 'Poppins',
+                                                      fontFamily: 'Montserrat',
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
                                                     ),
@@ -936,7 +938,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color: Colors.white,
                                               letterSpacing: 0.0,
                                             ),

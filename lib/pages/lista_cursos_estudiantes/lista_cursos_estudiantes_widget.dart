@@ -106,7 +106,7 @@ class _ListaCursosEstudiantesWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         color: Color(0xFF094B90),
                                         fontSize: 24.0,
                                         letterSpacing: 0.0,
@@ -136,7 +136,7 @@ class _ListaCursosEstudiantesWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             color: Color(0xFF17232B),
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
@@ -163,7 +163,7 @@ class _ListaCursosEstudiantesWidgetState
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     letterSpacing: 0.0,
                                                   ),
                                           hintText: '---',
@@ -171,7 +171,7 @@ class _ListaCursosEstudiantesWidgetState
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFFA8A8A8),
                                                     letterSpacing: 0.0,
                                                   ),
@@ -218,7 +218,7 @@ class _ListaCursosEstudiantesWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         cursorColor:
@@ -246,7 +246,7 @@ class _ListaCursosEstudiantesWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: Color(0xFF17232B),
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
@@ -275,19 +275,19 @@ class _ListaCursosEstudiantesWidgetState
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 hintText: '---',
-                                                hintStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color:
-                                                              Color(0xFFA8A8A8),
-                                                          letterSpacing: 0.0,
-                                                        ),
+                                                hintStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .labelMedium
+                                                    .override(
+                                                      fontFamily: 'Montserrat',
+                                                      color: Color(0xFFA8A8A8),
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -338,7 +338,8 @@ class _ListaCursosEstudiantesWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                               cursorColor:
@@ -406,7 +407,8 @@ class _ListaCursosEstudiantesWidgetState
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF17232B),
                                                         fontSize: 16.0,
@@ -492,7 +494,7 @@ class _ListaCursosEstudiantesWidgetState
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -503,7 +505,7 @@ class _ListaCursosEstudiantesWidgetState
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: Color(
                                                                         0xFFA8A8A8),
                                                                     letterSpacing:
@@ -573,7 +575,7 @@ class _ListaCursosEstudiantesWidgetState
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -748,7 +750,7 @@ class _ListaCursosEstudiantesWidgetState
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -775,7 +777,7 @@ class _ListaCursosEstudiantesWidgetState
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Color(
                                                                             0xFFC3C3C3),
                                                                         letterSpacing:
@@ -807,7 +809,7 @@ class _ListaCursosEstudiantesWidgetState
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: Color(
                                                                         0xFFC3C3C3),
                                                                     letterSpacing:
@@ -871,7 +873,7 @@ class _ListaCursosEstudiantesWidgetState
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: Colors.white,
                                           letterSpacing: 0.0,
                                         ),

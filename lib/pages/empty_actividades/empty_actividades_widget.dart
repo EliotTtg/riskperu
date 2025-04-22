@@ -42,7 +42,7 @@ class _EmptyActividadesWidgetState extends State<EmptyActividadesWidget> {
       child: Text(
         'No se encontraron actividades',
         style: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: 'Poppins',
+              fontFamily: 'Montserrat',
               color: FlutterFlowTheme.of(context).alternate,
               fontSize: 16.0,
               letterSpacing: 0.0,

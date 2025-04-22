@@ -324,7 +324,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 fontSize: 16.0,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.bold,
@@ -362,7 +362,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondary,
@@ -402,7 +402,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                       .headlineSmall
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Glory',
                                                                         fontSize:
                                                                             0.0,
                                                                         letterSpacing:
@@ -444,7 +444,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 color: FlutterFlowTheme.of(context).secondaryText,
                                                                                 letterSpacing: 0.0,
                                                                                 fontWeight: FontWeight.w300,
@@ -468,7 +468,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryText,
                                                                             letterSpacing:
@@ -485,7 +485,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           color:
                                                                               FlutterFlowTheme.of(context).secondaryText,
                                                                           letterSpacing:
@@ -621,7 +621,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                       )
                                                                                                     ],
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.normal,
@@ -649,7 +649,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                     TextSpan(
                                                                                                       text: '0',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             fontSize: 16.0,
                                                                                                             letterSpacing: 0.0,
                                                                                                           ),
@@ -669,7 +669,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                     )
                                                                                                   ],
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.normal,
@@ -768,7 +768,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                 )
                                                                                                               ],
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                     fontSize: 14.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     lineHeight: 1.0,
@@ -906,7 +906,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                               Text(
                                                                                 'Limite de tiempo: ',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       fontSize: 12.0,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,
@@ -972,7 +972,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                   },
                                                                                   textAlign: TextAlign.start,
                                                                                   style: FlutterFlowTheme.of(context).headlineSmall.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Glory',
                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
@@ -1002,7 +1002,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                 Text(
                                                                               '50%',
                                                                               style: FlutterFlowTheme.of(context).headlineSmall.override(
-                                                                                    fontFamily: 'Poppins',
+                                                                                    fontFamily: 'Glory',
                                                                                     fontSize: 0.0,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w300,
@@ -1189,7 +1189,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                       '1',
                                                                                                     ),
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           color: valueOrDefault<Color>(
                                                                                                             containerRespuestaStateRecordList.where((e) => e.uidQuestion == listaPreguntasItem.reference.id).toList().isNotEmpty ? FlutterFlowTheme.of(context).secondaryBackground : FlutterFlowTheme.of(context).primaryText,
                                                                                                             FlutterFlowTheme.of(context).primaryText,
@@ -1235,7 +1235,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 Color(0xFF979797),
                                                                             letterSpacing:
@@ -1260,7 +1260,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 Color(0xFF979797),
                                                                             letterSpacing:
@@ -1277,7 +1277,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 Color(0xFF979797),
                                                                             letterSpacing:
@@ -1299,7 +1299,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                           .bodyMedium
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Poppins',
+                                                                                'Montserrat',
                                                                             color:
                                                                                 Color(0xFF979797),
                                                                             letterSpacing:
@@ -1314,7 +1314,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Color(
                                                                             0xFF979797),
                                                                         fontSize:
@@ -1409,7 +1409,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                     '1',
                                                                                   ),
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
@@ -1425,7 +1425,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                 )
                                                                               ],
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Poppins',
+                                                                                    fontFamily: 'Montserrat',
                                                                                     fontSize: 12.0,
                                                                                     letterSpacing: 0.0,
                                                                                     fontWeight: FontWeight.w600,
@@ -1499,7 +1499,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                           '-',
                                                                                         ),
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.normal,
@@ -1514,7 +1514,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                         '-',
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.w600,
@@ -1551,8 +1551,8 @@ class _ExaminationQuestionsFinalWidgetState
 
                                                                                         return Container(
                                                                                           decoration: BoxDecoration(),
-                                                                                          child: FutureBuilder<List<UsersAnswersRecord>>(
-                                                                                            future: queryUsersAnswersRecordOnce(
+                                                                                          child: StreamBuilder<List<UsersAnswersRecord>>(
+                                                                                            stream: queryUsersAnswersRecord(
                                                                                               queryBuilder: (usersAnswersRecord) => usersAnswersRecord
                                                                                                   .where(
                                                                                                     'uid_user',
@@ -1610,44 +1610,12 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                   hoverColor: Colors.transparent,
                                                                                                                   highlightColor: Colors.transparent,
                                                                                                                   onTap: () async {
-                                                                                                                    final firestoreBatch = FirebaseFirestore.instance.batch();
-                                                                                                                    try {
-                                                                                                                      if (containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().isNotEmpty) {
-                                                                                                                        firestoreBatch.delete(containerUsersAnswersRecordList.where((e) => e.respuestaUid == listaRespuesta2Item.reference.id).toList().firstOrNull!.reference);
-                                                                                                                        await Future.delayed(const Duration(milliseconds: 1000));
-                                                                                                                      } else {
-                                                                                                                        if (containerRespuestasRecordList.where((e) => e.esCorrecta).toList().length > containerUsersAnswersRecordList.length) {
-                                                                                                                          var usersAnswersRecordReference = UsersAnswersRecord.collection.doc();
-                                                                                                                          firestoreBatch.set(
-                                                                                                                              usersAnswersRecordReference,
-                                                                                                                              createUsersAnswersRecordData(
-                                                                                                                                uidUser: widget.refResult?.estudianteRef,
-                                                                                                                                uidPregunta: containerPreguntasRecord?.reference.id,
-                                                                                                                                respuestaUid: listaRespuesta2Item.reference.id,
-                                                                                                                                uidExamen: widget.refExamination?.reference.id,
-                                                                                                                              ));
-                                                                                                                          _model.refRespuestaCrear = UsersAnswersRecord.getDocumentFromData(
-                                                                                                                              createUsersAnswersRecordData(
-                                                                                                                                uidUser: widget.refResult?.estudianteRef,
-                                                                                                                                uidPregunta: containerPreguntasRecord?.reference.id,
-                                                                                                                                respuestaUid: listaRespuesta2Item.reference.id,
-                                                                                                                                uidExamen: widget.refExamination?.reference.id,
-                                                                                                                              ),
-                                                                                                                              usersAnswersRecordReference);
-
-                                                                                                                          firestoreBatch.update(
-                                                                                                                              _model.refRespuestaCrear!.reference,
-                                                                                                                              createUsersAnswersRecordData(
-                                                                                                                                uid: _model.refRespuestaCrear?.reference.id,
-                                                                                                                              ));
-                                                                                                                          await Future.delayed(const Duration(milliseconds: 1000));
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    } finally {
-                                                                                                                      await firestoreBatch.commit();
-                                                                                                                    }
-
-                                                                                                                    safeSetState(() {});
+                                                                                                                    await actions.validarResultado(
+                                                                                                                      containerPreguntasRecord!.reference.id,
+                                                                                                                      listaRespuesta2Item.reference.id,
+                                                                                                                      widget.refUser!.id,
+                                                                                                                      widget.refExamination!.reference.id,
+                                                                                                                    );
                                                                                                                   },
                                                                                                                   child: Container(
                                                                                                                     decoration: BoxDecoration(
@@ -1689,7 +1657,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                     '1',
                                                                                                                                   ),
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                         fontSize: 12.0,
                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                       ),
@@ -1700,7 +1668,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                 )
                                                                                                                               ],
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                     fontSize: 12.0,
                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                   ),
@@ -1710,7 +1678,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                             child: Text(
                                                                                                                               listaRespuesta2Item.textoRespuesta,
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                     color: Colors.black,
                                                                                                                                     fontSize: 12.0,
                                                                                                                                     letterSpacing: 0.0,
@@ -1793,7 +1761,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                       '1',
                                                                                                                                     ),
                                                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                          fontFamily: 'Poppins',
+                                                                                                                                          fontFamily: 'Montserrat',
                                                                                                                                           fontSize: 12.0,
                                                                                                                                           letterSpacing: 0.0,
                                                                                                                                         ),
@@ -1804,7 +1772,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                                   )
                                                                                                                                 ],
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                       fontSize: 12.0,
                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                     ),
@@ -1814,7 +1782,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                               child: Text(
                                                                                                                                 listaRespuesta1Item.textoRespuesta,
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                       color: Colors.black,
                                                                                                                                       fontSize: 12.0,
                                                                                                                                       letterSpacing: 0.0,
@@ -1883,7 +1851,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                             'Incorrecto',
                                                                                                                           ),
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                fontFamily: 'Montserrat',
                                                                                                                                 color: valueOrDefault<Color>(
                                                                                                                                   Set.from(containerRespuestasRecordList
                                                                                                                                                   .where((e) => e.esCorrecta)
@@ -1925,7 +1893,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                         Text(
                                                                                                                           'Respuesta',
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                fontFamily: 'Montserrat',
                                                                                                                                 fontSize: 12.0,
                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                 fontWeight: FontWeight.w600,
@@ -1938,7 +1906,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                                                           ),
                                                                                                                           textAlign: TextAlign.start,
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                fontFamily: 'Montserrat',
                                                                                                                                 fontSize: 12.0,
                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                 fontWeight: FontWeight.normal,
@@ -2020,7 +1988,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                         iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                         color: FlutterFlowTheme.of(context).primary,
                                                                                         textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               color: Colors.white,
                                                                                               fontSize: 14.0,
                                                                                               letterSpacing: 0.0,
@@ -2105,7 +2073,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   color: Colors.white,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
@@ -2147,7 +2115,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   color: Colors.white,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
@@ -2292,7 +2260,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                       color: FlutterFlowTheme.of(context).primary,
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             color: Colors.white,
                                                                                             fontSize: 12.0,
                                                                                             letterSpacing: 0.0,
@@ -2349,7 +2317,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                     iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                     color: FlutterFlowTheme.of(context).primary,
                                                                                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           color: Colors.white,
                                                                                           fontSize: 12.0,
                                                                                           letterSpacing: 0.0,
@@ -2431,7 +2399,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   color: Colors.white,
                                                                                                   fontSize: 12.0,
                                                                                                   letterSpacing: 0.0,
@@ -2473,7 +2441,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   color: Colors.white,
                                                                                                   fontSize: 12.0,
                                                                                                   letterSpacing: 0.0,
@@ -2642,7 +2610,7 @@ class _ExaminationQuestionsFinalWidgetState
                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         color: Colors.white,
                                                                                         fontSize: 12.0,
                                                                                         letterSpacing: 0.0,

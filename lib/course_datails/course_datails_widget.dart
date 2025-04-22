@@ -110,6 +110,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
       length: 5,
       initialIndex: 0,
     )..addListener(() => safeSetState(() {}));
+
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
 
@@ -329,7 +330,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                       .titleMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Glory',
                                                                         fontSize:
                                                                             14.0,
                                                                         letterSpacing:
@@ -340,7 +341,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                       .titleMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Glory',
                                                                         fontSize:
                                                                             14.0,
                                                                         letterSpacing:
@@ -420,7 +421,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       'Sin Nombre',
                                                                                     ),
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           color: Color(0xFF01203F),
                                                                                           fontSize: 16.0,
                                                                                           letterSpacing: 0.0,
@@ -434,7 +435,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                     ),
                                                                                     textAlign: TextAlign.start,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           fontSize: 14.0,
                                                                                           letterSpacing: 0.0,
                                                                                         ),
@@ -455,7 +456,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 Text(
                                                                                                   '4,6',
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         letterSpacing: 0.0,
                                                                                                       ),
                                                                                                 ),
@@ -469,7 +470,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             Text(
                                                                                               '731 Calificaciones',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     color: Color(0xFF848484),
                                                                                                     fontSize: 10.0,
                                                                                                     letterSpacing: 0.0,
@@ -522,7 +523,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                         '0',
                                                                                                       ),
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             letterSpacing: 0.0,
                                                                                                           ),
                                                                                                     );
@@ -533,7 +534,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             Text(
                                                                                               'Estudiantes',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     color: Color(0xFF848484),
                                                                                                     fontSize: 10.0,
                                                                                                     letterSpacing: 0.0,
@@ -563,7 +564,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                           '0',
                                                                                                         ),
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Poppins',
+                                                                                                              fontFamily: 'Montserrat',
                                                                                                               letterSpacing: 0.0,
                                                                                                             ),
                                                                                                       ),
@@ -573,7 +574,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       )
                                                                                                     ],
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           letterSpacing: 0.0,
                                                                                                         ),
                                                                                                   ),
@@ -583,7 +584,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             Text(
                                                                                               'Total',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     color: Color(0xFF848484),
                                                                                                     fontSize: 10.0,
                                                                                                     letterSpacing: 0.0,
@@ -613,7 +614,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 TextSpan(
                                                                                                   text: 'Última actualización ',
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
@@ -630,7 +631,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 )
                                                                                               ],
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
@@ -687,7 +688,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       'Español',
                                                                                                     ),
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           color: FlutterFlowTheme.of(context).primaryText,
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
@@ -714,7 +715,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             'Español',
                                                                                                           ),
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Poppins',
+                                                                                                                fontFamily: 'Montserrat',
                                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                 fontSize: 14.0,
                                                                                                                 letterSpacing: 0.0,
@@ -727,7 +728,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                         )
                                                                                                       ],
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             color: FlutterFlowTheme.of(context).primaryText,
                                                                                                             fontSize: 14.0,
                                                                                                             letterSpacing: 0.0,
@@ -782,7 +783,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       Text(
                                                                                         'Por Cifras',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                                               fontSize: 14.0,
                                                                                               letterSpacing: 0.0,
@@ -803,7 +804,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               TextSpan(
                                                                                                 text: 'Nivel de habilidad: ',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       fontSize: 14.0,
                                                                                                       letterSpacing: 0.0,
@@ -816,7 +817,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               )
                                                                                             ],
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
@@ -855,7 +856,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   TextSpan(
                                                                                                     text: 'Estudiantes: ',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           color: FlutterFlowTheme.of(context).primaryText,
                                                                                                           fontSize: 14.0,
                                                                                                           letterSpacing: 0.0,
@@ -874,7 +875,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   )
                                                                                                 ],
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       fontSize: 14.0,
                                                                                                       letterSpacing: 0.0,
@@ -891,7 +892,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               TextSpan(
                                                                                                 text: 'Idiomas: ',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       fontSize: 14.0,
                                                                                                       letterSpacing: 0.0,
@@ -904,7 +905,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               )
                                                                                             ],
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
@@ -919,7 +920,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               TextSpan(
                                                                                                 text: 'Subtitulos: ',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       fontSize: 14.0,
                                                                                                       letterSpacing: 0.0,
@@ -932,7 +933,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               )
                                                                                             ],
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
@@ -982,7 +983,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       Text(
                                                                                         'Certificados',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                                               fontSize: 14.0,
                                                                                               letterSpacing: 0.0,
@@ -1002,7 +1003,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             TextSpan(
                                                                                               text: 'Consigue el Certificado de Risk al completar todo el Curso',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
@@ -1011,7 +1012,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                 fontSize: 14.0,
                                                                                                 letterSpacing: 0.0,
@@ -1034,7 +1035,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                           color: FlutterFlowTheme.of(context).primary,
                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 color: Colors.white,
                                                                                                 letterSpacing: 0.0,
                                                                                               ),
@@ -1083,7 +1084,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       Text(
                                                                                         'Caracteristicas',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                                               fontSize: 14.0,
                                                                                               letterSpacing: 0.0,
@@ -1103,7 +1104,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             TextSpan(
                                                                                               text: 'Disponible en ',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                     fontSize: 14.0,
                                                                                                     letterSpacing: 0.0,
@@ -1132,7 +1133,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: 'Poppins',
+                                                                                                fontFamily: 'Montserrat',
                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                 fontSize: 14.0,
                                                                                                 letterSpacing: 0.0,
@@ -1185,7 +1186,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           Text(
                                                                                             'Descripción',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   fontSize: 14.0,
                                                                                                   letterSpacing: 0.0,
@@ -1205,7 +1206,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 ),
                                                                                                 textAlign: TextAlign.start,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       letterSpacing: 0.0,
                                                                                                     ),
                                                                                               );
@@ -1219,7 +1220,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 ),
                                                                                                 textAlign: TextAlign.start,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       letterSpacing: 0.0,
                                                                                                     ),
                                                                                                 colors: [
@@ -1261,7 +1262,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                       color: Color(0x00DB0B17),
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             letterSpacing: 0.0,
                                                                                           ),
@@ -1357,12 +1358,12 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                         decoration: InputDecoration(
                                                                                                           isDense: true,
                                                                                                           labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                                fontFamily: 'Poppins',
+                                                                                                                fontFamily: 'Montserrat',
                                                                                                                 letterSpacing: 0.0,
                                                                                                               ),
                                                                                                           hintText: 'Buscar Todas las preguntas del curso',
                                                                                                           hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                                fontFamily: 'Poppins',
+                                                                                                                fontFamily: 'Montserrat',
                                                                                                                 color: Color(0xFF767676),
                                                                                                                 letterSpacing: 0.0,
                                                                                                               ),
@@ -1418,7 +1419,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                           fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                         ),
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Poppins',
+                                                                                                              fontFamily: 'Montserrat',
                                                                                                               letterSpacing: 0.0,
                                                                                                             ),
                                                                                                         cursorColor: FlutterFlowTheme.of(context).primaryText,
@@ -1452,7 +1453,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                     Text(
                                                                                                       'Filtros:',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.w600,
                                                                                                           ),
@@ -1465,7 +1466,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       height: 40.0,
                                                                                                       maxHeight: 300.0,
                                                                                                       textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             letterSpacing: 0.0,
                                                                                                           ),
                                                                                                       hintText: 'Todas las Clases',
@@ -1495,7 +1496,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       Text(
                                                                                                         'Ordenar Por:',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Poppins',
+                                                                                                              fontFamily: 'Montserrat',
                                                                                                               letterSpacing: 0.0,
                                                                                                               fontWeight: FontWeight.w600,
                                                                                                             ),
@@ -1516,7 +1517,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               height: 40.0,
                                                                                                               maxHeight: 300.0,
                                                                                                               textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                     letterSpacing: 0.0,
                                                                                                                   ),
                                                                                                               hintText: 'Ordenar por Recomendados',
@@ -1549,7 +1550,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             height: 40.0,
                                                                                                             maxHeight: 300.0,
                                                                                                             textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   letterSpacing: 0.0,
                                                                                                                 ),
                                                                                                             hintText: 'Filtrar Preguntas',
@@ -1606,7 +1607,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   TextSpan(
                                                                                                     text: 'Preguntas Destacadas en este Curso (',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.bold,
@@ -1622,7 +1623,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   )
                                                                                                 ],
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       fontSize: 16.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -1740,7 +1741,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                 ),
                                                                                                                                                 maxLines: 2,
                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                                       fontSize: 16.0,
                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                       fontWeight: FontWeight.bold,
@@ -1753,7 +1754,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                 ),
                                                                                                                                                 maxLines: 5,
                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                     ),
                                                                                                                                               ),
@@ -1776,13 +1777,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                         'Sin fecha',
                                                                                                                                                       ),
                                                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                            fontFamily: 'Poppins',
+                                                                                                                                                            fontFamily: 'Montserrat',
                                                                                                                                                             letterSpacing: 0.0,
                                                                                                                                                           ),
                                                                                                                                                     )
                                                                                                                                                   ],
                                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                                       ),
                                                                                                                                                 ),
@@ -1804,7 +1805,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                                   color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                                         fontSize: 12.0,
                                                                                                                                                         letterSpacing: 0.0,
@@ -1932,7 +1933,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                            fontFamily: 'Poppins',
+                                                                                                                                            fontFamily: 'Montserrat',
                                                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                                                             fontSize: 12.0,
                                                                                                                                             letterSpacing: 0.0,
@@ -1971,7 +1972,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                            fontFamily: 'Poppins',
+                                                                                                                                            fontFamily: 'Montserrat',
                                                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                                                             fontSize: 12.0,
                                                                                                                                             letterSpacing: 0.0,
@@ -2080,7 +2081,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                               ),
                                                                                                                                                               maxLines: 2,
                                                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                                                     fontSize: 16.0,
                                                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                                                     fontWeight: FontWeight.bold,
@@ -2093,7 +2094,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                               ),
                                                                                                                                                               maxLines: 5,
                                                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                                                   ),
                                                                                                                                                             ),
@@ -2116,13 +2117,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                                       'Sin fecha',
                                                                                                                                                                     ),
                                                                                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                          fontFamily: 'Poppins',
+                                                                                                                                                                          fontFamily: 'Montserrat',
                                                                                                                                                                           letterSpacing: 0.0,
                                                                                                                                                                         ),
                                                                                                                                                                   )
                                                                                                                                                                 ],
                                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                                     ),
                                                                                                                                                               ),
@@ -2264,7 +2265,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                 ),
                                                                                                                                                 maxLines: 2,
                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                                       fontSize: 16.0,
                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                       fontWeight: FontWeight.bold,
@@ -2277,7 +2278,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                 ),
                                                                                                                                                 maxLines: 5,
                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                     ),
                                                                                                                                               ),
@@ -2300,13 +2301,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                         'Sin fecha',
                                                                                                                                                       ),
                                                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                            fontFamily: 'Poppins',
+                                                                                                                                                            fontFamily: 'Montserrat',
                                                                                                                                                             letterSpacing: 0.0,
                                                                                                                                                           ),
                                                                                                                                                     )
                                                                                                                                                   ],
                                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                                       ),
                                                                                                                                                 ),
@@ -2328,7 +2329,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                                   color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                                         fontSize: 12.0,
                                                                                                                                                         letterSpacing: 0.0,
@@ -2456,7 +2457,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                            fontFamily: 'Poppins',
+                                                                                                                                            fontFamily: 'Montserrat',
                                                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                                                             fontSize: 12.0,
                                                                                                                                             letterSpacing: 0.0,
@@ -2495,7 +2496,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                            fontFamily: 'Poppins',
+                                                                                                                                            fontFamily: 'Montserrat',
                                                                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                                                                             fontSize: 12.0,
                                                                                                                                             letterSpacing: 0.0,
@@ -2606,7 +2607,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                                 ),
                                                                                                                                                                 maxLines: 2,
                                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                                                       fontSize: 16.0,
                                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                                       fontWeight: FontWeight.bold,
@@ -2616,7 +2617,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                                 listaComentarioRespondidosItem.contenido,
                                                                                                                                                                 maxLines: 5,
                                                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                                                     ),
                                                                                                                                                               ),
@@ -2639,13 +2640,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                                                         'Sin Fecha',
                                                                                                                                                                       ),
                                                                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                            fontFamily: 'Poppins',
+                                                                                                                                                                            fontFamily: 'Montserrat',
                                                                                                                                                                             letterSpacing: 0.0,
                                                                                                                                                                           ),
                                                                                                                                                                     )
                                                                                                                                                                   ],
                                                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                                                       ),
                                                                                                                                                                 ),
@@ -2707,7 +2708,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                       color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             color: FlutterFlowTheme.of(context).primaryText,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.bold,
@@ -2754,7 +2755,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                            fontFamily: 'Poppins',
+                                                                                                            fontFamily: 'Montserrat',
                                                                                                             color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                             letterSpacing: 0.0,
                                                                                                             fontWeight: FontWeight.bold,
@@ -2829,12 +2830,12 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               decoration: InputDecoration(
                                                                                                 isDense: true,
                                                                                                 labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       letterSpacing: 0.0,
                                                                                                     ),
                                                                                                 hintText: 'Buscar Todas las preguntas del curso',
                                                                                                 hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       color: Color(0xFF767676),
                                                                                                       letterSpacing: 0.0,
                                                                                                     ),
@@ -2890,7 +2891,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                               ),
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                    fontFamily: 'Poppins',
+                                                                                                    fontFamily: 'Montserrat',
                                                                                                     letterSpacing: 0.0,
                                                                                                   ),
                                                                                               cursorColor: FlutterFlowTheme.of(context).primaryText,
@@ -2981,15 +2982,15 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   height: 40.0,
                                                                                                   maxHeight: 300.0,
                                                                                                   searchHintTextStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         letterSpacing: 0.0,
                                                                                                       ),
                                                                                                   searchTextStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         letterSpacing: 0.0,
                                                                                                       ),
                                                                                                   textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
                                                                                                       ),
@@ -3032,7 +3033,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                             height: 40.0,
                                                                                             maxHeight: 300.0,
                                                                                             textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.bold,
                                                                                                 ),
@@ -3150,7 +3151,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                           '--',
                                                                                                                         ),
                                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                              fontFamily: 'Poppins',
+                                                                                                                              fontFamily: 'Montserrat',
                                                                                                                               fontSize: 18.0,
                                                                                                                               letterSpacing: 0.0,
                                                                                                                             ),
@@ -3188,7 +3189,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 TextSpan(
                                                                                                                                   text: 'Curso: ',
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                         fontSize: 12.0,
                                                                                                                                         letterSpacing: 0.0,
@@ -3204,7 +3205,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 )
                                                                                                                               ],
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                     fontSize: 12.0,
                                                                                                                                     letterSpacing: 0.0,
@@ -3221,7 +3222,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             TextSpan(
                                                                                                                               text: 'Fecha de creacion: ',
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                     fontSize: 12.0,
                                                                                                                                     letterSpacing: 0.0,
@@ -3241,7 +3242,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             )
                                                                                                                           ],
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                fontFamily: 'Montserrat',
                                                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                                 fontSize: 12.0,
                                                                                                                                 letterSpacing: 0.0,
@@ -3308,7 +3309,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                   color: FlutterFlowTheme.of(context).primaryText,
                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
@@ -3359,7 +3360,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                 child: Text(
                                                                                                   'Haga clic aquí para crear su primera nota.',
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         fontSize: 14.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.w500,
@@ -3509,7 +3510,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             'Sistema',
                                                                                                           ),
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: 'Poppins',
+                                                                                                                fontFamily: 'Montserrat',
                                                                                                                 color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                 fontSize: 16.0,
                                                                                                                 letterSpacing: 0.0,
@@ -3524,7 +3525,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               TextSpan(
                                                                                                                 text: 'Ha publicado un anuncio ',
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                       letterSpacing: 0.0,
                                                                                                                     ),
                                                                                                               ),
@@ -3545,7 +3546,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   letterSpacing: 0.0,
                                                                                                                 ),
                                                                                                           ),
@@ -3581,7 +3582,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                     'Sin Titulo',
                                                                                                   ),
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
@@ -3594,7 +3595,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   ),
                                                                                                   textAlign: TextAlign.start,
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                        fontFamily: 'Poppins',
+                                                                                                        fontFamily: 'Montserrat',
                                                                                                         fontSize: 16.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                       ),
@@ -3679,7 +3680,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       TextSpan(
                                                                                                         text: 'Mostrar comentarios (',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Poppins',
+                                                                                                              fontFamily: 'Montserrat',
                                                                                                               fontSize: 16.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               fontWeight: FontWeight.bold,
@@ -3703,7 +3704,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                       )
                                                                                                     ],
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           fontSize: 16.0,
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.bold,
@@ -3801,7 +3802,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 ),
                                                                                                                                 maxLines: 2,
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                       fontSize: 16.0,
                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                       fontWeight: FontWeight.bold,
@@ -3814,7 +3815,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 ),
                                                                                                                                 maxLines: 5,
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                     ),
                                                                                                                               ),
@@ -3837,13 +3838,13 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                         'Sin Fecha',
                                                                                                                                       ),
                                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                            fontFamily: 'Poppins',
+                                                                                                                                            fontFamily: 'Montserrat',
                                                                                                                                             letterSpacing: 0.0,
                                                                                                                                           ),
                                                                                                                                     )
                                                                                                                                   ],
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                       ),
                                                                                                                                 ),
@@ -3954,7 +3955,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   '0',
                                                                                                 ),
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       fontSize: 64.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.w600,
@@ -3991,7 +3992,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                               Text(
                                                                                                 'Valoración del curso',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: 'Poppins',
+                                                                                                      fontFamily: 'Montserrat',
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
                                                                                                     ),
@@ -4062,7 +4063,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                       letterSpacing: 0.0,
                                                                                                                     ),
                                                                                                               ),
@@ -4072,7 +4073,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   letterSpacing: 0.0,
                                                                                                                 ),
                                                                                                           ),
@@ -4131,7 +4132,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                       letterSpacing: 0.0,
                                                                                                                     ),
                                                                                                               ),
@@ -4141,7 +4142,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   letterSpacing: 0.0,
                                                                                                                 ),
                                                                                                           ),
@@ -4200,7 +4201,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                       letterSpacing: 0.0,
                                                                                                                     ),
                                                                                                               ),
@@ -4210,7 +4211,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   letterSpacing: 0.0,
                                                                                                                 ),
                                                                                                           ),
@@ -4269,7 +4270,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                       letterSpacing: 0.0,
                                                                                                                     ),
                                                                                                               ),
@@ -4279,7 +4280,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   letterSpacing: 0.0,
                                                                                                                 ),
                                                                                                           ),
@@ -4338,7 +4339,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                   '0',
                                                                                                                 ),
                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                       letterSpacing: 0.0,
                                                                                                                     ),
                                                                                                               ),
@@ -4348,7 +4349,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               )
                                                                                                             ],
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   letterSpacing: 0.0,
                                                                                                                 ),
                                                                                                           ),
@@ -4374,7 +4375,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       Text(
                                                                                         'Valoraciones',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               fontSize: 16.0,
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.bold,
@@ -4413,12 +4414,12 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                             decoration: InputDecoration(
                                                                                                               isDense: true,
                                                                                                               labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                     letterSpacing: 0.0,
                                                                                                                   ),
                                                                                                               hintText: 'Buscar Todas las preguntas del curso',
                                                                                                               hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                     color: Color(0xFF767676),
                                                                                                                     letterSpacing: 0.0,
                                                                                                                   ),
@@ -4474,7 +4475,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                               fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                                             ),
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   letterSpacing: 0.0,
                                                                                                                 ),
                                                                                                             cursorColor: FlutterFlowTheme.of(context).primaryText,
@@ -4507,7 +4508,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                   Text(
                                                                                                     'Filtrar Valoraciones',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           letterSpacing: 0.0,
                                                                                                           fontWeight: FontWeight.w600,
                                                                                                         ),
@@ -4520,7 +4521,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                     height: 40.0,
                                                                                                     maxHeight: 300.0,
                                                                                                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: 'Poppins',
+                                                                                                          fontFamily: 'Montserrat',
                                                                                                           letterSpacing: 0.0,
                                                                                                         ),
                                                                                                     hintText: 'Todas las Valoraciones',
@@ -4643,7 +4644,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 '-',
                                                                                                                               ),
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                     fontSize: 16.0,
                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                     fontWeight: FontWeight.bold,
@@ -4671,7 +4672,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                   ),
                                                                                                                                   maxLines: 1,
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                         fontSize: 16.0,
                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                       ),
@@ -4687,7 +4688,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             Text(
                                                                                                                               listqualificationItem.text,
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                     color: Color(0xFF9F9F9F),
                                                                                                                                     fontSize: 16.0,
                                                                                                                                     letterSpacing: 0.0,
@@ -4720,7 +4721,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           TextSpan(
                                                                                             text: 'Mostrar comentarios (',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  fontFamily: 'Poppins',
+                                                                                                  fontFamily: 'Montserrat',
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.bold,
                                                                                                   decoration: TextDecoration.underline,
@@ -4742,7 +4743,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                           )
                                                                                         ],
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               letterSpacing: 0.0,
                                                                                               fontWeight: FontWeight.bold,
                                                                                               decoration: TextDecoration.underline,
@@ -4871,7 +4872,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                fontFamily: 'Poppins',
+                                                                                fontFamily: 'Montserrat',
                                                                                 color: Color(0xFF094B90),
                                                                                 fontSize: 16.0,
                                                                                 letterSpacing: 0.0,
@@ -4990,7 +4991,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                           TextSpan(
                                                                                                             text: 'Sesión ',
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                   fontSize: 16.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   fontWeight: FontWeight.bold,
@@ -5023,7 +5024,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                           )
                                                                                                         ],
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: 'Poppins',
+                                                                                                              fontFamily: 'Montserrat',
                                                                                                               fontSize: 16.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               fontWeight: FontWeight.normal,
@@ -5128,7 +5129,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                               TextSpan(
                                                                                                                                 text: 'Módulo ',
                                                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                      fontFamily: 'Poppins',
+                                                                                                                                      fontFamily: 'Montserrat',
                                                                                                                                       fontSize: 16.0,
                                                                                                                                       letterSpacing: 0.0,
                                                                                                                                       fontWeight: FontWeight.bold,
@@ -5158,7 +5159,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                               )
                                                                                                                             ],
                                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                  fontFamily: 'Poppins',
+                                                                                                                                  fontFamily: 'Montserrat',
                                                                                                                                   fontSize: 16.0,
                                                                                                                                   letterSpacing: 0.0,
                                                                                                                                   fontWeight: FontWeight.normal,
@@ -5229,7 +5230,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                     '0',
                                                                                                                                   ),
                                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                                         fontSize: 16.0,
                                                                                                                                         letterSpacing: 0.0,
                                                                                                                                       ),
@@ -5252,7 +5253,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                 )
                                                                                                                               ],
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                     fontSize: 16.0,
                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                     fontWeight: FontWeight.normal,
@@ -5264,7 +5265,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                       Text(
                                                                                                                         '|',
                                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                              fontFamily: 'Poppins',
+                                                                                                                              fontFamily: 'Montserrat',
                                                                                                                               letterSpacing: 0.0,
                                                                                                                             ),
                                                                                                                       ),
@@ -5275,7 +5276,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             TextSpan(
                                                                                                                               text: '10 ',
                                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                                     fontSize: 16.0,
                                                                                                                                     letterSpacing: 0.0,
                                                                                                                                   ),
@@ -5286,7 +5287,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                             )
                                                                                                                           ],
                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                fontFamily: 'Montserrat',
                                                                                                                                 fontSize: 16.0,
                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                 fontWeight: FontWeight.normal,
@@ -5498,7 +5499,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                           )
                                                                                                                                         ],
                                                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                              fontFamily: 'Poppins',
+                                                                                                                                              fontFamily: 'Montserrat',
                                                                                                                                               fontSize: 14.0,
                                                                                                                                               letterSpacing: 0.0,
                                                                                                                                               lineHeight: 1.0,
@@ -5531,7 +5532,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                             '0',
                                                                                                                                           )} Min.',
                                                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                                fontFamily: 'Montserrat',
                                                                                                                                                 letterSpacing: 0.0,
                                                                                                                                               ),
                                                                                                                                         ),
@@ -5567,7 +5568,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                           iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                                                           color: FlutterFlowTheme.of(context).primary,
                                                                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                                                fontFamily: 'Poppins',
+                                                                                                                                                fontFamily: 'Montserrat',
                                                                                                                                                 color: Colors.white,
                                                                                                                                                 fontSize: 12.0,
                                                                                                                                                 letterSpacing: 0.0,
@@ -5714,7 +5715,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                 TextSpan(
                                                                                   text: 'Finalizacion del Curso:  ',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         color: Colors.black,
                                                                                         fontSize: 16.0,
                                                                                         letterSpacing: 0.0,
@@ -5751,7 +5752,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                 )
                                                                               ],
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                    fontFamily: 'Poppins',
+                                                                                    fontFamily: 'Montserrat',
                                                                                     color: Colors.black,
                                                                                     fontSize: 16.0,
                                                                                     letterSpacing: 0.0,
@@ -5831,7 +5832,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: Color(0xFF17236A),
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                      fontFamily: 'Poppins',
+                                                                                      fontFamily: 'Montserrat',
                                                                                       color: Colors.white,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.w500,

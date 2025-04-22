@@ -96,7 +96,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                           'Eliminar Actividad',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -114,7 +114,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -131,14 +131,14 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             letterSpacing: 0.0,
                                           ),
                                       hintText: 'Escribe',
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             letterSpacing: 0.0,
                                           ),
                                       enabledBorder: OutlineInputBorder(
@@ -186,7 +186,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           letterSpacing: 0.0,
                                         ),
                                     cursorColor: FlutterFlowTheme.of(context)
@@ -206,7 +206,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -223,14 +223,14 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             letterSpacing: 0.0,
                                           ),
                                       hintText: 'Escribe',
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             letterSpacing: 0.0,
                                           ),
                                       enabledBorder: OutlineInputBorder(
@@ -278,7 +278,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           letterSpacing: 0.0,
                                         ),
                                     maxLines: null,
@@ -382,7 +382,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: Colors.white,
                                           letterSpacing: 0.0,
                                         ),
@@ -432,7 +432,7 @@ class _EliminarActividadWidgetState extends State<EliminarActividadWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           color: Colors.white,
                                           letterSpacing: 0.0,
                                         ),

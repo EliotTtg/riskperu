@@ -43,7 +43,7 @@ class _FooterWidgetState extends State<FooterWidget> {
       width: double.infinity,
       height: 269.0,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).primaryText,
+        color: FlutterFlowTheme.of(context).secondary,
       ),
       child: Padding(
         padding: EdgeInsets.all(20.0),
@@ -88,7 +88,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
-                                'assets/images/Risk_Peru_rebranding_final_Mesa_de_trabajo_1_copia_11.png',
+                                'assets/images/RiskPeruLogo.png',
                                 width: 300.0,
                                 height: 100.0,
                                 fit: BoxFit.cover,
@@ -104,7 +104,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Poppins',
+                                      fontFamily: 'Montserrat',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       fontSize: 12.0,
@@ -118,7 +118,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Poppins',
+                                      fontFamily: 'Montserrat',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       fontSize: 12.0,
@@ -194,7 +194,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                         fontSize: 20.0,
@@ -223,7 +223,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
@@ -237,7 +237,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
@@ -273,7 +273,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
@@ -287,7 +287,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Poppins',
+                                                fontFamily: 'Montserrat',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
@@ -318,7 +318,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Montserrat',
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                         fontSize: 20.0,
@@ -360,7 +360,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
@@ -411,7 +411,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
@@ -456,7 +456,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
@@ -501,7 +501,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
@@ -529,7 +529,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                 '© Copyright 2024 Risk Perú. Todos los derechos reservados.',
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       fontSize: 12.0,
                       letterSpacing: 0.0,

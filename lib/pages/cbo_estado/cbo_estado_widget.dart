@@ -64,7 +64,7 @@ class _CboEstadoWidgetState extends State<CboEstadoWidget> {
           });
         },
         textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: 'Poppins',
+              fontFamily: 'Montserrat',
               color: FlutterFlowTheme.of(context).secondaryBackground,
               letterSpacing: 0.0,
             ),

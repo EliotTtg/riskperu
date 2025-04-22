@@ -85,7 +85,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
@@ -294,7 +294,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
@@ -391,7 +391,7 @@ class _MostarEleccionCursoWidgetState extends State<MostarEleccionCursoWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,

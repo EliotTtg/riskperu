@@ -130,7 +130,7 @@ class _CreateUpdateActividadWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'Montserrat',
                                   fontSize: 24.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -148,7 +148,7 @@ class _CreateUpdateActividadWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -170,14 +170,14 @@ class _CreateUpdateActividadWidgetState
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         hintText: 'Escribe',
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
@@ -225,7 +225,7 @@ class _CreateUpdateActividadWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             letterSpacing: 0.0,
                                           ),
                                       cursorColor: FlutterFlowTheme.of(context)
@@ -246,7 +246,7 @@ class _CreateUpdateActividadWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -268,14 +268,14 @@ class _CreateUpdateActividadWidgetState
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         hintText: 'Escribe',
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
@@ -323,7 +323,7 @@ class _CreateUpdateActividadWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             letterSpacing: 0.0,
                                           ),
                                       maxLines: null,
@@ -345,7 +345,7 @@ class _CreateUpdateActividadWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -367,14 +367,14 @@ class _CreateUpdateActividadWidgetState
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         hintText: 'Escribe',
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
@@ -422,7 +422,7 @@ class _CreateUpdateActividadWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             letterSpacing: 0.0,
                                           ),
                                       cursorColor: FlutterFlowTheme.of(context)
@@ -447,7 +447,7 @@ class _CreateUpdateActividadWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -558,7 +558,8 @@ class _CreateUpdateActividadWidgetState
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -869,7 +870,7 @@ class _CreateUpdateActividadWidgetState
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             color: Colors.white,
                                             letterSpacing: 0.0,
                                           ),
@@ -921,7 +922,7 @@ class _CreateUpdateActividadWidgetState
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Montserrat',
                                             color: Colors.white,
                                             letterSpacing: 0.0,
                                           ),

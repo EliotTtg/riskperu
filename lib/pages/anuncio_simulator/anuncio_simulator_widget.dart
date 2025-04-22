@@ -66,7 +66,7 @@ class _AnuncioSimulatorWidgetState extends State<AnuncioSimulatorWidget> {
                   Text(
                     '¡Accede de manera gratuita y descubre los simuladores disponibles!',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
+                          fontFamily: 'Montserrat',
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
                           fontSize: 16.0,
@@ -108,7 +108,7 @@ class _AnuncioSimulatorWidgetState extends State<AnuncioSimulatorWidget> {
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily: 'Poppins',
+                        fontFamily: 'Montserrat',
                         color: Colors.white,
                         fontSize: 14.0,
                         letterSpacing: 0.0,

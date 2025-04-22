@@ -43,7 +43,7 @@ class _EmptyCertificatesWidgetState extends State<EmptyCertificatesWidget> {
       child: Text(
         'No se encontraron certificados',
         style: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: 'Poppins',
+              fontFamily: 'Montserrat',
               color: FlutterFlowTheme.of(context).alternate,
               fontSize: 16.0,
               letterSpacing: 0.0,

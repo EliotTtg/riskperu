@@ -73,7 +73,7 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                   Text(
                     'Titulo o Resumen',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
+                          fontFamily: 'Montserrat',
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
@@ -95,13 +95,13 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                         isDense: true,
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'Montserrat',
                                   letterSpacing: 0.0,
                                 ),
                         hintText: 'P.ej.: ¿Por qué utilizamos El Excel?',
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'Montserrat',
                                   color: Color(0xFFA2A2A2),
                                   letterSpacing: 0.0,
                                 ),
@@ -138,7 +138,7 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                             FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
+                            fontFamily: 'Montserrat',
                             letterSpacing: 0.0,
                           ),
                       maxLines: 2,
@@ -164,7 +164,7 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                   Text(
                     'Detalle',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Poppins',
+                          fontFamily: 'Montserrat',
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
@@ -186,13 +186,13 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                         isDense: true,
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'Montserrat',
                                   letterSpacing: 0.0,
                                 ),
                         hintText: 'P.ej.: En el minuto 05:28...',
                         hintStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'Montserrat',
                                   color: Color(0xFFA2A2A2),
                                   letterSpacing: 0.0,
                                 ),
@@ -229,7 +229,7 @@ class _PopupAddComentWidgetState extends State<PopupAddComentWidget> {
                             FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Poppins',
+                            fontFamily: 'Montserrat',
                             letterSpacing: 0.0,
                           ),
                       maxLines: 5,

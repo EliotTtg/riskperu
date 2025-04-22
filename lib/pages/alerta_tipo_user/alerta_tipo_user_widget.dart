@@ -73,7 +73,7 @@ class _AlertaTipoUserWidgetState extends State<AlertaTipoUserWidget> {
                           'Mensaje',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -88,7 +88,7 @@ class _AlertaTipoUserWidgetState extends State<AlertaTipoUserWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -112,7 +112,7 @@ class _AlertaTipoUserWidgetState extends State<AlertaTipoUserWidget> {
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     color: Colors.white,
                                     letterSpacing: 0.0,
                                   ),

@@ -57,7 +57,7 @@ class _TimeMobilWidgetState extends State<TimeMobilWidget> {
       },
       textAlign: TextAlign.start,
       style: FlutterFlowTheme.of(context).headlineSmall.override(
-            fontFamily: 'Poppins',
+            fontFamily: 'Glory',
             fontSize: 12.0,
             letterSpacing: 0.0,
             fontWeight: FontWeight.normal,

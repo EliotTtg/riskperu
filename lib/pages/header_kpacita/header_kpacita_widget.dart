@@ -102,7 +102,7 @@ class _HeaderKpacitaWidgetState extends State<HeaderKpacitaWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Poppins',
+                                  fontFamily: 'Montserrat',
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   fontSize: 16.0,
@@ -159,7 +159,7 @@ class _HeaderKpacitaWidgetState extends State<HeaderKpacitaWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     fontSize: 16.0,
@@ -216,7 +216,7 @@ class _HeaderKpacitaWidgetState extends State<HeaderKpacitaWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     fontSize: 16.0,

@@ -123,7 +123,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color: Color(0xFF094B90),
                                               fontSize: 24.0,
                                               letterSpacing: 0.0,
@@ -202,7 +202,8 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: Colors.white,
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
@@ -287,7 +288,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF212529),
                                                               fontSize: 14.0,
@@ -311,7 +312,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                             .labelLarge
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF212529),
                                                               fontSize: 14.0,
@@ -339,7 +340,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                               .labelLarge
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: Color(
                                                                     0xFF212529),
                                                                 fontSize: 14.0,
@@ -378,7 +379,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             color: Colors.black,
                                                             fontSize: 13.0,
                                                             letterSpacing: 0.0,
@@ -445,7 +446,7 @@ class _ListaAnunciosWidgetState extends State<ListaAnunciosWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),

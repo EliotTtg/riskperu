@@ -42,7 +42,7 @@ class _EmptyCourseWidgetState extends State<EmptyCourseWidget> {
       child: Text(
         'No se encontraron cursos',
         style: FlutterFlowTheme.of(context).bodyMedium.override(
-              fontFamily: 'Poppins',
+              fontFamily: 'Montserrat',
               color: FlutterFlowTheme.of(context).alternate,
               fontSize: 16.0,
               letterSpacing: 0.0,

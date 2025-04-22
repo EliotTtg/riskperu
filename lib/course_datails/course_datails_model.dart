@@ -81,6 +81,8 @@ class CourseDatailsModel extends FlutterFlowModel<CourseDatailsWidget> {
   TabController? tabBarController;
   int get tabBarCurrentIndex =>
       tabBarController != null ? tabBarController!.index : 0;
+  int get tabBarPreviousIndex =>
+      tabBarController != null ? tabBarController!.previousIndex : 0;
 
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode1;

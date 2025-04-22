@@ -119,7 +119,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
@@ -137,7 +137,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
@@ -156,7 +156,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xBABFC3B3),
                                                     fontSize: 12.0,
                                                     letterSpacing: 0.0,
@@ -259,7 +259,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                         .bodyMedium
                                                                         .override(
                                                                           fontFamily:
-                                                                              'Poppins',
+                                                                              'Montserrat',
                                                                           color:
                                                                               FlutterFlowTheme.of(context).secondaryBackground,
                                                                           fontSize:
@@ -280,7 +280,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
@@ -348,7 +348,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       fontFamily:
-                                                                          'Poppins',
+                                                                          'Montserrat',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .secondaryBackground,
@@ -369,7 +369,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
@@ -421,7 +421,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
@@ -469,7 +469,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: Color(0xFF77B9FB),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
@@ -487,7 +487,8 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
@@ -510,7 +511,8 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
@@ -556,7 +558,8 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                           .of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -612,7 +615,8 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                           .of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -749,7 +753,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: Color(
                                                                         0xFF01203F),
                                                                     fontSize:
@@ -835,7 +839,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Poppins',
+                                                                              fontFamily: 'Montserrat',
                                                                               fontSize: 16.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
@@ -851,7 +855,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Poppins',
+                                                                              fontFamily: 'Montserrat',
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w300,
                                                                             ),
@@ -913,7 +917,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF01203F),
                                                               fontSize: 20.0,
@@ -1078,7 +1082,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                                       TextSpan(
                                                                                         text: 'Sesión ',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
                                                                                             ),
@@ -1092,7 +1096,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                                       )
                                                                                     ],
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           fontSize: 12.0,
                                                                                           letterSpacing: 0.0,
                                                                                         ),
@@ -1104,7 +1108,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                                     'Introducción a la Dirección de proyectos',
                                                                                   ),
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         fontSize: 16.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
@@ -1254,7 +1258,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                                         '1',
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.w300,
                                                                                           ),
@@ -1276,7 +1280,7 @@ class _CoursePriceCopyWidgetState extends State<CoursePriceCopyWidget> {
                                                                                     )
                                                                                   ],
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w300,
                                                                                       ),

@@ -198,7 +198,7 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: Color(
                                                                             0xFF094B90),
                                                                         fontSize:
@@ -359,7 +359,7 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                                   child: Text(
                                                                                     listViewCategoryCoursesRecord.name,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           fontSize: 16.0,
                                                                                           letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.bold,
@@ -574,7 +574,7 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                                                               ),
                                                                                                               maxLines: 2,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                    fontFamily: 'Poppins',
+                                                                                                                    fontFamily: 'Montserrat',
                                                                                                                     fontSize: 14.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     fontWeight: FontWeight.w600,
@@ -617,7 +617,7 @@ class _CoursesUserWidgetState extends State<CoursesUserWidget> {
                                                                                                                   ),
                                                                                                                   maxLines: 1,
                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                        fontFamily: 'Poppins',
+                                                                                                                        fontFamily: 'Montserrat',
                                                                                                                         fontSize: 10.0,
                                                                                                                         letterSpacing: 0.0,
                                                                                                                       ),

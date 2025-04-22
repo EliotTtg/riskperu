@@ -91,13 +91,13 @@ class _PopupAddComentsWidgetState extends State<PopupAddComentsWidget> {
                           isDense: true,
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                           hintText: 'P.ej.: En el minuto 05:28...',
                           hintStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     color: Color(0xFFA2A2A2),
                                     letterSpacing: 0.0,
                                   ),
@@ -134,7 +134,7 @@ class _PopupAddComentsWidgetState extends State<PopupAddComentsWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Poppins',
+                              fontFamily: 'Montserrat',
                               letterSpacing: 0.0,
                             ),
                         maxLines: 5,

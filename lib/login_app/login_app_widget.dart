@@ -186,7 +186,7 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -198,7 +198,7 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
@@ -298,7 +298,7 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -390,7 +390,7 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     letterSpacing:
                                                                         0.0,
                                                                   ),
@@ -402,7 +402,7 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                   .labelMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .alternate,
@@ -524,7 +524,7 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -605,7 +605,7 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
@@ -715,7 +715,8 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -751,18 +752,19 @@ class _LoginAppWidgetState extends State<LoginAppWidget> {
                                               },
                                               child: Text(
                                                 '¿No tiene una cuenta? Regístrese',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      fontFamily: 'Montserrat',
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .primary,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                               ),
                                             ),
                                           ].divide(SizedBox(height: 20.0)),

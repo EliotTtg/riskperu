@@ -500,7 +500,7 @@ class _CrearTipoComentarioWidgetState extends State<CrearTipoComentarioWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Poppins',
+                                                  fontFamily: 'Montserrat',
                                                   fontSize: 16.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
@@ -527,20 +527,20 @@ class _CrearTipoComentarioWidgetState extends State<CrearTipoComentarioWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           letterSpacing: 0.0,
                                                         ),
                                                 hintText:
                                                     'P.ej.: En el minuto 05:28...',
-                                                hintStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color:
-                                                              Color(0xFFA2A2A2),
-                                                          letterSpacing: 0.0,
-                                                        ),
+                                                hintStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .labelMedium
+                                                    .override(
+                                                      fontFamily: 'Montserrat',
+                                                      color: Color(0xFFA2A2A2),
+                                                      letterSpacing: 0.0,
+                                                    ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -593,7 +593,8 @@ class _CrearTipoComentarioWidgetState extends State<CrearTipoComentarioWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                               maxLines: 5,

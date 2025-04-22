@@ -135,7 +135,7 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -200,7 +200,7 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -246,7 +246,7 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Poppins',
+                                    fontFamily: 'Montserrat',
                                     color: Colors.white,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,

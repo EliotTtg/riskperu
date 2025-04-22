@@ -103,7 +103,7 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
@@ -162,7 +162,7 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
@@ -219,7 +219,7 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Poppins',
+                                              fontFamily: 'Montserrat',
                                               color: Color(0xFF17236A),
                                               fontSize: 44.0,
                                               letterSpacing: 0.0,
@@ -290,7 +290,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF382D8B),
                                                         fontSize: 23.0,
@@ -305,7 +306,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -328,7 +330,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -362,7 +365,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF382D8B),
                                                         fontSize: 23.0,
@@ -377,7 +381,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -400,7 +405,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -435,7 +441,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF382D8B),
                                                         fontSize: 23.0,
@@ -450,7 +457,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -473,7 +481,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -522,7 +531,7 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Poppins',
+                                          fontFamily: 'Montserrat',
                                           fontSize: 28.0,
                                           letterSpacing: 0.0,
                                         ),
@@ -556,7 +565,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -573,7 +583,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF152D43),
                                                         fontSize: 16.0,
@@ -593,7 +604,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -610,7 +622,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF152D43),
                                                         fontSize: 16.0,
@@ -630,7 +643,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -647,7 +661,8 @@ class _TeachersWidgetState extends State<TeachersWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF152D43),
                                                         fontSize: 16.0,

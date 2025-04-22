@@ -120,7 +120,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
@@ -138,7 +138,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
@@ -157,7 +157,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Poppins',
+                                                    fontFamily: 'Montserrat',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryBackground,
@@ -198,7 +198,8 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: Colors.white,
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
@@ -222,7 +223,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
@@ -261,7 +262,8 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color:
                                                             Color(0xFF4E90D0),
                                                         fontSize: 12.0,
@@ -277,7 +279,8 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily: 'Poppins',
+                                                        fontFamily:
+                                                            'Montserrat',
                                                         color: Colors.white,
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
@@ -350,7 +353,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
@@ -381,7 +384,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                           .bodyMedium
                                                           .override(
                                                             fontFamily:
-                                                                'Poppins',
+                                                                'Montserrat',
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .primary,
@@ -488,7 +491,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Poppins',
+                                                                            'Montserrat',
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                         fontSize:
@@ -509,7 +512,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
@@ -578,7 +581,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
@@ -599,7 +602,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                               .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
@@ -652,7 +655,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                 .bodyMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Poppins',
+                                                                      'Montserrat',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
@@ -759,7 +762,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                               .titleSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Poppins',
+                                                                    'Montserrat',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primary,
@@ -820,7 +823,8 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                             .of(context)
                                                         .titleSmall
                                                         .override(
-                                                          fontFamily: 'Poppins',
+                                                          fontFamily:
+                                                              'Montserrat',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),
@@ -937,7 +941,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     fontFamily:
-                                                                        'Poppins',
+                                                                        'Montserrat',
                                                                     color: Color(
                                                                         0xFF01203F),
                                                                     fontSize:
@@ -1023,7 +1027,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Poppins',
+                                                                              fontFamily: 'Montserrat',
                                                                               fontSize: 16.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w600,
@@ -1039,7 +1043,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
-                                                                              fontFamily: 'Poppins',
+                                                                              fontFamily: 'Montserrat',
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.w300,
                                                                             ),
@@ -1101,7 +1105,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
-                                                                  'Poppins',
+                                                                  'Montserrat',
                                                               color: Color(
                                                                   0xFF01203F),
                                                               fontSize: 20.0,
@@ -1266,7 +1270,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                                       TextSpan(
                                                                                         text: 'Sesión ',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                              fontFamily: 'Poppins',
+                                                                                              fontFamily: 'Montserrat',
                                                                                               fontSize: 12.0,
                                                                                               letterSpacing: 0.0,
                                                                                             ),
@@ -1280,7 +1284,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                                       )
                                                                                     ],
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'Poppins',
+                                                                                          fontFamily: 'Montserrat',
                                                                                           fontSize: 12.0,
                                                                                           letterSpacing: 0.0,
                                                                                         ),
@@ -1292,7 +1296,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                                     'Introducción a la Dirección de proyectos',
                                                                                   ),
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         fontSize: 16.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
@@ -1442,7 +1446,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                                         '1',
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            fontFamily: 'Poppins',
+                                                                                            fontFamily: 'Montserrat',
                                                                                             letterSpacing: 0.0,
                                                                                             fontWeight: FontWeight.w300,
                                                                                           ),
@@ -1464,7 +1468,7 @@ class _CoursePriceWidgetState extends State<CoursePriceWidget> {
                                                                                     )
                                                                                   ],
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Poppins',
+                                                                                        fontFamily: 'Montserrat',
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w300,
                                                                                       ),
