@@ -86,16 +86,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               appStateNotifier.loggedIn ? NavBarPage() : LoginWidget(),
           routes: [
             FFRoute(
-              name: TeachersWidget.routeName,
-              path: TeachersWidget.routePath,
-              builder: (context, params) => TeachersWidget(),
-            ),
-            FFRoute(
-              name: BlogsWidget.routeName,
-              path: BlogsWidget.routePath,
-              builder: (context, params) => BlogsWidget(),
-            ),
-            FFRoute(
               name: ContactsWidget.routeName,
               path: ContactsWidget.routePath,
               builder: (context, params) => ContactsWidget(),
@@ -141,21 +131,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: InformationWidget.routePath,
               requireAuth: true,
               builder: (context, params) => InformationWidget(),
-            ),
-            FFRoute(
-              name: CoursesV1Widget.routeName,
-              path: CoursesV1Widget.routePath,
-              builder: (context, params) => CoursesV1Widget(),
-            ),
-            FFRoute(
-              name: HomeEnterpriseWidget.routeName,
-              path: HomeEnterpriseWidget.routePath,
-              builder: (context, params) => HomeEnterpriseWidget(),
-            ),
-            FFRoute(
-              name: HomeGovernmentWidget.routeName,
-              path: HomeGovernmentWidget.routePath,
-              builder: (context, params) => HomeGovernmentWidget(),
             ),
             FFRoute(
               name: CoursesUserWidget.routeName,
@@ -270,11 +245,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                   : EstadisticaWidget(),
             ),
             FFRoute(
-              name: HomeCopyWidget.routeName,
-              path: HomeCopyWidget.routePath,
-              builder: (context, params) => HomeCopyWidget(),
-            ),
-            FFRoute(
               name: CoursePriceWidget.routeName,
               path: CoursePriceWidget.routePath,
               requireAuth: true,
@@ -319,20 +289,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => params.isEmpty
                   ? NavBarPage(initialPage: 'Simulador')
                   : SimuladorWidget(),
-            ),
-            FFRoute(
-              name: CoursePriceCopyWidget.routeName,
-              path: CoursePriceCopyWidget.routePath,
-              requireAuth: true,
-              asyncParams: {
-                'refCourse': getDoc(['Courses'], CoursesRecord.fromSnapshot),
-              },
-              builder: (context, params) => CoursePriceCopyWidget(
-                refCourse: params.getParam(
-                  'refCourse',
-                  ParamType.Document,
-                ),
-              ),
             ),
             FFRoute(
               name: LoginAppWidget.routeName,

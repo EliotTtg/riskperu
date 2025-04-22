@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/pages/empty_simulator/empty_simulator_widget.dart';
+import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/header_mobil/header_mobil_widget.dart';
 import '/index.dart';
@@ -1402,7 +1403,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                                 listaSimuladoresAncladosItem.name,
                                                                                                 maxLines: 2,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      font: GoogleFonts.montserrat(
+                                                                                                      font: GoogleFonts.glory(
                                                                                                         fontWeight: FontWeight.w600,
                                                                                                         fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                       ),
@@ -2136,6 +2137,15 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                             .around(SizedBox(height: 20.0)),
                                       ),
                                     ),
+                                  ),
+                                if (responsiveVisibility(
+                                  context: context,
+                                  phone: false,
+                                ))
+                                  wrapWithModel(
+                                    model: _model.footerModel,
+                                    updateCallback: () => safeSetState(() {}),
+                                    child: FooterWidget(),
                                   ),
                               ],
                             ),

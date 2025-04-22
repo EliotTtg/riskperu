@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_data_table.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
+import '/pages/header_mobil/header_mobil_widget.dart';
 import 'certificates_studients_widget.dart' show CertificatesStudientsWidget;
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,8 @@ class CertificatesStudientsModel
 
   // Model for Header component.
   late HeaderModel headerModel;
+  // Model for HeaderMobil component.
+  late HeaderMobilModel headerMobilModel;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode;
   TextEditingController? textController;
@@ -42,12 +45,14 @@ class CertificatesStudientsModel
   @override
   void initState(BuildContext context) {
     headerModel = createModel(context, () => HeaderModel());
+    headerMobilModel = createModel(context, () => HeaderMobilModel());
     footerModel = createModel(context, () => FooterModel());
   }
 
   @override
   void dispose() {
     headerModel.dispose();
+    headerMobilModel.dispose();
     textFieldFocusNode?.dispose();
     textController?.dispose();
 

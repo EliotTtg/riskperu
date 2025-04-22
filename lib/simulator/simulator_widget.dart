@@ -112,7 +112,6 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                              color: Color(0xFF17236A),
                               image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: Image.asset(
@@ -120,39 +119,56 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                 ).image,
                               ),
                             ),
-                            child: Padding(
-                              padding: EdgeInsets.all(50.0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Flexible(
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Text(
-                                                  'Simulador >',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        font: GoogleFonts
-                                                            .montserrat(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Color(0x152D43E3),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.all(50.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Flexible(
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    'Simulador >',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                            fontStyle: FontStyle
+                                                                .italic,
+                                                          ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                          fontSize: 14.0,
+                                                          letterSpacing: 0.0,
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -161,31 +177,31 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                           fontStyle:
                                                               FontStyle.italic,
                                                         ),
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        fontSize: 14.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontWeight,
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                      ),
-                                                ),
-                                                Text(
-                                                  valueOrDefault<String>(
-                                                    widget.refCourse?.name,
-                                                    '--',
                                                   ),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        font: GoogleFonts
-                                                            .montserrat(
+                                                  Text(
+                                                    valueOrDefault<String>(
+                                                      widget.refCourse?.name,
+                                                      '--',
+                                                    ),
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          font:
+                                                              GoogleFonts.glory(
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                          fontSize: 26.0,
+                                                          letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
                                                           fontStyle:
@@ -194,33 +210,33 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        fontSize: 26.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontStyle,
-                                                      ),
-                                                ),
-                                                Text(
-                                                  valueOrDefault<String>(
-                                                    widget.refCourse
-                                                        ?.introduction,
-                                                    '--',
                                                   ),
-                                                  textAlign: TextAlign.start,
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        font: GoogleFonts
-                                                            .montserrat(
+                                                  Text(
+                                                    valueOrDefault<String>(
+                                                      widget.refCourse
+                                                          ?.introduction,
+                                                      '--',
+                                                    ),
+                                                    textAlign: TextAlign.start,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          font: GoogleFonts
+                                                              .montserrat(
+                                                            fontWeight:
+                                                                FontWeight.w300,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryBackground,
+                                                          fontSize: 12.0,
+                                                          letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w300,
                                                           fontStyle:
@@ -229,61 +245,64 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        fontSize: 12.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium
-                                                                .fontStyle,
-                                                      ),
-                                                ),
-                                              ],
-                                            ),
-                                            Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    FFButtonWidget(
-                                                      onPressed: () {
-                                                        print(
-                                                            'Button pressed ...');
-                                                      },
-                                                      text: 'Lo más Vendido',
-                                                      options: FFButtonOptions(
-                                                        height: 30.0,
-                                                        padding: EdgeInsets.all(
-                                                            10.0),
-                                                        iconPadding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0),
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall
-                                                                .override(
-                                                                  font: GoogleFonts
-                                                                      .montserrat(
+                                                  ),
+                                                ],
+                                              ),
+                                              Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      FFButtonWidget(
+                                                        onPressed: () {
+                                                          print(
+                                                              'Button pressed ...');
+                                                        },
+                                                        text: 'Lo más Vendido',
+                                                        options:
+                                                            FFButtonOptions(
+                                                          height: 30.0,
+                                                          padding:
+                                                              EdgeInsets.all(
+                                                                  10.0),
+                                                          iconPadding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          textStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w300,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontSize:
+                                                                        14.0,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w300,
@@ -292,43 +311,223 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                         .titleSmall
                                                                         .fontStyle,
                                                                   ),
-                                                                  color: Colors
-                                                                      .white,
-                                                                  fontSize:
-                                                                      14.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w300,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmall
-                                                                      .fontStyle,
-                                                                ),
-                                                        elevation: 0.0,
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(4.0),
+                                                          elevation: 0.0,
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      4.0),
+                                                        ),
                                                       ),
-                                                    ),
-                                                    if (responsiveVisibility(
-                                                      context: context,
-                                                      phone: false,
-                                                      tablet: false,
-                                                      tabletLandscape: false,
-                                                    ))
-                                                      Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Row(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
+                                                      if (responsiveVisibility(
+                                                        context: context,
+                                                        phone: false,
+                                                        tablet: false,
+                                                        tabletLandscape: false,
+                                                      ))
+                                                        Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          children: [
+                                                            Row(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              children: [
+                                                                Text(
+                                                                  '4,6',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight:
+                                                                              FontWeight.bold,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .secondaryBackground,
+                                                                        fontSize:
+                                                                            12.0,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.bold,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
+                                                                ),
+                                                                RatingBarIndicator(
+                                                                  itemBuilder:
+                                                                      (context,
+                                                                              index) =>
+                                                                          Icon(
+                                                                    Icons
+                                                                        .star_rounded,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
+                                                                  ),
+                                                                  direction: Axis
+                                                                      .horizontal,
+                                                                  rating: 4.6,
+                                                                  unratedColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryBackground,
+                                                                  itemCount: 5,
+                                                                  itemSize:
+                                                                      14.0,
+                                                                ),
+                                                              ].divide(SizedBox(
+                                                                  width: 10.0)),
+                                                            ),
+                                                            Text(
+                                                              '(2 368 Calificaciones)',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: Color(
+                                                                        0xFF4E90D0),
+                                                                    fontSize:
+                                                                        12.0,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                    decoration:
+                                                                        TextDecoration
+                                                                            .underline,
+                                                                  ),
+                                                            ),
+                                                            Text(
+                                                              '11.56 Estudiantes',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontSize:
+                                                                        12.0,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                    decoration:
+                                                                        TextDecoration
+                                                                            .underline,
+                                                                  ),
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              width: 20.0)),
+                                                        ),
+                                                    ].divide(
+                                                        SizedBox(width: 10.0)),
+                                                  ),
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 10.0,
+                                                                0.0, 0.0),
+                                                    child: StreamBuilder<
+                                                        List<UsersRecord>>(
+                                                      stream: queryUsersRecord(
+                                                        queryBuilder:
+                                                            (usersRecord) =>
+                                                                usersRecord
+                                                                    .where(
+                                                          'uid',
+                                                          isEqualTo: widget
+                                                              .refCourse
+                                                              ?.uidTechear,
+                                                        ),
+                                                        singleRecord: true,
+                                                      ),
+                                                      builder:
+                                                          (context, snapshot) {
+                                                        // Customize what your widget looks like when it's loading.
+                                                        if (!snapshot.hasData) {
+                                                          return Center(
+                                                            child: SizedBox(
+                                                              width: 14.0,
+                                                              height: 14.0,
+                                                              child:
+                                                                  CircularProgressIndicator(
+                                                                valueColor:
+                                                                    AlwaysStoppedAnimation<
+                                                                        Color>(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          );
+                                                        }
+                                                        List<UsersRecord>
+                                                            richTextUsersRecordList =
+                                                            snapshot.data!;
+                                                        // Return an empty Container when the item does not exist.
+                                                        if (snapshot
+                                                            .data!.isEmpty) {
+                                                          return Container();
+                                                        }
+                                                        final richTextUsersRecord =
+                                                            richTextUsersRecordList
+                                                                    .isNotEmpty
+                                                                ? richTextUsersRecordList
+                                                                    .first
+                                                                : null;
+
+                                                        return RichText(
+                                                          textScaler:
+                                                              MediaQuery.of(
+                                                                      context)
+                                                                  .textScaler,
+                                                          text: TextSpan(
                                                             children: [
-                                                              Text(
-                                                                '4,6',
+                                                              TextSpan(
+                                                                text:
+                                                                    'Creado por ',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
@@ -336,7 +535,7 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                       font: GoogleFonts
                                                                           .montserrat(
                                                                         fontWeight:
-                                                                            FontWeight.bold,
+                                                                            FontWeight.w300,
                                                                         fontStyle: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .fontStyle,
@@ -350,45 +549,397 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                           0.0,
                                                                       fontWeight:
                                                                           FontWeight
-                                                                              .bold,
+                                                                              .w300,
                                                                       fontStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
                                                                           .fontStyle,
                                                                     ),
                                                               ),
-                                                              RatingBarIndicator(
-                                                                itemBuilder:
-                                                                    (context,
-                                                                            index) =>
-                                                                        Icon(
-                                                                  Icons
-                                                                      .star_rounded,
+                                                              TextSpan(
+                                                                text:
+                                                                    valueOrDefault<
+                                                                        String>(
+                                                                  richTextUsersRecord
+                                                                      ?.displayName,
+                                                                  'Sistema',
+                                                                ),
+                                                                style:
+                                                                    TextStyle(
+                                                                  decoration:
+                                                                      TextDecoration
+                                                                          .underline,
+                                                                ),
+                                                              )
+                                                            ],
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  font: GoogleFonts
+                                                                      .montserrat(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w300,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primary,
+                                                                  fontSize:
+                                                                      12.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w300,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
                                                                 ),
-                                                                direction: Axis
-                                                                    .horizontal,
-                                                                rating: 4.6,
-                                                                unratedColor:
-                                                                    FlutterFlowTheme.of(
+                                                          ),
+                                                          textAlign:
+                                                              TextAlign.start,
+                                                        );
+                                                      },
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Flexible(
+                                                    child: Container(
+                                                      width: double.infinity,
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8.0),
+                                                      ),
+                                                      child: Padding(
+                                                        padding: EdgeInsets.all(
+                                                            10.0),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            Icon(
+                                                              Icons
+                                                                  .menu_book_sharp,
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .secondaryBackground,
+                                                              size: 24.0,
+                                                            ),
+                                                            FutureBuilder<int>(
+                                                              future:
+                                                                  querySessionRecordCount(
+                                                                queryBuilder:
+                                                                    (sessionRecord) =>
+                                                                        sessionRecord
+                                                                            .where(
+                                                                  'uid_Course',
+                                                                  isEqualTo: widget
+                                                                      .refCourse
+                                                                      ?.reference
+                                                                      .id,
+                                                                ),
+                                                              ),
+                                                              builder: (context,
+                                                                  snapshot) {
+                                                                // Customize what your widget looks like when it's loading.
+                                                                if (!snapshot
+                                                                    .hasData) {
+                                                                  return Center(
+                                                                    child:
+                                                                        SizedBox(
+                                                                      width:
+                                                                          14.0,
+                                                                      height:
+                                                                          14.0,
+                                                                      child:
+                                                                          CircularProgressIndicator(
+                                                                        valueColor:
+                                                                            AlwaysStoppedAnimation<Color>(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .primary,
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                }
+                                                                int richTextCount =
+                                                                    snapshot
+                                                                        .data!;
+
+                                                                return RichText(
+                                                                  textScaler: MediaQuery.of(
+                                                                          context)
+                                                                      .textScaler,
+                                                                  text:
+                                                                      TextSpan(
+                                                                    children: [
+                                                                      TextSpan(
+                                                                        text: valueOrDefault<
+                                                                            String>(
+                                                                          richTextCount
+                                                                              .toString(),
+                                                                          '0',
+                                                                        ),
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                              fontSize: 12.0,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                      ),
+                                                                      TextSpan(
+                                                                        text:
+                                                                            ' sesiones',
+                                                                        style:
+                                                                            TextStyle(),
+                                                                      )
+                                                                    ],
+                                                                    style: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .override(
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                          fontSize:
+                                                                              12.0,
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
+                                                                  ),
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .center,
+                                                                );
+                                                              },
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              height: 5.0)),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Expanded(
+                                                    child: Container(
+                                                      width: double.infinity,
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8.0),
+                                                      ),
+                                                      child: Padding(
+                                                        padding: EdgeInsets.all(
+                                                            10.0),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            Icon(
+                                                              Icons.access_time,
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .secondaryBackground,
+                                                              size: 24.0,
+                                                            ),
+                                                            RichText(
+                                                              textScaler:
+                                                                  MediaQuery.of(
+                                                                          context)
+                                                                      .textScaler,
+                                                              text: TextSpan(
+                                                                children: [
+                                                                  TextSpan(
+                                                                    text: valueOrDefault<
+                                                                        String>(
+                                                                      widget
+                                                                          .refCourse
+                                                                          ?.hours,
+                                                                      '0',
+                                                                    ),
+                                                                    style: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .override(
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                          fontSize:
+                                                                              12.0,
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
+                                                                  ),
+                                                                  TextSpan(
+                                                                    text:
+                                                                        ' horas',
+                                                                    style:
+                                                                        TextStyle(),
+                                                                  )
+                                                                ],
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryBackground,
+                                                                      fontSize:
+                                                                          12.0,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                              ),
+                                                              textAlign:
+                                                                  TextAlign
+                                                                      .center,
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              height: 5.0)),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Expanded(
+                                                    child: Container(
+                                                      width: double.infinity,
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8.0),
+                                                      ),
+                                                      child: Padding(
+                                                        padding: EdgeInsets.all(
+                                                            10.0),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            FaIcon(
+                                                              FontAwesomeIcons
+                                                                  .medal,
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .secondaryBackground,
+                                                              size: 24.0,
+                                                            ),
+                                                            Text(
+                                                              'Certificado',
+                                                              textAlign:
+                                                                  TextAlign
+                                                                      .center,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .secondaryBackground,
-                                                                itemCount: 5,
-                                                                itemSize: 14.0,
-                                                              ),
-                                                            ].divide(SizedBox(
-                                                                width: 10.0)),
-                                                          ),
-                                                          Text(
-                                                            '(2 368 Calificaciones)',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  font: GoogleFonts
-                                                                      .montserrat(
+                                                                    fontSize:
+                                                                        12.0,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -398,82 +949,91 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                         .bodyMedium
                                                                         .fontStyle,
                                                                   ),
-                                                                  color: Color(
-                                                                      0xFF4E90D0),
-                                                                  fontSize:
-                                                                      12.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
-                                                                  decoration:
-                                                                      TextDecoration
-                                                                          .underline,
-                                                                ),
-                                                          ),
-                                                          Text(
-                                                            '11.56 Estudiantes',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  font: GoogleFonts
-                                                                      .montserrat(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                                  color: Colors
-                                                                      .white,
-                                                                  fontSize:
-                                                                      12.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
-                                                                  decoration:
-                                                                      TextDecoration
-                                                                          .underline,
-                                                                ),
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            width: 20.0)),
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              height: 5.0)),
+                                                        ),
                                                       ),
-                                                  ].divide(
-                                                      SizedBox(width: 10.0)),
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 0.0),
+                                                    ),
+                                                  ),
+                                                ].divide(SizedBox(width: 10.0)),
+                                              ),
+                                            ].divide(SizedBox(height: 20.0)),
+                                          ),
+                                        ),
+                                        if (responsiveVisibility(
+                                          context: context,
+                                          phone: false,
+                                        ))
+                                          Flexible(
+                                            child: StreamBuilder<
+                                                List<ExamGroupsRecord>>(
+                                              stream: queryExamGroupsRecord(
+                                                queryBuilder:
+                                                    (examGroupsRecord) =>
+                                                        examGroupsRecord
+                                                            .where(
+                                                              'is_demo',
+                                                              isEqualTo: true,
+                                                            )
+                                                            .where(
+                                                              'uid_Course',
+                                                              isEqualTo: widget
+                                                                  .refCourse
+                                                                  ?.reference
+                                                                  .id,
+                                                            )
+                                                            .orderBy(
+                                                                'Created_date'),
+                                                singleRecord: true,
+                                              ),
+                                              builder: (context, snapshot) {
+                                                // Customize what your widget looks like when it's loading.
+                                                if (!snapshot.hasData) {
+                                                  return Center(
+                                                    child: SizedBox(
+                                                      width: 14.0,
+                                                      height: 14.0,
+                                                      child:
+                                                          CircularProgressIndicator(
+                                                        valueColor:
+                                                            AlwaysStoppedAnimation<
+                                                                Color>(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  );
+                                                }
+                                                List<ExamGroupsRecord>
+                                                    containerExamGroupsRecordList =
+                                                    snapshot.data!;
+                                                final containerExamGroupsRecord =
+                                                    containerExamGroupsRecordList
+                                                            .isNotEmpty
+                                                        ? containerExamGroupsRecordList
+                                                            .first
+                                                        : null;
+
+                                                return Container(
+                                                  decoration: BoxDecoration(),
                                                   child: StreamBuilder<
-                                                      List<UsersRecord>>(
-                                                    stream: queryUsersRecord(
+                                                      List<ExamenesRecord>>(
+                                                    stream: queryExamenesRecord(
                                                       queryBuilder:
-                                                          (usersRecord) =>
-                                                              usersRecord.where(
-                                                        'uid',
-                                                        isEqualTo: widget
-                                                            .refCourse
-                                                            ?.uidTechear,
-                                                      ),
+                                                          (examenesRecord) =>
+                                                              examenesRecord
+                                                                  .where(
+                                                                    'uid_Group',
+                                                                    isEqualTo:
+                                                                        containerExamGroupsRecord
+                                                                            ?.reference
+                                                                            .id,
+                                                                  )
+                                                                  .orderBy(
+                                                                      'fecha_creacion'),
                                                       singleRecord: true,
                                                     ),
                                                     builder:
@@ -497,945 +1057,199 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                           ),
                                                         );
                                                       }
-                                                      List<UsersRecord>
-                                                          richTextUsersRecordList =
+                                                      List<ExamenesRecord>
+                                                          containerExamenesRecordList =
                                                           snapshot.data!;
-                                                      // Return an empty Container when the item does not exist.
-                                                      if (snapshot
-                                                          .data!.isEmpty) {
-                                                        return Container();
-                                                      }
-                                                      final richTextUsersRecord =
-                                                          richTextUsersRecordList
+                                                      final containerExamenesRecord =
+                                                          containerExamenesRecordList
                                                                   .isNotEmpty
-                                                              ? richTextUsersRecordList
+                                                              ? containerExamenesRecordList
                                                                   .first
                                                               : null;
 
-                                                      return RichText(
-                                                        textScaler:
-                                                            MediaQuery.of(
-                                                                    context)
-                                                                .textScaler,
-                                                        text: TextSpan(
-                                                          children: [
-                                                            TextSpan(
-                                                              text:
-                                                                  'Creado por ',
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    font: GoogleFonts
-                                                                        .montserrat(
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w300,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryBackground,
-                                                                    fontSize:
-                                                                        12.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w300,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                            ),
-                                                            TextSpan(
-                                                              text:
-                                                                  valueOrDefault<
-                                                                      String>(
-                                                                richTextUsersRecord
-                                                                    ?.displayName,
-                                                                'Sistema',
-                                                              ),
-                                                              style: TextStyle(
-                                                                decoration:
-                                                                    TextDecoration
-                                                                        .underline,
-                                                              ),
-                                                            )
-                                                          ],
-                                                          style: FlutterFlowTheme
+                                                      return Container(
+                                                        constraints:
+                                                            BoxConstraints(
+                                                          maxWidth: 400.0,
+                                                        ),
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                font: GoogleFonts
-                                                                    .montserrat(
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w300,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
-                                                                ),
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primary,
-                                                                fontSize: 12.0,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w300,
-                                                                fontStyle: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                              ),
+                                                              .secondaryBackground,
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      8.0),
                                                         ),
-                                                        textAlign:
-                                                            TextAlign.start,
-                                                      );
-                                                    },
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Flexible(
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    decoration: BoxDecoration(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              8.0),
-                                                    ),
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsets.all(10.0),
-                                                      child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .center,
-                                                        children: [
-                                                          Icon(
-                                                            Icons
-                                                                .menu_book_sharp,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryBackground,
-                                                            size: 24.0,
-                                                          ),
-                                                          FutureBuilder<int>(
-                                                            future:
-                                                                querySessionRecordCount(
-                                                              queryBuilder:
-                                                                  (sessionRecord) =>
-                                                                      sessionRecord
-                                                                          .where(
-                                                                'uid_Course',
-                                                                isEqualTo: widget
-                                                                    .refCourse
-                                                                    ?.reference
-                                                                    .id,
+                                                        child: Padding(
+                                                          padding:
+                                                              EdgeInsets.all(
+                                                                  20.0),
+                                                          child: Column(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                            crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .start,
+                                                            children: [
+                                                              FlutterFlowVideoPlayer(
+                                                                path:
+                                                                    '${widget.refCourse?.videoPreview}',
+                                                                videoType:
+                                                                    VideoType
+                                                                        .network,
+                                                                autoPlay: false,
+                                                                looping: true,
+                                                                showControls:
+                                                                    true,
+                                                                allowFullScreen:
+                                                                    true,
+                                                                allowPlaybackSpeedMenu:
+                                                                    false,
                                                               ),
-                                                            ),
-                                                            builder: (context,
-                                                                snapshot) {
-                                                              // Customize what your widget looks like when it's loading.
-                                                              if (!snapshot
-                                                                  .hasData) {
-                                                                return Center(
-                                                                  child:
-                                                                      SizedBox(
-                                                                    width: 14.0,
-                                                                    height:
-                                                                        14.0,
-                                                                    child:
-                                                                        CircularProgressIndicator(
-                                                                      valueColor:
-                                                                          AlwaysStoppedAnimation<
-                                                                              Color>(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .primary,
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                );
-                                                              }
-                                                              int richTextCount =
-                                                                  snapshot
-                                                                      .data!;
-
-                                                              return RichText(
-                                                                textScaler: MediaQuery.of(
-                                                                        context)
-                                                                    .textScaler,
-                                                                text: TextSpan(
-                                                                  children: [
-                                                                    TextSpan(
-                                                                      text: valueOrDefault<
-                                                                          String>(
-                                                                        richTextCount
-                                                                            .toString(),
-                                                                        '0',
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .override(
-                                                                            font:
-                                                                                GoogleFonts.montserrat(
-                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
-                                                                            fontSize:
-                                                                                12.0,
-                                                                            letterSpacing:
-                                                                                0.0,
-                                                                            fontWeight:
-                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                          ),
-                                                                    ),
-                                                                    TextSpan(
-                                                                      text:
-                                                                          ' sesiones',
-                                                                      style:
-                                                                          TextStyle(),
-                                                                    )
-                                                                  ],
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .override(
-                                                                        font: GoogleFonts
-                                                                            .montserrat(
-                                                                          fontWeight: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontWeight,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .secondaryBackground,
-                                                                        fontSize:
-                                                                            12.0,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                        fontWeight: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontWeight,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontStyle,
-                                                                      ),
-                                                                ),
-                                                                textAlign:
-                                                                    TextAlign
-                                                                        .center,
-                                                              );
-                                                            },
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            height: 5.0)),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Expanded(
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    decoration: BoxDecoration(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              8.0),
-                                                    ),
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsets.all(10.0),
-                                                      child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .center,
-                                                        children: [
-                                                          Icon(
-                                                            Icons.access_time,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryBackground,
-                                                            size: 24.0,
-                                                          ),
-                                                          RichText(
-                                                            textScaler:
-                                                                MediaQuery.of(
-                                                                        context)
-                                                                    .textScaler,
-                                                            text: TextSpan(
-                                                              children: [
-                                                                TextSpan(
-                                                                  text: valueOrDefault<
-                                                                      String>(
-                                                                    widget
-                                                                        .refCourse
-                                                                        ?.hours,
-                                                                    '0',
-                                                                  ),
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .override(
-                                                                        font: GoogleFonts
-                                                                            .montserrat(
-                                                                          fontWeight: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontWeight,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .secondaryBackground,
-                                                                        fontSize:
-                                                                            12.0,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                        fontWeight: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontWeight,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontStyle,
-                                                                      ),
-                                                                ),
-                                                                TextSpan(
-                                                                  text:
-                                                                      ' horas',
-                                                                  style:
-                                                                      TextStyle(),
-                                                                )
-                                                              ],
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    font: GoogleFonts
-                                                                        .montserrat(
-                                                                      fontWeight: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontWeight,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryBackground,
-                                                                    fontSize:
-                                                                        12.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                            ),
-                                                            textAlign: TextAlign
-                                                                .center,
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            height: 5.0)),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                Expanded(
-                                                  child: Container(
-                                                    width: double.infinity,
-                                                    decoration: BoxDecoration(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              8.0),
-                                                    ),
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsets.all(10.0),
-                                                      child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .center,
-                                                        children: [
-                                                          FaIcon(
-                                                            FontAwesomeIcons
-                                                                .medal,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryBackground,
-                                                            size: 24.0,
-                                                          ),
-                                                          Text(
-                                                            'Certificado',
-                                                            textAlign: TextAlign
-                                                                .center,
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  font: GoogleFonts
-                                                                      .montserrat(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryBackground,
-                                                                  fontSize:
-                                                                      12.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
-                                                                ),
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            height: 5.0)),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ].divide(SizedBox(width: 10.0)),
-                                            ),
-                                          ].divide(SizedBox(height: 20.0)),
-                                        ),
-                                      ),
-                                      if (responsiveVisibility(
-                                        context: context,
-                                        phone: false,
-                                      ))
-                                        Flexible(
-                                          child: StreamBuilder<
-                                              List<ExamGroupsRecord>>(
-                                            stream: queryExamGroupsRecord(
-                                              queryBuilder:
-                                                  (examGroupsRecord) =>
-                                                      examGroupsRecord
-                                                          .where(
-                                                            'is_demo',
-                                                            isEqualTo: true,
-                                                          )
-                                                          .where(
-                                                            'uid_Course',
-                                                            isEqualTo: widget
-                                                                .refCourse
-                                                                ?.reference
-                                                                .id,
-                                                          )
-                                                          .orderBy(
-                                                              'Created_date'),
-                                              singleRecord: true,
-                                            ),
-                                            builder: (context, snapshot) {
-                                              // Customize what your widget looks like when it's loading.
-                                              if (!snapshot.hasData) {
-                                                return Center(
-                                                  child: SizedBox(
-                                                    width: 14.0,
-                                                    height: 14.0,
-                                                    child:
-                                                        CircularProgressIndicator(
-                                                      valueColor:
-                                                          AlwaysStoppedAnimation<
-                                                              Color>(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                );
-                                              }
-                                              List<ExamGroupsRecord>
-                                                  containerExamGroupsRecordList =
-                                                  snapshot.data!;
-                                              final containerExamGroupsRecord =
-                                                  containerExamGroupsRecordList
-                                                          .isNotEmpty
-                                                      ? containerExamGroupsRecordList
-                                                          .first
-                                                      : null;
-
-                                              return Container(
-                                                decoration: BoxDecoration(),
-                                                child: StreamBuilder<
-                                                    List<ExamenesRecord>>(
-                                                  stream: queryExamenesRecord(
-                                                    queryBuilder:
-                                                        (examenesRecord) =>
-                                                            examenesRecord
-                                                                .where(
-                                                                  'uid_Group',
-                                                                  isEqualTo:
-                                                                      containerExamGroupsRecord
-                                                                          ?.reference
-                                                                          .id,
-                                                                )
-                                                                .orderBy(
-                                                                    'fecha_creacion'),
-                                                    singleRecord: true,
-                                                  ),
-                                                  builder: (context, snapshot) {
-                                                    // Customize what your widget looks like when it's loading.
-                                                    if (!snapshot.hasData) {
-                                                      return Center(
-                                                        child: SizedBox(
-                                                          width: 14.0,
-                                                          height: 14.0,
-                                                          child:
-                                                              CircularProgressIndicator(
-                                                            valueColor:
-                                                                AlwaysStoppedAnimation<
-                                                                    Color>(
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .primary,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      );
-                                                    }
-                                                    List<ExamenesRecord>
-                                                        containerExamenesRecordList =
-                                                        snapshot.data!;
-                                                    final containerExamenesRecord =
-                                                        containerExamenesRecordList
-                                                                .isNotEmpty
-                                                            ? containerExamenesRecordList
-                                                                .first
-                                                            : null;
-
-                                                    return Container(
-                                                      constraints:
-                                                          BoxConstraints(
-                                                        maxWidth: 400.0,
-                                                      ),
-                                                      decoration: BoxDecoration(
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(8.0),
-                                                      ),
-                                                      child: Padding(
-                                                        padding: EdgeInsets.all(
-                                                            20.0),
-                                                        child: Column(
-                                                          mainAxisSize:
-                                                              MainAxisSize.max,
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            FlutterFlowVideoPlayer(
-                                                              path:
-                                                                  '${widget.refCourse?.videoPreview}',
-                                                              videoType:
-                                                                  VideoType
-                                                                      .network,
-                                                              autoPlay: false,
-                                                              looping: true,
-                                                              showControls:
-                                                                  true,
-                                                              allowFullScreen:
-                                                                  true,
-                                                              allowPlaybackSpeedMenu:
-                                                                  false,
-                                                            ),
-                                                            if (containerExamGroupsRecord !=
-                                                                null)
-                                                              Padding(
-                                                                padding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            10.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                child:
-                                                                    FFButtonWidget(
-                                                                  onPressed:
-                                                                      () async {
-                                                                    _model.refGroup =
-                                                                        await queryExamGroupsRecordOnce(
-                                                                      queryBuilder: (examGroupsRecord) => examGroupsRecord
-                                                                          .where(
-                                                                            'uid_Course',
-                                                                            isEqualTo:
-                                                                                widget.refCourse?.reference.id,
-                                                                          )
-                                                                          .where(
-                                                                            'is_demo',
-                                                                            isEqualTo:
-                                                                                true,
-                                                                          )
-                                                                          .where(
-                                                                            'state',
-                                                                            isEqualTo:
-                                                                                true,
-                                                                          )
-                                                                          .orderBy('Created_date'),
-                                                                      singleRecord:
-                                                                          true,
-                                                                    ).then((s) =>
-                                                                            s.firstOrNull);
-                                                                    if (_model
-                                                                            .refGroup !=
-                                                                        null) {
-                                                                      _model.refExamen =
-                                                                          await queryExamenesRecordOnce(
-                                                                        queryBuilder: (examenesRecord) => examenesRecord
-                                                                            .where(
-                                                                              'uid_Group',
-                                                                              isEqualTo: _model.refGroup?.reference.id,
-                                                                            )
-                                                                            .where(
-                                                                              'state',
-                                                                              isEqualTo: true,
-                                                                            )
-                                                                            .orderBy('fecha_creacion'),
-                                                                        singleRecord:
-                                                                            true,
-                                                                      ).then((s) =>
-                                                                              s.firstOrNull);
-                                                                      if (_model
-                                                                              .refExamen !=
-                                                                          null) {
-                                                                        context
-                                                                            .pushNamed(
-                                                                          ExaminationQuestionsViewWidget
-                                                                              .routeName,
-                                                                          queryParameters:
-                                                                              {
-                                                                            'refExamination':
-                                                                                serializeParam(
-                                                                              _model.refExamen,
-                                                                              ParamType.Document,
-                                                                            ),
-                                                                            'refCourse':
-                                                                                serializeParam(
-                                                                              widget.refCourse,
-                                                                              ParamType.Document,
-                                                                            ),
-                                                                            'refUser':
-                                                                                serializeParam(
-                                                                              currentUserReference,
-                                                                              ParamType.DocumentReference,
-                                                                            ),
-                                                                            'type':
-                                                                                serializeParam(
-                                                                              2,
-                                                                              ParamType.int,
-                                                                            ),
-                                                                            'isdemo':
-                                                                                serializeParam(
-                                                                              true,
-                                                                              ParamType.bool,
-                                                                            ),
-                                                                          }.withoutNulls,
-                                                                          extra: <String,
-                                                                              dynamic>{
-                                                                            'refExamination':
-                                                                                _model.refExamen,
-                                                                            'refCourse':
-                                                                                widget.refCourse,
-                                                                            kTransitionInfoKey:
-                                                                                TransitionInfo(
-                                                                              hasTransition: true,
-                                                                              transitionType: PageTransitionType.fade,
-                                                                              duration: Duration(milliseconds: 0),
-                                                                            ),
-                                                                          },
-                                                                        );
-
-                                                                        var registerSimulatorRecordReference = RegisterSimulatorRecord
-                                                                            .collection
-                                                                            .doc();
-                                                                        await registerSimulatorRecordReference
-                                                                            .set({
-                                                                          ...createRegisterSimulatorRecordData(
-                                                                            uidUser:
-                                                                                currentUserReference?.id,
-                                                                            uidCourse:
-                                                                                widget.refCourse?.reference.id,
-                                                                          ),
-                                                                          ...mapToFirestore(
-                                                                            {
-                                                                              'created_date': FieldValue.serverTimestamp(),
-                                                                            },
-                                                                          ),
-                                                                        });
-                                                                        _model.refHistory =
-                                                                            RegisterSimulatorRecord.getDocumentFromData({
-                                                                          ...createRegisterSimulatorRecordData(
-                                                                            uidUser:
-                                                                                currentUserReference?.id,
-                                                                            uidCourse:
-                                                                                widget.refCourse?.reference.id,
-                                                                          ),
-                                                                          ...mapToFirestore(
-                                                                            {
-                                                                              'created_date': DateTime.now(),
-                                                                            },
-                                                                          ),
-                                                                        }, registerSimulatorRecordReference);
-
-                                                                        await _model
-                                                                            .refHistory!
-                                                                            .reference
-                                                                            .update(createRegisterSimulatorRecordData(
-                                                                          uid: _model
-                                                                              .refHistory
-                                                                              ?.reference
-                                                                              .id,
-                                                                        ));
-                                                                      }
-                                                                    }
-
-                                                                    safeSetState(
-                                                                        () {});
-                                                                  },
-                                                                  text: 'Demo',
-                                                                  options:
-                                                                      FFButtonOptions(
-                                                                    width: double
-                                                                        .infinity,
-                                                                    height:
-                                                                        50.0,
-                                                                    padding: EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            16.0,
-                                                                            0.0,
-                                                                            16.0,
-                                                                            0.0),
-                                                                    iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryBackground,
-                                                                    textStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall
-                                                                        .override(
-                                                                          font:
-                                                                              GoogleFonts.montserrat(
-                                                                            fontWeight:
-                                                                                FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                          ),
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).secondary,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight: FlutterFlowTheme.of(context)
-                                                                              .titleSmall
-                                                                              .fontWeight,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .titleSmall
-                                                                              .fontStyle,
-                                                                        ),
-                                                                    elevation:
-                                                                        0.0,
-                                                                    borderSide:
-                                                                        BorderSide(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondary,
-                                                                    ),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            8.0),
-                                                                    hoverColor:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .primary,
-                                                                    hoverBorderSide:
-                                                                        BorderSide(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primary,
-                                                                    ),
-                                                                    hoverTextColor:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .secondaryBackground,
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
+                                                              if (containerExamGroupsRecord !=
+                                                                  null)
+                                                                Padding(
+                                                                  padding: EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
                                                                           0.0,
                                                                           0.0),
-                                                              child: Row(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                children: [
-                                                                  Flexible(
-                                                                    child:
-                                                                        FFButtonWidget(
-                                                                      onPressed:
-                                                                          () async {
-                                                                        if (!FFAppState().shoppingcart.contains(widget
-                                                                            .refCourse
-                                                                            ?.reference
-                                                                            .id)) {
-                                                                          FFAppState().addToShoppingcart(widget
-                                                                              .refCourse!
-                                                                              .reference
-                                                                              .id);
-                                                                          FFAppState()
-                                                                              .update(() {});
-                                                                        }
-                                                                      },
-                                                                      text: valueOrDefault<
-                                                                          String>(
-                                                                        FFAppState().shoppingcart.contains(widget.refCourse?.reference.id)
-                                                                            ? 'Añadido al carrito'
-                                                                            : 'Añadir al carrito',
-                                                                        'Añadir al carrito',
-                                                                      ),
-                                                                      options:
-                                                                          FFButtonOptions(
-                                                                        width: double
-                                                                            .infinity,
-                                                                        height:
-                                                                            60.0,
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            16.0,
-                                                                            0.0,
-                                                                            16.0,
-                                                                            0.0),
-                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        color: Color(
-                                                                            0x38007DF9),
-                                                                        textStyle: FlutterFlowTheme.of(context)
-                                                                            .titleSmall
-                                                                            .override(
-                                                                              font: GoogleFonts.montserrat(
-                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                              ),
-                                                                              color: FlutterFlowTheme.of(context).primary,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                            ),
-                                                                        elevation:
-                                                                            0.0,
-                                                                        borderSide:
-                                                                            BorderSide(
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primary,
-                                                                        ),
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        hoverColor:
-                                                                            FlutterFlowTheme.of(context).primary,
-                                                                        hoverBorderSide:
-                                                                            BorderSide(
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primary,
-                                                                        ),
-                                                                        hoverTextColor:
-                                                                            FlutterFlowTheme.of(context).secondaryBackground,
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                  FFButtonWidget(
+                                                                  child:
+                                                                      FFButtonWidget(
                                                                     onPressed:
-                                                                        () {
-                                                                      print(
-                                                                          'Button pressed ...');
+                                                                        () async {
+                                                                      _model.refGroup =
+                                                                          await queryExamGroupsRecordOnce(
+                                                                        queryBuilder: (examGroupsRecord) => examGroupsRecord
+                                                                            .where(
+                                                                              'uid_Course',
+                                                                              isEqualTo: widget.refCourse?.reference.id,
+                                                                            )
+                                                                            .where(
+                                                                              'is_demo',
+                                                                              isEqualTo: true,
+                                                                            )
+                                                                            .where(
+                                                                              'state',
+                                                                              isEqualTo: true,
+                                                                            )
+                                                                            .orderBy('Created_date'),
+                                                                        singleRecord:
+                                                                            true,
+                                                                      ).then((s) =>
+                                                                              s.firstOrNull);
+                                                                      if (_model
+                                                                              .refGroup !=
+                                                                          null) {
+                                                                        _model.refExamen =
+                                                                            await queryExamenesRecordOnce(
+                                                                          queryBuilder: (examenesRecord) => examenesRecord
+                                                                              .where(
+                                                                                'uid_Group',
+                                                                                isEqualTo: _model.refGroup?.reference.id,
+                                                                              )
+                                                                              .where(
+                                                                                'state',
+                                                                                isEqualTo: true,
+                                                                              )
+                                                                              .orderBy('fecha_creacion'),
+                                                                          singleRecord:
+                                                                              true,
+                                                                        ).then((s) =>
+                                                                                s.firstOrNull);
+                                                                        if (_model.refExamen !=
+                                                                            null) {
+                                                                          context
+                                                                              .pushNamed(
+                                                                            ExaminationQuestionsViewWidget.routeName,
+                                                                            queryParameters:
+                                                                                {
+                                                                              'refExamination': serializeParam(
+                                                                                _model.refExamen,
+                                                                                ParamType.Document,
+                                                                              ),
+                                                                              'refCourse': serializeParam(
+                                                                                widget.refCourse,
+                                                                                ParamType.Document,
+                                                                              ),
+                                                                              'refUser': serializeParam(
+                                                                                currentUserReference,
+                                                                                ParamType.DocumentReference,
+                                                                              ),
+                                                                              'type': serializeParam(
+                                                                                2,
+                                                                                ParamType.int,
+                                                                              ),
+                                                                              'isdemo': serializeParam(
+                                                                                true,
+                                                                                ParamType.bool,
+                                                                              ),
+                                                                            }.withoutNulls,
+                                                                            extra: <String,
+                                                                                dynamic>{
+                                                                              'refExamination': _model.refExamen,
+                                                                              'refCourse': widget.refCourse,
+                                                                              kTransitionInfoKey: TransitionInfo(
+                                                                                hasTransition: true,
+                                                                                transitionType: PageTransitionType.fade,
+                                                                                duration: Duration(milliseconds: 0),
+                                                                              ),
+                                                                            },
+                                                                          );
+
+                                                                          var registerSimulatorRecordReference = RegisterSimulatorRecord
+                                                                              .collection
+                                                                              .doc();
+                                                                          await registerSimulatorRecordReference
+                                                                              .set({
+                                                                            ...createRegisterSimulatorRecordData(
+                                                                              uidUser: currentUserReference?.id,
+                                                                              uidCourse: widget.refCourse?.reference.id,
+                                                                            ),
+                                                                            ...mapToFirestore(
+                                                                              {
+                                                                                'created_date': FieldValue.serverTimestamp(),
+                                                                              },
+                                                                            ),
+                                                                          });
+                                                                          _model.refHistory =
+                                                                              RegisterSimulatorRecord.getDocumentFromData({
+                                                                            ...createRegisterSimulatorRecordData(
+                                                                              uidUser: currentUserReference?.id,
+                                                                              uidCourse: widget.refCourse?.reference.id,
+                                                                            ),
+                                                                            ...mapToFirestore(
+                                                                              {
+                                                                                'created_date': DateTime.now(),
+                                                                              },
+                                                                            ),
+                                                                          }, registerSimulatorRecordReference);
+
+                                                                          await _model
+                                                                              .refHistory!
+                                                                              .reference
+                                                                              .update(createRegisterSimulatorRecordData(
+                                                                            uid:
+                                                                                _model.refHistory?.reference.id,
+                                                                          ));
+                                                                        }
+                                                                      }
+
+                                                                      safeSetState(
+                                                                          () {});
                                                                     },
                                                                     text:
-                                                                        'S/. ${valueOrDefault<String>(
-                                                                      widget
-                                                                          .refCourse
-                                                                          ?.price,
-                                                                      '0',
-                                                                    )}',
+                                                                        'Demo',
                                                                     options:
                                                                         FFButtonOptions(
+                                                                      width: double
+                                                                          .infinity,
                                                                       height:
-                                                                          60.0,
+                                                                          50.0,
                                                                       padding: EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           0.0,
@@ -1448,7 +1262,7 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                           0.0),
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .secondary,
+                                                                          .secondaryBackground,
                                                                       textStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .titleSmall
@@ -1459,7 +1273,7 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                               fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                             ),
                                                                             color:
-                                                                                Colors.white,
+                                                                                FlutterFlowTheme.of(context).secondary,
                                                                             letterSpacing:
                                                                                 0.0,
                                                                             fontWeight:
@@ -1469,545 +1283,488 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                           ),
                                                                       elevation:
                                                                           0.0,
+                                                                      borderSide:
+                                                                          BorderSide(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .secondary,
+                                                                      ),
                                                                       borderRadius:
                                                                           BorderRadius.circular(
                                                                               8.0),
+                                                                      hoverColor:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .primary,
+                                                                      hoverBorderSide:
+                                                                          BorderSide(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .primary,
+                                                                      ),
+                                                                      hoverTextColor:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .secondaryBackground,
                                                                     ),
                                                                   ),
-                                                                ].divide(SizedBox(
-                                                                    width:
-                                                                        10.0)),
+                                                                ),
+                                                              Padding(
+                                                                padding:
+                                                                    EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            10.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                child: Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Flexible(
+                                                                      child:
+                                                                          FFButtonWidget(
+                                                                        onPressed:
+                                                                            () async {
+                                                                          if (!FFAppState().shoppingcart.contains(widget
+                                                                              .refCourse
+                                                                              ?.reference
+                                                                              .id)) {
+                                                                            FFAppState().addToShoppingcart(widget.refCourse!.reference.id);
+                                                                            FFAppState().update(() {});
+                                                                          }
+                                                                        },
+                                                                        text: valueOrDefault<
+                                                                            String>(
+                                                                          FFAppState().shoppingcart.contains(widget.refCourse?.reference.id)
+                                                                              ? 'Añadido al carrito'
+                                                                              : 'Añadir al carrito',
+                                                                          'Añadir al carrito',
+                                                                        ),
+                                                                        options:
+                                                                            FFButtonOptions(
+                                                                          width:
+                                                                              double.infinity,
+                                                                          height:
+                                                                              60.0,
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              16.0,
+                                                                              0.0,
+                                                                              16.0,
+                                                                              0.0),
+                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0),
+                                                                          color:
+                                                                              Color(0x38007DF9),
+                                                                          textStyle: FlutterFlowTheme.of(context)
+                                                                              .titleSmall
+                                                                              .override(
+                                                                                font: GoogleFonts.montserrat(
+                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                ),
+                                                                                color: FlutterFlowTheme.of(context).primary,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                              ),
+                                                                          elevation:
+                                                                              0.0,
+                                                                          borderSide:
+                                                                              BorderSide(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                          ),
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          hoverColor:
+                                                                              FlutterFlowTheme.of(context).primary,
+                                                                          hoverBorderSide:
+                                                                              BorderSide(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                          ),
+                                                                          hoverTextColor:
+                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    FFButtonWidget(
+                                                                      onPressed:
+                                                                          () {
+                                                                        print(
+                                                                            'Button pressed ...');
+                                                                      },
+                                                                      text:
+                                                                          'S/. ${valueOrDefault<String>(
+                                                                        widget
+                                                                            .refCourse
+                                                                            ?.price,
+                                                                        '0',
+                                                                      )}',
+                                                                      options:
+                                                                          FFButtonOptions(
+                                                                        height:
+                                                                            60.0,
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            16.0,
+                                                                            0.0,
+                                                                            16.0,
+                                                                            0.0),
+                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .secondary,
+                                                                        textStyle: FlutterFlowTheme.of(context)
+                                                                            .titleSmall
+                                                                            .override(
+                                                                              font: GoogleFonts.montserrat(
+                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                              ),
+                                                                              color: Colors.white,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                            ),
+                                                                        elevation:
+                                                                            0.0,
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(8.0),
+                                                                      ),
+                                                                    ),
+                                                                  ].divide(SizedBox(
+                                                                      width:
+                                                                          10.0)),
+                                                                ),
                                                               ),
-                                                            ),
-                                                          ],
+                                                            ],
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
+                                                  ),
+                                                );
+                                              },
+                                            ),
+                                          ),
+                                      ],
+                                    ),
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      tablet: false,
+                                      tabletLandscape: false,
+                                      desktop: false,
+                                    ))
+                                      StreamBuilder<List<ExamGroupsRecord>>(
+                                        stream: queryExamGroupsRecord(
+                                          queryBuilder: (examGroupsRecord) =>
+                                              examGroupsRecord
+                                                  .where(
+                                                    'is_demo',
+                                                    isEqualTo: true,
+                                                  )
+                                                  .where(
+                                                    'uid_Course',
+                                                    isEqualTo: widget.refCourse
+                                                        ?.reference.id,
+                                                  )
+                                                  .orderBy('Created_date'),
+                                          singleRecord: true,
+                                        ),
+                                        builder: (context, snapshot) {
+                                          // Customize what your widget looks like when it's loading.
+                                          if (!snapshot.hasData) {
+                                            return Center(
+                                              child: SizedBox(
+                                                width: 14.0,
+                                                height: 14.0,
+                                                child:
+                                                    CircularProgressIndicator(
+                                                  valueColor:
+                                                      AlwaysStoppedAnimation<
+                                                          Color>(
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                  ),
+                                                ),
+                                              ),
+                                            );
+                                          }
+                                          List<ExamGroupsRecord>
+                                              containerExamGroupsRecordList =
+                                              snapshot.data!;
+                                          final containerExamGroupsRecord =
+                                              containerExamGroupsRecordList
+                                                      .isNotEmpty
+                                                  ? containerExamGroupsRecordList
+                                                      .first
+                                                  : null;
+
+                                          return Container(
+                                            decoration: BoxDecoration(),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      0.0, 20.0, 0.0, 0.0),
+                                              child: StreamBuilder<
+                                                  List<ExamenesRecord>>(
+                                                stream: queryExamenesRecord(
+                                                  queryBuilder: (examenesRecord) =>
+                                                      examenesRecord
+                                                          .where(
+                                                            'uid_Group',
+                                                            isEqualTo:
+                                                                containerExamGroupsRecord
+                                                                    ?.reference
+                                                                    .id,
+                                                          )
+                                                          .orderBy(
+                                                              'fecha_creacion'),
+                                                  singleRecord: true,
+                                                ),
+                                                builder: (context, snapshot) {
+                                                  // Customize what your widget looks like when it's loading.
+                                                  if (!snapshot.hasData) {
+                                                    return Center(
+                                                      child: SizedBox(
+                                                        width: 14.0,
+                                                        height: 14.0,
+                                                        child:
+                                                            CircularProgressIndicator(
+                                                          valueColor:
+                                                              AlwaysStoppedAnimation<
+                                                                  Color>(
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                          ),
                                                         ),
                                                       ),
                                                     );
-                                                  },
-                                                ),
-                                              );
-                                            },
-                                          ),
-                                        ),
-                                    ],
-                                  ),
-                                  if (responsiveVisibility(
-                                    context: context,
-                                    tablet: false,
-                                    tabletLandscape: false,
-                                    desktop: false,
-                                  ))
-                                    StreamBuilder<List<ExamGroupsRecord>>(
-                                      stream: queryExamGroupsRecord(
-                                        queryBuilder: (examGroupsRecord) =>
-                                            examGroupsRecord
-                                                .where(
-                                                  'is_demo',
-                                                  isEqualTo: true,
-                                                )
-                                                .where(
-                                                  'uid_Course',
-                                                  isEqualTo: widget
-                                                      .refCourse?.reference.id,
-                                                )
-                                                .orderBy('Created_date'),
-                                        singleRecord: true,
-                                      ),
-                                      builder: (context, snapshot) {
-                                        // Customize what your widget looks like when it's loading.
-                                        if (!snapshot.hasData) {
-                                          return Center(
-                                            child: SizedBox(
-                                              width: 14.0,
-                                              height: 14.0,
-                                              child: CircularProgressIndicator(
-                                                valueColor:
-                                                    AlwaysStoppedAnimation<
-                                                        Color>(
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                                ),
-                                              ),
-                                            ),
-                                          );
-                                        }
-                                        List<ExamGroupsRecord>
-                                            containerExamGroupsRecordList =
-                                            snapshot.data!;
-                                        final containerExamGroupsRecord =
-                                            containerExamGroupsRecordList
-                                                    .isNotEmpty
-                                                ? containerExamGroupsRecordList
-                                                    .first
-                                                : null;
+                                                  }
+                                                  List<ExamenesRecord>
+                                                      containerExamenesRecordList =
+                                                      snapshot.data!;
+                                                  final containerExamenesRecord =
+                                                      containerExamenesRecordList
+                                                              .isNotEmpty
+                                                          ? containerExamenesRecordList
+                                                              .first
+                                                          : null;
 
-                                        return Container(
-                                          decoration: BoxDecoration(),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 20.0, 0.0, 0.0),
-                                            child: StreamBuilder<
-                                                List<ExamenesRecord>>(
-                                              stream: queryExamenesRecord(
-                                                queryBuilder: (examenesRecord) =>
-                                                    examenesRecord
-                                                        .where(
-                                                          'uid_Group',
-                                                          isEqualTo:
-                                                              containerExamGroupsRecord
-                                                                  ?.reference
-                                                                  .id,
-                                                        )
-                                                        .orderBy(
-                                                            'fecha_creacion'),
-                                                singleRecord: true,
-                                              ),
-                                              builder: (context, snapshot) {
-                                                // Customize what your widget looks like when it's loading.
-                                                if (!snapshot.hasData) {
-                                                  return Center(
-                                                    child: SizedBox(
-                                                      width: 14.0,
-                                                      height: 14.0,
-                                                      child:
-                                                          CircularProgressIndicator(
-                                                        valueColor:
-                                                            AlwaysStoppedAnimation<
-                                                                Color>(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                        ),
-                                                      ),
+                                                  return Container(
+                                                    constraints: BoxConstraints(
+                                                      maxWidth: 400.0,
                                                     ),
-                                                  );
-                                                }
-                                                List<ExamenesRecord>
-                                                    containerExamenesRecordList =
-                                                    snapshot.data!;
-                                                final containerExamenesRecord =
-                                                    containerExamenesRecordList
-                                                            .isNotEmpty
-                                                        ? containerExamenesRecordList
-                                                            .first
-                                                        : null;
-
-                                                return Container(
-                                                  constraints: BoxConstraints(
-                                                    maxWidth: 400.0,
-                                                  ),
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryBackground,
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8.0),
-                                                  ),
-                                                  child: Padding(
-                                                    padding:
-                                                        EdgeInsets.all(20.0),
-                                                    child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        FlutterFlowVideoPlayer(
-                                                          path:
-                                                              '${widget.refCourse?.videoPreview}',
-                                                          videoType:
-                                                              VideoType.network,
-                                                          autoPlay: false,
-                                                          looping: true,
-                                                          showControls: true,
-                                                          allowFullScreen: true,
-                                                          allowPlaybackSpeedMenu:
-                                                              false,
-                                                        ),
-                                                        if (containerExamenesRecord !=
-                                                            null)
-                                                          Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        10.0,
-                                                                        0.0,
-                                                                        0.0),
-                                                            child:
-                                                                FFButtonWidget(
-                                                              onPressed:
-                                                                  () async {
-                                                                _model.refGroupMobil =
-                                                                    await queryExamGroupsRecordOnce(
-                                                                  queryBuilder: (examGroupsRecord) =>
-                                                                      examGroupsRecord
-                                                                          .where(
-                                                                            'uid_Course',
-                                                                            isEqualTo:
-                                                                                widget.refCourse?.reference.id,
-                                                                          )
-                                                                          .where(
-                                                                            'is_demo',
-                                                                            isEqualTo:
-                                                                                true,
-                                                                          )
-                                                                          .where(
-                                                                            'state',
-                                                                            isEqualTo:
-                                                                                true,
-                                                                          )
-                                                                          .orderBy(
-                                                                              'Created_date'),
-                                                                  singleRecord:
-                                                                      true,
-                                                                ).then((s) => s
-                                                                        .firstOrNull);
-                                                                if (_model
-                                                                        .refGroupMobil !=
-                                                                    null) {
-                                                                  _model.refExamenMobil =
-                                                                      await queryExamenesRecordOnce(
-                                                                    queryBuilder: (examenesRecord) => examenesRecord
+                                                    decoration: BoxDecoration(
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .secondaryBackground,
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8.0),
+                                                    ),
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsets.all(20.0),
+                                                      child: Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          FlutterFlowVideoPlayer(
+                                                            path:
+                                                                '${widget.refCourse?.videoPreview}',
+                                                            videoType: VideoType
+                                                                .network,
+                                                            autoPlay: false,
+                                                            looping: true,
+                                                            showControls: true,
+                                                            allowFullScreen:
+                                                                true,
+                                                            allowPlaybackSpeedMenu:
+                                                                false,
+                                                          ),
+                                                          if (containerExamenesRecord !=
+                                                              null)
+                                                            Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          10.0,
+                                                                          0.0,
+                                                                          0.0),
+                                                              child:
+                                                                  FFButtonWidget(
+                                                                onPressed:
+                                                                    () async {
+                                                                  _model.refGroupMobil =
+                                                                      await queryExamGroupsRecordOnce(
+                                                                    queryBuilder: (examGroupsRecord) => examGroupsRecord
                                                                         .where(
-                                                                          'uid_Group',
-                                                                          isEqualTo: _model
-                                                                              .refGroupMobil
+                                                                          'uid_Course',
+                                                                          isEqualTo: widget
+                                                                              .refCourse
                                                                               ?.reference
                                                                               .id,
+                                                                        )
+                                                                        .where(
+                                                                          'is_demo',
+                                                                          isEqualTo:
+                                                                              true,
                                                                         )
                                                                         .where(
                                                                           'state',
                                                                           isEqualTo:
                                                                               true,
                                                                         )
-                                                                        .orderBy('fecha_creacion'),
+                                                                        .orderBy('Created_date'),
                                                                     singleRecord:
                                                                         true,
                                                                   ).then((s) =>
                                                                           s.firstOrNull);
                                                                   if (_model
-                                                                          .refExamenMobil !=
+                                                                          .refGroupMobil !=
                                                                       null) {
-                                                                    context
-                                                                        .pushNamed(
-                                                                      ExaminationQuestionsViewWidget
-                                                                          .routeName,
-                                                                      queryParameters:
-                                                                          {
-                                                                        'refExamination':
-                                                                            serializeParam(
-                                                                          _model
-                                                                              .refExamenMobil,
-                                                                          ParamType
-                                                                              .Document,
-                                                                        ),
-                                                                        'refCourse':
-                                                                            serializeParam(
-                                                                          widget
-                                                                              .refCourse,
-                                                                          ParamType
-                                                                              .Document,
-                                                                        ),
-                                                                        'refUser':
-                                                                            serializeParam(
-                                                                          currentUserReference,
-                                                                          ParamType
-                                                                              .DocumentReference,
-                                                                        ),
-                                                                        'type':
-                                                                            serializeParam(
-                                                                          2,
-                                                                          ParamType
-                                                                              .int,
-                                                                        ),
-                                                                        'isdemo':
-                                                                            serializeParam(
+                                                                    _model.refExamenMobil =
+                                                                        await queryExamenesRecordOnce(
+                                                                      queryBuilder: (examenesRecord) => examenesRecord
+                                                                          .where(
+                                                                            'uid_Group',
+                                                                            isEqualTo:
+                                                                                _model.refGroupMobil?.reference.id,
+                                                                          )
+                                                                          .where(
+                                                                            'state',
+                                                                            isEqualTo:
+                                                                                true,
+                                                                          )
+                                                                          .orderBy('fecha_creacion'),
+                                                                      singleRecord:
                                                                           true,
-                                                                          ParamType
-                                                                              .bool,
-                                                                        ),
-                                                                      }.withoutNulls,
-                                                                      extra: <String,
-                                                                          dynamic>{
-                                                                        'refExamination':
+                                                                    ).then((s) =>
+                                                                            s.firstOrNull);
+                                                                    if (_model
+                                                                            .refExamenMobil !=
+                                                                        null) {
+                                                                      context
+                                                                          .pushNamed(
+                                                                        ExaminationQuestionsViewWidget
+                                                                            .routeName,
+                                                                        queryParameters:
+                                                                            {
+                                                                          'refExamination':
+                                                                              serializeParam(
                                                                             _model.refExamenMobil,
-                                                                        'refCourse':
-                                                                            widget.refCourse,
-                                                                        kTransitionInfoKey:
-                                                                            TransitionInfo(
-                                                                          hasTransition:
-                                                                              true,
-                                                                          transitionType:
-                                                                              PageTransitionType.fade,
-                                                                          duration:
-                                                                              Duration(milliseconds: 0),
-                                                                        ),
-                                                                      },
-                                                                    );
-
-                                                                    var registerSimulatorRecordReference =
-                                                                        RegisterSimulatorRecord
-                                                                            .collection
-                                                                            .doc();
-                                                                    await registerSimulatorRecordReference
-                                                                        .set({
-                                                                      ...createRegisterSimulatorRecordData(
-                                                                        uidUser:
-                                                                            currentUserReference?.id,
-                                                                        uidCourse: widget
-                                                                            .refCourse
-                                                                            ?.reference
-                                                                            .id,
-                                                                      ),
-                                                                      ...mapToFirestore(
-                                                                        {
-                                                                          'created_date':
-                                                                              FieldValue.serverTimestamp(),
-                                                                        },
-                                                                      ),
-                                                                    });
-                                                                    _model.refHistoryMobil =
-                                                                        RegisterSimulatorRecord
-                                                                            .getDocumentFromData({
-                                                                      ...createRegisterSimulatorRecordData(
-                                                                        uidUser:
-                                                                            currentUserReference?.id,
-                                                                        uidCourse: widget
-                                                                            .refCourse
-                                                                            ?.reference
-                                                                            .id,
-                                                                      ),
-                                                                      ...mapToFirestore(
-                                                                        {
-                                                                          'created_date':
-                                                                              DateTime.now(),
-                                                                        },
-                                                                      ),
-                                                                    }, registerSimulatorRecordReference);
-
-                                                                    await _model
-                                                                        .refHistoryMobil!
-                                                                        .reference
-                                                                        .update(
-                                                                            createRegisterSimulatorRecordData(
-                                                                      uid: _model
-                                                                          .refHistoryMobil
-                                                                          ?.reference
-                                                                          .id,
-                                                                    ));
-                                                                  }
-                                                                }
-
-                                                                safeSetState(
-                                                                    () {});
-                                                              },
-                                                              text: 'Demo',
-                                                              options:
-                                                                  FFButtonOptions(
-                                                                width: double
-                                                                    .infinity,
-                                                                height: 50.0,
-                                                                padding: EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        16.0,
-                                                                        0.0,
-                                                                        16.0,
-                                                                        0.0),
-                                                                iconPadding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .secondaryBackground,
-                                                                textStyle: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .override(
-                                                                      font: GoogleFonts
-                                                                          .montserrat(
-                                                                        fontWeight: FlutterFlowTheme.of(context)
-                                                                            .titleSmall
-                                                                            .fontWeight,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .titleSmall
-                                                                            .fontStyle,
-                                                                      ),
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondary,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .titleSmall
-                                                                          .fontWeight,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .titleSmall
-                                                                          .fontStyle,
-                                                                    ),
-                                                                elevation: 0.0,
-                                                                borderSide:
-                                                                    BorderSide(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondary,
-                                                                ),
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            8.0),
-                                                                hoverColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primary,
-                                                                hoverBorderSide:
-                                                                    BorderSide(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primary,
-                                                                ),
-                                                                hoverTextColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryBackground,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      10.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: Row(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            children: [
-                                                              Flexible(
-                                                                child:
-                                                                    FFButtonWidget(
-                                                                  onPressed:
-                                                                      () async {
-                                                                    if (!FFAppState()
-                                                                        .shoppingcart
-                                                                        .contains(widget
-                                                                            .refCourse
-                                                                            ?.reference
-                                                                            .id)) {
-                                                                      FFAppState().addToShoppingcart(widget
-                                                                          .refCourse!
-                                                                          .reference
-                                                                          .id);
-                                                                      FFAppState()
-                                                                          .update(
-                                                                              () {});
-                                                                    }
-                                                                  },
-                                                                  text: valueOrDefault<
-                                                                      String>(
-                                                                    FFAppState().shoppingcart.contains(widget
-                                                                            .refCourse
-                                                                            ?.reference
-                                                                            .id)
-                                                                        ? 'Añadido al carrito'
-                                                                        : 'Añadir al carrito',
-                                                                    'Añadir al carrito',
-                                                                  ),
-                                                                  options:
-                                                                      FFButtonOptions(
-                                                                    width: double
-                                                                        .infinity,
-                                                                    height:
-                                                                        60.0,
-                                                                    padding: EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            16.0,
-                                                                            0.0,
-                                                                            16.0,
-                                                                            0.0),
-                                                                    iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    color: Color(
-                                                                        0x38007DF9),
-                                                                    textStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall
-                                                                        .override(
-                                                                          font:
-                                                                              GoogleFonts.montserrat(
-                                                                            fontWeight:
-                                                                                FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                            ParamType.Document,
                                                                           ),
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primary,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight: FlutterFlowTheme.of(context)
-                                                                              .titleSmall
-                                                                              .fontWeight,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .titleSmall
-                                                                              .fontStyle,
+                                                                          'refCourse':
+                                                                              serializeParam(
+                                                                            widget.refCourse,
+                                                                            ParamType.Document,
+                                                                          ),
+                                                                          'refUser':
+                                                                              serializeParam(
+                                                                            currentUserReference,
+                                                                            ParamType.DocumentReference,
+                                                                          ),
+                                                                          'type':
+                                                                              serializeParam(
+                                                                            2,
+                                                                            ParamType.int,
+                                                                          ),
+                                                                          'isdemo':
+                                                                              serializeParam(
+                                                                            true,
+                                                                            ParamType.bool,
+                                                                          ),
+                                                                        }.withoutNulls,
+                                                                        extra: <String,
+                                                                            dynamic>{
+                                                                          'refExamination':
+                                                                              _model.refExamenMobil,
+                                                                          'refCourse':
+                                                                              widget.refCourse,
+                                                                          kTransitionInfoKey:
+                                                                              TransitionInfo(
+                                                                            hasTransition:
+                                                                                true,
+                                                                            transitionType:
+                                                                                PageTransitionType.fade,
+                                                                            duration:
+                                                                                Duration(milliseconds: 0),
+                                                                          ),
+                                                                        },
+                                                                      );
+
+                                                                      var registerSimulatorRecordReference = RegisterSimulatorRecord
+                                                                          .collection
+                                                                          .doc();
+                                                                      await registerSimulatorRecordReference
+                                                                          .set({
+                                                                        ...createRegisterSimulatorRecordData(
+                                                                          uidUser:
+                                                                              currentUserReference?.id,
+                                                                          uidCourse: widget
+                                                                              .refCourse
+                                                                              ?.reference
+                                                                              .id,
                                                                         ),
-                                                                    elevation:
-                                                                        0.0,
-                                                                    borderSide:
-                                                                        BorderSide(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primary,
-                                                                    ),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            8.0),
-                                                                    hoverColor:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .primary,
-                                                                    hoverBorderSide:
-                                                                        BorderSide(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primary,
-                                                                    ),
-                                                                    hoverTextColor:
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .secondaryBackground,
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                              FFButtonWidget(
-                                                                onPressed: () {
-                                                                  print(
-                                                                      'Button pressed ...');
+                                                                        ...mapToFirestore(
+                                                                          {
+                                                                            'created_date':
+                                                                                FieldValue.serverTimestamp(),
+                                                                          },
+                                                                        ),
+                                                                      });
+                                                                      _model.refHistoryMobil =
+                                                                          RegisterSimulatorRecord
+                                                                              .getDocumentFromData({
+                                                                        ...createRegisterSimulatorRecordData(
+                                                                          uidUser:
+                                                                              currentUserReference?.id,
+                                                                          uidCourse: widget
+                                                                              .refCourse
+                                                                              ?.reference
+                                                                              .id,
+                                                                        ),
+                                                                        ...mapToFirestore(
+                                                                          {
+                                                                            'created_date':
+                                                                                DateTime.now(),
+                                                                          },
+                                                                        ),
+                                                                      }, registerSimulatorRecordReference);
+
+                                                                      await _model
+                                                                          .refHistoryMobil!
+                                                                          .reference
+                                                                          .update(
+                                                                              createRegisterSimulatorRecordData(
+                                                                        uid: _model
+                                                                            .refHistoryMobil
+                                                                            ?.reference
+                                                                            .id,
+                                                                      ));
+                                                                    }
+                                                                  }
+
+                                                                  safeSetState(
+                                                                      () {});
                                                                 },
-                                                                text:
-                                                                    'S/. ${valueOrDefault<String>(
-                                                                  widget
-                                                                      .refCourse
-                                                                      ?.price,
-                                                                  '0',
-                                                                )}',
+                                                                text: 'Demo',
                                                                 options:
                                                                     FFButtonOptions(
-                                                                  height: 60.0,
+                                                                  width: double
+                                                                      .infinity,
+                                                                  height: 50.0,
                                                                   padding: EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
@@ -2022,7 +1779,7 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                           0.0),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .secondary,
+                                                                      .secondaryBackground,
                                                                   textStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
@@ -2036,8 +1793,8 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                               .titleSmall
                                                                               .fontStyle,
                                                                         ),
-                                                                        color: Colors
-                                                                            .white,
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .secondary,
                                                                         letterSpacing:
                                                                             0.0,
                                                                         fontWeight: FlutterFlowTheme.of(context)
@@ -2049,27 +1806,210 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                       ),
                                                                   elevation:
                                                                       0.0,
+                                                                  borderSide:
+                                                                      BorderSide(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondary,
+                                                                  ),
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
                                                                               8.0),
+                                                                  hoverColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary,
+                                                                  hoverBorderSide:
+                                                                      BorderSide(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primary,
+                                                                  ),
+                                                                  hoverTextColor:
+                                                                      FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryBackground,
                                                                 ),
                                                               ),
-                                                            ].divide(SizedBox(
-                                                                width: 10.0)),
+                                                            ),
+                                                          Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        10.0,
+                                                                        0.0,
+                                                                        0.0),
+                                                            child: Row(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              children: [
+                                                                Flexible(
+                                                                  child:
+                                                                      FFButtonWidget(
+                                                                    onPressed:
+                                                                        () async {
+                                                                      if (!FFAppState().shoppingcart.contains(widget
+                                                                          .refCourse
+                                                                          ?.reference
+                                                                          .id)) {
+                                                                        FFAppState().addToShoppingcart(widget
+                                                                            .refCourse!
+                                                                            .reference
+                                                                            .id);
+                                                                        FFAppState()
+                                                                            .update(() {});
+                                                                      }
+                                                                    },
+                                                                    text: valueOrDefault<
+                                                                        String>(
+                                                                      FFAppState().shoppingcart.contains(widget
+                                                                              .refCourse
+                                                                              ?.reference
+                                                                              .id)
+                                                                          ? 'Añadido al carrito'
+                                                                          : 'Añadir al carrito',
+                                                                      'Añadir al carrito',
+                                                                    ),
+                                                                    options:
+                                                                        FFButtonOptions(
+                                                                      width: double
+                                                                          .infinity,
+                                                                      height:
+                                                                          60.0,
+                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          16.0,
+                                                                          0.0,
+                                                                          16.0,
+                                                                          0.0),
+                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
+                                                                      color: Color(
+                                                                          0x38007DF9),
+                                                                      textStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleSmall
+                                                                          .override(
+                                                                            font:
+                                                                                GoogleFonts.montserrat(
+                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                            ),
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                          ),
+                                                                      elevation:
+                                                                          0.0,
+                                                                      borderSide:
+                                                                          BorderSide(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .primary,
+                                                                      ),
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
+                                                                              8.0),
+                                                                      hoverColor:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .primary,
+                                                                      hoverBorderSide:
+                                                                          BorderSide(
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .primary,
+                                                                      ),
+                                                                      hoverTextColor:
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .secondaryBackground,
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                                FFButtonWidget(
+                                                                  onPressed:
+                                                                      () {
+                                                                    print(
+                                                                        'Button pressed ...');
+                                                                  },
+                                                                  text:
+                                                                      'S/. ${valueOrDefault<String>(
+                                                                    widget
+                                                                        .refCourse
+                                                                        ?.price,
+                                                                    '0',
+                                                                  )}',
+                                                                  options:
+                                                                      FFButtonOptions(
+                                                                    height:
+                                                                        60.0,
+                                                                    padding: EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            16.0,
+                                                                            0.0,
+                                                                            16.0,
+                                                                            0.0),
+                                                                    iconPadding:
+                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondary,
+                                                                    textStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .override(
+                                                                          font:
+                                                                              GoogleFonts.montserrat(
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                          ),
+                                                                          color:
+                                                                              Colors.white,
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .titleSmall
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .titleSmall
+                                                                              .fontStyle,
+                                                                        ),
+                                                                    elevation:
+                                                                        0.0,
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            8.0),
+                                                                  ),
+                                                                ),
+                                                              ].divide(SizedBox(
+                                                                  width: 10.0)),
+                                                            ),
                                                           ),
-                                                        ),
-                                                      ],
+                                                        ],
+                                                      ),
                                                     ),
-                                                  ),
-                                                );
-                                              },
+                                                  );
+                                                },
+                                              ),
                                             ),
-                                          ),
-                                        );
-                                      },
-                                    ),
-                                ],
+                                          );
+                                        },
+                                      ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
