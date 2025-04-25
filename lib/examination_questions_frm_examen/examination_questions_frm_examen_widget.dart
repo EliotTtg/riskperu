@@ -627,89 +627,13 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                             ),
                                                                       ),
                                                                       Text(
-                                                                        valueOrDefault<
-                                                                            String>(
+                                                                        '${valueOrDefault<String>(
                                                                           containerDetallesResultadosRecordList
                                                                               .firstOrNull
-                                                                              ?.respuestasCorrectas
+                                                                              ?.porcentaje
                                                                               .toString(),
                                                                           '0',
-                                                                        ),
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              font: GoogleFonts.montserrat(
-                                                                                fontWeight: FontWeight.w600,
-                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                              ),
-                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w600,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                      ),
-                                                                    ].divide(SizedBox(
-                                                                        height:
-                                                                            10.0)),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            Flexible(
-                                                              child: Container(
-                                                                width: double
-                                                                    .infinity,
-                                                                decoration:
-                                                                    BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryBackground,
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              4.0),
-                                                                  border: Border
-                                                                      .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .alternate,
-                                                                  ),
-                                                                ),
-                                                                child: Padding(
-                                                                  padding:
-                                                                      EdgeInsets
-                                                                          .all(
-                                                                              10.0),
-                                                                  child: Column(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    children: [
-                                                                      Text(
-                                                                        'Incorrectas',
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              font: GoogleFonts.montserrat(
-                                                                                fontWeight: FontWeight.w600,
-                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                              ),
-                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                              fontSize: 14.0,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w600,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                      ),
-                                                                      Text(
-                                                                        valueOrDefault<
-                                                                            String>(
-                                                                          containerDetallesResultadosRecordList
-                                                                              .firstOrNull
-                                                                              ?.respuestasIncorrectas
-                                                                              .toString(),
-                                                                          '0',
-                                                                        ),
+                                                                        )}%',
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
@@ -909,89 +833,13 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                             ),
                                                                       ),
                                                                       Text(
-                                                                        valueOrDefault<
-                                                                            String>(
+                                                                        '${valueOrDefault<String>(
                                                                           containerDetallesResultadosRecordList
                                                                               .firstOrNull
-                                                                              ?.respuestasCorrectas
+                                                                              ?.porcentaje
                                                                               .toString(),
                                                                           '0',
-                                                                        ),
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              font: GoogleFonts.montserrat(
-                                                                                fontWeight: FontWeight.w600,
-                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                              ),
-                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w600,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                      ),
-                                                                    ].divide(SizedBox(
-                                                                        height:
-                                                                            10.0)),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            Flexible(
-                                                              child: Container(
-                                                                width: double
-                                                                    .infinity,
-                                                                decoration:
-                                                                    BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryBackground,
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              4.0),
-                                                                  border: Border
-                                                                      .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .alternate,
-                                                                  ),
-                                                                ),
-                                                                child: Padding(
-                                                                  padding:
-                                                                      EdgeInsets
-                                                                          .all(
-                                                                              10.0),
-                                                                  child: Column(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    children: [
-                                                                      Text(
-                                                                        'Incorrectas',
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              font: GoogleFonts.montserrat(
-                                                                                fontWeight: FontWeight.w600,
-                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                              ),
-                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                              fontSize: 14.0,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w600,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                      ),
-                                                                      Text(
-                                                                        valueOrDefault<
-                                                                            String>(
-                                                                          containerDetallesResultadosRecordList
-                                                                              .firstOrNull
-                                                                              ?.respuestasIncorrectas
-                                                                              .toString(),
-                                                                          '0',
-                                                                        ),
+                                                                        )}%',
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
@@ -1191,89 +1039,13 @@ class _ExaminationQuestionsFrmExamenWidgetState
                                                                             ),
                                                                       ),
                                                                       Text(
-                                                                        valueOrDefault<
-                                                                            String>(
+                                                                        '${valueOrDefault<String>(
                                                                           containerDetallesResultadosRecordList
                                                                               .firstOrNull
-                                                                              ?.respuestasCorrectas
+                                                                              ?.porcentaje
                                                                               .toString(),
                                                                           '0',
-                                                                        ),
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              font: GoogleFonts.montserrat(
-                                                                                fontWeight: FontWeight.w600,
-                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                              ),
-                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w600,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                      ),
-                                                                    ].divide(SizedBox(
-                                                                        height:
-                                                                            10.0)),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            Flexible(
-                                                              child: Container(
-                                                                width: double
-                                                                    .infinity,
-                                                                decoration:
-                                                                    BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryBackground,
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              4.0),
-                                                                  border: Border
-                                                                      .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .alternate,
-                                                                  ),
-                                                                ),
-                                                                child: Padding(
-                                                                  padding:
-                                                                      EdgeInsets
-                                                                          .all(
-                                                                              10.0),
-                                                                  child: Column(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    children: [
-                                                                      Text(
-                                                                        'Incorrectas',
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              font: GoogleFonts.montserrat(
-                                                                                fontWeight: FontWeight.w600,
-                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                              ),
-                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                              fontSize: 14.0,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w600,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                      ),
-                                                                      Text(
-                                                                        valueOrDefault<
-                                                                            String>(
-                                                                          containerDetallesResultadosRecordList
-                                                                              .firstOrNull
-                                                                              ?.respuestasIncorrectas
-                                                                              .toString(),
-                                                                          '0',
-                                                                        ),
+                                                                        )}%',
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(

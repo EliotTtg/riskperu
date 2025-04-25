@@ -154,8 +154,8 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .montserrat(
+                                                          font:
+                                                              GoogleFonts.glory(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
