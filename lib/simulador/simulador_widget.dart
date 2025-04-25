@@ -999,7 +999,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                                             listViewCoursesRecord.name,
                                                                                             maxLines: 2,
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                  font: GoogleFonts.montserrat(
+                                                                                                  font: GoogleFonts.glory(
                                                                                                     fontWeight: FontWeight.w600,
                                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                                   ),
