@@ -268,7 +268,6 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                         text: 'Lo más Vendido',
                                                         options:
                                                             FFButtonOptions(
-                                                          height: 30.0,
                                                           padding:
                                                               EdgeInsets.all(
                                                                   10.0),
@@ -300,7 +299,7 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                     color: Colors
                                                                         .white,
                                                                     fontSize:
-                                                                        14.0,
+                                                                        10.0,
                                                                     letterSpacing:
                                                                         0.0,
                                                                     fontWeight:
