@@ -3,6 +3,7 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/from_result_examination/from_result_examination_widget.dart';
 import '/pages/from_result_simulator/from_result_simulator_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/header_mobil/header_mobil_widget.dart';
@@ -1495,45 +1496,82 @@ class _ExaminationQuestionsViewWidgetState
                                                                                           },
                                                                                         );
                                                                                       } else {
-                                                                                        context.pushNamed(
-                                                                                          ExaminationQuestionsFinalWidget.routeName,
-                                                                                          queryParameters: {
-                                                                                            'refExamination': serializeParam(
-                                                                                              containerExamenesRecord,
-                                                                                              ParamType.Document,
-                                                                                            ),
-                                                                                            'refResult': serializeParam(
-                                                                                              _model.refResult,
-                                                                                              ParamType.Document,
-                                                                                            ),
-                                                                                            'refCourse': serializeParam(
-                                                                                              widget.refCourse,
-                                                                                              ParamType.Document,
-                                                                                            ),
-                                                                                            'refUser': serializeParam(
-                                                                                              currentUserReference,
-                                                                                              ParamType.DocumentReference,
-                                                                                            ),
-                                                                                            'type': serializeParam(
-                                                                                              widget.type,
-                                                                                              ParamType.int,
-                                                                                            ),
-                                                                                            'isdemo': serializeParam(
-                                                                                              widget.isdemo,
-                                                                                              ParamType.bool,
-                                                                                            ),
-                                                                                          }.withoutNulls,
-                                                                                          extra: <String, dynamic>{
-                                                                                            'refExamination': containerExamenesRecord,
-                                                                                            'refResult': _model.refResult,
-                                                                                            'refCourse': widget.refCourse,
-                                                                                            kTransitionInfoKey: TransitionInfo(
-                                                                                              hasTransition: true,
-                                                                                              transitionType: PageTransitionType.fade,
-                                                                                              duration: Duration(milliseconds: 0),
-                                                                                            ),
-                                                                                          },
-                                                                                        );
+                                                                                        if (functions.tiempoRestanteExamen(containerResultadosRecord!.fechaInicioExamen!, widget.refExamination!.tiempoLimite).toString() == '0') {
+                                                                                          await actions.actualizarResultadoExamen(
+                                                                                            containerResultadosRecord.reference.id,
+                                                                                          );
+                                                                                          await actions.deleteRegister(
+                                                                                            widget.refExamination!.reference.id,
+                                                                                            widget.refUser!.id,
+                                                                                            widget.refCourse!.reference.id,
+                                                                                          );
+                                                                                          _model.resultadoFinalBien2 = await ResultadosRecord.getDocumentOnce(containerResultadosRecord.reference);
+                                                                                          await showDialog(
+                                                                                            context: context,
+                                                                                            builder: (dialogContext) {
+                                                                                              return Dialog(
+                                                                                                elevation: 0,
+                                                                                                insetPadding: EdgeInsets.zero,
+                                                                                                backgroundColor: Colors.transparent,
+                                                                                                alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                                                child: GestureDetector(
+                                                                                                  onTap: () {
+                                                                                                    FocusScope.of(dialogContext).unfocus();
+                                                                                                    FocusManager.instance.primaryFocus?.unfocus();
+                                                                                                  },
+                                                                                                  child: FromResultExaminationWidget(
+                                                                                                    refResult: _model.resultadoFinalBien2!,
+                                                                                                    refUser: widget.refUser!,
+                                                                                                    refExamen: widget.refExamination!,
+                                                                                                    refCourse: widget.refCourse!,
+                                                                                                    type: widget.type!,
+                                                                                                    isdemo: widget.isdemo!,
+                                                                                                  ),
+                                                                                                ),
+                                                                                              );
+                                                                                            },
+                                                                                          );
+                                                                                        } else {
+                                                                                          context.pushNamed(
+                                                                                            ExaminationQuestionsFinalWidget.routeName,
+                                                                                            queryParameters: {
+                                                                                              'refExamination': serializeParam(
+                                                                                                containerExamenesRecord,
+                                                                                                ParamType.Document,
+                                                                                              ),
+                                                                                              'refResult': serializeParam(
+                                                                                                _model.refResult,
+                                                                                                ParamType.Document,
+                                                                                              ),
+                                                                                              'refCourse': serializeParam(
+                                                                                                widget.refCourse,
+                                                                                                ParamType.Document,
+                                                                                              ),
+                                                                                              'refUser': serializeParam(
+                                                                                                currentUserReference,
+                                                                                                ParamType.DocumentReference,
+                                                                                              ),
+                                                                                              'type': serializeParam(
+                                                                                                widget.type,
+                                                                                                ParamType.int,
+                                                                                              ),
+                                                                                              'isdemo': serializeParam(
+                                                                                                widget.isdemo,
+                                                                                                ParamType.bool,
+                                                                                              ),
+                                                                                            }.withoutNulls,
+                                                                                            extra: <String, dynamic>{
+                                                                                              'refExamination': containerExamenesRecord,
+                                                                                              'refResult': _model.refResult,
+                                                                                              'refCourse': widget.refCourse,
+                                                                                              kTransitionInfoKey: TransitionInfo(
+                                                                                                hasTransition: true,
+                                                                                                transitionType: PageTransitionType.fade,
+                                                                                                duration: Duration(milliseconds: 0),
+                                                                                              ),
+                                                                                            },
+                                                                                          );
+                                                                                        }
                                                                                       }
 
                                                                                       await Future.delayed(const Duration(milliseconds: 1000));

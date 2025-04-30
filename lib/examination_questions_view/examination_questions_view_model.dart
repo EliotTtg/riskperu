@@ -56,6 +56,8 @@ class ExaminationQuestionsViewModel
   RegisterSimulatorRecord? refRegister;
   // Stores action output result for [Backend Call - Read Document] action in Button widget.
   ResultadosRecord? refResultCourse2;
+  // Stores action output result for [Backend Call - Read Document] action in Button widget.
+  ResultadosRecord? resultadoFinalBien2;
 
   @override
   void initState(BuildContext context) {
