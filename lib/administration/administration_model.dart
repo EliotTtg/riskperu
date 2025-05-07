@@ -120,6 +120,15 @@ class AdministrationModel extends FlutterFlowModel<AdministrationWidget> {
   // State field(s) for PaginatedDataTable widget.
   final paginatedDataTableController9 =
       FlutterFlowDataTableController<CoursesRecord>();
+  // State field(s) for txtbuscarBlogs widget.
+  FocusNode? txtbuscarBlogsFocusNode;
+  TextEditingController? txtbuscarBlogsTextController;
+  String? Function(BuildContext, String?)?
+      txtbuscarBlogsTextControllerValidator;
+  List<BlogsRecord> simpleSearchResults10 = [];
+  // State field(s) for PaginatedDataTable widget.
+  final paginatedDataTableController10 =
+      FlutterFlowDataTableController<BlogsRecord>();
 
   /// Query cache managers for this widget.
 
@@ -185,6 +194,10 @@ class AdministrationModel extends FlutterFlowModel<AdministrationWidget> {
     txtbuscarCursoTextController2?.dispose();
 
     paginatedDataTableController9.dispose();
+    txtbuscarBlogsFocusNode?.dispose();
+    txtbuscarBlogsTextController?.dispose();
+
+    paginatedDataTableController10.dispose();
 
     /// Dispose query cache managers for this widget.
 

@@ -35,6 +35,7 @@ import 'schema/qualification_record.dart';
 import 'schema/respuesta_state_record.dart';
 import 'schema/exam_groups_record.dart';
 import 'schema/register_simulator_record.dart';
+import 'schema/blogs_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -73,6 +74,7 @@ export 'schema/qualification_record.dart';
 export 'schema/respuesta_state_record.dart';
 export 'schema/exam_groups_record.dart';
 export 'schema/register_simulator_record.dart';
+export 'schema/blogs_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -1179,6 +1181,43 @@ Future<List<RegisterSimulatorRecord>> queryRegisterSimulatorRecordOnce({
     queryCollectionOnce(
       RegisterSimulatorRecord.collection,
       RegisterSimulatorRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query BlogsRecords (as a Stream and as a Future).
+Future<int> queryBlogsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      BlogsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<BlogsRecord>> queryBlogsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      BlogsRecord.collection,
+      BlogsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<BlogsRecord>> queryBlogsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      BlogsRecord.collection,
+      BlogsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

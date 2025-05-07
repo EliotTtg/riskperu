@@ -462,6 +462,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                   ParamType.Document,
                 ),
               ),
+            ),
+            FFRoute(
+              name: BlogsWidget.routeName,
+              path: BlogsWidget.routePath,
+              requireAuth: true,
+              builder: (context, params) => BlogsWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

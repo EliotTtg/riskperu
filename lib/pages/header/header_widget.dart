@@ -417,7 +417,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                                     20.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Simulador',
+                                                          'Simuladores',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -716,6 +716,118 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                                 onExit: ((event) async {
                                                   safeSetState(() => _model
                                                           .mouseRegionHovered5 =
+                                                      false);
+                                                }),
+                                              ),
+                                              MouseRegion(
+                                                opaque: false,
+                                                cursor: MouseCursor.defer ??
+                                                    MouseCursor.defer,
+                                                child: InkWell(
+                                                  splashColor:
+                                                      Colors.transparent,
+                                                  focusColor:
+                                                      Colors.transparent,
+                                                  hoverColor:
+                                                      Colors.transparent,
+                                                  highlightColor:
+                                                      Colors.transparent,
+                                                  onTap: () async {
+                                                    context.pushNamed(
+                                                      BlogsWidget.routeName,
+                                                      extra: <String, dynamic>{
+                                                        kTransitionInfoKey:
+                                                            TransitionInfo(
+                                                          hasTransition: true,
+                                                          transitionType:
+                                                              PageTransitionType
+                                                                  .fade,
+                                                          duration: Duration(
+                                                              milliseconds: 0),
+                                                        ),
+                                                      },
+                                                    );
+                                                  },
+                                                  child: Container(
+                                                    decoration: BoxDecoration(),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    20.0,
+                                                                    0.0,
+                                                                    20.0,
+                                                                    0.0),
+                                                        child: Text(
+                                                          'Blogs',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .montserrat(
+                                                                  fontWeight: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontWeight,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                color:
+                                                                    valueOrDefault<
+                                                                        Color>(
+                                                                  () {
+                                                                    if (widget
+                                                                            .state ==
+                                                                        6) {
+                                                                      return FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary;
+                                                                    } else if (_model
+                                                                        .mouseRegionHovered6) {
+                                                                      return FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primary;
+                                                                    } else {
+                                                                      return FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText;
+                                                                    }
+                                                                  }(),
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
+                                                                ),
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                                onEnter: ((event) async {
+                                                  safeSetState(() => _model
+                                                          .mouseRegionHovered6 =
+                                                      true);
+                                                }),
+                                                onExit: ((event) async {
+                                                  safeSetState(() => _model
+                                                          .mouseRegionHovered6 =
                                                       false);
                                                 }),
                                               ),
