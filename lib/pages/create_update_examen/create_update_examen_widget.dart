@@ -156,7 +156,8 @@ class _CreateUpdateExamenWidgetState extends State<CreateUpdateExamenWidget> {
                                     width: 146.0,
                                     height: 3.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFDB0B17),
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                       borderRadius: BorderRadius.circular(3.0),
                                     ),
                                   ),
