@@ -557,7 +557,7 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                           fit: BoxFit.contain,
                                                           image:
                                                               CachedNetworkImageProvider(
-                                                            _model.image!,
+                                                            '${_model.image}',
                                                           ),
                                                         ),
                                                         borderRadius:

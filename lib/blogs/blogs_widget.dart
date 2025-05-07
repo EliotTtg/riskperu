@@ -329,126 +329,132 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                                           }
                                                                         },
                                                                       ),
-                                                                      Container(
-                                                                        width: double
-                                                                            .infinity,
-                                                                        decoration:
-                                                                            BoxDecoration(),
+                                                                      Padding(
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            10.0,
+                                                                            0.0,
+                                                                            0.0),
                                                                         child:
-                                                                            Column(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.spaceBetween,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children:
-                                                                              [
-                                                                            Column(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                                                              children: [
-                                                                                Row(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  children: [
-                                                                                    Container(
-                                                                                      width: 6.0,
-                                                                                      height: 32.0,
-                                                                                      decoration: BoxDecoration(
-                                                                                        color: FlutterFlowTheme.of(context).primary,
+                                                                            Container(
+                                                                          width:
+                                                                              double.infinity,
+                                                                          decoration:
+                                                                              BoxDecoration(),
+                                                                          child:
+                                                                              Column(
+                                                                            mainAxisSize:
+                                                                                MainAxisSize.max,
+                                                                            mainAxisAlignment:
+                                                                                MainAxisAlignment.spaceBetween,
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children:
+                                                                                [
+                                                                              Column(
+                                                                                mainAxisSize: MainAxisSize.max,
+                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                children: [
+                                                                                  Row(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    children: [
+                                                                                      Container(
+                                                                                        width: 6.0,
+                                                                                        height: 32.0,
+                                                                                        decoration: BoxDecoration(
+                                                                                          color: FlutterFlowTheme.of(context).primary,
+                                                                                        ),
                                                                                       ),
-                                                                                    ),
-                                                                                    Text(
-                                                                                      '${dateTimeFormat(
-                                                                                        "d \'de\' MMMM, y",
-                                                                                        listViewBlogsRecord.publicationDate,
-                                                                                        locale: FFLocalizations.of(context).languageCode,
-                                                                                      )} - ${listViewBlogsRecord.category}',
-                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                            font: GoogleFonts.montserrat(
+                                                                                      Text(
+                                                                                        '${dateTimeFormat(
+                                                                                          "d \'de\' MMMM, y",
+                                                                                          listViewBlogsRecord.publicationDate,
+                                                                                          locale: FFLocalizations.of(context).languageCode,
+                                                                                        )} - ${listViewBlogsRecord.category}',
+                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                              font: GoogleFonts.montserrat(
+                                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                              ),
+                                                                                              letterSpacing: 0.0,
                                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                             ),
-                                                                                            letterSpacing: 0.0,
-                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                      ),
+                                                                                    ].divide(SizedBox(width: 10.0)),
+                                                                                  ),
+                                                                                  Text(
+                                                                                    valueOrDefault<String>(
+                                                                                      listViewBlogsRecord.title,
+                                                                                      '-',
+                                                                                    ),
+                                                                                    maxLines: 2,
+                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FontWeight.w600,
                                                                                             fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                           ),
-                                                                                    ),
-                                                                                  ].divide(SizedBox(width: 10.0)),
-                                                                                ),
-                                                                                Text(
-                                                                                  valueOrDefault<String>(
-                                                                                    listViewBlogsRecord.title,
-                                                                                    '-',
-                                                                                  ),
-                                                                                  maxLines: 2,
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontSize: 24.0,
+                                                                                          letterSpacing: 0.0,
                                                                                           fontWeight: FontWeight.w600,
                                                                                           fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
-                                                                                        fontSize: 24.0,
-                                                                                        letterSpacing: 0.0,
-                                                                                        fontWeight: FontWeight.w600,
-                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                      ),
-                                                                                ),
-                                                                                Text(
-                                                                                  valueOrDefault<String>(
-                                                                                    listViewBlogsRecord.introduction,
-                                                                                    '...',
                                                                                   ),
-                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        font: GoogleFonts.montserrat(
+                                                                                  Text(
+                                                                                    valueOrDefault<String>(
+                                                                                      listViewBlogsRecord.introduction,
+                                                                                      '...',
+                                                                                    ),
+                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                          font: GoogleFonts.montserrat(
+                                                                                            fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                            fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                                          ),
+                                                                                          letterSpacing: 0.0,
                                                                                           fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                           fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                         ),
-                                                                                        letterSpacing: 0.0,
-                                                                                        fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                        fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                      ),
-                                                                                ),
-                                                                              ].divide(SizedBox(height: 10.0)),
-                                                                            ),
-                                                                            FFButtonWidget(
-                                                                              onPressed: () async {
-                                                                                await launchURL(listViewBlogsRecord.visitUrl);
-                                                                              },
-                                                                              text: 'Ver más ',
-                                                                              icon: Icon(
-                                                                                Icons.east,
-                                                                                color: FlutterFlowTheme.of(context).primary,
-                                                                                size: 20.0,
+                                                                                  ),
+                                                                                ].divide(SizedBox(height: 10.0)),
                                                                               ),
-                                                                              options: FFButtonOptions(
-                                                                                height: 40.0,
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                                                                                iconAlignment: IconAlignment.end,
-                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                      font: GoogleFonts.montserrat(
+                                                                              FFButtonWidget(
+                                                                                onPressed: () async {
+                                                                                  await launchURL(listViewBlogsRecord.visitUrl);
+                                                                                },
+                                                                                text: 'Ver más ',
+                                                                                icon: Icon(
+                                                                                  Icons.east,
+                                                                                  color: FlutterFlowTheme.of(context).primary,
+                                                                                  size: 20.0,
+                                                                                ),
+                                                                                options: FFButtonOptions(
+                                                                                  height: 40.0,
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                                                                  iconAlignment: IconAlignment.end,
+                                                                                  iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                        font: GoogleFonts.montserrat(
+                                                                                          fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                        ),
+                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                        letterSpacing: 0.0,
                                                                                         fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
                                                                                         fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                                       ),
-                                                                                      color: FlutterFlowTheme.of(context).primaryText,
-                                                                                      letterSpacing: 0.0,
-                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                                    ),
-                                                                                elevation: 0.0,
-                                                                                borderSide: BorderSide(
-                                                                                  color: Color(0xFFBEBEBE),
+                                                                                  elevation: 0.0,
+                                                                                  borderSide: BorderSide(
+                                                                                    color: Color(0xFFBEBEBE),
+                                                                                  ),
+                                                                                  borderRadius: BorderRadius.circular(8.0),
                                                                                 ),
-                                                                                borderRadius: BorderRadius.circular(8.0),
                                                                               ),
-                                                                            ),
-                                                                          ].divide(SizedBox(height: 10.0)),
+                                                                            ].divide(SizedBox(height: 10.0)),
+                                                                          ),
                                                                         ),
                                                                       ),
-                                                                    ].divide(SizedBox(
-                                                                        height:
-                                                                            10.0)),
+                                                                    ],
                                                                   ),
                                                                 ),
                                                               ),
