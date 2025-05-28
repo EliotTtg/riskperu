@@ -287,20 +287,21 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                           if (((_model.photo != null &&
                                                       _model.photo != '') &&
                                                   ((_model
-                                                              .uploadedLocalFile1
+                                                              .uploadedLocalFile_uploadData4ro
                                                               .bytes
                                                               ?.isNotEmpty ??
                                                           false))) ||
                                               ((_model.photo == null ||
                                                       _model.photo == '') &&
                                                   ((_model
-                                                              .uploadedLocalFile1
+                                                              .uploadedLocalFile_uploadData4ro
                                                               .bytes
                                                               ?.isNotEmpty ??
                                                           false)))) {
                                             safeSetState(() {
-                                              _model.isDataUploading1 = false;
-                                              _model.uploadedLocalFile1 =
+                                              _model.isDataUploading_uploadData4ro =
+                                                  false;
+                                              _model.uploadedLocalFile_uploadData4ro =
                                                   FFUploadedFile(
                                                       bytes: Uint8List.fromList(
                                                           []));
@@ -317,7 +318,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                         m.storagePath,
                                                         context))) {
                                               safeSetState(() => _model
-                                                  .isDataUploading1 = true);
+                                                      .isDataUploading_uploadData4ro =
+                                                  true);
                                               var selectedUploadedFiles =
                                                   <FFUploadedFile>[];
 
@@ -342,13 +344,14 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                             ))
                                                         .toList();
                                               } finally {
-                                                _model.isDataUploading1 = false;
+                                                _model.isDataUploading_uploadData4ro =
+                                                    false;
                                               }
                                               if (selectedUploadedFiles
                                                       .length ==
                                                   selectedMedia.length) {
                                                 safeSetState(() {
-                                                  _model.uploadedLocalFile1 =
+                                                  _model.uploadedLocalFile_uploadData4ro =
                                                       selectedUploadedFiles
                                                           .first;
                                                 });
@@ -364,14 +367,14 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                             if (((_model.photo != null &&
                                                         _model.photo != '') &&
                                                     ((_model
-                                                                .uploadedLocalFile1
+                                                                .uploadedLocalFile_uploadData4ro
                                                                 .bytes
                                                                 ?.isNotEmpty ??
                                                             false))) ||
                                                 ((_model.photo == null ||
                                                         _model.photo == '') &&
                                                     ((_model
-                                                                .uploadedLocalFile1
+                                                                .uploadedLocalFile_uploadData4ro
                                                                 .bytes
                                                                 ?.isNotEmpty ??
                                                             false)))) {
@@ -385,7 +388,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                   image: DecorationImage(
                                                     fit: BoxFit.contain,
                                                     image: Image.memory(
-                                                      _model.uploadedLocalFile1
+                                                      _model.uploadedLocalFile_uploadData4ro
                                                               .bytes ??
                                                           Uint8List.fromList(
                                                               []),
@@ -3867,10 +3870,10 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     widget.refCourses
                                                         ?.uidTechear) &&
                                                 !(((_model.photo == null || _model.photo == '') &&
-                                                        ((_model.uploadedLocalFile1.bytes?.isNotEmpty ??
+                                                        ((_model.uploadedLocalFile_uploadData4ro.bytes?.isNotEmpty ??
                                                                 false))) ||
                                                     ((_model.photo != null && _model.photo != '') &&
-                                                        ((_model.uploadedLocalFile1.bytes?.isNotEmpty ?? false)))) &&
+                                                        ((_model.uploadedLocalFile_uploadData4ro.bytes?.isNotEmpty ?? false)))) &&
                                                 (_model.state == widget.refCourses?.state))
                                             ? null
                                             : () async {
@@ -3922,7 +3925,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                         widget.refCourses
                                                             ?.state))) {
                                                   if ((_model
-                                                              .uploadedLocalFile1
+                                                              .uploadedLocalFile_uploadData4ro
                                                               .bytes
                                                               ?.isNotEmpty ??
                                                           false)) {
@@ -3936,7 +3939,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                     }
                                                     {
                                                       safeSetState(() => _model
-                                                              .isDataUploading2 =
+                                                              .isDataUploading_uploadDataDam =
                                                           true);
                                                       var selectedUploadedFiles =
                                                           <FFUploadedFile>[];
@@ -3946,12 +3949,12 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                           <String>[];
                                                       try {
                                                         selectedUploadedFiles = _model
-                                                                .uploadedLocalFile1
+                                                                .uploadedLocalFile_uploadData4ro
                                                                 .bytes!
                                                                 .isNotEmpty
                                                             ? [
                                                                 _model
-                                                                    .uploadedLocalFile1
+                                                                    .uploadedLocalFile_uploadData4ro
                                                               ]
                                                             : <FFUploadedFile>[];
                                                         selectedMedia =
@@ -3972,7 +3975,7 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                                 .map((u) => u!)
                                                                 .toList();
                                                       } finally {
-                                                        _model.isDataUploading2 =
+                                                        _model.isDataUploading_uploadDataDam =
                                                             false;
                                                       }
                                                       if (selectedUploadedFiles
@@ -3983,10 +3986,10 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                               selectedMedia
                                                                   .length) {
                                                         safeSetState(() {
-                                                          _model.uploadedLocalFile2 =
+                                                          _model.uploadedLocalFile_uploadDataDam =
                                                               selectedUploadedFiles
                                                                   .first;
-                                                          _model.uploadedFileUrl2 =
+                                                          _model.uploadedFileUrl_uploadDataDam =
                                                               downloadUrls
                                                                   .first;
                                                         });
@@ -3996,8 +3999,8 @@ class _CreateUpdateCoursesWidgetState extends State<CreateUpdateCoursesWidget> {
                                                       }
                                                     }
 
-                                                    _model.photo =
-                                                        _model.uploadedFileUrl2;
+                                                    _model.photo = _model
+                                                        .uploadedFileUrl_uploadDataDam;
                                                     safeSetState(() {});
                                                   }
                                                   if (widget.refCourses !=

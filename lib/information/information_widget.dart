@@ -257,7 +257,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                       (context) {
                                                                     if ((currentUserPhoto !=
                                                                                 '') &&
-                                                                        ((_model.uploadedLocalFile1.bytes?.isEmpty ??
+                                                                        ((_model.uploadedLocalFile_uploadDataQ1f.bytes?.isEmpty ??
                                                                                 true))) {
                                                                       return Container(
                                                                         width:
@@ -282,7 +282,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                               .cover,
                                                                         ),
                                                                       );
-                                                                    } else if ((_model.uploadedLocalFile1.bytes?.isNotEmpty ??
+                                                                    } else if ((_model.uploadedLocalFile_uploadDataQ1f.bytes?.isNotEmpty ??
                                                                             false)) {
                                                                       return Container(
                                                                         width:
@@ -298,7 +298,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                         ),
                                                                         child: Image
                                                                             .memory(
-                                                                          _model.uploadedLocalFile1.bytes ??
+                                                                          _model.uploadedLocalFile_uploadDataQ1f.bytes ??
                                                                               Uint8List.fromList([]),
                                                                           fit: BoxFit
                                                                               .fitWidth,
@@ -332,7 +332,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                       (context) {
                                                                     if ((currentUserPhoto !=
                                                                                 '') &&
-                                                                        ((_model.uploadedLocalFile1.bytes?.isEmpty ??
+                                                                        ((_model.uploadedLocalFile_uploadDataQ1f.bytes?.isEmpty ??
                                                                                 true))) {
                                                                       return FlutterFlowIconButton(
                                                                         borderColor:
@@ -362,7 +362,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                               () {});
                                                                         },
                                                                       );
-                                                                    } else if ((_model.uploadedLocalFile1.bytes?.isNotEmpty ??
+                                                                    } else if ((_model.uploadedLocalFile_uploadDataQ1f.bytes?.isNotEmpty ??
                                                                             false)) {
                                                                       return FlutterFlowIconButton(
                                                                         borderColor:
@@ -388,11 +388,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                             () async {
                                                                           safeSetState(
                                                                               () {
-                                                                            _model.isDataUploading2 =
+                                                                            _model.isDataUploading_uploadDataHng =
                                                                                 false;
-                                                                            _model.uploadedLocalFile2 =
+                                                                            _model.uploadedLocalFile_uploadDataHng =
                                                                                 FFUploadedFile(bytes: Uint8List.fromList([]));
-                                                                            _model.uploadedFileUrl2 =
+                                                                            _model.uploadedFileUrl_uploadDataHng =
                                                                                 '';
                                                                           });
                                                                         },
@@ -434,7 +434,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                           if (selectedMedia != null &&
                                                                               selectedMedia.every((m) => validateFileFormat(m.storagePath, context))) {
                                                                             safeSetState(() =>
-                                                                                _model.isDataUploading1 = true);
+                                                                                _model.isDataUploading_uploadDataQ1f = true);
                                                                             var selectedUploadedFiles =
                                                                                 <FFUploadedFile>[];
 
@@ -449,12 +449,12 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                       ))
                                                                                   .toList();
                                                                             } finally {
-                                                                              _model.isDataUploading1 = false;
+                                                                              _model.isDataUploading_uploadDataQ1f = false;
                                                                             }
                                                                             if (selectedUploadedFiles.length ==
                                                                                 selectedMedia.length) {
                                                                               safeSetState(() {
-                                                                                _model.uploadedLocalFile1 = selectedUploadedFiles.first;
+                                                                                _model.uploadedLocalFile_uploadDataQ1f = selectedUploadedFiles.first;
                                                                               });
                                                                             } else {
                                                                               safeSetState(() {});
@@ -1311,13 +1311,13 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                     return;
                                                                   }
                                                                   if ((_model
-                                                                              .uploadedLocalFile1
+                                                                              .uploadedLocalFile_uploadDataQ1f
                                                                               .bytes
                                                                               ?.isNotEmpty ??
                                                                           false)) {
                                                                     {
                                                                       safeSetState(() =>
-                                                                          _model.isDataUploading2 =
+                                                                          _model.isDataUploading_uploadDataHng =
                                                                               true);
                                                                       var selectedUploadedFiles =
                                                                           <FFUploadedFile>[];
@@ -1326,9 +1326,9 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                       var downloadUrls =
                                                                           <String>[];
                                                                       try {
-                                                                        selectedUploadedFiles = _model.uploadedLocalFile1.bytes!.isNotEmpty
+                                                                        selectedUploadedFiles = _model.uploadedLocalFile_uploadDataQ1f.bytes!.isNotEmpty
                                                                             ? [
-                                                                                _model.uploadedLocalFile1
+                                                                                _model.uploadedLocalFile_uploadDataQ1f
                                                                               ]
                                                                             : <FFUploadedFile>[];
                                                                         selectedMedia =
@@ -1350,7 +1350,7 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                                 u!)
                                                                             .toList();
                                                                       } finally {
-                                                                        _model.isDataUploading2 =
+                                                                        _model.isDataUploading_uploadDataHng =
                                                                             false;
                                                                       }
                                                                       if (selectedUploadedFiles.length ==
@@ -1360,9 +1360,9 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                               selectedMedia.length) {
                                                                         safeSetState(
                                                                             () {
-                                                                          _model.uploadedLocalFile2 =
+                                                                          _model.uploadedLocalFile_uploadDataHng =
                                                                               selectedUploadedFiles.first;
-                                                                          _model.uploadedFileUrl2 =
+                                                                          _model.uploadedFileUrl_uploadDataHng =
                                                                               downloadUrls.first;
                                                                         });
                                                                       } else {
@@ -1377,11 +1377,11 @@ class _InformationWidgetState extends State<InformationWidget> {
                                                                             createUsersRecordData(
                                                                       photoUrl:
                                                                           _model
-                                                                              .uploadedFileUrl2,
+                                                                              .uploadedFileUrl_uploadDataHng,
                                                                     ));
                                                                     _model.photo =
                                                                         _model
-                                                                            .uploadedFileUrl2;
+                                                                            .uploadedFileUrl_uploadDataHng;
                                                                     safeSetState(
                                                                         () {});
                                                                   }

@@ -16,10 +16,10 @@ class CreateUpdateBlogsModel extends FlutterFlowModel<CreateUpdateBlogsWidget> {
   ///  State fields for stateful widgets in this component.
 
   final formKey = GlobalKey<FormState>();
-  bool isDataUploading = false;
-  FFUploadedFile uploadedLocalFile =
+  bool isDataUploading_uploadDataVup = false;
+  FFUploadedFile uploadedLocalFile_uploadDataVup =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl = '';
+  String uploadedFileUrl_uploadDataVup = '';
 
   // State field(s) for txturlvideo widget.
   FocusNode? txturlvideoFocusNode;

@@ -3280,9 +3280,6 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                         icon: FaIcon(
                                                           FontAwesomeIcons
                                                               .caretDown,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primary,
                                                           size: 15.0,
                                                         ),
                                                         options:
@@ -3304,6 +3301,10 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                       0.0,
                                                                       0.0,
                                                                       0.0),
+                                                          iconColor:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .primary,
                                                           color:
                                                               Color(0x00DB0B17),
                                                           textStyle:
@@ -5444,10 +5445,6 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                       icon: FaIcon(
                                                         FontAwesomeIcons
                                                             .caretDown,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
                                                         size: 15.0,
                                                       ),
                                                       options: FFButtonOptions(
@@ -5468,6 +5465,10 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                     0.0,
                                                                     0.0,
                                                                     0.0),
+                                                        iconColor:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
                                                         color:
                                                             Color(0x00DB0B17),
                                                         textStyle:

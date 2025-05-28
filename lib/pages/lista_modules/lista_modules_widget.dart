@@ -254,9 +254,6 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                               text: 'Agregar Modulo',
                                               icon: Icon(
                                                 Icons.add_circle_outline,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
                                                 size: 12.0,
                                               ),
                                               options: FFButtonOptions(
@@ -268,6 +265,9 @@ class _ListaModulesWidgetState extends State<ListaModulesWidget> {
                                                     EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
+                                                iconColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,

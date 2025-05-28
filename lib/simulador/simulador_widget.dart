@@ -9,7 +9,7 @@ import '/flutter_flow/form_field_controller.dart';
 import '/pages/empty_simulator/empty_simulator_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import '/pages/header_mobil/header_mobil_widget.dart';
+import '/pages/header_mobil_cerrar_sesion/header_mobil_cerrar_sesion_widget.dart';
 import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:collection/collection.dart';
@@ -92,9 +92,9 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                         desktop: false,
                       ))
                         wrapWithModel(
-                          model: _model.headerMobilModel,
+                          model: _model.headerMobilCerrarSesionModel,
                           updateCallback: () => safeSetState(() {}),
-                          child: HeaderMobilWidget(),
+                          child: HeaderMobilCerrarSesionWidget(),
                         ),
                     ],
                   ),
@@ -1858,7 +1858,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                   width: 100.0,
                                                                   height: 100.0,
                                                                   fit: BoxFit
-                                                                      .fill,
+                                                                      .cover,
                                                                   errorWidget: (context,
                                                                           error,
                                                                           stackTrace) =>
@@ -1870,7 +1870,7 @@ class _SimuladorWidgetState extends State<SimuladorWidget> {
                                                                     height:
                                                                         100.0,
                                                                     fit: BoxFit
-                                                                        .fill,
+                                                                        .cover,
                                                                   ),
                                                                 ),
                                                               ),

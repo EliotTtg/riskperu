@@ -10,7 +10,7 @@ import '/pages/course_calification/course_calification_widget.dart';
 import '/pages/empty_course/empty_course_widget.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
-import '/pages/header_mobil/header_mobil_widget.dart';
+import '/pages/header_mobil_cerrar_sesion/header_mobil_cerrar_sesion_widget.dart';
 import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:collection/collection.dart';
@@ -93,9 +93,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                         desktop: false,
                       ))
                         wrapWithModel(
-                          model: _model.headerMobilModel,
+                          model: _model.headerMobilCerrarSesionModel,
                           updateCallback: () => safeSetState(() {}),
-                          child: HeaderMobilWidget(),
+                          child: HeaderMobilCerrarSesionWidget(),
                         ),
                     ],
                   ),

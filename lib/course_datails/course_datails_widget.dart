@@ -1440,7 +1440,6 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                     ),
                                                                                     icon: FaIcon(
                                                                                       FontAwesomeIcons.caretDown,
-                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                       size: 15.0,
                                                                                     ),
                                                                                     options: FFButtonOptions(
@@ -1448,6 +1447,7 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                       padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                                                                                       iconAlignment: IconAlignment.end,
                                                                                       iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                      iconColor: FlutterFlowTheme.of(context).primary,
                                                                                       color: Color(0x00DB0B17),
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                             font: GoogleFonts.montserrat(
@@ -6065,10 +6065,12 @@ class _CourseDatailsWidgetState extends State<CourseDatailsWidget>
                                                                                                                                             safeSetState(() {});
                                                                                                                                           }
                                                                                                                                         },
-                                                                                                                                        side: BorderSide(
-                                                                                                                                          width: 2,
-                                                                                                                                          color: FlutterFlowTheme.of(context).secondaryText,
-                                                                                                                                        ),
+                                                                                                                                        side: (FlutterFlowTheme.of(context).secondaryText != null)
+                                                                                                                                            ? BorderSide(
+                                                                                                                                                width: 2,
+                                                                                                                                                color: FlutterFlowTheme.of(context).secondaryText,
+                                                                                                                                              )
+                                                                                                                                            : null,
                                                                                                                                         activeColor: FlutterFlowTheme.of(context).accent1,
                                                                                                                                         checkColor: FlutterFlowTheme.of(context).info,
                                                                                                                                       ),

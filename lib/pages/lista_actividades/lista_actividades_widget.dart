@@ -279,9 +279,6 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                               text: 'Agregar Actividad',
                                               icon: Icon(
                                                 Icons.add_circle_outline,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
                                                 size: 12.0,
                                               ),
                                               options: FFButtonOptions(
@@ -293,6 +290,9 @@ class _ListaActividadesWidgetState extends State<ListaActividadesWidget> {
                                                     EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
+                                                iconColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,

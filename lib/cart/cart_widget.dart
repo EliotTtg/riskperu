@@ -871,7 +871,6 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                 text: 'Procede a Pagar',
                                                                                 icon: FaIcon(
                                                                                   FontAwesomeIcons.arrowRight,
-                                                                                  color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   size: 20.0,
                                                                                 ),
                                                                                 options: FFButtonOptions(
@@ -880,6 +879,7 @@ class _CartWidgetState extends State<CartWidget> {
                                                                                   padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                                                                                   iconAlignment: IconAlignment.end,
                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                  iconColor: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                         font: GoogleFonts.montserrat(

@@ -18,35 +18,35 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:text_search/text_search.dart';
-import 'certificates_studients_model.dart';
-export 'certificates_studients_model.dart';
+import 'certificates_studients_mobil_model.dart';
+export 'certificates_studients_mobil_model.dart';
 
-class CertificatesStudientsWidget extends StatefulWidget {
-  const CertificatesStudientsWidget({
+class CertificatesStudientsMobilWidget extends StatefulWidget {
+  const CertificatesStudientsMobilWidget({
     super.key,
     this.uidUser,
   });
 
   final String? uidUser;
 
-  static String routeName = 'CertificatesStudients';
-  static String routePath = 'certificatesStudients';
+  static String routeName = 'CertificatesStudientsMobil';
+  static String routePath = 'certificatesStudientsMobil';
 
   @override
-  State<CertificatesStudientsWidget> createState() =>
-      _CertificatesStudientsWidgetState();
+  State<CertificatesStudientsMobilWidget> createState() =>
+      _CertificatesStudientsMobilWidgetState();
 }
 
-class _CertificatesStudientsWidgetState
-    extends State<CertificatesStudientsWidget> {
-  late CertificatesStudientsModel _model;
+class _CertificatesStudientsMobilWidgetState
+    extends State<CertificatesStudientsMobilWidget> {
+  late CertificatesStudientsMobilModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => CertificatesStudientsModel());
+    _model = createModel(context, () => CertificatesStudientsMobilModel());
 
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
@@ -121,8 +121,7 @@ class _CertificatesStudientsWidgetState
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Container(
-                                    width:
-                                        MediaQuery.sizeOf(context).width * 0.4,
+                                    width: double.infinity,
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
@@ -584,9 +583,7 @@ class _CertificatesStudientsWidgetState
                                           snapshot.data!;
 
                                       return Container(
-                                        width:
-                                            MediaQuery.sizeOf(context).width *
-                                                0.8,
+                                        width: double.infinity,
                                         height: 350.0,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
@@ -898,11 +895,7 @@ class _CertificatesStudientsWidgetState
                                                               ),
                                                             ),
                                                           ),
-                                                          fixedWidth:
-                                                              MediaQuery.sizeOf(
-                                                                          context)
-                                                                      .width *
-                                                                  0.1,
+                                                          fixedWidth: 150.0,
                                                         ),
                                                         DataColumn2(
                                                           label:
@@ -1415,7 +1408,7 @@ class _CertificatesStudientsWidgetState
                                       );
                                     },
                                   ),
-                                ].divide(SizedBox(height: 50.0)),
+                                ].divide(SizedBox(height: 20.0)),
                               ),
                             ),
                           ),

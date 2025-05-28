@@ -176,9 +176,6 @@ class _ListaSessionsWidgetState extends State<ListaSessionsWidget> {
                                               text: 'Agregar Sesión',
                                               icon: Icon(
                                                 Icons.add_circle_outline,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
                                                 size: 12.0,
                                               ),
                                               options: FFButtonOptions(
@@ -190,6 +187,9 @@ class _ListaSessionsWidgetState extends State<ListaSessionsWidget> {
                                                     EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
+                                                iconColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,

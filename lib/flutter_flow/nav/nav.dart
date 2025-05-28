@@ -337,22 +337,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: NotesStudientsWidget.routeName,
               path: NotesStudientsWidget.routePath,
               requireAuth: true,
-              builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'NotesStudients')
-                  : NotesStudientsWidget(),
+              builder: (context, params) => NotesStudientsWidget(),
             ),
             FFRoute(
               name: CertificatesStudientsWidget.routeName,
               path: CertificatesStudientsWidget.routePath,
               requireAuth: true,
-              builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'CertificatesStudients')
-                  : CertificatesStudientsWidget(
-                      uidUser: params.getParam(
-                        'uidUser',
-                        ParamType.String,
-                      ),
-                    ),
+              builder: (context, params) => CertificatesStudientsWidget(
+                uidUser: params.getParam(
+                  'uidUser',
+                  ParamType.String,
+                ),
+              ),
             ),
             FFRoute(
               name: ExaminationQuestionsFrmExamenWidget.routeName,
@@ -468,6 +464,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: BlogsWidget.routePath,
               requireAuth: true,
               builder: (context, params) => BlogsWidget(),
+            ),
+            FFRoute(
+              name: CertificatesStudientsMobilWidget.routeName,
+              path: CertificatesStudientsMobilWidget.routePath,
+              requireAuth: true,
+              builder: (context, params) => params.isEmpty
+                  ? NavBarPage(initialPage: 'CertificatesStudientsMobil')
+                  : CertificatesStudientsMobilWidget(
+                      uidUser: params.getParam(
+                        'uidUser',
+                        ParamType.String,
+                      ),
+                    ),
+            ),
+            FFRoute(
+              name: NotesStudientsMobilWidget.routeName,
+              path: NotesStudientsMobilWidget.routePath,
+              requireAuth: true,
+              builder: (context, params) => params.isEmpty
+                  ? NavBarPage(initialPage: 'NotesStudientsMobil')
+                  : NotesStudientsMobilWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

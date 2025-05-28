@@ -1,26 +1,26 @@
 import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_data_table.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
 import '/pages/footer/footer_widget.dart';
 import '/pages/header/header_widget.dart';
 import '/pages/header_mobil_cerrar_sesion/header_mobil_cerrar_sesion_widget.dart';
-import '/index.dart';
-import 'simulador_widget.dart' show SimuladorWidget;
+import 'certificates_studients_mobil_widget.dart'
+    show CertificatesStudientsMobilWidget;
 import 'package:flutter/material.dart';
 
-class SimuladorModel extends FlutterFlowModel<SimuladorWidget> {
+class CertificatesStudientsMobilModel
+    extends FlutterFlowModel<CertificatesStudientsMobilWidget> {
   ///  Local state fields for this page.
 
-  String? courseCategory;
-
-  List<String> uidsCourse = [];
-  void addToUidsCourse(String item) => uidsCourse.add(item);
-  void removeFromUidsCourse(String item) => uidsCourse.remove(item);
-  void removeAtIndexFromUidsCourse(int index) => uidsCourse.removeAt(index);
-  void insertAtIndexInUidsCourse(int index, String item) =>
-      uidsCourse.insert(index, item);
-  void updateUidsCourseAtIndex(int index, Function(String) updateFn) =>
-      uidsCourse[index] = updateFn(uidsCourse[index]);
+  List<String> codesCerticates = [];
+  void addToCodesCerticates(String item) => codesCerticates.add(item);
+  void removeFromCodesCerticates(String item) => codesCerticates.remove(item);
+  void removeAtIndexFromCodesCerticates(int index) =>
+      codesCerticates.removeAt(index);
+  void insertAtIndexInCodesCerticates(int index, String item) =>
+      codesCerticates.insert(index, item);
+  void updateCodesCerticatesAtIndex(int index, Function(String) updateFn) =>
+      codesCerticates[index] = updateFn(codesCerticates[index]);
 
   ///  State fields for stateful widgets in this page.
 
@@ -28,20 +28,18 @@ class SimuladorModel extends FlutterFlowModel<SimuladorWidget> {
   late HeaderModel headerModel;
   // Model for HeaderMobilCerrarSesion component.
   late HeaderMobilCerrarSesionModel headerMobilCerrarSesionModel;
-  // State field(s) for cboCategory widget.
-  String? cboCategoryValue;
-  FormFieldController<String>? cboCategoryValueController;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode;
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
-  List<CoursesRecord> simpleSearchResults = [];
-  // Stores action output result for [Firestore Query - Query a collection] action in Button widget.
-  ExamGroupsRecord? refGroup;
-  // Stores action output result for [Firestore Query - Query a collection] action in Button widget.
-  ExamenesRecord? refExamen;
-  // Stores action output result for [Backend Call - Create Document] action in Button widget.
-  RegisterSimulatorRecord? refHistory;
+  List<CertificatesRecord> simpleSearchResults = [];
+  // State field(s) for PaginatedDataTable widget.
+  final paginatedDataTableController =
+      FlutterFlowDataTableController<CertificatesRecord>();
+  // Stores action output result for [Firestore Query - Query a collection] action in IconButton widget.
+  CoursesRecord? refCourse;
+  // Stores action output result for [Firestore Query - Query a collection] action in IconButton widget.
+  UsersRecord? refUser;
   // Model for Footer component.
   late FooterModel footerModel;
 
@@ -60,6 +58,7 @@ class SimuladorModel extends FlutterFlowModel<SimuladorWidget> {
     textFieldFocusNode?.dispose();
     textController?.dispose();
 
+    paginatedDataTableController.dispose();
     footerModel.dispose();
   }
 }

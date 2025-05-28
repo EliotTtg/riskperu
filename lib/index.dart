@@ -37,3 +37,7 @@ export '/examination_questions_view_mobil/examination_questions_view_mobil_widge
 export '/examination_questions_frm_respuestas/examination_questions_frm_respuestas_widget.dart'
     show ExaminationQuestionsFrmRespuestasWidget;
 export '/blogs/blogs_widget.dart' show BlogsWidget;
+export '/certificates_studients_mobil/certificates_studients_mobil_widget.dart'
+    show CertificatesStudientsMobilWidget;
+export '/notes_studients_mobil/notes_studients_mobil_widget.dart'
+    show NotesStudientsMobilWidget;
