@@ -58,12 +58,12 @@ class CreateUpdateActividadModel
     return null;
   }
 
-  bool isDataUploading1 = false;
-  List<FFUploadedFile> uploadedLocalFiles1 = [];
+  bool isDataUploading_uploadDataEdz = false;
+  List<FFUploadedFile> uploadedLocalFiles_uploadDataEdz = [];
 
-  bool isDataUploading2 = false;
-  List<FFUploadedFile> uploadedLocalFiles2 = [];
-  List<String> uploadedFileUrls2 = [];
+  bool isDataUploading_uploadDataMu7 = false;
+  List<FFUploadedFile> uploadedLocalFiles_uploadDataMu7 = [];
+  List<String> uploadedFileUrls_uploadDataMu7 = [];
 
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   ActionsRecord? refActionUpdate;

@@ -849,10 +849,12 @@ class _DashboardTeacherWidgetState extends State<DashboardTeacherWidget> {
                                                                                                     onChanged: (newValue) async {
                                                                                                       safeSetState(() => _model.checkboxValueMap[listViewModuleClassRecord] = newValue!);
                                                                                                     },
-                                                                                                    side: BorderSide(
-                                                                                                      width: 2,
-                                                                                                      color: FlutterFlowTheme.of(context).alternate,
-                                                                                                    ),
+                                                                                                    side: (FlutterFlowTheme.of(context).alternate != null)
+                                                                                                        ? BorderSide(
+                                                                                                            width: 2,
+                                                                                                            color: FlutterFlowTheme.of(context).alternate,
+                                                                                                          )
+                                                                                                        : null,
                                                                                                     activeColor: FlutterFlowTheme.of(context).accent1,
                                                                                                     checkColor: FlutterFlowTheme.of(context).info,
                                                                                                   ),

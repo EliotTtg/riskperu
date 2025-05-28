@@ -1090,12 +1090,17 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                     _model.chkofertasValue =
                                                                         newValue!);
                                                               },
-                                                              side: BorderSide(
-                                                                width: 2,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryText,
-                                                              ),
+                                                              side: (FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText !=
+                                                                      null)
+                                                                  ? BorderSide(
+                                                                      width: 2,
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                    )
+                                                                  : null,
                                                               activeColor:
                                                                   FlutterFlowTheme.of(
                                                                           context)
@@ -1206,12 +1211,17 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                     _model.chkoterminosValue =
                                                                         newValue!);
                                                               },
-                                                              side: BorderSide(
-                                                                width: 2,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryText,
-                                                              ),
+                                                              side: (FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText !=
+                                                                      null)
+                                                                  ? BorderSide(
+                                                                      width: 2,
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                    )
+                                                                  : null,
                                                               activeColor:
                                                                   FlutterFlowTheme.of(
                                                                           context)

@@ -698,12 +698,13 @@ class _CreateUpdateActividadWidgetState
                                               _model.listRecursos = [];
                                               safeSetState(() {});
                                             } else {
-                                              if (_model.uploadedLocalFiles1
+                                              if (_model
+                                                  .uploadedLocalFiles_uploadDataEdz
                                                   .isNotEmpty) {
                                                 safeSetState(() {
-                                                  _model.isDataUploading1 =
+                                                  _model.isDataUploading_uploadDataEdz =
                                                       false;
-                                                  _model.uploadedLocalFiles1 =
+                                                  _model.uploadedLocalFiles_uploadDataEdz =
                                                       [];
                                                 });
                                               } else {
@@ -713,7 +714,8 @@ class _CreateUpdateActividadWidgetState
                                                 );
                                                 if (selectedFiles != null) {
                                                   safeSetState(() => _model
-                                                      .isDataUploading1 = true);
+                                                          .isDataUploading_uploadDataEdz =
+                                                      true);
                                                   var selectedUploadedFiles =
                                                       <FFUploadedFile>[];
 
@@ -732,14 +734,14 @@ class _CreateUpdateActividadWidgetState
                                                                 ))
                                                             .toList();
                                                   } finally {
-                                                    _model.isDataUploading1 =
+                                                    _model.isDataUploading_uploadDataEdz =
                                                         false;
                                                   }
                                                   if (selectedUploadedFiles
                                                           .length ==
                                                       selectedFiles.length) {
                                                     safeSetState(() {
-                                                      _model.uploadedLocalFiles1 =
+                                                      _model.uploadedLocalFiles_uploadDataEdz =
                                                           selectedUploadedFiles;
                                                     });
                                                   } else {
@@ -778,7 +780,7 @@ class _CreateUpdateActividadWidgetState
                                                     (_model.listRecursos
                                                                 .isNotEmpty) ||
                                                             (_model
-                                                                .uploadedLocalFiles1
+                                                                .uploadedLocalFiles_uploadDataEdz
                                                                 .isNotEmpty)
                                                         ? 'Recursos Seleccionados'
                                                         : 'Sin Recursos',
@@ -887,17 +889,19 @@ class _CreateUpdateActividadWidgetState
                                         return;
                                       }
                                       if (_model
-                                          .uploadedLocalFiles1.isNotEmpty) {
+                                          .uploadedLocalFiles_uploadDataEdz
+                                          .isNotEmpty) {
                                         {
-                                          safeSetState(() =>
-                                              _model.isDataUploading2 = true);
+                                          safeSetState(() => _model
+                                                  .isDataUploading_uploadDataMu7 =
+                                              true);
                                           var selectedUploadedFiles =
                                               <FFUploadedFile>[];
                                           var selectedFiles = <SelectedFile>[];
                                           var downloadUrls = <String>[];
                                           try {
-                                            selectedUploadedFiles =
-                                                _model.uploadedLocalFiles1;
+                                            selectedUploadedFiles = _model
+                                                .uploadedLocalFiles_uploadDataEdz;
                                             selectedFiles =
                                                 selectedFilesFromUploadedFiles(
                                               selectedUploadedFiles,
@@ -913,16 +917,17 @@ class _CreateUpdateActividadWidgetState
                                                 .map((u) => u!)
                                                 .toList();
                                           } finally {
-                                            _model.isDataUploading2 = false;
+                                            _model.isDataUploading_uploadDataMu7 =
+                                                false;
                                           }
                                           if (selectedUploadedFiles.length ==
                                                   selectedFiles.length &&
                                               downloadUrls.length ==
                                                   selectedFiles.length) {
                                             safeSetState(() {
-                                              _model.uploadedLocalFiles2 =
+                                              _model.uploadedLocalFiles_uploadDataMu7 =
                                                   selectedUploadedFiles;
-                                              _model.uploadedFileUrls2 =
+                                              _model.uploadedFileUrls_uploadDataMu7 =
                                                   downloadUrls;
                                             });
                                           } else {
@@ -932,7 +937,7 @@ class _CreateUpdateActividadWidgetState
                                         }
 
                                         _model.listRecursos = _model
-                                            .uploadedFileUrls2
+                                            .uploadedFileUrls_uploadDataMu7
                                             .toList()
                                             .cast<String>();
                                         safeSetState(() {});

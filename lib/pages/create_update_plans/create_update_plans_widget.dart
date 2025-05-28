@@ -842,7 +842,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                 m.storagePath,
                                                                 context))) {
                                                       safeSetState(() => _model
-                                                              .isDataUploading =
+                                                              .isDataUploading_uploadDataFxu =
                                                           true);
                                                       var selectedUploadedFiles =
                                                           <FFUploadedFile>[];
@@ -886,7 +886,7 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                                 .map((u) => u!)
                                                                 .toList();
                                                       } finally {
-                                                        _model.isDataUploading =
+                                                        _model.isDataUploading_uploadDataFxu =
                                                             false;
                                                       }
                                                       if (selectedUploadedFiles
@@ -897,10 +897,10 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                               selectedMedia
                                                                   .length) {
                                                         safeSetState(() {
-                                                          _model.uploadedLocalFile =
+                                                          _model.uploadedLocalFile_uploadDataFxu =
                                                               selectedUploadedFiles
                                                                   .first;
-                                                          _model.uploadedFileUrl =
+                                                          _model.uploadedFileUrl_uploadDataFxu =
                                                               downloadUrls
                                                                   .first;
                                                         });
@@ -910,8 +910,8 @@ class _CreateUpdatePlansWidgetState extends State<CreateUpdatePlansWidget> {
                                                       }
                                                     }
 
-                                                    _model.imagen =
-                                                        _model.uploadedFileUrl;
+                                                    _model.imagen = _model
+                                                        .uploadedFileUrl_uploadDataFxu;
                                                     safeSetState(() {});
                                                   },
                                                   child: Container(

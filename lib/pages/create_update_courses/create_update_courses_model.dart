@@ -51,8 +51,8 @@ class CreateUpdateCoursesModel
   ///  State fields for stateful widgets in this component.
 
   final formKey = GlobalKey<FormState>();
-  bool isDataUploading1 = false;
-  FFUploadedFile uploadedLocalFile1 =
+  bool isDataUploading_uploadData4ro = false;
+  FFUploadedFile uploadedLocalFile_uploadData4ro =
       FFUploadedFile(bytes: Uint8List.fromList([]));
 
   // State field(s) for txtnombrecurso widget.
@@ -168,10 +168,10 @@ class CreateUpdateCoursesModel
     return null;
   }
 
-  bool isDataUploading2 = false;
-  FFUploadedFile uploadedLocalFile2 =
+  bool isDataUploading_uploadDataDam = false;
+  FFUploadedFile uploadedLocalFile_uploadDataDam =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl2 = '';
+  String uploadedFileUrl_uploadDataDam = '';
 
   // Stores action output result for [Backend Call - Create Document] action in Button widget.
   ActionsRecord? refActionUpdate;

@@ -219,9 +219,6 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                   text: 'Imagen',
                                                   icon: Icon(
                                                     Icons.image,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
                                                     size: 15.0,
                                                   ),
                                                   options: FFButtonOptions(
@@ -237,6 +234,10 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
+                                                    iconColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
                                                     color:
                                                         valueOrDefault<Color>(
                                                       _model.typeurl == 'image'
@@ -302,9 +303,6 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                   text: 'Video',
                                                   icon: FaIcon(
                                                     FontAwesomeIcons.video,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
                                                     size: 15.0,
                                                   ),
                                                   options: FFButtonOptions(
@@ -320,6 +318,10 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
+                                                    iconColor:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
                                                     color:
                                                         valueOrDefault<Color>(
                                                       _model.typeurl == 'image'
@@ -404,7 +406,7 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                                   m.storagePath,
                                                                   context))) {
                                                         safeSetState(() => _model
-                                                                .isDataUploading =
+                                                                .isDataUploading_uploadDataVup =
                                                             true);
                                                         var selectedUploadedFiles =
                                                             <FFUploadedFile>[];
@@ -449,7 +451,7 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                                       (u) => u!)
                                                                   .toList();
                                                         } finally {
-                                                          _model.isDataUploading =
+                                                          _model.isDataUploading_uploadDataVup =
                                                               false;
                                                         }
                                                         if (selectedUploadedFiles
@@ -461,10 +463,10 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                                 selectedMedia
                                                                     .length) {
                                                           safeSetState(() {
-                                                            _model.uploadedLocalFile =
+                                                            _model.uploadedLocalFile_uploadDataVup =
                                                                 selectedUploadedFiles
                                                                     .first;
-                                                            _model.uploadedFileUrl =
+                                                            _model.uploadedFileUrl_uploadDataVup =
                                                                 downloadUrls
                                                                     .first;
                                                           });
@@ -475,7 +477,7 @@ class _CreateUpdateBlogsWidgetState extends State<CreateUpdateBlogsWidget> {
                                                       }
 
                                                       _model.image = _model
-                                                          .uploadedFileUrl;
+                                                          .uploadedFileUrl_uploadDataVup;
                                                       safeSetState(() {});
                                                     },
                                                     child: Container(

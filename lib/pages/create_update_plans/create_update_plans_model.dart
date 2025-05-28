@@ -48,10 +48,10 @@ class CreateUpdatePlansModel extends FlutterFlowModel<CreateUpdatePlansWidget> {
   }
 
   Color? colorPicked;
-  bool isDataUploading = false;
-  FFUploadedFile uploadedLocalFile =
+  bool isDataUploading_uploadDataFxu = false;
+  FFUploadedFile uploadedLocalFile_uploadDataFxu =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl = '';
+  String uploadedFileUrl_uploadDataFxu = '';
 
   // State field(s) for txtdescripcion widget.
   FocusNode? txtdescripcionFocusNode;

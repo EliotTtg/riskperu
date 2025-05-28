@@ -424,7 +424,6 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                                                 text: 'Ver más ',
                                                                                 icon: Icon(
                                                                                   Icons.east,
-                                                                                  color: FlutterFlowTheme.of(context).primary,
                                                                                   size: 20.0,
                                                                                 ),
                                                                                 options: FFButtonOptions(
@@ -432,6 +431,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                                                   padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                                                                                   iconAlignment: IconAlignment.end,
                                                                                   iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                  iconColor: FlutterFlowTheme.of(context).primary,
                                                                                   color: FlutterFlowTheme.of(context).secondaryBackground,
                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                         font: GoogleFonts.montserrat(

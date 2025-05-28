@@ -20,8 +20,8 @@ class InformationModel extends FlutterFlowModel<InformationWidget> {
   late HeaderModel headerModel;
   // Model for Navbar component.
   late NavbarModel navbarModel;
-  bool isDataUploading1 = false;
-  FFUploadedFile uploadedLocalFile1 =
+  bool isDataUploading_uploadDataQ1f = false;
+  FFUploadedFile uploadedLocalFile_uploadDataQ1f =
       FFUploadedFile(bytes: Uint8List.fromList([]));
 
   // State field(s) for txtdisplayname widget.
@@ -108,10 +108,10 @@ class InformationModel extends FlutterFlowModel<InformationWidget> {
     return null;
   }
 
-  bool isDataUploading2 = false;
-  FFUploadedFile uploadedLocalFile2 =
+  bool isDataUploading_uploadDataHng = false;
+  FFUploadedFile uploadedLocalFile_uploadDataHng =
       FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl2 = '';
+  String uploadedFileUrl_uploadDataHng = '';
 
   @override
   void initState(BuildContext context) {

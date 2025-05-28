@@ -262,8 +262,6 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                             text: 'Compartir',
                             icon: Icon(
                               Icons.share,
-                              color: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
                               size: 16.0,
                             ),
                             options: FFButtonOptions(
@@ -273,6 +271,8 @@ class _HeaderCourseWidgetState extends State<HeaderCourseWidget> {
                               iconAlignment: IconAlignment.end,
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
+                              iconColor: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall

@@ -193,8 +193,8 @@ class _NavBarPageState extends State<NavBarPage> {
       'Estadistica': EstadisticaWidget(),
       'Home': HomeWidget(),
       'Simulador': SimuladorWidget(),
-      'NotesStudients': NotesStudientsWidget(),
-      'CertificatesStudients': CertificatesStudientsWidget(),
+      'CertificatesStudientsMobil': CertificatesStudientsMobilWidget(),
+      'NotesStudientsMobil': NotesStudientsMobilWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -308,14 +308,14 @@ class _NavBarPageState extends State<NavBarPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.menu_book,
+                    FontAwesomeIcons.certificate,
                     color: currentIndex == 3
                         ? FlutterFlowTheme.of(context).primary
                         : FlutterFlowTheme.of(context).secondaryText,
                     size: 24.0,
                   ),
                   Text(
-                    'Notas',
+                    'Certificados',
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       color: currentIndex == 3
@@ -332,14 +332,14 @@ class _NavBarPageState extends State<NavBarPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    FontAwesomeIcons.certificate,
+                    Icons.menu_book,
                     color: currentIndex == 4
                         ? FlutterFlowTheme.of(context).primary
                         : FlutterFlowTheme.of(context).secondaryText,
                     size: 24.0,
                   ),
                   Text(
-                    'Certificados',
+                    'Notas',
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       color: currentIndex == 4
