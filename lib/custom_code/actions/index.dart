@@ -22,8 +22,6 @@ export 'approve_order_paypal.dart' show approveOrderPaypal;
 export 'obtener_link_paypal_regreso.dart' show obtenerLinkPaypalRegreso;
 export 'redirect_to_paypal_u_r_l_page.dart' show redirectToPaypalURLPage;
 export 'descargar_archivo.dart' show descargarArchivo;
-export 'download_and_save_certificate_p_d_f.dart'
-    show downloadAndSaveCertificatePDF;
 export 'code_certificate.dart' show codeCertificate;
 export 'porcentaje_course_linea.dart' show porcentajeCourseLinea;
 export 'porcentaje_course.dart' show porcentajeCourse;

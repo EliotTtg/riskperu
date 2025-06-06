@@ -213,3 +213,8 @@ String enviarAsesor(String nameCourse) {
   final encodedCourseName = Uri.encodeComponent(nameCourse);
   return 'https://wa.me/51980619456?text=Hola.%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20curso%20$encodedCourseName';
 }
+
+List<String> getDaySemana(DateTime fecha) {
+  const dias = ['D', 'L', 'M', 'M', 'J', 'V', 'S'];
+  return [dias[fecha.weekday % 7]];
+}

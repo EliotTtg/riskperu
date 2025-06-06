@@ -207,12 +207,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => RegisterWidget(),
             ),
             FFRoute(
-              name: EstadisticaWidget.routeName,
-              path: EstadisticaWidget.routePath,
-              builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'Estadistica')
-                  : EstadisticaWidget(),
-            ),
+                name: EstadisticaWidget.routeName,
+                path: EstadisticaWidget.routePath,
+                builder: (context, params) => params.isEmpty
+                    ? NavBarPage(initialPage: 'Estadistica')
+                    : NavBarPage(
+                        initialPage: 'Estadistica',
+                        page: EstadisticaWidget(),
+                      )),
             FFRoute(
               name: CoursePriceWidget.routeName,
               path: CoursePriceWidget.routePath,

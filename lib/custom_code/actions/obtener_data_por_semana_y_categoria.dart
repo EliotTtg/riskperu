@@ -25,13 +25,13 @@ Future<List<UsersNumberStruct>> obtenerDataPorSemanaYCategoria(
 
     // Crear un mapa para contar las respuestas correctas e incorrectas por día de la semana
     Map<String, int> respuestasPorDia = {
-      'Lunes': 0,
-      'Martes': 0,
-      'Miércoles': 0,
-      'Jueves': 0,
-      'Viernes': 0,
-      'Sábado': 0,
-      'Domingo': 0,
+      'Lu': 0,
+      'Ma': 0,
+      'Mi': 0,
+      'Ju': 0,
+      'Vi': 0,
+      'Sa': 0,
+      'Do': 0,
     };
 
     // Iterar sobre los documentos para calcular correctas e incorrectas por día
