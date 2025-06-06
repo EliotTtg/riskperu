@@ -25,13 +25,13 @@ Future<List<UsersNumberStruct>> obtenerDataPorSemanaYCategoria(
 
     // Crear un mapa para contar las respuestas correctas e incorrectas por día de la semana
     Map<String, int> respuestasPorDia = {
-      'Lunes': 0,
-      'Martes': 0,
-      'Miércoles': 0,
-      'Jueves': 0,
-      'Viernes': 0,
-      'Sábado': 0,
-      'Domingo': 0,
+      'Lu': 0,
+      'Ma': 0,
+      'Mi': 0,
+      'Ju': 0,
+      'Vi': 0,
+      'Sa': 0,
+      'Do': 0,
     };
 
     // Iterar sobre los documentos para calcular correctas e incorrectas por día
@@ -56,13 +56,13 @@ Future<List<UsersNumberStruct>> obtenerDataPorSemanaYCategoria(
 
       // Mapear el índice del día de la semana a su nombre en español
       String diaTraducido = {
-            1: 'Lunes',
-            2: 'Martes',
-            3: 'Miércoles',
-            4: 'Jueves',
-            5: 'Viernes',
-            6: 'Sábado',
-            7: 'Domingo',
+            1: 'Lu',
+            2: 'Ma',
+            3: 'Mi',
+            4: 'Ju',
+            5: 'Vi',
+            6: 'Sa',
+            7: 'Do',
           }[diaSemanaIndex] ??
           'Desconocido';
 
