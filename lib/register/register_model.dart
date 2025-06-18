@@ -42,7 +42,7 @@ class RegisterModel extends FlutterFlowModel<RegisterWidget> {
   // State field(s) for txtnumero widget.
   FocusNode? txtnumeroFocusNode;
   TextEditingController? txtnumeroTextController;
-  final txtnumeroMask = MaskTextInputFormatter(mask: '+51 ### ### ###');
+  late MaskTextInputFormatter txtnumeroMask;
   String? Function(BuildContext, String?)? txtnumeroTextControllerValidator;
   String? _txtnumeroTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {

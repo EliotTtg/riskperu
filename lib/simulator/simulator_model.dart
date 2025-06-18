@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 class SimulatorModel extends FlutterFlowModel<SimulatorWidget> {
   ///  Local state fields for this page.
 
-  bool stateDescription = false;
+  bool stateDescription = true;
 
   String? uidSession;
 

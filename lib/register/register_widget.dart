@@ -10,6 +10,7 @@ import 'package:aligned_tooltip/aligned_tooltip.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'register_model.dart';
 export 'register_model.dart';
 
@@ -43,6 +44,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
     _model.txtnumeroTextController ??= TextEditingController();
     _model.txtnumeroFocusNode ??= FocusNode();
 
+    _model.txtnumeroMask = MaskTextInputFormatter(mask: '+51 ### ### ###');
     _model.txtpasswordTextController ??= TextEditingController();
     _model.txtpasswordFocusNode ??= FocusNode();
 

@@ -17,7 +17,6 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'simulator_model.dart';
 export 'simulator_model.dart';
 
@@ -154,8 +153,8 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.glory(
+                                                          font: GoogleFonts
+                                                              .montserrat(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -187,8 +186,8 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.glory(
+                                                          font: GoogleFonts
+                                                              .montserrat(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -3153,23 +3152,38 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                         builder: (context) {
                                                           if (_model
                                                               .stateDescription) {
-                                                            return Text(
-                                                              valueOrDefault<
-                                                                  String>(
-                                                                widget
-                                                                    .refCourse
-                                                                    ?.description,
-                                                                '--',
-                                                              ),
-                                                              textAlign:
-                                                                  TextAlign
-                                                                      .start,
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    font: GoogleFonts
-                                                                        .montserrat(
+                                                            return Visibility(
+                                                              visible: _model
+                                                                      .stateDescription ==
+                                                                  true,
+                                                              child: Text(
+                                                                valueOrDefault<
+                                                                    String>(
+                                                                  widget
+                                                                      .refCourse
+                                                                      ?.description,
+                                                                  '--',
+                                                                ),
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .start,
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
+                                                                      fontSize:
+                                                                          12.0,
+                                                                      letterSpacing:
+                                                                          0.0,
                                                                       fontWeight: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -3179,80 +3193,48 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                           .bodyMedium
                                                                           .fontStyle,
                                                                     ),
-                                                                    fontSize:
-                                                                        12.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
+                                                              ),
                                                             );
                                                           } else {
-                                                            return GradientText(
-                                                              valueOrDefault<
-                                                                  String>(
-                                                                widget
-                                                                    .refCourse
-                                                                    ?.description,
-                                                                '--',
-                                                              ).maybeHandleOverflow(
-                                                                maxChars: 300,
+                                                            return Visibility(
+                                                              visible: _model
+                                                                      .stateDescription ==
+                                                                  false,
+                                                              child: Opacity(
+                                                                opacity: 0.0,
+                                                                child: Text(
+                                                                  '.',
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .start,
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        font: GoogleFonts
+                                                                            .montserrat(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .primaryText,
+                                                                        fontSize:
+                                                                            0.0,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
+                                                                ),
                                                               ),
-                                                              textAlign:
-                                                                  TextAlign
-                                                                      .start,
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    font: GoogleFonts
-                                                                        .montserrat(
-                                                                      fontWeight: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontWeight,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                    fontSize:
-                                                                        12.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                              colors: [
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryText,
-                                                                Color(
-                                                                    0xFF666666),
-                                                                Color(
-                                                                    0x06666666)
-                                                              ],
-                                                              gradientDirection:
-                                                                  GradientDirection
-                                                                      .ttb,
-                                                              gradientType:
-                                                                  GradientType
-                                                                      .linear,
                                                             );
                                                           }
                                                         },
@@ -3288,9 +3270,9 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      5.0,
                                                                       0.0,
-                                                                      5.0,
+                                                                      0.0,
+                                                                      0.0,
                                                                       0.0),
                                                           iconAlignment:
                                                               IconAlignment.end,
@@ -5324,21 +5306,40 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                       builder: (context) {
                                                         if (_model
                                                             .stateDescription) {
-                                                          return Text(
-                                                            valueOrDefault<
-                                                                String>(
-                                                              widget.refCourse
-                                                                  ?.description,
-                                                              '--',
-                                                            ),
-                                                            textAlign:
-                                                                TextAlign.start,
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  font: GoogleFonts
-                                                                      .montserrat(
+                                                          return Visibility(
+                                                            visible: _model
+                                                                    .stateDescription ==
+                                                                true,
+                                                            child: Text(
+                                                              valueOrDefault<
+                                                                  String>(
+                                                                widget
+                                                                    .refCourse
+                                                                    ?.description,
+                                                                '--',
+                                                              ),
+                                                              textAlign:
+                                                                  TextAlign
+                                                                      .start,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .montserrat(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    fontSize:
+                                                                        12.0,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -5348,76 +5349,51 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                                         .bodyMedium
                                                                         .fontStyle,
                                                                   ),
-                                                                  fontSize:
-                                                                      12.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
-                                                                ),
+                                                            ),
                                                           );
                                                         } else {
-                                                          return GradientText(
-                                                            valueOrDefault<
-                                                                String>(
-                                                              widget.refCourse
-                                                                  ?.description,
-                                                              '--',
-                                                            ).maybeHandleOverflow(
-                                                              maxChars: 300,
+                                                          return Visibility(
+                                                            visible: _model
+                                                                    .stateDescription ==
+                                                                false,
+                                                            child: Opacity(
+                                                              opacity: 0.0,
+                                                              child: Text(
+                                                                '.',
+                                                                textAlign:
+                                                                    TextAlign
+                                                                        .start,
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      font: GoogleFonts
+                                                                          .montserrat(
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .fontStyle,
+                                                                      ),
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                      fontSize:
+                                                                          0.0,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                              ),
                                                             ),
-                                                            textAlign:
-                                                                TextAlign.start,
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  font: GoogleFonts
-                                                                      .montserrat(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  fontSize:
-                                                                      12.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
-                                                                ),
-                                                            colors: [
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .primaryText,
-                                                              Color(0xFF666666),
-                                                              Color(0x06666666)
-                                                            ],
-                                                            gradientDirection:
-                                                                GradientDirection
-                                                                    .ttb,
-                                                            gradientType:
-                                                                GradientType
-                                                                    .linear,
                                                           );
                                                         }
                                                       },
@@ -5452,9 +5428,9 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
                                                         padding:
                                                             EdgeInsetsDirectional
                                                                 .fromSTEB(
-                                                                    5.0,
                                                                     0.0,
-                                                                    5.0,
+                                                                    0.0,
+                                                                    0.0,
                                                                     0.0),
                                                         iconAlignment:
                                                             IconAlignment.end,

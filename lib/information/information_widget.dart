@@ -13,6 +13,7 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'information_model.dart';
 export 'information_model.dart';
 
@@ -67,6 +68,7 @@ class _InformationWidgetState extends State<InformationWidget> {
         text: valueOrDefault(currentUserDocument?.dni, 0).toString());
     _model.txtdniFocusNode ??= FocusNode();
 
+    _model.txtdniMask = MaskTextInputFormatter(mask: '########');
     _model.txtlastTextController ??= TextEditingController();
     _model.txtlastFocusNode ??= FocusNode();
 
@@ -74,6 +76,7 @@ class _InformationWidgetState extends State<InformationWidget> {
         TextEditingController(text: currentPhoneNumber);
     _model.txtphoneFocusNode ??= FocusNode();
 
+    _model.txtphoneMask = MaskTextInputFormatter(mask: '+51 ### ### ###');
     _model.txtdescriptionTextController ??= TextEditingController(
         text: valueOrDefault(currentUserDocument?.description, ''));
     _model.txtdescriptionFocusNode ??= FocusNode();

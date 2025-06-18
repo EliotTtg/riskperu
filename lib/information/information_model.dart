@@ -45,7 +45,7 @@ class InformationModel extends FlutterFlowModel<InformationWidget> {
   // State field(s) for txtdni widget.
   FocusNode? txtdniFocusNode;
   TextEditingController? txtdniTextController;
-  final txtdniMask = MaskTextInputFormatter(mask: '########');
+  late MaskTextInputFormatter txtdniMask;
   String? Function(BuildContext, String?)? txtdniTextControllerValidator;
   String? _txtdniTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
@@ -69,7 +69,7 @@ class InformationModel extends FlutterFlowModel<InformationWidget> {
   // State field(s) for txtphone widget.
   FocusNode? txtphoneFocusNode;
   TextEditingController? txtphoneTextController;
-  final txtphoneMask = MaskTextInputFormatter(mask: '+51 ### ### ###');
+  late MaskTextInputFormatter txtphoneMask;
   String? Function(BuildContext, String?)? txtphoneTextControllerValidator;
   String? _txtphoneTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
